@@ -1,0 +1,47 @@
+.below-the-fold{
+    min-height: 400px;
+    background-color: #f4f4f4;
+}
+
+footer{
+    background-color:#7a1b8d;
+    padding:  15px 0 0;
+    color:white;
+}
+
+.footer-col
+{
+    width: 33.0%;
+    display:block;
+    float:  left;
+    padding: 0 20px;
+}
+
+.footer-links > li > a{
+    color: white;
+}
+
+.footer-social-links > li
+{
+    display: inline-block;
+    padding: 9px 0px;
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 44px;
+    text-align: center;
+    margin: 0 1px;
+}
+
+.footer-social-links > li > a {
+    color: white;
+}
+
+
+.copyright{
+    clear: both;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    opacity: .5;
+    background-color: black;
+}

@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Above the fold is a html5, css and javascript exampe of how to create a website with thought given to performance,SEO and a mobile friendly theme.">
+  <meta name="author" content="">
+  <title>Company - page</title>
+  <style>
+    /* ----------------------------- RESET -------------------------------*/
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box
+    }
+
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      -ms-overflow-style: scrollbar;
+      -webkit-tap-highlight-color: rgba(black, 0)
+    }
+
+    body {
+      font-weight: 500;
+      line-height: 1.5;
+      color: #444;
+      text-align: left;
+      background-color: #fff;
+      font: 16px Arial, Helvetica, sans-serif;
+      margin: 0;
+      color: #444
+    }
+
+    h1,
+    h2,
+      {
+      margin-top: 0;
+      margin-bottom: 15px
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 15px
+    }
+
+    article,
+    footer,
+    header,
+    main,
+    nav,
+    section {
+      display: block
+    }
+
+    button:focus {
+      outline: 1px dotted;
+      outline: 5px auto -webkit-focus-ring-color
+    }
+
+    button {
+      font: 16px Arial, Helvetica, sans-serif;
+      margin: 0;
+      color: #444;
+      border-radius: 0;
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      overflow: visible;
+      text-transform: none
+    }
+
+    .nav,
+    button {
+      outline: 0
+    }
+
+    h1 {
+      font-size: 3rem
+    }
+
+    h1,
+    h2 {
+      font-weight: 500
+    }
+
+    img {
+      vertical-align: middle;
+      border-style: none
+    }
+
+    /* ----------------------------- BUTTON -------------------------------*/
+
+    .nav-link,
+    .btn {
+      text-decoration: none
+    }
+
+    .btn {
+      background: #24613D;
+      color: #fff;
+      display: inline-block;
+      padding: 12px 30px 14px;
+      border: 0;
+      border-radius: 6px;
+      cursor: pointer
+    }
+
+    .btn:hover,
+    .btn:active,
+    .btn:focus {
+      background: #18442b
+    }
+
+    /* ----------------------------- NAVAGATION -------------------------------*/
+
+    .nav {
+      background: #7a0d8e;
+      position: fixed;
+      width: 100%;
+      height: 56px;
+      padding: 10px;
+      z-index: 3;
+      color: #fff
+    }
+
+    .nav-link {
+      padding: 8px;
+      position: relative;
+      top: -1px;
+      color: inherit
+    }
+
+    .nav-brand {
+      font-size: 1.25rem;
+      display: inline-block;
+      padding: 8px
+    }
+
+    .nav-login {
+      float: right;
+      border: 1px solid #fff;
+      background-color: transparent!important;
+      margin-right: 25px;
+      padding: 6px 12px;
+      height: 38px;
+      width: 76px
+    }
+
+    /* ----------------------------- HERO -------------------------------*/
+
+    .hero {
+      background-color: #a4a58c;
+      z-index: 4
+    }
+
+    .hero-heading {
+      color: #fff;
+      text-align: center;
+      position: relative;
+      top: 4vh;
+      z-index: 2;
+      font-size: 2.5rem;
+      font-weight: 500
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 77vh;
+      min-height: 519px;
+      margin-top: 55px;
+      opacity: .6;
+      z-index: 14
+    }
+
+    .hero-panel {
+      position: absolute;
+      left: 0;
+      top: 13%;
+      top: 20vh;
+      width: 100%;
+      text-align: center;
+      font-size: 18px
+    }
+
+    .hero-info {
+      margin: 60px;
+      background-color: #ececec;
+      border-radius: 15px;
+      box-shadow: 1px 1px 23px 1px #777;
+      width: 50%;
+      margin: 0 auto;
+      color: #6e0c80
+    }
+
+    /* ----------------------------- COOKIES -------------------------------*/
+
+    .cookies {
+      background-color: #fff;
+      position: fixed;
+      width: 100%;
+      border-top: 1px solid silver;
+      color: #1d1d1d;
+      padding: 15px;
+      bottom: 0;
+      z-index: 10
+    }
+
+    .cookies h1 {
+      font-size: 1rem
+    }
+
+    p {
+      margin: 0 15px;
+      padding: 15px;
+      line-height: 1.5;
+      text-align: left
+    }
+
+    /* ----------------------------- HELPERS -------------------------------*/
+
+    .d-b {
+      display: block
+    }
+
+    .m-c {
+      margin: 0 auto
+    }
+
+    /* ----------------------------- MOBILE -------------------------------*/
+
+    @media(max-width:850px) {
+      .nav a {
+        display: block
+      }
+      form>* {
+        margin-bottom: 10px
+      }
+      .nav {
+        overflow: hidden
+      }
+      .navbar-change {
+        height: auto
+      }
+      .nav a {
+        padding: 8px 15px
+      }
+      .navbar-toggler {
+        float: right;
+        margin: 0 15px
+      }
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 30px;
+        height: 3.25px;
+        background-color: #f1f1f1;
+        margin: 6.5px 0;
+        transition: .4s
+      }
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px)
+      }
+      .change .bar2 {
+        opacity: 0
+      }
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -4px);
+        transform: rotate(45deg) translate(-8px, -4px)
+      }
+      .btn-login {
+        float: none;
+        border: none;
+        text-shadow: 1px 1px 0 #111;
+        padding: 8px 0
+      }
+      .hero-panel {
+        top: 5%
+      }
+      .hero-panel>h1 {
+        font-size: 2.4rem
+      }
+      .hero-info {
+        width: 87%
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav id="navbar" class="nav" tabindex="-1">
+        <div onclick="naviconClick(this)" class="navbar-toggler">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div>
+          <span class="nav-link nav-brand" href="#">Fixed navbar</span>
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Contact</a>
+          <button class="btn  nav-login" type="submit">Login</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <img class="hero-img" src="images/hero.jpg" alt="alternate text for the hero image">
+        <article class="hero-panel">
+          <h1 class="hero-heading">Cover Your Page</h1>
+          <p class="hero-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <button class="btn d-b m-c">See More</button>
+          </p>
+        </article>
+      </div>
+      <article>
+        <h2>Near the Fold</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+      <section class="below-the-fold">
+        <article>
+          <h3>Below the Fold</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </p>
+        </article>
+        <article>
+          <h3>More Below the Fold</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </p>
+        </article>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-col ftr-one">
+        <h4>Company Moto</h4>
+        <p>This sample is a brisk activity to represent how the default, static and settled to beat navbar work. It incorporates
+          the responsive CSS and HTML, so it likewise adjusts to your viewport and gadget.</p>
+        <address>
+          <ul>
+            <li>999 Main Street
+              <br> City, State 99999
+            </li>
+            <li>Phone: (999) 999 - 9999</li>
+            <li>Email: email@yourdomain.com</li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-col ftr-two">
+        <h4>POPULAR LINKS</h4>
+        <ul class="footer-links" >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+        <ul class="footer-links" >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col ftr-three">
+          <h4>NEWSLETTER</h4>
+          <p>You can get latest update from us by subscribing to our newsletter.</p>
+          <form method="POST">
+              <input type="email" name="email" placeholder="youremail@domain.com">
+              <button type="button"> Subscribe </button>
+          </form>
+          <h3>GET CONNECTED</h3>
+          <ul class="footer-social-links">
+            <li>
+              <a href="#" class="facebook-bg">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter-bg">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="googleplus-bg">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="youtube-bg">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="linkedin-bg">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="rss-bg">
+                <i class="fa fa-rss"></i>
+              </a>
+            </li>
+          </ul>
+      </div>
+
+      <div class="copyright">
+        © 2018 Copyright:
+        <a href="#"> Company Name </a>
+      </div>
+
+    </footer>
+    <!--/.Footer-->
+
+    <!-- <footer>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+      <p>&copy; 2017-2018 Company, Inc. &middot;
+        <a href="#">Privacy</a> &middot;
+        <a href="#">Terms</a>
+        <a href="#">Cookie Policy</a>
+      </p>
+    </footer> -->
+    <section id="cookieNotice" class="cookies">
+      <h1>This website is using cookies.</h1>
+      <p>This website uses cookies to improve user experience.By using this site, you agree to all cookies in accordance with
+        our
+        <a href="privacy" target="_blank">Cookie Policy</a>
+        <button class="btn" onclick="hideSection()">Agree</button>
+      </p>
+    </section>
+    <noscript>
+        <link rel="stylesheet" href="css/belowthefold.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    </noscript>
+    <script type="text/javascript">
+      function hideSection() {
+        var cookieNotice = document.getElementById('cookieNotice');
+        cookieNotice.style.display = 'none';
+      }
+
+      function naviconClick(navicon) {
+        navicon.classList.toggle("change");
+        var nav = document.getElementById('navbar');
+        nav.classList.toggle("navbar-change");
+      }
+      /*!
+      Modified for brevity from https://github.com/filamentgroup/loadCSS
+      loadCSS: load a CSS file asynchronously.
+      [c]2014 @scottjehl, Filament Group, Inc.
+      Licensed MIT
+      */
+      function loadCSS(href) {
+        var ss = window.document.createElement('link'),
+          ref = window.document.getElementsByTagName('head')[0];
+        ss.rel = 'stylesheet';
+        ss.href = href;
+        // temporarily, set media to something non-matching to ensure it'll
+        // fetch without blocking render
+        ss.media = 'only x';
+        ref.parentNode.insertBefore(ss, ref);
+        setTimeout(function () {
+          // set media back to `all` so that the stylesheet applies once it loads
+          ss.media = 'all';
+        }, 0);
+      }
+      loadCSS('css/belowthefold.css');
+
+ (function() {
+        var font2 = document.createElement('link'); 
+        font2.type = 'text/css'; 
+        font2.rel = 'stylesheet';
+        font2.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+        var orig = document.getElementsByTagName('link')[0]; 
+        orig.parentNode.insertBefore(font2, orig);
+      })();
+
+    </script>
+    
+  </body>
+
+</html>
