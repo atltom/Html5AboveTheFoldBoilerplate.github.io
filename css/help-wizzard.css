@@ -1,17 +1,7 @@
-html {
-    background: #fff !important;
-}
-
-body {
-    background: #fff !important;
-}
-
-
-div#loginBaseLogo ,  .container {
-    border: none !important;
-}
-
-
+html{background: #fff !important;}
+body{background: #fff !important;}
+div#loginBaseLogo{border: none !important;}
+.container{border: none !important;}
 .main-logo {height: 114px !important; width: 110px !important;}
 
 .container{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; font-size:16px;}
