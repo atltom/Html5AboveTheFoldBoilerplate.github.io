@@ -20,3 +20,8 @@ h1 {
 
 .btn-primary {width: inherit !important; margin: auto; text-transform: none; padding: .85rem 2rem; color: #444!important; border-color: #c5c5c5 !important; background: #d7dce0 !important;}
 
+
+
+body > p:nth-child(6){
+ display:none;   
+}
