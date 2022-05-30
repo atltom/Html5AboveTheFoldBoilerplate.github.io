@@ -26,6 +26,11 @@ label.separator span {
     background: inherit!important;
 }
 
+span {
+    color: inherit !important;
+    font-weight: normal!important;
+}
+
 label{font-weight: normal;color: inherit;}
 
 .btn-primary {width: inherit !important; margin: auto; text-transform: none; padding: .85rem 2rem; color: #444!important; border-color: #c5c5c5 !important; background: #d7dce0 !important;}
