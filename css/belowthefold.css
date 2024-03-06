@@ -8,7 +8,11 @@ footer{
     color:white;
 }
 
-ul.footer{
+.footer-links a {
+    color: #fff;
+}
+
+footer ul{
     list-style-type: none;
 }
 
