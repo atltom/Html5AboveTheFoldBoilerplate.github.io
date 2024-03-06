@@ -45,17 +45,15 @@ footer{
     background-color: #181f2f;
 }
 
-
 .flex-container {
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
     
-    .flex-item{
-padding: 10px;
-  flex: 33%;
+.flex-item{
+    padding: 10px;
+    flex: 33%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
