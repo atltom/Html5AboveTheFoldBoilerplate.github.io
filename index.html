@@ -77,6 +77,19 @@
       .hero-panel>h1 {        font-size: 2.4rem      }
       .hero-info {        width: 87%      }
     }
+
+
+    .flex-item{
+padding: 10px;
+  flex: 33%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
   </style>
 
   <body>
@@ -159,6 +172,14 @@
 
     <!--Footer-->
     <footer>
+
+<div class="flex-container">
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+</div>
+
+      
       <div class="footer-col ftr-one">
         <h4>[Company Name]</h4>
         <p>With 35 years of experience, no job is too big or complex for us to handle.  Trust in a company that takes pride in their work.</p>
