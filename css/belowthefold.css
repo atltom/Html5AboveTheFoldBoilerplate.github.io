@@ -5,7 +5,7 @@
 
 footer{
     background-color:#303f5e;
-    padding:  15px 0 0;
+    /*padding:  15px 0 0;*/
     color:white;
 }
 
@@ -43,4 +43,24 @@ footer{
     text-align: center;
     color: white;
     background-color: #181f2f;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+    
+    .flex-item{
+padding: 10px;
+  flex: 33%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
