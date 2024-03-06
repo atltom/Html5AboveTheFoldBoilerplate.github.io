@@ -4,38 +4,13 @@
 }
 
 footer{
-    background-color:#303f5e;
-    /*padding:  15px 0 0;*/
+    background-color:#303f5e;  
     color:white;
 }
 
-.footer-col
-{
-    width: 31.0%;
-    display:block;
-    float:  left;
-    padding: 0 20px;
+footer > ul{
+    list-style-type: none;
 }
-
-.footer-links > li > a{
-    color: white;
-}
-
-.footer-social-links > li
-{
-    display: inline-block;
-    padding: 9px 0px;
-    border: 1px solid white;
-    border-radius: 5px;
-    min-width: 44px;
-    text-align: center;
-    margin: 0 1px;
-}
-
-.footer-social-links > li > a {
-    color: white;
-}
-
 
 .copyright{
     clear: both;
