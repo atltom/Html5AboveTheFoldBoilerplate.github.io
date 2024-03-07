@@ -29,8 +29,13 @@ footer ul{
     flex-direction: row;
     text-align: center;
 }
+
+.flex-container > article{
+    padding: 10px;
+    flex: 50%;
+}
     
-.flex-item{
+footer > div.flex-container > div{
     padding: 10px;
     flex: 33%;
 }
