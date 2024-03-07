@@ -39,7 +39,7 @@
     /* --- HERO --- */
     .hero { background-color: #303f5e;      z-index: 4    }
     .hero-heading {    color: #fff;    text-align: center;    position: relative; width: 87%; z-index: 2; font-weight: 500; margin: 0 auto;    }
-    .hero-img {width: 100%;margin-top: 55px; min-height: 715px;}
+    .hero-img {width: 100%;margin-top: 55px; min-height: 715px;max-width:100%;height:auto}
     .hero-panel { position: absolute;    top: 0 ;  left: 0;    width: 80%; text-align: center;    font-size: 18px;  background: #303f5e96;    margin: 10%;    margin-top: 16vh;}
     .hero-info { margin: 0 auto;    color: #ffffff;}
     /* --- HELPERS --- */
@@ -87,12 +87,6 @@
           <source media="(min-width:915px)" srcset="images/hero916.jpg">
           <img src="images/hero566p.webp" alt="Premiere Masonry & Hardscape Design" class="hero-img">
         </picture>
-          <!--
-           <picture><source media="(min-width:650px)" srcset="img_pink_flowers.jpg"><source media="(min-width:465px)" srcset="img_white_flower.jpg"><img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">          </picture>
-          <img class="hero-img"  src="images/hero566.jpg" alt="alternate text for the hero image">
-          <img srcset="images/hero566.jpg 566w, images/hero916.jpg 916w, images/hero1030.jpg 1030w" class="hero-img" sizes="(min-width: 1366px) 916px, (min-width: 1536px) 1030px, 100vw" src="images/hero566.jpg" alt="alternate text for the hero image">
-          <img srcset="images/hero-small.jpg 681w, images/hero-medium.jpg 1504w, images/hero-large.jpg 2560w" class="hero-img" sizes="(min-width: 960px) 540px, 100vw" src="images/hero-medium.jpg" alt="alternate text for the hero image">
-          -->
           <article class="hero-panel">
             <h1 class="hero-heading" style="text-shadow:2px 2px 4px #000;font-weight:bold;font-family:auto;padding:15px;">Premiere Masonry &amp; Hardscape Design</h1>
             <p class="hero-info" style="text-align:center;font-weight:bold;padding-top:0;text-shadow:2px 2px 4px #000;">Regional Experts<br>For Over 35 Years <br>  Residential &amp; Commercial<button class="btn d-b m-c" style="margin-top: 25px;">See More</button></p>
@@ -116,7 +110,7 @@
              <picture>
               <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
               <source media="(min-width:915px)" srcset="images/hero916.jpg">
-              <img src="images/masonry365p.webp" alt="Masonry" class="">
+              <img src="images/masonry365p.webp" alt="Masonry" class="" style="max-width:100%;height:auto;">
             </picture>
           </article>
           <article>
