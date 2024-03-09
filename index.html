@@ -40,7 +40,7 @@
     .btn:hover, .btn:active, .btn:focus {background: #e57930}
     /* --- NAVAGATION --- */
     .fixedbar { background: #BC5A15; color: #fff; position: fixed; top: 0; width: 100%; height: 30px; z-index: 3; font-size: 13px; font-weight:bold;  padding: 7px 0px 0px 30px }
-    .nav { background: #303f5e; position: fixed; width: 100%; height: 156px; padding: 10px; z-index: 3; color: #fff;top: 30px}.nav-link {text-decoration: none;padding: 8px; position: relative; top: -1px; color: inherit }.nav-brand { font-size: 1.25rem; display: inline-block; padding: 8px }
+    .nav { background: #303f5e; position: fixed; width: 100%; height: 156px; padding: 10px; z-index: 3; color: #fff;top: 30px}.nav-link {text-decoration: none;padding: 8px; position: relative; top: -1px; color: inherit }.nav-brand {display: inline-block;}
     /* --- HERO --- */
     .hero { background-color: #303f5e;      z-index: 4    }
     .hero-heading {    color: #fff;    text-align: center;    position: relative; width: 87%; z-index: 2; font-weight: 500; margin: 0 auto;    }
@@ -59,7 +59,10 @@
     .show {display:block;}
     /* --- MOBILE --- */
     @media(max-width:850px) {
-      .nav a{display:block}.nav{overflow: hidden}.navbar-change{height:auto}.nav a{padding:8px 15px}.navbar-toggler{float:right;margin: 0 15px}.bar1,.bar2,.bar3{width:30px;height:3.25px;background-color: #f1f1f1; margin: 6.5px 0;transition:.4s}.change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}.change .bar2 { opacity: 0 }.change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
+      .nav a{display:block}
+      .nav{overflow: hidden}.navbar-change{height:auto}.nav a{padding:8px 15px}.navbar-toggler{float:right;margin: 0 15px}
+      
+      .bar1,.bar2,.bar3{width:30px;height:3.25px;background-color: #f1f1f1; margin: 6.5px 0;transition:.4s}.change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}.change .bar2 { opacity: 0 }.change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
       .hero-panel>h1 { font-size: 2.4rem }
       .hero-info { width: 87% }
       .dropdown-content {position: relative;}
