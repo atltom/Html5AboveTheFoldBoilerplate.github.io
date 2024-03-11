@@ -274,10 +274,12 @@ window.onclick = function(e) {
 window.onscroll = function(e){
   var pageYOffset = window.top.pageYOffset;
   
-  if (pageYOffset >500)
-  {
-    console.log(pageYOffset)  ;
+  if (pageYOffset >99 && pageYOffset <301){
+    console.log(pageYOffset);
+  }else if(pageYOffset==0)  {
+    console.log("top of page");
   }
+
 }
 
 
