@@ -273,13 +273,17 @@ window.onclick = function(e) {
 
 window.onscroll = function(e){
   var pageYOffset = window.top.pageYOffset;
-  
-  if (pageYOffset >99 && pageYOffset <199){
-    console.log(pageYOffset);
-    document.getElementById('logo').style.height="50px"
+  var minLogo = false;
+
+  if (minLogo == false && pageYOffset >99  ){
+    //console.log(pageYOffset);
+    //var curHeight = getElementById('logo').style.height
+    document.getElementById('logo').style.height="50px";
+    minLogo = true;
   }else if(pageYOffset==0)  {
-    console.log("top of page");
+    //console.log("top of page");
     document.getElementById('logo').style.height="126px"
+    minLogo = false;
   }
 
 }
