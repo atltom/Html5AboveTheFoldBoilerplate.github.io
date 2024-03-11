@@ -100,7 +100,7 @@
             <picture>
               <source media="(min-width:1029px)" srcset="images/Phanuef-Associates594p.webp">
               <source media="(min-width:915px)" srcset="images/Phanuef-Associates594p.webp">
-              <img src="images/Phanuef-Associates594p.webp" alt="S. Phaneuf & Associates"  width="594" height="126">
+              <img id="logo" src="images/Phanuef-Associates594p.webp" alt="S. Phaneuf & Associates"  width="594" height="126">
             </picture>
           </span>
           <div id="nav-wrap">
@@ -274,10 +274,12 @@ window.onclick = function(e) {
 window.onscroll = function(e){
   var pageYOffset = window.top.pageYOffset;
   
-  if (pageYOffset >99 && pageYOffset <301){
+  if (pageYOffset >99 && pageYOffset <199){
     console.log(pageYOffset);
+    document.getElementById('logo').style.height="50px"
   }else if(pageYOffset==0)  {
     console.log("top of page");
+    document.getElementById('logo').style.height="126px"
   }
 
 }
