@@ -271,21 +271,24 @@ window.onclick = function(e) {
   }
 }
 
+var viewportHeight = window.innerHeight;
+
 window.onscroll = function(e){
   var pageYOffset = window.top.pageYOffset;
   var minLogo = false;
 
-  if (minLogo == false && pageYOffset >99  ){
-    //console.log(pageYOffset);
-    //var curHeight = getElementById('logo').style.height
-    document.getElementById('logo').style.height="50px";
-    minLogo = true;
-  }else if(pageYOffset==0)  {
-    //console.log("top of page");
-    document.getElementById('logo').style.height="126px"
-    minLogo = false;
+  if (viewportHeight>767){
+    if (minLogo == false && pageYOffset >99  ){
+      //console.log(pageYOffset);
+      //var curHeight = getElementById('logo').style.height
+      document.getElementById('logo').style.height="50px";
+      minLogo = true;
+    }else if(pageYOffset==0)  {
+      //console.log("top of page");
+      document.getElementById('logo').style.height="126px"
+      minLogo = false;
+    }
   }
-
 }
 
 
