@@ -253,7 +253,10 @@
         <link rel="stylesheet" href="css/belowthefold.css">
       </noscript>
       <script type="text/javascript">
+        var mediumDevices = false;
         var viewportHeight = window.innerHeight;
+        var viewportWidth = window.innerWidth;
+        if(viewportWidth>767)mediumDevices=true;
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -268,7 +271,7 @@
         window.onscroll = function(e){
           var pageYOffset = window.top.pageYOffset;
           var minLogo = false;
-          if (viewportHeight>767){
+          if (mediumDevices == true){
             if (minLogo == false && pageYOffset >99  ){
               document.getElementById('logo').style.height="50px";
               document.getElementById('nav-wrap').style.padding="0px"
