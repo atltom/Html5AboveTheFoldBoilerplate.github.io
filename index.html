@@ -274,10 +274,12 @@
           if (mediumDevices == true){
             if (minLogo == false && pageYOffset >99  ){
               document.getElementById('logo').style.height="50px";
-              document.getElementById('nav-wrap').style.padding="0px"
+              document.getElementById('navbar').style.height="55px";
+              document.getElementById('nav-wrap').style.padding="8px 3%"
               minLogo = true;
             }else if(pageYOffset==0)  {
               document.getElementById('logo').style.height="126px"
+              document.getElementById('navbar').style.height="129px";
               document.getElementById('nav-wrap').style.padding="3%"
               minLogo = false;
             }
