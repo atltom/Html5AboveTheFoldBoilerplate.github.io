@@ -272,7 +272,12 @@ window.onclick = function(e) {
 }
 
 window.onscroll = function(e){
-  console.log(e)  ;
+  var pageYOffset = window.top.pageYOffset;
+  
+  if (pageYOffset >500)
+  {
+    console.log(pageYOffset)  ;
+  }
 }
 
 
