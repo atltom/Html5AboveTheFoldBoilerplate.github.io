@@ -253,45 +253,33 @@
         <link rel="stylesheet" href="css/belowthefold.css">
       </noscript>
       <script type="text/javascript">
-
-
-        /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-var viewportHeight = window.innerHeight;
-
-window.onscroll = function(e){
-  var pageYOffset = window.top.pageYOffset;
-  var minLogo = false;
-
-  if (viewportHeight>767){
-    if (minLogo == false && pageYOffset >99  ){
-      //console.log(pageYOffset);
-      //var curHeight = getElementById('logo').style.height
-      document.getElementById('logo').style.height="50px";
-      minLogo = true;
-    }else if(pageYOffset==0)  {
-      //console.log("top of page");
-      document.getElementById('logo').style.height="126px"
-      minLogo = false;
-    }
-  }
-}
-
-
+        var viewportHeight = window.innerHeight;
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        window.onscroll = function(e){
+          var pageYOffset = window.top.pageYOffset;
+          var minLogo = false;
+          if (viewportHeight>767){
+            if (minLogo == false && pageYOffset >99  ){
+              document.getElementById('logo').style.height="50px";
+              document.getElementById('nav-wrap').style.padding="0px"
+              minLogo = true;
+            }else if(pageYOffset==0)  {
+              document.getElementById('logo').style.height="126px"
+              document.getElementById('nav-wrap').style.padding="3%"
+              minLogo = false;
+            }
+          }
+        }
         function naviconClick(navicon) {
           navicon.classList.toggle("change");
           var nav = document.getElementById('navbar');
@@ -302,17 +290,13 @@ window.onscroll = function(e){
             ref = window.document.getElementsByTagName('head')[0];
           ss.rel = 'stylesheet';
           ss.href = href;
-          // temporarily, set media to something non-matching to ensure it'll
-          // fetch without blocking render
           ss.media = 'only x';
           ref.parentNode.insertBefore(ss, ref);
           setTimeout(function () {
-            // set media back to `all` so that the stylesheet applies once it loads
             ss.media = 'all';
           }, 0);
         }
         loadCSS('css/belowthefold.css');
-        /* (function() {var font2 = document.createElement('link');font2.type = 'text/css';font2.rel = 'stylesheet';font2.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';        var orig = document.getElementsByTagName('link')[0];orig.parentNode.insertBefore(font2, orig);})(); */
       </script>
   </body>
 </html>
