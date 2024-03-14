@@ -3,6 +3,10 @@
     background-color: #f4f4f4;
 }
 
+.footer-social-links > li {
+    display: inline-block;
+}
+
 footer{
     background-color:#303f5e;  
     color:white;
