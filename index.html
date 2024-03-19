@@ -37,8 +37,9 @@
     hr {border: 1.5px solid #bc5a15;margin: 5px 30px -5px 30px}
     .btn { text-decoration: none; background: #BC5A15; color: #fff; display: inline-block; padding: 12px 30px 14px; border: 0; border-radius: 6px; cursor: pointer }
     .btn:hover, .btn:active, .btn:focus {background: #e57930}
+
     /* --- NAVAGATION --- */
-    .fixedbar { background: #BC5A15; color: #fff; position: fixed; top: 0; width: 100%; height: 30px; z-index: 3; font-size: 13px; font-weight:bold;  padding: 7px 0px 0px 30px }
+    #fixedbar { background: #BC5A15; color: #fff; position: fixed; top: 0; width: 100%; height: 30px; z-index: 3; font-size: 13px; font-weight:bold;  padding: 7px 0px 0px 30px }
     #nav-wrap { position: absolute;top: 50px;right: 0;}
     /* #nav-wrap {top:0;right:0; float: right;} */
     /* #nav-wrap {float: right;padding: 3%;    background: #303f5e;} */
@@ -52,6 +53,7 @@
     .dropdown-content a {color: #fff;padding: 12px 16px;text-decoration: none;display: block;}
     .dropdown-content a:hover {background-color: #222f49;}
     .show {display:block;}
+
     /* --- HERO --- */
     #hero { background-color: #303f5e;      z-index: 4    }
     #hero-img {max-width:100%}
@@ -61,15 +63,17 @@
 
     /* --- HELPERS --- */
     .d-b { display: block } .m-c { margin: 0 auto }.p-1{padding:10px}
+
+    /* --- MEDIA --- */
     @media(max-width:1162px) {
-      /* height: 58px;  #logo{height: 48px;} */
       #nav-wrap{background: #303f5e;width: 100%;padding-left: 20px;position: relative;top: 0;right: 0;}
     }
-    /* @media(max-width:767px) { */
+    
     @media(max-width:617px) {
       .nav a{display:block}
       .nav{overflow: hidden}
       .navbar-change{height:auto}.nav a{padding:8px 15px}.navbar-toggler{float:right;margin: 0 15px;position: relative}
+      
       #nav-wrap{float: none;padding: 0;position: relative;}
       .nav-brand {padding: 0 12px;}
       .bar1,.bar2,.bar3{width:30px;height:3.25px;background-color: #f1f1f1; margin: 6.5px 0;transition:.4s}.change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}.change .bar2 { opacity: 0 }.change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
@@ -77,23 +81,13 @@
       #hero-panel{margin-top:30vh;}
       #hero-heading { font-size: 2.2rem;text-align: left;line-height: 2.2rem;font-weight: bold}
       #hero-info { width: 87% }
-      
       .dropdown-content {position: relative;}
     }
-    @media(max-width:675px) {
-      /* .nav { height: 143px;} */
-    }
-    @media(max-width:567px) {
-      /* .nav { height: 143px;} */
-    }
-    @media(max-width:435px) {
-      /* .nav { height: 133px;} */
-    }
+    
   </style>
   <body>
     <header>
-      <div class="fixedbar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff" style="width:10px;height:auto;display:inline-block;margin-right:3px;"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path></svg><a style="color:#fff;text-decoration:none!important" href="tel:+19786694919">978-669-4919</a>&nbsp;&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  fill="#fff" style="width:10px;height:auto;display:inline-block;margin-right:3px;""><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>info@phaneufassociates.com</div>
-      
+      <div id="fixedbar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff" style="width:10px;height:auto;display:inline-block;margin-right:3px;"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path></svg><a style="color:#fff;text-decoration:none!important" href="tel:+19786694919">978-669-4919</a>&nbsp;&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  fill="#fff" style="width:10px;height:auto;display:inline-block;margin-right:3px;""><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>info@phaneufassociates.com</div>
       <nav id="navbar" class="nav" tabindex="-1" >
         <div onclick="naviconClick(this)" class="navbar-toggler" style="z-index:9;">
           <div class="bar1"></div>
@@ -102,7 +96,6 @@
         </div>
         <div>
           <a href="/index" class="nav-link nav-brand" style="z-index:8;">
-            <!--S. Phaneuf & Associates-->
             <picture>
               <source media="(min-width:1029px)" srcset="images/Phanuef-Associates594p.webp">
               <source media="(min-width:915px)" srcset="images/Phanuef-Associates594p.webp">
@@ -125,256 +118,244 @@
           </div>
         </div>
       </nav>
-
-
     </header>
 
-
-      <main>
-        <div id="hero">
-          <picture>
-            <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
-            <source media="(min-width:915px)" srcset="images/hero916.jpg">
-            <img src="images/566/asphalt-and-masonry.webp" alt="Residential Asphalt and Masonry " id="hero-img" width="566" height="1080">
-          </picture>
-          <article id="hero-panel">
-              <h1 id="hero-heading">Masonry and Paving Company Serving Massachusetts and Southern New Hampshire</h1>
-              <p id="hero-info">
-                Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial &amp; Residential                
-                <a href="/contact-us" class="btn d-b m-c" style="margin-top: 25px;width: 210px">Get Started</a>
-              </p>
-          </article>
-        </div>
-
-
-
-
-
-
-
-
-
-
-        
-       
-        <article class="p-1" style="text-align: center;font-weight: bold">
-          <h2 style="font-size: 23px;padding: 0px 17px;margin-bottom: 45px;">Local, Professional Experts For All Your Masonry & Hardscape, Asphalt Paving and Excavation & Site Development Work</h2>
-          <p style="text-align:center">We are a full service residential and commercial company offering a wide range of services ranging from landscape construction, masonry construction, asphalt paving, excavation and site development to materials supplies and snow and ice management. Our company serves all of New England. We are proud of our outstanding reputation for quality and customer service. When you hire our company, you get experience, knowledge, quality and most importantly commitment.</p>
-        </article>
-
-        <div style="text-align: center;font-size: 22px;padding: 30px;font-weight: 700;font-style: italic;">Enjoy peace of mind knowing your project or property is being expertly handled by one of the most reliable professionals in the region.</div>
-        <div style="text-align: center">
-          <a class="btn" href="/services" style="background: #fff;color:green;border:3px solid green;font-weight: bolder;border-radius: 18px;">EXPLORE OUR SERVICES</a>
-        </div>
-
-
-        <!--below-the-fold -->
-        <section class="below-the-fold flex-container">
-          
-            <article>
-            <h3>Masonry & Hardscapes</h3>
-            <hr>
-            <p>Stone, slate, brick. These materials can significantly enhance the beauty of your property, add to its value, and provide years of enjoyment in the form of stone walkways, paver stone patios, stone walls and steps, stone veneer, outdoor kitchens and fire pits, and more! New England’s climate can be rough on stonework or masonry. But not to worry…our experienced approach combines quality materials and smart design to construct strong, long lasting masonry and stonework for outdoor living spaces that add natural beauty and value to your home or business.</p>
-            <picture>
-              <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
-              <source media="(min-width:915px)" srcset="images/hero916.jpg">
-              <img src="images/masonry365p.webp" alt="Masonry" width="365" height="274">
-            </picture>
-          </article>
-          <article>
-            <h3>Asphalt Paving</h3>
-            <hr>
-            <p>S. Phaneuf & Associates is one the premier asphalt paving contractors for New England, taking care of all asphalt paving needs for driveways, parking lots, asphalt berm, repairs, drainage, catch basins and more. We are committed to quality work and customer satisfaction. Customer satisfaction doesn’t stop with the job specifications. We are dedicated to excellent service with a people-friendly approach, in order to make your experience with us for your paving needs a pleasant one. If your paving needs are for your home or for your commercial/industrial project, S. Phaneuf & Associates has the experience, equipment and skilled crews to complete your work on time, within budget and with expected quality results. Call us today for an estimate.</p>
-            <picture>
-              <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
-              <source media="(min-width:915px)" srcset="images/hero916.jpg">
-              <img src="images/asphalt-paving365p.webp" alt="Asphalt Paving" width="365" height="274">
-            </picture>
-          </article>
-        </section>
-         <section class="below-the-fold flex-container">
-          <article>
-            <h3>Excavation & Site Development</h3>
-            <hr>
-            <p>S. Phaneuf & Associates is a full service excavation contractor, specializing in residential, commercial and industrial site development excellence. Our solid reputation was built on hard work, years of outstanding customer service and on time project delivery. Beyond digging up matter buried in the ground and leveling off the construction site, grading and excavating, we also secure relevant licenses and permits to perform the work as well as ensure the safety of workers and the environment.</p>
-            <picture>
-              <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
-              <source media="(min-width:915px)" srcset="images/hero916.jpg">
-              <img src="images/site-development365p.webp" alt="Site Development" width="365" height="274">
-            </picture>
-          </article>
-          <article>
-            <h3>Snow & Ice Management</h3>
-            <hr>
-            <p>S. Phaneuf & Associates understand the importance of maintaining safe and accessible parking lots and sidewalks for your customers and employees, as well as prompt, reliable snowplowing services for our residential customers. Whether you need a one-time snow removal service or a regular ongoing snow and ice management solution, we can attend to your specific needs.  We maintain a careful watch for weather conditions and provide prompt preparation and response for our customers.</p>
-            <picture>
-              <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
-              <source media="(min-width:915px)" srcset="images/hero916.jpg">
-              <img src="images/snow-removal365p.webp" alt="Snow & Ice Management" width="365" height="274">
-            </picture>
-          </article>
-
-
-        </section>
-
-        
-        <div style="text-align: center;padding: 60px 55px;font-size: 22px;font-weight: bolder;">
-          Visit Our Stone Veneer Fabrication &amp; Installation Division at:
-          <a href="https://www.phaneufstone.com/home" target="_blank" rel="noopener noreferrer" style="display: block;color: #bda839;padding: 15px;"><strong>PHANEUF STONE</strong></a>
-        </div>
-
-        <hr>
-        <div>
-          <div style="text-align: center;font-size: 32px;font-weight:bolder;padding: 32px;margin-top: 30px;">See What Our Clients Are Saying…</div>
-          <p style="text-align: center;"><em><strong>“These fellows came over and regraded and asphalted our existing driveway. &nbsp;They also excavated and installed a second driveway for us. &nbsp;In addition, they repaired and stuccoed (refinished with a smooth concrete surface) our existing back stairs. &nbsp;All three tasks were performed with an admirable attention to detail, and for a very decent price. &nbsp;Beyond that, the guys working at my house were really friendly, and polite. Can I just mention, that the stucco job they did on my stairs is really pretty? &nbsp;Not just a job well done, but pretty. &nbsp;The concrete is so finely worked that it resembles fondant icing, it’s THAT smooth. &nbsp;That’s good work, right there. They do much more than what they did for me. &nbsp;All kinds of hardscapes and stonework.</strong></em></p>
-          <p style="text-align: center;"><em><strong>Would I hire them, again? &nbsp;You betcha!</strong></em></p>
-          <p style="text-align: center;"><em><strong>– Kerri O., Maynard, MA</strong></em></p>
-        </div>
-        <div style="text-align: center">
-          <a class="btn" href="/contact-us" style="background: #fff;color:green;border:3px solid green;font-weight: bolder;border-radius: 18px;">GET STARTED</a>
-        </div>
-
-        <hr style="margin-top: 60px;margin-bottom: 60px;">
+    <main>
+      
+      <div id="hero">
         <picture>
           <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
           <source media="(min-width:915px)" srcset="images/hero916.jpg">
-          <img src="images/services365p.webp" alt="Our Servies" width="365" height="274">
+          <img id="hero-img" src="images/566/asphalt-and-masonry.webp" alt="Residential Asphalt and Masonry" width="566" height="1080">
         </picture>
-      </main>
-      <footer>
-        <div class="flex-container">
-          <div class="flex-item" >
-            <h4>S. Phaneuf & Associates</h4>
-            <p>With 35 years of experience, no job is too big or complex for us to handle.  Trust in a company that takes pride in their work.</p>
-            <address>
-              <ul>
-                <li>P.O. Box 190
-                <br>Groton, MA 01450
-                </li>
-                <li>Phone: <a style="color:#fff;text-decoration:none!important" href="tel:+19786694919">978-669-4919</a></li>
-                <li>Email: info@phaneufassociates.com</li>
-              </ul>
-            </address>
-          </div>
-          <div class="flex-item"  > 
-            <h4>POPULAR LINKS</h4>
-              <ul class="footer-links" >
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Reviews</a>
-                </li>
-                <li>
-                  <a href="#">Services</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">Asphalt Paving</a>
-                </li>
-                <li>
-                  <a href="#">Masonary & Hardscapes</a>
-                </li>
-                <li>
-                  <a href="#">Excavation & Site Development</a>
-                </li>
-              </ul>
-          </div>
-          <div class="flex-item"> 
-            <h3>GET CONNECTED</h3>
-              <ul class="footer-social-links">
-                <li>
-                  <a aria-hidden="false" aria-label="Follow us on Facebook" href="https://www.facebook.com/p/Phaneuf-Associates-100054709692721" role="link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" style="width: 36px;height: 36px;"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-                  </a>
-                </li>
-                <li>
-                  <a aria-hidden="false" aria-label="Follow us on LinkedIn" href="https://www.linkedin.com/company/phaneuf-associates-incorporated/about/" role="link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="white" class="mercado-match" width="36" height="36" focusable="false">
-                      <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-          </div>
+        <article id="hero-panel">
+            <h1 id="hero-heading">Masonry and Paving Company Serving Massachusetts and Southern New Hampshire</h1>
+            <p id="hero-info">
+              Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial &amp; Residential                
+              <a href="/contact-us" class="btn d-b m-c" style="margin-top: 25px;width: 210px">Get Started</a>
+            </p>
+        </article>
+      </div>
+      
+      <article class="p-1" style="text-align: center;font-weight: bold">
+        <h2 style="font-size: 23px;padding: 0px 17px;margin-bottom: 45px;">Local, Professional Experts For All Your Masonry & Hardscape, Asphalt Paving and Excavation & Site Development Work</h2>
+        <p style="text-align:center">We are a full service residential and commercial company offering a wide range of services ranging from landscape construction, masonry construction, asphalt paving, excavation and site development to materials supplies and snow and ice management. Our company serves all of New England. We are proud of our outstanding reputation for quality and customer service. When you hire our company, you get experience, knowledge, quality and most importantly commitment.</p>
+      </article>
+
+      <div style="text-align: center;font-size: 22px;padding: 30px;font-weight: 700;font-style: italic;">
+        Enjoy peace of mind knowing your project or property is being expertly handled by one of the most reliable professionals in the region.
+      </div>
+      
+      <div style="text-align: center">
+        <a class="btn" href="/services" style="background: #fff;color:green;border:3px solid green;font-weight: bolder;border-radius: 18px;">EXPLORE OUR SERVICES</a>
+      </div>
+
+
+      <!--below-the-fold -->
+      <section class="below-the-fold flex-container">
+
+        <article>
+          <h3>Masonry & Hardscapes</h3>
+          <hr>
+          <p>Stone, slate, brick. These materials can significantly enhance the beauty of your property, add to its value, and provide years of enjoyment in the form of stone walkways, paver stone patios, stone walls and steps, stone veneer, outdoor kitchens and fire pits, and more! New England’s climate can be rough on stonework or masonry. But not to worry…our experienced approach combines quality materials and smart design to construct strong, long lasting masonry and stonework for outdoor living spaces that add natural beauty and value to your home or business.</p>
+          <picture>
+            <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
+            <source media="(min-width:915px)" srcset="images/hero916.jpg">
+            <img src="images/masonry365p.webp" alt="Masonry" width="365" height="274">
+          </picture>
+        </article>
+
+        <article>
+          <h3>Asphalt Paving</h3>
+          <hr>
+          <p>S. Phaneuf & Associates is one the premier asphalt paving contractors for New England, taking care of all asphalt paving needs for driveways, parking lots, asphalt berm, repairs, drainage, catch basins and more. We are committed to quality work and customer satisfaction. Customer satisfaction doesn’t stop with the job specifications. We are dedicated to excellent service with a people-friendly approach, in order to make your experience with us for your paving needs a pleasant one. If your paving needs are for your home or for your commercial/industrial project, S. Phaneuf & Associates has the experience, equipment and skilled crews to complete your work on time, within budget and with expected quality results. Call us today for an estimate.</p>
+          <picture>
+            <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
+            <source media="(min-width:915px)" srcset="images/hero916.jpg">
+            <img src="images/asphalt-paving365p.webp" alt="Asphalt Paving" width="365" height="274">
+          </picture>
+        </article>
+      </section>
+
+      <section class="below-the-fold flex-container">
+
+        <article>
+          <h3>Excavation & Site Development</h3>
+          <hr>
+          <p>S. Phaneuf & Associates is a full service excavation contractor, specializing in residential, commercial and industrial site development excellence. Our solid reputation was built on hard work, years of outstanding customer service and on time project delivery. Beyond digging up matter buried in the ground and leveling off the construction site, grading and excavating, we also secure relevant licenses and permits to perform the work as well as ensure the safety of workers and the environment.</p>
+          <picture>
+            <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
+            <source media="(min-width:915px)" srcset="images/hero916.jpg">
+            <img src="images/site-development365p.webp" alt="Site Development" width="365" height="274">
+          </picture>
+        </article>
+
+        <article>
+          <h3>Snow & Ice Management</h3>
+          <hr>
+          <p>S. Phaneuf & Associates understand the importance of maintaining safe and accessible parking lots and sidewalks for your customers and employees, as well as prompt, reliable snowplowing services for our residential customers. Whether you need a one-time snow removal service or a regular ongoing snow and ice management solution, we can attend to your specific needs.  We maintain a careful watch for weather conditions and provide prompt preparation and response for our customers.</p>
+          <picture>
+            <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
+            <source media="(min-width:915px)" srcset="images/hero916.jpg">
+            <img src="images/snow-removal365p.webp" alt="Snow & Ice Management" width="365" height="274">
+          </picture>
+        </article>
+
+      </section>
+
+      
+      <div style="text-align: center;padding: 60px 55px;font-size: 22px;font-weight: bolder;">
+        Visit Our Stone Veneer Fabrication &amp; Installation Division at:
+        <a href="https://www.phaneufstone.com/home" target="_blank" rel="noopener noreferrer" style="display: block;color: #bda839;padding: 15px;"><strong>PHANEUF STONE</strong></a>
+      </div>
+
+      <hr>
+
+      <div>
+        <div style="text-align: center;font-size: 32px;font-weight:bolder;padding: 32px;margin-top: 30px;">See What Our Clients Are Saying…</div>
+        <p style="text-align: center;"><em><strong>“These fellows came over and regraded and asphalted our existing driveway. &nbsp;They also excavated and installed a second driveway for us. &nbsp;In addition, they repaired and stuccoed (refinished with a smooth concrete surface) our existing back stairs. &nbsp;All three tasks were performed with an admirable attention to detail, and for a very decent price. &nbsp;Beyond that, the guys working at my house were really friendly, and polite. Can I just mention, that the stucco job they did on my stairs is really pretty? &nbsp;Not just a job well done, but pretty. &nbsp;The concrete is so finely worked that it resembles fondant icing, it’s THAT smooth. &nbsp;That’s good work, right there. They do much more than what they did for me. &nbsp;All kinds of hardscapes and stonework.</strong></em></p>
+        <p style="text-align: center;"><em><strong>Would I hire them, again? &nbsp;You betcha!</strong></em></p>
+        <p style="text-align: center;"><em><strong>– Kerri O., Maynard, MA</strong></em></p>
+      </div>
+      <div style="text-align: center">
+        <a class="btn" href="/contact-us" style="background: #fff;color:green;border:3px solid green;font-weight: bolder;border-radius: 18px;">GET STARTED</a>
+      </div>
+
+      <hr style="margin-top: 60px;margin-bottom: 60px;">
+
+      <picture>
+        <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
+        <source media="(min-width:915px)" srcset="images/hero916.jpg">
+        <img src="images/services365p.webp" alt="Our Servies" width="365" height="274">
+      </picture>
+    
+    </main>
+
+    <footer>
+      <div class="flex-container">
+        <div class="flex-item" >
+          <h4>S. Phaneuf & Associates</h4>
+          <p>With 35 years of experience, no job is too big or complex for us to handle.  Trust in a company that takes pride in their work.</p>
+          <address>
+            <ul>
+              <li>P.O. Box 190
+              <br>Groton, MA 01450
+              </li>
+              <li>Phone: <a style="color:#fff;text-decoration:none!important" href="tel:+19786694919">978-669-4919</a></li>
+              <li>Email: info@phaneufassociates.com</li>
+            </ul>
+          </address>
         </div>
-        <div class="copyright">
-          © 2024 S. Phaneuf & Associates </a>
+        <div class="flex-item"  > 
+          <h4>POPULAR LINKS</h4>
+            <ul class="footer-links" >
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Reviews</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Asphalt Paving</a>
+              </li>
+              <li>
+                <a href="#">Masonary & Hardscapes</a>
+              </li>
+              <li>
+                <a href="#">Excavation & Site Development</a>
+              </li>
+            </ul>
         </div>
-      </footer>
-      <noscript>
-        <link rel="stylesheet" href="css/belowthefold.css">
-      </noscript>
-      <script type="text/javascript">
-        var mediumDevices = false;
-        var viewportHeight = window.innerHeight;
-        var viewportWidth = window.innerWidth;
-        if(viewportWidth>1167)mediumDevices=true;
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropbtn')) {
-          var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-              myDropdown.classList.remove('show');
-            }
+        <div class="flex-item"> 
+          <h3>GET CONNECTED</h3>
+            <ul class="footer-social-links">
+              <li>
+                <a aria-hidden="false" aria-label="Follow us on Facebook" href="https://www.facebook.com/p/Phaneuf-Associates-100054709692721" role="link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" style="width: 36px;height: 36px;"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a aria-hidden="false" aria-label="Follow us on LinkedIn" href="https://www.linkedin.com/company/phaneuf-associates-incorporated/about/" role="link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="white" class="mercado-match" width="36" height="36" focusable="false">
+                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2024 S. Phaneuf & Associates </a>
+      </div>
+    </footer>
+    <noscript>
+      <link rel="stylesheet" href="css/belowthefold.css">
+    </noscript>
+    <script type="text/javascript">
+      var mediumDevices = false;
+      var viewportHeight = window.innerHeight;
+      var viewportWidth = window.innerWidth;
+      if(viewportWidth>1167)mediumDevices=true;
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
           }
         }
-        window.onscroll = function(e){
-          var pageYOffset = window.top.pageYOffset;
-          var minLogo = false;
-          if (mediumDevices == true){
-            if (minLogo == false && pageYOffset >99  ){
-              document.getElementById('logo').style.height="50px";
-              document.getElementById('navbar').style.height="55px";
-              document.getElementById('nav-wrap').style.top="8px"
-              minLogo = true;
-            }else if(pageYOffset==0)  {
-              document.getElementById('logo').style.height="126px"
-              document.getElementById('navbar').style.height="129px";
-              document.getElementById('nav-wrap').style.top="50px"
-              minLogo = false;
-            }
+      }
+      window.onscroll = function(e){
+        var pageYOffset = window.top.pageYOffset;
+        var minLogo = false;
+        if (mediumDevices == true){
+          if (minLogo == false && pageYOffset >99  ){
+            document.getElementById('logo').style.height="50px";
+            document.getElementById('navbar').style.height="55px";
+            document.getElementById('nav-wrap').style.top="8px"
+            minLogo = true;
+          }else if(pageYOffset==0)  {
+            document.getElementById('logo').style.height="126px"
+            document.getElementById('navbar').style.height="129px";
+            document.getElementById('nav-wrap').style.top="50px"
+            minLogo = false;
           }
         }
-        function naviconClick(navicon) {
-          navicon.classList.toggle("change");
-          var nav = document.getElementById('navbar');
-          nav.classList.toggle("navbar-change");
-        }
-        function loadCSS(href) {
-          var ss = window.document.createElement('link'),
-            ref = window.document.getElementsByTagName('head')[0];
-          ss.rel = 'stylesheet';
-          ss.href = href;
-          ss.media = 'only x';
-          ref.parentNode.insertBefore(ss, ref);
-          setTimeout(function () {
-            ss.media = 'all';
-          }, 0);
-        }
-        loadCSS('css/belowthefold.css');
-      </script>
+      }
+      function naviconClick(navicon) {
+        navicon.classList.toggle("change");
+        var nav = document.getElementById('navbar');
+        nav.classList.toggle("navbar-change");
+      }
+      function loadCSS(href) {
+        var ss = window.document.createElement('link'),
+          ref = window.document.getElementsByTagName('head')[0];
+        ss.rel = 'stylesheet';
+        ss.href = href;
+        ss.media = 'only x';
+        ref.parentNode.insertBefore(ss, ref);
+        setTimeout(function () {
+          ss.media = 'all';
+        }, 0);
+      }
+      loadCSS('css/belowthefold.css');
+    </script>
   </body>
 </html>
 
- <!--
-        <div style="text-align: center;font-size: 35px;font-weight: bold;margin: 50px;font-family: serif;">
-          CALL TODAY!<br>
-          <a href="tel:+19786694919" style="color:#222;text-decoration:none!important" >978-669-4919</a>
-          <hr>
-        </div>
-        -->
-        
-
- <!--
-            <h1 class="hero-heading" style="text-shadow:2px 2px 4px #000;font-weight:bold;font-family:auto;padding:5px 0px">Premiere Masonry &amp; Hardscape Design</h1>
-            <p class="hero-info" style="text-align:center;font-weight:bold;padding-top:0;text-shadow:2px 2px 4px #000;">Regional Experts<br>For Over 35 Years <br>  Residential &amp; Commercial
-              <a href="/contact-us" class="btn d-b m-c" style="margin-top: 25px;width: 210px">Get Started</a>
-            </p>
-            -->
-            <!--Welcome to S.Phaneuf and Associates, your one-stop destination for all your masonry, hardscape, asphalt excavation, and site work development needs.  -->
-                <!--Our team of skilled professionals is dedicated to providing top-quality services that exceed your expectations. Whether you're looking to enhance your outdoor space with beautiful masonry and hardscape designs or require precision asphalt excavation and site work development, we have the expertise to bring your vision to life.-->
+<!--@media(max-width:767px) { }   @media(max-width:675px) { .nav { height: 143px;}  } @media(max-width:567px) { .nav { height: 143px;} } @media(max-width:435px) {.nav { height: 133px;}}*/
+<div style="text-align: center;font-size: 35px;font-weight: bold;margin: 50px;font-family: serif;"> CALL TODAY!<br> <a href="tel:+19786694919" style="color:#222;text-decoration:none!important" >978-669-4919</a> <hr></div>
+<h1 class="hero-heading" style="text-shadow:2px 2px 4px #000;font-weight:bold;font-family:auto;padding:5px 0px">Premiere Masonry &amp; Hardscape Design</h1>
+<p class="hero-info" style="text-align:center;font-weight:bold;padding-top:0;text-shadow:2px 2px 4px #000;">Regional Experts<br>For Over 35 Years <br>  Residential &amp; Commercial
+<a href="/contact-us" class="btn d-b m-c" style="margin-top: 25px;width: 210px">Get Started</a>
+</p>-->
+<!--Welcome to S.Phaneuf and Associates, your one-stop destination for all your masonry, hardscape, asphalt excavation, and site work development needs.  -->
+<!--Our team of skilled professionals is dedicated to providing top-quality services that exceed your expectations. Whether you're looking to enhance your outdoor space with beautiful masonry and hardscape designs or require precision asphalt excavation and site work development, we have the expertise to bring your vision to life.-->
