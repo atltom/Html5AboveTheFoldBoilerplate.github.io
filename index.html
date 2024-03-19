@@ -53,11 +53,12 @@
     .dropdown-content a:hover {background-color: #222f49;}
     .show {display:block;}
     /* --- HERO --- */
-    .hero { background-color: #303f5e;      z-index: 4    }
-    .hero-heading {color: #fff;text-align: center;position: relative; width: 87%; z-index: 2; font-weight: 500; margin: 0 auto;font-size: 3vw;}
-    .hero-img {max-width:100%}
-    .hero-panel { position: absolute;top: 0 ;left: 0;width: 80%; text-align: center;font-size: 18px;background: #303f5e96;margin:10%;margin-top: 24vw;}
-    .hero-info { margin: 0 auto;    color: #ffffff;}
+    #hero { background-color: #303f5e;      z-index: 4    }
+    #hero-img {max-width:100%}
+    #hero-panel { position: absolute;top: 0 ;left: 0;width: 80%; text-align: center;font-size: 18px;background: #303f5e96;margin:10%;margin-top: 24vw;}
+    #hero-heading {color: #fff;text-align: center;position: relative; width: 87%; z-index: 2; font-weight: 500; margin: 0 auto;font-size: 3vw;}
+    #hero-info { margin: 0 auto;    color: #ffffff;text-align:center;font-weight:bold;padding-top:0;text-shadow:2px 2px 4px #000;}
+
     /* --- HELPERS --- */
     .d-b { display: block } .m-c { margin: 0 auto }.p-1{padding:10px}
     @media(max-width:1162px) {
@@ -72,10 +73,11 @@
       #nav-wrap{float: none;padding: 0;position: relative;}
       .nav-brand {padding: 0 12px;}
       .bar1,.bar2,.bar3{width:30px;height:3.25px;background-color: #f1f1f1; margin: 6.5px 0;transition:.4s}.change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}.change .bar2 { opacity: 0 }.change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
-      .hero-panel{margin-top:30vh;}
-      .hero-panel>h1 { font-size: 2.2rem }
-      .hero-info { width: 87% }
-      .hero-img {margin-top: 55px;}
+      #hero-img {margin-top: 55px;}
+      #hero-panel{margin-top:30vh;}
+      #hero-heading { font-size: 2.2rem;text-align: left;line-height: 2.2rem;font-weight: bold}
+      #hero-info { width: 87% }
+      
       .dropdown-content {position: relative;}
     }
     @media(max-width:675px) {
@@ -129,37 +131,32 @@
 
 
       <main>
-        <div class="hero">
+        <div id="hero">
           <picture>
             <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
             <source media="(min-width:915px)" srcset="images/hero916.jpg">
-            <img src="images/566/asphalt-and-masonry.webp" alt="Residential Asphalt and Masonry " class="hero-img" width="566" height="1080">
+            <img src="images/566/asphalt-and-masonry.webp" alt="Residential Asphalt and Masonry " id="hero-img" width="566" height="1080">
           </picture>
-          <article class="hero-panel">
-            <!--
-            <h1 class="hero-heading" style="text-shadow:2px 2px 4px #000;font-weight:bold;font-family:auto;padding:5px 0px">Premiere Masonry &amp; Hardscape Design</h1>
-            <p class="hero-info" style="text-align:center;font-weight:bold;padding-top:0;text-shadow:2px 2px 4px #000;">Regional Experts<br>For Over 35 Years <br>  Residential &amp; Commercial
-              <a href="/contact-us" class="btn d-b m-c" style="margin-top: 25px;width: 210px">Get Started</a>
-            </p>
-            -->
-              <h1 class="hero-heading"  style="text-shadow:2px 2px 4px #000;font-weight:bold;font-family:auto;padding:15px;">Masonry and Paving Company Serving Massachusetts and Southern New Hampshire</h1>
-              <p class="hero-info" style="text-align:center;font-weight:bold;padding-top:0;text-shadow:2px 2px 4px #000;">
-                Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial &amp; Residential
-                <!--Welcome to S.Phaneuf and Associates, your one-stop destination for all your masonry, hardscape, asphalt excavation, and site work development needs.  -->
-                <!--Our team of skilled professionals is dedicated to providing top-quality services that exceed your expectations. Whether you're looking to enhance your outdoor space with beautiful masonry and hardscape designs or require precision asphalt excavation and site work development, we have the expertise to bring your vision to life.-->
+          <article id="hero-panel">
+              <h1 id="hero-heading">Masonry and Paving Company Serving Massachusetts and Southern New Hampshire</h1>
+              <p id="hero-info">
+                Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial &amp; Residential                
                 <a href="/contact-us" class="btn d-b m-c" style="margin-top: 25px;width: 210px">Get Started</a>
               </p>
           </article>
         </div>
+
+
+
+
+
+
+
+
+
+
         
-        <!--
-        <div style="text-align: center;font-size: 35px;font-weight: bold;margin: 50px;font-family: serif;">
-          CALL TODAY!<br>
-          <a href="tel:+19786694919" style="color:#222;text-decoration:none!important" >978-669-4919</a>
-          <hr>
-        </div>
-        -->
-        
+       
         <article class="p-1" style="text-align: center;font-weight: bold">
           <h2 style="font-size: 23px;padding: 0px 17px;margin-bottom: 45px;">Local, Professional Experts For All Your Masonry & Hardscape, Asphalt Paving and Excavation & Site Development Work</h2>
           <p style="text-align:center">We are a full service residential and commercial company offering a wide range of services ranging from landscape construction, masonry construction, asphalt paving, excavation and site development to materials supplies and snow and ice management. Our company serves all of New England. We are proud of our outstanding reputation for quality and customer service. When you hire our company, you get experience, knowledge, quality and most importantly commitment.</p>
@@ -363,3 +360,21 @@
       </script>
   </body>
 </html>
+
+ <!--
+        <div style="text-align: center;font-size: 35px;font-weight: bold;margin: 50px;font-family: serif;">
+          CALL TODAY!<br>
+          <a href="tel:+19786694919" style="color:#222;text-decoration:none!important" >978-669-4919</a>
+          <hr>
+        </div>
+        -->
+        
+
+ <!--
+            <h1 class="hero-heading" style="text-shadow:2px 2px 4px #000;font-weight:bold;font-family:auto;padding:5px 0px">Premiere Masonry &amp; Hardscape Design</h1>
+            <p class="hero-info" style="text-align:center;font-weight:bold;padding-top:0;text-shadow:2px 2px 4px #000;">Regional Experts<br>For Over 35 Years <br>  Residential &amp; Commercial
+              <a href="/contact-us" class="btn d-b m-c" style="margin-top: 25px;width: 210px">Get Started</a>
+            </p>
+            -->
+            <!--Welcome to S.Phaneuf and Associates, your one-stop destination for all your masonry, hardscape, asphalt excavation, and site work development needs.  -->
+                <!--Our team of skilled professionals is dedicated to providing top-quality services that exceed your expectations. Whether you're looking to enhance your outdoor space with beautiful masonry and hardscape designs or require precision asphalt excavation and site work development, we have the expertise to bring your vision to life.-->
