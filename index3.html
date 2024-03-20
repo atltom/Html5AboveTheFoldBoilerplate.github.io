@@ -41,7 +41,8 @@
     /* --- NAVAGATION --- */
     #fixedbar { background: #BC5A15; color: #fff; position: fixed; top: 0; width: 100%; height: 30px; z-index: 3; font-size: 13px; font-weight:bold;  padding: 7px 0px 0px 30px }
     #nav-wrap { position: absolute;top: 50px;right: 0;}
-    .nav {background: #2d4061;  background: red;  position: fixed; width: 100%; height: 107px; z-index: 3; color: #fff;top: 30px;border-bottom: 2px solid #bc5a15}
+    .nav {background: #2d4061; position: fixed; width: 100%; height: 107px; z-index: 3; color: #fff;top: 30px;
+      border-bottom: 2px solid #bc5a15;border-bottom: 2px solid red}
     .nav-link {text-decoration: none;padding: 8px 14px 8px 8px; position: relative; color: inherit;font-family: system-ui; font-weight: 600; }
     #nav-brand {display: inline-block;padding: 0 25px;}
     .dropbtn {background-color: #303f5e;color: white;font-size: 16px;border: none;cursor: pointer;}
@@ -71,7 +72,8 @@
     
     @media(max-width:617px) {
       .nav a{display:block}
-      .nav{overflow: hidden;  background: yellow;}
+      .nav{overflow: hidden; border-bottom: 2px solid yellow;}
+      .big-image{margin-top: 20vh;height: 80vh;}
       .navbar-change{height:auto}.nav a{padding:8px 15px}.navbar-toggler{float:right;margin: 0 15px;position: relative}
       #nav-wrap{float: none;padding: 0;position: relative;}
       #nav-brand {padding: 0 12px;}
@@ -81,7 +83,7 @@
 
     @media(max-width:321px) {
       .overlay {padding:20px;}
-      .nav{background: green;} 
+      .nav{border-bottom: 2px solid green;} 
     }
     
   </style>
