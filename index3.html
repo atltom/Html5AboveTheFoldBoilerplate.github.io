@@ -67,6 +67,11 @@
     .p-1 {padding:10px}
     .t-c {text-align:center;}
 
+    @media(max-width:321px) {
+      #curVW:before{content: 'vw<321 ';}
+      .overlay {padding:20px;}
+    } 
+
     /* // Extra small devices (portrait phones, less than 576px) 
     @media (max-width: 415.98px) {}
     @media (min-width: 416px) and (max-width: 499.98px) {}
@@ -113,11 +118,7 @@
       .dropdown-content {position: relative;}
     }
 
-    @media(max-width:321px) {
-      #curVW:before{content: 'vw<321 ';}
-      .overlay {padding:20px;}
-      /* .nav{border-bottom: 2px solid green;}  */
-    } 
+   
     
   </style>
   <body>
