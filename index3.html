@@ -67,105 +67,43 @@
     .p-1 {padding:10px}
     .t-c {text-align:center;}
 
-
-    /* // Extra small devices (portrait phones, less than 576px) */
-
-    @media (max-width: 415.98px) {
-      /* .nav{
-        overflow: hidden; 
-        border-bottom: 2px solid #212f4a;
-         height: 74px; 
-      }
-     */
-
-    }
-
-    @media (min-width: 416px) and (max-width: 499.98px) {
-      /* .nav{
-        overflow: hidden; 
-        border-bottom: 2px solid #212f4a;
-         height: 95px; 
-      } */
-     
-    }
-
-    @media (min-width: 500px) and (max-width: 575.98px) {
-      /* .nav{
-        overflow: hidden; 
-        border-bottom: 2px solid #212f4a;
-         height: 110px; 
-      } */
-     
-    }
-
-
-    /* // Small devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      /* .nav{
-        overflow: hidden; 
-        border-bottom: 2px solid #212f4a;
-        height: 110px; 
-      } */
-     
-    }
+    /* // Extra small devices (portrait phones, less than 576px) 
+    @media (max-width: 415.98px) {}
+    @media (min-width: 416px) and (max-width: 499.98px) {}
+    @media (min-width: 500px) and (max-width: 575.98px) {}*/
+    
+    /* // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) and (max-width: 767.98px) {   } */
 
     /* // Medium devices (tablets, 768px and up) */
     @media (min-width: 768px) and (max-width: 991.98px) {
-      .nav{
-        /* overflow: hidden;  */
-        #curVW:before{content: 'vw >768 <991.98 ';}
-        /* border-bottom: 2px solid #9a19c5; */
-        max-height: 175px;
-      }
+      #curVW:before{content: 'vw >768 <991.98 ';}
+      .nav{max-height: 175px;}
     }
 
     /* // Large devices (desktops, 992px and up) */
     @media (min-width: 992px) and (max-width: 1199.98px) {
-      .nav{
-        /* overflow: hidden;  */
-        #curVW:before{content: 'vw >992 <1199.98 ';}
-        /* border-bottom: 2px solid #fff200; */
-        max-height: 175px;
-      }
+      #curVW:before{content: 'vw >992 <1199.98 ';}
+      .nav{max-height: 175px;}
+    }
+    
+    @media(max-width:1162px) {
+      #curVW:before{content: 'vw<1162 ';}
+      #nav-wrap {background: #2d4061;width: 100%;padding-left: 20px;position: relative;top: 0px;right: 0;border-bottom: 2px solid #212f4a;}
+      .big-image{margin-top: 189px;}
     }
 
     /* // Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) { 
-      .nav{
-        /* overflow: hidden;  */
-        #curVW:before{content: 'vw<1200 ';}
-        /* border-bottom: 2px solid #00e2f6; */
-        max-height: 134px;
-      }
+      #curVW:before{content: 'vw<1200 ';}
+      .nav{max-height: 134px;}
     }
 
-
-   
-    @media(max-width:1162px) {
-      #curVW:before{content: 'vw<1162 ';}
-      /* #nav-wrap{background: #303f5e;width: 100%;padding-left: 20px;position: relative;top: 0;right: 0;} */
-      #nav-wrap {
-        background: #2d4061;
-        width: 100%;
-        padding-left: 20px;
-        position: relative;
-        top: 0px;
-        right: 0;
-        /* border-bottom: 2px solid #e30c0c; */
-        border-bottom: 2px solid #212f4a;
-
-      }
-    }
-    
     @media(max-width:617px) {
       #curVW:before{content: 'vw<617 ';}
       .nav a{display:block}
        .nav{overflow: hidden;} 
-      .big-image{
-       
-        /* margin-top: 107px; */
-        height: calc(90vh);
-      }
+      .big-image{height: calc(90vh);}
       .navbar-change{height:auto}
       .nav a{padding:8px 15px}
       .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative}
