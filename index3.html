@@ -40,7 +40,7 @@
 
     /* --- NAVAGATION --- */
     #fixedbar { background: #BC5A15; color: #fff; position: fixed; top: 0; width: 100%; height: 30px; z-index: 3; font-size: 13px; font-weight:bold;  padding: 7px 0px 0px 30px;padding-left: calc(10vw / 3); }
-    /* #nav-wrap { position: absolute;top: 50px;right: 0;     } */
+   
     #nav-wrap { position: absolute;} 
     .nav {background: #2f3f5e; position: fixed; width: 100%; 
        height: calc(56vw / 3);
@@ -59,8 +59,7 @@
     /* --- HERO --- */
     .big-image {margin-top: calc((56vw / 3) + 30px);height: 80vh;width: 100vw;position: relative;background-size: cover;background-position: 50% 50%;background-image: url("images/566/asphalt-and-masonry.webp");}
     
-    /* .overlay {position: absolute;height: 100%;width: 100%;top: 0;left: 0;background: #090d1496;color: white;display: flex;align-items: center;justify-content:center;flex-direction:column;padding:37px;} */
-    
+      
     .overlay {position: absolute;height: auto;width: auto;top: 0;left: 0;background: #0815248f;color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;margin: 37px;padding: 15px;}
 
     .overlay h1 {font-size:30px;letter-spacing:0px;margin:0 0 15px;border-bottom:3px solid #bc5a15;padding-bottom: 15px;font-weight: 800;}
@@ -72,8 +71,7 @@
     .p-1 {padding:10px}
     .t-c {text-align:center;}
 
-
-    /* #curVW:before{content: 'vw<000 ';} */
+    
       .nav a{display:block}
        .nav{overflow: hidden;} 
       .big-image{height: calc(90vh);}
@@ -85,108 +83,23 @@
       .bar1,.bar2,.bar3{width:30px;height:3.25px;background-color: #f1f1f1; margin: 6.5px 0;transition:.4s}.change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}.change .bar2 { opacity: 0 }.change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
       .dropdown-content {position: relative;}
 
-    /* @media(min-width: 200px) and (max-width:319.98px) {
-      #curVW:before{content: 'vw >200 vw<319.98 ';}
-      .overlay {padding:20px;}
-    } 
-
-    @media(min-width: 320px) and (max-width:617px) {
-      #curVW:before{content: 'vw >320 vw<617 ';}
-      .nav a{display:block}
-       .nav{overflow: hidden;} 
-      .big-image{height: calc(90vh);}
-      .navbar-change{height:auto}
-      .nav a{padding:8px 15px}
-      .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative}
-      #nav-wrap{float: none;padding: 0;position: relative;}
-      #nav-brand {padding:3px 12px 0 0;padding-left: calc(10vw / 3);}
-      .bar1,.bar2,.bar3{width:30px;height:3.25px;background-color: #f1f1f1; margin: 6.5px 0;transition:.4s}.change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}.change .bar2 { opacity: 0 }.change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
-      .dropdown-content {position: relative;}
-    } */
-
-
-    /* // Extra small devices (portrait phones, less than 576px) 
-    @media (max-width: 415.98px) {}
-    @media (min-width: 416px) and (max-width: 499.98px) {}
-    @media (min-width: 500px) and (max-width: 575.98px) {}*/
-    
-    /* // Small devices (landscape phones, 576px and up) */
-    
     @media(min-width:576px) {
-      .navbar-toggler{
-        display: none;
-      }
-      .nav {
-        height: auto;
-      }
-      .nav a {
-          display: inline-block;
-        }  
-
-      .nav a:nth-child(1) {
-        padding-left: calc(10vw / 3);
-      }
-      .big-image{
-        margin-top: 185px;
-      }
-
+      .navbar-toggler{display: none;}
+      .nav {height: auto;}
+      .nav a {display: inline-block;}  
+      .nav a:nth-child(1) {padding-left: calc(10vw / 3);}
+      .big-image{margin-top: 185px;}
     }
 
     @media (min-width: 768px) {
       .nav{max-height: 175px;}
     }
 
-    /* @media (min-width: 576px) and (max-width: 767.98px) {} */
-
-    /* // Medium devices (tablets, 768px and up) */
-    /* @media (min-width: 768px) and (max-width: 991.98px) { */
-      /* #curVW:before{content: 'vw >768 <991.98 ';}
-      .nav{max-height: 175px;} */
-      /* .nav a {
-          display: inline-block;
-        } */
-    /* } */
-
-    /* // Large devices (desktops, 992px and up) */
-    /* @media (min-width: 992px) and (max-width: 1199.98px) {
-      #curVW:before{content: 'vw >992 <1199.98 ';}
-      .nav{max-height: 175px;}
-    } */
-    
-    /* @media(min-width: 12) and (max-width:1162px) {
-      #curVW:before{content: 'vw<1162 ';}
-      #nav-wrap {background: #2d4061;width: 100%;padding-left: 20px;position: relative;top: 0px;right: 0;border-bottom: 2px solid #212f4a;}
-      .big-image{margin-top: 189px;}
-    } */
-
-    /* // Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) { 
-      /* #curVW:before{content: 'vw<1200 ';} */
       .nav{max-height: 134px;}
-      #nav-wrap{float:right}
+      #nav-wrap{float:right;margin: 50px 20px 0;}
       .big-image {    margin-top: 164px;  }
     }
-
-    /* @media(max-width:617px) {
-      #curVW:before{content: 'vw<617 ';}
-      .nav a{display:block}
-       .nav{overflow: hidden;} 
-      .big-image{height: calc(90vh);}
-      .navbar-change{height:auto}
-      .nav a{padding:8px 15px}
-      .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative}
-      #nav-wrap{float: none;padding: 0;position: relative;}
-      #nav-brand {padding:3px 12px 0 0;padding-left: calc(10vw / 3);}
-      .bar1,.bar2,.bar3{width:30px;height:3.25px;background-color: #f1f1f1; margin: 6.5px 0;transition:.4s}.change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}.change .bar2 { opacity: 0 }.change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
-      .dropdown-content {position: relative;}
-    }  */
-
-    /* @media(max-width:321px) {
-      #curVW:before{content: 'vw<321 ';}
-      .overlay {padding:20px;}
-    }   */
-
-   
     
   </style>
   <body>
