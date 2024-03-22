@@ -59,3 +59,31 @@
    #nav-wrap{float:right;margin: 50px 20px 0;}
    .big-image {    margin-top: 164px;  }
  }
+
+ .hero-heading {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: 87%;
+    z-index: 2;
+    margin: 0 auto;
+	text-shadow: 2px 2px 4px #000;
+    font-weight: 700;
+    font-family: auto;
+    padding: 15px;
+    font-size: 2.4rem
+}
+
+
+
+.hero-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    background: #303f5e96;
+    margin: 10%;
+    margin-top: 24vw;
+}
