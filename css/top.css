@@ -35,7 +35,7 @@
  .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative}
  .navbar-change{height:auto}
  /* --- HERO --- */
- .big-image {background-image: url("images/566/stone-wall.webp");margin-top: calc((56vw / 3) + 30px);height: 90vh;width: 100vw;position: relative;background-size: cover;background-position: 50% 50%;}
+ .big-image {background-image: url("../images/566/stone-wall.webp");margin-top: calc((56vw / 3) + 30px);height: 90vh;width: 100vw;position: relative;background-size: cover;background-position: 50% 50%;}
  .overlay {position: absolute;height: auto;width: auto;top: 0;left: 0;background: #0815248f;color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;margin: 7vw;padding: 15px;}
  .overlay h1 {font-size:30px;letter-spacing:0px;margin:0 0 15px;border-bottom:3px solid #bc5a15;padding-bottom: 15px;font-weight: 800;}
  .overlay p {padding:0;margin:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;}
