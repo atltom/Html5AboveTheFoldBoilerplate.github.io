@@ -36,7 +36,8 @@
  /* --- HERO --- */
  .big-image {background-color:#2f3f5e; margin-top: calc((56vw / 3) + 30px);height: 90vh;width: 100vw;position: relative;background-size: cover;background-position: 50% 50%;}
  .overlay {position: absolute;height: auto;width: auto;top: 0;left: 0;background: #0815248f;background: #303f5e96;color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;margin: 7vw;padding: 25px;}
- .overlay h1 {font-size: 9vw;letter-spacing: 0px;margin: 0 0 15px;font-weight: 800;text-shadow: 2px 2px 4px #000;font-family: auto;padding: 15px;line-height: 40px;}
+ .overlay h1 {font-size:32px;letter-spacing: 0px;margin: 0 0 15px;font-weight: 800;text-shadow: 2px 2px 4px #000;font-family: auto;padding:0 15px;line-height: 40px;}
+ .overlay hr {margin: 0; width: 90%;}
  .overlay p {margin:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;}
  /* --- HELPERS --- */
  .d-b { display: block } 
