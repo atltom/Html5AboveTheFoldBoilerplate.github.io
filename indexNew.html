@@ -289,8 +289,9 @@
       var viewportWidth = window.innerWidth;
       if (viewportWidth > 1167) mediumDevices = true;
       function myFunction(e) {
-        document.getElementById("myDropdown").classList.toggle("show");
-        var myDropdown = e.target.nextElementSibling;
+        //document.getElementById("myDropdown").classList.toggle("show");
+        var myDropdown = e.nextElementSibling;
+          myDropdown.classList.toggle("show");
           if (myDropdown.classList.contains('show')) {
             myDropdown.classList.remove('show');
           }
