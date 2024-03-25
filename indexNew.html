@@ -288,14 +288,13 @@
       var viewportHeight = window.innerHeight;
       var viewportWidth = window.innerWidth;
       if (viewportWidth > 1167) mediumDevices = true;
-
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
-      
       window.onclick = function (e) {
         if (!e.target.matches('.dropbtn')) {
-          var myDropdown =e.target.nextElementSibling;​ //document.getElementById("myDropdown");
+          var myDropdown = document.getElementById("myDropdown");
+          //var myDropdown = e.target.nextElementSibling;
           if (myDropdown.classList.contains('show')) {
             myDropdown.classList.remove('show');
           }
