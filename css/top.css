@@ -76,6 +76,10 @@
    .nav{max-height: 134px;}
    #nav-wrap{float:right;margin: 50px 20px 0;}
    .big-image {    margin-top: 140px;  }
+   .dropdown-content {       
+    top: 141px;
+    left: calc(100vw - 260px);
+ }
  }
  @media (max-width: 320px) { 
   .overlay {padding:12px;}
