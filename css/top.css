@@ -60,12 +60,12 @@
    .nav {height: auto;}
    .nav a {display: inline-block;}  
    .nav a:nth-child(1) {padding-left: calc(10vw / 3);}
-   .big-image{margin-top: 183px;}
+   .big-image{margin-top: 159px;}
    .dropdown-content {       
        position: fixed;
-       top: 182px;
+       top: 158px;
        width: 260px;
-       left: 266px;
+       left: 280px;
     }
     .dropdown-content.show{display: inline;}
  }
