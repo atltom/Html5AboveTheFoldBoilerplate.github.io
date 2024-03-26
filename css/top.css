@@ -18,7 +18,7 @@
  .nav {background: #2f3f5e; position: fixed; width: 100%;height: calc(56vw / 3);z-index: 3; color: #fff;top: 30px;border-bottom: 2px solid #212f4a;overflow: hidden;}
  .nav-link {text-decoration: none;padding: 8px 14px 8px 8px; position: relative; color: inherit;font-family: system-ui; font-weight: 600; }
  .nav-link.selected {color: #fff;text-shadow: 1px 1px 0 #bc5a15, -1px 1px 0 #bc5a15, -1px -1px 0 #bc5a15, 1px -1px 0 #bc5a15;}
- #nav-brand {display: inline-block;max-width: calc(100vw - 47px);padding:3px 12px 0 0;padding-left: calc(10vw / 3);}
+ #nav-brand {display: inline-block;max-width: calc(100vw - 62px);padding:3px 12px 0 0;padding-left: calc(10vw / 3);}
  .nav a{display:block;padding:8px 15px}
 
   .dropbtn {background-color: #303f5e;color: white;font-size: 16px;border: none;cursor: pointer;}
@@ -51,6 +51,7 @@
  .p-1 {padding:10px}
  .t-c {text-align:center;}
  @media(min-width:576px) {
+  #nav-brand {width: 529px;}
    .navbar-toggler{display: none;}
    .nav {height: auto;}
    .nav a {display: inline-block;}  
@@ -60,7 +61,7 @@
        display: inline;
        position: fixed;
        z-index: 4444;
-       top: 196px;
+       top: 186px;
        background: #273652;
        width: 260px;
        left: 266px;
