@@ -57,10 +57,14 @@
    .nav a:nth-child(1) {padding-left: calc(10vw / 3);}
    .big-image{margin-top: 185px;}
    .dropdown-content {
-    /* position: absolute;
-    overflow: auto; */
-    color:#fff
-  }
+       display: inline;
+       position: fixed;
+       z-index: 4444;
+       top: 196px;
+       background: #273652;
+       width: 260px;
+       left: 266px;
+    }
  }
  @media (min-width: 768px) {
    .nav{max-height: 175px;}
