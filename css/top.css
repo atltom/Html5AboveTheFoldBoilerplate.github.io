@@ -71,10 +71,12 @@
  }
  @media (min-width: 768px) {
    .nav{max-height: 175px;}
+   #logo {width: 368.55px;}
  }
  @media (min-width: 1200px) { 
    .nav{max-height: 134px;}
    #nav-wrap{float:right;margin: 0px 20px 0;}
+   #logo {width: 100%;}
    .big-image {    margin-top: 137px;  }
    .dropdown-content { 
     width: 250px;      
