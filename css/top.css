@@ -60,20 +60,20 @@
    .nav {height: auto;}
    .nav a {display: inline-block;}  
    .nav a:nth-child(1) {padding-left: calc(10vw / 3);}
-   .big-image{margin-top: 159px;}
+   .big-image{margin-top: 157px;}
    .dropdown-content {position: fixed;top: 182px;width: 260px;left: 280px;}
    .dropdown-content.show{display: inline;}
  }
  @media (min-width: 768px) {
    .nav{max-height: 175px;}
    #logo {width: 368.55px;}
-   .dropdown-content {top: 158px;}
+   .dropdown-content {top: 157px;}
  }
  @media (min-width: 1024px) { 
   #nav-brand {width: 420px;}
   #nav-wrap {float: right;  }
-  .big-image {margin-top: 118px;  }
-  .dropdown-content {width: 250px;top: 118px;left: calc(100vw - 260px); }
+  .big-image {margin-top: 117px;  }
+  .dropdown-content {width: 250px;top: 117px;left: calc(100vw - 260px); }
  }
  @media (min-width: 1200px) { 
    .nav{max-height: 134px;}
