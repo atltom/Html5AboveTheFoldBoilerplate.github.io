@@ -72,8 +72,8 @@
  @media (min-width: 1024px) { 
   #nav-brand {width: 420px;}
   #nav-wrap {float: right;  }
-  .big-image {margin-top: 117px;  }
-  .dropdown-content {width: 250px;top: 117px;left: calc(100vw - 260px); }
+  .big-image {margin-top: 113px;  }
+  .dropdown-content {width: 250px;top: 113px;left: calc(100vw - 260px); }
  }
  @media (min-width: 1200px) { 
    .nav{max-height: 134px;}
