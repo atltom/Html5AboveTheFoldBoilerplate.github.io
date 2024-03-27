@@ -76,7 +76,7 @@
  @media (min-width: 1024px) { 
   #nav-brand {
      width: 420px;
-     background:greenyellow;
+     /* background:greenyellow; */
   }
   #nav-wrap {
     float: right;
@@ -89,10 +89,10 @@
    .nav{max-height: 134px;}
    #nav-wrap{float:right;margin: 0px 20px 0;}
    #logo {width: 100%;}
-   .big-image {    margin-top: 137px;  }
+   .big-image {    margin-top: 118px;  }
    .dropdown-content { 
     width: 250px;      
-    top: 138px;
+    top: 118px;
     left: calc(100vw - 260px);
  }
  }
