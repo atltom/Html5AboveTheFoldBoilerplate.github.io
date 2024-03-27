@@ -81,6 +81,9 @@
   #nav-wrap {
     float: right;
   }
+  #nav-wrap {
+    float: right;
+  }
  }
  @media (min-width: 1200px) { 
    .nav{max-height: 134px;}
