@@ -73,6 +73,12 @@
    .nav{max-height: 175px;}
    #logo {width: 368.55px;}
  }
+ @media (min-width: 1024px) { 
+  #nav-brand {
+     width: 529px;
+     background:greenyellow;
+  }
+ }
  @media (min-width: 1200px) { 
    .nav{max-height: 134px;}
    #nav-wrap{float:right;margin: 0px 20px 0;}
