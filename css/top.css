@@ -75,8 +75,11 @@
  }
  @media (min-width: 1024px) { 
   #nav-brand {
-     width: 529px;
+     width: 420px;
      background:greenyellow;
+  }
+  #nav-wrap {
+    float: right;
   }
  }
  @media (min-width: 1200px) { 
