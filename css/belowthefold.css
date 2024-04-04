@@ -66,6 +66,12 @@ footer > div.flex-container > div{
     padding: 20px;
   }
 
+  .column > * {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
   /* On screens that are 992px wide or less, go from four columns to two columns */
   @media screen and (max-width: 992px) {
     .column {
