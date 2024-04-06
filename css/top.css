@@ -47,7 +47,7 @@
     padding: 25px;
     text-align: center;
     top: 50%;
-    transform: translate(-50%, -57%);
+    transform: translate(-50%, calc(-50% - 30px));
 }
 
  .overlay h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
