@@ -3,6 +3,33 @@
     background-color: #f4f4f4;
 }
 
+.what-we-offer section {
+    margin-bottom: 15px;
+}
+
+.what-we-offer  h3 {
+    
+    position: absolute;
+    background: #303f5e96;
+    color: white;
+   
+    padding: 2px 9px;
+    width: 100%;
+   
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+.btn-learn-more-service {
+    display: inline!important;
+    width: 171px;
+    margin: -58px 7px 0px auto;
+    position: absolute;
+    right: 28%;
+}
+
+
+
 .footer-social-links > li {
     display: inline-block;
 }
