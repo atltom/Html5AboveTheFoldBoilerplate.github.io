@@ -1,11 +1,7 @@
  /* --- RESET --- */
  *, *::before, *::after {box-sizing: border-box;} * {margin: 0;} img, picture, video, canvas, svg, main {  display: block;  max-width: 100%;} input, button, textarea, select {  font: inherit;} p, h1, h2, h3, h4, h5, h6 {  overflow-wrap: break-word;}
  html {-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-ms-overflow-style: scrollbar;-webkit-tap-highlight-color: rgba(black, 0)}
- body {-webkit-font-smoothing: antialiased;font: 16px Arial, Helvetica, sans-serif;color: #222;line-height: 1.5;
-    font-family: system-ui;
-    font-weight: 600;
-    font-size: 18px;
-}
+ body {-webkit-font-smoothing: antialiased;font: 16px Arial, Helvetica, sans-serif;color: #222;line-height: 1.5; font-family: system-ui; font-weight: 600;  font-size: 18px;}
  p {padding: 15px;text-align: left}
  article{margin-top:60px}
  article  h3 {font-size: 20px;text-align: left;padding-left: 30px;}
@@ -51,20 +47,8 @@
  .m-c { margin: 0 auto }
  .p-1 {padding:10px}
  .t-c {text-align:center;}
- .screen-reader-text{
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute !important;
-    width: 1px;
-    word-wrap: normal !important;
-    word-break: normal;
- }
+ .pipe {border-left: 6px solid #ccc;padding-left: 6px;color: #2f3f5e;margin-left: 15px;}
+ .screen-reader-text{border: 0;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute !important;width: 1px;word-wrap: normal !important;word-break: normal; }
  @media(min-width:576px) {
   #nav-brand {width: 529px;}
    .navbar-toggler{display: none;}
