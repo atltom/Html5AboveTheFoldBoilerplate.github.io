@@ -1,116 +1,118 @@
 .below-the-fold{
-    min-height: 400px;
-    background-color: #f4f4f4;
+  min-height: 400px;
+  background-color: #f4f4f4;
 }
 
 .what-we-offer section {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .what-we-offer  h3 {
-    position: absolute;
-    background: #303f5e96;
-    color: white;
-    padding: 8px 0px;
-    width: 100%;
-    text-shadow: 2px 2px 4px #000;
+  position: absolute;
+  background: #303f5e96;
+  color: white;
+  padding: 8px 0px;
+  width: 100%;
+  text-shadow: 2px 2px 4px #000;
 }
 
 
 .btn-learn-more-service {
-    display: inline!important;
-    width: 140px;
-    margin: -58px 7px 0px auto;
-    position: absolute;
-    right: 32%;
+  display: inline!important;
+  width: 140px;
+  margin: -58px 7px 0px auto;
+  position: absolute;
+  right: 32%;
 }
 
 
 
 .footer-social-links > li {
-    display: inline-block;
+  display: inline-block;
 }
 
 footer{
-    background-color:#303f5e;  
-    color:white;
+  background-color:#303f5e;  
+  color:white;
 }
 
 .footer-links a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 footer ul{
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .copyright{
-    clear: both;
-    padding: 5px;
-    text-align: center;
-    color: white;
-    background-color: #181f2f;
+  clear: both;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background-color: #181f2f;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 
 .flex-container > article{
-    padding: 10px;
-    flex: 50%;
+  padding: 10px;
+  flex: 50%;
 }
-    
+  
 footer > div.flex-container > div{
-    padding: 10px;
-    flex: 33%;
+  padding: 10px;
+  flex: 33%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
+.flex-container {
+  flex-direction: column;
+}
 }
 
 
 /* Container for flexboxes */
 .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  /* Create four equal columns */
-  .column {
-    flex: 25%;
-    padding: 20px;
-  }
-
-  .column > * {
-    display: block;
-    text-align: center;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-  /* On screens that are 992px wide or less, go from four columns to two columns */
-  @media screen and (max-width: 992px) {
-    .column {
-      flex: 50%;
-    }
-  }
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 20px;
+}
 
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .row {
-      flex-direction: column;
-    }
-  }
+.column > * {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
 
-  .icon {
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+
+
+.icon {
     display: inline-block;
     width: 20px;
     line-height: 0px;
@@ -145,5 +147,87 @@ footer > div.flex-container > div{
     top: 1.5px;
     transform: rotate(-45deg);
 }
+
+
+/* new footer stuff */
+
+ /* Container for flexboxes */
+ .rowf {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.columnf {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .columnf {
+    flex: 25%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .rowf {
+    flex-direction: column;
+  }
+}
+
+.arrowf {
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 9px;
+  margin-bottom: 1px;
+}
+
+.rightf {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.leftf {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.upf {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.downf {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+.footer-links a {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 0px;
+}
+
+address {
+  font-style: normal;
+
+}
+
+.copyright {
+  clear: both;
+  padding: 5px;
+  text-align: center;
+  color: #ccc;
+  background-color: #25304b;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 
 
