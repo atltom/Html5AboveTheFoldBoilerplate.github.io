@@ -1,4 +1,4 @@
-.below-the-fold{
+.below-the-fold {
   min-height: 400px;
   background-color: #f4f4f4;
 }
@@ -7,7 +7,7 @@
   margin-bottom: 15px;
 }
 
-.what-we-offer  h3 {
+.what-we-offer h3 {
   position: absolute;
   background: #303f5e96;
   color: white;
@@ -18,7 +18,7 @@
 
 
 .btn-learn-more-service {
-  display: inline!important;
+  display: inline !important;
   width: 140px;
   margin: -58px 7px 0px auto;
   position: absolute;
@@ -27,13 +27,13 @@
 
 
 
-.footer-social-links > li {
+.footer-social-links>li {
   display: inline-block;
 }
 
-footer{
-  background-color:#303f5e;  
-  color:white;
+footer {
+  background-color: #303f5e;
+  color: white;
 }
 
 .footer-links a {
@@ -41,12 +41,12 @@ footer{
   text-decoration: none;
 }
 
-footer ul{
+footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-.copyright{
+.copyright {
   clear: both;
   padding: 5px;
   text-align: center;
@@ -60,21 +60,21 @@ footer ul{
   text-align: center;
 }
 
-.flex-container > article{
+.flex-container>article {
   padding: 10px;
   flex: 50%;
 }
-  
-footer > div.flex-container > div{
+
+footer>div.flex-container>div {
   padding: 10px;
   flex: 33%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
-.flex-container {
-  flex-direction: column;
-}
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 
@@ -90,7 +90,7 @@ footer > div.flex-container > div{
   padding: 20px;
 }
 
-.column > * {
+.column>* {
   display: block;
   text-align: center;
   margin: auto;
@@ -113,46 +113,46 @@ footer > div.flex-container > div{
 
 
 .icon {
-    display: inline-block;
-    width: 20px;
-    line-height: 0px;
+  display: inline-block;
+  width: 20px;
+  line-height: 0px;
 }
 
 .arrow {
-    background-color: #e8e8e8;
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 1.5px;
-    top: -4px;
-    left: 0px;
+  background-color: #e8e8e8;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 1.5px;
+  top: -4px;
+  left: 0px;
 }
 
 .arrow::after,
 .arrow::before {
-    background-color: #e8e8e8;
-    content: '';
-    position: absolute;
-    width: 28%;
-    height: 1.5px;
-    right: -2px;
+  background-color: #e8e8e8;
+  content: '';
+  position: absolute;
+  width: 28%;
+  height: 1.5px;
+  right: -2px;
 }
 
 .arrow::after {
-    top: -1.5px;
-    transform: rotate(45deg);
+  top: -1.5px;
+  transform: rotate(45deg);
 }
 
 .arrow::before {
-    top: 1.5px;
-    transform: rotate(-45deg);
+  top: 1.5px;
+  transform: rotate(-45deg);
 }
 
 
 /* new footer stuff */
 
- /* Container for flexboxes */
- .rowf {
+/* Container for flexboxes */
+.rowf {
   display: flex;
   flex-wrap: wrap;
 }
@@ -229,5 +229,33 @@ address {
   font-weight: 300;
 }
 
+@media (min-width: 1024px) {
+  
+
+  
+  #picture-footer {
+    width: 50%;
+    margin: auto;
+    display: none;
+  }
+
+  .below-the-fold {
+    background-color: #2f3f5e;
+    width: 75%;
+    margin: auto;
+  }
+
+  .what-we-offer h3 {
+    position: absolute;
+    display: contents;
+  }
 
 
+  .btn-learn-more-service {
+    position: relative;
+    bottom: 32px;
+    left: 0%;
+  }
+  
+
+}
