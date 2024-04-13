@@ -1,7 +1,7 @@
-.below-the-fold {
-  min-height: 400px;
-  background-color: #f4f4f4;
-}
+/*.below-the-fold {
+   min-height: 400px; 
+  background-color: #f4f4f4; 
+}*/
 
 .what-we-offer section {
   margin-bottom: 15px;
@@ -229,10 +229,51 @@ address {
   font-weight: 300;
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width: 800px) {
+  
+  #picture-footer {
+    width: 50%;
+    margin: auto;
+    display: none;
+  }
+
+  .below-the-fold {
+    /* background-color: #2f3f5e; */
+    width: 75%;
+    margin: auto;
+  }
+
+  .what-we-offer section {
+    border: 1px solid white;
+    margin-bottom: 0;
+}
+
+
+  .what-we-offer h3 {
+    /* position: absolute;
+    display: contents; */
+
+    background: #2b3f5e;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid #bc5a15;
+  }
+
+
+  .btn-learn-more-service {
+    position: relative;
+    bottom: 32px;
+    left: 0%;
+  }
   
 
-  
+}
+
+/* 
+
+@media (min-width: 1024px) {
+
   #picture-footer {
     width: 50%;
     margin: auto;
@@ -258,4 +299,4 @@ address {
   }
   
 
-}
+} */
