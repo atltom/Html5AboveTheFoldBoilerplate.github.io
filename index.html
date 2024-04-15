@@ -25,6 +25,7 @@
   <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
   <link rel="preload" fetchpriority="high" as="image" href="images/566/asphalt-and-masonry.webp" type="image/webp">
   <link rel="stylesheet" href="css/top.css" media="all">
+  <!-- <base href=""> -->
 </head>
 
 <body>
@@ -127,40 +128,27 @@
       </p>
     </section>
 
+    <div id="what-we-offer" >
+
     <div class="below-the-fold flex-container what-we-offer">
 
       <section>
 
         <h3>Masonry & Hardscapes</h3>
 
-        <!-- <figure>
-          <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
-          alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
-          width="200"
-          height="171">
-          <figcaption>A T-Rex on display in the Manchester University Museum</figcaption>
-         </figure> -->
+        <!-- <img alt="alt text image" src="images/stone-masonry-porch.webp"    loading="eager" decoding="sync"> -->
 
-        <!-- <picture>
-          365×274, 730×548, 1130×848, 1500×1126, 1800×1351, 2048×1537
-          <source media="(min-width:2048px)" srcset="images/IMG_2048.webp" width="2048" height="1537">
-          <source media="(min-width:1800px)" srcset="images/IMG_1800.webp" width="1800" height="1351">
-          <source media="(min-width:1500px)" srcset="images/IMG_1500.webp" width="1500" height="1126">
-          <source media="(min-width:1130px)" srcset="images/IMG_1130.webp" width="1130" height="848">
-          <source media="(min-width:730px)" srcset="images/IMG_730.webp" width="730" height="548">
-          <img src="images/IMG_365.webp" alt="Masonry" width="365" height="274">
-        </picture> -->
-
-        <!-- <picture>
-          <source media="(min-width:1029px)" srcset="images/stone-masonry-porch.webp">
-          <source media="(min-width:915px)" srcset="images/stone-masonry-porch.webp">
-          <img src="images/stone-masonry-porch.webp" alt="Masonry" width="365" height="274">
-        </picture> -->
-
-        <!-- <img src="images/IMG_365.webp" srcset="images/IMG_730.webp 730w, images/IMG_1130.webp 1130w, images/IMG_1500.webp 1500w" sizes="(min-width: 1040px) 37.5vw, (min-width: 840px) calc(68.89vw - 142px), (min-width: 800px) calc(-875vw + 7598px), 100vw" alt="Masonry" width="365" height="274"> -->
         <img alt="alt text image" src="images/stone-masonry-porch.webp"
-        srcset="images/stone-masonry-porch.webp 365w, images/stone-masonry-porch.webp 730w, images/stone-masonry-porch.webp 1130w"
-        sizes="(min-width: 840px) 37.5vw, (min-width: 800px) calc(-1460vw + 12278px), 100vw">
+        srcset="images/small/stone-masonry-porch.webp 365w, images/medium/stone-masonry-porch.webp 782w, images/large/stone-masonry-porch.webp 900w"
+        sizes="(min-width: 840px) 100%, (min-width: 782px) 100%, 100%"
+        loading="eager" decoding="sync">
+
+        <!-- sizes="(min-width: 840px) 100vw, (min-width: 800px) calc(-1460vw + 12278px), 100vw" -->
+
+        <!-- <img alt="alt text image" src="images/stone-masonry-porch.webp"
+          srcset="images/stone-masonry-porch.webp 365w, images/stone-masonry-porch.webp 730w, images/stone-masonry-porch.webp 1130w"
+          sizes="(min-width: 840px) 37.5vw, (min-width: 800px) calc(-1460vw + 12278px), 100vw"
+          loading="eager" decoding="sync"> -->
 
         <a class="btn btn-learn-more-service" href="/services"
           aria-label="Learn more about our masonry and hardscape services.">Learn More<span class="screen-reader-text">
@@ -171,11 +159,23 @@
 
       <section>
         <h3>Asphalt Paving</h3>
-        <img alt="alt text image" src="images/IMG_365.webp"
+        <img alt="alt text image" src="images/stone-masonry-porch.webp"
+        srcset="images/small/stone-masonry-porch.webp 365w, images/medium/stone-masonry-porch.webp 782w, images/large/stone-masonry-porch.webp 900w"
+        sizes="(min-width: 840px) 100%, (min-width: 782px) 100%, 100%"
+        loading="eager" decoding="sync">
+
+        <!-- <img alt=">Asphalt Paving" src="images/asphalt-paving365p.webp"  width="365" height="274"> -->
+        <!-- <img alt="alt text image" src="images/stone-masonry-porch.webp"
+        srcset="images/small/stone-masonry-porch.webp 365w, images/medium/stone-masonry-porch.webp 782w, images/large/stone-masonry-porch.webp 900w"
+        sizes="(min-width: 840px) 100vw, (min-width: 782px) 100vw, 100vw"
+        loading="eager" decoding="sync"> -->
+
+        <!-- <img alt="alt text image" src="images/IMG_365.webp"
         srcset="images/IMG_365.webp 365w, images/IMG_730.webp 730w, images/IMG_1130.webp 1130w"
-        sizes="(min-width: 840px) 37.5vw, (min-width: 800px) calc(-1460vw + 12278px), 100vw">
-        <!-- <picture>
-          <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
+        sizes="(min-width: 840px) 37.5vw, (min-width: 800px) calc(-1460vw + 12278px), 100vw"> -->
+
+        <!--<picture>
+           <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
             <source media="(min-width:915px)" srcset="images/hero916.jpg">
           <img src="images/asphalt-paving365p.webp" alt="Asphalt Paving" width="365" height="274">
         </picture> -->
@@ -210,6 +210,8 @@
             our snow removal services.</span></a>
       </section>
     </div>
+
+  </div>
 
 
     <section class="p-1" style="padding-top:50px;padding-bottom: 50px;">
@@ -538,3 +540,34 @@
 </body>
 
 </html>
+
+
+ <!-- <figure>
+          <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+          alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
+          width="200"
+          height="171">
+          <figcaption>A T-Rex on display in the Manchester University Museum</figcaption>
+         </figure> -->
+
+        <!-- <picture>
+          365×274, 730×548, 1130×848, 1500×1126, 1800×1351, 2048×1537
+          <source media="(min-width:2048px)" srcset="images/IMG_2048.webp" width="2048" height="1537">
+          <source media="(min-width:1800px)" srcset="images/IMG_1800.webp" width="1800" height="1351">
+          <source media="(min-width:1500px)" srcset="images/IMG_1500.webp" width="1500" height="1126">
+          <source media="(min-width:1130px)" srcset="images/IMG_1130.webp" width="1130" height="848">
+          <source media="(min-width:730px)" srcset="images/IMG_730.webp" width="730" height="548">
+          <img src="images/IMG_365.webp" alt="Masonry" width="365" height="274">
+        </picture> -->
+
+        <!-- <picture>
+          <source media="(min-width:1029px)" srcset="images/stone-masonry-porch.webp">
+          <source media="(min-width:915px)" srcset="images/stone-masonry-porch.webp">
+          <img src="images/stone-masonry-porch.webp" alt="Masonry" width="365" height="274">
+        </picture> -->
+
+        <!-- <img src="images/IMG_365.webp" srcset="images/IMG_730.webp 730w, images/IMG_1130.webp 1130w, images/IMG_1500.webp 1500w" alt="Masonry" width="365" height="274">
+        
+       
+        
+        -->
