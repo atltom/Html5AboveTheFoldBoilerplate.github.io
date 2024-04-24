@@ -207,10 +207,10 @@
         <link rel="stylesheet" href="css/belowthefold.css">
     </noscript>
     <script>
-        var mediumDevices = false;
-        var viewportHeight = window.innerHeight;
-        var viewportWidth = window.innerWidth;
-        if (viewportWidth > 1167) mediumDevices = true;
+        // var mediumDevices = false;
+        // var viewportHeight = window.innerHeight;
+        // var viewportWidth = window.innerWidth;
+        // if (viewportWidth > 1167) mediumDevices = true;
 
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -223,23 +223,23 @@
                 }
             }
         }
-        window.onscroll = function (e) {
-            var pageYOffset = window.top.pageYOffset;
-            var minLogo = false;
-            if (mediumDevices == true) {
-                if (minLogo == false && pageYOffset > 99) {
-                    document.getElementById('logo').style.height = "50px";
-                    document.getElementById('navbar').style.height = "55px";
-                    document.getElementById('nav-wrap').style.top = "8px"
-                    minLogo = true;
-                } else if (pageYOffset == 0) {
-                    document.getElementById('logo').style.height = "126px"
-                    document.getElementById('navbar').style.height = "129px";
-                    document.getElementById('nav-wrap').style.top = "50px"
-                    minLogo = false;
-                }
-            }
-        }
+        // window.onscroll = function (e) {
+        //     var pageYOffset = window.top.pageYOffset;
+        //     var minLogo = false;
+        //     if (mediumDevices == true) {
+        //         if (minLogo == false && pageYOffset > 99) {
+        //             document.getElementById('logo').style.height = "50px";
+        //             document.getElementById('navbar').style.height = "55px";
+        //             document.getElementById('nav-wrap').style.top = "8px"
+        //             minLogo = true;
+        //         } else if (pageYOffset == 0) {
+        //             document.getElementById('logo').style.height = "126px"
+        //             document.getElementById('navbar').style.height = "129px";
+        //             document.getElementById('nav-wrap').style.top = "50px"
+        //             minLogo = false;
+        //         }
+        //     }
+        // }
 
         function naviconClick(navicon) {
             navicon.classList.toggle("change");
