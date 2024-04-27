@@ -27,7 +27,7 @@
     integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" >
   <style>
-    #gallery>a {
+    /* #gallery>a {
       margin: 15px;
       display: inline-grid;
     }
@@ -35,7 +35,79 @@
     figure {
       max-width: 425px;
       display: inline-block;
-    }
+    } */
+
+
+
+    .container2 {
+  padding: 40px 5%;
+}
+
+.heading-text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.heading-text span {
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+}
+
+
+    .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-gallery > li {
+  flex-basis: 350px; /*width: 350px;*/
+  position: relative;
+  cursor: pointer;
+}
+
+.image-gallery::after {
+  content: "";
+  flex-basis: 350px;
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.image-gallery li:hover .overlay {
+  transform: scale(1);
+}
+
+
+
   </style>
 </head>
 
@@ -108,6 +180,60 @@
     <article class="hero-panel"><h1 class="hero-heading"style="text-shadow:2px 2px 4px #000;font-weight:700;font-family:auto;padding:15px">Asphalt Paving</h1><p class="hero-info"style="text-align:center;font-weight:700;padding-top:0;text-shadow:2px 2px 4px #000">Regional Experts<br>For Over 35 Years<br>Residential & Commercial<button class="btn d-b m-c"style="margin-top:25px">See More</button></article></div>
        -->
 
+
+       <div class="container2">
+        <h2 class="heading-text">Responsive <span>image gallery</span></h2>
+        <ul class="image-gallery">
+          <li>
+            <img src="https://source.unsplash.com/VWcPlbHglYc/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/e6FMMambeO4/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/klCiPmzUw0Y/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/IdNOTjPeHrE/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/O0N9MF--hK4/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/FV3GConVSss/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/0ESjL-Nw22Y/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/KTVn62x6fFw/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+  
+          <li>
+            <img src="https://source.unsplash.com/VSeVhmW4_JQ/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/07aFaTf24Kg/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+          <li>
+            <img src="https://source.unsplash.com/DqyYTM7pR2o/640x416" alt="" />
+            <div class="overlay"><span>Image title</span></div>
+          </li>
+        </ul>
+      </div>
+
+
+<!-- 
     <div style="margin: 15px;">
       <section>
         <h2>Projects Photo Gallary</h2>
@@ -176,7 +302,7 @@
 
         <div>See more pictures on our Instagram</div>
       </section>
-    </div>
+    </div> -->
 
     <picture>
         <!-- <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
