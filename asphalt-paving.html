@@ -245,7 +245,7 @@
               <div class="overlay2"><span>Visit Instagram</span></div>
             </a>
             <figcaption>
-              <div>Follow Us 1</div> 
+              <div>Follow Us</div> 
               More projects can be seen on Instagram.
             </figcaption>
           </figure>
@@ -406,33 +406,17 @@
     loadCSS("css/belowthefold.css");
   </script>
   <script type="module">
-    //import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
-    //https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.min.js
     import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.min.js";
-
     const lightbox = new PhotoSwipeLightbox({
-      // may select multiple "galleries"
       gallery: "#gallery",
-
-      // Elements within gallery (slides)
       children: "a",
-
-      // setup PhotoSwipe Core dynamic import
-      //pswpModule: () => import('/photoswipe/photoswipe.esm.js')
       pswpModule: () =>
         import(
           "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.min.js"
         ),
     });
-    lightbox.on('beforeOpen', () => {
-      console.log('beforeOpen');
-      console.log(this);
-      // photoswipe starts to open
-    });
     lightbox.init();
-      document.querySelector('#insta').onclick = () => {
-          window.location.href = 'https://www.instagram.com/concordcarpenter/reel/CzWv1rqLGWc/';
-    };
+    document.querySelector('#insta').onclick = () => { window.location.href = 'https://www.instagram.com/phaneufassociates/'; };
   </script>
 </body>
 
