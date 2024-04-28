@@ -23,20 +23,29 @@
       -->
     <meta name="theme-color" content="#303f5e">
     <link rel="stylesheet" href="css/top.css" media="all">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css"
-        integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
-    <style>
-        #gallery>a {
-            margin: 15px;
-            display: inline-grid;
-        }
-
-        figure {
-            max-width: 425px;
-            display: inline-block;
-        }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css"
+      integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+  <style>
+    figure {box-shadow: 4px 4px 7px #c7c7c7;border: 1px solid #9e9e9e;}
+    figcaption {min-height: 70px;background: #ebebeb;padding: 0px 6px;font-size: 14px;}
+    figcaption  > div {font-size: 16px;font-weight: 600;}
+    .container2 {padding: 40px 5%;}
+    .heading-text {margin-bottom: 2rem;font-size: 2rem;text-align: center;}
+    .heading-text span {font-weight: 100;}
+    ul {list-style: none;padding-inline-start: 0;}
+    .image-gallery {display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;}
+    .image-gallery>li {flex-basis: 350px;position: relative;cursor: pointer;}
+    .image-gallery::after {content: "";flex-basis: 350px;}
+    .image-gallery li img {object-fit: cover;max-width: 100%;height: auto;vertical-align: middle;}
+    .overlay2 {position: absolute;width: 100%;height: 100%;background: rgba(57, 57, 57, 0.502);top: 0;left: 0;transform: scale(0);transition: all 0.2s 0.1s ease-in-out;color: #fff;border-radius: 5px;display: flex;align-items: center;justify-content: center;}
+    .image-gallery li:hover .overlay2 {transform: scale(1);}
+    .pswp__scroll-wrap{width: 100% !important;}
+  </style>
 </head>
 
 <body>
@@ -100,10 +109,143 @@
             </div>
         </div>
 
+        <div id="gallery" class="container2">
+          <h2 class="heading-text">
+            Masonry & Hardscapes Projects <span>photo gallery</span>
+          </h2>
+          <ul class="image-gallery">
+            <li>
+              <figure>
+                <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+                  target="_blank">
+                  <img src="images/566/bluestone-patio-with-compass.webp" height="640" width="416"
+                    alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                  <div class="overlay2"><span>Click to Zoom</span></div>
+                </a>
+                <figcaption>
+                  <div>Methuen, Mass</div> 
+                  Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+                  target="_blank">
+                  <img src="images/small/Methuen-Mass-Starbucks.webp" height="640" width="416"
+                    alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                  <div class="overlay2"><span>Click to Zoom</span></div>
+                </a>
+                <figcaption>
+                  <div>Methuen, Mass</div> 
+                  Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+                  target="_blank">
+                  <img src="images/small/Methuen-Mass-Starbucks.webp" height="640" width="416"
+                    alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                  <div class="overlay2"><span>Click to Zoom</span></div>
+                </a>
+                <figcaption>
+                  <div>Methuen, Mass</div> 
+                  Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+                  target="_blank">
+                  <img src="images/small/Methuen-Mass-Starbucks.webp" height="640" width="416"
+                    alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                  <div class="overlay2"><span>Click to Zoom</span></div>
+                </a>
+                <figcaption>
+                  <div>Methuen, Mass</div> 
+                  Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+                  target="_blank">
+                  <img src="images/small/Methuen-Mass-Starbucks.webp" height="640" width="416"
+                    alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                  <div class="overlay2"><span>Click to Zoom</span></div>
+                </a>
+                <figcaption>
+                  <div>Methuen, Mass</div> 
+                  Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+                  target="_blank">
+                  <img src="images/small/Methuen-Mass-Starbucks.webp" height="640" width="416"
+                    alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                  <div class="overlay2"><span>Click to Zoom</span></div>
+                </a>
+                <figcaption>
+                  <div>Methuen, Mass</div> 
+                  Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+                  target="_blank">
+                  <img src="images/small/Methuen-Mass-Starbucks.webp" height="640" width="416"
+                    alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                  <div class="overlay2"><span>Click to Zoom</span></div>
+                </a>
+                <figcaption>
+                  <div>Methuen, Mass</div> 
+                  Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+                  target="_blank">
+                  <img src="images/small/Methuen-Mass-Starbucks.webp" height="640" width="416"
+                    alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                  <div class="overlay2"><span>Click to Zoom</span></div>
+                </a>
+                <figcaption>
+                  <div>Methuen, Mass</div> 
+                  Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+                </figcaption>
+              </figure>
+            </li>
+             <li id="insta">
+              <figure>
+                <a href="images/small/Instagram.webp" data-pswp-width="640" data-pswp-height="416" target="_blank">
+                  <img src="images/small/Instagram.webp" height="640" width="416"
+                    alt="Follow Us - More projects can be seen on our Instagram page.">
+                  <div class="overlay2"><span>Visit Instagram</span></div>
+                </a>
+                <figcaption>
+                  <div>Follow Us</div> 
+                  More projects can be seen on Instagram.
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+
 
         <!-- <div class="hero"><picture><source media="(min-width:1029px)"srcset="images/hero1030.jpg"><source media="(min-width:915px)"srcset="images/hero916.jpg"><img alt="Premiere Masonry & Hardscape Design"height="1080"src="images/566/masonry-front-porch.webp"width="566"class="hero-img"></picture><article class="hero-panel"><h1 class="hero-heading"style="text-shadow:2px 2px 4px #000;font-weight:700;font-family:auto;padding:15px">Masonry and Hardscapes</h1><p class="hero-info"style="text-align:center;font-weight:700;padding-top:0;text-shadow:2px 2px 4px #000">Regional Experts<br>For Over 35 Years<br>Residential & Commercial<button class="btn d-b m-c"style="margin-top:25px">See More</button></article></div>hello world</main> -->
 
-        <div style="margin: 15px;">
+        <!-- <div style="margin: 15px;">
             <section>
                 <h2>Projects Photo Gallary</h2>
                 <div id="gallery" class="pswp-gallery pswp-gallery--single-column">
@@ -165,7 +307,7 @@
 
                 <div>See more pictures on our Instagram</div>
             </section>
-        </div>
+        </div> -->
 
         <picture>
             <!-- <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
@@ -324,26 +466,19 @@
         }
         loadCSS('css/belowthefold.css');
     </script>
-    <script type="module">
-        //import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
-  //https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.min.js
-  import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.min.js';
-
-
-  const lightbox = new PhotoSwipeLightbox({
-    // may select multiple "galleries"
-    gallery: '#gallery',
-
-    // Elements within gallery (slides)
-    children: 'a',
-
-    // setup PhotoSwipe Core dynamic import 
-    //pswpModule: () => import('/photoswipe/photoswipe.esm.js')
-    pswpModule: () => import('https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.min.js')
-  });
-  lightbox.init();
-</script>
-
+  <script type="module">
+    import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.min.js";
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: "#gallery",
+      children: "a",
+      pswpModule: () =>
+        import(
+          "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.min.js"
+        ),
+    });
+    lightbox.init();
+    document.querySelector('#insta').onclick = () => { window.location.href = 'https://www.instagram.com/phaneufassociates/'; };
+  </script>
 </body>
 
 </html>
