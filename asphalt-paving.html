@@ -237,7 +237,7 @@
             </figcaption>
           </figure>
         </li>
-         <li>
+         <li id="insta">
           <figure>
             <a href="images/small/Instagram.webp" target="_blank">
               <img src="images/small/Instagram.webp" height="640" width="416"
@@ -245,16 +245,13 @@
               <div class="overlay2"><span>Visit Instagram</span></div>
             </a>
             <figcaption>
-              <div>Follow Us</div> 
+              <div>Follow Us 1</div> 
               More projects can be seen on Instagram.
             </figcaption>
           </figure>
         </li>
       </ul>
     </div>
-
-    
-
 
     <picture>
       <!-- <source media="(min-width:1029px)" srcset="images/hero1030.jpg">
@@ -433,6 +430,9 @@
       // photoswipe starts to open
     });
     lightbox.init();
+      document.querySelector('#insta').onclick = () => {
+          window.location.href = 'https://www.instagram.com/concordcarpenter/reel/CzWv1rqLGWc/';
+    };
   </script>
 </body>
 
