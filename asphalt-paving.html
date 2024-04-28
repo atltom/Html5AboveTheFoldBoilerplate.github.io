@@ -427,6 +427,11 @@
           "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.min.js"
         ),
     });
+    lightbox.on('beforeOpen', () => {
+      console.log('beforeOpen');
+      console.log(this);
+      // photoswipe starts to open
+    });
     lightbox.init();
   </script>
 </body>
