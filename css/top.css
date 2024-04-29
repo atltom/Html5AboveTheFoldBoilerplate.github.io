@@ -37,6 +37,7 @@
  /* --- HERO --- */
  .big-image {background-color:#2f3f5e;margin-top: calc((56vw / 3) + 30px);height: calc(100vh - ((56vw / 3) + 30px ));  width: 100%;position: relative;background-size: cover;background-position: 50% 50%;}
  .big-image.home{background-image: url(../images/566/asphalt-and-masonry.webp);}
+ .big-image.services{background-image: url(../images/566/stone-wall.webp);}
  /* .overlay {position: absolute;height: auto;width: auto;top: 0;left: 0;background: #0815248f;background: #303f5e96;color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;margin: 7vw;padding: 25px;} */
  /* .overlay { position: relative;  top: 30px;  background: #303f5e96;background: #303f5eba;  color: white;  width: 87%;  margin: auto;  padding: 25px;  text-align: center;} */
  .overlay {
@@ -87,6 +88,7 @@
   .big-image {margin-top: 113px;  }
   .overlay{transform: translate(-50%, calc(-50% - 0px));}
   .big-image.home{background-image: url(../images/1030/asphalt-and-masonry.webp);}
+  .big-image.services{background-image: url(../images/large/stone-wall.webp);}
   .overlay h1{letter-spacing: 1.2px;    font-weight: 600;}
   .overlay p{letter-spacing: .7px;    font-weight: 600;}
   .dropdown-content {width: 250px;top: 113px;left: calc(100vw - 260px); }
