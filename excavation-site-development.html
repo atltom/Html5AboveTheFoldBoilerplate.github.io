@@ -23,33 +23,99 @@
       -->
   <meta name="theme-color" content="#303f5e">
   <link rel="stylesheet" href="css/top.css" media="all">
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css"
-      integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css"
+    integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <style>
-    figure {box-shadow: 4px 4px 7px #c7c7c7;border: 1px solid #9e9e9e;}
-    figcaption {min-height: 70px;background: #ebebeb;padding: 0px 6px;font-size: 14px;}
-    figcaption  > div {font-size: 16px;font-weight: 600;}
-    .container2 {padding: 40px 5%;}
-    .heading-text {margin-bottom: 2rem;font-size: 2rem;text-align: center;}
-    .heading-text span {font-weight: 100;}
-    ul {list-style: none;padding-inline-start: 0;}
-    .image-gallery {display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;}
-    .image-gallery>li {flex-basis: 350px;position: relative;cursor: pointer;}
-    .image-gallery::after {content: "";flex-basis: 350px;}
-    .image-gallery li img {object-fit: cover;max-width: 100%;height: auto;vertical-align: middle;}
-    .overlay2 {position: absolute;width: 100%;height: 100%;background: rgba(57, 57, 57, 0.502);top: 0;left: 0;transform: scale(0);transition: all 0.2s 0.1s ease-in-out;color: #fff;border-radius: 5px;display: flex;align-items: center;justify-content: center;}
-    .image-gallery li:hover .overlay2 {transform: scale(1);}
-    .pswp__scroll-wrap{width: 100% !important;}
+    figure {
+      box-shadow: 4px 4px 7px #c7c7c7;
+      border: 1px solid #9e9e9e;
+    }
+
+    figcaption {
+      min-height: 70px;
+      background: #ebebeb;
+      padding: 0px 6px;
+      font-size: 14px;
+    }
+
+    figcaption>div {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .container2 {
+      padding: 40px 5%;
+    }
+
+    .heading-text {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .heading-text span {
+      font-weight: 100;
+    }
+
+    ul {
+      list-style: none;
+      padding-inline-start: 0;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .image-gallery>li {
+      flex-basis: 350px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .image-gallery::after {
+      content: "";
+      flex-basis: 350px;
+    }
+
+    .image-gallery li img {
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    .overlay2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(57, 57, 57, 0.502);
+      top: 0;
+      left: 0;
+      transform: scale(0);
+      transition: all 0.2s 0.1s ease-in-out;
+      color: #fff;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-gallery li:hover .overlay2 {
+      transform: scale(1);
+    }
+
+    .pswp__scroll-wrap {
+      width: 100% !important;
+    }
   </style>
 </head>
 
 <body>
-  
+
   <header>
     <div id="fixedbar"><span id="curVW"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"
         style="width:10px;height:auto;display:inline-block;margin-right:3px;">
@@ -58,11 +124,12 @@
         </path>
       </svg><a style="color:#fff;text-decoration:none!important"
         href="tel:+19786694919">978-669-4919</a>&nbsp;&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512" fill="#fff"
-        style="width:10px;height:auto;display:inline-block;margin-right:3px;"><path d=" M48 64C21.5 64 0 85.5 0 112c0
+        viewBox="0 0 512 512" fill="#fff" style="width:10px;height:auto;display:inline-block;margin-right:3px;">
+        <path d=" M48 64C21.5 64 0 85.5 0 112c0
         15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3
         19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8
-        17.1-54 17.1-76.8 0L0 176z" /></svg>info@phaneufassociates.com</div>
+        17.1-54 17.1-76.8 0L0 176z" />
+      </svg>info@phaneufassociates.com</div>
     <nav id="navbar" class="nav" tabindex="-1">
       <div onclick="naviconClick(this)" class="navbar-toggler" style="z-index:9;">
         <div class="bar1"></div>
@@ -74,7 +141,8 @@
           <picture>
             <!-- <source media="(min-width:1029px)" srcset="images/S-Phanuef-Associates.webp">
             <source media="(min-width:915px)" srcset="images/S-Phanuef-Associates.webp"> -->
-            <img id="logo" src="images/S-Phanuef-Associates.webp" alt="S. Phaneuf & Associates" width="594"  height="126">
+            <img id="logo" src="images/S-Phanuef-Associates.webp" alt="S. Phaneuf & Associates" width="594"
+              height="126">
           </picture>
         </a>
         <div id="nav-wrap">
@@ -107,7 +175,7 @@
       </div>
     </div>
 
-    
+
     <div id="gallery" class="container2">
       <h2 class="heading-text">
         Excavation & Site Development Projects <span>photo gallery</span>
@@ -118,114 +186,114 @@
             <a href="images/large/sewer-line-install.webp" data-pswp-width="1920" data-pswp-height="1080"
               target="_blank">
               <img src="images/small/sewer-line-install.webp" height="640" width="416"
-                alt="Boston,Mass - Install ... ... .... .. . . ...">
+                alt="Boston, Mass - Install ... ... .... .. . . ...">
               <div class="overlay2"><span>Click to Zoom</span></div>
             </a>
             <figcaption>
-              <div>Methuen, Mass</div> 
-              Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+              <div>Boston, Mass</div>
+              Install ... ... .... .. . . ...
             </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+            <a href="images/large/sewer-line-install.webp" data-pswp-width="1920" data-pswp-height="1080"
               target="_blank">
               <img src="images/small/sewer-line-install.webp" height="640" width="416"
-              alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                alt="Boston, Mass - Install ... ... .... .. . . ...">
               <div class="overlay2"><span>Click to Zoom</span></div>
             </a>
             <figcaption>
-              <div>Methuen, Mass</div> 
-              Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+              <div>Boston, Mass</div>
+              Install ... ... .... .. . . ...
             </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+            <a href="images/large/sewer-line-install.webp" data-pswp-width="1920" data-pswp-height="1080"
               target="_blank">
               <img src="images/small/sewer-line-install.webp" height="640" width="416"
-              alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                alt="Boston, Mass - Install ... ... .... .. . . ...">
               <div class="overlay2"><span>Click to Zoom</span></div>
             </a>
             <figcaption>
-              <div>Methuen, Mass</div> 
-              Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+              <div>Boston, Mass</div>
+              Install ... ... .... .. . . ...
             </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+            <a href="images/large/sewer-line-install.webp" data-pswp-width="1920" data-pswp-height="1080"
               target="_blank">
               <img src="images/small/sewer-line-install.webp" height="640" width="416"
-              alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                alt="Boston, Mass - Install ... ... .... .. . . ...">
               <div class="overlay2"><span>Click to Zoom</span></div>
             </a>
             <figcaption>
-              <div>Methuen, Mass</div> 
-              Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+              <div>Boston, Mass</div>
+              Install ... ... .... .. . . ...
             </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+            <a href="images/large/sewer-line-install.webp" data-pswp-width="1920" data-pswp-height="1080"
               target="_blank">
               <img src="images/small/sewer-line-install.webp" height="640" width="416"
-                alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                alt="Boston, Mass - Install ... ... .... .. . . ...">
               <div class="overlay2"><span>Click to Zoom</span></div>
             </a>
             <figcaption>
-              <div>Methuen, Mass</div> 
-              Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+              <div>Boston, Mass</div>
+              Install ... ... .... .. . . ...
             </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+            <a href="images/large/sewer-line-install.webp" data-pswp-width="1920" data-pswp-height="1080"
               target="_blank">
               <img src="images/small/sewer-line-install.webp" height="640" width="416"
-              alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                alt="Boston, Mass - Install ... ... .... .. . . ...">
               <div class="overlay2"><span>Click to Zoom</span></div>
             </a>
             <figcaption>
-              <div>Methuen, Mass</div> 
-              Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+              <div>Boston, Mass</div>
+              Install ... ... .... .. . . ...
             </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+            <a href="images/large/sewer-line-install.webp" data-pswp-width="1920" data-pswp-height="1080"
               target="_blank">
               <img src="images/small/sewer-line-install.webp" height="640" width="416"
-              alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                alt="Boston, Mass - Install ... ... .... .. . . ...">
               <div class="overlay2"><span>Click to Zoom</span></div>
             </a>
             <figcaption>
-              <div>Methuen, Mass</div> 
-              Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+              <div>Boston, Mass</div>
+              Install ... ... .... .. . . ...
             </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <a href="images/large/Methuen-Mass-Starbucks.webp" data-pswp-width="1919" data-pswp-height="1030"
+            <a href="images/large/sewer-line-install.webp" data-pswp-width="1920" data-pswp-height="1080"
               target="_blank">
               <img src="images/small/sewer-line-install.webp" height="640" width="416"
-              alt="Methuen,Mass - Starbucks paving parking lot and drive thru.">
+                alt="Boston, Mass - Install ... ... .... .. . . ...">
               <div class="overlay2"><span>Click to Zoom</span></div>
             </a>
             <figcaption>
-              <div>Methuen, Mass</div> 
-              Paving the drive thru at Starbucks before moving on to the parking lot on a warm winter day.
+              <div>Boston, Mass</div>
+              Install ... ... .... .. . . ...
             </figcaption>
           </figure>
         </li>
-         <li id="insta">
+        <li id="insta">
           <figure>
             <a href="images/small/Instagram.webp" data-pswp-width="640" data-pswp-height="416" target="_blank">
               <img src="images/small/Instagram.webp" height="640" width="416"
@@ -233,7 +301,7 @@
               <div class="overlay2"><span>Visit Instagram</span></div>
             </a>
             <figcaption>
-              <div>Follow Us</div> 
+              <div>Follow Us</div>
               More projects can be seen on Instagram.
             </figcaption>
           </figure>
@@ -325,7 +393,7 @@
     </picture>
 
   </main>
- 
+
   <!--footer-->
   <footer>
     <div style="max-width:1140px;margin: auto;color: #ccc!important;font-size: 15px;font-weight: 300;">
