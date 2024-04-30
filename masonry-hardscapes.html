@@ -474,6 +474,8 @@
     const lightbox = new PhotoSwipeLightbox({
       gallery: "#gallery",
       children: "a",
+      showHideAnimationType: 'none',
+      zoomAnimationDuration: false,
       pswpModule: () =>
         import(
           "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.min.js"
