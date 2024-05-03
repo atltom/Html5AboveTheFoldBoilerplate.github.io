@@ -35,14 +35,7 @@
  .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative}
  .navbar-change{height:auto}
  /* --- HERO --- */
- /* .big-image {background-color:#2f3f5e;margin-top: calc((56vw / 3) + 30px);height: calc(100vh - ((56vw / 3) + 30px ));  width: 100%;position: relative;background-size: cover;background-position: 50% 50%;} */
- .big-image {
-  margin-top: 106px;
-  height: 412px;  
-  width: 100%;position: relative;
-  background-size: cover;
-  }
-
+ .big-image {background-color:#2f3f5e;margin-top: calc((56vw / 3) + 30px);height: calc(100vh - ((56vw / 3) + 30px ));  width: 100%;position: relative;background-size: cover;background-position: 50% 50%;}
  .big-image.home{background-image: url(../images/566/asphalt-and-masonry.webp);}
  .big-image.services{background-image: url(../images/566/stone-wall.webp);}
  .big-image.site-work{background-image: url(../images/566/site-work.webp);}
@@ -63,16 +56,10 @@
     transform: translate(-50%, calc(-50% - 30px));
 }
 
- /* .overlay h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
+ .overlay h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
+ /* .overlay hr {margin: 0; width: 90%;} */
  .overlay p {padding:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;}
- .overlay a {font-size: 18px;font-weight: 600;padding:12px 32px;border: 1px solid #ab4400;text-shadow: 1px 1px 4px #5e2500;margin:20px 0 0 0;} */
- #hero-h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
- #hero-p {padding:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;}
- #hero-hr{margin: 17px 3px;}
- #hero-a {font-size: 18px;font-weight: 600;padding:12px 32px;border: 1px solid #ab4400;text-shadow: 1px 1px 4px #5e2500;margin:20px 0 0 0;}
-
-
-
+ .overlay a {font-size: 18px;font-weight: 600;padding:12px 32px;border: 1px solid #ab4400;text-shadow: 1px 1px 4px #5e2500;margin:20px 0 0 0;}
  /* --- HELPERS --- */
  .d-b { display: block } 
  .m-c { margin: 0 auto }

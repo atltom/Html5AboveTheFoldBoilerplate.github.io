@@ -26,8 +26,139 @@
     <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
 
     <link rel="preload" fetchpriority="high" as="image" href="images/566/asphalt-and-masonry.webp" type="image/webp">
-    <link rel="stylesheet" href="css/top.css" media="all">
+    <!-- <link rel="stylesheet" href="css/top.css" media="all"> -->
     <link rel="icon" href="images/favicon96c.png" sizes="96x96" />
+    <style>
+ /* --- RESET --- */
+ *, *::before, *::after {box-sizing: border-box;} * {margin: 0;} img, picture, video, canvas, svg, main {  display: block;  max-width: 100%;} input, button, textarea, select {  font: inherit;} p, h1, h2, h3, h4, h5, h6 {  overflow-wrap: break-word;}
+ html {-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-ms-overflow-style: scrollbar;-webkit-tap-highlight-color: rgba(#000, 0)}
+ body {-webkit-font-smoothing: antialiased;font: 16px Arial, Helvetica, sans-serif;color: #0f0f0f;line-height: 1.5; font-family: system-ui; font-weight: normal;  font-size: 16px;}
+ p {padding: 15px;text-align: left}
+ article{margin-top:60px}
+ article  h3 {font-size: 20px;text-align: left;padding-left: 30px;}
+ button:focus {outline: 1px dotted;outline: 5px auto -webkit-focus-ring-color}
+ button {font: 16px Arial, Helvetica, sans-serif;margin: 0;color: #444;border-radius: 0;margin: 0;font-family: inherit;font-size: inherit;line-height: inherit;overflow: visible;text-transform: none}
+ .nav,button {outline: 0}
+ img {vertical-align: middle;border-style: none;width:100%;height:auto}
+ hr {border: 1.5px solid #bc5a15;margin: 5px 30px -5px 30px}
+ .btn { text-decoration: none; background: #BC5A15; color: #fff; display: inline-block; padding: 8px 16px; border: 0; border-radius: .3rem; cursor: pointer }
+ .btn:hover, .btn:active, .btn:focus {background: #e57930}
+ .btn-outlined{background: #fff;color: green;border: 3px solid green;font-weight: bold;border-radius: 7px;}
+ /* --- NAVAGATION --- */
+ #fixedbar { background: #BC5A15; color: #fff; position: fixed; top: 0; width: 100%; height: 30px; z-index: 3; font-size: 13px; font-weight:bold;  padding: 7px 0px 0px 30px;padding-left: calc(10vw / 3); }
+ #nav-wrap {float: none;padding: 0;position: relative;} 
+ .nav {background: #2f3f5e; position: fixed; width: 100%;height: calc(56vw / 3); z-index: 3; color: #fff;top: 30px;border-bottom: 2px solid #212f4a;overflow: hidden;}
+ .nav-link {text-decoration: none;padding: 8px 14px 8px 8px; position: relative; color: inherit;font-family: system-ui; font-weight: 600; }
+ .nav-link.selected {color: #fff;text-shadow: 1px 1px 0 #bc5a15, -1px 1px 0 #bc5a15, -1px -1px 0 #bc5a15, 1px -1px 0 #bc5a15;}
+ #nav-brand {display: inline-block;max-width: calc(100vw - 62px);padding:3px 12px 0 0;padding-left: calc(10vw / 3);}
+ .nav a{display:block;padding:8px 15px}
+ .dropbtn {background-color: #303f5e;color: white;font-size: 16px;border: none;cursor: pointer;}
+ .dropbtn:hover, .dropbtn:focus {background-color: #303f5e;}
+ .dropdown {position: relative;display: inline-block;padding: 8px 15px;}
+ .dropdown-content {  display: none;  background-color: #303f5e;  min-width: 254px;  margin-left: 15px;  z-index: 1;  left: 0;  position: relative;}
+ .dropdown-content a {color: #fff;padding: 12px 16px;text-decoration: none;display: block;}
+ .dropdown-content a:hover {background-color: #222f49;} 
+ .show {display:block;}
+ .bar1,.bar2,.bar3{width:30px;height:3.25px;background-color: #f1f1f1; margin: 6.5px 0;transition:.4s}
+ .change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}
+ .change .bar2 { opacity: 0 }
+ .change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
+ .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative}
+ .navbar-change{height:auto}
+ /* --- HERO --- */
+ /* .big-image {background-color:#2f3f5e;margin-top: calc((56vw / 3) + 30px);height: calc(100vh - ((56vw / 3) + 30px ));  width: 100%;position: relative;background-size: cover;background-position: 50% 50%;} */
+ .big-image {
+  margin-top: 106px;
+  height: calc(100vh - 106px);  
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  }
+
+ .big-image.home{background-image: url(../images/566/asphalt-and-masonry.webp);}
+ .big-image.services{background-image: url(../images/566/stone-wall.webp);}
+ .big-image.site-work{background-image: url(../images/566/site-work.webp);}
+ .big-image.asphalt-paving{background-image: url(../images/566/asphalt-paving.webp);}
+ .big-image.foundation{background-image: url(../images/566/foundation.webp);}
+ .big-image.back-porch{background-image: url(../images/566/back-porch.webp);}
+  /* .overlay {position: absolute;height: auto;width: auto;top: 0;left: 0;background: #0815248f;background: #303f5e96;color: white;display: flex;align-items: center;justify-content: center;flex-direction: column;margin: 7vw;padding: 25px;} */
+ /* .overlay { position: relative;  top: 30px;  background: #303f5e96;background: #303f5eba;  color: white;  width: 87%;  margin: auto;  padding: 25px;  text-align: center;} */
+ .overlay {
+    position: relative;
+    left: 50%;
+    background: #303f5eba;
+    color: white;
+    width: 87%;
+    padding: 25px;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, calc(-50% - 30px));
+}
+
+ /* .overlay h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
+ .overlay p {padding:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;}
+ .overlay a {font-size: 18px;font-weight: 600;padding:12px 32px;border: 1px solid #ab4400;text-shadow: 1px 1px 4px #5e2500;margin:20px 0 0 0;} */
+ #hero-h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
+ #hero-p {padding:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;}
+ #hero-hr{margin: 17px 3px;}
+ #hero-a {font-size: 18px;font-weight: 600;padding:12px 32px;border: 1px solid #ab4400;text-shadow: 1px 1px 4px #5e2500;margin:20px 0 0 0;}
+
+
+
+ /* --- HELPERS --- */
+ .d-b { display: block } 
+ .m-c { margin: 0 auto }
+ .p-1 {padding:10px}
+ .t-c {text-align:center;}
+ .pipe {border-left: 6px solid #ccc;padding-left: 6px;color: #1e396c;margin-left: 15px;}
+ .screen-reader-text{border: 0;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute !important;width: 1px;word-wrap: normal !important;word-break: normal; }
+ @media(min-width:576px) {
+  #nav-brand {width: 529px;}
+   .navbar-toggler{display: none;}
+   .nav {height: auto;}
+   .nav a {display: inline-block;}  
+   .nav a:nth-child(1) {padding-left: calc(10vw / 3);}
+   .big-image{margin-top: 157px;}
+   .dropdown-content {position: fixed;top: 182px;width: 260px;left: 280px;}
+   .dropdown-content.show{display: inline;}
+   .overlay {width: 50%;}
+ }
+ @media (min-width: 768px) {
+   .nav{max-height: 175px;}
+   #logo {width: 368.55px;}
+   .dropdown-content {top: 157px;}
+ }
+ @media (min-width: 1024px) { 
+  .p-1 {    padding: 40px 10px!important;  }
+  section {    width: 78% !important;  }
+  p{line-height: 30px;}
+  #nav-brand {width: 420px;}
+  #nav-wrap {float: right; margin-top: 25px; }
+  .big-image {margin-top: 113px;  }
+  .overlay{transform: translate(-50%, calc(-50% - 0px));}
+  .big-image.home{background-image: url(../images/large/asphalt-and-masonry.webp);}
+  .big-image.services{background-image: url(../images/large/stone-wall.webp);}
+  .big-image.site-work{background-image: url(../images/large/site-work.webp);}
+  .big-image.asphalt-paving{background-image: url(../images/large/asphalt-paving.webp);}
+  .big-image.foundation{background-image: url(../images/large/foundation.webp);}
+  .big-image.back-porch{background-image: url(../images/large/back-porch.webp);}
+  .overlay h1{letter-spacing: 1.2px;    font-weight: 600;}
+  .overlay p{letter-spacing: .7px;    font-weight: 600;}
+  .dropdown-content {width: 250px;top: 113px;left: calc(100vw - 260px); }
+ }
+ @media (min-width: 1200px) { 
+   .nav{max-height: 134px;}
+   #nav-wrap{float:right;margin: 25px 20px 0;}
+   #logo {width: 100%;}
+   section{width:85%;margin: auto;}
+ }
+ @media (max-width: 320px) { 
+  .overlay {padding:12px;}
+ }
+
+    </style>
+
     <!-- <base href=""> -->
     <!-- <noscript>
     <link rel="stylesheet" href="css/belowthefold.min.css">
