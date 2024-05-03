@@ -35,7 +35,14 @@
  .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative}
  .navbar-change{height:auto}
  /* --- HERO --- */
- .big-image {background-color:#2f3f5e;margin-top: calc((56vw / 3) + 30px);height: calc(100vh - ((56vw / 3) + 30px ));  width: 100%;position: relative;background-size: cover;background-position: 50% 50%;}
+ /* .big-image {background-color:#2f3f5e;margin-top: calc((56vw / 3) + 30px);height: calc(100vh - ((56vw / 3) + 30px ));  width: 100%;position: relative;background-size: cover;background-position: 50% 50%;} */
+ .big-image {
+  margin-top: 106px;
+  height: 412px;  
+  width: 100%;position: relative;
+  background-size: cover;
+  }
+
  .big-image.home{background-image: url(../images/566/asphalt-and-masonry.webp);}
  .big-image.services{background-image: url(../images/566/stone-wall.webp);}
  .big-image.site-work{background-image: url(../images/566/site-work.webp);}
