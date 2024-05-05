@@ -59,10 +59,11 @@
     transform: translate(-50%, calc(-50% - 30px));
 }
 
- .overlay h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
+ #hero-h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
+ #hero-hr{margin: 17px 3px;}
  /* .overlay hr {margin: 0; width: 90%;} */
- .overlay p {padding:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;}
- .overlay a {font-size: 18px;font-weight: 600;padding:12px 32px;border: 1px solid #ab4400;text-shadow: 1px 1px 4px #5e2500;margin:20px 0 0 0;}
+ #hero-p {padding:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;}
+ #hero-btn {font-size: 18px;font-weight: 600;padding:12px 32px;border: 1px solid #ab4400;text-shadow: 1px 1px 4px #5e2500;margin:20px 0 0 0;}
  /* --- HELPERS --- */
  .d-b { display: block } 
  .m-c { margin: 0 auto }
