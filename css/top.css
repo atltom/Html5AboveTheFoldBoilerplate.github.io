@@ -25,6 +25,7 @@
  .nav a{display:block;padding:8px 15px}
  .dropbtn {background-color: #303f5e;color: white;font-size: 16px;border: none;cursor: pointer;}
  .dropbtn:hover, .dropbtn:focus {background-color: #303f5e;}
+ #dropbtn-arrow{font-size:10px}
  .dropdown {position: relative;display: inline-block;padding: 8px 15px;}
  .dropdown-content {  display: none;  background-color: #303f5e;  min-width: 254px;  margin-left: 15px;  z-index: 1;  left: 0;  position: relative;}
  .dropdown-content a {color: #fff;padding: 12px 16px;text-decoration: none;display: block;}
@@ -34,7 +35,7 @@
  .change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}
  .change .bar2 { opacity: 0 }
  .change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
- .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative;z-index:9}
+ .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative;}
  .navbar-change{height:auto}
  /* --- HERO --- */
  .big-image {background-color:#2f3f5e;margin-top: calc((56vw / 3) + 30px);height: calc(100vh - ((56vw / 3) + 30px ));  width: 100%;position: relative;background-size: cover;background-position: 50% 50%;}
