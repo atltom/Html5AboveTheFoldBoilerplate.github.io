@@ -15,6 +15,7 @@
  .btn-outlined{background: #fff;color: green;border: 3px solid green;font-weight: bold;border-radius: 7px;}
  /* --- NAVAGATION --- */
  #fixedbar { background: #BC5A15; color: #fff; position: fixed; top: 0; width: 100%; height: 30px; z-index: 3; font-size: 13px; font-weight:bold;  padding: 7px 0px 0px 30px;padding-left: calc(10vw / 3); }
+ #phone, #email{width:10px;height:auto;display:inline-block;margin-right:3px}
  #nav-wrap {float: none;padding: 0;position: relative;} 
  .nav {background: #2f3f5e; position: fixed; width: 100%;height: calc(56vw / 3); z-index: 3; color: #fff;top: 30px;border-bottom: 2px solid #212f4a;overflow: hidden;}
  .nav-link {text-decoration: none;padding: 8px 14px 8px 8px; position: relative; color: inherit;font-family: system-ui; font-weight: 600; }
