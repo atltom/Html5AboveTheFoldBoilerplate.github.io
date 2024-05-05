@@ -23,7 +23,10 @@
           <link rel="manifest" href="site.webmanifest">
           -->
   <meta name="theme-color" content="#303f5e" />
-  <link rel="stylesheet" href="css/top.css" media="all" />
+  <!-- <link rel="stylesheet" href="css/top.css" media="all" /> -->
+  <link rel="preload" fetchpriority="high" as="image" href="images/566/stone-wall.webp" type="image/webp">
+  <link rel="stylesheet" href="css/top.min.css" media="all">
+  <link rel="icon" href="images/favicon96c.png" sizes="96x96" />
 </head>
 
 <body>
@@ -228,7 +231,7 @@
     <hr style="margin-top: 60px;margin-bottom: 60px;" />
     <picture>
       <source media="(min-width:1029px)" srcset="images/large/our-services.webp">
-      <img src="images/small/our-services.webp" alt="Our Servies" width="365" height="274">
+      <img loading="lazy" src="images/small/our-services.webp" alt="Our Servies" width="365" height="274">
     </picture>
   </main>
   <footer>
