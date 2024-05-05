@@ -15,8 +15,8 @@
  .btn-outlined{background: #fff;color: green;border: 3px solid green;font-weight: bold;border-radius: 7px;}
  /* --- NAVAGATION --- */
  #fixedbar { background: #BC5A15; color: #fff; position: fixed; top: 0; width: 100%; height: 30px; z-index: 3; font-size: 13px; font-weight:bold;  padding: 7px 0px 0px 30px;padding-left: calc(10vw / 3); }
- #phone, #email{width:10px;height:auto;display:inline-block;margin-right:3px}
- a.phone {color:#fff;text-decoration:none!important}
+ #phone-icon, #email-icon{width:10px;height:auto;display:inline-block;margin-right:3px}
+ #phone-link {color:#fff;text-decoration:none!important}
  #nav-wrap {float: none;padding: 0;position: relative;} 
  .nav {background: #2f3f5e; position: fixed; width: 100%;height: calc(56vw / 3); z-index: 3; color: #fff;top: 30px;border-bottom: 2px solid #212f4a;overflow: hidden;}
  .nav-link {text-decoration: none;padding: 8px 14px 8px 8px; position: relative; color: inherit;font-family: system-ui; font-weight: 600; }
@@ -34,7 +34,7 @@
  .change .bar1 { -webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px)}
  .change .bar2 { opacity: 0 }
  .change .bar3 { -webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px)}
- .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative}
+ .navbar-toggler{float:right;margin: 0 15px 0 0;position: relative;z-index:9}
  .navbar-change{height:auto}
  /* --- HERO --- */
  .big-image {background-color:#2f3f5e;margin-top: calc((56vw / 3) + 30px);height: calc(100vh - ((56vw / 3) + 30px ));  width: 100%;position: relative;background-size: cover;background-position: 50% 50%;}
