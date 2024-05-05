@@ -415,8 +415,24 @@
     </footer>
 
     <script>
-        //function myFunction() { document.getElementById("myDropdown").classList.toggle("show") }
-        //window.onclick = function (e) { if (!e.target.matches(".dropbtn")) { var myDropdown = document.getElementById("myDropdown"); if (myDropdown.classList.contains("show")) { myDropdown.classList.remove("show") } } }; function naviconClick(navicon) { navicon.classList.toggle("change"); var nav = document.getElementById("navbar"); nav.classList.toggle("navbar-change") }
+        function myFunction() { 
+            document.getElementById("myDropdown").classList.toggle("show") 
+        }
+
+        window.onclick = function (e) { 
+            if (!e.target.matches(".dropbtn")) { 
+                var myDropdown = document.getElementById("myDropdown"); 
+                if (myDropdown.classList.contains("show")) { 
+                    myDropdown.classList.remove("show") } 
+                } 
+        }; 
+            
+        function naviconClick(navicon) { 
+            navicon.classList.toggle("change"); 
+            var nav = document.getElementById("navbar"); 
+            nav.classList.toggle("navbar-change") 
+        }
+        
         //function loadCSS(href) { var ss = window.document.createElement("link"), ref = window.document.getElementsByTagName("head")[0]; ss.rel = "stylesheet"; ss.href = href; ss.media = "only x"; ref.parentNode.insertBefore(ss, ref); setTimeout(function () { ss.media = "all" }, 0) }
         //loadCSS("css/belowthefold.min.css");
     </script>
