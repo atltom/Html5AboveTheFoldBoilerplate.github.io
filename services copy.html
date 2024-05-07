@@ -21,76 +21,77 @@
           <link rel="icon" href="/icon.svg" type="image/svg+xml">
           <link rel="apple-touch-icon" href="icon.png">
           <link rel="manifest" href="site.webmanifest">
-          -->
-  <meta name="theme-color" content="#303f5e" />
-  <link rel="stylesheet" href="css/top.css" media="all" />
+  -->
+
+  <meta name="theme-color" content="#303f5e">
+  <link rel="stylesheet" href="css/top.css" media="all">
+  <link rel="preload" fetchpriority="high" as="image" href="images/566/stone-wall.webp" type="image/webp">
+  <!-- <link rel="stylesheet" href="css/top.min.css" media="all"> -->
+  <link rel="icon" href="images/favicon96c.png" sizes="96x96" />
+      
 </head>
 
 <body>
   <header>
-    <div id=fixedbar>
-      <svg id="phone-icon" fill=#fff viewBox="0 0 512 512" xmlns=http://www.w3.org/2000/svg>
+    <div id="fixedbar">
+      <span id="curVW"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"
+        style="width:10px;height:auto;display:inline-block;margin-right:3px;">
         <path
           d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z">
         </path>
-      </svg><a href=tel:+19786694919 id=phone-link>978-669-4919</a>
-      &nbsp;&nbsp;&nbsp;
-      <svg id="email-icon" fill=#fff viewBox="0 0 512 512" xmlns=http://www.w3.org/2000/svg>
-        <path
-          d=" M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+      </svg><a style="color:#fff;text-decoration:none!important"
+        href="tel:+19786694919">978-669-4919</a>&nbsp;&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512" fill="#fff" style="width:10px;height:auto;display:inline-block;margin-right:3px;">
+        <path d=" M48 64C21.5 64 0 85.5 0 112c0
+        15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3
+        19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8
+        17.1-54 17.1-76.8 0L0 176z" />
       </svg>info@phaneufassociates.com
     </div>
-
-    <nav class=nav id=navbar tabindex=-1>
-      <div class=navbar-toggler onclick=naviconClick(this)>
-        <div class=bar1></div>
-        <div class=bar2></div>
-        <div class=bar3></div>
+    <nav id="navbar" class="nav" tabindex="-1">
+      <div onclick="naviconClick(this)" class="navbar-toggler" style="z-index:9;">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-      <div>
-        <a href=/index class=nav-link id=nav-brand>
-          <picture><img alt="S. Phaneuf & Associates" height=126 id=logo src=images/S-Phanuef-Associates.webp width=594>
-          </picture>
+      <div style="background:#2f3f5e">
+        <a id="nav-brand" href="/index" class="nav-link" style="z-index:8;">
+          <img id="logo" src="images/S-Phanuef-Associates.webp" alt="S. Phaneuf & Associates" width="594" height="126">
         </a>
-        <div id=nav-wrap>
-          <a href=/index class=nav-link>Home</a>
-          <a href=/services class="nav-link selected">Services</a>
-          <a href=/reviews class=nav-link>Reviews</a>
-          <div class="nav-link dropdown">
-            <span class=dropbtn onclick=myFunction()>Portfolio <span id="dropbtn-arrow">▼</span></span>
-            <div class=dropdown-content id=myDropdown>
-              <a href=/asphalt-paving>Asphalt Paving</a>
-              <a href=/masonry-hardscapes>Masonry & Hardscapes</a>
-              <a href=/excavation-site-development>Excavation & Site Development</a>
+        <div id="nav-wrap">
+          <a class="nav-link" href="/index">Home</a>
+          <a class="nav-link selected" href="/services">Services</a>
+          <a class="nav-link" href="/reviews">Reviews</a>
+          <div class="dropdown nav-link">
+            <span class="dropbtn" onclick="myFunction()">Portfolio <span style="font-size: 10px;">&#9660;</span></span>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="/asphalt-paving" style="padding-left:16px">Asphalt Paving</a>
+              <a href="/masonry-hardscapes">Masonry & Hardscapes</a>
+              <a href="/excavation-site-development">Excavation & Site Development</a>
             </div>
           </div>
-          <a href=/contact-us class=nav-link>Contact Us</a>
+          <a class="nav-link" href="/contact-us">Contact Us</a>
         </div>
       </div>
     </nav>
   </header>
-
-
   <main>
-    <div id="hero" class="big-image services">
+    <div class="big-image services">
       <div class="overlay">
-        <h1 id="hero-h1">
+        <h1>
           Full-Service Capabilities that Transform your Vision into Reality.
         </h1>
-        <hr id="hero-hr">
-        <p id="hero-p">
+        <hr style="margin: 17px 3px;" />
+        <p>
           Our operations are made up of multiple divisions capable of
           performing gradework, asphalt, masonry, and more.
         </p>
         <a href="/contact-us" class="btn">Get Started</a>
       </div>
     </div>
-
-    
-
-    <section class="p-3 pt-5">
+    <section class="p-1">
       <h2 class="pipe">Masonry & Hardscapes</h2>
-      <p class="p-3">
+      <p>
         Stone, slate, brick. These materials can significantly enhance the
         beauty of your property, add to its value, and provide years of
         enjoyment in the form of stone walkways, paver stone patios, stone
@@ -101,7 +102,7 @@
         for outdoor living spaces that add natural beauty and value to your
         home or business.
       </p>
-      <p class="p-3">
+      <p>
         Hardscapes, as it is referred to in the Landscape Industry, is one of
         the most natural ways to add beauty to your landscape. Landscape
         construction of hardscapes can define outdoor space in the same way
@@ -123,14 +124,11 @@
         <li>Fire Pits</li>
         <li>and more</li>
       </ul>
-      <hr class="mx-3 mt-5">
     </section>
-
-    
-
-    <section class="p-3 pt-5">
+    <hr style="margin-top: 60px;margin-bottom: 60px;" />
+    <section class="p-1">
       <h2 class="pipe">Asphalt Paving</h2>
-      <p class="p-3">
+      <p>
         S. Phaneuf & Associates is one the premier asphalt paving contractors
         for New England, taking care of all asphalt paving needs for
         driveways, parking lots, asphalt berm, repairs, drainage, catch basins
@@ -153,14 +151,11 @@
         <li>Catch Basins</li>
         <li>and more</li>
       </ul>
-      <hr class="mx-3 mt-5">
     </section>
-
-   
-
-    <section class="p-3 pt-5">
+    <hr style="margin-top: 60px;margin-bottom: 60px;" />
+    <section class="p-1">
       <h2 class="pipe">Excavation & Site Development</h2>
-      <p class="p-3">
+      <p>
         S. Phaneuf & Associates is a full service excavation contractor,
         specializing in residential, commercial and industrial site
         development excellence. Our solid reputation was built on hard work,
@@ -180,14 +175,11 @@
         <li>Repairs</li>
         <li>and more</li>
       </ul>
-      <hr class="mx-3 mt-5">
     </section>
-
-    
-
-    <section class="p-3 py-5">
+    <hr style="margin-top: 60px;margin-bottom: 60px;" />
+    <section class="p-1">
       <h2 class="pipe">Snow & Ice Management</h2>
-      <p class="p-3">
+      <p>
         SS. Phaneuf & Associates understand the importance of maintaining safe
         and accessible parking lots and sidewalks for your customers and
         employees, as well as prompt, reliable snowplowing services for our
@@ -197,73 +189,60 @@
         conditions and provide prompt preparation and response for our
         customers.
       </p>
-      
     </section>
-
-   
-
-    <div class="bg-g-0">
-      <section class="p-3 py-5">
-        <h2 class="ms-3">Request Free Consultation</h2>
-        <p class="p-3">
+    <hr style="margin-top: 60px;margin-bottom: 60px;" />
+    <div style="background: #ddd;">
+      <section class="p-1">
+        <h2 style="margin-left: 15px;">Request Free Consultation</h2>
         S. Phaneuf & Associates is a fully licensed and insured company. We
         are in excellent standing with our customers. Our goal is to determine
         and implement the right solutions for each customer. We strive to
         provide fast and friendly services with the highest level of quality
-        and customer satisfaction available. 
-      </p>
-      
-      <!-- <p  class="p-3">
+        and customer satisfaction available. Contact us at 1-978-669-4919 to
+        get started!
+        <div class="t-c" style="padding: 20px 0 50px;">
+          <a class="btn" style="width:152px; text-align: center;" href="/contact">
+            <span>Get Started</span>
+            <span class="icon">
+              <span class="arrow"></span>
+            </span>
+          </a>
+        </div>
         We welcome the opportunity to earn your trust and deliver you the best
-        service in the industry. 
-      </p> -->
-      <div class="t-c" >
-        <a class="btn t-c" href="/contact">
-          <span>Get Started</span>
-          <span class="icon">
-            <span class="arrow"></span>
-          </span>
-        </a>
-      </div>
+        service in the industry. Get Started...
       </section>
     </div>
-
-    <!-- <div class="p-3 pt-5">
-     
-      <p class="p-3">
+    <div class="p-1">
+      <hr style="margin-top: 60px;margin-bottom: 60px;" />
+      <p>
         When You Hire S. Phaneuf & Associates, You Get Experience, Knowledge,
         Quality and Commitment
       </p>
-      <p class="p-3">
+    </div>
+    <section class="p-1">
+      <h2 style="font-size: 23px;padding: 0px 17px;margin-bottom: 15px;">
         Join the growing number of smart homeowners and businesses that have
         experienced the value of our services.
-      </p>
-    </div> -->
-
-
-    
-
-    <div class="p-3 py-5 fs-3 t-c my-5 fw-2 c-g">
-      CALL TODAY!<br /><a href="tel:+19786694919" class="c-g" style="text-decoration:none!important">978-669-4919</a>
-      
+      </h2>
+      <p style="text-align:center"></p>
+    </section>
+    <hr style="margin-top: 20px;margin-bottom: 60px;" />
+    <div style="text-align: center;font-size: 35px;font-weight: bold;margin: 50px;font-family: serif;">
+      CALL TODAY!<br /><a href="tel:+19786694919" style="color:#222;text-decoration:none!important">978-669-4919</a>
     </div>
-    <hr class="m-0">
-
-  
-
+    <hr style="margin-top: 60px;margin-bottom: 60px;" />
     <picture>
-      <source media="(min-width:1029px)" srcset="images/large/projects-collage.webp">
-      <img src="images/services365p.webp" alt="Our Servies" width="365" height="274">
+      <source media="(min-width:1029px)" srcset="images/large/our-services.webp">
+      <img loading="lazy" src="images/small/our-services.webp" alt="Our Servies" width="365" height="274">
     </picture>
   </main>
-
   <footer>
-    <div id="f1">
+    <div style="max-width:1140px;margin: auto;color: #ccc!important;font-size: 15px;font-weight: 300;">
       <div class="rowf">
         <div class="columnf">
-          <div id="fname">
+          <div style="font-size: 19px;font-weight: 600;">
             S. Phaneuf & Associates
-            <hr id="fhr">
+            <hr style="margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 82px;border-color: #303f5e;" />
           </div>
           <div>
             With 35 years of experience, no job is too big or complex for us
@@ -273,7 +252,7 @@
             <a aria-hidden="false" aria-label="Follow us on Facebook"
               href="https://www.facebook.com/p/Phaneuf-Associates-100054709692721">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white"
-                id="fbook">
+                style="width: 36px;height: 36px;display: inline-block;">
                 <path
                   d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
               </svg>
@@ -281,7 +260,7 @@
             <a aria-hidden="false" aria-label="Follow us on LinkedIn"
               href="https://www.linkedin.com/company/phaneuf-associates-incorporated/about/">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="white"
-                class="mercado-match" width="36" height="36" focusable="false" id="flinkin">
+                class="mercado-match" width="36" height="36" focusable="false" style="display: inline-block;">
                 <path
                   d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
                 </path>
@@ -290,9 +269,9 @@
           </div>
         </div>
         <div class="columnf">
-          <div class="fhead">
+          <div style="font-size: 16px;font-weight: 600;">
             Quick Links
-            <hr id="fhr2">
+            <hr style="margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 82px;" />
           </div>
           <ul class="footer-links">
             <li>
@@ -310,9 +289,9 @@
           </ul>
         </div>
         <div class="columnf">
-          <div class="fhead">
+          <div style="font-size: 16px;font-weight: 600;">
             Portfolio
-            <hr id="fhr3">
+            <hr style="margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 64px;" />
           </div>
           <ul class="footer-links">
             <li>
@@ -327,13 +306,13 @@
           </ul>
         </div>
         <div class="columnf">
-          <div class="fhead">
+          <div style="font-size: 16px;font-weight: 600;">
             Get In Touch
-            <hr id="fhr4">
+            <hr style="margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 90px;" />
           </div>
           <address>
             <ul>
-              <li>P.O. Box 190 <br>Groton, MA 01450</li>
+              <li>P.O. Box 190 <br />Groton, MA 01450</li>
               <li>info@phaneufassociates.com</li>
               <li>Mon to Fri: 8AM – 4:00PM</li>
               <li>
@@ -346,10 +325,38 @@
     </div>
     <div class="copyright">© 2024 S. Phaneuf & Associates</div>
   </footer>
+  <noscript>
+    <link rel="stylesheet" href="css/belowthefold.css" />
+  </noscript>
   <script>
-    function myFunction() { document.getElementById("myDropdown").classList.toggle("show") }
-    window.onclick = function (e) { if (!e.target.matches(".dropbtn")) { var myDropdown = document.getElementById("myDropdown"); if (myDropdown.classList.contains("show")) { myDropdown.classList.remove("show") } } }; function naviconClick(navicon) { navicon.classList.toggle("change"); var nav = document.getElementById("navbar"); nav.classList.toggle("navbar-change") }
-    function loadCSS(href) {var ss = window.document.createElement("link");ss.rel = "stylesheet";ss.href = href;ss.media = "only x";var ref = window.document.getElementsByTagName("head")[0];ref.append(ss);      setTimeout(function () { ss.media = "all" }, 0); }
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (e) {
+      if (!e.target.matches(".dropbtn")) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains("show")) {
+          myDropdown.classList.remove("show");
+        }
+      }
+    };
+    function naviconClick(navicon) {
+      navicon.classList.toggle("change");
+      var nav = document.getElementById("navbar");
+      nav.classList.toggle("navbar-change");
+    }
+
+    function loadCSS(href) {
+      var ss = window.document.createElement("link"),
+        ref = window.document.getElementsByTagName("head")[0];
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      ref.parentNode.insertBefore(ss, ref);
+      setTimeout(function () {
+        ss.media = "all";
+      }, 0);
+    }
     loadCSS("css/belowthefold.css");
   </script>
 </body>
