@@ -12,19 +12,29 @@
   <meta property="og:title" content="S. Phaneuf & Associates">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://phaneufassociates.com/">
+  <meta property="og:image" content="http://questiondepot.com/images/small/our-services.webp">
+  <meta property="og:image:alt" content="S. Phaneuf & Associates is a full service residential and commercial company specializing in asphalt paving, masonry and hardscapes serving Massachusetts and Southern New Hampshire.">
   <meta name="theme-color" content="#303f5e">
-  <!--
-  <meta property="og:image" content="http://phaneufassoc2020.xtrememarketingonline.com/wp-content/uploads/2023/04/P1-695x1024.jpg">
-  <meta property="og:image:alt" content="">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  -->
+  
   <link rel="preload" fetchpriority="high" as="image" href="images/S-Phanuef-Associates.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="images/566/asphalt-and-masonry.webp" type="image/webp">
-  <!-- <link rel="stylesheet" href="css/top.min.css" media="all"> -->
-  <link rel="stylesheet" href="css/top.css" media="all">
+
+  <link rel="stylesheet" href="css/top.min.css" media="all">
+  <!-- <link rel="stylesheet" href="css/top.css" media="all"> -->
+
+  <!--
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"> --180×180 --
+  <link rel="manifest" href="site.webmanifest">
+  // manifest.webmanifest
+  {
+    "icons": [
+      { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+      { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+    ]
+  }
+  -->
   <link rel="icon" href="images/favicon96c.png" sizes="96x96">
 </head>
 
@@ -137,7 +147,7 @@
       <div class="below-the-fold flex-container what-we-offer">
         <section>
           <h3>Masonry & Hardscapes</h3>
-          <img loading="lazy" src="images/masonry.webp" alt="Masonry" width="365" height="274">
+          <img loading="lazy" src="images/masonry.webp" alt="Custom designed front steps with bluestone treads, bluestone tiles and New England fieldstone retaining wall." width="365" height="274">
           <a class="btn btn-learn-more-service" href="/services"
             aria-label="Learn more about our masonry and hardscape services.">Learn More<span
               class="screen-reader-text">
@@ -145,7 +155,7 @@
         </section>
         <section>
           <h3>Asphalt Paving</h3>
-          <img loading="lazy" src="images/asphalt-paving.webp" alt="Asphalt Paving" width="365" height="274">
+          <img loading="lazy" src="images/asphalt-paving.webp" alt="A close-up view of a freshly paved asphat parking lot, with a smooth and even surface." width="365" height="274">
           <a class="btn btn-learn-more-service" href="/services"
             aria-label="Learn more about our asphalt paving services.">Learn More<span class="screen-reader-text">
               about our asphalt paving services.</span></a>
@@ -156,7 +166,7 @@
         <section>
           <h3>Excavation & Site Development</h3>
           <picture>
-            <img loading="lazy" src="images/site-development.webp" alt="Site Development" width="365" height="274">
+            <img loading="lazy" src="images/site-development.webp" alt="Mounds of excavated soil and gravel are scattered around the site. These materials will be used for backfilling, grading, and roadbed preparation." width="365" height="274">
           </picture>
           <a class="btn btn-learn-more-service" href="/services"
             aria-label="Learn more about our excavation and site development services.">Learn More<span
@@ -166,7 +176,7 @@
         <section>
           <h3>Snow & Ice Management</h3>
           <picture>
-            <img loading="lazy" src="images/snow-removal.webp" alt="Snow & Ice Management" width="365" height="274">
+            <img loading="lazy" src="images/snow-removal.webp" alt="A snow-covered road with a snowplow clearing the accumulated snow." width="365" height="274">
           </picture>
           <a class="btn btn-learn-more-service" href="/services"
             aria-label="Learn more about our snow removal services.">Learn More<span class="screen-reader-text">
@@ -370,7 +380,7 @@
 
     <picture>
       <source media="(min-width:1029px)" srcset="images/large/our-services.webp">
-      <img loading="lazy" src="images/small/our-services.webp" alt="Our Servies" width="365" height="274">
+      <img loading="lazy" src="images/small/our-services.webp" alt="Collage capturing different aspects of site development, from initial excavation to finished landscaping. Each scene contributes to the narrative of transforming an outdoor space." width="365" height="274">
     </picture>
   </main>
 
@@ -475,7 +485,7 @@
       ss.media = "only x"; 
 
       var ref = window.document.getElementsByTagName("head")[0]; 
-      ref.append(ss)
+     ref.append(ss)
       //ref.parentNode.insertBefore(ss, ref); 
       setTimeout(function () { ss.media = "all" }, 0) }
     //loadCSS("css/belowthefold.min.css");
