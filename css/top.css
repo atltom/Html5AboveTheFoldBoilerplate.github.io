@@ -63,7 +63,7 @@
   .navbar-toggler{display: none;}
   .nav {height: auto;}
   .nav a {display: inline-block;}  
-  .nav a:nth-child(1) {padding-left: calc(10vw / 3);}
+  /* .nav a:nth-child(1) {padding-left: calc(10vw / 3);} */
   .big-image{margin-top: 157px;}
   .dropdown-content {position: fixed;top: 182px;width: 260px;left: 280px;}
   .dropdown-content.show{display: inline;}
