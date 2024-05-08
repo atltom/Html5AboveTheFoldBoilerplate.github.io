@@ -42,7 +42,7 @@
  .big-image.asphalt-paving{background-image: url(../images/566/asphalt-paving.webp);}
  .big-image.foundation{background-image: url(../images/566/foundation.webp);}
  .big-image.back-porch{background-image: url(../images/566/back-porch.webp);}
- .overlay { position: relative; left: 50%; background: #303f5eba; color: white; width: 87%; padding: 25px; text-align: center; top: 50%; transform: translate(-50%, calc(-50% - 30px));}
+ .overlay { position: relative; left: 50%; background: #303f5eba;background: rgba(48, 63, 94, 0.41); color: white; width: 87%; padding: 25px; text-align: center; top: 50%; transform: translate(-50%, calc(-50% - 30px));}
  #hero-h1 {text-align: left;font-size:35px;text-shadow: 2px 2px 4px #000;line-height: 39px;}
  #hero-hr{margin: 17px 3px;}
  #hero-p {padding:0;font-size:18px;font-weight:bold;text-shadow:2px 2px 4px #000;text-align: left;}
@@ -88,8 +88,8 @@
   .big-image.asphalt-paving{background-image: url(../images/large/asphalt-paving.webp);}
   .big-image.foundation{background-image: url(../images/large/foundation.webp);}
   .big-image.back-porch{background-image: url(../images/large/back-porch.webp);}
-  .overlay h1{letter-spacing: 1.2px;    font-weight: 600;}
-  .overlay p{letter-spacing: .7px;    font-weight: 600;}
+   #hero-h1 {letter-spacing: 1.2px;    font-size: 40px;}
+   #hero-p {letter-spacing: .7px;  }
   .dropdown-content {width: 250px;top: 113px;left: calc(100vw - 260px); }
 }
 @media (min-width: 1200px) { 
