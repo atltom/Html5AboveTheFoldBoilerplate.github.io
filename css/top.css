@@ -74,6 +74,11 @@
   #logo {width: 368.55px;}
   .dropdown-content {top: 157px;}
 }
+@media (min-width: 768px) and (orientation: landscape) {
+  #fixedbar {    position: relative;}
+  #navbar {    position: relative;    top: 0;}
+  #hero {    margin-top: 0;    height: 125vh;    background-position: bottom;}
+}
 @media (min-width: 1024px) { 
   .p-1 {    padding: 40px 10px!important;  }
   section {    width: 78% !important;  }
