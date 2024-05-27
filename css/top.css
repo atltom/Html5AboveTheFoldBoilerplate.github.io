@@ -81,7 +81,7 @@
 }
 @media (min-width: 1024px) { 
   .p-1 {    padding: 40px 10px!important;  }
-  section {    width: 78% !important;  }
+  section {    width: 85% !important;  }
   p{line-height: 30px;}
   #nav-brand {width: 420px;}
   #nav-wrap {float: right; margin-top: 25px; }
