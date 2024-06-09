@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,20 +10,11 @@
   <meta property="og:title" content="Asphalt Paving - S. Phaneuf & Associates">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://phaneufassociates.com/">
-  
   <meta name="theme-color" content="#303f5e">
-  <!--
-      <meta property="og:image" content="http://phaneufassoc2020.xtrememarketingonline.com/wp-content/uploads/2023/04/P1-695x1024.jpg">
-      <meta property="og:image:alt" content="">
-      <link rel="icon" href="/favicon.ico" sizes="any">
-      <link rel="icon" href="/icon.svg" type="image/svg+xml">
-      <link rel="apple-touch-icon" href="icon.png">
-      <link rel="manifest" href="site.webmanifest">
-      -->
+  <link rel="preload" fetchpriority="high" as="style" href="css/top-min.css">
   <link rel="preload" fetchpriority="high" as="image" href="images/S-Phanuef-Associates.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="images/566/asphalt-paving.webp" type="image/webp">
-  <!-- <link rel="stylesheet" href="css/top.min.css" media="all"> -->
-  <link rel="stylesheet" href="css/top.css" media="all">
+  <link rel="stylesheet" href="css/top-min.css">
   <link rel="icon" href="images/favicon96c.png" sizes="96x96">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css"
@@ -58,19 +48,7 @@
       <svg id="email-icon" fill=#fff viewBox="0 0 512 512" xmlns=http://www.w3.org/2000/svg><path d=" M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" /></svg>info@phaneufassociates.com
     </div>
 
-    <nav class=nav id=navbar tabindex=-1>
-      <div class=navbar-toggler onclick=naviconClick(this)><div class=bar1></div><div class=bar2></div><div class=bar3></div></div>
-      <div>
-        <a href=/index class=nav-link id=nav-brand><picture><img alt="S. Phaneuf & Associates" height=126 id=logo src=images/S-Phanuef-Associates.webp width=594></picture></a>
-        <div id=nav-wrap>
-          <a href=/index class=nav-link>Home</a>
-          <a href=/services class=nav-link>Services</a>
-          <a href=/reviews class=nav-link>Reviews</a>
-          <div class="nav-link dropdown"><span class=dropbtn onclick=myFunction()>Portfolio <span id="dropbtn-arrow">&#9660;</span></span><div class=dropdown-content id=myDropdown><a class="nav-link selected" href=/asphalt-paving>Asphalt Paving</a><a href=/masonry-hardscapes>Masonry & Hardscapes</a><a href=/excavation-site-development>Excavation & Site Development</a></div></div>
-          <a href=/contact-us class=nav-link>Contact Us</a>
-        </div>
-      </div>
-    </nav>
+    <nav class="nav" id="navbar" tabindex="-1"><div class="navbar-toggler" onclick="naviconClick(this)"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div><div><a href="/index" class="nav-link" id="nav-brand"><picture><img alt="S. Phaneuf & Associates" height="126" id="logo" src="images/S-Phanuef-Associates.webp" width="594"></picture></a><div id="nav-wrap"><a href="/index" class="nav-link">Home</a><a href="/services" class="nav-link">Services</a><a href="/reviews" class="nav-link">Reviews</a><div class="nav-link dropdown" onclick="navDropdownClick()"><span id="nav-dropdown-btn" class="dropbtn">Portfolio&nbsp;<span id="dropbtn-arrow"></span></span><div class="dropdown-content" id="nav-dropdown"><a class="nav-link selected" href="/asphalt-paving">Asphalt Paving</a><a href="/masonry-hardscapes">Masonry & Hardscapes</a><a href="/excavation-site-development">Excavation & Site Development</a></div></div><a href="/contact-us" class="nav-link">Contact Us</a></div></div></nav>
   </header>
 
   <main>
@@ -251,7 +229,7 @@
         </div>
         <div class="columnf">
           <div class="fhead">Get In Touch <hr id="fhr4"></div>
-          <address><ul><li>P.O. Box 190 <br>Groton, MA 01450</li><li>info@phaneufassociates.com</li><li>Mon to Fri: 8AM – 4:00PM</li><li><a style="color: #ccc!important;text-decoration:none!important" href="tel:+19786694919">978-669-4919</a></li></ul></address>
+          <address><ul><li>P.O. Box 190 <br>Groton, MA 01450</li><li>info@phaneufassociates.com</li><li>Mon to Fri: 8AM – 4:00PM</li><li><a class="td-n c-lg" href="tel:+19786694919">978-669-4919</a></li></ul></address>
         </div>
       </div>
     </div>
@@ -260,8 +238,9 @@
 
 
   <script>
-    function myFunction() { document.getElementById("myDropdown").classList.toggle("show") }
-    window.onclick = function (e) { if (!e.target.matches(".dropbtn")) { var myDropdown = document.getElementById("myDropdown"); if (myDropdown.classList.contains("show")) { myDropdown.classList.remove("show") } } }; function naviconClick(navicon) { navicon.classList.toggle("change"); var nav = document.getElementById("navbar"); nav.classList.toggle("navbar-change") }
+    function navDropdownClick(){document.getElementById("nav-dropdown").classList.toggle("show"); }
+    window.onclick=function(e){ if (!(e.target.matches("#nav-dropdown-btn") || e.target.matches("#dropbtn-arrow"))){ var navDropdown=document.getElementById("nav-dropdown"); if (navDropdown.classList.contains("show")){ navDropdown.classList.remove("show");}}};
+    function naviconClick(navicon){ navicon.classList.toggle("change"); var nav=document.getElementById("navbar"); nav.classList.toggle("navbar-change");}
     function loadCSS(href) {var ss = window.document.createElement("link");ss.rel = "stylesheet";ss.href = href;ss.media = "only x";var ref = window.document.getElementsByTagName("head")[0];ref.append(ss);      setTimeout(function () { ss.media = "all" }, 0); }
     loadCSS("css/belowthefold.css");
   </script>
