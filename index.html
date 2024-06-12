@@ -17,6 +17,7 @@
   <link rel="preload" fetchpriority="high" as="image" href="images/S-Phanuef-Associates.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="images/566/asphalt-and-masonry.webp" type="image/webp">
   <link rel="stylesheet" href="css/top-min.css">
+  <link rel="stylesheet" href="css/belowthefold-min.css">
   <link rel="icon" href="images/favicon96c.png" sizes="96x96">
 </head>
 <body>
@@ -58,7 +59,7 @@
     window.onclick=function(e){ if (!(e.target.matches("#nav-dropdown-btn") || e.target.matches("#dropbtn-arrow"))){ var navDropdown=document.getElementById("nav-dropdown"); if (navDropdown.classList.contains("show")){ navDropdown.classList.remove("show");}}};
     function naviconClick(navicon){ navicon.classList.toggle("change"); var nav=document.getElementById("navbar"); nav.classList.toggle("navbar-change");}
     function loadCSS(href){ var ss=window.document.createElement("link"); ss.rel="stylesheet"; ss.href=href; ss.media="only x"; var ref=window.document.getElementsByTagName("head")[0]; ref.append(ss); setTimeout(function(){ss.media="all"}, 0);}
-    loadCSS("css/belowthefold-min.css");
+    //loadCSS("css/belowthefold-min.css");
   </script>
 </body>
 
