@@ -13,7 +13,7 @@
   <meta property="og:image" content="http://phaneufassociates.com/images/S-Phanuef-Associates.webp">
   <meta property="og:image:alt" content="S. Phaneuf & Associates is a full service residential and commercial company specializing in asphalt paving, masonry and hardscapes serving Massachusetts and Southern New Hampshire.">
   <meta name="theme-color" content="#303f5e">
-  <link rel="preload" fetchpriority="high"  as="image" href="images/large/asphalt-and-masonry.webp" type="image/webp" media="(min-width: 1024px)" />
+  <link rel="preload" fetchpriority="high"  as="image" href="images/large/asphalt-and-masonry.webp" type="image/webp" media="(min-width: 1024px)">
   <link rel="preload" fetchpriority="high" as="image" href="images/566/asphalt-and-masonry.webp" type="image/webp" media="(max-width: 1023px)">
   <link rel="preload" fetchpriority="high" as="image" href="images/S-Phanuef-Associates.webp" type="image/webp">
   <style>
@@ -27,21 +27,40 @@
     <nav class="nav" id="navbar" tabindex="-1"><div class="navbar-toggler" onclick="naviconClick(this)"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div><div><a href="/index" class="nav-link" id="nav-brand"><picture><img alt="S. Phaneuf & Associates" height="126" id="logo" src="images/S-Phanuef-Associates.webp" width="594"></picture></a><div id="nav-wrap"><a href="/index" class="nav-link selected">Home</a><a href="/services" class="nav-link">Services</a><a href="/reviews" class="nav-link">Reviews</a><div class="nav-link dropdown" onclick="navDropdownClick()"><span id="nav-dropdown-btn" class="dropbtn">Portfolio&nbsp;<span id="dropbtn-arrow"></span></span><div class="dropdown-content" id="nav-dropdown"><a href="/asphalt-paving">Asphalt Paving</a><a href="/masonry-hardscapes">Masonry & Hardscapes</a><a href="/excavation-site-development">Excavation & Site Development</a></div></div><a href="/contact-us" class="nav-link">Contact Us</a></div></div></nav>
   </header>
   <main>
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-          </div>
-        </div>
+    <!-- <div id="hero" class="big-image home"><div class="overlay"><h1 id="hero-h1">Masonry and Paving Company Serving Massachusetts and Southern New&nbsp;Hampshire</h1><hr id="hero-hr"><p id="hero-p">Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial & Residential</p><a id="hero-btn" href="/contact-us" class="btn">Get Started</a></div></div> -->
+    <style>
+      .hero {
+  /* Set height and other styles for the hero section */
+  height: 500px;  /* Adjust height as needed */
+  background-color: #f0f0f0; /* Optional background color */
+  position: relative;  /* Needed for absolute positioning of content */
+}
+
+.hero img {
+  /* Set width, height, and other styles for the image */
+  width: 100%;  /* Stretch image to fill container width */
+  height: 100%; /* Stretch image to fill container height */
+  object-fit: cover;  /* Ensure entire image is visible with cropping if necessary */
+}
+
+.hero-content {
+  /* Styles for the content on top of the image */
+  position: absolute;  /* Absolute positioning within the hero section */
+  top: 50%;  /* Center content vertically */
+  left: 50%;  /* Center content horizontally */
+  transform: translate(-50%, -50%);  /* Adjust positioning as needed */
+  color: white;  /* Example text color */
+  text-align: center;  /* Center text alignment */
+}
+    </style>
+    <section class="hero">
+      <img src="images/566/asphalt-and-masonry.webp" alt="Hero Image Description">
+      <div class="hero-content">  <h1>Your Catchy Headline</h1>
+        <p>A brief description of your website or product.</p>
+        <button>Call to Action</button>
       </div>
-    </div>
+    </section>
+    
     <section class="p-3 pt-5"><h2 class="pipe">Our Company</h2><p class="p-3">S. Phanuef & Associates was established with a vision to provide residents and businesses in the New England area with reliable, professional asphalt paving, excavation, masonry, and hardscape solutions. With a passion for excellence and a commitment to integrity, Steve Phaneuf set out to build a company that would exceed expectations in every project undertaken. </p><p class="p-3">Our mission is simple: to transform your vision into reality. Whether you're looking to enhance your property with stunning masonry work or improve its functionality with expert paving services, we're here to deliver outstanding results that stand the test of time. </p><p class="p-3">We are separated from other companies in New England by our high quality service and affordable costs. Your project doesn't have to come with a premium price-tag. In fact, you can get the professional results you deserve without investing massive amounts of income. Our local crew has the materials, skills, and experience to deliver a powerful experience that you'll be happy with.</p></section>
     <section class="p-3 pb-0"><h2 class="pipe">What We Offer</h2><p class="p-3">S. Phaneuf & Associates is a full service residential and commercial company offering a wide range of services ranging from landscape construction, masonry construction, asphalt paving, excavation and site development to materials supplies and snow and ice management. Our professional team offers clients a wide range of services making it easier to manage all aspects of the job no matter its size or scope.</p></section>
     <div class="t-c py-5 my-5"><a class="btn btn-outlined" href="/services">EXPLORE OUR SERVICES</a></div>
