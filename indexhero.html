@@ -30,34 +30,38 @@
     <!-- <div id="hero" class="big-image home"><div class="overlay"><h1 id="hero-h1">Masonry and Paving Company Serving Massachusetts and Southern New&nbsp;Hampshire</h1><hr id="hero-hr"><p id="hero-p">Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial & Residential</p><a id="hero-btn" href="/contact-us" class="btn">Get Started</a></div></div> -->
     <style>
       .hero {
-  /* Set height and other styles for the hero section */
-  height: 500px;  /* Adjust height as needed */
-  background-color: #f0f0f0; /* Optional background color */
-  position: relative;  /* Needed for absolute positioning of content */
-}
+        height: 100vh;  /* 500px;  Adjust height as needed */
+        background-color: #2f3f5e;  /*Optional background color */
+        position: relative;  /* Needed for absolute positioning of content */
+      }
 
-.hero img {
-  /* Set width, height, and other styles for the image */
-  width: 100%;  /* Stretch image to fill container width */
-  height: 100%; /* Stretch image to fill container height */
-  object-fit: cover;  /* Ensure entire image is visible with cropping if necessary */
-}
+      .hero img {
+        width: 100%;  /* Stretch image to fill container width */
+        height: 100%; /* Stretch image to fill container height */
+        object-fit: cover;  /* Ensure entire image is visible with cropping if necessary */
+      }
 
-.hero-content {
-  /* Styles for the content on top of the image */
-  position: absolute;  /* Absolute positioning within the hero section */
-  top: 50%;  /* Center content vertically */
-  left: 50%;  /* Center content horizontally */
-  transform: translate(-50%, -50%);  /* Adjust positioning as needed */
-  color: white;  /* Example text color */
-  text-align: center;  /* Center text alignment */
-}
+      .hero-content {
+        position: absolute;  /* Absolute positioning within the hero section */
+        top: 50%;  /* Center content vertically */
+        left: 50%;  /* Center content horizontally */
+        /*transform: translate(-50%, -50%);  Adjust positioning as needed */
+        color: white;  /* Example text color */
+        text-align: center;  /* Center text alignment */
+        transform: translate(-50%, calc(-50% - 30px));
+        width: 87vw;
+        background: rgba(48, 63, 94, .41);
+        padding: 25px;
+      }
     </style>
     <section class="hero">
       <img src="images/566/asphalt-and-masonry.webp" alt="Hero Image Description">
-      <div class="hero-content">  <h1>Your Catchy Headline</h1>
-        <p>A brief description of your website or product.</p>
-        <button>Call to Action</button>
+      <div class="hero-content">  
+        <h1 id="hero-h1">Masonry and Paving Company Serving Massachusetts and Southern New Hampshire</h1>
+        <hr id="hero-hr">
+        <p id="hero-p">Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial & Residential</p>
+        <a id="hero-btn" href="/contact-us" class="btn">Get Started</a>
+        <!-- <button  class="btn">Get Started</button> -->
       </div>
     </section>
     
