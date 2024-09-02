@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: 
+Disallow: /tmp/
 
 Sitemap: https://sphaneufassociates.com/sitemap.xml
 Sitemap: https://sphaneufassociates.com/image-sitemap.xml
