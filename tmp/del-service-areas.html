@@ -60,6 +60,68 @@
        
           <p>At <strong>S. Phaneuf & Associates</strong>, we are proud to offer our top-notch asphalt paving services to a wide range of cities and towns across Massachusetts. Our commitment to quality and customer satisfaction extends to the following areas:</p>
           <h2>Cities and Towns We Serve</h2>
+          <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 20px;
+            }
+            .card {
+                background-color: #f8f8f8;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                margin: 10px;
+                padding: 20px;
+                flex: 1 1 calc(33.333% - 40px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+            .card h3 {
+                margin: 0 0 10px;
+            }
+            @media (max-width: 768px) {
+                .card {
+                    flex: 1 1 calc(50% - 40px);
+                }
+            }
+            @media (max-width: 480px) {
+                .card {
+                    flex: 1 1 100%;
+                }
+            }
+        </style>
+          <div class="container">
+            <div class="card">
+                <h3>Bristol County</h3>
+            </div>
+            <div class="card">
+                <h3>Essex County</h3>
+            </div>
+            <div class="card">
+                <h3>Middlesex County</h3>
+            </div>
+            <div class="card">
+                <h3>Norfolk County</h3>
+            </div>
+            <div class="card">
+                <h3>Plymouth County</h3>
+            </div>
+            <div class="card">
+                <h3>Suffolk County</h3>
+            </div>
+            <div class="card">
+                <h3>Worcester County</h3>
+            </div>
+        </div>
+
+
           <ul>
               <li>Boxborough, MA</li>
               <li>Acton, MA</li>
