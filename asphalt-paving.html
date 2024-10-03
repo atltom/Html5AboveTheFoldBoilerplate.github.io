@@ -110,6 +110,9 @@
         Explore our portfolio of projects, showcasing our versatility and commitment to exceptional quality work. From residential driveways to commercial parking lots, we have the experience and expertise to handle projects of all sizes and complexities. Our dedication to customer satisfaction and attention to detail sets us apart as a trusted provider of asphalt paving services in Massachusetts.
       </p>
       </section> 
+      <style>
+        .photoswipe-item{display: inline;}
+      </style>
 
     <div id="gallery" class="container2 pt-2">
       <!-- <h2 class="heading-text">
@@ -118,10 +121,10 @@
       <ul class="image-gallery">
         <li>
           <figure>
-            <span href="images/large/asphalt-circle-lexington-mass.webp" data-pswp-width="1919" data-pswp-height="1030" target="_blank">
+            <div class="photoswipe-item" href="images/large/asphalt-circle-lexington-mass.webp" data-pswp-width="1919" data-pswp-height="1030" target="_blank">
               <img loading="lazy"  src="images/small/asphalt-circle-lexington-mass.webp"  height="348" width="226" alt="Lexington, Massachusetts - Community asphalt circle with curbs and brick pavers.">
-              <div class="overlay2"><u>Click to Zoom</u></div>
-            </span>
+              <div class="overlay2"><span>Click to Zoom</span></div>
+            </div>
             <figcaption><address>Lexington, MA</address>Community asphalt circle with curbs and brick pavers. </figcaption>
           </figure>
         </li>
@@ -262,7 +265,7 @@
 
   <script type="module">
     import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.min.js";
-    const lightbox=new PhotoSwipeLightbox({ gallery: "#gallery", children: "span", showHideAnimationType: 'none', zoomAnimationDuration: false, pswpModule: ()=>import( "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.min.js" ),});
+    const lightbox=new PhotoSwipeLightbox({ gallery: "#gallery", children: ".photoswipe-item", showHideAnimationType: 'none', zoomAnimationDuration: false, pswpModule: ()=>import( "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.min.js" ),});
     lightbox.init();
     document.querySelector('#insta').onclick = () => { window.location.href = 'https://www.instagram.com/phaneufassociates/'; };
   </script>
