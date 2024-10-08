@@ -208,8 +208,11 @@
     function loadCSS(href) {var ss = window.document.createElement("link");ss.rel = "stylesheet";ss.href = href;ss.media = "only x";var ref = window.document.getElementsByTagName("head")[0];ref.append(ss);      setTimeout(function () { ss.media = "all" }, 0); }
     loadCSS("css/belowthefold.css");
 
-
     document.addEventListener('DOMContentLoaded', () => {
+        let touchstartX = 0;        let touchendX = 0; 
+        function handleGesture() {if (touchendX < touchstartX) showNextImage();if (touchendX > touchstartX) showPrevImage();}
+        document.addEventListener('touchstart', e => {  touchstartX = e.changedTouches[0].screenX;});
+        document.addEventListener('touchend', e => {  touchendX = e.changedTouches[0].screenX;  handleGesture();});
         const gallery = document.getElementById('gallery');
         const spans = gallery.getElementsByTagName('span');
         let currentIndex = 0;
@@ -219,8 +222,12 @@
             const img = document.createElement('img');img.src = imageSrc;
             const prevButton = document.createElement('button');
             prevButton.className = 'nav-button prev';
-            prevButton.innerHTML = '❮';   prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});
-            const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});
+            prevButton.innerHTML = '❮';   
+            prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});
+            const nextButton = document.createElement('button');
+            nextButton.className = 'nav-button next';
+            nextButton.innerHTML = '❯';
+            nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});
             const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.innerHTML = '✖';closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});
             const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);lightbox.addEventListener('click', closeLightbox);    
         }
