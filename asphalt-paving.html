@@ -225,9 +225,17 @@
             img.style.left = initialLeft + 'px';
             img.addEventListener('touchstart', function(e) {
               e.stopPropagation()
-              let shiftX = e.clientX - img.getBoundingClientRect().left;
+
+              //let shiftX = e.clientX - img.getBoundingClientRect().left;
+              let shiftX = e.touches[0].clientX - img.getBoundingClientRect().left;
+
               function moveAt(pageX) {newLeft = pageX - shiftX;img.style.left = newLeft + 'px';}
-              function onMove(event) {moveAt(event.pageX);}
+              
+              
+              //function onMove(event) {moveAt(event.pageX);}
+              function onMove(event) {moveAt(event.changedTouches[0].clientX);}
+              
+
               document.addEventListener('touchmove', onMove);
               img.ontouchend = function() {img.style.left = initialLeft + 'px';if ((newLeft - initialLeft) >= 50) { showPrevImage();}else{showNextImage();}document.removeEventListener('touchmove', onMove);img.ontouchend = null;};});
               img.ondragstart = function() {return false;};
