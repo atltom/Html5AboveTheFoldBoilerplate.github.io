@@ -42,8 +42,8 @@
     ul.ps-3.li >li {list-style: disc; line-height: 30px; margin-left: 18px;}
     b {color: #1e396c;}
 
-    .gallery{display:flex;flex-wrap:wrap;gap:10px;padding:20px}.gallery span{display:block;width:150px;height:150px;overflow:hidden;cursor:pointer}.gallery img{width:100%;height:100%;object-fit:cover}#lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:4}#lightbox img{max-width:90%}#lightbox .nav-button{position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;padding:10px;cursor:pointer;color:white;font-size: 30px}#lightbox .prev{left:10px}#lightbox .next{right:10px}#lightbox .close{top:10px;right:10px;transform:none;font-size:20px}#lightbox .counter{position:absolute;top:10px;left:10px;color:white;font-size:18px;padding:5px}
-
+    .gallery{display:flex;flex-wrap:wrap;gap:10px;padding:20px}.gallery span{display:block;width:150px;height:150px;overflow:hidden;cursor:pointer}.gallery img{width:100%;height:100%;object-fit:cover}#lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:4}#lightbox img{max-width:90%}#lightbox .nav-button{position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;padding:10px;cursor:pointer;color:white;font-size: 30px;text-shadow: 0px 0px 3px black;}#lightbox .prev{left:10px}#lightbox .next{right:10px}#lightbox .close{top:10px;right:10px;transform:none;font-size:20px}#lightbox .counter{position:absolute;top:10px;left:10px;color:white;font-size:18px;padding:5px}body.noScroll {  overflow: hidden;}
+    
   </style>
   <link rel="icon" href="images/favicon96c.png" sizes="96x96">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -209,32 +209,33 @@
     loadCSS("css/belowthefold.css");
 
     document.addEventListener('DOMContentLoaded', () => {
-        let touchstartX = 0;        let touchendX = 0; 
-        function handleGesture() {if (touchendX < touchstartX) showNextImage();if (touchendX > touchstartX) showPrevImage();}
-        document.addEventListener('touchstart', e => {  touchstartX = e.changedTouches[0].screenX;});
-        document.addEventListener('touchend', e => {  touchendX = e.changedTouches[0].screenX;  handleGesture();});
+        let touchstartX = 0;let touchendX = 0;let newLeft = 0; let currentIndex = 0;
         const gallery = document.getElementById('gallery');
         const spans = gallery.getElementsByTagName('span');
-        let currentIndex = 0;
         for (let i = 0; i < spans.length; i++) {spans[i].addEventListener('click', () => {currentIndex = i;openLightbox(spans[currentIndex].getAttribute('data-src'));});}
         function openLightbox(imageSrc) {
+            document.body.classList.add('noScroll');
             const lightbox = document.createElement('div');lightbox.id = 'lightbox';
-            const img = document.createElement('img');img.src = imageSrc;
-            const prevButton = document.createElement('button');
-            prevButton.className = 'nav-button prev';
-            prevButton.innerHTML = '❮';   
-            prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});
-            const nextButton = document.createElement('button');
-            nextButton.className = 'nav-button next';
-            nextButton.innerHTML = '❯';
-            nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});
+            const img = document.createElement('img');img.src = imageSrc;img.id='lb-img';img.style.position="absolute";
+            const prevButton = document.createElement('button');prevButton.className = 'nav-button prev';prevButton.innerHTML = '❮';prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});
+            const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});
             const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.innerHTML = '✖';closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});
-            const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);lightbox.addEventListener('click', closeLightbox);    
+            const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);
+            const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;
+            img.style.left = initialLeft + 'px';
+            img.addEventListener('mousedown', function(e) {
+              e.stopPropagation()
+              let shiftX = e.clientX - img.getBoundingClientRect().left;
+              function moveAt(pageX) {newLeft = pageX - shiftX;img.style.left = newLeft + 'px';}
+              function onMouseMove(event) {moveAt(event.pageX);}
+              document.addEventListener('mousemove', onMouseMove);
+              img.onmouseup = function() {img.style.left = initialLeft + 'px';if ((newLeft - initialLeft) >= 50) { showPrevImage();}else{showNextImage();}document.removeEventListener('mousemove', onMouseMove);img.onmouseup = null;};});
+              img.ondragstart = function() {return false;};
         }
         function showPrevImage() {currentIndex = (currentIndex > 0) ? currentIndex - 1 : spans.length - 1;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
         function showNextImage() {currentIndex = (currentIndex < spans.length - 1) ? currentIndex + 1 : 0;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
         function updateLightboxImage(imageSrc) {const lightbox = document.getElementById('lightbox');const img = lightbox.querySelector('img');img.src = imageSrc;const counter = lightbox.querySelector('.counter');counter.innerText = `${currentIndex + 1}/${spans.length}`;}
-        function closeLightbox() {const lightbox = document.getElementById('lightbox');if (lightbox) {document.body.removeChild(lightbox);}}
+        function closeLightbox() {const lightbox = document.getElementById('lightbox');if (lightbox) {document.body.classList.remove('noScroll');document.body.removeChild(lightbox);}}
     });
 
   </script>
