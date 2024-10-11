@@ -223,13 +223,13 @@
             const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);
             const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;
             img.style.left = initialLeft + 'px';
-            img.addEventListener('mousedown', function(e) {
+            img.addEventListener('touchstart', function(e) {
               e.stopPropagation()
               let shiftX = e.clientX - img.getBoundingClientRect().left;
               function moveAt(pageX) {newLeft = pageX - shiftX;img.style.left = newLeft + 'px';}
-              function onMouseMove(event) {moveAt(event.pageX);}
-              document.addEventListener('mousemove', onMouseMove);
-              img.onmouseup = function() {img.style.left = initialLeft + 'px';if ((newLeft - initialLeft) >= 50) { showPrevImage();}else{showNextImage();}document.removeEventListener('mousemove', onMouseMove);img.onmouseup = null;};});
+              function onMove(event) {moveAt(event.pageX);}
+              document.addEventListener('touchmove', onMove);
+              img.ontouchend = function() {img.style.left = initialLeft + 'px';if ((newLeft - initialLeft) >= 50) { showPrevImage();}else{showNextImage();}document.removeEventListener('touchmove', onMove);img.ontouchend = null;};});
               img.ondragstart = function() {return false;};
         }
         function showPrevImage() {currentIndex = (currentIndex > 0) ? currentIndex - 1 : spans.length - 1;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
