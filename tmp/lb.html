@@ -325,8 +325,8 @@
         const imgRight = lightbox.querySelector('img#lb-img-right');
 
         img.style.left = (window.innerWidth / 2 - img.offsetWidth / 2 + shiftX) + 'px';
-        imgLeft.style.left = (-img.offsetWidth + shiftX) + 'px';
-        imgRight.style.left = (img.offsetWidth + shiftX) + 'px';
+        imgLeft.style.left = (-img.offsetWidth + shiftX-5) + 'px';
+        imgRight.style.left = (img.offsetWidth + shiftX+40) + 'px';
     }
 
     function resetImagesPosition() {
@@ -373,7 +373,6 @@
         }
     }
 });
-
 
 
   </script>
