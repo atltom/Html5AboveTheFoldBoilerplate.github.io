@@ -233,28 +233,23 @@
 
         const lightbox = document.createElement('div');
         lightbox.id = 'lightbox';
-        lightbox.style.position = 'relative';
-        lightbox.style.overflow = 'hidden';
 
         const img = document.createElement('img');
         img.src = imageSrc;
         img.id = 'lb-img';
         img.style.position = "absolute";
-        img.style.transition = "left 0.5s";
 
         const imgLeft = document.createElement('img');
         imgLeft.src = spans[(currentIndex - 1 + spans.length) % spans.length].getAttribute('data-src');
         imgLeft.id = 'lb-img-left';
         imgLeft.style.position = "absolute";
         imgLeft.style.left = "-100%";
-        imgLeft.style.transition = "left 0.5s";
 
         const imgRight = document.createElement('img');
         imgRight.src = spans[(currentIndex + 1) % spans.length].getAttribute('data-src');
         imgRight.id = 'lb-img-right';
         imgRight.style.position = "absolute";
         imgRight.style.left = "100%";
-        imgRight.style.transition = "left 0.5s";
 
         const prevButton = document.createElement('button');
         prevButton.className = 'nav-button prev';
@@ -296,6 +291,7 @@
         const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;
         img.style.left = initialLeft + 'px';
 
+        // Add touch events to all images
         [img, imgLeft, imgRight].forEach(image => {
             image.addEventListener('touchstart', function(e) {
                 e.stopPropagation();
@@ -329,8 +325,8 @@
         const imgRight = lightbox.querySelector('img#lb-img-right');
 
         img.style.left = (window.innerWidth / 2 - img.offsetWidth / 2 + shiftX) + 'px';
-        imgLeft.style.left = (-img.offsetWidth + shiftX) + 'px';
-        imgRight.style.left = (img.offsetWidth + shiftX) + 'px';
+        imgLeft.style.left = (-img.offsetWidth + shiftX-5) + 'px';
+        imgRight.style.left = (img.offsetWidth + shiftX+40) + 'px';
     }
 
     function resetImagesPosition() {
@@ -377,7 +373,6 @@
         }
     }
 });
-
 
 
   </script>
