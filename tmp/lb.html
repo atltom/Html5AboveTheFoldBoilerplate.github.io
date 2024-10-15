@@ -52,7 +52,7 @@
     #lightbox .nav-button{outline: none; position:absolute;top:50%;transform:translateY(-50%);background:#00000096;border:none;padding:10px;cursor:pointer;color:white;font-size: 30px;text-shadow: 0px 0px 3px black;}
     #lightbox .prev{left:10px}
     #lightbox .next{right:10px}
-    #lightbox .close{z-index:5; appearance: none;-webkit-appearance: none;     top: 10px;right: 10px;transform: none;font-size: 20px;background: #00000096;padding: 5px 10px;border-radius: 8px;color: white !important;}
+    #lightbox .close{z-index:5;top: 10px;right: 10px;transform: none;font-size: 20px;background: #00000096;padding: 5px 10px;border-radius: 8px;color: white !important;}
     #lightbox .counter{position: absolute;top: 10px;left: 10px;color: white;font-size: 18px;background: #00000096;padding: 6px 10px;border-radius: 8px;}
     body.noScroll {overflow: hidden;}
   </style>
@@ -232,7 +232,7 @@
             const img = document.createElement('img');img.src = imageSrc;img.id='lb-img';img.style.position="absolute";
             const prevButton = document.createElement('button');prevButton.className = 'nav-button prev';prevButton.innerHTML = '❮';prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});
             const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});
-            const closeButton = document.createElement('button');closeButton.className = 'nav-button next';closeButton.innerHTML = '✖';closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});
+            const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.style.color='white';closeButton.innerHTML = '✖';closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});
             const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);
             const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;
             img.style.left = initialLeft + 'px';
