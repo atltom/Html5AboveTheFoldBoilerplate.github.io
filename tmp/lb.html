@@ -49,7 +49,7 @@
     .gallery{display:flex;flex-wrap:wrap;gap:10px;padding:20px}.gallery span{display:block;width:150px;height:150px;overflow:hidden;cursor:pointer}.gallery img{width:100%;height:100%;object-fit:cover}
     #lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#000000;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:4}
     #lightbox .nav-button{outline: none; position:absolute;top:50%;transform:translateY(-50%);background:#00000096;border:none;padding:10px;cursor:pointer;color:white;font-size: 30px;text-shadow: 0px 0px 3px black;}
-    #lightbox .prev{left:10px}#lightbox .next{right:10px}#lightbox .close{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;z-index:5;top: 10px;right: 10px;transform: none;font-size: 20px;background: #00000096;padding: 5px 10px;border-radius: 8px;color: white !important;}
+    #lightbox .prev{left:10px}#lightbox .next{right:10px}#lightbox .close{z-index:5;top: 18px;right: 10px;transform: none;font-size: 20px;background: #00000096;padding: 5px 10px;border-radius: 8px;color: white !important;}
     #lightbox .counter{position: absolute;top: 10px;left: 10px;color: white;font-size: 18px;background: #00000096;padding: 6px 10px;border-radius: 8px;}
     body.noScroll {overflow: hidden;}
   </style>
@@ -229,7 +229,7 @@
             const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});
             const closeButton = document.createElement('button');closeButton.className = 'nav-button close';
             //closeButton.innerHTML = 'X';
-            closeButton.innerHTML = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' style='height: 17px;'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>`;
+            closeButton.innerHTML = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff' style='height: 17px;'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>`;
             
             closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});
             const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);
