@@ -197,55 +197,24 @@
     </div>
     <div class="copyright">© 2024 S. Phaneuf & Associates. All Rights Reserved.<br>Use of this site constitutes acceptance of our <a href="/terms-of-use" class="c-lg">Terms of Use</a> and <a href="/privacy-policy" class="c-lg">Privacy Policy</a>.</div>
   </footer>
-
-
   <script>
     function navDropdownClick(){document.getElementById("nav-dropdown").classList.toggle("show"); }
     window.onclick=function(e){ if (!(e.target.matches("#nav-dropdown-btn") || e.target.matches("#dropbtn-arrow"))){ var navDropdown=document.getElementById("nav-dropdown"); if (navDropdown.classList.contains("show")){ navDropdown.classList.remove("show");}}};
     function naviconClick(navicon){ navicon.classList.toggle("change"); var nav=document.getElementById("navbar"); nav.classList.toggle("navbar-change");}
     function loadCSS(href) {var ss = window.document.createElement("link");ss.rel = "stylesheet";ss.href = href;ss.media = "only x";var ref = window.document.getElementsByTagName("head")[0];ref.append(ss);      setTimeout(function () { ss.media = "all" }, 0); }
     loadCSS("css/belowthefold.css");
-
     document.addEventListener('DOMContentLoaded', () => {
-        let touchstartX = 0;let touchendX = 0;let newLeft = 0; let currentIndex = 0;
-        const gallery = document.getElementById('gallery');
-        const spans = gallery.getElementsByTagName('span');
+        let currentIndex = 0;const gallery = document.getElementById('gallery');const spans = gallery.getElementsByTagName('span');
         for (let i = 0; i < spans.length; i++) {spans[i].addEventListener('click', () => {currentIndex = i;openLightbox(spans[currentIndex].getAttribute('data-src'));});}
         function openLightbox(imageSrc) {
-            document.body.classList.add('noScroll');
-            const lightbox = document.createElement('div');lightbox.id = 'lightbox';
-            const img = document.createElement('img');img.src = imageSrc;img.id='lb-img';img.style.position="absolute";
-            const prevButton = document.createElement('button');prevButton.className = 'nav-button prev';prevButton.innerHTML = '❮';prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});
-            const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});
-            const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.innerHTML = '✖';closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});
-            const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);
-            const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;
-            img.style.left = initialLeft + 'px';
-            img.addEventListener('touchstart', function(e) {
-              e.stopPropagation()
-
-              //let shiftX = e.clientX - img.getBoundingClientRect().left;
-              let shiftX = e.touches[0].clientX - img.getBoundingClientRect().left;
-
-              function moveAt(pageX) {newLeft = pageX - shiftX;img.style.left = newLeft + 'px';}
-              
-              
-              //function onMove(event) {moveAt(event.pageX);}
-              function onMove(event) {moveAt(event.changedTouches[0].clientX);}
-              
-
-              document.addEventListener('touchmove', onMove);
-              img.ontouchend = function() {img.style.left = initialLeft + 'px';if ((newLeft - initialLeft) >= 50) { showPrevImage();}else{showNextImage();}document.removeEventListener('touchmove', onMove);img.ontouchend = null;};});
-              img.ondragstart = function() {return false;};
+            document.body.classList.add('noScroll');const lightbox = document.createElement('div');lightbox.id = 'lightbox';const img = document.createElement('img');img.src = imageSrc;img.id='lb-img';img.style.position="absolute";const prevButton = document.createElement('button');prevButton.className = 'nav-button prev';prevButton.innerHTML = '❮';prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.innerHTML = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff' style='height: 17px;'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>`;
+            closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;img.style.left = initialLeft + 'px';
         }
         function showPrevImage() {currentIndex = (currentIndex > 0) ? currentIndex - 1 : spans.length - 1;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
         function showNextImage() {currentIndex = (currentIndex < spans.length - 1) ? currentIndex + 1 : 0;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
         function updateLightboxImage(imageSrc) {const lightbox = document.getElementById('lightbox');const img = lightbox.querySelector('img');img.src = imageSrc;const counter = lightbox.querySelector('.counter');counter.innerText = `${currentIndex + 1}/${spans.length}`;}
         function closeLightbox() {const lightbox = document.getElementById('lightbox');if (lightbox) {document.body.classList.remove('noScroll');document.body.removeChild(lightbox);}}
     });
-
   </script>
-
 </body>
-
 </html>
