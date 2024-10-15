@@ -220,8 +220,6 @@
     loadCSS("css/belowthefold.css");
 
     document.addEventListener('DOMContentLoaded', () => {
-        //let touchstartX = 0;let touchendX = 0;
-        //let newLeft = 0; 
         let currentIndex = 0;
         const gallery = document.getElementById('gallery');
         const spans = gallery.getElementsByTagName('span');
@@ -232,7 +230,7 @@
             const img = document.createElement('img');img.src = imageSrc;img.id='lb-img';img.style.position="absolute";
             const prevButton = document.createElement('button');prevButton.className = 'nav-button prev';prevButton.innerHTML = '❮';prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});
             const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});
-            const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.style.color='white';closeButton.innerHTML = '✖';closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});
+            const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.innerHTML = 'X';closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});
             const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);
             const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;
             img.style.left = initialLeft + 'px';
