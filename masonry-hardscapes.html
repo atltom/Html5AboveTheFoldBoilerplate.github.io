@@ -23,6 +23,9 @@
   <link rel="preload" fetchpriority="high" as="image" href="images/S-Phanuef-Associates.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="images/566/back-porch.webp" type="image/webp">
   <link rel="stylesheet" href="css/top-min.css">
+  <style>
+     #lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#000000;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:4}#lightbox .nav-button{outline: none; position:absolute;top:50%;transform:translateY(-50%);background:#00000096;border:none;padding:10px;cursor:pointer;color:white;font-size: 30px;text-shadow: 0px 0px 3px black;}#lightbox .prev{left:10px}#lightbox .next{right:10px}#lightbox .close{z-index:5;top: 10px;right: 10px;transform: none;font-size: 20px;background: #00000096;padding:10px;border-radius:3px;color: white !important;}#lightbox .counter{position: absolute;top: 10px;left: 10px;color: white;font-size: 18px;background: #00000096;padding: 6px 10px;border-radius:3px;}body.noScroll {overflow: hidden;}
+  </style>
   <link rel="icon" href="images/favicon96c.png" sizes="96x96">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <script type="application/ld+json">
@@ -37,11 +40,11 @@
   </header>
   <main>
     <div id="hero" class="big-image back-porch"><div class="overlay"><h1 id="hero-h1">Masonry and Hardscapes</h1><hr id="hero-hr"><p id="hero-p">Your trusted partner for crafting exceptional hardscapes and masonry features that elevate your outdoor living experience.</p><a id="hero-btn" href="/contact-us" class="btn">Get Started</a></div></div>
-    <section class="p-3 pt-5">
+    <section class="p-3 pt-5"  id="gallery">
       <h2 class="pipe">Elevate Your Outdoor Space with Timeless Beauty</h2><p class="p-3">Imagine a backyard oasis: a stunning flagstone patio for relaxing, a natural rock waterfall adding tranquility, a custom-tiled deck surrounding a sparkling pool, and a beautiful wood pergola overhead. These are all examples of hardscaping, the non-living elements like stone, pavers, wood, and decks that form the foundation of your outdoor space. </p><p class="p-3">Hardscaping is more than just aesthetics. It provides structure and organization, guiding your experience. The stone pathway weaving through your flower beds defines the space while showcasing the plants. The natural stone steps and pavers leading to your hot tub create a functional and inviting entrance. But thoughtful hardscape design goes beyond looks. We consider water drainage, material durability, and how each element complements the overall space. </p><p class="p-3">We are hardscaping experts. We create seamless integrations between hardscape and softscape (plants), ensuring long-lasting beauty and functionality. Don't wait to experience the joy of a well-designed outdoor space. Let us show you how hardscaping can transform your backyard. </p><p class="p-3">Explore our portfolio and discover the possibilities. We've meticulously documented a variety of projects, showcasing our versatility and commitment to exceptional craftsmanship. </p>
       <div class="p-3"><h3 class="pipe ms-0 py-0 mt-3">Countryside Living Project</h3><address>Wellesley, MA</address><p>This private residence in Norfolk County, Massachusetts was the location of a backyard oasis. Our latest project, in the Greater Boston area, combines stunning hardscape elements to create an inviting outdoor retreat. A welcoming entrance featuring a curved stone wall that sets the stage for your home's unique style. Winding bluestone walkways elegantly lead you past the sparkling inground pool, while a custom outdoor kitchen beckons you to host unforgettable gatherings. Unwind by the warmth of a wood burning fireplace on the expansive patio, surrounded by lush greenery bursting from raised stone plant beds. This is the art of outdoor living, brought to life.</p><div class="container2 px-0 py-2 gallery">
         <ul class="image-gallery jc-l">
-          <li><figure><a href="images/large/pool-and-spa-wellesley-mass.webp" data-pswp-width="1919" data-pswp-height="1030" target="_blank"><img loading="lazy" src="images/small/pool-and-spa-wellesley-mass.webp" height="348" width="226" alt="Luxurious Pool and Spa with Elegant Stone Patio in Wellesley, Massachusetts"><div class="overlay2"><span>Click to Zoom</span></div></a></figure></li>
+          <li><figure><span data-src="images/large/pool-and-spa-wellesley-mass.webp"><img loading="lazy" src="images/small/pool-and-spa-wellesley-mass.webp" height="348" width="226" alt="Luxurious Pool and Spa with Elegant Stone Patio in Wellesley, Massachusetts"><div class="overlay2"><u>Click to Zoom</u></div></span></figure></li>
           <li><figure><a href="images/large/pool-and-kitchen-wellesley-mass.webp" data-pswp-width="1919" data-pswp-height="1030" target="_blank"><img loading="lazy" src="images/small/pool-and-kitchen-wellesley-mass.webp" height="348" width="226" alt="Luxurious pool and outdoor kitchen in Wellesley, Massachusetts"><div class="overlay2"><span>Click to Zoom</span></div></a></figure></li>
           <li><figure><a href="images/large/column-with-latern-wellesley-mass.webp" data-pswp-width="1919" data-pswp-height="1030" target="_blank"><img loading="lazy" src="images/small/column-with-latern-wellesley-mass.webp" height="348" width="226" alt="Elegant stacked stone column with lantern in Wellesley, Massachusetts"><div class="overlay2"><span>Click to Zoom</span></div></a></figure></li>
           <li><figure><a href="images/large/curved-wall-wellesley-mass.webp" data-pswp-width="1919" data-pswp-height="1030" target="_blank"><img loading="lazy" src="images/small/curved-wall-wellesley-mass.webp" height="348" width="226" alt="Beautiful stacked stone curved wall in Wellesley, Massachusetts"><div class="overlay2"><span>Click to Zoom</span></div></a></figure></li>
@@ -122,13 +125,26 @@
     window.onclick=function(e){ if (!(e.target.matches("#nav-dropdown-btn") || e.target.matches("#dropbtn-arrow"))){ var navDropdown=document.getElementById("nav-dropdown"); if (navDropdown.classList.contains("show")){ navDropdown.classList.remove("show");}}};
     function naviconClick(navicon){ navicon.classList.toggle("change"); var nav=document.getElementById("navbar"); nav.classList.toggle("navbar-change");}
     function loadCSS(href) {var ss = window.document.createElement("link");ss.rel = "stylesheet";ss.href = href;ss.media = "only x";var ref = window.document.getElementsByTagName("head")[0];ref.append(ss);      setTimeout(function () { ss.media = "all" }, 0); }
-    loadCSS("css/belowthefold-min.css");loadCSS("css/photoswipe.css");
+    loadCSS("css/belowthefold-min.css");
+    loadCSS("css/photoswipe.css");
+    document.addEventListener('DOMContentLoaded', () => {
+        let currentIndex = 0;const gallery = document.getElementById('gallery');const spans = gallery.getElementsByTagName('span');
+        for (let i = 0; i < spans.length; i++) {spans[i].addEventListener('click', () => {currentIndex = i;openLightbox(spans[currentIndex].getAttribute('data-src'));});}
+        function openLightbox(imageSrc) {
+            document.body.classList.add('noScroll');const lightbox = document.createElement('div');lightbox.id = 'lightbox';const img = document.createElement('img');img.src = imageSrc;img.id='lb-img';img.style.position="absolute";const prevButton = document.createElement('button');prevButton.className = 'nav-button prev';prevButton.innerHTML = '❮';prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.innerHTML = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff' style='height: 17px;'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>`;
+            closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;img.style.left = initialLeft + 'px';
+        }
+        function showPrevImage() {currentIndex = (currentIndex > 0) ? currentIndex - 1 : spans.length - 1;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
+        function showNextImage() {currentIndex = (currentIndex < spans.length - 1) ? currentIndex + 1 : 0;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
+        function updateLightboxImage(imageSrc) {const lightbox = document.getElementById('lightbox');const img = lightbox.querySelector('img');img.src = imageSrc;const counter = lightbox.querySelector('.counter');counter.innerText = `${currentIndex + 1}/${spans.length}`;}
+        function closeLightbox() {const lightbox = document.getElementById('lightbox');if (lightbox) {document.body.classList.remove('noScroll');document.body.removeChild(lightbox);}}
+    });
   </script>
-  <script type="module">
+  <!-- <script type="module">
     import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.min.js";
     const lightbox=new PhotoSwipeLightbox({ gallery: ".gallery", children: "a", showHideAnimationType: 'none', zoomAnimationDuration: false, pswpModule: ()=>import( "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.min.js" ),});
     lightbox.init();
     document.querySelector('#insta').onclick = () => { window.location.href = 'https://www.instagram.com/phaneufassociates/'; };
-  </script>
+  </script> -->
 </body>
 </html>
