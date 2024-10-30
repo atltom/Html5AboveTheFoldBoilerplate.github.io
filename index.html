@@ -27,8 +27,10 @@
   <meta property="og:image" content="https://sphaneufassociates.com/images/S-Phaneuf-Associates.webp">
   <meta property="og:image:alt" content="S. Phaneuf & Associates is a full service residential and commercial company specializing in asphalt paving, masonry and hardscapes serving Massachusetts and Southern New Hampshire.">
   <meta name="theme-color" content="#303f5e">
+  <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');</script>
+  -->
 </head>
 <body>
   <header>
@@ -87,6 +89,19 @@
     function naviconClick(navicon){ navicon.classList.toggle("change"); var nav=document.getElementById("navbar"); nav.classList.toggle("navbar-change");}
     window.onclick=function(e){ if (!(e.target.matches("#nav-dropdown-btn") || e.target.matches("#dropbtn-arrow"))){ var navDropdown=document.getElementById("nav-dropdown"); if (navDropdown.classList.contains("show")){ navDropdown.classList.remove("show");}}};
     //window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');
+    window.addEventListener('load', function() {
+            var script = document.createElement('script');
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF";
+            script.async = true;
+            document.head.appendChild(script);
+            
+            script.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-FXE2B9T9WF');
+            };
+        });
   </script>
 </body>
 </html>
