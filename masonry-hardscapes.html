@@ -3,8 +3,10 @@
 <head>
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <!--
   <script defer src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');</script>
+  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="canonical" href="https://sphaneufassociates.com/masonry-hardscapes">
@@ -151,6 +153,19 @@
         function updateLightboxImage(imageSrc) {const lightbox = document.getElementById('lightbox');const img = lightbox.querySelector('img');img.src = imageSrc;const counter = lightbox.querySelector('.counter');counter.innerText = `${currentIndex + 1}/${spans.length}`;}
         function closeLightbox() {const lightbox = document.getElementById('lightbox');if (lightbox) {document.body.classList.remove('noScroll');document.body.removeChild(lightbox);}}
     });
+    window.addEventListener('load', function() {
+            var script = document.createElement('script');
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF";
+            script.async = true;
+            document.head.appendChild(script);
+            
+            script.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-FXE2B9T9WF');
+            };
+        });
   </script>
   <!-- <script type="module">
     import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.min.js";
