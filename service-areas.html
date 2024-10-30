@@ -151,14 +151,28 @@
       </div>
       <div class="copyright">© 2024 S. Phaneuf & Associates. All Rights Reserved.<br>Use of this site constitutes acceptance of our <a href="/terms-of-use" class="c-lg">Terms of Use</a> and <a href="/privacy-policy" class="c-lg">Privacy Policy</a>.</div>
     </footer>
-
+<!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');</script>
+  -->
     <script>
       function navDropdownClick(){document.getElementById("nav-dropdown").classList.toggle("show"); }
       function naviconClick(navicon){ navicon.classList.toggle("change"); var nav=document.getElementById("navbar"); nav.classList.toggle("navbar-change");}
       window.onclick=function(e){ if (!(e.target.matches("#nav-dropdown-btn") || e.target.matches("#dropbtn-arrow"))){ var navDropdown=document.getElementById("nav-dropdown"); if (navDropdown.classList.contains("show")){ navDropdown.classList.remove("show");}}};
       //window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');
+      window.addEventListener('load', function() {
+            var script = document.createElement('script');
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF";
+            script.async = true;
+            document.head.appendChild(script);
+            
+            script.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-FXE2B9T9WF');
+            };
+        });
     </script>
   </body>
 </html>
