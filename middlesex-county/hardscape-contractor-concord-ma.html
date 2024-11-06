@@ -24,6 +24,51 @@
   <link rel="preload" fetchpriority="high" as="image" href="images/566/back-porch.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="images/S-Phanuef-Associates.webp" type="image/webp">
   <link rel="stylesheet" href="css/top-min.css">
+  <style>
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        flex: 1;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    .contact-form {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        width: 100%;
+        max-width: 30%;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            margin-left: auto;
+        }
+        
+        .contact-form {
+            width: 100%;
+            margin-top: 20px;
+            max-width: max-content;
+        }
+    }
+</style>
   <link rel="icon" href="images/favicon96c.png" sizes="96x96">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 </head>
@@ -38,6 +83,10 @@
             <p id="hero-p" style="text-align: center;">We enhance outdoor spaces with quality hardscape solutions. Our experienced team brings your vision to life with exceptional craftsmanship.</p>
             <a id="hero-btn" class="btn" href="/contact-us">Contact Us</a>
         </div></div>
+
+        <div class="container">
+
+          <div  class="p-3 pt-5 content">
 
         <section class="p-3 pt-5">
             <h2 class="pipe">Our Hardscape Contractor Services in Concord, Massachusetts</h2>
@@ -79,62 +128,62 @@
                 <li><strong>Local Expertise:</strong> We understand the local landscape and climate, allowing us to provide tailored services.</li>
             </ul>
         
-            <h2 class="pipe mt-5">Types of Materials We Use</h2>
+            <h3 class="pipe mt-5">Types of Materials We Use</h3>
             
-            <h3 class="ps-3 pt-3 c-g">Stone</h3>
+            <p class="ps-3 pt-3 c-g"><b>Stone</b></p>
             <p class="px-3 pt-2 pb-1"><b>Benefits:</b> Stone offers unparalleled natural beauty and timeless appeal. It is incredibly durable and can withstand harsh weather conditions, making it a low-maintenance choice for outdoor projects.</p>
             <p class="px-3 pt-2 pb-4"><b>Ideal Uses:</b> Stone is perfect for patios, walkways, retaining walls, and garden features. Whether you prefer the rustic charm of fieldstone or the refined look of cut stone, it can elevate the aesthetic of any outdoor space.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Brick</h3>
+            <p class="ps-3 pt-3 c-g"><b>Brick</b></p>
             <p class="px-3 pt-2 pb-1"><b>Benefits:</b> Brick provides a classic and elegant look that enhances any landscape. It is strong and durable, offering excellent insulation and a long lifespan. Brick is also resistant to pests and decay, making it a wise investment.</p>
             <p class="px-3 pt-2 pb-4"><b>Ideal Uses:</b> Common applications include pathways, outdoor kitchens, and retaining walls. The versatility in color and pattern allows for creative design options, from traditional to contemporary styles.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Pavers</h3>
+            <p class="ps-3 pt-3 c-g"><b>Pavers</b></p>
             <p class="px-3 pt-2 pb-1"><b>Benefits:</b> Pavers are highly versatile and available in numerous colors, shapes, and sizes. They are easy to repair—if a paver is damaged, it can be replaced without affecting the surrounding area. Additionally, pavers provide excellent drainage.</p>
             <p class="px-3 pt-2 pb-4"><b>Ideal Uses:</b> Perfect for patios, driveways, walkways, and pool decks, pavers can be arranged in various patterns to create visually striking surfaces that complement any design.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Gravel</h3>
+            <p class="ps-3 pt-3 c-g"><b>Gravel</b></p>
             <p class="px-3 pt-2 pb-1"><b>Benefits:</b> Gravel is a cost-effective option with excellent drainage properties. It is easy to install and maintain, making it a popular choice for homeowners on a budget.</p>
             <p class="px-3 pt-2 pb-4"><b>Ideal Uses:</b> Gravel is ideal for pathways, as a base for other hardscapes, or as ground cover in gardens. It can also be used in drainage systems or to create a rustic, natural look in landscapes.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Concrete</h3>
+            <p class="ps-3 pt-3 c-g"><b>Concrete</b></p>
             <p class="px-3 pt-2 pb-1"><b>Benefits:</b> Concrete is known for its strength and durability. It can be poured into any shape or size, making it highly customizable. Modern techniques allow for a variety of finishes, from polished to stamped textures.</p>
             <p class="px-3 pt-2 pb-4"><b>Ideal Uses:</b> Commonly used for patios, driveways, and walkways, concrete can also be shaped into unique forms for fire pits, seating areas, and more. Its ability to withstand heavy loads makes it ideal for pool decks and other high-traffic areas.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Tile</h3>
+            <p class="ps-3 pt-3 c-g"><b>Tile</b></p>
             <p class="px-3 pt-2 pb-1"><b>Benefits:</b> Tile offers an elegant finish and is resistant to water, making it an excellent choice for outdoor kitchens and areas exposed to moisture. It is available in a wide range of colors, patterns, and textures.</p>
             <p class="px-3 pt-2 pb-4"><b>Ideal Uses:</b> Tile is commonly used in outdoor living areas, particularly around pools and in kitchen spaces. Its ability to withstand the elements while providing aesthetic appeal makes it a favorite for sophisticated outdoor designs.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Wood</h3>
+            <p class="ps-3 pt-3 c-g"><b>Wood</b></p>
             <p class="px-3 pt-2 pb-1"><b>Benefits:</b> Wood adds a warm, natural element to outdoor spaces. It is easy to work with, allowing for creative designs and custom structures. However, it does require regular maintenance to protect against weather and pests.</p>
             <p class="px-3 pt-2 pb-4"><b>Ideal Uses:</b> Ideal for decks, raised beds, and pergolas, wood can create inviting spaces for relaxation and gatherings. With various types of wood available, you can choose options that match your design vision and maintenance preferences.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Composite Decking</h3>
+            <p class="ps-3 pt-3 c-g"><b>Composite Decking</b></p>
             <p class="px-3 pt-2 pb-1"><b>Benefits:</b> Composite decking combines the beauty of wood with the durability of synthetic materials. It is low-maintenance, resistant to decay, and often made from recycled materials, making it an eco-friendly choice.</p>
             <p class="px-3 pt-2 pb-4"><b>Ideal Uses:</b> Perfect for decks and poolside areas, composite decking is designed to withstand the elements while offering a polished look. It doesn’t require staining or sealing, making it a hassle-free option for busy homeowners.</p>
         
-            <h2 class="pipe mt-5">Conclusion</h2>
+            <!-- <p class="pipe mt-5">Conclusion</p> -->
             <p class="px-3 pt-2 pb-4">Choosing the right materials is crucial for creating hardscapes that are not only visually appealing but also long-lasting and functional. At [Your Company Name], we are dedicated to helping you select the best materials for your project, ensuring that your outdoor space reflects your style and stands the test of time.</p>
         
         
-            <h2 class="pipe mt-5">Customer Concerns Addressed</h2>
+            <h3 class="pipe mt-5">Customer Concerns Addressed</h3>
             
-            <h3 class="ps-3 pt-3 c-g">Quality of Work</h3>
+            <h4 class="ps-3 pt-3 c-g">Quality of Work</h4>
             <p class="px-3 pt-2 pb-4">We take pride in our craftsmanship, using only high-quality materials and techniques to ensure that every project meets our high standards. Our experienced team is dedicated to delivering results that not only meet but exceed your expectations.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Cost and Budget</h3>
+            <h4 class="ps-3 pt-3 c-g">Cost and Budget</h4>
             <p class="px-3 pt-2 pb-4">We understand that budget is a key concern for many homeowners. We provide transparent estimates and work with you to find solutions that fit your financial needs without compromising on quality. Our goal is to deliver value at every price point.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Timeline and Project Management</h3>
+            <h4 class="ps-3 pt-3 c-g">Timeline and Project Management</h4>
             <p class="px-3 pt-2 pb-4">Our team is committed to completing projects on time and within scope. We provide clear timelines and regular updates throughout the process, ensuring you know what to expect and when. Effective project management is at the heart of our operations.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Contractor's Reputation and Experience</h3>
+            <h4 class="ps-3 pt-3 c-g">Contractor's Reputation and Experience</h4>
             <p class="px-3 pt-2 pb-4">With years of experience in the hardscape industry, we have built a reputation for reliability and excellence. Our satisfied customers are our best advocates, and we encourage you to read our testimonials and reviews to see how we have helped others achieve their outdoor dreams.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Licensing and Insurance</h3>
+            <h4 class="ps-3 pt-3 c-g">Licensing and Insurance</h4>
             <p class="px-3 pt-2 pb-4">Your peace of mind is important to us. We are fully licensed and insured, protecting you and your property throughout the project. We adhere to all local regulations and standards to ensure a safe and compliant work environment.</p>
         
-            <h3 class="ps-3 pt-3 c-g">Communication and Trust</h3>
+            <h4 class="ps-3 pt-3 c-g">Communication and Trust</h4>
             <p class="px-3 pt-2 pb-4">We believe in open and honest communication at every stage of the project. Our team is always available to answer questions, address concerns, and keep you informed. Building trust with our clients is paramount, and we work hard to earn your confidence from the first consultation to project completion.</p>
         
         
@@ -144,6 +193,73 @@
         
         
         </section>
+
+
+      </div>
+    
+      <div class="contact-form m-5 p-3">
+            
+      <style>
+      .mb-3 {margin-bottom: 1rem!important;}
+      .form-label {margin-bottom: 0.5rem;}
+      .form-control {display: block;width: 100%;padding: .375rem .75rem;font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;background-color: #fff;
+          background-clip: padding-box;border: 1px solid #ced4da;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+      .form-text {margin-top:.25rem;font-size: .875em;color:#6c757d;}
+      textarea {resize: vertical;}
+      textarea.form-control {min-height: calc(1.5em + .75rem + 2px);}
+      #sidebar-images > li {margin-bottom: 44px;list-style-type: none;background: white; }
+      figure{border: 1px solid #cdcdcd;}
+      figcaption {padding: 10px;}
+      </style>
+          
+      <h2 class="">Contact Form</h2>
+      <p class="mt-2 mb-4">Fill out the form below, and one of our team members will get back to you shortly. Please provide as much detail as possible for the best support.</p>
+      <form class="pb-3 mb-5" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse" target="_self" method="POST" >
+          <div class="mb-3">
+              <label for="first-last-name" class="form-label">First and Last Name</label>
+              <input id="first-last-name" type="text" class="form-control" autocomplete="off" tabindex="0" name="entry.631554197" value="" required="">
+          </div>
+          
+          <div class="mb-3">
+              <label for="email-or-phone" class="form-label">Email Address or Phone #</label>
+              <input id="email-or-phone" type="text" class="form-control" autocomplete="off" name="entry.993558858" value="" required="" >
+          </div>
+          
+          <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="5" required="" name="entry.69405291"></textarea>
+          </div>
+          
+          <button type="submit"class="btn" >Submit</button>
+      </form>
+
+      
+      <ul id="sidebar-images" class="p-0">
+          <li>
+          <figure>
+              <img loading="lazy"  src="images/small/circular-fire-pit-Holliston-Mass.webp"  height="348" width="226" alt="Lexington, Massachusetts - Community asphalt circle with curbs and brick pavers.">
+              <figcaption><address>Holliston, MA</address>Commercial project, made for entertaining.</figcaption>
+          </figure>
+          </li>
+          <li>
+          <figure>
+              <img loading="lazy"  src="images/small/raised-patio-with-fire-pit-kitchen-img3-concord-mass.webp"  height="348" width="226" alt="Devens, Massachusetts - Private community site work and asphalt installation.">
+              <figcaption><address>Concord, MA</address>Classic wood burning, residential project.</figcaption>
+          </figure>
+          </li>
+          <li>
+          <figure>
+              <img loading="lazy"  src="images/small/patio-fire-pit-pool-fireplace-concord-mass.webp"  height="348" width="226" alt="Chestnut Hill, Massachusetts - Private residence asphalt driveway and parking pad.">
+              <figcaption><address>Concord, MA</address>Square gas fire pit, residential project.</figcaption>
+          </figure>
+          </li>
+      
+      </ul>
+
+      
+  </div>
+  </div>
+
 
   </main>
   <footer>
