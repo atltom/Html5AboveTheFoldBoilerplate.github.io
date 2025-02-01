@@ -99,7 +99,7 @@ footer>div.flex-container>div {
 
 /* Create four equal columns */
 .column {
-  flex: 25%;
+  flex: 19%;
   padding: 20px;
 }
 
@@ -172,14 +172,14 @@ footer>div.flex-container>div {
 
 /* Create four equal columns */
 .columnf {
-  flex: 25%;
+  flex: 19%;
   padding: 20px;
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
   .columnf {
-    flex: 25%;
+    flex: 19%;
   }
 }
 
