@@ -2,87 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://sphaneufassociates.com/</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
    <url>
     <loc>https://sphaneufassociates.com/services</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.5</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
   <url>
     <loc>https://sphaneufassociates.com/service-areas</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-acton-ma</loc>
-    <lastmod>2025-01-27T19:30:01+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-littleton-ma</loc>
-    <lastmod>2025-01-27T19:30:01+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-concord-ma</loc>
-    <lastmod>2024-12-01T08:57:01+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sphaneufassociates.com/middlesex-county/patio-contractor-concord-ma</loc>
-    <lastmod>2024-12-01T08:57:01+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sphaneufassociates.com/middlesex-county/outdoor-fire-pits-concord-ma</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sphaneufassociates.com/middlesex-county/paver-walkways-concord-ma</loc>
-    <lastmod>2024-12-01T08:57:01+00:00</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
   <url>
     <loc>https://sphaneufassociates.com/reviews</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.5</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
   <url>
     <loc>https://sphaneufassociates.com/asphalt-paving</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
   <url>
     <loc>https://sphaneufassociates.com/masonry-hardscapes</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
   <url>
     <loc>https://sphaneufassociates.com/excavation-site-development</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
   <url>
     <loc>https://sphaneufassociates.com/contact-us</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-acton-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
   <url>
-    <loc>https://sphaneufassociates.com/sitemap</loc>
-    <lastmod>2024-11-16T08:57:01+00:00</lastmod>
-    <priority>0.5</priority>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-carlisle-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-concord-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-lexington-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  <url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-littleton-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-stow-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-sudbury-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-wayland-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-westford-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/hardscape-contractor-weston-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/outdoor-fire-pits-concord-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/patio-contractor-concord-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/middlesex-county/paver-walkways-concord-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+ 
+  <url>
+    <loc>https://sphaneufassociates.com/worcester-county/hardscape-contractor-bolton-ma</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  
   <url>
     <loc>https://sphaneufassociates.com/privacy-policy</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.4</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
   <url>
     <loc>https://sphaneufassociates.com/terms-of-use</loc>
-    <lastmod>2024-11-06T11:57:01+00:00</lastmod>
-    <priority>0.4</priority>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sphaneufassociates.com/sitemap</loc>
+    <lastmod>2025-02-01T09:00:01+00:00</lastmod>
   </url>
 </urlset>
