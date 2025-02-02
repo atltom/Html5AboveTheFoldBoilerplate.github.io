@@ -15,7 +15,8 @@
   .fhead{font-size: 16px;font-weight: 600;}
   #fhr4{margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 90px;}
 
-
+  .fhead hr{margin:4px 0 6px;width: 107px}
+  
 .what-we-offer section {
   margin-bottom: 15px;
 }
