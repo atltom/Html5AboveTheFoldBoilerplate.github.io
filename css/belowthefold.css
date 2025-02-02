@@ -5,18 +5,12 @@
 
 #f1{max-width:1140px;margin: auto;color: #ccc!important;font-size: 15px;font-weight: 300;}
   #fname{font-size: 19px;font-weight: 600;}
-  #fhr{margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 82px;border-color: #303f5e;}
   #fbook{width: 36px;height: 36px;display: inline-block;}
   #flinkin{display: inline-block;}
-  
-  #fhr2{margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 82px;}
- 
-  #fhr3{margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 64px;}
   .fhead{font-size: 16px;font-weight: 600;}
-  #fhr4{margin-top:10px;margin-bottom: 5px;margin: 4px 0px 6px 0px;width: 90px;}
-
   .fhead hr{margin:4px 0 6px;width: 107px}
-  
+  .fsociallink{margin-right:10px}.fsociallink>img{width:inherit;display:inline-block;}
+
 .what-we-offer section {
   margin-bottom: 15px;
 }
