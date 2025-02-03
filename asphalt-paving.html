@@ -108,46 +108,46 @@
       <ul class="image-gallery">
         <li>
           <figure>
-            <span data-src="images/large/asphalt-circle-lexington-mass.webp">
+            <p class="lb" data-src="images/large/asphalt-circle-lexington-mass.webp">
               <img loading="lazy"  src="images/small/asphalt-circle-lexington-mass.webp"  height="348" width="226" alt="Lexington, Massachusetts - Community asphalt circle with curbs and brick pavers.">
-              <p class="overlay2"><u>Click to Zoom</u></p>
-            </span>
+              <!-- <div class="overlay2"><u>Click to Zoom</u></div> -->
+            </p>
             <figcaption><address>Lexington, MA</address>Community asphalt circle with curbs and brick pavers. </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <span data-src="images/large/asphalt-street-devens-mass.webp" >
+            <p class="lb" data-src="images/large/asphalt-street-devens-mass.webp" >
               <img loading="lazy"  src="images/small/asphalt-street-devens-mass.webp"  height="348" width="226" alt="Devens, Massachusetts - Private community site work and asphalt installation.">
-              <p class="overlay2"><u>Click to Zoom</u></p>
-            </span>
+              <!-- <div class="overlay2"><u>Click to Zoom</u></div> -->
+            </p>
             <figcaption><address>Devens, MA</address>Private community site work and asphalt installation.</figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <span data-src="images/large/asphalt-driveway-chestnut-hill-mass.webp" >
+            <p class="lb" data-src="images/large/asphalt-driveway-chestnut-hill-mass.webp" >
               <img loading="lazy"  src="images/small/asphalt-driveway-chestnut-hill-mass.webp"  height="348" width="226" alt="Chestnut Hill, Massachusetts - Private residence asphalt driveway and parking pad.">
-              <p class="overlay2"><u>Click to Zoom</u></p>
-            </span>
+              <!-- <div class="overlay2"><u>Click to Zoom</u></div> -->
+            </p>
             <figcaption><address>Chestnut Hill, MA</address>Private residence asphalt driveway and parking pad.</figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <span data-src="images/large/asphalt-patch-ayer-mass.webp" >
+            <p class="lb" data-src="images/large/asphalt-patch-ayer-mass.webp" >
               <img loading="lazy"  src="images/small/asphalt-patch-ayer-mass.webp"  height="348" width="226" alt="Ayer, Massachusetts - Infrastructure repair and asphalt patch.">
-              <p class="overlay2"><u>Click to Zoom</u></p>
-            </span>
+              <!-- <div class="overlay2"><u>Click to Zoom</u></div> -->
+            </p>
             <figcaption><address>Ayer, MA</address>Infrastructure repair and asphalt patch.</figcaption>
           </figure>
         </li>
         <li id="insta">
           <figure>
-            <span data-src="images/small/Instagram.webp" data-pswp-width="640" data-pswp-height="416" target="_blank">
+            <p class="lb" data-src="images/small/Instagram.webp" data-pswp-width="640" data-pswp-height="416" target="_blank">
               <img loading="lazy" src="images/small/Instagram.webp" height="348" width="226" alt="Follow Us - More projects can be seen on our Instagram page.">
-              <p class="overlay2"><u>Click to Zoom</u></p>
-            </span>
+              <!-- <div class="overlay2"><u>Click to Zoom</u></div> -->
+            </p>
             <figcaption>
               <div>Follow Us</div> 
               More projects can be seen on Instagram.
@@ -203,7 +203,8 @@
     document.addEventListener('DOMContentLoaded', () => {
         let currentIndex = 0;
         const gallery = document.getElementById('gallery');
-        const spans = gallery.getElementsByTagName('span');
+        //const spans = gallery.getElementsByTagName('p');
+        const spans = gallery.querySelectorAll('p.lb');
         for (let i = 0; i < spans.length; i++) {spans[i].addEventListener('click', () => {currentIndex = i;openLightbox(spans[currentIndex].getAttribute('data-src'));});}
         function openLightbox(imageSrc) {
             document.body.classList.add('noScroll');
