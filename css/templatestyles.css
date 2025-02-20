@@ -87,8 +87,36 @@ address{font-style:normal}.form-label{margin-bottom:.5rem;}.form-control{display
 
 .text-box{opacity:0;transition:transform 1s,opacity 1s;transform:translateY(200px)}.text-box.slide-up{transform:translateY(0);opacity:1}
 
-@media (min-width:576px){#nav-brand{width:529px;}.navbar-toggler{display:none;}.nav{height:auto;}.nav a{display:inline-block;}.big-image{margin-top:157px;}.dropdown-content{position:fixed;top:182px;width:260px;left:280px;}.dropdown-content.show{display:inline;}.overlay{padding:25px;}}
-@media (min-width:768px){.nav{max-height:175px;}#logo{width:368.55px;}.dropdown-content{top:157px;}}
+
+
+
+#nav-brand{width:529px;}
+.navbar-toggler{display:none;}
+.nav{height:auto;}
+.nav a{display:inline-block;}
+.big-image{margin-top:157px;}
+.dropdown-content{position:fixed;top:182px;width:260px;left:280px;}
+.dropdown-content.show{display:inline;}
+.overlay{padding:25px;}
+
+
+/* @media (min-width:576px){
+  #nav-brand{width:529px;}
+  .navbar-toggler{display:none;}
+  .nav{height:auto;}
+  .nav a{display:inline-block;}
+  .big-image{margin-top:157px;}
+  .dropdown-content{position:fixed;top:182px;width:260px;left:280px;}
+  .dropdown-content.show{display:inline;}
+  .overlay{padding:25px;}
+} */
+
+
+@media (min-width:768px){
+  .nav{max-height:175px;}
+  #logo{width:368.55px;}
+  .dropdown-content{top:157px;}
+}
 
 /* Styles for larger screens (tablets and desktops) */
 @media (min-width:768px){
@@ -98,21 +126,14 @@ address{font-style:normal}.form-label{margin-bottom:.5rem;}.form-control{display
   h2{font-size:1.75rem}
   h3{font-size:1.25rem}}
 
-@media (min-width:768px) and (max-height:600px) and (orientation:landscape){#fixedbar{position:relative;}#navbar{position:relative;top:0;}
-#hero{margin-top:0;height:125vh;background-position:bottom;}
+@media (min-width:768px) and (max-height:600px) and (orientation:landscape){
+  #fixedbar{position:relative;}
+  #navbar{position:relative;top:0;}
+  #hero{margin-top:0;height:125vh;background-position:bottom;}
 }
 
-
 @media (min-width:1024px){
-  .container{
-     width:80%; 
-    display:flex;justify-content:space-between;margin:auto; 
-    width: 100%;
-    padding: 0 20px;
-    flex-direction: inherit;
-    align-items: normal;
-
-  }
+  .container{width:80%;     display:flex;justify-content:space-between;margin:auto;     width: 100%;    padding: 0 20px;    flex-direction: inherit;    align-items: normal;  }
   .content{flex:1;margin-top:0;margin-right:3%}
   .contact-form{width:300px;padding:20px;border:1px solid #ccc;border-radius:5px;background-color:#f9f9f9;width:100%;max-width:33.33%;}
   .p-1{padding:40px 10px!important}p{line-height:30px;}#nav-brand{width:420px;}#nav-wrap{float:right;margin-top:25px}.big-image{margin-top:113px}.overlay{transform:translate(-50%,calc(-50% - 0px));width:50%;}.big-image.home{background-image:url(../images/large/asphalt-and-masonry.webp);}.big-image.services{background-image:url(../images/large/stone-wall.webp);}.big-image.site-work{background-image:url(../images/large/site-work.webp);}.big-image.asphalt-paving{background-image:url(../images/large/asphalt-paving.webp);}.big-image.foundation{background-image:url(../images/large/foundation.webp);}.big-image.back-porch{background-image:url(../images/large/back-porch.webp);}
@@ -127,16 +148,13 @@ address{font-style:normal}.form-label{margin-bottom:.5rem;}.form-control{display
   h3{font-size:1.25rem}
 }
 
-/* Ensure the default (mobile-first) styles are kept when in landscape mode on phones */
-/* @media (max-width:767px) and (orientation:landscape){
-    .btn{background-color: red;}
-    body{font-size:16px}
-    h1{font-size:2rem}
-    h2{font-size:1.75rem}
-    h3{font-size:1.5rem}
-  } */
 
-@media (min-width:1200px){.nav{max-height:134px;}#nav-wrap{float:right;margin:25px 20px 0;}#logo{width:100%;}}
+@media (min-width:1200px){
+    .nav{max-height:134px;}
+    #nav-wrap{float:right;
+    margin:25px 20px 0;}
+    #logo{width:100%;}
+  }
 
 .row{display:flex;flex-wrap:wrap}
 .column{flex:25%;padding:20px}    
@@ -165,20 +183,37 @@ footer{background-color:#303f5e;color:white}footer ul{list-style-type:none;paddi
 
 .copyright{clear:both;padding:5px;text-align:center;color:#ccc;background-color:#25304b;font-size:16px;font-weight:300}
 
-@media (min-width: 1200px) {.container {max-width: 1140px;  /* border: 1px solid rgb(255, 102, 0); background: orange;*/  }}
-@media (min-width: 1400px) {.container {max-width: 1320px;  /* border: 1px solid red; background: red;*/ }}
+@media (min-width: 1200px) {
+  .container {max-width: 1140px;  /* border: 1px solid rgb(255, 102, 0); background: orange;*/  }
+}
+
+@media (min-width: 1400px) {
+  .container {max-width: 1320px;  /* border: 1px solid red; background: red;*/ }
+}
+
+@media screen and (max-width:992px){
+  .column{flex:50%}.columnf{flex:25%}
+}
+
+@media screen and (max-width:600px){
+  .row{flex-direction:column}
+  .rowf{flex-direction:column}
+}
 
 
-@media screen and (max-width:992px){.column{flex:50%}.columnf{flex:25%}}
-@media screen and (max-width:600px){.row{flex-direction:column}.rowf{flex-direction:column}}
 
 
 
 
 
-
-
-
+/* Ensure the default (mobile-first) styles are kept when in landscape mode on phones */
+/* @media (max-width:767px) and (orientation:landscape){
+    .btn{background-color: red;}
+    body{font-size:16px}
+    h1{font-size:2rem}
+    h2{font-size:1.75rem}
+    h3{font-size:1.5rem}
+  } */
 
 
 
