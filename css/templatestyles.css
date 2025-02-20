@@ -8,6 +8,12 @@ html {-webkit-text-size-adjust: 100%;  -ms-text-size-adjust: 100%;  -webkit-tap-
 /* Default styles for smallest screens (mobile-first) */
 body{-webkit-font-smoothing:antialiased;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";color:#333;line-height:1.6;font-weight:400;font-size:16px;display:flex;flex-direction:column;background-color:#f8f8f8}
 h2,h3{font-weight:600;color:#222}
+
+h1{font-size:2rem}
+    h2{font-size:1.75rem}
+    h3{font-size:1.5rem}
+
+
 a{color:#1e396c;text-decoration:none}a:hover{text-decoration:underline}
 
 button:focus{outline:none}
@@ -18,13 +24,13 @@ img{vertical-align:middle;border-style:none;width:100%;height:auto}
 
 hr{border:1.5px solid #bc5a15;margin:5px 30px -5px 30px}
 
-.btn{text-decoration:none;background:#BC5A15;color:#fff;display:inline-block;padding:8px 16px;border:0;border-radius:.3rem;cursor:pointer}
+.btn{text-decoration:none;background:#bc5a15;color:#fff;display:inline-block;padding:8px 16px;border:0;border-radius:.3rem;cursor:pointer}
 .btn:hover,.btn:active,.btn:focus{background:#e57930}
 
 .btn-outlined{background:#fff;color:green;border:3px solid green;font-weight:bold;border-radius:7px;}
 .btn.btn-outlined:hover,.btn.btn-outlined:active{background:#ffffff;color:#006100;border-color:#006100}
 
-#fixedbar{background:#BC5A15;color:#fff;position:fixed;top:0;width:100%;height:30px;z-index:3;font-size:13px;font-weight:bold;padding:7px 0 0 30px;padding-left:calc(10vw / 3)}
+#fixedbar{background:#bc5a15;color:#fff;position:fixed;top:0;width:100%;height:30px;z-index:3;font-size:13px;font-weight:bold;padding:7px 0 0 30px;padding-left:calc(10vw / 3)}
 
 #phone-icon,#email-icon{width:10px;height:auto;display:inline-block;margin-right:3px}
 .fixedbar-icons{display:inline-block;margin-right:3px}
@@ -122,13 +128,13 @@ address{font-style:normal}.form-label{margin-bottom:.5rem;}.form-control{display
 }
 
 /* Ensure the default (mobile-first) styles are kept when in landscape mode on phones */
-@media (max-width:767px) and (orientation:landscape){
+/* @media (max-width:767px) and (orientation:landscape){
     .btn{background-color: red;}
     body{font-size:16px}
     h1{font-size:2rem}
     h2{font-size:1.75rem}
     h3{font-size:1.5rem}
-  }
+  } */
 
 @media (min-width:1200px){.nav{max-height:134px;}#nav-wrap{float:right;margin:25px 20px 0;}#logo{width:100%;}}
 
