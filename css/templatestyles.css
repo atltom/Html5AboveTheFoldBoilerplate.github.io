@@ -65,17 +65,16 @@ figcaption{padding:10px}
 .text-box{opacity:0;transition:transform 1s,opacity 1s;transform:translateY(200px)}
 .text-box.slide-up{transform:translateY(0);opacity:1}
 
-footer{background-color:#303f5e;color:white}
-footer ul{list-style-type:none;padding:0}
-#f1{max-width:1320px;margin:auto;color:#ccc!important;font-size:15px;font-weight:300}
+.footer{background-color:#303f5e;color:white}
+.f1{max-width:1320px;margin:auto;color:#ccc!important;font-size:15px;font-weight:300}
 .fcontainer{display:flex;flex-wrap:wrap;justify-content:space-between}
 .fcolumn{flex:1 1 100%;margin:10px;padding:10px}
 .fcolumn:nth-child(1){max-width:310px}
-#fname{font-size:19px;font-weight:600}
-#fhr{margin-top:10px;margin-bottom:5px;margin:4px 0 6px 0;width:82px;border-color:#303f5e}
-#fhr2{margin-top:10px;margin-bottom:5px;margin:4px 0 6px 0;width:82px}
-#fhr3{margin-top:10px;margin-bottom:5px;margin:4px 0 6px 0;width:64px}
-#fhr4{margin-top:10px;margin-bottom:5px;margin:4px 0 6px 0;width:90px}
+.fname{font-size:19px;font-weight:600}
+.fhr{margin-top:10px;margin-bottom:5px;margin:4px 0 6px 0;width:82px;border-color:#303f5e}
+.fhr2{margin-top:10px;margin-bottom:5px;margin:4px 0 6px 0;width:82px}
+.fhr3{margin-top:10px;margin-bottom:5px;margin:4px 0 6px 0;width:64px}
+.fhr4{margin-top:10px;margin-bottom:5px;margin:4px 0 6px 0;width:90px}
 .fhead{font-size:16px;font-weight:600}
 .footer-links a{color:rgb(204,204,204);text-decoration:none;display:inline-block;padding:5px 0}
 .fsociallink{margin-right:10px}
