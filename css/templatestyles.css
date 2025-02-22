@@ -61,7 +61,6 @@ textarea{resize:vertical}
 textarea.form-control{min-height:calc(1.5em + .75rem + 2px)}
 figure{border:1px solid #cdcdcd}
 figcaption{padding:10px}
-.side-img{margin-bottom:44px;list-style-type:none}
 
 .text-box{opacity:0;transition:transform 1s,opacity 1s;transform:translateY(200px)}
 .text-box.slide-up{transform:translateY(0);opacity:1}
@@ -95,6 +94,7 @@ footer ul{list-style-type:none;padding:0}
 .fw-0{font-weight:normal}.fw-1{font-weight:300}.fw-2{font-weight:600}.fw-7{font-weight:700}
 .bg-g-0{background:#ddd}.bg-g-1{background:#ccc}.bg-g-2{background:#bbb}.bg-g-3{background:#aaa}
 .t-c{text-align:center}.td-n{text-decoration:none!important}
+.lst-n{list-style-type:none}
 
 .pipe{border-left:6px solid #ccc;padding-left:6px;color:#1e396c}
 
