@@ -46,6 +46,11 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 
 .big-image{background-color:#2f3f5e;margin-top:calc((56vw / 3) + 30px);width:100%;position:relative;background-size:cover;background-position:50% 50%;height:75vh}
 .big-image.foundation{background-image:url(../images/566/foundation.webp)}
+.big-image.back-porch{background-image:url(../images/566/back-porch.webp)}
+.big-image.site-work{background-image:url(../images/566/site-work.webp)}
+.big-image.asphalt-paving{background-image:url(../images/566/asphalt-paving.webp)}
+.big-image.home{background-image:url(../images/566/home.webp)}
+
 .overlay{position:relative;left:50%;background-color:#0000006e;color:white;width:90%;text-align:center;top:50%;transform:translate(-50%,calc(-50% - 30px));padding:12px}
 .hero-h1{text-align:left;font-size:35px;text-shadow:2px 2px 4px #000;line-height:39px}
 .hero-p{font-weight:bold;text-shadow:2px 2px 4px #000;text-align:left}
@@ -56,7 +61,7 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 .content{margin-left:auto}
 .contact-form{max-width:max-content}
 
-.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.form-control{display:block;width:100%;padding:.375rem .75rem;background-clip:padding-box;border:1px solid #ced4da;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 .form-control.textarea{resize:vertical;min-height:calc(1.5em + .75rem + 2px)}
 .figure{border:1px solid #cdcdcd}
 
