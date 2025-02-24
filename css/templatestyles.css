@@ -49,7 +49,7 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 .big-image.back-porch{background-image:url(../images/566/back-porch.webp)}
 .big-image.site-work{background-image:url(../images/566/site-work.webp)}
 .big-image.asphalt-paving{background-image:url(../images/566/asphalt-paving.webp)}
-.big-image.home{background-image:url(../images/566/home.webp)}
+.big-image.home{background-image:url(../images/566/asphalt-and-masonry.webp)}
 
 .overlay{position:relative;left:50%;background-color:#0000006e;color:white;width:90%;text-align:center;top:50%;transform:translate(-50%,calc(-50% - 30px));padding:12px}
 .hero-h1{text-align:left;font-size:35px;text-shadow:2px 2px 4px #000;line-height:39px}
