@@ -65,10 +65,8 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 
 .footer{background-color:#303f5e;color:#ccc}
 .f1{max-width:1320px;margin:auto;}
-.fcontainer{display:flex;flex-wrap:wrap;justify-content:space-between}
-.fcolumn{flex:1 1 20%} 
-.fcolumn:nth-child(1){/*max-width:310px;min-width: 210px;*/flex:1 1 40%}
-.fmoto{width: 50%;}
+.fcontainer{display: inline-block;}
+.fmoto{width: 220px;}
 .fheadline {border-bottom: 2px solid #bc5a15;display:inline-block;}
 .footer-links a{color:#ccc;text-decoration:none;display:inline-block;padding:5px 0}
 .footer-links a:hover{text-decoration:underline; text-underline-offset: 2px;}
@@ -106,6 +104,7 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
   .dropdown-content{position:fixed;top:159px;width:260px;left:275px}
   .dropdown-content.show{display:inline;border:1px solid #212f4a}
   .overlay{padding:25px}
+  .fcontainer{display:flex;flex-wrap:wrap;justify-content:space-between}
 }
 
 @media (min-width:768px) {
@@ -116,8 +115,9 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
   h1{font-size:2.5rem}
   h2{font-size:1.75rem}
   h3{font-size:1.25rem}
-  /* .fcolumn{flex:1 1 22%;margin:10px} */
-  /* .fcolumn:nth-child(2){padding-left:5%!important} */
+  .fcontainer{flex-wrap:nowrap;}
+  .fcolumn{flex:1 1 20%} 
+  .fcolumn:nth-child(1){flex:1 1 40%} 
 }
 
 @media (min-width:768px) and (max-height:600px) and (orientation:landscape) {
