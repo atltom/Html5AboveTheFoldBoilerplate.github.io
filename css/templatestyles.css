@@ -160,3 +160,38 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 @media (min-width:1400px) {
   .container{max-width:1320px}
 }
+
+
+.square {
+  height: 300px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  width: 49%;
+  border: 1px solid #e1e5e6;
+}
+
+.square-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.flex-wrap-wrap {
+  flex-wrap: wrap !important;
+}
+
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .square {
+      width: 100%; /* Make each square take full width */
+  }
+}
