@@ -25,7 +25,9 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 #nav-wrap{float:none;padding:0;position:relative}
 .nav{background:#2f3f5e;position:fixed;width:100%;height:18.67vw;z-index:3;color:#fff;top:30px;border-bottom:2px solid #212f4a;overflow:hidden}
 .nav-link{text-decoration:none;padding:8px 14px 8px 8px;position:relative;color:inherit;font-weight:400}
-.nav-link.selected{color:#fff;text-shadow:1px 1px 0 #bc5a15,-1px 1px 0 #bc5a15,-1px -1px 0 #bc5a15,1px -1px 0 #bc5a15}
+/* .nav-link.selected{color:#fff;text-shadow:1px 1px 0 #bc5a15,-1px 1px 0 #bc5a15,-1px -1px 0 #bc5a15,1px -1px 0 #bc5a15} */
+a.nav-link.selected::after{content:'';position:absolute;bottom:8px;left:15%;width:70%;height:2px;background-color:#bc5a15}
+
 #nav-brand{display:inline-block;max-width:calc(100vw - 62px);padding:3px 12px 0 0;padding-left:calc(10vw / 3)}
 .nav a{display:block;padding:8px 15px}
 
@@ -56,8 +58,9 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 .hero-p{font-weight:bold;text-shadow:2px 2px 4px #000;text-align:left}
 .hero-btn{padding:12px 32px;border:1px solid #ab4400;text-shadow:1px 1px 4px #5e2500;}
 
-.container{display:flex;}
-.container{width:100%;flex-direction:column;align-items:center;padding:0 20px}
+.container{padding:0 20px;width:100%;}
+.flex-container {display:flex;flex-direction:column;align-items:center;}
+
 .content{margin-left:auto}
 .contact-form{max-width:max-content}
 
@@ -65,6 +68,7 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 .form-control.textarea{resize:vertical;min-height:calc(1.5em + .75rem + 2px)}
 .figure{border:1px solid #cdcdcd}
 
+/* .card-container{padding:0 20px} */
 .card-container{padding:0 20px}
 .card{border:1px solid #ccc}
 .card-img{width:100%}
@@ -119,6 +123,21 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
   display: inline-block;
 }
 
+.pipe2:before, .pipe2:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #bc5a15;
+  display: inline-block;
+  
+}
+.pipe2:before  {
+  margin: 0 15px 10px 0;
+}
+.pipe2:after {
+  margin: 0 0 10px 15px;
+}
+
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal}
 
 .jc-l{justify-content:left!important}
@@ -139,7 +158,6 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 @media (min-width:768px) {
   .nav{max-height:175px}
   .dropdown-content{top:164px;left:300px}
-  /* .btn{background-color:purple} */
   body{font-size:18px}
   h1{font-size:2.5rem}
   h2{font-size:1.75rem}
@@ -164,7 +182,12 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 
 
 @media (min-width:1024px) {
-  .container{width:80%;display:flex;justify-content:space-between;margin:auto;width:100%;padding:0 20px;flex-direction:inherit;align-items:normal}
+  /* .container{width:80%;display:flex;justify-content:space-between;margin:auto;width:100%;padding:0 20px;flex-direction:inherit;align-items:normal} */
+  
+  
+  .cffffffontainer{width:80%;display:flex;justify-content:space-between;margin:auto;width:100%;padding:0 20px;flex-direction:inherit;align-items:normal}
+  .flex-container{width:80%;display:flex;justify-content:space-between;margin:auto;width:100%;padding:0 20px;flex-direction:inherit;align-items:normal}
+  
   .content{flex:1;margin-top:0;margin-right:11%}
   .contact-form{width:300px;padding:20px;border-radius:5px;background-color:#364d5908;width:100%;max-width:33.33%}
   .p-1{padding:40px 10px!important}p{line-height:30px}#nav-brand{width:420px}
@@ -198,10 +221,11 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
   #nav-wrap{float:right;margin:25px 20px 0}
   #logo{width:100%}
   .dropdown-content{top:100px;left:calc(100vw - 365px)}
+  /* .card-container,.container{max-width:1140px;margin:auto;} */
   .card-container,.container{max-width:1140px;margin:auto;}
 }
 
 @media (min-width:1400px) {
+  /* .card-container, .container{max-width:1320px;} */
   .card-container, .container{max-width:1320px;}
- 
 }
