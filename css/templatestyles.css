@@ -79,7 +79,10 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .big-image.asphalt-paving{background-image:url(../images/566/asphalt-paving.webp)}
 .big-image.home{background-image:url(../images/566/asphalt-and-masonry.webp)}
 
-.overlay{position:relative;left:50%;background-color:#0000006e;color:white;width:90%;text-align:center;top:50%;transform:translate(-50%,calc(-50% - 30px));padding:12px}
+.overlay{position:relative;left:50%;
+  background-color:#0000006e;
+  background-color: #30405fa3;
+  color:white;width:90%;text-align:center;top:50%;transform:translate(-50%,calc(-50% - 30px));padding:12px}
 .hero-h1{text-align:left;text-shadow:2px 2px 4px #000;line-height:39px}
 .hero-p{font-weight:700;text-shadow:2px 2px 4px #000;text-align:left}
 .hero-btn{padding:12px 32px;border:1px solid #ab4400;text-shadow:1px 1px 4px #5e2500;}
@@ -103,6 +106,17 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 
 .text-box{opacity:0;transition:transform 1s,opacity 1s;transform:translateY(200px)}
 .text-box.slide-up{transform:translateY(0);opacity:1}
+
+
+.towns-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Creates 4 equal columns */
+  gap: 0;
+  list-style-type: none;
+  padding: 0;
+  
+}
+
 
 .checkmark{display:inline-block;width:20px;height:20px;position:relative;margin-right:0}.checkmark::before{content:"";position:absolute;width:11px;height:19px;border:solid #4CAF50;border-width:0 3px 3px 0;transform:rotate(43deg);border-radius:2px}
 
