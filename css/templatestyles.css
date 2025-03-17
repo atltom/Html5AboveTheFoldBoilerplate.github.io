@@ -127,6 +127,8 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .arrow::after{top:-1.5px;transform:rotate(45deg)}
 .arrow::after,.arrow::before{background-color:#bc5a15;content:'';position:absolute;width:28%;height:1.5px;right:-2px}
 
+.ttt{color:#bc5a15;vertical-align:sub;font-size:35px;line-height:0}
+
 .footer{background-color:#303f5e;color:#ccc}
 .f1{max-width:1320px;margin:auto;}
 .fcontainer{display: inline-block;}
