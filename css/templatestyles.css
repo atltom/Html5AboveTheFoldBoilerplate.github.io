@@ -108,15 +108,9 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .text-box.slide-up{transform:translateY(0);opacity:1}
 
 
-.towns-list {
-  display: grid;
-  /* grid-template-columns: repeat(6, 1fr); Creates 4 equal columns */
-  grid-template-columns: repeat(2, 1fr); /* Creates 4 equal columns */
-  gap: 0;
-  list-style-type: none;
-  padding: 0;
-  
-}
+.towns-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0;list-style-type:none;padding:0}
+.pin{color:#bc5a15;padding-right:3px}
+.pin2{color:#853903;padding-right:3px}
 
 
 .checkmark{display:inline-block;width:20px;height:20px;position:relative;margin-right:0}.checkmark::before{content:"";position:absolute;width:11px;height:19px;border:solid #4CAF50;border-width:0 3px 3px 0;transform:rotate(43deg);border-radius:2px}
@@ -127,7 +121,9 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .arrow::after{top:-1.5px;transform:rotate(45deg)}
 .arrow::after,.arrow::before{background-color:#bc5a15;content:'';position:absolute;width:28%;height:1.5px;right:-2px}
 
-.ttt{color:#bc5a15;vertical-align:sub;font-size:35px;line-height:0}
+
+/* .pin{background-color:#bc5a15;border-radius:50%;height:10px;width:10px;position:relative;top:2px} */
+/* .pin::before{content:'';position:absolute;width:1px;height:100%;background-color:#bc5a15;left:50%;top:0}   */
 
 .footer{background-color:#303f5e;color:#ccc}
 .f1{max-width:1320px;margin:auto;}
