@@ -118,6 +118,8 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 	padding-left: 8px;
 	padding-top: 8px;
 	transform:rotate(-45deg);
+  -webkit-transform: rotate(-45deg); /* iOS-specific transform fix */
+  transition: transform 0.3s ease; /* Smooth transition for interactivity */
   display:inline-block;
   margin-right:3px;
 }
@@ -171,12 +173,12 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .fst-i{font-style:italic}
 .fw-2{font-weight:200}.fw-3{font-weight:300}.fw-4{font-weight:400}.fw-6{font-weight:600}.fw-7{font-weight:700}.fw-8{font-weight:800}
 .bg-g-0{background:#ececec}.bg-g-1{background:#ccc}.bg-g-2{background:#bbb}.bg-g-3{background:#aaa}
-.bg-b{background-color: #1e396c;}
-.bg-b1{background-color: #192e8d;}
-.bg-b2{background-color: #0b1231;}
-.bg-b3{background-color: #19203f;}
-.bg-b4{background-color: #192e8d;}
-.bg-b5{background-color: #4c557d;}
+.bg-b{background-color: #5d75aa;}
+.bg-b1{background-color: #2f3f5e;}
+.bg-b2{background-color: #232c43;}
+.bg-b3{background-color: #7b3508;}
+.bg-b4{background-color: #bc5a15;}
+.bg-b5{background-color: #ff7f32;}
 .t-c{text-align:center}
 .td-n{text-decoration:none!important}
 .lst-n{list-style-type:none}
