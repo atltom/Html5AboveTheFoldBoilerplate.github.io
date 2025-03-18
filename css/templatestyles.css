@@ -112,16 +112,34 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 
 
 .pin{
- 	width:14px;
+ 	/* width:14px;
 	height:14px;
 	border-radius: 50% 50% 50% 0;
 	padding-left: 8px;
 	padding-top: 8px;
 	transform:rotate(-45deg);
-  -webkit-transform: rotate(-45deg); /* iOS-specific transform fix */
-  transition: transform 0.3s ease; /* Smooth transition for interactivity */
+  -webkit-transform: rotate(-45deg);
+  transition: transform 0.3s ease;
   display:inline-block;
-  margin-right:3px;
+  margin-right:3px; */
+
+
+  width: 14px;
+  height: 14px;
+  border-radius: 50% 50% 50% 0;
+  padding-left: 8px;
+  padding-top: 8px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); /* iOS-specific transform fix */
+  transition: transform 0.3s ease, transform 0.3s ease; /* Ensure smooth animation */
+  display: inline-block;
+  margin-right: 3px;
+  background-color: #3498db; /* Adding a color to the pin */
+  position: relative;
+  z-index: 10; /* Ensure the pin appears above map elements */
+
+
+
 }
 
 
