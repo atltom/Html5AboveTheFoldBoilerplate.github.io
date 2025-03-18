@@ -109,8 +109,19 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 
 
 .towns-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0;list-style-type:none;padding:0}
-.pin{color:#bc5a15;padding-right:3px}
-.pin2{color:#853903;padding-right:3px}
+
+
+.pin{
+ 	width:14px;
+	height:14px;
+	border-radius: 50% 50% 50% 0;
+	padding-left: 8px;
+	padding-top: 8px;
+	transform:rotate(-45deg);
+  display:inline-block;
+  margin-right:3px;
+}
+
 
 
 .checkmark{display:inline-block;width:20px;height:20px;position:relative;margin-right:0}.checkmark::before{content:"";position:absolute;width:11px;height:19px;border:solid #4CAF50;border-width:0 3px 3px 0;transform:rotate(43deg);border-radius:2px}
@@ -160,6 +171,12 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .fst-i{font-style:italic}
 .fw-2{font-weight:200}.fw-3{font-weight:300}.fw-4{font-weight:400}.fw-6{font-weight:600}.fw-7{font-weight:700}.fw-8{font-weight:800}
 .bg-g-0{background:#ececec}.bg-g-1{background:#ccc}.bg-g-2{background:#bbb}.bg-g-3{background:#aaa}
+.bg-b{background-color: #1e396c;}
+.bg-b1{background-color: #192e8d;}
+.bg-b2{background-color: #0b1231;}
+.bg-b3{background-color: #19203f;}
+.bg-b4{background-color: #192e8d;}
+.bg-b5{background-color: #4c557d;}
 .t-c{text-align:center}
 .td-n{text-decoration:none!important}
 .lst-n{list-style-type:none}
