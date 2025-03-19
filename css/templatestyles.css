@@ -110,39 +110,7 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 
 .towns-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0;list-style-type:none;padding:0}
 
-
-.pin{
- 	/* width:14px;
-	height:14px;
-	border-radius: 50% 50% 50% 0;
-	padding-left: 8px;
-	padding-top: 8px;
-	transform:rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transition: transform 0.3s ease;
-  display:inline-block;
-  margin-right:3px; */
-
-
-  width: 14px;
-  height: 14px;
-  border-radius: 50% 50% 50% 0;
-  padding-left: 8px;
-  padding-top: 8px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg); /* iOS-specific transform fix */
-  transition: transform 0.3s ease, transform 0.3s ease; /* Ensure smooth animation */
-  display: inline-block;
-  margin-right: 3px;
-  background-color: #3498db; /* Adding a color to the pin */
-  position: relative;
-  z-index: 10; /* Ensure the pin appears above map elements */
-
-
-
-}
-
-
+.pin{width:14px;height:14px;border-radius:50% 50% 50% 0;padding-left:8px;padding-top:8px;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transition:transform .3s ease,transform .3s ease;display:inline-block;margin-right:1px;background-color:#3498db;position:relative;z-index:10}
 
 .checkmark{display:inline-block;width:20px;height:20px;position:relative;margin-right:0}.checkmark::before{content:"";position:absolute;width:11px;height:19px;border:solid #4CAF50;border-width:0 3px 3px 0;transform:rotate(43deg);border-radius:2px}
 
@@ -153,8 +121,6 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .arrow::after,.arrow::before{background-color:#bc5a15;content:'';position:absolute;width:28%;height:1.5px;right:-2px}
 
 
-/* .pin{background-color:#bc5a15;border-radius:50%;height:10px;width:10px;position:relative;top:2px} */
-/* .pin::before{content:'';position:absolute;width:1px;height:100%;background-color:#bc5a15;left:50%;top:0}   */
 
 .footer{background-color:#303f5e;color:#ccc}
 .f1{max-width:1320px;margin:auto;}
@@ -191,12 +157,12 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .fst-i{font-style:italic}
 .fw-2{font-weight:200}.fw-3{font-weight:300}.fw-4{font-weight:400}.fw-6{font-weight:600}.fw-7{font-weight:700}.fw-8{font-weight:800}
 .bg-g-0{background:#ececec}.bg-g-1{background:#ccc}.bg-g-2{background:#bbb}.bg-g-3{background:#aaa}
-.bg-b{background-color: #5d75aa;}
-.bg-b1{background-color: #2f3f5e;}
-.bg-b2{background-color: #232c43;}
-.bg-b3{background-color: #7b3508;}
-.bg-b4{background-color: #bc5a15;}
-.bg-b5{background-color: #ff7f32;}
+.bg-b1{background-color: #5d75aa;}
+.bg-b2{background-color: #2f3f5e;}
+.bg-b{background-color: #232c43;}
+.bg-b5{background-color: #7b3508;}
+.bg-b3{background-color: #bc5a15;}
+.bg-b4{background-color: #ff7f32;}
 .t-c{text-align:center}
 .td-n{text-decoration:none!important}
 .lst-n{list-style-type:none}
