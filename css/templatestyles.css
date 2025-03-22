@@ -43,7 +43,10 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .navbar-change{height:auto}
 #dropbtn-arrow{border:solid #ffffff;box-shadow:#000 1px 1px 1px;border-width:0 3px 3px 0;display:inline-block;padding:3px;transform:rotate(45deg);-webkit-transform:rotate(45deg)}
 
-.big-image{background-color:#2f3f5e;margin-top:calc((56vw / 3) + 30px);width:100%;position:relative;background-size:cover;background-position:50% 50%;height:75vh}
+.big-image{background-color:#2f3f5e;margin-top:calc((56vw / 3) + 30px);width:100%;position:relative;background-size:cover;
+  /* background-position:50% 50%; */
+  background-position:50% 75%;
+  height:75vh}
 .big-image.foundation{background-image:url(../images/566/foundation.webp)}
 .big-image.back-porch{background-image:url(../images/566/back-porch.webp)}
 .big-image.site-work{background-image:url(../images/566/site-work.webp)}
