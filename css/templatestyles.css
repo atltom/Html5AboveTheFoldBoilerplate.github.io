@@ -65,7 +65,14 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .form-control.textarea{resize:vertical;min-height:calc(1.5em + .75rem + 2px)}
 .figure{border:1px solid #cdcdcd}
 .card-container{padding:0 20px}
-.card-img{width:100%}
+.card-img{ 
+  /* width:100% */
+  aspect-ratio: 1.3308586556169428;
+  max-width: 100%;
+  object-fit: cover;
+
+}
+
 
 .text-box{opacity:0;transition:transform 1s,opacity 1s;transform:translateY(200px)}
 .text-box.slide-up{transform:translateY(0);opacity:1}
