@@ -27,6 +27,7 @@ a.nav-link.selected,a.nav-link.selected:hover{text-underline-offset: 0;text-deco
 a.nav-link.selected:hover{cursor:default}
 a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:underline;text-decoration-color:#d2d2d2;text-decoration-thickness:1px;text-decoration-skip-ink:auto;text-underline-position:under}
 #nav-brand{display:inline-block;max-width:calc(100vw - 62px);padding:3px 12px 0 0;padding-left:calc(10vw / 3)}
+#logo {width: auto;height: auto;aspect-ratio: 594 / 126;max-width: 100%;object-fit: contain}
 .nav a{display:block;padding:8px 15px}
 .dropbtn{cursor:pointer;text-underline-offset: 2px;}
 #dropbtn-arrow{font-size:10px}
