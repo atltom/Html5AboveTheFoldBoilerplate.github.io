@@ -149,7 +149,7 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 @media (min-width:768px) {
   .nav{max-height:175px}
   .dropdown-content{top:164px;left:300px}
-  body{font-size:18px}
+  body{font-size:17px}
   h1{font-size:2.5rem}
   .fcontainer{flex-wrap:nowrap;}
   .fcolumn{flex:1 1 20%} 
@@ -196,7 +196,7 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
   .dropdown-content{width:250px}
 
   
-  body{font-size:19px;color:#565656}
+  body{font-size:17px;color:#565656}
   h1{font-size:2.65rem}h2{font-size:1.95rem}h3{font-size:1.45rem}h4{font-size:1.35rem}
 
   .card{height:300px;display:flex;align-items: center;}
