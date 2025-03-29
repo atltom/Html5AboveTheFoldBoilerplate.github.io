@@ -122,7 +122,7 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .c-g{color:#3e3e3e}.c-gd{color:#8e5a0d}.c-org{color:#bc5a15}.c-b{color:#1e396c!important}.c-lg{color:#ccc!important}
 .fs-xs{font-size:.8125rem}.fs-sm{font-size:.9375rem}.fs-md{font-size:1rem}.fs-lg{font-size:1.25rem}.fs-xl{font-size:1.35rem}.fs-2xl{font-size:1.75rem}.fs-3xl{font-size:2rem}
 .fw-2{font-weight:200}.fw-3{font-weight:300}.fw-4{font-weight:400}.fw-6{font-weight:600}.fw-7{font-weight:700}.fw-8{font-weight:800}
-.bg-g-0{background:#ececec}.bg-g-1{background:#ccc}.bg-g-2{background:#bbb}.bg-g-3{background:#aaa}.bg-org{background-color: #bc5a15;}.bg-none{background:none}
+.bg-w{background: #f8f8f8;}.bg-g-0{background:#ececec}.bg-g-1{background:#ccc}.bg-g-2{background:#bbb}.bg-g-3{background:#aaa}.bg-org{background-color: #bc5a15;}.bg-none{background:none}
 .t-c{text-align:center}
 .td-n{text-decoration:none!important}
 .lst-n{list-style-type:none}
