@@ -385,9 +385,9 @@
     const userInputArea = document.getElementById('user-input-area');
   
     const typingMessages = [
-      "Hi there! 👋 I'm busy at the moment",
-      "If you have a question, please leave a message",
-      "I'll get back to you as soon as I can!",
+      "Hi there! 👋 I'm busy at the moment.",
+      "If you have a question, please fill out the form.",
+      "I'll get back to you as soon as I can.",
     ];
   
     avatar.onclick = function () {
@@ -422,16 +422,35 @@
         chatMessages.appendChild(msgBubble);
   
         let charIndex = 0;
+
+        // function typeChar() {
+        //   msgBubble.textContent += messages[index].charAt(charIndex);
+        //   charIndex++;
+        //   if (charIndex < messages[index].length) {
+        //     setTimeout(typeChar, 100);
+        //   } else {
+        //     typingIndicator.style.display = 'none';
+        //     setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
+        //   }
+        // }
+
         function typeChar() {
-          msgBubble.textContent += messages[index].charAt(charIndex);
-          charIndex++;
-          if (charIndex < messages[index].length) {
-            setTimeout(typeChar, 100);
-          } else {
-            typingIndicator.style.display = 'none';
-            setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
-          }
-        }
+  msgBubble.textContent += messages[index].charAt(charIndex);
+  charIndex++;
+
+  // ✅ Scroll to bottom on each char typed
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+
+  if (charIndex < messages[index].length) {
+    setTimeout(typeChar, 40);
+  } else {
+    typingIndicator.style.display = 'none';
+    setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
+  }
+}
+
+
+
         typeChar();
       }, 800);
     }
@@ -447,14 +466,17 @@
     function getAutoReply(msg) {
       const lower = msg.toLowerCase();
       if (lower.includes("hello") || lower.includes("hi")) {
-        return "Hey! 👋 How can I help you with your patio or outdoor space?";
+        //return "Hey! 👋 How can I help you with your patio or outdoor space?";
       } else if (lower.includes("quote") || lower.includes("estimate")) {
-        return "I'd be happy to get you a quote! Can you tell me where you're located?";
+        //return "I'd be happy to get you a quote! Can you tell me where you're located?";
       } else if (lower.includes("thanks") || lower.includes("thank you")) {
-        return "You're very welcome! 😊";
+        //return "You're very welcome! 😊";
       } else {
-        return "Great! Let me know what you need, and I’ll do my best to help.";
+        //return "Great! Let me know what you need, and I’ll do my best to help.";
       }
+
+      return "Sorry! I can't chat right now. Fill out the form and I will contact you.";
+
     }
   
     document.getElementById('send-btn').onclick = () => {
