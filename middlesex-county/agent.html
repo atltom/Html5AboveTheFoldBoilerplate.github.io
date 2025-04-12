@@ -346,12 +346,12 @@
         </div>
         <div id="chat-body">
           <div id="chat-messages"></div>
-          <div id="typing-indicator">Ava is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+          <div id="typing-indicator">Steve is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
       
           <form id="lead-form" style="display: none;">
             <input type="text" name="entry.1234567890" placeholder="Your name" required />
             <input type="email" name="entry.0987654321" placeholder="Your email" required />
-            <button type="submit">Start Chat</button>
+            <button type="submit">Submit</button>
           </form>
       
           <div id="user-input-area">
@@ -385,8 +385,9 @@
     const userInputArea = document.getElementById('user-input-area');
   
     const typingMessages = [
-      "Hi there! 👋 I'm Kaylie.",
-      "How can I help you today?"
+      "Hi there! 👋 I'm busy at the moment",
+      "If you have a question, please leave a message",
+      "I'll get back to you as soon as I can!",
     ];
   
     avatar.onclick = function () {
