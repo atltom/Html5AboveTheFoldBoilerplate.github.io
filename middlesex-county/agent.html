@@ -341,7 +341,7 @@
 
     <div id="chat-popup">
         <div id="chat-header">
-          <span>👋 Hi! Need help?</span>
+          <span>Chat</span>
           <span id="chat-close">&times;</span>
         </div>
         <div id="chat-body">
@@ -426,7 +426,7 @@
           msgBubble.textContent += messages[index].charAt(charIndex);
           charIndex++;
           if (charIndex < messages[index].length) {
-            setTimeout(typeChar, 40);
+            setTimeout(typeChar, 100);
           } else {
             typingIndicator.style.display = 'none';
             setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
