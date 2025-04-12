@@ -33,106 +33,180 @@
     <meta name="msapplication-TileImage" content="../images/apple-touch-icon.png">
     <meta name="seobility" content="69ae98e4ec0c1d0ab86a1032c9767d87">
     <!--<style></style>-->
-    <style>
-
-        #chat-avatar-wrapper {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            z-index: 999;
-        }
-
-        #chat-avatar {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            border: 3px solid #4CAF50;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-
-        #chat-avatar:hover {
-            transform: scale(1.05);
-        }
-
-        #chat-status-dot {
-            position: absolute;
-            bottom: 4px;
-            right: 4px;
-            width: 14px;
-            height: 14px;
-            background-color: #4CAF50; /* Bright green */
-            border: 2px solid white;
-            border-radius: 50%;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-        }
+    
 
 
+<style>
+    /* Avatar + Status */
+    #chat-avatar-wrapper {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      z-index: 999;
+    }
 
-      
-        /* Chat popup styles remain the same */
-        #chat-popup {
-          position: fixed;
-          bottom: 90px;
-          right: 20px;
-          width: 280px;
-          background: white;
-          border: 1px solid #ccc;
-          border-radius: 10px;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-          font-family: Arial, sans-serif;
-          z-index: 1000;
-        }
-      
-        #chat-header {
-          background-color: #00539C;
-          color: white;
-          padding: 10px;
-          border-radius: 10px 10px 0 0;
-          font-weight: bold;
-          display: flex;
-          justify-content: space-between;
-        }
-      
-        #chat-body {
-          padding: 10px;
-        }
-      
-        #chat-body p {
-          font-size: 14px;
-          margin-bottom: 10px;
-          min-height: 40px;
-        }
-      
-        #lead-form input {
-          width: 100%;
-          margin-bottom: 8px;
-          padding: 8px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-        }
-      
-        #lead-form button {
-          width: 100%;
-          background-color: #00539C;
-          color: white;
-          border: none;
-          padding: 10px;
-          border-radius: 4px;
-          cursor: pointer;
-        }
-      
-        #lead-form button:hover {
-          background-color: #003e73;
-        }
-      
-        #chat-close {
-          cursor: pointer;
-        }
-    </style>
+    #chat-avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    #chat-avatar:hover {
+      transform: scale(1.05);
+    }
+
+    #chat-status-dot {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 14px;
+      height: 14px;
+      background-color: #00c853;
+      border: 2px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Chat Popup */
+    #chat-popup {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 300px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      font-family: Arial, sans-serif;
+      z-index: 1000;
+      display: none;
+    }
+
+    #chat-header {
+      background-color: #00539C;
+      color: white;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #chat-body {
+      padding: 10px;
+    }
+
+    #chat-messages {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .chat-msg {
+      background-color: #f1f1f1;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      max-width: 90%;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .user-msg {
+      background-color: #d1ecf1;
+      color: #004085;
+      align-self: flex-end;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      max-width: 90%;
+      text-align: right;
+      animation: fadeIn 0.3s ease;
+    }
+
+    #typing-indicator {
+      font-size: 13px;
+      color: #555;
+      font-style: italic;
+      display: none;
+    }
+
+    .dot {
+      animation: blink 1.2s infinite;
+    }
+
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes blink {
+      0%, 20% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    #lead-form input {
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #lead-form button {
+      width: 100%;
+      background-color: #00539C;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #lead-form button:hover {
+      background-color: #003e73;
+    }
+
+    #user-input-area {
+      display: none;
+      gap: 5px;
+      margin-top: 10px;
+    }
+
+    #user-input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #send-btn {
+      background-color: #00539C;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #chat-close {
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+
 </head>
 <body>
     <div id="cookie-consent-banner" ><p>This website uses cookies to improve your experience. By continuing to browse, you consent to the use of cookies. <a href="/privacy-policy" style="color: lightblue;">View privacy policy</a>.</p><button id="accept-consent" class="btn mt-3 me-2 border">Accept</button><button id="decline-consent" class="btn mt-3 ms-2 bg-none border">Decline</button></div>   
@@ -264,20 +338,29 @@
     </div>
 
     <!-- Chat Popup (unchanged structure) -->
-    <div id="chat-popup" style="display: none;">
+
+    <div id="chat-popup">
         <div id="chat-header">
-            <span>👋 Hi! Need help?</span>
-            <span id="chat-close">&times;</span>
+          <span>👋 Hi! Need help?</span>
+          <span id="chat-close">&times;</span>
         </div>
         <div id="chat-body">
-            <p id="chat-message">Connecting you to an agent...</p>
-            <form id="lead-form" style="display: none;">
+          <div id="chat-messages"></div>
+          <div id="typing-indicator">Ava is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+      
+          <form id="lead-form" style="display: none;">
             <input type="text" name="entry.1234567890" placeholder="Your name" required />
             <input type="email" name="entry.0987654321" placeholder="Your email" required />
             <button type="submit">Start Chat</button>
-            </form>
+          </form>
+      
+          <div id="user-input-area">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <button id="send-btn">Send</button>
+          </div>
         </div>
-    </div>
+      </div>
+    
     <script>
         var textBoxes = document.querySelectorAll('.text-box');
         var observer = new IntersectionObserver(entries => {entries.forEach(entry => {if (entry.isIntersecting) {entry.target.classList.add('slide-up');observer.unobserve(entry.target);}});});textBoxes.forEach(textBox=>{ observer.observe(textBox);});
@@ -290,65 +373,123 @@
         if (localStorage.getItem("cookies-accepted")==="true"){ document.getElementById("cookie-consent-banner").style.display="none"; loadClarity();}
         function loadClarity() {var clarityScript=document.createElement('script'); clarityScript.async=1; clarityScript.src="https://www.clarity.ms/tag/ntahbbb4eq"; var firstScript=document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(clarityScript, firstScript);}
     </script>
-    <script>
-        const typingMessages = [
-            "Hi there! 👋 I'm Ava, a rep from S. Phaneuf & Associates.",
-            "How can I help you today?"
-        ];
 
-        function typeMessage(element, messages, index = 0, char = 0) {
-            if (index >= messages.length) {
-                document.getElementById('lead-form').style.display = 'block';
-                return;
-            }
 
-            const message = messages[index];
-            if (char < message.length) {
-                element.textContent += message.charAt(char);
-                setTimeout(() => typeMessage(element, messages, index, char + 1), 40);
-            } else {
-                element.textContent += "\n";
-                setTimeout(() => {
-                    element.textContent = "";
-                    typeMessage(element, messages, index + 1, 0);
-                }, 1200);
-            }
+
+<script>
+    const avatar = document.getElementById('chat-avatar');
+    const avatarWrapper = document.getElementById('chat-avatar-wrapper');
+    const chatPopup = document.getElementById('chat-popup');
+    const chatMessages = document.getElementById('chat-messages');
+    const typingIndicator = document.getElementById('typing-indicator');
+    const userInputArea = document.getElementById('user-input-area');
+  
+    const typingMessages = [
+      "Hi there! 👋 I'm Kaylie.",
+      "How can I help you today?"
+    ];
+  
+    avatar.onclick = function () {
+      chatPopup.style.display = 'block';
+      avatarWrapper.style.display = 'none';
+      chatMessages.innerHTML = '';
+      document.getElementById('lead-form').style.display = 'none';
+      userInputArea.style.display = 'none';
+      appendMessageWithTyping(typingMessages);
+    };
+  
+    document.getElementById('chat-close').onclick = function () {
+      chatPopup.style.display = 'none';
+      avatarWrapper.style.display = 'block';
+    };
+  
+    function appendMessageWithTyping(messages, index = 0) {
+      if (index >= messages.length) {
+        typingIndicator.style.display = 'none';
+        document.getElementById('lead-form').style.display = 'block';
+        setTimeout(() => {
+          userInputArea.style.display = 'flex';
+        }, 1000);
+        return;
+      }
+  
+      typingIndicator.style.display = 'block';
+  
+      setTimeout(() => {
+        const msgBubble = document.createElement("div");
+        msgBubble.className = "chat-msg";
+        chatMessages.appendChild(msgBubble);
+  
+        let charIndex = 0;
+        function typeChar() {
+          msgBubble.textContent += messages[index].charAt(charIndex);
+          charIndex++;
+          if (charIndex < messages[index].length) {
+            setTimeout(typeChar, 40);
+          } else {
+            typingIndicator.style.display = 'none';
+            setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
+          }
         }
+        typeChar();
+      }, 800);
+    }
+  
+    function addUserMessage(msg) {
+      const msgBubble = document.createElement("div");
+      msgBubble.className = "user-msg";
+      msgBubble.textContent = msg;
+      chatMessages.appendChild(msgBubble);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+  
+    function getAutoReply(msg) {
+      const lower = msg.toLowerCase();
+      if (lower.includes("hello") || lower.includes("hi")) {
+        return "Hey! 👋 How can I help you with your patio or outdoor space?";
+      } else if (lower.includes("quote") || lower.includes("estimate")) {
+        return "I'd be happy to get you a quote! Can you tell me where you're located?";
+      } else if (lower.includes("thanks") || lower.includes("thank you")) {
+        return "You're very welcome! 😊";
+      } else {
+        return "Great! Let me know what you need, and I’ll do my best to help.";
+      }
+    }
+  
+    document.getElementById('send-btn').onclick = () => {
+      const input = document.getElementById('user-input');
+      const msg = input.value.trim();
+      if (msg) {
+        addUserMessage(msg);
+        input.value = "";
+        const reply = getAutoReply(msg);
+  
+        setTimeout(() => {
+          typingIndicator.style.display = 'block';
+          setTimeout(() => {
+            typingIndicator.style.display = 'none';
+            appendMessageWithTyping([reply]);
+          }, 1000);
+        }, 600);
+      }
+    };
+  
+    // Handle Google Form Submission
+    document.getElementById('lead-form').onsubmit = function (e) {
+      e.preventDefault();
+      const data = new FormData(this);
+  
+      fetch("https://docs.google.com/forms/d/e/1FAIpQLSeYourFormID/formResponse", {
+        method: "POST",
+        mode: "no-cors",
+        body: data
+      }).then(() => {
+        appendMessageWithTyping(["Thanks! We'll be in touch shortly."]);
+        this.style.display = 'none';
+      });
+    };
+  </script>
 
-        // Open popup on avatar click
-        document.getElementById('chat-avatar-wrapper').onclick = function () {
-            document.getElementById('chat-popup').style.display = 'block';
-            document.getElementById('chat-avatar-wrapper').style.display = 'none';
-            const msg = document.getElementById('chat-message');
-            msg.textContent = "Connecting you to an agent...";
-            setTimeout(() => typeMessage(msg, typingMessages), 2500);
-        };
 
-        // Close popup
-        document.getElementById('chat-close').onclick = function () {
-            document.getElementById('chat-popup').style.display = 'none';
-            document.getElementById('chat-avatar-wrapper').style.display = 'block';
-        };
-
-        // Submit to Google Form
-        document.getElementById('lead-form').onsubmit = function (e) {
-            e.preventDefault();
-            const form = e.target;
-            const data = new FormData(form);
-
-            fetch("https://docs.google.com/forms/d/e/1FAIpQLSeYourFormID/formResponse", {
-            method: "POST",
-            mode: "no-cors",
-            body: data
-            }).then(() => {
-            alert("Thanks! We'll be in touch shortly.");
-            document.getElementById('chat-popup').style.display = 'none';
-            document.getElementById('chat-avatar-wrapper').style.display = 'block';
-            }).catch(() => {
-            alert("Oops! Something went wrong. Please try again later.");
-            });
-        };
-        
-    </script>
 </body>
 </html>
