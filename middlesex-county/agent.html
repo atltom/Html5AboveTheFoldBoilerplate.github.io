@@ -68,6 +68,7 @@
       width: 14px;
       height: 14px;
       background-color: #26832d;
+      /* background-color: #999999; */
       border: 2px solid white;
       border-radius: 50%;
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
@@ -136,7 +137,8 @@
       font-size: 13px;
       color: #555;
       font-style: italic;
-      display: none;
+      /* display: none; */
+      visibility: hidden;
     }
 
     .dot {
@@ -389,14 +391,90 @@
       "Please fill out this form and I will relay the message."
         ];
   
+    // avatar.onclick = function () {
+    //   chatPopup.style.display = 'block';
+    //   avatarWrapper.style.display = 'none';
+    //   chatMessages.innerHTML = '';
+    //   document.getElementById('lead-form').style.display = 'none';
+    //   userInputArea.style.display = 'none';
+    //   appendMessageWithTyping(typingMessages);
+    // };
+
+
+    // avatar.onclick = function () {
+    //     chatPopup.style.display = 'block';
+    //     avatarWrapper.style.display = 'none';
+    //     chatMessages.innerHTML = '';
+    //     document.getElementById('lead-form').style.display = 'none';
+    //     userInputArea.style.display = 'none';
+
+    //     const now = new Date();
+    //     const day = now.getDay(); // 0 = Sunday, 6 = Saturday
+
+    //     let typingMessages = [];
+
+    //     if (day === 0 || day === 6) {
+    //         // Weekend Greeting
+    //         typingMessages = [
+    //         "Hi there! 👋 I’m Ava, but nobody is available to chat live right now.",
+    //         "Feel free to ask a question or fill out the form — someone will follow up soon!"
+    //         ];
+    //     } else {
+    //         // Weekday Greeting
+    //         typingMessages = [
+    //         "Hi there! 👋 I'm Ava, a live rep from S. Phaneuf & Associates.",
+    //         "How can I help you today?"
+    //         ];
+    //     }
+
+    //     appendMessageWithTyping(typingMessages);
+    // };
+
+
     avatar.onclick = function () {
-      chatPopup.style.display = 'block';
-      avatarWrapper.style.display = 'none';
-      chatMessages.innerHTML = '';
-      document.getElementById('lead-form').style.display = 'none';
-      userInputArea.style.display = 'none';
-      appendMessageWithTyping(typingMessages);
-    };
+  chatPopup.style.display = 'block';
+  avatarWrapper.style.display = 'none';
+  chatMessages.innerHTML = '';
+  document.getElementById('lead-form').style.display = 'none';
+  userInputArea.style.display = 'none';
+
+  const now = new Date();
+  const day = now.getDay(); // 0 = Sunday, 6 = Saturday
+  const hour = now.getHours();
+
+  let typingMessages = [];
+
+  if (day === 0 || day === 6) {
+    // 🕊️ Weekend
+    typingMessages = [
+      "Hi there! 👋 I’m Ava, but nobody is available to chat live right now.",
+      "Feel free to ask a question or fill out the form — someone will follow up soon!"
+    ];
+  } else if (hour >= 9 && hour < 16) {
+    // 🚗 Weekday, 9am–4pm — Steve is driving
+    typingMessages = [
+      "Hey there! 👋 I’m Ava.",
+      "Steve is currently out driving to job sites and not available to answer questions.",
+      "You can leave a message or fill out the form and he’ll get back to you soon!"
+    ];
+  } else if (hour >= 16 && hour < 21) {
+    // ✅ Weekday, 4pm–9pm — Available
+    typingMessages = [
+      "Hi there! 👋 I'm Ava, a live rep from S. Phaneuf & Associates.",
+      "How can I help you today?"
+    ];
+  } else {
+    // ⏰ Too early or too late
+    typingMessages = [
+      "Hey! 👋 I’m Ava, our chat hours are 9 AM to 9 PM.",
+      "Leave a message or fill out the form and we’ll follow up tomorrow!"
+    ];
+  }
+
+  appendMessageWithTyping(typingMessages);
+};
+
+
   
     document.getElementById('chat-close').onclick = function () {
       chatPopup.style.display = 'none';
@@ -405,15 +483,15 @@
   
     function appendMessageWithTyping(messages, index = 0) {
       if (index >= messages.length) {
-        typingIndicator.style.display = 'none';
+        //typingIndicator.style.display = 'none';
+        typingIndicator.style.visibility = 'hidden';
         document.getElementById('lead-form').style.display = 'block';
-        setTimeout(() => {
-          userInputArea.style.display = 'flex';
-        }, 1000);
+        setTimeout(() => {userInputArea.style.display = 'flex';}, 1000);
         return;
       }
   
-      typingIndicator.style.display = 'block';
+      //typingIndicator.style.display = 'block';
+      typingIndicator.style.visibility = 'visible';
   
       setTimeout(() => {
         const msgBubble = document.createElement("div");
@@ -429,7 +507,8 @@
             if (charIndex < messages[index].length) {
                 setTimeout(typeChar, 40);
             } else {
-                typingIndicator.style.display = 'none';
+                //typingIndicator.style.display = 'none';
+                typingIndicator.style.visibility = 'hidden';
                 setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
             }
         }
@@ -457,6 +536,41 @@
         return "Sorry for the inconvenience. I dont have that information. Please fill out the form and someone from the team will contact you shortly.";
       }
     }
+
+  
+
+
+    function updateAgentStatus() {
+        const now = new Date();
+        const day = now.getDay(); // 0 = Sunday, 6 = Saturday
+        const hour = now.getHours();
+        const dot = document.getElementById('chat-status-dot');
+
+        const isWeekend = (day === 0 || day === 6);
+
+        if (isWeekend || hour < 9 || hour >= 21) {
+            // ❌ Offline — Gray
+            dot.style.backgroundColor = "#999";
+            dot.title = "Offline";
+        } else if (hour >= 9 && hour < 16) {
+            // ⏳ Limited Availability — Red
+            dot.style.backgroundColor = "#e53935";
+            dot.title = "Busy - Limited availability";
+        } else if (hour >= 16 && hour < 21) {
+            // ✅ Fully Available — Green
+            dot.style.backgroundColor = "#00c853";
+            dot.title = "Online and available";
+        }
+
+        dot.style.display = "block";
+    }
+
+    // Run once on load
+    updateAgentStatus();
+
+    // Refresh every 60 seconds
+    setInterval(updateAgentStatus, 60000);
+
   
     document.getElementById('send-btn').onclick = () => {
       const input = document.getElementById('user-input');
@@ -467,9 +581,11 @@
         const reply = getAutoReply(msg);
   
         setTimeout(() => {
-          typingIndicator.style.display = 'block';
+          //typingIndicator.style.display = 'block';
+          typingIndicator.style.visibility = 'visible';
           setTimeout(() => {
-            typingIndicator.style.display = 'none';
+            //typingIndicator.style.display = 'none';
+            typingIndicator.style.visibility = 'hidden';
             appendMessageWithTyping([reply]);
           }, 1000);
         }, 600);
