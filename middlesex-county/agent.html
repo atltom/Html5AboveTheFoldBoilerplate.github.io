@@ -341,7 +341,7 @@
 
     <div id="chat-popup">
         <div id="chat-header">
-          <span>Chat Bot</span>
+          <span>Chat</span>
           <span id="chat-close">&times;</span>
         </div>
         <div id="chat-body">
@@ -422,34 +422,17 @@
   
         let charIndex = 0;
 
-        // function typeChar() {
-        //   msgBubble.textContent += messages[index].charAt(charIndex);
-        //   charIndex++;
-        //   if (charIndex < messages[index].length) {
-        //     setTimeout(typeChar, 100);
-        //   } else {
-        //     typingIndicator.style.display = 'none';
-        //     setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
-        //   }
-        // }
-
         function typeChar() {
-  msgBubble.textContent += messages[index].charAt(charIndex);
-  charIndex++;
-
-  // ✅ Scroll to bottom on each char typed
-  chatMessages.scrollTop = chatMessages.scrollHeight;
-
-  if (charIndex < messages[index].length) {
-    setTimeout(typeChar, 40);
-  } else {
-    typingIndicator.style.display = 'none';
-    setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
-  }
-}
-
-
-
+            msgBubble.textContent += messages[index].charAt(charIndex);
+            charIndex++;
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            if (charIndex < messages[index].length) {
+                setTimeout(typeChar, 40);
+            } else {
+                typingIndicator.style.display = 'none';
+                setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
+            }
+        }
         typeChar();
       }, 800);
     }
@@ -465,17 +448,14 @@
     function getAutoReply(msg) {
       const lower = msg.toLowerCase();
       if (lower.includes("hello") || lower.includes("hi")) {
-        //return "Hey! 👋 How can I help you with your patio or outdoor space?";
+        return "Hi! 👋 I'm a chat bot.";
       } else if (lower.includes("quote") || lower.includes("estimate")) {
-        //return "I'd be happy to get you a quote! Can you tell me where you're located?";
+        return "If you are looking for a quote or estimate, Please fill out the form and someone from the team will contact you.";
       } else if (lower.includes("thanks") || lower.includes("thank you")) {
-        //return "You're very welcome! 😊";
+        return "You're very welcome! 😊";
       } else {
-        //return "Great! Let me know what you need, and I’ll do my best to help.";
+        return "Sorry for the inconvenience. I dont have that information. Please fill out the form and someone from the team will contact you shortly.";
       }
-
-      return "Sorry for the inconvenience. I can't chat right now. Please fill out the form and someone from the team will contact you shortly.";
-
     }
   
     document.getElementById('send-btn').onclick = () => {
