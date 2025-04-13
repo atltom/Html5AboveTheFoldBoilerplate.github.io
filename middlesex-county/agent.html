@@ -391,45 +391,6 @@
       "Please fill out this form and I will relay the message."
         ];
   
-    // avatar.onclick = function () {
-    //   chatPopup.style.display = 'block';
-    //   avatarWrapper.style.display = 'none';
-    //   chatMessages.innerHTML = '';
-    //   document.getElementById('lead-form').style.display = 'none';
-    //   userInputArea.style.display = 'none';
-    //   appendMessageWithTyping(typingMessages);
-    // };
-
-
-    // avatar.onclick = function () {
-    //     chatPopup.style.display = 'block';
-    //     avatarWrapper.style.display = 'none';
-    //     chatMessages.innerHTML = '';
-    //     document.getElementById('lead-form').style.display = 'none';
-    //     userInputArea.style.display = 'none';
-
-    //     const now = new Date();
-    //     const day = now.getDay(); // 0 = Sunday, 6 = Saturday
-
-    //     let typingMessages = [];
-
-    //     if (day === 0 || day === 6) {
-    //         // Weekend Greeting
-    //         typingMessages = [
-    //         "Hi there! 👋 I’m Ava, but nobody is available to chat live right now.",
-    //         "Feel free to ask a question or fill out the form — someone will follow up soon!"
-    //         ];
-    //     } else {
-    //         // Weekday Greeting
-    //         typingMessages = [
-    //         "Hi there! 👋 I'm Ava, a live rep from S. Phaneuf & Associates.",
-    //         "How can I help you today?"
-    //         ];
-    //     }
-
-    //     appendMessageWithTyping(typingMessages);
-    // };
-
 
     avatar.onclick = function () {
   chatPopup.style.display = 'block';
@@ -444,29 +405,29 @@
 
   let typingMessages = [];
 
-  if (day === 0 || day === 6) {
+  if (day === 10 || day === 16) {
     // 🕊️ Weekend
     typingMessages = [
-      "Hi there! 👋 I’m Ava, but nobody is available to chat live right now.",
+      "Hi there! 👋 I’m Kaylie, but nobody is available to chat live right now.",
       "Feel free to ask a question or fill out the form — someone will follow up soon!"
     ];
   } else if (hour >= 9 && hour < 16) {
     // 🚗 Weekday, 9am–4pm — Steve is driving
     typingMessages = [
-      "Hey there! 👋 I’m Ava.",
+      "Hey there! 👋 I’m Kaylie.",
       "Steve is currently out driving to job sites and not available to answer questions.",
       "You can leave a message or fill out the form and he’ll get back to you soon!"
     ];
   } else if (hour >= 16 && hour < 21) {
     // ✅ Weekday, 4pm–9pm — Available
     typingMessages = [
-      "Hi there! 👋 I'm Ava, a live rep from S. Phaneuf & Associates.",
+      "Hi there! 👋 I'm Kaylie.",
       "How can I help you today?"
     ];
   } else {
     // ⏰ Too early or too late
     typingMessages = [
-      "Hey! 👋 I’m Ava, our chat hours are 9 AM to 9 PM.",
+      "Hey! 👋 I’m Kaylie, our chat hours are 9 AM to 9 PM.",
       "Leave a message or fill out the form and we’ll follow up tomorrow!"
     ];
   }
