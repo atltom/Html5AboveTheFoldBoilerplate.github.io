@@ -67,7 +67,7 @@
       right: 4px;
       width: 14px;
       height: 14px;
-      background-color: #00c853;
+      background-color: #26832d;
       border: 2px solid white;
       border-radius: 50%;
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
@@ -341,12 +341,12 @@
 
     <div id="chat-popup">
         <div id="chat-header">
-          <span>Chat</span>
+          <span>Chat Bot</span>
           <span id="chat-close">&times;</span>
         </div>
         <div id="chat-body">
           <div id="chat-messages"></div>
-          <div id="typing-indicator">Steve is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+          <div id="typing-indicator">Chat Bot is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
       
           <form id="lead-form" style="display: none;">
             <input type="text" name="entry.1234567890" placeholder="Your name" required />
@@ -385,10 +385,9 @@
     const userInputArea = document.getElementById('user-input-area');
   
     const typingMessages = [
-      "Hi there! 👋 I'm busy at the moment.",
-      "If you have a question, please fill out the form.",
-      "I'll get back to you as soon as I can.",
-    ];
+      "Hi there! 👋 Steve is busy at the moment.",
+      "Please fill out this form and I will relay the message."
+        ];
   
     avatar.onclick = function () {
       chatPopup.style.display = 'block';
@@ -475,7 +474,7 @@
         //return "Great! Let me know what you need, and I’ll do my best to help.";
       }
 
-      return "Sorry! I can't chat right now. Fill out the form and I will contact you.";
+      return "Sorry for the inconvenience. I can't chat right now. Please fill out the form and someone from the team will contact you shortly.";
 
     }
   
