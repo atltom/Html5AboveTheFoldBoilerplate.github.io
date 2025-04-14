@@ -489,7 +489,12 @@
         return "If you are looking for a quote or estimate, Please fill out the form and someone from the team will contact you.";
       } else if (lower.includes("thanks") || lower.includes("thank you")) {
         return "You're very welcome! 😊";
-      } else {
+      } else if (lower.includes("when") && lower.includes("avail")) {
+        return "Availability depends on many things. Please use the form below or call.";
+      } else if (lower.includes("paving") || lower.includes("asphalt")) {
+        return "We specialize in asphalt paving. Please fill out the form and someone from the team will contact you.";
+      } 
+      else {
         return "Sorry, I dont know how to respond to that. Please fill out the form and someone from the team will contact you.";
       }
     }
