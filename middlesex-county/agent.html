@@ -350,11 +350,21 @@
           <div id="chat-messages"></div>
           <div id="typing-indicator">Agent is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
       
-          <form id="lead-form" style="display: none;">
+
+
+            <form id="lead-form" style="display: none;" >
+                <input placeholder="Name" type="text" autocomplete="off" tabindex="0" name="entry.631554197" value="" required="">
+                <input placeholder="Phone" type="text" autocomplete="off" name="entry.993558858" value="" required="" >
+                <textarea placeholder="Message" rows="5" required="" name="entry.69405291"></textarea>
+                <button type="submit" class="btn" >Submit</button>
+            </form>
+
+
+          <!-- <form id="lead-form" style="display: none;">
             <input type="text" name="entry.1234567890" placeholder="Your name" required />
             <input type="email" name="entry.0987654321" placeholder="Your email" required />
             <button type="submit">Submit</button>
-          </form>
+          </form> -->
       
           <div id="user-input-area">
             <input type="text" id="user-input" placeholder="Type a message..." />
@@ -553,12 +563,14 @@
       }
     };
   
-    // Handle Google Form Submission
+    // Handle Google Form Submission 
     document.getElementById('lead-form').onsubmit = function (e) {
       e.preventDefault();
       const data = new FormData(this);
   
-      fetch("https://docs.google.com/forms/d/e/1FAIpQLSeYourFormID/formResponse", {
+    //fetch("https://docs.google.com/forms/d/e/1FAIpQLSeYourFormID/formResponse", {
+
+    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse", {
         method: "POST",
         mode: "no-cors",
         body: data
