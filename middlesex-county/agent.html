@@ -415,7 +415,7 @@
             typingMessages = [
             "Hey there! ",
             "Steve is currently out driving to job site and not available to answer questions.",
-            "Fill out the form and he'll get back to you soon!"
+            "Fill out the form below and he'll get back to you soon!"
             ];
         } else if (hour >= 16 && hour < 21) {
             // ✅ Weekday, 4pm–9pm — Available
@@ -559,9 +559,14 @@
         mode: "no-cors",
         body: data
       }).then(() => {
-        appendMessageWithTyping(["Thanks! We'll be in touch shortly."]);
-        this.style.display = 'none';
+        appendMessageWithTyping(["Thanks! We'll be in touch ASAP."]);
+        var leadForm = document.getElementById('lead-form');
+        leadForm.style.display = 'none';    
+        leadForm.reset();
       });
+
+      document.getElementById('lead-form').reset();
+
     };
   </script>
 
