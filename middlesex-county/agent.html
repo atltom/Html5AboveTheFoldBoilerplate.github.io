@@ -408,27 +408,27 @@
   if (day === 10 || day === 16) {
     // 🕊️ Weekend
     typingMessages = [
-      "Hi there! 👋 I’m Kaylie, but nobody is available to chat live right now.",
+      "Hi there! 👋 Nobody is available to chat live right now.",
       "Feel free to ask a question or fill out the form — someone will follow up soon!"
     ];
   } else if (hour >= 9 && hour < 16) {
     // 🚗 Weekday, 9am–4pm — Steve is driving
     typingMessages = [
-      "Hey there! 👋 I’m Kaylie.",
-      "Steve is currently out driving to job sites and not available to answer questions.",
-      "You can leave a message or fill out the form and he’ll get back to you soon!"
+      "Hey there! ",
+      "Steve is currently out driving to job site and not available to answer questions.",
+      "You can leave a message or fill out the form and he'll get back to you soon!"
     ];
   } else if (hour >= 16 && hour < 21) {
     // ✅ Weekday, 4pm–9pm — Available
     typingMessages = [
-      "Hi there! 👋 I'm Kaylie.",
+      "Hi there! 👋 ",
       "How can I help you today?"
     ];
   } else {
     // ⏰ Too early or too late
     typingMessages = [
-      "Hey! 👋 I’m Kaylie, our chat hours are 9 AM to 9 PM.",
-      "Leave a message or fill out the form and we’ll follow up tomorrow!"
+      "Hi! Our chat hours are 9 AM to 9 PM.",
+      "Leave a message or fill out the form and we'll follow up ASAP!"
     ];
   }
 
