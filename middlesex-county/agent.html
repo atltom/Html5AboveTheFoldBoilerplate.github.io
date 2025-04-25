@@ -278,8 +278,56 @@
             chatPopup.style.display = 'none';
             avatarWrapper.style.display = 'block';
         };
+
+
+        function appendMessageWithTyping(messages, index = 0, showFormAfter = true) {
+    if (index >= messages.length) {
+        typingIndicator.style.visibility = 'hidden';
+
+        if (showFormAfter) {
+            document.getElementById('lead-form').style.display = 'block';
+        }
+
+        setTimeout(() => {
+            if (isWeekend || isAfterHours || !showFormAfter) {
+                userInputArea.style.display = 'none';
+            } else {
+                userInputArea.style.display = 'flex';
+            }
+        }, 1000);
+
+        return;
+    }
+
+    typingIndicator.style.visibility = 'visible';
+
+    setTimeout(() => {
+        const msgBubble = document.createElement("div");
+        msgBubble.className = "chat-msg";
+        chatMessages.appendChild(msgBubble);
+
+        let charIndex = 0;
+
+        function typeChar() {
+            msgBubble.textContent += messages[index].charAt(charIndex);
+            charIndex++;
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            if (charIndex < messages[index].length) {
+                setTimeout(typeChar, 40);
+            } else {
+                typingIndicator.style.visibility = 'hidden';
+                setTimeout(() => appendMessageWithTyping(messages, index + 1, showFormAfter), 700);
+            }
+        }
+
+        typeChar();
+    }, 800);
+}
+
+
   
-        function appendMessageWithTyping(messages, index = 0) {
+        function appendMessageWithTypingOld(messages, index = 0) {
+        //function appendMessageWithTyping(messages, index = 0, showFormAfter = true)
             if (index >= messages.length) {
                 typingIndicator.style.visibility = 'hidden';
                 document.getElementById('lead-form').style.display = 'block';
@@ -399,20 +447,22 @@
         document.getElementById('lead-form').onsubmit = function (e) {
             e.preventDefault();
             const data = new FormData(this);
-        
-            //fetch("https://docs.google.com/forms/d/e/1FAIpQLSeYourFormID/formResponse", {
-
             fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse", {
                 method: "POST",
                 mode: "no-cors",
                 body: data
             }).then(() => {
-                appendMessageWithTyping(["Thank you."]);
+                appendMessageWithTyping(["Thank you."], 0, false); // 👈 Pass false to prevent form from reappearing
                 var leadForm = document.getElementById('lead-form');
                 leadForm.style.display = 'none';    
                 leadForm.reset();
+
+                // appendMessageWithTyping(["Thank you."]);
+                // var leadForm = document.getElementById('lead-form');
+                // leadForm.style.display = 'none';    
+                // leadForm.reset();
             });
-            document.getElementById('lead-form').reset();
+            //document.getElementById('lead-form').reset();
         };
     </script>
 </body>
