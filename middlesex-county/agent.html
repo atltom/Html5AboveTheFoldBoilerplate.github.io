@@ -32,36 +32,6 @@
     <meta name="msapplication-TileColor" content="#303f5e">
     <meta name="msapplication-TileImage" content="../images/apple-touch-icon.png">
     <meta name="seobility" content="69ae98e4ec0c1d0ab86a1032c9767d87">
-    <style>
-        /* Avatar + Status */
-        #chat-avatar-wrapper{ position: fixed; bottom: 20px; right: 20px; width: 74px; height: 74px; z-index: 999;}
-        #chat-avatar{ width: 100%; height: 100%; border-radius: 50%; border: 3px solid #ffffff; box-shadow: #000000ab 2px 3px 10px; cursor: pointer; transition: transform 0.2s;}
-        #chat-avatar:hover{ transform: scale(1.05);}
-        #chat-status-dot{ position: absolute; bottom: 4px; right: 4px; width: 14px; height: 14px; background-color: #26832d; border: 2px solid white; border-radius: 50%; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);}
-
-        /* Chat Popup */
-        #chat-popup{ position: fixed; bottom: 90px; right: 20px; width: 300px; background: white; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-family: Arial, sans-serif; z-index: 1000; display: none;}
-        #chat-header{ background-color: #2f3f5e; color: white; padding: 10px; border-radius: 10px 10px 0 0; font-weight: bold; display: flex; justify-content: space-between;}
-        #chat-body{ padding: 10px;}
-        #chat-messages{ max-height: 200px; overflow-y: auto; margin-bottom: 10px; display: flex; flex-direction: column; gap: 6px;}
-        .chat-msg{ background-color: #f1f1f1; padding: 8px 12px; border-radius: 10px; font-size: 14px; max-width: 90%; animation: fadeIn 0.3s ease;}
-        .user-msg{ background-color: #d1ecf1; color: #004085; align-self: flex-end; padding: 8px 12px; border-radius: 10px; font-size: 14px; max-width: 90%; text-align: right; animation: fadeIn 0.3s ease;}
-        #typing-indicator{ font-size: 13px; color: #555; font-style: italic; visibility: hidden;}
-        .dot{ animation: blink 1.2s infinite;}
-        .dot:nth-child(2) { animation-delay: 0.2s; }
-        .dot:nth-child(3) { animation-delay: 0.4s; }
-        @keyframes blink{ 0%, 20%{ opacity: 0;} 50%{ opacity: 1;} 100%{ opacity: 0;}}
-        #lead-form input{ width: 100%; margin-bottom: 8px; padding: 8px; border: 1px solid #ccc; border-radius: 4px;}
-        #lead-form button{ width: 100%; background-color: #388E3C; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer;}
-        #lead-form button:hover{ background-color: #317835;}
-        #user-input-area{ display: none; gap: 5px; margin-top: 10px;}
-        #user-input{ flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 210px;}
-        #send-btn{ background-color: #2f3f5e; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;}
-        #chat-close{ cursor: pointer;}
-        @keyframes fadeIn{ from{ opacity: 0; transform: translateY(10px);} to{ opacity: 1; transform: translateY(0);}}
-  </style>
-
-
 </head>
 <body>
     <div id="cookie-consent-banner" ><p>This website uses cookies to improve your experience. By continuing to browse, you consent to the use of cookies. <a href="/privacy-policy" style="color: lightblue;">View privacy policy</a>.</p><button id="accept-consent" class="btn mt-3 me-2 border">Accept</button><button id="decline-consent" class="btn mt-3 ms-2 bg-none border">Decline</button></div>   
@@ -144,7 +114,8 @@
             <div class="contact-form mt-5 mb-1">
                 <h2 class="fs-xl">Schedule Your Free Consultation</h2>
                 <p class="mt-2 mb-4">Excited to enhance your outdoor space in Concord? Fill out the form below, and a team member will contact you shortly to discuss how we can bring your hardscaping vision to life.</p>
-                <form class="pb-3 mb-5" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse" target="_self" method="POST" >
+                <form id="contact-form" class="pb-3 mb-5" >
+                <!-- <form id="contact-form" class="pb-3 mb-5" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse" target="_self" method="POST" > -->
                     <div class="mb-3">
                         <label for="first-last-name" class="form-label">First and Last Name</label>
                         <input id="first-last-name" type="text" class="form-control" autocomplete="off" tabindex="0" name="entry.631554197" value="" required="">
@@ -186,18 +157,20 @@
     </main>
     <footer class="footer"><div class="f1 fw-3 py-4"><div class="fcontainer px-4"><div class="fcolumn my-2 py-2"><div class="fname pb-1 mb-2 fw-6">S. Phaneuf & Associates</div><div class="fmoto">With 35 years of experience, no job is too big or complex for us to handle. Trust in a company that takes pride in their work. </div><div style="margin-top:15px;"><a target="_blank" class="fsociallink" rel="noopener noreferrer" aria-hidden="false" aria-label="Follow us on Instagram" href="https://www.instagram.com/phaneufassociates/"><img class="fimg" loading="lazy" height="38" width="38" src="../images/instagram.svg" alt="Instagram"></a><a target="_blank" class="fsociallink" rel="noopener noreferrer" aria-hidden="false" aria-label="Follow us on Facebook" href="https://www.facebook.com/p/Phaneuf-Associates-100054709692721"><img class="fimg" loading="lazy" height="38" width="38" src="../images/facebook.svg" alt="Facebook"></a><a target="_blank" class="fsociallink" rel="noopener noreferrer" aria-hidden="false" aria-label="Follow us on LinkedIn" href="https://www.linkedin.com/company/phaneuf-associates-incorporated/about/"><img class="fimg" loading="lazy" height="38" width="38" src="../images/linkedin.svg" alt="LinkedIn"></a><a target="_blank" class="fsociallink" rel="noopener noreferrer" aria-hidden="false" aria-label="Visit us on Yelp" href="https://www.yelp.com/biz/s-phaneuf-and-associates-groton"><img class="fimg" loading="lazy" height="38" width="38" src="../images/yelp.svg" alt="Yelp"></a></div></div><div class="fcolumn my-2 py-2"><div><span class="fheadline pb-1 mb-2 fw-6"><span class="no-wrap">Service Areas</span></span></div><ul class="lst-n p-0 footer-links"><li><a href="/middlesex-county/hardscape-contractor-acton-ma"><i class="greater-than"></i>Acton</a></li><li><a href="/worcester-county/hardscape-contractor-bolton-ma"><i class="greater-than"></i>Bolton</a></li><li><a href="/middlesex-county/hardscape-contractor-carlisle-ma"><i class="greater-than"></i>Carlisle</a></li><li><a href="/middlesex-county/hardscape-contractor-concord-ma"><i class="greater-than"></i>Concord</a></li><li><a href="/middlesex-county/hardscape-contractor-lexington-ma"><i class="greater-than"></i>Lexington</a></li><li><a href="/middlesex-county/hardscape-contractor-littleton-ma"><i class="greater-than"></i>Littleton</a></li></ul></div><div class="fcolumn my-2 py-2"><div><span class="fheadline pb-1 mb-2 fw-6"><span class="no-wrap">Service Areas</span></span></div><ul class="lst-n p-0 footer-links"><li><a href="/middlesex-county/hardscape-contractor-stow-ma"><i class="greater-than"></i>Stow</a></li><li><a href="/middlesex-county/hardscape-contractor-sudbury-ma"><i class="greater-than"></i>Sudbury</a></li><li><a href="/middlesex-county/hardscape-contractor-wayland-ma"><i class="greater-than"></i>Wayland</a></li><li><a href="/middlesex-county/hardscape-contractor-westford-ma"><i class="greater-than"></i>Westford</a></li><li><a href="/middlesex-county/hardscape-contractor-weston-ma"><i class="greater-than"></i>Weston</a></li></ul></div><div class="fcolumn my-2 py-2"><div><span class="fheadline pb-1 mb-2 fw-6">Portfolio</span></div><ul class="lst-n p-0 footer-links"><li><a href="/asphalt-paving"><i class="greater-than"></i>Asphalt Paving</a></li><li><a href="/masonry-hardscapes"><i class="greater-than"></i>Masonry</a></li><li><a href="/masonry-hardscapes"><i class="greater-than"></i>Hardscapes</a></li><li><a href="/excavation-site-development"><i class="greater-than"></i>Excavation</a></li><li><a href="/excavation-site-development"><span class="no-wrap"><i class="greater-than"></i>Site Development</span></a></li></ul></div><div class="fcolumn my-2 py-2"><div><span class="fheadline pb-1 mb-2 fw-6">Get In Touch</span></div><address><ul class="lst-n p-0"><li>P.O. Box 190 <br>Groton, MA 01450</li><li>info@sphaneufassociates.com</li><li>Mon to Fri: 8AM - 4:00PM</li><li><a class="td-n c-lg" href="tel:+19786694919">978-669-4919</a></li></ul></address></div></div></div><div class="copyright t-c p-3 fw-3">© 2024 S. Phaneuf & Associates. All Rights Reserved.<br>Use of this site constitutes acceptance of our <a href="/terms-of-use" class="c-lg">Terms of Use</a> and <a href="/privacy-policy" class="c-lg">Privacy Policy</a>.<br><a href="/sitemap" class="c-lg">Sitemap</a></div></footer>
     
+    <!-- <img src="../images/steve.webp" id="chat-avatar" alt="Live Agent" /> -->
     <!-- Floating Agent Avatar -->
-    <div id="chat-avatar-wrapper">
-        <!-- <img src="../images/steve.webp" id="chat-avatar" alt="Live Agent" /> -->
+    <!-- <div id="chat-avatar-wrapper">
+        
         <img src="https://media.licdn.com/dms/image/v2/C5603AQFbcZxPWVgOIQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516581768489?e=1749686400&v=beta&t=UZuJ615qMkFk85Rr4jwvHXJT8hvVbDkASfiZI97tXa0" id="chat-avatar" alt="Live Agent" />
         <span id="chat-status-dot"></span>
-    </div>
+    </div> -->
 
     <!-- Chat Popup (unchanged structure) -->
-    <div id="chat-popup">
+    <!-- <div id="chat-popup">
         <div id="chat-header"><span>Chat</span><span id="chat-close">&times;</span></div>
-        <div id="chat-body"><div id="chat-messages"></div><div id="typing-indicator">Agent is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div><form id="lead-form" style="display: none;" ><input placeholder="Name" type="text" autocomplete="off" tabindex="0" name="entry.631554197" value="" required=""><input placeholder="Phone" type="text" autocomplete="off" name="entry.993558858" value="" required="" ><textarea placeholder="Message" rows="5" required="" name="entry.69405291" style="width:100%;border:1px solid #cccccc;padding:5px 8px;"></textarea><button type="submit" class="btn" >Submit Form</button></form><div id="user-input-area"><input type="text" id="user-input" placeholder="Type a message..." /><button id="send-btn">Send</button></div></div>
-    </div>
+        <div id="chat-body"><div id="chat-messages"></div><div id="typing-indicator">Agent is typing<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+        <form id="chat-form" style="display: none;" ><input placeholder="Name" type="text" autocomplete="off" tabindex="0" name="entry.631554197" value="" required=""><input placeholder="Phone" type="text" autocomplete="off" name="entry.993558858" value="" required="" ><textarea placeholder="Message" rows="5" required="" name="entry.69405291" style="width:100%;border:1px solid #cccccc;padding:5px 8px;"></textarea><button type="submit" class="btn" >Submit Form</button></form><div id="user-input-area"><input type="text" id="user-input" placeholder="Type a message..." /><button id="send-btn">Send</button></div></div>
+    </div> -->
     
     <script>
         var textBoxes = document.querySelectorAll('.text-box');
@@ -210,172 +183,30 @@
         document.getElementById("decline-consent").addEventListener("click", function(){ document.getElementById("cookie-consent-banner").style.display="none";});
         if (localStorage.getItem("cookies-accepted")==="true"){ document.getElementById("cookie-consent-banner").style.display="none"; loadClarity();}
         function loadClarity() {var clarityScript=document.createElement('script'); clarityScript.async=1; clarityScript.src="https://www.clarity.ms/tag/ntahbbb4eq"; var firstScript=document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(clarityScript, firstScript);}
+        document.getElementById('contact-form').onsubmit=function (e){ e.preventDefault(); const form=this; const data=new FormData(form); const inputs=form.querySelectorAll("input, textarea, select, button"); inputs.forEach(input=>input.disabled=true); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{ const thankYouMsg=document.createElement("div"); thankYouMsg.textContent="Form submitted. Thank you!"; thankYouMsg.style.marginTop="1em"; thankYouMsg.style.fontWeight="bold"; form.appendChild(thankYouMsg);});};
     </script>
 
 
 
-    <script>
-        const avatar = document.getElementById('chat-avatar');
-        const avatarWrapper = document.getElementById('chat-avatar-wrapper');
-        const chatPopup = document.getElementById('chat-popup');
-        const chatMessages = document.getElementById('chat-messages');
-        const typingIndicator = document.getElementById('typing-indicator');
-        const userInputArea = document.getElementById('user-input-area');
-        const typingMessages = ["Hi there! 👋 Steve is busy at the moment.","Please fill out this form and I will relay the message."];
-        //var notAvailable = false;
-        var isWeekend = false;
-        var isAfterHours = false;    
-
+    <!-- <script>
+        const avatar=document.getElementById('chat-avatar'); const avatarWrapper=document.getElementById('chat-avatar-wrapper'); const chatPopup=document.getElementById('chat-popup'); const chatMessages=document.getElementById('chat-messages'); const typingIndicator=document.getElementById('typing-indicator'); const userInputArea=document.getElementById('user-input-area'); const typingMessages=["Hi there! 👋 Steve is busy at the moment.","Please fill out this form and I will relay the message."]; //var notAvailable=false; var isWeekend=false; var isAfterHours=false; 
         avatar.onclick = function () {
-            chatPopup.style.display = 'block';
-            avatarWrapper.style.display = 'none';
-            chatMessages.innerHTML = '';
-            document.getElementById('lead-form').style.display = 'none';
-            userInputArea.style.display = 'none';
-
-            const now = new Date();
-            const day = now.getDay(); // 0 = Sunday, 6 = Saturday
-            const hour = now.getHours();
-
-            let typingMessages = [];
-
+            chatPopup.style.display='block'; avatarWrapper.style.display='none'; chatMessages.innerHTML=''; document.getElementById('chat-form').style.display='none'; userInputArea.style.display='none'; const now=new Date(); const day=now.getDay(); const hour=now.getHours(); let typingMessages=[];
             if (day === 0 || day === 6) {
-                // 🕊️ Weekend
-                isWeekend = true;
-                typingMessages = [
-                "Hi there! 👋 Nobody is available to chat right now.",
-                "Feel free to fill out this form and someone will follow up soon!"
-                ];
-                userInputArea.style.display = 'none';
+                isWeekend=true; typingMessages=[ "Hi there! 👋 Nobody is available to chat right now.", "Feel free to fill out this form and someone will follow up soon!" ]; userInputArea.style.display='none';
             } else if (hour >= 8 && hour < 16) {
-                // 🚗 Weekday, 8am–4pm — Steve is driving
-                typingMessages = [
-                "Hey there! ",
-                "Steve is currently out driving to job site and not available to answer questions.",
-                "Fill out the form below and he'll get back to you."
-                ];
+                typingMessages=[ "Hey there! ", "Steve is currently driving to a job site and not available to answer questions.", "Fill out the form below and he'll get back to you." ];
             } else if (hour >= 16 && hour < 21) {
-                // ✅ Weekday, 4pm–9pm — Available
-                typingMessages = [
-                "Hi there! 👋 ",
-                "How can I help you today?"
-                ];
+                typingMessages=[ "Hi there! 👋 ", "How can I help you today?" ];
             } else {
-                // ⏰ Too early or too late
-                isAfterHours = true;
-                typingMessages = [
-                "Hi!",
-                "Our chat hours are 9 AM to 9 PM.",
-                "Please fill out the form below and someone from the team will contact you."
-                ];
+                isAfterHours=true; typingMessages=[ "Hi!", "Our chat hours are 9 AM to 9 PM.", "Please fill out the form below and someone from the team will contact you." ];
             }
-
             appendMessageWithTyping(typingMessages);
             //chatMessages.scrollTop = chatMessages.scrollHeight;
         };
-
-        document.getElementById('chat-close').onclick = function () {
-            chatPopup.style.display = 'none';
-            avatarWrapper.style.display = 'block';
-        };
-
-
-        function appendMessageWithTyping(messages, index = 0, showFormAfter = true) {
-    if (index >= messages.length) {
-        typingIndicator.style.visibility = 'hidden';
-
-        if (showFormAfter) {
-            document.getElementById('lead-form').style.display = 'block';
-        }
-
-        setTimeout(() => {
-            if (isWeekend || isAfterHours || !showFormAfter) {
-                userInputArea.style.display = 'none';
-            } else {
-                userInputArea.style.display = 'flex';
-            }
-        }, 1000);
-
-        return;
-    }
-
-    typingIndicator.style.visibility = 'visible';
-
-    setTimeout(() => {
-        const msgBubble = document.createElement("div");
-        msgBubble.className = "chat-msg";
-        chatMessages.appendChild(msgBubble);
-
-        let charIndex = 0;
-
-        function typeChar() {
-            msgBubble.textContent += messages[index].charAt(charIndex);
-            charIndex++;
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-            if (charIndex < messages[index].length) {
-                setTimeout(typeChar, 40);
-            } else {
-                typingIndicator.style.visibility = 'hidden';
-                setTimeout(() => appendMessageWithTyping(messages, index + 1, showFormAfter), 700);
-            }
-        }
-
-        typeChar();
-    }, 800);
-}
-
-
-  
-        function appendMessageWithTypingOld(messages, index = 0) {
-        //function appendMessageWithTyping(messages, index = 0, showFormAfter = true)
-            if (index >= messages.length) {
-                typingIndicator.style.visibility = 'hidden';
-                document.getElementById('lead-form').style.display = 'block';
-                setTimeout(() => {
-                    //userInputArea.style.display = 'flex';
-                    if (isWeekend || isAfterHours) {
-                        //notAvailable = true;
-                        userInputArea.style.display = 'none';
-                    } else {
-                        //notAvailable = false;
-                        userInputArea.style.display = 'flex';
-                    }
-                }, 1000);
-                return;
-            }
-    
-            typingIndicator.style.visibility = 'visible';
-    
-            setTimeout(() => {
-                const msgBubble = document.createElement("div");
-                msgBubble.className = "chat-msg";
-                chatMessages.appendChild(msgBubble);
-        
-                let charIndex = 0;
-
-                function typeChar() {
-                    msgBubble.textContent += messages[index].charAt(charIndex);
-                    charIndex++;
-                    chatMessages.scrollTop = chatMessages.scrollHeight;
-                    if (charIndex < messages[index].length) {
-                        setTimeout(typeChar, 40);
-                    } else {
-                        typingIndicator.style.visibility = 'hidden';
-                        setTimeout(() => appendMessageWithTyping(messages, index + 1), 700);
-                    }
-                }
-                typeChar();
-            }, 800);
-        }
-  
-        function addUserMessage(msg) {
-            const msgBubble = document.createElement("div");
-            msgBubble.className = "user-msg";
-            msgBubble.textContent = msg;
-            chatMessages.appendChild(msgBubble);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-    
+        document.getElementById('chat-close').onclick=function (){ chatPopup.style.display='none'; avatarWrapper.style.display='block';};
+        function appendMessageWithTyping(messages, index=0, showFormAfter=true){ if (index >=messages.length){ typingIndicator.style.visibility='hidden'; if (showFormAfter){ document.getElementById('chat-form').style.display='block';} setTimeout(()=>{ if (isWeekend || isAfterHours || !showFormAfter){ userInputArea.style.display='none';} else{ userInputArea.style.display='flex';}}, 1000); return;} typingIndicator.style.visibility='visible'; setTimeout(()=>{ const msgBubble=document.createElement("div"); msgBubble.className="chat-msg"; chatMessages.appendChild(msgBubble); let charIndex=0; function typeChar(){ msgBubble.textContent +=messages[index].charAt(charIndex); charIndex++; chatMessages.scrollTop=chatMessages.scrollHeight; if (charIndex < messages[index].length){ setTimeout(typeChar, 40);} else{ typingIndicator.style.visibility='hidden'; setTimeout(()=>appendMessageWithTyping(messages, index + 1, showFormAfter), 700);}} typeChar();}, 800);}  
+        function addUserMessage(msg){ const msgBubble=document.createElement("div"); msgBubble.className="user-msg"; msgBubble.textContent=msg; chatMessages.appendChild(msgBubble); chatMessages.scrollTop=chatMessages.scrollHeight;}
         function getAutoReply(msg) {
             const lower = msg.toLowerCase();
             if (lower.includes("hello") || lower.includes("hi")) {
@@ -393,77 +224,12 @@
                 return "Sorry, I dont know how to respond to that. Please fill out the form and someone from the team will contact you.";
             }
         }
-
-        function updateAgentStatus() {
-            const now = new Date();
-            const day = now.getDay(); // 0 = Sunday, 6 = Saturday
-            const hour = now.getHours();
-            const dot = document.getElementById('chat-status-dot');
-
-            const isWeekend = (day === 0 || day === 6);
-
-            if (isWeekend || hour < 8 || hour >= 21) {
-                // ❌ Offline — Gray
-                dot.style.backgroundColor = "#999";
-                dot.title = "Offline";
-            } else if (hour >= 8 && hour < 16) {
-                // ⏳ Limited Availability — Red
-                dot.style.backgroundColor = "#e53935";
-                dot.title = "Busy - Limited availability";
-            } else if (hour >= 16 && hour < 21) {
-                // ✅ Fully Available — Green
-                dot.style.backgroundColor = "#00c853";
-                dot.title = "Online and available";
-            }
-
-            dot.style.display = "block";
-        }
-
-        // Run once on load
-        updateAgentStatus();
-
-        // Refresh every 60 seconds
-        setInterval(updateAgentStatus, 60000);
-  
-        document.getElementById('send-btn').onclick = () => {
-            const input = document.getElementById('user-input');
-            const msg = input.value.trim();
-            if (msg) {
-                addUserMessage(msg);
-                input.value = "";
-                const reply = getAutoReply(msg);
-        
-                setTimeout(() => {
-                typingIndicator.style.visibility = 'visible';
-                setTimeout(() => {
-                    typingIndicator.style.visibility = 'hidden';
-                    appendMessageWithTyping([reply]);
-                }, 1000);
-                }, 600);
-            }
-        };
-  
-        // Handle Google Form Submission 
-        document.getElementById('lead-form').onsubmit = function (e) {
-            e.preventDefault();
-            const data = new FormData(this);
-            fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse", {
-                method: "POST",
-                mode: "no-cors",
-                body: data
-            }).then(() => {
-                appendMessageWithTyping(["Thank you."], 0, false); // 👈 Pass false to prevent form from reappearing
-                var leadForm = document.getElementById('lead-form');
-                leadForm.style.display = 'none';    
-                leadForm.reset();
-
-                // appendMessageWithTyping(["Thank you."]);
-                // var leadForm = document.getElementById('lead-form');
-                // leadForm.style.display = 'none';    
-                // leadForm.reset();
-            });
-            //document.getElementById('lead-form').reset();
-        };
-    </script>
+        function updateAgentStatus(){ const now=new Date(); const day=now.getDay(); const hour=now.getHours(); const dot=document.getElementById('chat-status-dot'); const isWeekend=(day===0 || day===6); if (isWeekend || hour < 8 || hour >=21){ dot.style.backgroundColor="#999"; dot.title="Offline";} else if (hour >=8 && hour < 16){ dot.style.backgroundColor="#e53935"; dot.title="Busy - Limited availability";} else if (hour >=16 && hour < 21){ dot.style.backgroundColor="#00c853"; dot.title="Online and available";} dot.style.display="block";}
+        updateAgentStatus();// Run once on load
+        setInterval(updateAgentStatus, 60000);// Refresh every 60 seconds
+        document.getElementById('send-btn').onclick=()=>{ const input=document.getElementById('user-input'); const msg=input.value.trim(); if (msg){ addUserMessage(msg); input.value=""; const reply=getAutoReply(msg); setTimeout(()=>{ typingIndicator.style.visibility='visible'; setTimeout(()=>{ typingIndicator.style.visibility='hidden'; appendMessageWithTyping([reply])}, 1000)}, 600);}};
+        document.getElementById('chat-form').onsubmit=function (e){ e.preventDefault(); const data=new FormData(this); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{ appendMessageWithTyping(["Thank you."], 0, false); var leadForm=document.getElementById('chat-form'); leadForm.style.display='none'; leadForm.reset();});};
+       
+    </script> -->
 </body>
 </html>
