@@ -130,7 +130,7 @@
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse" target="_self" method="POST"><div class="mb-3"><label for="first-last-name" class="form-label">First and Last Name</label><input id="first-last-name" type="text" class="form-control" aria-label="Enter your full name" autocomplete="off" tabindex="0" name="entry.631554197" value="" required=""></div><div class="mb-3"><label for="email-or-phone" class="form-label">Email Address or Phone #</label><input id="email-or-phone" type="text" class="form-control" aria-label="Enter your email or phone" autocomplete="off" name="entry.993558858" value="" required=""></div><div class="mb-3"><label for="message" class="form-label">Message</label><textarea id="message" class="form-control textarea" aria-label="Enter your message" rows="4" required="" name="entry.69405291"></textarea></div><div class="t-c"><button type="submit" class="btn">Submit</button></div></form> -->
                 <h2 class="fs-xl">Get Your Free Consultation for Asphalt Paving, Masonry, or Excavation Services in Central and Eastern Massachusetts</h2>
                 <p class="mt-2 mb-4">Looking to enhance your property? Fill out the form below, and one of our experts will contact you soon. The more details you provide, the better we can tailor our services to meet your exact needs in Central and Eastern Massachusetts.</p>
-                <form class="pb-3 mb-5" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse" target="_self" method="POST" >
+                <form id="contact-form" class="pb-3 mb-5">
                     <div class="mb-3">
                         <label for="first-last-name" class="form-label">First and Last Name</label>
                         <input id="first-last-name" type="text" class="form-control" autocomplete="off" tabindex="0" name="entry.631554197" value="" required="">
@@ -199,6 +199,7 @@
         document.getElementById("decline-consent").addEventListener("click", function(){ document.getElementById("cookie-consent-banner").style.display="none";});
         if (localStorage.getItem("cookies-accepted")==="true"){ document.getElementById("cookie-consent-banner").style.display="none"; loadClarity();}
         function loadClarity() {var clarityScript=document.createElement('script'); clarityScript.async=1; clarityScript.src="https://www.clarity.ms/tag/ntahbbb4eq"; var firstScript=document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(clarityScript, firstScript);}
+        document.getElementById('contact-form').onsubmit=function (e){ e.preventDefault(); const form=this; const data=new FormData(form); const inputs=form.querySelectorAll("input, textarea, select, button"); inputs.forEach(input=>input.disabled=true); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{ const thankYouMsg=document.createElement("div"); thankYouMsg.textContent="Form submitted. Thank you!"; thankYouMsg.style.marginTop="1em"; thankYouMsg.style.fontWeight="bold"; form.appendChild(thankYouMsg);});};
     </script>
 </body>
 </html>
