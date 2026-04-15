@@ -239,7 +239,71 @@ document.getElementById('contact-form').onsubmit = function (e) {
 };
 */
 
-document.getElementById('contact-form').onsubmit=function (e){ e.preventDefault(); const form=this; const formData=new FormData(form); const errorDiv=document.getElementById('form-error'); errorDiv.style.display='none'; errorDiv.textContent=''; if (formData.get("city") !==""){ form.innerHTML=`<div class="alert alert-success">Thank you!</div>`; return;} const messageText=formData.get("entry.69405291"); const tagRegex=/<[^>]*>/g; if (tagRegex.test(messageText)){ errorDiv.textContent="HTML tags and scripts are not allowed."; errorDiv.style.display='block'; return;} const urlRegex=/(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi; if (urlRegex.test(messageText)){ errorDiv.textContent="Links and URLs are not allowed."; errorDiv.style.display='block'; return;} const englishRegex=/^[ -~]*$/; if (!englishRegex.test(messageText)){ errorDiv.textContent="Please use English characters only."; errorDiv.style.display='block'; return;} const submitButton=form.querySelector('button'); submitButton.disabled=true; submitButton.textContent="Sending..."; const data=new URLSearchParams(formData); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}) .then(()=>{ form.innerHTML=`<div class="alert alert-success"><strong>Success!</strong>Your message has been sent.</div>`;}) .catch(error=>{ submitButton.disabled=false; submitButton.textContent="Submit"; errorDiv.textContent="Something went wrong. Please try again."; errorDiv.style.display='block';});};
+document.getElementById('contact-form').onsubmit = function (e) {
+  e.preventDefault();
+  
+  const form = this;
+  const formData = new FormData(form);
+  const errorDiv = document.getElementById('form-error');
+  
+ 
+  errorDiv.style.display = 'none';
+  errorDiv.textContent = '';
+
+
+  if (formData.get("city") !== "") {
+    form.innerHTML = `<div class="alert alert-success">Thank you!</div>`;
+    return; 
+  }
+
+  const messageText = formData.get("entry.69405291");
+
+  
+  const tagRegex = /<[^>]*>/g; 
+  if (tagRegex.test(messageText)) {
+    errorDiv.textContent = "HTML tags and scripts are not allowed.";
+    errorDiv.style.display = 'block';
+    return;
+  }
+
+
+  const urlRegex = /(https?:\/\/[^\s]+)|(www\.[^\s]+)|([^\s]+\.(org|com|net|gov|io)\/[^\s]+)/gi;
+  if (urlRegex.test(messageText)) {
+    errorDiv.textContent = "Links and URLs are not allowed.";
+    errorDiv.style.display = 'block';
+    return;
+  }
+
+
+  const isNotEnglish = /[^\x20-\x7E]/.test(messageText);
+if (isNotEnglish) {
+    errorDiv.textContent = "Please remove emojis or special symbols. Use standard English text only.";
+    errorDiv.style.display = 'block';
+    return;
+  }
+  
+  const submitButton = form.querySelector('button');
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending...";
+
+  const data = new URLSearchParams(formData);
+
+  fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse", {
+    method: "POST",
+    mode: "no-cors", 
+    body: data
+  })
+  .then(() => {
+    form.innerHTML = `<div class="alert alert-success"><strong>Success!</strong> Your message has been sent.</div>`;
+  })
+  .catch(error => {
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit";
+    errorDiv.textContent = "Something went wrong. Please try again.";
+    errorDiv.style.display = 'block';
+  });
+};
+
 
 
 
