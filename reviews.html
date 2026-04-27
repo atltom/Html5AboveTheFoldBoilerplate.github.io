@@ -73,8 +73,8 @@
                 </section>
                   <section class="pt-4" aria-label="Submit a review for S. Phaneuf & Associates"><h2 class="pipe mb-3">Submit Your Review</h2><p>We'd love to hear about your experience with <strong>S. Phaneuf & Associates</strong>. Please take a moment to share your thoughts by filling out the form below:</p>
                     <form id="rev-form" class="pt-3" >
-                      <label for="name" class="form-label">Your Name:</label><input type="text" id="rev-name" name="entry.631554197" class="form-control" required>
-                      <label for="rating" class="form-label">Your Rating:</label>
+                      <label for="rev-name" class="form-label">Your Name:</label><input type="text" id="rev-name" name="entry.631554197" class="form-control" required>
+                      <label for="rev-rating" class="form-label">Your Rating:</label>
                       <select id="rev-rating" name="entry.993558858" class="form-control" required>
                         <option value="" disabled selected>Please select a rating</option>
                         <option value="5 stars">⭐⭐⭐⭐⭐</option>
@@ -83,7 +83,7 @@
                         <option value="2 stars">⭐⭐</option>
                         <option value="1 star">⭐</option>
                       </select>
-                      <label for="review" class="form-label">Your Review:</label><textarea id="rev-review" name="entry.69405291" rows="5" class="form-control" required></textarea>
+                      <label for="rev-review" class="form-label">Your Review:</label><textarea id="rev-review" name="entry.69405291" rows="5" class="form-control" required></textarea>
                       <div aria-hidden="true" style="position: absolute; left: -5000px; top: -5000px; height: 0; overflow: hidden;"><label for="rev-city-field">City</label><input id="rev-city-field" type="text" name="city" tabindex="-1" autocomplete="off"></div>
                       <div id="rev-form-error" style="color: #dc3545; font-weight: bold; margin-bottom: 1em; display: none;"></div>
                       <button type="submit" class="my-3 btn">Submit Your Review</button>
@@ -121,26 +121,16 @@
         //if (localStorage.getItem("cookies-accepted")==="true"){ document.getElementById("cookie-consent-banner").style.display="none"; loadClarity();}
         //function loadClarity() {var clarityScript=document.createElement('script'); clarityScript.async=1; clarityScript.src="https://www.clarity.ms/tag/ntahbbb4eq"; var firstScript=document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(clarityScript, firstScript);}
         document.getElementById('rev-form').onsubmit = function(e) {
-          //const cf = document.getElementById('rev-city-field').value;
-          //if (cf.length > 0) {e.preventDefault();return false;}
+          e.preventDefault();
           const form=this; 
           const formData=new FormData(form); 
-          const errorDiv=document.getElementById('rev-form-error'); 
-          errorDiv.style.display='none'; errorDiv.textContent=''; 
-          if (formData.get("rev-city-field") !==""){ 
-            form.innerHTML=`<div class="alert alert-success">Thank you!</div>`; return;
-          } 
-            
+          const errorDiv=document.getElementById('rev-form-error');errorDiv.style.display='none'; errorDiv.textContent=''; 
+          if (formData.get("rev-city-field") !==""){form.innerHTML=`<div class="alert alert-success">Thank you!</div>`; return;}           
           const messageText=formData.get("entry.69405291"); 
-          const tagRegex=/<[^>]*>/g; 
-          if (tagRegex.test(messageText)){ errorDiv.textContent="HTML tags and scripts are not allowed."; errorDiv.style.display='block'; return;} 
-          const urlRegex=/(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi; 
-          if (urlRegex.test(messageText)){ errorDiv.textContent="Links and URLs are not allowed."; errorDiv.style.display='block'; return;} 
-          const englishRegex=/^[ -~]*$/; 
-          if (!englishRegex.test(messageText)){ errorDiv.textContent="Please use English characters only."; errorDiv.style.display='block'; return;} 
-          const submitButton=form.querySelector('button'); 
-          submitButton.disabled=true; 
-          submitButton.textContent="Sending..."; 
+          const tagRegex=/<[^>]*>/g;if (tagRegex.test(messageText)){ errorDiv.textContent="HTML tags and scripts are not allowed."; errorDiv.style.display='block'; return;} 
+          const urlRegex=/(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi;if (urlRegex.test(messageText)){ errorDiv.textContent="Links and URLs are not allowed."; errorDiv.style.display='block'; return;} 
+          const englishRegex=/^[ -~]*$/;if (!englishRegex.test(messageText)){ errorDiv.textContent="Please use English characters only."; errorDiv.style.display='block'; return;} 
+          const submitButton=form.querySelector('button');submitButton.disabled=true;submitButton.textContent="Sending..."; 
           const data=new URLSearchParams(formData); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}) .then(()=>{ form.innerHTML=`<div class="alert alert-success"><strong>Success!</strong>Your message has been sent.</div>`;}) .catch(error=>{ submitButton.disabled=false; submitButton.textContent="Submit"; errorDiv.textContent="Something went wrong. Please try again."; errorDiv.style.display='block';});
         };
         
