@@ -72,18 +72,21 @@
                 
                 </section>
                   <section class="pt-4" aria-label="Submit a review for S. Phaneuf & Associates"><h2 class="pipe mb-3">Submit Your Review</h2><p>We'd love to hear about your experience with <strong>S. Phaneuf & Associates</strong>. Please take a moment to share your thoughts by filling out the form below:</p>
-                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse" target="_self" method="POST" class="pt-3" ><label for="name" class="form-label">Your Name:</label><input type="text" id="name" name="entry.631554197" class="form-control" required><label for="rating" class="form-label">Your Rating:</label>
-                    <select id="rating" name="entry.993558858" class="form-control" required>
-                      <option value="" disabled selected>Please select a rating</option>
-                      <option value="5 stars">⭐⭐⭐⭐⭐</option>
-                      <option value="4 stars">⭐⭐⭐⭐</option>
-                      <option value="3 stars">⭐⭐⭐</option>
-                      <option value="2 stars">⭐⭐</option>
-                      <option value="1 star">⭐</option>
-                    </select><label for="review" class="form-label">Your Review:</label><textarea id="review" name="entry.69405291" rows="5" class="form-control" required></textarea>
-                    <div aria-hidden="true" style="position: absolute; left: -5000px; top: -5000px; height: 0; overflow: hidden;"><label for="city-field">City</label><input id="city-field" type="text" name="city" tabindex="-1" autocomplete="off"></div>
-                    <div id="form-error" style="color: #dc3545; font-weight: bold; margin-bottom: 1em; display: none;"></div>
-                    <button type="submit" class="my-3 btn">Submit Your Review</button>
+                    <form id="rev-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse" target="_self" method="POST" class="pt-3" >
+                      <label for="name" class="form-label">Your Name:</label><input type="text" id="rev-name" name="entry.631554197" class="form-control" required>
+                      <label for="rating" class="form-label">Your Rating:</label>
+                      <select id="rev-rating" name="entry.993558858" class="form-control" required>
+                        <option value="" disabled selected>Please select a rating</option>
+                        <option value="5 stars">⭐⭐⭐⭐⭐</option>
+                        <option value="4 stars">⭐⭐⭐⭐</option>
+                        <option value="3 stars">⭐⭐⭐</option>
+                        <option value="2 stars">⭐⭐</option>
+                        <option value="1 star">⭐</option>
+                      </select>
+                      <label for="review" class="form-label">Your Review:</label><textarea id="rev-review" name="entry.69405291" rows="5" class="form-control" required></textarea>
+                      <div aria-hidden="true" style="position: absolute; left: -5000px; top: -5000px; height: 0; overflow: hidden;"><label for="rev-city-field">City</label><input id="rev-city-field" type="text" name="city" tabindex="-1" autocomplete="off"></div>
+                      <div id="rev-form-error" style="color: #dc3545; font-weight: bold; margin-bottom: 1em; display: none;"></div>
+                      <button type="submit" class="my-3 btn">Submit Your Review</button>
                   </form>
                   </section>
                   <section class="pt-5" aria-label="Expert services in masonry, hardscapes, paving, excavation, and snow removal by S. Phaneuf & Associates"><h2 class="pipe mb-3">Why Choose S. Phaneuf & Associates?</h2><p class="mb-3">We specialize in providing expert services across <a href="service-areas" class="fw-6">Massachusetts</a>. Whether you're looking for masonry, hardscapes, asphalt paving, excavation, or snow removal, our team has the experience and expertise to get the job done right.</p><ul><li><strong>Masonry & Hardscapes</strong>: Transform your property with stone walkways, patios, and outdoor living spaces.</li><li><strong>Asphalt Paving</strong>: Durable and reliable paving solutions for driveways, parking lots, and more.</li><li><strong>Excavation & Site Development</strong>: Excavation, grading, and site prep for residential and commercial properties.</li><li><strong>Snow & Ice Management</strong>: Keeping your property safe and accessible during the harsh Massachusetts winters.</li></ul></section>
@@ -117,8 +120,30 @@
         //document.getElementById("decline-consent").addEventListener("click", function(){ document.getElementById("cookie-consent-banner").style.display="none";});
         //if (localStorage.getItem("cookies-accepted")==="true"){ document.getElementById("cookie-consent-banner").style.display="none"; loadClarity();}
         //function loadClarity() {var clarityScript=document.createElement('script'); clarityScript.async=1; clarityScript.src="https://www.clarity.ms/tag/ntahbbb4eq"; var firstScript=document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(clarityScript, firstScript);}
-        document.querySelector('.pt-3').onsubmit = function(e) {const honeypot = document.getElementById('city-field').value;if (honeypot.length > 0) {e.preventDefault();return false;}};
-        document.getElementById('contact-form').onsubmit=function (e){ e.preventDefault(); const form=this; const data=new FormData(form); const inputs=form.querySelectorAll("input, textarea, select, button"); inputs.forEach(input=>input.disabled=true); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{ const thankYouMsg=document.createElement("div"); thankYouMsg.textContent="Form submitted. Thank you!"; thankYouMsg.style.marginTop="1em"; thankYouMsg.style.fontWeight="bold"; form.appendChild(thankYouMsg);});};
+        document.getElementById('rev-form').onsubmit = function(e) {
+          //const cf = document.getElementById('rev-city-field').value;
+          //if (cf.length > 0) {e.preventDefault();return false;}
+  const form=this; 
+  const formData=new FormData(form); 
+  const errorDiv=document.getElementById('rev-form-error'); 
+  errorDiv.style.display='none'; errorDiv.textContent=''; 
+  if (formData.get("rev-city-field") !==""){ 
+    form.innerHTML=`<div class="alert alert-success">Thank you!</div>`; return;
+  } 
+    
+  const messageText=formData.get("entry.69405291"); 
+  const tagRegex=/<[^>]*>/g; 
+  if (tagRegex.test(messageText)){ errorDiv.textContent="HTML tags and scripts are not allowed."; errorDiv.style.display='block'; return;} 
+  const urlRegex=/(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi; 
+  if (urlRegex.test(messageText)){ errorDiv.textContent="Links and URLs are not allowed."; errorDiv.style.display='block'; return;} 
+  const englishRegex=/^[ -~]*$/; 
+  if (!englishRegex.test(messageText)){ errorDiv.textContent="Please use English characters only."; errorDiv.style.display='block'; return;} 
+  const submitButton=form.querySelector('button'); 
+  submitButton.disabled=true; 
+  submitButton.textContent="Sending..."; 
+
+        };
+         document.getElementById('contact-form').onsubmit=function (e){ e.preventDefault(); const form=this; const data=new FormData(form); const inputs=form.querySelectorAll("input, textarea, select, button"); inputs.forEach(input=>input.disabled=true); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{ const thankYouMsg=document.createElement("div"); thankYouMsg.textContent="Form submitted. Thank you!"; thankYouMsg.style.marginTop="1em"; thankYouMsg.style.fontWeight="bold"; form.appendChild(thankYouMsg);});};
         
         //origianl code //window.addEventListener('load', function(){ var script=document.createElement('script'); script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF"; script.async=true; document.head.appendChild(script); script.onload=function(){ window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');};});!function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};function loadClarity(){t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}window.addEventListener?window.addEventListener("load",loadClarity):window.attachEvent?window.attachEvent("onload",loadClarity):window.onload=loadClarity}(window,document,"clarity","script","ntahbbb4eq");
     </script>
