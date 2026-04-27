@@ -122,6 +122,7 @@
         //function loadClarity() {var clarityScript=document.createElement('script'); clarityScript.async=1; clarityScript.src="https://www.clarity.ms/tag/ntahbbb4eq"; var firstScript=document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(clarityScript, firstScript);}
         document.getElementById('rev-form').onsubmit = function(e) {
           e.preventDefault();
+          console.log('prevented default form submission');
           const form=this; 
           const formData=new FormData(form); 
           const errorDiv=document.getElementById('rev-form-error');errorDiv.style.display='none'; errorDiv.textContent=''; 
@@ -131,7 +132,8 @@
           const urlRegex=/(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi;if (urlRegex.test(messageText)){ errorDiv.textContent="Links and URLs are not allowed."; errorDiv.style.display='block'; return;} 
           const englishRegex=/^[ -~]*$/;if (!englishRegex.test(messageText)){ errorDiv.textContent="Please use English characters only."; errorDiv.style.display='block'; return;} 
           const submitButton=form.querySelector('button');submitButton.disabled=true;submitButton.textContent="Sending..."; 
-          const data=new URLSearchParams(formData); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}) .then(()=>{ form.innerHTML=`<div class="alert alert-success"><strong>Success!</strong>Your message has been sent.</div>`;}) .catch(error=>{ submitButton.disabled=false; submitButton.textContent="Submit"; errorDiv.textContent="Something went wrong. Please try again."; errorDiv.style.display='block';});
+          const data=new URLSearchParams(formData); 
+          fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{form.innerHTML=`<div class="alert alert-success"><strong>Success!</strong>Your message has been sent.</div>`;}).catch(error=>{ submitButton.disabled=false; submitButton.textContent="Submit"; errorDiv.textContent="Something went wrong. Please try again."; errorDiv.style.display='block';});
         };
         
          document.getElementById('contact-form').onsubmit=function (e){ e.preventDefault(); const form=this; const data=new FormData(form); const inputs=form.querySelectorAll("input, textarea, select, button"); inputs.forEach(input=>input.disabled=true); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{ const thankYouMsg=document.createElement("div"); thankYouMsg.textContent="Form submitted. Thank you!"; thankYouMsg.style.marginTop="1em"; thankYouMsg.style.fontWeight="bold"; form.appendChild(thankYouMsg);});};
