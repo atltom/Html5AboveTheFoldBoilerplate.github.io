@@ -1,11 +1,18 @@
 # Dependencies
 node_modules/
 
-# Eleventy output
+# Build output
+dist/
 _site/
 
-# OS files
-.DS_Store
-Thumbs.db
+# Cache
+.cache/
 
-# VS Code (optional) .vscode/
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
