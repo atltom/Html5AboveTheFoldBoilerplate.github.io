@@ -1,0 +1,18 @@
+<h2 class="pipe">{{ benefitsHeading }}</h2>
+
+<p class="py-3">
+    {{ benefitsIntro }}
+</p>
+
+<ul class="ps-0 lst-n">
+
+    {% for benefit in benefits %}
+
+    <li{% if not loop.last %} class="py-3"{% endif %}>
+        <b>{{ benefit.title }}</b>
+        {{ benefit.description }}
+    </li>
+
+    {% endfor %}
+
+</ul>

@@ -1,0 +1,25 @@
+<h2 class="pipe pt-5">{{ areasHeading }}</h2>
+
+<p class="py-3">
+    {{ areasIntro }}
+</p>
+
+<ul class="city-links">
+
+{% for city in locations %}
+
+    <li>
+        <a href="/{{ city.slug }}">
+            {{ serviceName }} in {{ city.name }}, MA
+        </a>
+    </li>
+
+{% endfor %}
+
+</ul>
+
+<div class="mt-4">
+    <a class="btn btn-outlined" href="{{ areasButtonLink }}">
+        {{ areasButtonText }}
+    </a>
+</div>

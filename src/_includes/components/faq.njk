@@ -1,0 +1,13 @@
+<h2 class="pipe pt-5">{{ faqHeading }}</h2>
+
+{% for item in faq %}
+
+<h3 class="{% if not loop.first %}pt-4{% endif %}">
+    {{ item.question }}
+</h3>
+
+<p>
+    {{ item.answer }}
+</p>
+
+{% endfor %}

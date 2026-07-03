@@ -1,75 +1,30 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {# =========================
-     SEO CORE
-     ========================= #}
-
-  <title>
-    {{ title or "S. Phaneuf & Associates" }}
-  </title>
-
+  {# =========================     SEO CORE     ========================= #}
+  <title>{{ title or "S. Phaneuf & Associates" }}</title>
   <meta name="description" content="{{ description or 'Professional asphalt paving, excavation, and hardscape services in Massachusetts.' }}">
-
   <link rel="canonical" href="https://sphaneufassociates.com{{ canonical or page.url }}">
-
-  {# =========================
-     OPEN GRAPH
-     ========================= #}
-
+  {# =========================     OPEN GRAPH     ========================= #}
   <meta property="og:title" content="{{ title or 'S. Phaneuf & Associates' }}">
   <meta property="og:description" content="{{ description or 'Professional paving and site development services in Massachusetts.' }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sphaneufassociates.com{{ page.url }}">
   <meta property="og:image" content="https://sphaneufassociates.com/images/S-Phaneuf-Associates.webp">
-
-  {# =========================
-     FAVICONS
-     ========================= #}
-
+  {# =========================     FAVICONS     ========================= #}
   <link rel="icon" href="/images/favicon96c.png" sizes="96x96">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-
-  {# =========================
-     CSS
-     ========================= #}
-
+  {# =========================     CSS     ========================= #}
   <link rel="stylesheet" href="/css/templatestyles.min.css">
-
 </head>
-
 <body>
-
-  {# =========================
-     GLOBAL HEADER
-     ========================= #}
-
   {% include "header.njk" %}
-
-  {# =========================
-     PAGE CONTENT
-     ========================= #}
-
   <main>
     {{ content | safe }}
   </main>
-
-  {# =========================
-     GLOBAL FOOTER
-     ========================= #}
-
   {% include "footer.njk" %}
-
-  {# =========================
-     GLOBAL JS
-     ========================= #}
-
-  <script src="/js/main.js" defer></script>
-
+  {# <!--<script src="/js/main.js" defer></script>--> #}
 </body>
 </html>

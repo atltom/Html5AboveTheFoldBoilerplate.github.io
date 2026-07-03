@@ -1,0 +1,18 @@
+<h2 class="pipe pt-5">{{ processHeading }}</h2>
+
+<p class="py-3">
+    {{ processIntro }}
+</p>
+
+<ul class="ps-0 lst-n">
+
+{% for step in processSteps %}
+
+<li{% if not loop.last %} class="py-3"{% endif %}>
+    <b>{{ step.title }}</b>
+    {{ step.description }}
+</li>
+
+{% endfor %}
+
+</ul>

@@ -1,0 +1,112 @@
+<div class="contact-form mt-5 mb-1">
+
+    <h2>
+        {{ sidebarHeading }}
+    </h2>
+
+    <p class="mt-2 mb-4">
+        {{ sidebarParagraph }}
+    </p>
+
+    <form id="contact-form" class="pb-3 mb-5">
+
+        <div class="mb-3">
+            <label for="first-last-name" class="form-label">First and Last Name</label>
+            <input id="first-last-name" type="text" class="form-control" name="name" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email-or-phone" class="form-label">Email Address or Phone #</label>
+            <input id="email-or-phone" type="text" class="form-control" name="contact" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-control" rows="5" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+
+    </form>
+
+    {% if sidebarImages and sidebarImages.length %}
+
+    <ul id="sidebar-images" class="p-0 lst-n">
+
+        {% for image in sidebarImages %}
+
+        <li>
+            <figure class="mx-0">
+
+                <img
+                    loading="lazy"
+                    src="{{ image.src }}"
+                    alt="{{ image.alt }}"
+                    width="226"
+                    height="348"
+                >
+
+                <figcaption class="p-3 bg-w border">
+
+                    <address>
+                        {{ image.location }}
+                    </address>
+
+                    {{ image.caption }}
+
+                </figcaption>
+
+            </figure>
+        </li>
+
+        {% endfor %}
+
+    </ul>
+
+    {% endif %}
+
+</div>
+
+
+
+{#
+    <div class="contact-form mt-5 mb-1">
+        <h2>Get Started with a Free Consultation</h2>
+        <p class="mt-2 mb-4">Have questions about your paving project? Fill out the form below and we'll contact you to discuss your project, answer your questions, and provide a free estimate.</p>
+        <form id="contact-form" class="pb-3 mb-5">
+            <div class="mb-3">
+                <label for="first-last-name" class="form-label">First and Last Name</label>
+                <input id="first-last-name" type="text" class="form-control" autocomplete="off" tabindex="0" name="entry.631554197" required>
+            </div>
+            <div class="mb-3">
+                <label for="email-or-phone" class="form-label">Email Address or Phone Number</label>
+                <input id="email-or-phone" type="text" class="form-control" autocomplete="off" name="entry.993558858" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Tell Us About Your Project</label>
+                <textarea id="message" class="form-control" rows="5" name="entry.69405291" required></textarea>
+            </div>
+            <button type="submit" class="btn">Request My Free Estimate</button>
+        </form>
+        <ul id="sidebar-images" class="p-0 lst-n">
+            <li>
+                <figure class="mx-0">
+                    <img loading="lazy" src="images/small/circular-fire-pit-Holliston-Mass.webp" width="226" height="348" alt="Replace with asphalt driveway project photo">
+                    <figcaption class="p-3 bg-w border"><address>Project Photo</address>Residential asphalt driveway installation.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="mx-0">
+                    <img loading="lazy" src="images/small/raised-patio-with-fire-pit-kitchen-img3-concord-mass.webp" width="226" height="348" alt="Replace with commercial parking lot photo">
+                    <figcaption class="p-3 bg-w border"><address>Project Photo</address>Commercial asphalt paving project.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="mx-0">
+                    <img loading="lazy" src="images/small/patio-fire-pit-pool-fireplace-concord-mass.webp" width="226" height="348" alt="Replace with resurfacing project photo">
+                    <figcaption class="p-3 bg-w border"><address>Project Photo</address>Asphalt resurfacing and site improvements.</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+    #}
