@@ -1,0 +1,15 @@
+<section class="container py-5">
+
+    <h2 class="pipe">
+        {{ sectionHeading }}
+    </h2>
+
+    {% if sectionSubheading %}
+    <p class="lead">
+        {{ sectionSubheading }}
+    </p>
+    {% endif %}
+
+    {{ content | safe }}
+
+</section>

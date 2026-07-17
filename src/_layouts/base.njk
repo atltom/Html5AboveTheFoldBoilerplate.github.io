@@ -4,24 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {# =========================     SEO CORE     ========================= #}
-  <title>{{ title or "S. Phaneuf & Associates" }}</title>
-  <meta name="description" content="{{ description or 'Professional asphalt paving, excavation, and hardscape services in Massachusetts.' }}">
-  <link rel="canonical" href="https://sphaneufassociates.com{{ canonical or page.url }}">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description  }}">
+  <link rel="canonical" href="https://sphaneufassociates.com{{ canonical }}">
   {# =========================     OPEN GRAPH     ========================= #}
   <meta property="og:title" content="{{ title or 'S. Phaneuf & Associates' }}">
   <meta property="og:description" content="{{ description or 'Professional paving and site development services in Massachusetts.' }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sphaneufassociates.com{{ page.url }}">
-  <meta property="og:image" content="https://sphaneufassociates.com/images/S-Phaneuf-Associates.webp">
+  <meta property="og:image" content="https://sphaneufassociates.com/images/{{ ogImage or 'S-Phaneuf-Associates.webp' }}">
   {# =========================     FAVICONS     ========================= #}
   <link rel="icon" href="/images/favicon96c.png" sizes="96x96">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   {# =========================     CSS     ========================= #}
-  <link rel="stylesheet" href="/css/templatestyles.min.css">
+  <link rel="stylesheet" href="/css/templatestyles.css">
+  {{ head | safe }}
+  {% if schema %}<script type="application/ld+json">{{ schema | safe }}</script>{% endif %}
 </head>
-<body>
+<body class="{{ bodyClass }}">
   {% include "header.njk" %}
-  <main>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main class="{{ mainClass }}">
+     {% if heroHeading %}
+        {% include "components/hero.njk" %}
+    {% endif %}
     {{ content | safe }}
   </main>
   {% include "footer.njk" %}

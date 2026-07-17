@@ -1,0 +1,12 @@
+
+<section class="portfolio">
+
+    <h2 class="pipe pt-5">4 {{ portfolio.heading }}</h2>
+
+    <div class="portfolio-grid">
+        {% for project in projects[portfolio.type] %}
+            {% include "components/project-card.njk" %}
+        {% endfor %}
+    </div>
+
+</section>

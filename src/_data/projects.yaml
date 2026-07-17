@@ -1,0 +1,24 @@
+asphalt:
+  - title: "Driveway Resurfacing Project"
+    location: "Lexington, MA"
+    image: "/images/projects/driveway.jpg"
+    description: >
+      Professional asphalt resurfacing for a smooth and durable driveway.
+
+  - title: "Parking Lot Renovation Project"
+    location: "Cambridge, MA"
+    image: "/images/projects/parkinglot.jpg"
+    description: >
+      Complete parking lot renovation with new asphalt paving and striping.
+masonry:
+  - title: "Countryside Living Project"
+    location: "Wellesley, MA"
+    image: "/images/projects/countryside.jpg"
+    description: >
+      Custom stone patio, retaining walls, and outdoor living space.
+
+  - title: "Duelling Fire Pits Project"
+    location: "Concord, MA"
+    image: "/images/projects/firepits.jpg"
+    description: >
+      Outdoor entertaining space featuring custom masonry fire pits.

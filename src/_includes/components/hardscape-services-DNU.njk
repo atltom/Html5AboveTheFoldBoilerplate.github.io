@@ -1,0 +1,239 @@
+<section id="services">
+
+<h2 class="pipe pt-5">
+
+    {{ servicesHeading }}
+
+</h2>
+
+
+<p class="py-3">
+
+    {{ servicesIntro }}
+
+</p>
+
+
+
+<div class="service-navigation">
+
+    <h3>
+
+        Quick Links
+
+    </h3>
+
+    <ul>
+
+        {% for item in servicesNavigation %}
+
+            <li>
+
+                <a href="#{{ item.id }}">
+
+                    {{ item.title }}
+
+                </a>
+
+            </li>
+
+        {% endfor %}
+
+    </ul>
+
+</div>
+
+
+
+{% for service in services %}
+
+<section id="{{ service.id }}" class="pt-5">
+
+
+    <h3 class="pipe ms-0">
+
+        {{ service.title }}
+
+    </h3>
+
+
+    {% for paragraph in service.paragraphs %}
+
+        <p class="py-2">
+
+            {{ paragraph }}
+
+        </p>
+
+    {% endfor %}
+
+
+
+    <h4 class="pt-4">
+
+        Popular {{ service.title }} Features
+
+    </h4>
+
+
+    <ul class="ps-3 li">
+
+        {% for feature in service.projectFeatures %}
+
+            <li>
+
+                {{ feature }}
+
+            </li>
+
+        {% endfor %}
+
+    </ul>
+
+
+
+    <h4 class="pt-4">
+
+        Benefits of Professional Installation
+
+    </h4>
+
+
+    <ul class="ps-3 li pb-5">
+
+        {% for benefit in service.benefits %}
+
+            <li>
+
+                {{ benefit }}
+
+            </li>
+
+        {% endfor %}
+
+    </ul>
+
+</section>
+
+{% endfor %}
+
+</section>
+
+
+
+
+
+
+
+{# 
+<section class="pt-5">
+
+    <h2 class="pipe">
+        {{ servicesHeading }}
+    </h2>
+
+    {% if servicesIntro %}
+    <p class="py-3">
+        {{ servicesIntro }}
+    </p>
+    {% endif %}
+
+
+    {% for service in serviceSections %}
+
+    <section class="py-5">
+
+        <h3 class="pipe ms-0 py-0">
+            {{ service.title }}
+        </h3>
+
+        {% if service.subtitle %}
+        <p class="lead">
+            {{ service.subtitle }}
+        </p>
+        {% endif %}
+
+
+        {% if service.image %}
+
+        <img
+            src="{{ service.image }}"
+            alt="{{ service.title }}"
+            class="img-fluid rounded float-lg-end ms-lg-4 mb-4"
+            loading="lazy"
+            width="500">
+
+        {% endif %}
+
+
+        {% if service.paragraphs %}
+
+            {% for paragraph in service.paragraphs %}
+
+            <p class="py-2">
+                {{ paragraph }}
+            </p>
+
+            {% endfor %}
+
+        {% endif %}
+
+
+        {% if service.materials %}
+
+        <h4 class="pt-4">
+            Common Materials
+        </h4>
+
+        <ul class="ps-3 li">
+
+            {% for material in service.materials %}
+
+            <li>
+                {{ material }}
+            </li>
+
+            {% endfor %}
+
+        </ul>
+
+        {% endif %}
+
+
+        {% if service.features %}
+
+        <h4 class="pt-4">
+            Popular Features
+        </h4>
+
+        <ul class="ps-3 li">
+
+            {% for feature in service.features %}
+
+            <li>
+                {{ feature }}
+            </li>
+
+            {% endfor %}
+
+        </ul>
+
+        {% endif %}
+
+
+        {% if service.cta %}
+
+        <p class="pt-4 fw-6">
+            {{ service.cta }}
+        </p>
+
+        {% endif %}
+
+    </section>
+
+    {% endfor %}
+
+</section>
+
+
+#}

@@ -1,22 +1,19 @@
 <div id="hero" class="big-image {{ heroImageClass }}">
     <div class="overlay">
-
         <h1 class="hero-h1">
             {{ heroHeading }}
-            <span class="no-wrap">{{ heroHeadingNoWrap }}</span>
+            {% if heroHeadingNoWrap %}
+                <span class="no-wrap">{{ heroHeadingNoWrap }}</span>
+            {% endif %}
         </h1>
-
         <hr class="my-3 mx-1">
-
         <p class="hero-p p-0 fw-7">
             {{ heroSubheading }}
         </p>
-
         <div class="t-c mt-3">
             <a class="hero-btn btn fw-6" href="/contact-us">
                 {{ heroCTA }}
             </a>
         </div>
-
     </div>
 </div>

@@ -1,4 +1,27 @@
+const yaml = require("js-yaml");
 
+module.exports = function(eleventyConfig) {
+    // 1. Tell 11ty to parse both .yaml and .yml files in _data
+    eleventyConfig.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
+
+    // 2. Your existing passthrough copies
+    eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("images");
+    eleventyConfig.addPassthroughCopy("js");
+
+    // 3. Your existing directory structure settings
+    return {
+        dir: {
+            input: "src",
+            data: "_data",
+            includes: "_includes",
+            layouts: "_layouts",
+            output: "dist"
+        }
+    };
+};
+
+/*
 module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("css");
@@ -8,12 +31,14 @@ module.exports = function(eleventyConfig) {
     return {
         dir: {
             input: "src",
+            data: "_data",
             includes: "_includes",
             layouts: "_layouts",
             output: "dist"
         }
     };
 };
+*/
 
 
 /*
@@ -54,4 +79,49 @@ module.exports = function(eleventyConfig) {
         }
     };
 };
+*/
+
+
+
+/*
+const htmlmin = require("html-minifier-terser");
+
+module.exports = function(eleventyConfig) {
+
+    const isProd = process.env.ELEVENTY_ENV === "production";
+
+    eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("images");
+    eleventyConfig.addPassthroughCopy("js");
+
+    if (isProd) {
+        eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+
+            if (outputPath && outputPath.endsWith(".html")) {
+
+                return htmlmin.minify(content, {
+                    useShortDoctype: true,
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    removeRedundantAttributes: true,
+                    removeEmptyAttributes: true,
+                    minifyCSS: true,
+                    minifyJS: true
+                });
+            }
+
+            return content;
+        });
+    }
+
+    return {
+        dir: {
+            input: "src",
+            includes: "_includes",
+            layouts: "_layouts",
+            output: "dist"
+        }
+    };
+};
+
 */

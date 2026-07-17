@@ -1,0 +1,18 @@
+{% set service = services[serviceType] %}
+<div class="container flex-container mb-5 pb-5">
+    <article class="mt-5 content">
+        {% include "components/intro-section.njk" %}
+        {% include "components/benefits.njk" %}
+        {% include "components/services.njk" %}
+        {% if portfolio %}{% include "components/portfolio.njk" %}{% endif %}
+        {% include "components/process.njk" %}     
+        {% include "components/faq.njk" %}
+        {% include "components/areas-served.njk" %}
+        {% include "components/related-services.njk" %}
+    </article>
+    <aside class="contact-form mt-5 mb-1">
+    {% include "components/sidebar.njk" %}
+    </aside>
+</div>
+{% include "components/final-cta.njk" %}  
+{% include "components/full-width-image.njk" %}

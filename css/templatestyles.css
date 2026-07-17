@@ -18,6 +18,26 @@ button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;backgr
 
 #cookie-consent-banner{z-index:999;position: fixed; bottom: 0; width: 100%; background-color: #333; color: white; padding: 15px; text-align: center;}
 
+.skip-link{
+
+    position:absolute;
+    left:-9999px;
+    top:0;
+
+}
+
+
+.skip-link:focus{
+
+    left:20px;
+    top:20px;
+    padding:15px;
+    z-index:9999;
+    background:white;
+    border:1px solid #ccc;
+
+}
+
 
 #fixedbar{background:#bc5a15;color:#fff;position:fixed;top:0;width:100%;height:30px;z-index:3;font-size:13px;font-weight:700;padding:7px 0 0 30px;padding-left:3.33vw}
 #phone-icon,#email-icon{width:10px;height:auto;display:inline-block;margin-right:3px}
@@ -144,7 +164,7 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
   .nav{height:auto}
   .nav a{display:inline-block}
   .big-image{margin-top:157px}
-  .dropdown-content{position:fixed;top:159px;width:260px;left:275px}
+  .dropdown-content{position:fixed;top:159px;width:260px;left:65px}
   .dropdown-content.show{display:inline;border:1px solid #212f4a}
   .overlay{padding:25px}
   .fcontainer{display:flex;flex-wrap:wrap;justify-content:space-between}
@@ -152,7 +172,7 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 
 @media (min-width:768px) {
   .nav{max-height:175px}
-  .dropdown-content{top:164px;left:300px}
+  .dropdown-content{top:164px;left:64px}
   body{font-size:17px}
   h1{font-size:2.5rem}
   .fcontainer{flex-wrap:nowrap;}
@@ -216,7 +236,7 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
   .nav{max-height:134px}
   #nav-wrap{float:right;margin:25px 20px 0}
   #logo{width:100%}
-  .dropdown-content{top:100px;left:calc(100vw - 365px)}
+  .dropdown-content{top:100px;left:calc(100vw - 596px)}
   /* .card-container,.container{max-width:1140px;margin:auto;} */
   .card-container,.container{max-width:1140px;margin:auto;}
 }
@@ -253,3 +273,59 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 #send-btn{ background-color: #2f3f5e; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;}
 #chat-close{ cursor: pointer;}
 @keyframes fadeIn{ from{ opacity: 0; transform: translateY(10px);} to{ opacity: 1; transform: translateY(0);}}
+
+
+
+.services-navigation{
+
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+padding-top:30px;
+padding-bottom:40px;
+
+}
+
+
+.services-navigation a{
+
+text-decoration:none;
+padding:10px 20px;
+border-radius:4px;
+background:#f4f4f4;
+font-weight:600;
+color:#1e396c;
+
+}
+
+
+.service-callout{
+
+padding:25px;
+margin-top:30px;
+margin-bottom:30px;
+background:#f8f8f8;
+border-left:5px solid #1e396c;
+
+}
+
+
+.service-callout h4{
+
+margin-bottom:20px;
+
+}
+
+
+.service-callout ul{
+
+padding-left:25px;
+
+}
+
+
+.service-callout li{
+
+line-height:35px;
+
+}

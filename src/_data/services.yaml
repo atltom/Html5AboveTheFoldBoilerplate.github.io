@@ -1,0 +1,212 @@
+masonry:
+  benefits:
+    heading: Why Invest in Professional Hardscaping?
+    intro: >
+          A professionally designed hardscape does much more than improve the appearance of your home. Well-built patios, walkways, retaining walls, outdoor kitchens, fireplaces, and fire features create functional outdoor living spaces while increasing property value and reducing long-term maintenance. Quality construction also protects your investment by ensuring every feature is built to perform through New England's changing weather.
+    items:
+      - title: Increase Property Value
+        description: >
+          Professionally installed patios, walkways, retaining walls, and outdoor living spaces improve curb appeal while adding lasting value that homeowners can enjoy for many years.
+      - title: Expand Your Outdoor Living Space
+        description: >
+          Extend your home's usable living area with custom patios, outdoor kitchens, fireplaces, seating areas, and gathering spaces designed for relaxing, entertaining, and spending time with family and friends.
+      - title: Built for New England Weather
+        description: >
+          Proper excavation, grading, drainage, and quality base preparation help every installation withstand freeze-thaw cycles, heavy use, and changing seasonal conditions.
+      - title: Designed Specifically for Your Property
+        description: >
+          Every hardscape is custom designed around your home's architecture, existing landscape, elevation changes, and the way you want to use your outdoor space.
+      - title: Low Maintenance & Long Lasting
+        description: >
+          Natural stone, concrete pavers, and quality masonry materials provide decades of beauty while requiring very little maintenance compared to many traditional landscape features.
+  services:
+    heading: "Our Masonry & Hardscape Services"
+    intro: >
+      We design and construct beautiful outdoor living
+      spaces throughout Massachusetts.
+    items:
+      - title: Patio Construction
+        anchor: patios
+        image:
+          src: /images/small/pool-and-spa-wellesley-mass.webp
+          alt: Custom natural stone pool patio and spa constructed by S. Phaneuf & Associates in Wellesley, Massachusetts.
+        paragraphs:
+          - >
+            A professionally designed patio creates the foundation for an outdoor living space that can be enjoyed throughout every season in Massachusetts. Whether you're looking to create a quiet backyard retreat, an outdoor dining area, or an expansive entertainment space for family and friends, a custom patio provides beauty, comfort, and lasting value.  At S. Phaneuf & Associates, we design and build natural stone, bluestone, and concrete paver patios that are thoughtfully planned around the way you live and use your property.
+          - >
+            Every patio we build begins with proper site preparation. We carefully evaluate grading, drainage, and existing landscape conditions before excavation begins. A properly constructed base is one of the most important parts of a long-lasting patio, especially in New England where freeze-thaw cycles can cause poorly installed hardscapes to shift or settle over time. By combining quality materials with proven construction techniques, we create patios that are built to remain both beautiful and durable for decades.
+          - >
+            Custom patios can be designed as standalone features or incorporated into complete outdoor living environments that include retaining walls, outdoor kitchens, fire pits, fireplaces, pool decks, landscape lighting, seating walls, and stone walkways. Whether you're renovating an existing backyard or starting with a blank canvas, we'll help you design an outdoor space that complements your home while providing years of enjoyment and increasing the overall value of your property.
+        features:
+          heading: Popular Patio Features
+          items:
+            - Natural stone patios
+            - Bluestone patios
+            - Concrete paver patios
+            - Outdoor dining spaces
+            - Poolside patios
+            - Seating walls
+            - Landscape lighting
+            - Integrated drainage solutions
+            - Patio extensions
+            - Custom masonry accents
+        benefits:
+          heading: Benefits of Custom Patio Construction
+          items:
+            - Creates additional outdoor living space for relaxing and entertaining.
+            - Improves curb appeal and increases property value.
+            - Provides a durable, low-maintenance outdoor surface.
+            - Complements your home's existing architecture and landscaping.
+            - Creates comfortable gathering spaces for family and friends.
+            - Built to withstand Massachusetts' changing weather conditions.
+            - Can be seamlessly integrated with outdoor kitchens, fireplaces, and pool decks.
+            - Provides year-round enjoyment while extending your home's usable living space.
+        closing:
+          - >
+            From intimate backyard patios to expansive outdoor entertainment areas, every project is carefully designed around your property's unique layout, your lifestyle, and your long-term goals. We believe beautiful outdoor spaces should feel like a natural extension of your home rather than an afterthought.
+          - >
+            If you're considering a custom patio in Massachusetts, our experienced craftsmen will guide you through every step of the design and construction process to create a timeless outdoor space that can be enjoyed for generations.
+      - title: Patios
+        paragraphs: 
+        - >
+          TODO.. Custom stone and paver patios designed for outdoor entertaining.
+
+      - title: Retaining Walls
+        paragraphs: 
+        - >
+          TODO.. Decorative and structural retaining walls built for lasting performance.
+
+      - title: Outdoor Fireplaces
+        paragraphs: 
+        - >
+          TODO.. Custom fireplaces designed to become the centerpiece of your outdoor space.
+
+      - title: Pool Decks
+        paragraphs: 
+        - >
+          TODO..  Beautiful and durable pool surrounds for residential properties.
+  process:
+    heading: "Our Design & Construction Process"
+    intro: >
+      Every successful hardscape project begins with thoughtful planning and quality craftsmanship. Our proven design and construction process allows us to create beautiful outdoor spaces while ensuring every retaining wall, patio, walkway, and masonry feature performs as well as it looks. Throughout construction, we keep homeowners informed so there are no surprises along the way.
+    steps:
+      - title: Consultation & Design
+        description: >
+          We meet with you to discuss your goals, evaluate your property, understand how you plan to use the space, and develop a custom design that fits your vision and budget.
+      - title: Site Preparation
+        description: >
+          Proper excavation, grading, drainage improvements, and compacted base preparation create the strong foundation required for long-lasting masonry and hardscape construction.
+      - title: Professional Construction
+        description: >
+          Our experienced craftsmen carefully install every patio, retaining wall, walkway, fireplace, outdoor kitchen, and masonry feature using premium materials and proven installation methods.
+      - title: Finishing Details
+        description: >
+          We complete final grading, joint finishing, edging, cleanup, and landscape integration to ensure the finished project blends naturally with the surrounding property.
+      - title: Final Walkthrough
+        description: >
+          Before the project is complete, we inspect every detail with you to ensure the finished work meets our quality standards and exceeds your expectations.
+  faq:
+    heading: "Frequently Asked Questions"
+    items:
+      - question: What hardscape features do you build?
+        answer: >
+          We build patios, walkways, retaining walls, pool decks, outdoor kitchens,
+          fireplaces, fire pits, stone steps, seating walls, veneer, and many
+          other custom masonry features.
+      - question: What materials do you use?
+        answer: >
+          We work with natural stone, concrete pavers, brick, granite, bluestone,
+          manufactured wall systems, and other premium hardscape materials.
+      - question: Do you provide custom designs?
+        answer: >
+          Yes. Every project is designed around your property, your goals, and
+          your preferred materials.
+      - question: Can hardscaping improve drainage?
+        answer: >
+          Absolutely. Proper grading, drainage planning, and retaining wall
+          construction are incorporated into many of our projects.
+      - question: Do you serve residential and commercial properties?
+        answer: >
+          Yes. We provide masonry and hardscape services for homeowners,
+          businesses, HOAs, and commercial properties throughout Massachusetts.
+
+      - question: How much does a paver patio cost in Massachusetts?
+        answer: >
+          The cost of a paver patio depends on its size, the materials you
+          choose, site conditions, drainage requirements, and custom features
+          such as fire pits, seating walls, or outdoor kitchens. Every project
+          is different, so we provide a detailed estimate based on your property,
+          design goals, and budget.
+
+      - question: Should I choose natural stone or concrete pavers?
+        answer: >
+          Both materials offer excellent durability and appearance. Natural stone
+          provides a timeless, one-of-a-kind look with unique color variations,
+          while concrete pavers offer a wide variety of styles, colors, and
+          patterns at a lower cost. We'll help you select the best option based
+          on your home's architecture, maintenance preferences, and budget.
+
+      - question: How long does a retaining wall last?
+        answer: >
+          A professionally constructed retaining wall can last for decades when
+          it is built with proper drainage, a solid foundation, and quality
+          materials. Our retaining walls are designed to withstand New England's
+          freeze-thaw cycles while providing long-term structural support and
+          enhancing the appearance of your landscape.
+
+      - question: Can you build around an existing pool?
+        answer: >
+          Yes. We regularly design and build pool decks, patios, walkways,
+          retaining walls, outdoor kitchens, and seating areas around existing
+          swimming pools. Every project is carefully planned to improve safety,
+          drainage, accessibility, and the overall outdoor living experience.
+
+      - question: Do patios increase home value?
+        answer: >
+          A professionally designed patio can increase your home's value while
+          making your outdoor space more functional and enjoyable. Features such
+          as natural stone patios, outdoor fireplaces, kitchens, and walkways
+          are attractive to many homebuyers and can improve curb appeal as well
+          as everyday living.
+
+      - question: How long does construction take?
+        answer: >
+          Construction time depends on the size and complexity of the project.
+          Smaller patios may take only a few days, while complete outdoor living
+          spaces with retaining walls, kitchens, lighting, and multiple hardscape
+          features can take several weeks. Before work begins, we'll provide a
+          project schedule so you know what to expect.
+
+
+
+asphalt:
+  benefits:
+    heading: "Why Choose Our Asphalt Services"
+
+    items:
+      - title: Expert Installation
+        description: Our team ensures a smooth and durable asphalt surface.
+
+      - title: Long-Lasting Results
+        description: We use high-quality materials for a surface that stands the test of time.
+
+      - title: Cost-Effective Solutions
+        description: Our services provide excellent value for your investment.
+
+      - title: Professional Maintenance
+        description: We offer maintenance services to keep your asphalt in top condition.
+  services:
+    heading: "Why Choose Our Asphalt Services"
+
+    items:
+      - title: Expert Installation
+        description: Our team ensures a smooth and durable asphalt surface.
+
+      - title: Long-Lasting Results
+        description: We use high-quality materials for a surface that stands the test of time.
+
+      - title: Cost-Effective Solutions
+        description: Our services provide excellent value for your investment.
+
+      - title: Professional Maintenance
+        description: We offer maintenance services to keep your asphalt in top condition.

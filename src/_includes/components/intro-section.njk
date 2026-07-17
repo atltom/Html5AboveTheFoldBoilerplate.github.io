@@ -1,0 +1,17 @@
+<section class="intro-section">
+    <h2 class="pipe">{{ intro.heading }}</h2>
+    {% for paragraph in intro.paragraphs %}
+    <p class="py-2{% if loop.first %} pt-4{% endif %}">{{ paragraph }}</p>
+    {% endfor %}
+    {% if intro.callout %}
+    <div class="my-3">
+        {% if intro.callout.title %}
+        <h3 class="mb-1">{{ intro.callout.title }}</h3>
+        {% endif %}
+        <p class="mb-0">{{ intro.callout.text }}</p>
+    </div>
+    {% endif %}
+    {% if intro.closing %}
+    <p class="py-2">{{ intro.closing }}</p>
+    {% endif %}
+</section>

@@ -1,0 +1,178 @@
+<section id="gallery">
+    <h2 class="pipe pt-5">{{ portfolioHeading }}</h2>
+    {% if portfolioIntro %}<p class="lead">{{ portfolioIntro }}</p>{% endif %}
+    {% for project in portfolioProjects %}
+    <section class="py-4">
+        <h3 class="pipe ms-0 py-0 mt-3">{{ project.title }}</h3>
+        {% if project.location %}<address class="fw-6 c-b pt-2">{{ project.location }}</address>{% endif %}
+        {% if project.summary %}<p class="pt-3">{{ project.summary }}</p>{% endif %}
+        {% if project.features %}
+            <p class="small text-muted mb-4"><strong>Hardscape Features:</strong>
+                {% for feature in project.features %}{{ feature }}{% if not loop.last %} • {% endif %}{% endfor %}
+            </p>
+        {% endif %}
+
+        {% if project.homeownerGoals %}
+        <p class="h5 mt-4"><strong>Homeowner Goals</strong></p>
+        <p>{{ project.homeownerGoals }}</p>
+        {% endif %}
+
+        {% if project.whatWeBuilt %}
+        <p class="h5 mt-4"><strong>What We Built</strong></p>
+        <p>{{ project.whatWeBuilt }}</p>
+        {% endif %}
+
+        {% if project.completedResult %}
+        <p class="h5 mt-4"><strong>Completed Result</strong></p>
+        <p>{{ project.completedResult }}</p>
+        {% endif %}
+
+        <div class="container px-0 py-2 gallery">
+
+            <ul class="image-gallery">
+
+                {% for image in project.images %}
+
+                <li>
+
+                    <figure>
+
+                        <p class="lb" data-src="{{ image.full }}">
+
+                            <img
+                                src="{{ image.thumb }}"
+                                width="226"
+                                height="348"
+                                alt="{{ image.alt }}"
+                                loading="lazy">
+
+                        </p>
+
+                        {% if image.caption %}
+                        <figcaption>
+                            {{ image.caption }}
+                        </figcaption>
+                        {% endif %}
+
+                    </figure>
+
+                </li>
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    {% endfor %}
+
+</section>
+
+
+{% if additionalGalleryImages %}
+
+<section>
+
+    <h2 class="pipe">
+        {{ additionalGalleryHeading }}
+    </h2>
+
+    {% if additionalGalleryIntro %}
+    <p class="lead">
+        {{ additionalGalleryIntro }}
+    </p>
+    {% endif %}
+
+    <div class="container px-0 py-2 gallery">
+
+        <ul class="image-gallery">
+
+            {% for image in additionalGalleryImages %}
+
+            <li>
+
+                <figure>
+
+                    <a href="{{ image.full }}" class="lb">
+
+                        <img
+                            src="{{ image.thumb }}"
+                            alt="{{ image.alt }}"
+                            loading="lazy">
+
+                    </a>
+
+                    {% if image.caption %}
+                    <figcaption>
+                        {{ image.caption }}
+                    </figcaption>
+                    {% endif %}
+
+                </figure>
+
+            </li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+
+</section>
+
+{% endif %}
+
+{% if portfolioClosing %}<p class="">{{ portfolioClosing }}</p>{% endif %}
+
+
+
+
+
+
+{# 
+<section id="gallery">
+<h2 class="pipe pt-5">{{ portfolioHeading }}</h2>
+{% if portfolioIntro %}<p class="leadaaaaaaaaaaaaaaa">{{ portfolioIntro }}</p>{% endif %}
+{% for project in portfolioProjects %}
+<div class="py-3">
+    <h3 class="pipe ms-0 py-0 mt-3">{{ project.title }}</h3>
+    {% if project.location %}<address class="fw-6 c-b pt-3">{{ project.location }}</address>{% endif %}
+    {% if project.description %}<p class="pt-3">{{ project.description }}</p>{% endif %}
+    <p class="small text-muted">
+    <strong>Hardscape Features:</strong>
+    Bluestone Patio • Outdoor Kitchen • Retaining Walls • Masonry Fireplace
+    </p>
+
+    {% if project.intro %}<p class="pt-5">{{ project.intro }}</p>{% endif %}
+    {% if project.build %}<p class="pt-3">{{ project.build }}</p>{% endif %}
+    {% if project.result %}<p class="pt-3">{{ project.result }}</p>{% endif %}
+    
+    <div class="container px-0 py-2 gallery">
+        <ul class="image-gallery">
+            {% for image in project.images %}
+            <li>
+                <figure class="p-0 m-0">
+                    <p class="lb" data-src="{{ image.full }}" >
+                        <img src="{{ image.thumb }}" height="348" width="226" alt="{{ image.alt }}" loading="lazy">
+                    </p>
+                </figure>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endfor %}
+</section>
+
+{% if additionalGalleryImages %}<h2 class="pipe">{{ additionalGalleryHeading }}</h2>
+{% if additionalGalleryIntro %}<p class="lead">{{ additionalGalleryIntro }}</p>{% endif %}
+<div class="container px-0 py-2 gallery">
+    <ul class="image-gallery">
+        {% for image in additionalGalleryImages %}<li><figure class="p-0 m-0"><a href="{{ image.full }}" class="lb"><img src="{{ image.thumb }}" alt="{{ image.alt }}" loading="lazy"></a></figure></li>{% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+#}

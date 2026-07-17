@@ -18,6 +18,11 @@ heroImage: asphalt-paving.webp
 heroCTA: Get Started
 
 
+portfolio:
+  enabled: true
+  type: asphalt
+
+
 benefitsHeading: Why Choose Asphalt for Your Driveway, Parking Lot, or Road?
 benefitsIntro: >
   Whether you're installing a new driveway, replacing a worn parking lot,
@@ -252,20 +257,18 @@ sidebarImages:
 ctaHeading: Ready to Start Your Asphalt Paving Project?
 ctaText: Call today to schedule your free estimate.
 ---
-
-    {% include "components/hero.njk" %}
-    <div class="container flex-container mb-5 pb-5">
-        <div class="mt-5 content">
-            {% include "components/benefits.njk" %}
-            {% include "components/services.njk" %}
-            {% include "components/process.njk" %}
-            {% include "components/why-choose.njk" %}
-            {% include "components/estimate-cta.njk" %}
-            {% include "components/faq.njk" %}
-            {% include "components/areas-served.njk" %}
-            {% include "components/related-services.njk" %}
-        </div>
-        {% include "components/sidebar.njk" %}
+<div class="container flex-container mb-5 pb-5">
+    <div class="mt-5 content">
+        {% include "components/benefits.njk" %}
+        {% include "components/services.njk" %}
+        {% include "components/process.njk" %}
+        {% include "components/why-choose-DNU.njk" %}
+        {% include "components/estimate-cta.njk" %}
+        {% include "components/faq.njk" %}
+        {% include "components/areas-served.njk" %}
+        {% include "components/related-services.njk" %}
     </div>
-    {% include "components/cta-callout.njk" %}
-    {% include "components/full-width-image.njk" %}
+    {% include "components/sidebar.njk" %}
+</div>
+{% include "components/cta-callout.njk" %}
+{% include "components/full-width-image.njk" %}

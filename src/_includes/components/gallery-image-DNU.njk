@@ -1,0 +1,35 @@
+<li>
+    <figure>
+        <p class="lb" data-src="{{ fullImage }}">
+        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+            <!--<img src="{{ thumbnail }}" alt="{{ alt }}" class="img-fluid rounded">-->
+            <img loading="lazy" src="images/small/pool-and-spa-wellesley-mass.webp" height="348" width="226" alt="Luxurious Pool and Spa with Elegant Stone Patio in Wellesley, Massachusetts">
+        </p>
+
+        {% if caption %}
+            <figcaption>
+                {% if location %}<address>{{ location }}</address>{% endif %}
+                {{ caption }}
+            </figcaption>
+        {% endif %}
+    </figure>
+</li>
+
+
+{#
+nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+<li>
+    <figure>
+        <a href="{{ fullImage }}" class="glightbox">
+            <img src="{{ thumbnail }}" alt="{{ alt }}" class="img-fluid rounded">
+        </a>
+
+        {% if caption %}
+            <figcaption>
+                {% if location %}<address>{{ location }}</address>{% endif %}
+                {{ caption }}
+            </figcaption>
+        {% endif %}
+    </figure>
+</li>
+#}
