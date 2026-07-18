@@ -1,122 +1,19 @@
-{% if service.services %}
-<section class="services">
-
-    {% if service.services.heading %}
-    <h2 class="pipe pt-5">{{ service.services.heading }}</h2>
-    {% endif %}
-
-    {% if service.services.intro %}
-    <p class="intro-text">{{ service.services.intro }}</p>
-    {% endif %}
-
+{# <p>serviceType:{{ serviceType }}</p><br><p>benefits:{{ benefits | dump }}</p><br><p>services:{{ services | dump }}</p><br><p>service:{{ service | dump }}</p><br> #}
+{% if service.services %}<section class="services">
+    {% if service.services.heading %}<h2 class="pipe pt-5">{{ service.services.heading }}</h2>{% endif %}
+    {% if service.services.intro %}<p class="intro-text">{{ service.services.intro }}</p>{% endif %}
     {% if service.services.items %}
     <div class="services-list">
-
         {% for item in service.services.items %}
         <div class="service-item" id="{{ item.anchor }}">
-
-            {% if item.title %}
-            <h3>{{ item.title }}</h3>
-            {% endif %}
-
-            {# Loop through the paragraphs array for the description #}
-            {% if item.paragraphs %}
-                {% for paragraph in item.paragraphs %}
-                <p class="py-2">{{ paragraph }}</p>
-                {% endfor %}
-            {% endif %}
-
-            {# Render the service image if it exists #}
-            {% if item.image %}
-            <div class="service-image my-3">
-                <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy" class="img-fluid">
-            </div>
-            {% endif %}
-
-            {# Optional: Render Popular Features if present #}
-            {% if item.features %}
-            <div class="service-features mt-4">
-                <h4>{{ item.features.heading }}</h4>
-                <ul class="ps-3 li">
-                    {% for feature in item.features.items %}
-                    <li>{{ feature }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-
-            {# Optional: Render Benefits if present #}
-            {% if item.benefits %}
-            <div class="service-benefits mt-4">
-                <h4>{{ item.benefits.heading }}</h4>
-                <ul class="ps-3 li">
-                    {% for benefit in item.benefits.items %}
-                    <li>{{ benefit }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-
-            {# Loop through the closing paragraphs array #}
-            {% if item.closing %}
-                {% for closingParagraph in item.closing %}
-                <p class="py-2 fst-italic">{{ closingParagraph }}</p>
-                {% endfor %}
-            {% endif %}
-
+            {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
+            {% if item.paragraphs %}{% for paragraph in item.paragraphs %}<p class="py-2">{{ paragraph }}</p>{% endfor %}{% endif %}
+            {% if item.image %}<div class="service-image my-3"><img src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy" class="img-fluid"></div>{% endif %}
+            {% if item.features %}<div class="service-features mt-4"><h4>{{ item.features.heading }}</h4><ul class="ps-3 li">{% for feature in item.features.items %}<li>{{ feature }}</li>{% endfor %}</ul></div>{% endif %}
+            {% if item.benefits %}<div class="service-benefits mt-4"><h4>{{ item.benefits.heading }}</h4><ul class="ps-3 li">{% for benefit in item.benefits.items %}<li>{{ benefit }}</li>{% endfor %}</ul></div>{% endif %}
+            {% if item.closing %}{% for closingParagraph in item.closing %}<p class="py-2 fst-italic">{{ closingParagraph }}</p>{% endfor %}{% endif %}
         </div>
         {% endfor %}
-
     </div>
     {% endif %}
-
-</section>
-{% endif %}
-
-
-{#
-{% if  service.services %}
-
-<section class="services">
-
-    {% if  service.services.heading %}
-    <h2 class="pipe pt-5">3 {{ service.services.heading }}</h2>
-    {% endif %}
-
-    {% if service.services.intro %}
-    <p>{{ service.services.intro }}</p>
-    {% endif %}
-
-    {% if service.services.items %}
-
-    <div class="services-list">
-
-        {% for service in service.services.items %}
-
-        <div class="service-item">
-
-            {% if service.title %}
-            <h3>{{ service.title }}</h3>
-            {% endif %}
-
-            {% if service.description %}
-            <p>{{ service.description }}</p>
-            {% endif %}
-
-        </div>
-
-        {% endfor %}
-
-    </div>
-
-    {% endif %}
-
-</section>
-
-
-{% endif %}
-
-
-{#
-<p>serviceType:{{ serviceType }}</p><br><p>benefits:{{ benefits | dump }}</p><br><p>services:{{ services | dump }}</p><br><p>service:{{ service | dump }}</p><br>
-#}
+</section>{% endif %}

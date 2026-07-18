@@ -1,3 +1,17 @@
+<!--areas-served-->
+{% if areasServed %}
+<section class="py-5">
+    <h2 class="pipe">{{ areasServed.heading }}</h2>
+    {% if areasServed.intro %}<p class="py-3">{{ areasServed.intro }}</p>{% endif %}
+    <div class="row pt-2">
+        {% for location in areasServed.locations %}
+            <div class="col-md-4 col-sm-6 mb-2">
+                <p class="mb-1">{{ location }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</section>{% endif %}
+{#
 <h2 class="pipe pt-5">7 {{ areasHeading }}</h2>
 <p class="py-3">{{ areasIntro }}</p>
 <ul class="city-links">
@@ -6,3 +20,4 @@
 <div class="mt-4">
     <a class="btn btn-outlined" href="{{ areasButtonLink }}">{{ areasButtonText }}</a>
 </div>
+#}

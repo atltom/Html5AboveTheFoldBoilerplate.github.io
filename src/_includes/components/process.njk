@@ -1,13 +1,6 @@
+<!--process-->
 <section class="process">
-
     <h2 class="pipe pt-5">{{ service.process.heading }}</h2>
     <p>{{ service.process.intro }}</p>
-        
-    {% for step in service.process.steps %}
-    <div class="process-step">
-        <h3>{{ step.title }}</h3>
-        <p>{{ step.description }}</p>
-    </div>
-    {% endfor %}
-
+    {% for step in service.process.steps %}<div class="process-step"><h3>{{ step.title }}</h3><p>{{ step.description }}</p></div>{% endfor %}
 </section>

@@ -1,5 +1,15 @@
-<h2 class="pipe pt-5">8 {{ relatedHeading }}</h2>
+<!--related-services-->
+<h2 class="pipe pt-5">{{ relatedHeading }}</h2>
 <p class="py-3">{{ relatedIntro }}</p>
 <ul class="lst-n">
-{% for service in relatedServices %}<li{% if not loop.last %} class="py-2"{% endif %}><a href="/{{ service.slug }}">{{ service.name }}</a></li>{% endfor %}
+    {% for service in relatedServices %}
+    {# <li {% if not loop.last %} class="py-2"{% endif %}> #}
+    <li class="py-2"}>
+        {% if service.slug %}
+            <a href="/{{ service.slug }}">{{ service.name }}</a>
+        {% else %}
+            <span>{{ service.name }}</span>
+        {% endif %}
+    </li>
+    {% endfor %}
 </ul>

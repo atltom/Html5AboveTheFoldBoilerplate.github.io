@@ -1,0 +1,37 @@
+<section id="{{ service.anchor }}" class="py-5">
+
+    <h3 class="pipe ms-0">{{ service.title }}</h3>
+
+    {% if service.image.src %}
+        <img src="{{ service.image.src }}" alt="{{ service.image.alt }}" class="img-fluid rounded shadow my-4" loading="lazy">
+    {% endif %}
+
+    {% for paragraph in service.paragraphs %}
+        <p class="py-2">{{ paragraph }}</p>
+    {% endfor %}
+
+    <div class="service-callout">
+        <h4>{{ service.features.heading }}</h4>
+
+        <ul>
+            {% for item in service.features.items %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="service-callout">
+        <h4>{{ service.benefits.heading }}</h4>
+
+        <ul>
+            {% for item in service.benefits.items %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% for paragraph in service.closing %}
+        <p class="py-2">{{ paragraph }}</p>
+    {% endfor %}
+
+</section>

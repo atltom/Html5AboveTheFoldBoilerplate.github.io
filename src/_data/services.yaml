@@ -1,184 +1,3 @@
-masonry:
-  benefits:
-    heading: Why Invest in Professional Hardscaping?
-    intro: >
-          A professionally designed hardscape does much more than improve the appearance of your home. Well-built patios, walkways, retaining walls, outdoor kitchens, fireplaces, and fire features create functional outdoor living spaces while increasing property value and reducing long-term maintenance. Quality construction also protects your investment by ensuring every feature is built to perform through New England's changing weather.
-    items:
-      - title: Increase Property Value
-        description: >
-          Professionally installed patios, walkways, retaining walls, and outdoor living spaces improve curb appeal while adding lasting value that homeowners can enjoy for many years.
-      - title: Expand Your Outdoor Living Space
-        description: >
-          Extend your home's usable living area with custom patios, outdoor kitchens, fireplaces, seating areas, and gathering spaces designed for relaxing, entertaining, and spending time with family and friends.
-      - title: Built for New England Weather
-        description: >
-          Proper excavation, grading, drainage, and quality base preparation help every installation withstand freeze-thaw cycles, heavy use, and changing seasonal conditions.
-      - title: Designed Specifically for Your Property
-        description: >
-          Every hardscape is custom designed around your home's architecture, existing landscape, elevation changes, and the way you want to use your outdoor space.
-      - title: Low Maintenance & Long Lasting
-        description: >
-          Natural stone, concrete pavers, and quality masonry materials provide decades of beauty while requiring very little maintenance compared to many traditional landscape features.
-  services:
-    heading: "Our Masonry & Hardscape Services"
-    intro: >
-      We design and construct beautiful outdoor living
-      spaces throughout Massachusetts.
-    items:
-      - title: Patio Construction
-        anchor: patios
-        image:
-          src: /images/small/pool-and-spa-wellesley-mass.webp
-          alt: Custom natural stone pool patio and spa constructed by S. Phaneuf & Associates in Wellesley, Massachusetts.
-        paragraphs:
-          - >
-            A professionally designed patio creates the foundation for an outdoor living space that can be enjoyed throughout every season in Massachusetts. Whether you're looking to create a quiet backyard retreat, an outdoor dining area, or an expansive entertainment space for family and friends, a custom patio provides beauty, comfort, and lasting value.  At S. Phaneuf & Associates, we design and build natural stone, bluestone, and concrete paver patios that are thoughtfully planned around the way you live and use your property.
-          - >
-            Every patio we build begins with proper site preparation. We carefully evaluate grading, drainage, and existing landscape conditions before excavation begins. A properly constructed base is one of the most important parts of a long-lasting patio, especially in New England where freeze-thaw cycles can cause poorly installed hardscapes to shift or settle over time. By combining quality materials with proven construction techniques, we create patios that are built to remain both beautiful and durable for decades.
-          - >
-            Custom patios can be designed as standalone features or incorporated into complete outdoor living environments that include retaining walls, outdoor kitchens, fire pits, fireplaces, pool decks, landscape lighting, seating walls, and stone walkways. Whether you're renovating an existing backyard or starting with a blank canvas, we'll help you design an outdoor space that complements your home while providing years of enjoyment and increasing the overall value of your property.
-        features:
-          heading: Popular Patio Features
-          items:
-            - Natural stone patios
-            - Bluestone patios
-            - Concrete paver patios
-            - Outdoor dining spaces
-            - Poolside patios
-            - Seating walls
-            - Landscape lighting
-            - Integrated drainage solutions
-            - Patio extensions
-            - Custom masonry accents
-        benefits:
-          heading: Benefits of Custom Patio Construction
-          items:
-            - Creates additional outdoor living space for relaxing and entertaining.
-            - Improves curb appeal and increases property value.
-            - Provides a durable, low-maintenance outdoor surface.
-            - Complements your home's existing architecture and landscaping.
-            - Creates comfortable gathering spaces for family and friends.
-            - Built to withstand Massachusetts' changing weather conditions.
-            - Can be seamlessly integrated with outdoor kitchens, fireplaces, and pool decks.
-            - Provides year-round enjoyment while extending your home's usable living space.
-        closing:
-          - >
-            From intimate backyard patios to expansive outdoor entertainment areas, every project is carefully designed around your property's unique layout, your lifestyle, and your long-term goals. We believe beautiful outdoor spaces should feel like a natural extension of your home rather than an afterthought.
-          - >
-            If you're considering a custom patio in Massachusetts, our experienced craftsmen will guide you through every step of the design and construction process to create a timeless outdoor space that can be enjoyed for generations.
-      - title: Patios
-        paragraphs: 
-        - >
-          TODO.. Custom stone and paver patios designed for outdoor entertaining.
-
-      - title: Retaining Walls
-        paragraphs: 
-        - >
-          TODO.. Decorative and structural retaining walls built for lasting performance.
-
-      - title: Outdoor Fireplaces
-        paragraphs: 
-        - >
-          TODO.. Custom fireplaces designed to become the centerpiece of your outdoor space.
-
-      - title: Pool Decks
-        paragraphs: 
-        - >
-          TODO..  Beautiful and durable pool surrounds for residential properties.
-  process:
-    heading: "Our Design & Construction Process"
-    intro: >
-      Every successful hardscape project begins with thoughtful planning and quality craftsmanship. Our proven design and construction process allows us to create beautiful outdoor spaces while ensuring every retaining wall, patio, walkway, and masonry feature performs as well as it looks. Throughout construction, we keep homeowners informed so there are no surprises along the way.
-    steps:
-      - title: Consultation & Design
-        description: >
-          We meet with you to discuss your goals, evaluate your property, understand how you plan to use the space, and develop a custom design that fits your vision and budget.
-      - title: Site Preparation
-        description: >
-          Proper excavation, grading, drainage improvements, and compacted base preparation create the strong foundation required for long-lasting masonry and hardscape construction.
-      - title: Professional Construction
-        description: >
-          Our experienced craftsmen carefully install every patio, retaining wall, walkway, fireplace, outdoor kitchen, and masonry feature using premium materials and proven installation methods.
-      - title: Finishing Details
-        description: >
-          We complete final grading, joint finishing, edging, cleanup, and landscape integration to ensure the finished project blends naturally with the surrounding property.
-      - title: Final Walkthrough
-        description: >
-          Before the project is complete, we inspect every detail with you to ensure the finished work meets our quality standards and exceeds your expectations.
-  faq:
-    heading: "Frequently Asked Questions"
-    items:
-      - question: What hardscape features do you build?
-        answer: >
-          We build patios, walkways, retaining walls, pool decks, outdoor kitchens,
-          fireplaces, fire pits, stone steps, seating walls, veneer, and many
-          other custom masonry features.
-      - question: What materials do you use?
-        answer: >
-          We work with natural stone, concrete pavers, brick, granite, bluestone,
-          manufactured wall systems, and other premium hardscape materials.
-      - question: Do you provide custom designs?
-        answer: >
-          Yes. Every project is designed around your property, your goals, and
-          your preferred materials.
-      - question: Can hardscaping improve drainage?
-        answer: >
-          Absolutely. Proper grading, drainage planning, and retaining wall
-          construction are incorporated into many of our projects.
-      - question: Do you serve residential and commercial properties?
-        answer: >
-          Yes. We provide masonry and hardscape services for homeowners,
-          businesses, HOAs, and commercial properties throughout Massachusetts.
-
-      - question: How much does a paver patio cost in Massachusetts?
-        answer: >
-          The cost of a paver patio depends on its size, the materials you
-          choose, site conditions, drainage requirements, and custom features
-          such as fire pits, seating walls, or outdoor kitchens. Every project
-          is different, so we provide a detailed estimate based on your property,
-          design goals, and budget.
-
-      - question: Should I choose natural stone or concrete pavers?
-        answer: >
-          Both materials offer excellent durability and appearance. Natural stone
-          provides a timeless, one-of-a-kind look with unique color variations,
-          while concrete pavers offer a wide variety of styles, colors, and
-          patterns at a lower cost. We'll help you select the best option based
-          on your home's architecture, maintenance preferences, and budget.
-
-      - question: How long does a retaining wall last?
-        answer: >
-          A professionally constructed retaining wall can last for decades when
-          it is built with proper drainage, a solid foundation, and quality
-          materials. Our retaining walls are designed to withstand New England's
-          freeze-thaw cycles while providing long-term structural support and
-          enhancing the appearance of your landscape.
-
-      - question: Can you build around an existing pool?
-        answer: >
-          Yes. We regularly design and build pool decks, patios, walkways,
-          retaining walls, outdoor kitchens, and seating areas around existing
-          swimming pools. Every project is carefully planned to improve safety,
-          drainage, accessibility, and the overall outdoor living experience.
-
-      - question: Do patios increase home value?
-        answer: >
-          A professionally designed patio can increase your home's value while
-          making your outdoor space more functional and enjoyable. Features such
-          as natural stone patios, outdoor fireplaces, kitchens, and walkways
-          are attractive to many homebuyers and can improve curb appeal as well
-          as everyday living.
-
-      - question: How long does construction take?
-        answer: >
-          Construction time depends on the size and complexity of the project.
-          Smaller patios may take only a few days, while complete outdoor living
-          spaces with retaining walls, kitchens, lighting, and multiple hardscape
-          features can take several weeks. Before work begins, we'll provide a
-          project schedule so you know what to expect.
-
-
-
 asphalt:
   benefits:
     heading: "Why Choose Our Asphalt Services"
@@ -210,3 +29,816 @@ asphalt:
 
       - title: Professional Maintenance
         description: We offer maintenance services to keep your asphalt in top condition.
+
+# Asphalt Paving for Driveways, Parking Lots, and More in Massachusetts
+# Quality Asphalt Solutions for Your Driveway and Parking Needs
+# S. Phaneuf & Associates is one of the premier asphalt paving contractors for Massachusetts properties, handling all asphalt paving needs for driveways, parking lots, asphalt berms, repairs, drainage, catch basins, and more. We are committed to providing high-quality work and customer satisfaction. Customer satisfaction doesn’t stop with the job specifications. We are dedicated to excellent service with a people-friendly approach, making your experience with us for your paving needs a pleasant one. Whether your paving needs are for your residential or commercial property, S. Phaneuf & Associates has the experience, equipment, and skilled crews to complete your work on time, within budget, and with the quality results you expect. Visit our asphalt paving project photo page to see examples of our work on Massachusetts properties and see the quality we deliver.
+# Driveways
+# Parking Lots
+# Asphalt Berm
+# Repairs & Maintenance
+# Drainage
+# Catch Basins
+# and more
+
+
+
+
+# Excavation, Site Development & Grading Services for Massachusetts Properties
+# Comprehensive Excavation Services for Your Property Development
+# S. Phaneuf & Associates is a full-service excavation contractor, specializing in residential, commercial, and industrial site development for properties across Massachusetts. Our solid reputation was built on hard work, years of outstanding customer service, and on-time project delivery. Beyond digging up matter buried in the ground and leveling off the construction site, grading, and excavating, we also secure the necessary licenses and permits to perform the work while ensuring the safety of workers and the environment. Explore our excavation and site development project photo page to see our successful projects and understand the quality of our services for Massachusetts properties.
+# Excavation & Grading
+# Site Work
+# Foundations
+# Underground Utilities
+# Septic Systems
+# New Water Services
+# Repairs
+# and more
+
+
+
+
+# Reliable Snow & Ice Management for Massachusetts Residential and Commercial Properties
+# Dependable Snow Removal and Ice Management for Safety
+# S. Phaneuf & Associates understands the importance of maintaining safe and accessible parking lots and sidewalks for your customers and employees, as well as providing prompt, reliable snowplowing services for Massachusetts residential properties. Whether you need a one-time snow removal service or a regular ongoing snow and ice management solution, we can attend to your specific needs. We carefully monitor weather conditions and provide prompt preparation and response for all Massachusetts properties.
+
+
+
+
+
+masonry:
+  benefits:
+    heading: Why Invest in Professional Hardscaping?
+    intro: >
+          A professionally designed hardscape does much more than improve the appearance of your home. Well-built patios, walkways, retaining walls, outdoor kitchens, fireplaces, and fire features create functional outdoor living spaces while increasing property value and reducing long-term maintenance. Quality construction also protects your investment by ensuring every feature is built to perform through New England's changing weather.
+    items:
+      - title: Increase Property Value
+        description: >
+          Professionally installed patios, walkways, retaining walls, and outdoor living spaces improve curb appeal while adding lasting value that homeowners can enjoy for many years.
+      - title: Expand Your Outdoor Living Space
+        description: >
+          Extend your home's usable living area with custom patios, outdoor kitchens, fireplaces, seating areas, and gathering spaces designed for relaxing, entertaining, and spending time with family and friends.
+      - title: Built for New England Weather
+        description: >
+          Proper excavation, grading, drainage, and quality base preparation help every installation withstand freeze-thaw cycles, heavy use, and changing seasonal conditions.
+      - title: Designed Specifically for Your Property
+        description: >
+          Every hardscape is custom designed around your home's architecture, existing landscape, elevation changes, and the way you want to use your outdoor space.
+      - title: Low Maintenance & Long Lasting
+        description: >
+          Natural stone, concrete pavers, and quality masonry materials provide decades of beauty while requiring very little maintenance compared to many traditional landscape features.
+  services:
+    heading: "Our Masonry & Hardscape Services"
+    intro: >
+      We design and build beautiful outdoor living spaces for homes throughout Massachusetts.
+    items:
+      - title: Patio Construction
+        anchor: patios
+        image:
+          src: /images/small/pool-and-spa-wellesley-mass.webp
+          alt: Custom natural stone pool patio and spa constructed by S. Phaneuf & Associates in Wellesley, Massachusetts.
+        paragraphs:
+          - >
+            A great patio is the foundation of a backyard you can enjoy all year long in Massachusetts. Whether you want a quiet place to relax, an outdoor dining area, or a big space to host family and friends, a custom patio adds beauty and value to your home. At S. Phaneuf & Associates, we design and build natural stone, bluestone, and paver patios that fit your lifestyle and property perfectly.
+          - >
+            Every patio we build starts with the right groundwork. We carefully check the slopes, soil layout, and drainage before any digging begins. Having a deep, solid base is the most important part of building a long-lasting patio, especially with New England's harsh freeze-thaw winter cycles. By combining great materials with smart construction steps, we make patios that stay level and beautiful for decades.
+          - >
+            Your new patio can stand alone or connect with other outdoor projects like retaining walls, outdoor kitchens, fire pits, and pool decks. Whether you are fixing up an old backyard or starting fresh, we will help you design a space that looks great with your home, gives you a beautiful place to hang out, and boosts your property value.
+        features:
+          heading: Popular Patio Features
+          items:
+            - Natural stone patios
+            - Bluestone patios
+            - Concrete paver patios
+            - Outdoor dining spaces
+            - Poolside patios
+            - Built-in seating walls
+            - Backyard landscape lighting
+            - Backyard drainage solutions
+            - Extended patio spaces
+            - Custom stone borders
+        benefits:
+          heading: Benefits of Custom Patio Construction
+          items:
+            - Gives you more usable outdoor space to hang out and host events.
+            - Makes your home look amazing and increases its overall value.
+            - Offers a tough, low-maintenance surface that lasts for years.
+            - Matches your house style and your surrounding yard cleanly.
+            - Creates a comfortable gathering spot for friends and family.
+            - Stand up easily to unpredictable Massachusetts weather.
+            - Connects smoothly with outdoor kitchens, fireplaces, and pools.
+            - Extends your living space right out into your backyard.
+        closing:
+          - >
+            From small backyard setups to massive entertainment spaces, we design every project around your property and your long-term goals. We believe a beautiful yard should feel like a natural part of your home, not an afterthought.
+          - >
+            If you are thinking about adding a custom patio to your Massachusetts home, our skilled team will guide you through every step of the design and building process.
+      - title: "Retaining Walls"
+        anchor: retaining-walls
+        image:
+          src: "/images/small/curved-wall-wellesley-mass.webp"
+          alt: "Custom natural stone retaining wall constructed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            A well-built retaining wall does a lot more than just hold back dirt. It can turn a steep hill or a difficult slope into flat, highly usable backyard space. Homeowners in Massachusetts often use retaining walls to flatten out areas for new patios, fix tricky drainage issues, stop soil erosion, and build beautiful raised garden beds.
+          - >
+            At S. Phaneuf & Associates, we design and build custom retaining walls using strong natural stone and engineered block systems meant to handle heavy weather. We start every project with precise digging, leveling, and drainage planning. This guarantees your wall stays structurally strong and steady against the elements.
+          - >
+            Whether you need to fix a pooling water problem, gain more flat yard space, or just add some style to your property, a custom wall is a perfect fix. Many people integrate their retaining walls into larger backyard designs that include walkways, steps, lighting, and outdoor kitchens.
+        features:
+          heading: "Popular Retaining Wall Options"
+          items:
+            - Natural stone retaining walls
+            - Engineered block walls
+            - Decorative garden walls
+            - Terraced hill designs
+            - Structural seating walls
+            - Raised planting beds
+            - Built-in wall drainage
+            - Under-cap lighting features
+            - Stone steps and stairs
+            - Patio integration setups
+        benefits:
+          heading: "Benefits of Custom Retaining Walls"
+          items:
+            - flattens out steep slopes to create usable yard space.
+            - Stops soil erosion and helps guide rainwater away safely.
+            - Boosts your home's curb appeal and market value.
+            - Adds clean lines and structure to your landscape layout.
+            - Provides reliable, long-lasting performance for decades.
+            - Creates beautiful elevated spaces for plants and flowers.
+            - Ties in perfectly with patios, walkways, and pool decks.
+            - Built tough to survive freezing and thawing winters in MA.
+        closing:
+          - >
+            Every retaining wall we build is engineered to look great while doing heavy-duty work. We believe your outdoor spaces should be just as functional as they are beautiful.
+          - >
+            From small garden borders to large structural block walls, our experienced team will help you build a solid solution that adds value to your property.
+      - title: "Walkways & Garden Paths"
+        anchor: walkways
+        image:
+          src: "/images/small/tiled-walkway.webp"
+          alt: "Custom natural stone walkway and garden path constructed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            Custom walkways and garden paths do a lot more than just get you from point A to point B. They make walking around your yard safer, lift your home's curb appeal, and create a warm welcome for guests. Whether it leads to your front door, a side patio, a pool, or a garden, a professional walkway adds clear style and purpose to your home.
+          - >
+            At S. Phaneuf & Associates, we install natural stone, bluestone, classic brick, and concrete paver walkways all over Massachusetts. We make sure the ground is excavated, leveled, and packed correctly with a solid stone base. This keeps your path perfectly level and safe to walk on even when the winter frost hits the ground.
+          - >
+            Walkways can be built on their own or mixed into bigger hardscape projects that include stone steps, custom walls, and landscape lighting. From elegant front entrance paths to winding stone walkways through your gardens, we build paths that look amazing and stand the test of time.
+        features:
+          heading: "Popular Walkway & Garden Path Options"
+          items:
+            - Natural stone walkways
+            - Bluestone front entry paths
+            - Traditional brick walkways
+            - Interlocking paver paths
+            - Winding garden walkways
+            - Front door entry upgrades
+            - Custom stone steps and landings
+            - Integrated path lighting
+            - Decorative stone borders
+            - Total yard connection layouts
+        benefits:
+          heading: "Benefits of Custom Walkways & Garden Paths"
+          items:
+            - Upgrades your front yard appearance and greets guests with style.
+            - Makes walking through your yard much safer and cleaner.
+            - Adds long-term value and beauty to your home's exterior.
+            - Connects different parts of your yard into one clean layout.
+            - Needs very little maintenance over the years.
+            - Complements your home's style and current lawn design.
+            - Works seamlessly alongside patios, steps, and garden walls.
+            - Survives freezing New England winters without shifting.
+        closing:
+          - >
+            We design every walkway to match the style of your house while making your outdoor spaces easier to navigate. A good walkway should look like it was always meant to be there.
+          - >
+            From grand front entryways to simple stone paths, our builders will help you create durable paths you will enjoy utilizing every day.
+      - title: "Outdoor Kitchens"
+        anchor: outdoor-kitchens
+        image:
+          src: "/images/small/pool-and-kitchen-wellesley-mass.webp"
+          alt: "Custom stone outdoor kitchen overlooking a pool built by S. Phaneuf & Associates in Wellesley, Massachusetts."
+        paragraphs:
+          - >
+            An outdoor kitchen turns your backyard into the ultimate spot for cooking, eating, and hosting parties without constantly running back and forth to your indoor kitchen. From simple built-in grill stations to full luxury setups with refrigerators, sinks, and bars, a custom outdoor cooking space makes dining outside easy and fun. At S. Phaneuf & Associates, we build beautiful, functional outdoor kitchens that match your patio layout and fit your lifestyle perfectly.
+          - >
+            Building a great outdoor kitchen requires smart planning and tough materials. Because these spaces house heavy grills and appliances, they need a perfectly level, reinforced concrete base to prevent shifting over time. In Massachusetts, our freezing winters can easily crack poorly built structures. We use premium weather-resistant stonework, granite countertops, and stainless steel framing to make sure your kitchen stays strong and stands up to the New England elements.
+          - >
+            Your new outdoor kitchen can be built right onto an existing patio or designed as part of a total backyard makeover. Many homeowners choose to place their cooking stations near dining patios, pool decks, or outdoor fireplaces to create a complete outdoor living room. We will work with you to plan the perfect layout, ensuring you have plenty of counter space, great lighting, and the right utility connections for safe cooking.
+        features:
+          heading: "Popular Outdoor Kitchen Features"
+          items:
+            - Built-in stone grill islands
+            - Premium granite countertops
+            - Natural stone and brick finishes
+            - Custom bars and island seating
+            - Integrated outdoor refrigerators
+            - Weatherproof storage drawers
+            - Built-in sinks and plumbing
+            - Integrated trash and recycling bins
+            - Dedicated task and counter lighting
+            - Wood-fired pizza oven setups
+        benefits:
+          heading: "Benefits of Custom Outdoor Kitchens"
+          items:
+            - Makes hosting and cooking for large groups much easier and cleaner.
+            - Keeps cooking heat and food smells outside during hot summer months.
+            - Significantly boosts your property value and outdoor appeal.
+            - Expands your usable living and dining space right into the yard.
+            - Built using durable materials that require very little upkeep.
+            - Keeps drinks and food close by so you never have to leave the party.
+            - Creates a beautiful, high-end focal point on your patio.
+            - Crafted with heavy-duty stonework to survive harsh MA winters.
+        closing:
+          - >
+            We design every outdoor kitchen to be just as convenient and reliable as your indoor one. We believe your backyard should have all the comfort and functionality of your home's interior.
+          - >
+            If you want to upgrade your Massachusetts home with a custom outdoor kitchen, our expert team will help you design a beautiful cooking space that you will love using every summer.
+      - title: "Outdoor Fireplaces"
+        anchor: outdoor-fireplaces
+        image:
+          src: "/images/small/fireplace-wellesley-mass.webp"
+          alt: "Custom natural stone outdoor fireplace constructed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            A custom outdoor fireplace creates a cozy, warm gathering spot that lets you enjoy your backyard for months out of the year in Massachusetts. Whether you are hanging out with family on a chilly fall evening or hosting a party on the patio, an outdoor fireplace brings incredible style, comfort, and a true campfire vibe right to your home.
+          - >
+            At S. Phaneuf & Associates, we build custom masonry fireplaces using natural stone, durable brick, and premium materials chosen for their timeless look and strength. Every fireplace is designed to look like a natural extension of your home while fitting cleanly onto your patio or seating area.
+          - >
+            Whether you want a classic wood-burning fireplace or a modern gas setup, we build features that upgrade how you use your yard. Correct foundations, top-tier masonry work, and close attention to detail mean your fireplace will perform safely and look great for a very long time.
+        features:
+          heading: "Popular Outdoor Fireplace Options"
+          items:
+            - Natural stone outdoor fireplaces
+            - Traditional wood-burning setups
+            - Clean gas-burning fireplaces
+            - Custom brick masonry fire builds
+            - Built-in stone seating walls
+            - Patio hearth installations
+            - Outdoor living room layouts
+            - Accent lighting integration
+            - Kitchen and fireplace combinations
+            - Custom stone mantels and shelves
+        benefits:
+          heading: "Benefits of Custom Outdoor Fireplaces"
+          items:
+            - Keeps you warm so you can use your backyard late into the fall and winter.
+            - Creates an incredible center point for entertaining guests.
+            - Adds deep warmth, light, and a cozy mood to the yard.
+            - Significantly increases your property's value and visual style.
+            - Pairs perfectly with existing patios, kitchens, and pools.
+            - Acts as a permanent architectural feature built to last.
+            - Offers a peaceful spot to unplug and relax outside.
+            - Built with heavy-duty materials designed for local weather.
+        closing:
+          - >
+            Every fireplace we construct is built around how you plan to use it. Whether it is the star of a new patio layout or part of a complete outdoor kitchen setup, we build them with solid quality and beauty in mind.
+          - >
+            From small backyard hearths to massive outdoor entertainment setups, our team will help you build a fireplace that your family can enjoy for generations.
+      - title: "Fire Pits"
+        anchor: fire-pits
+        image:
+          src: "/images/small/gas-firepit-concord-mass.webp"
+          alt: "Custom rectangular gas fire pit and stone patio built by S. Phaneuf & Associates in Concord, Massachusetts."
+        paragraphs:
+          - >
+            A custom stone fire pit is the perfect gathering spot for family and friends to hang out, roast marshmallows, and stay warm on cool Massachusetts nights. Unlike a portable metal fire bowl that rusts out over time, a built-in masonry fire pit adds permanent style, safety, and value to your backyard. At S. Phaneuf & Associates, we design and construct both traditional wood-burning fire pits and modern gas-burning features that look great in any yard.
+          - >
+            Building a durable fire pit takes correct masonry skills and the right heat-safe materials. Standard stones can crack or explode under intense heat, so we line every fire pit with thick, specialized firebrick and heat-resistant mortar. Just like our patios, we build every fire pit on a deeply packed gravel base to ensure that New England’s winter ground frost doesn’t cause the stonework to shift, tilt, or pull apart over the years.
+          - >
+            Your fire pit can be shaped as a classic circle, a clean modern square, or a sleek rectangle depending on your patio's style. Many homeowners like to add built-in stone seating walls around the fire pit to create a permanent, comfortable conversation zone. Whether you want it built right into the middle of your main patio or set up as a separate destination in a quiet corner of your yard, we will help you create a cozy outdoor retreat.
+        features:
+          heading: "Popular Fire Pit Options"
+          items:
+            - Custom natural stone fire pits
+            - Modern interlocking paver fire pits
+            - Traditional wood-burning fire pits
+            - Clean, convenient gas-burning setups
+            - Built-in circular stone seating walls
+            - Decorative glass or lava rock fillers
+            - Custom flagstone fire pit patios
+            - Low-voltage under-bench lighting
+            - Matching stone firewood storage areas
+            - Square and rectangular modern designs
+        benefits:
+          heading: "Benefits of Custom Fire Pits"
+          items:
+            - Gives you a cozy, warm spot to enjoy your backyard late into the autumn.
+            - Creates a safe, contained area for campfires right at home.
+            - Instantly improves your patio's appearance and overall property value.
+            - Offers a comfortable, relaxing space to unplug with friends and family.
+            - Built with heavy-duty masonry materials that last a lifetime.
+            - Takes up less visual space than a full fireplace, keeping your yard views open.
+            - Gas options provide instant fire and heat with zero smoke or ash to clean up.
+            - Engineered tough to survive freezing and thawing winters in MA.
+        closing:
+          - >
+            We design every fire pit to match the exact look of your patio so it feels like a natural part of your landscape layout. We believe the best outdoor features are the ones that bring people together.
+          - >
+            If you are looking to add a custom fire feature to your Massachusetts home, our master builders will help you design a beautiful fire pit that your family will gather around for years.
+      - title: "Stone Veneer & Siding"
+        anchor: stone-veneer
+        image:
+          src: "/images/small/gas-lanterns-concord-mass.webp"
+          alt: "Custom natural stone veneer siding and retaining wall accents completed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            Stone veneer is a fantastic way to give your home, foundation, or outdoor features the gorgeous look of solid stone without the massive weight and high cost of traditional stone building. Veneer consists of carefully cut pieces of real natural stone or high-quality engineered stone that are permanently bonded to a backing wall. At S. Phaneuf & Associates, we use premium stone veneer to transform plain concrete foundations, home entryways, chimney stacks, and outdoor living features into beautiful, high-end works of art.
+          - >
+            Installing stone veneer correctly requires incredible attention to detail and professional masonry skills. Because Massachusetts gets heavy rain, snow, and extreme freezing winters, protecting the wall behind the stone is critical. If water creeps behind the veneer and freezes, it will expand and pop the stones right off the wall. We use advanced moisture barriers, metal wire lath, and heavy-duty bonding mortars to guarantee a completely waterproof seal that keeps your stone veneer locked in place and looking flawless for decades.
+          - >
+            Stone veneer is incredibly versatile and can be used on both the inside and outside of your home. Outside, it is perfect for covering up ugly concrete foundations, framing a front door entryway, or dressing up the sides of an outdoor kitchen or fireplace. Inside, many homeowners use it to build breathtaking floor-to-ceiling indoor fireplace surrounds or accent walls. We offer a huge variety of stone styles—including classic New England fieldstone, sleek ledgestone, and traditional granite—to match your exact design goals.
+        features:
+          heading: "Popular Stone Veneer Options"
+          items:
+            - Real natural stone veneer
+            - Lightweight cultured stone veneer
+            - Classic New England fieldstone style
+            - Clean, modern ledgestone patterns
+            - Concrete foundation masking
+            - Chimney and fireplace facing
+            - Outdoor kitchen stone wrapping
+            - Front door entryway accents
+            - Custom stone pillar and column wraps
+            - Multi-color granite and quartz blends
+        benefits:
+          heading: "Benefits of Custom Stone Veneer"
+          items:
+            - Instantly upgrades the appearance of plain wood or concrete surfaces.
+            - Dramatically boosts your home's curb appeal and resale market value.
+            - Provides the exact look and texture of solid stone at a lower cost.
+            - Adds a extra layer of durable, weather-proof protection to walls.
+            - Never fades, peels, or rots like wood siding or vinyl vinyl.
+            - Lightweight design allows it to be installed on almost any wall structure.
+            - Needs zero painting or regular maintenance once installed.
+            - Engineered with premium mortars to survive harsh MA winter weather.
+        closing:
+          - >
+            We install every stone veneer project with the care and precision of master craftsmen. We believe that adding the timeless look of stone completely elevates the style and character of your property.
+          - >
+            If you want to transform your Massachusetts home or backyard with custom stone veneer siding, our skilled team will help you choose the perfect style to create a stunning, lasting finish.
+      - title: "Pools & Pool Decks"
+        anchor: pool-decks
+        image:
+          src: "/images/small/infinity-pool-gloucester-mass.webp"
+          alt: "Custom natural stone pool deck and outdoor living space constructed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            A custom stone pool deck turns your backyard into a luxury resort area meant for swimming, sunbathing, and hosting parties. Whether you are building a deck around a brand-new swimming pool or updating an old concrete surround, a professional layout creates a perfect, smooth transition from your house to your water features.
+          - >
+            At S. Phaneuf & Associates, we build bluestone, natural stone, and interlocking paver pool decks all over Massachusetts. We design every single pool surround with the right grading, slope, and slip-resistant materials. This keeps the walking surface safe, functional, and durable through heavy summer use and freezing winter weather.
+          - >
+            Many homeowners pair their pool decks with wider hardscape designs, adding features like outdoor kitchens, fire pits, built-in benches, and landscape lights. Whether you want a quiet, relaxing poolside escape or an energetic family fun spot, we build poolside spaces that look timeless.
+        features:
+          heading: "Popular Pool Deck & Outdoor Living Features"
+          items:
+            - Natural stone pool decks
+            - Bluestone pool copings and surrounds
+            - Concrete paver pool patios
+            - Integrated poolside dining spaces
+            - Outdoor bars and custom kitchens
+            - Built-in stone benches and walls
+            - Waterproof landscape lighting
+            - Connecting stone walkways
+            - Advanced pool deck drainage fixes
+            - Complete backyard resort designs
+        benefits:
+          heading: "Benefits of Custom Pool Deck Construction"
+          items:
+            - Converts an ordinary pool area into a gorgeous outdoor living room.
+            - Uses slip-resistant, tough surfaces to keep swimmers safer.
+            - Instantly raises your home's aesthetic appeal and value.
+            - Utilizes low-maintenance stonework that holds up to pool chemicals.
+            - Offers plenty of space for lounge chairs, tables, and grilling.
+            - Blends beautifully with new or existing patios and fireplaces.
+            - Crafted specifically to manage New England's frost and thaw seasons.
+            - Optimizes your entire backyard layout for maximum summer fun.
+        closing:
+          - >
+            Every pool deck we install is designed specifically for your property's unique shape and how your family loves to use the water. We focus on fine craftsmanship so your pool area stays beautiful and reliable year after year.
+          - >
+            From clean stone pool borders to massive multi-level backyard transformations, our master builders will help you create a custom pool landscape you will love.
+      - title: "Steps & Stairways"
+        anchor: steps-stairways
+        image:
+          src: "/images/small/stone-arched-stairwell-gloucester-mass.webp"
+          alt: "Custom natural stone steps and arched stairway constructed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            Custom stone steps and stairways do a lot more than just help you walk up and down a sloped yard. They add a grand, elegant look to your property and make navigating steep hills completely safe and comfortable. Whether you need a welcoming set of wide granite steps at your front door or a rugged natural stone stairway cutting through a tiered backyard, a professionally built set of steps acts as a beautiful, functional backbone for your landscape. At S. Phaneuf & Associates, we design and build heavy-duty stone steps and stairways that connect your outdoor spaces beautifully.
+          - >
+            Building stairs that stay safe and level over time is one of the toughest challenges in masonry. If the groundwork isn't done correctly, New England's brutal winter ground frost will easily tilt, sink, or separate the heavy stone blocks, creating dangerous tripping hazards. We construct our steps on deep, heavily packed gravel bases or reinforced concrete footings to stop any ground movement. Every step is carefully pitched at a micro-angle so rainwater drains right off the surface instead of pooling and turning into dangerous sheet ice during Massachusetts winters.
+          - >
+            Your new steps can be crafted from massive, solid stone blocks for a rugged look, or built with brick and paver rises topped with smooth bluestone treads. Many homeowners choose to build stone stairways right into their retaining walls or run them smoothly alongside sloped walkways and pool patios. We will work with you to calculate the perfect step height and width, ensuring your new staircase is incredibly easy to climb while matching the existing architecture of your home.
+        features:
+          heading: "Popular Step & Stairway Options"
+          items:
+            - Solid granite block steps
+            - Bluestone tread stairways
+            - Fieldstone and natural stone steps
+            - Brick and paver step risers
+            - Retaining wall integrated steps
+            - Front entryway step upgrades
+            - Tiered backyard staircases
+            - Integrated step and riser lighting
+            - Custom stone landings and transitions
+            - Curved and arched stone stairways
+        benefits:
+          heading: "Benefits of Custom Steps & Stairways"
+          items:
+            - Makes steep slopes and hilly yards safe and easy to navigate.
+            - Instantly lifts your front yard's curb appeal and home value.
+            - Engineered with built-in drainage to prevent winter ice build-up.
+            - Connects multi-level yards, patios, and pool decks into one clean layout.
+            - Uses heavy, solid materials that will never rot or wobble like wood.
+            - Provides permanent, low-maintenance structural support for hillsides.
+            - Matches the exact style and coloring of your existing stonework.
+            - Built deep into the ground to survive freezing Massachusetts frost.
+        closing:
+          - >
+            We design every set of outdoor stairs to feel like a natural part of your landscape's slope. We believe that a great stairway should blend beautiful style with absolute safety.
+          - >
+            If you want to upgrade your Massachusetts property with custom stone steps or a new backyard stairway, our experienced team will build a rock-solid solution that lasts for generations.
+      - title: "Water Features & Plunge Pools"
+        anchor: water-features-plunge-pools
+        image:
+          src: "/images/small/plunge-pool-concord-mass.webp"
+          alt: "Custom backyard plunge pool and natural stone coping installed by S. Phaneuf & Associates in Concord, Massachusetts."
+        paragraphs:
+          - >
+            Adding a water feature or a compact plunge pool transforms your backyard into a peaceful, resort-style sanctuary. Plunge pools are smaller than traditional swimming pools, making them perfect for cooling off, relaxing, and fitting into tight yard spaces without taking over the entire lawn. Combined with custom waterfalls, streaming fountains, or bubbling rock features, these installations add the relaxing sight and sound of moving water to your patio. At S. Phaneuf & Associates, we design and install custom masonry water features and plunge pools that elevate your outdoor living environment.
+          - >
+            Building water features and pool structures in New England requires strict engineering and advanced masonry techniques. Water is heavy, and hydrostatic pressure—the force of water pushing against shifting soil—can easily crack concrete walls if the structural base isn't perfect. Furthermore, Massachusetts' freezing winter temperatures mean all plumbing lines must be sloped correctly for easy winterization, and the surrounding stone coping must be anchored with high-bond, frost-proof mortars. We handle all the critical site development, deep excavation, and reinforced base preparation to ensure your water feature stays leak-free and structurally sound year after year.
+          - >
+            Water features can be designed to match any landscape layout, from a sleek, modern infinity-edge plunge pool to a rustic natural stone waterfall that spills into a backyard pond. Many homeowners choose to build their plunge pools right alongside outdoor kitchens, fire pits, or raised patios to create a central gathering hub for summer entertainment. We will work closely with you to plan the ideal plumbing, pump access, filtration layout, and low-voltage lighting so your new water feature is incredibly easy to maintain and operates safely.
+        features:
+          heading: "Popular Water Feature & Pool Options"
+          items:
+            - Custom concrete plunge pools
+            - Natural stone waterfalls
+            - Infinity-edge pool designs
+            - Bubbling rock and boulder fountains
+            - Custom bluestone pool coping
+            - Integrated pool sun shelves
+            - Low-voltage underwater LED lighting
+            - Hidden pump and filtration vaults
+            - Patios with integrated deck jets
+            - Modern geometric water walls
+        benefits:
+          heading: "Benefits of Plunge Pools & Water Features"
+          items:
+            - Provides a private, space-saving spot to cool off without losing your entire yard.
+            - Blocks out neighborhood or traffic noise with the peaceful sound of running water.
+            - Significantly elevates your property value and creates a luxury aesthetic.
+            - Requires less chemical treatment, heating energy, and water than full-sized pools.
+            - Connects beautifully with surrounding stone patios and retaining walls.
+            - Creates an incredible visual centerpiece for nighttime outdoor entertaining.
+            - Perfect for low-impact aquatic exercise, therapy, and relaxing after a long day.
+            - Constructed with heavy-duty reinforced masonry to withstand harsh MA winters.
+        closing:
+          - >
+            We design every water feature to blend seamlessly with the natural grading and masonry of your property. We believe that incorporating water completely redefines how you experience and enjoy your outdoor space.
+          - >
+            If you are looking to install a custom water feature or a luxury plunge pool at your Massachusetts home, our experienced builders will manage the entire project from excavation to final stonework.
+  process:
+    heading: "Our Design & Construction Process"
+    intro: >
+      Every successful hardscape project begins with thoughtful planning and quality craftsmanship. Our proven design and construction process allows us to create beautiful outdoor spaces while ensuring every retaining wall, patio, walkway, and masonry feature performs as well as it looks. Throughout construction, we keep homeowners informed so there are no surprises along the way.
+    steps:
+      - title: Consultation & Design
+        description: >
+          We meet with you to discuss your goals, evaluate your property, understand how you plan to use the space, and develop a custom design that fits your vision and budget.
+      - title: Site Preparation
+        description: >
+          Proper excavation, grading, drainage improvements, and compacted base preparation create the strong foundation required for long-lasting masonry and hardscape construction.
+      - title: Professional Construction
+        description: >
+          Our experienced craftsmen carefully install every patio, retaining wall, walkway, fireplace, outdoor kitchen, and masonry feature using premium materials and proven installation methods.
+      - title: Finishing Details
+        description: >
+          We complete final grading, joint finishing, edging, cleanup, and landscape integration to ensure the finished project blends naturally with the surrounding property.
+      - title: Final Walkthrough
+        description: >
+          Before the project is complete, we inspect every detail with you to ensure the finished work meets our quality standards and exceeds your expectations.
+  faq:
+    heading: "Frequently Asked Questions"
+    items:
+      - question: What hardscape features do you build?
+        answer: >
+          We build patios, walkways, retaining walls, pool decks, outdoor kitchens, fireplaces, fire pits, stone steps, seating walls, veneer, and many other custom masonry features.
+      - question: What materials do you use?
+        answer: >
+          We work with natural stone, concrete pavers, brick, granite, bluestone, manufactured wall systems, and other premium hardscape materials.
+      - question: Do you provide custom designs?
+        answer: >
+          Yes. Every project is designed around your property, your goals, and your preferred materials.
+      - question: Can hardscaping improve drainage?
+        answer: >
+          Absolutely. Proper grading, drainage planning, and retaining wall construction are incorporated into many of our projects.
+      - question: Do you serve residential and commercial properties?
+        answer: >
+          Yes. We provide masonry and hardscape services for homeowners, businesses, HOAs, and commercial properties throughout Massachusetts.
+      - question: How much does a paver patio cost in Massachusetts?
+        answer: >
+          The cost of a paver patio depends on its size, the materials you choose, site conditions, drainage requirements, and custom features such as fire pits, seating walls, or outdoor kitchens. Every project is different, so we provide a detailed estimate based on your property, design goals, and budget.
+      - question: Should I choose natural stone or concrete pavers?
+        answer: >
+          Both materials offer excellent durability and appearance. Natural stone provides a timeless, one-of-a-kind look with unique color variations, while concrete pavers offer a wide variety of styles, colors, and patterns at a lower cost. We'll help you select the best option based on your home's architecture, maintenance preferences, and budget.
+      - question: How long does a retaining wall last?
+        answer: >
+          A professionally constructed retaining wall can last for decades when it is built with proper drainage, a solid foundation, and quality materials. Our retaining walls are designed to withstand New England's freeze-thaw cycles while providing long-term structural support and enhancing the appearance of your landscape.
+      - question: Can you build around an existing pool?
+        answer: >
+          Yes. We regularly design and build pool decks, patios, walkways, retaining walls, outdoor kitchens, and seating areas around existing swimming pools. Every project is carefully planned to improve safety, drainage, accessibility, and the overall outdoor living experience.
+      - question: Do patios increase home value?
+        answer: >
+          A professionally designed patio can increase your home's value while making your outdoor space more functional and enjoyable. Features such as natural stone patios, outdoor fireplaces, kitchens, and walkways are attractive to many homebuyers and can improve curb appeal as well as everyday living.
+      - question: How long does construction take?
+        answer: >
+          Construction time depends on the size and complexity of the project. Smaller patios may take only a few days, while complete outdoor living spaces with retaining walls, kitchens, lighting, and multiple hardscape features can take several weeks. Before work begins, we'll provide a project schedule so you know what to expect.
+# oldservices:
+  #   heading: "Our Masonry & Hardscape Services"
+  #   intro: >
+  #     We design and construct beautiful outdoor living
+  #     spaces throughout Massachusetts.
+  #   items:
+  #     - title: Patio Construction
+  #       anchor: patios
+  #       image:
+  #         src: /images/small/pool-and-spa-wellesley-mass.webp
+  #         alt: Custom natural stone pool patio and spa constructed by S. Phaneuf & Associates in Wellesley, Massachusetts.
+  #       paragraphs:
+  #         - >
+  #           A professionally designed patio creates the foundation for an outdoor living space that can be enjoyed throughout every season in Massachusetts. Whether you're looking to create a quiet backyard retreat, an outdoor dining area, or an expansive entertainment space for family and friends, a custom patio provides beauty, comfort, and lasting value.  At S. Phaneuf & Associates, we design and build natural stone, bluestone, and concrete paver patios that are thoughtfully planned around the way you live and use your property.
+  #         - >
+  #           Every patio we build begins with proper site preparation. We carefully evaluate grading, drainage, and existing landscape conditions before excavation begins. A properly constructed base is one of the most important parts of a long-lasting patio, especially in New England where freeze-thaw cycles can cause poorly installed hardscapes to shift or settle over time. By combining quality materials with proven construction techniques, we create patios that are built to remain both beautiful and durable for decades.
+  #         - >
+  #           Custom patios can be designed as standalone features or incorporated into complete outdoor living environments that include retaining walls, outdoor kitchens, fire pits, fireplaces, pool decks, landscape lighting, seating walls, and stone walkways. Whether you're renovating an existing backyard or starting with a blank canvas, we'll help you design an outdoor space that complements your home while providing years of enjoyment and increasing the overall value of your property.
+  #       features:
+  #         heading: Popular Patio Features
+  #         items:
+  #           - Natural stone patios
+  #           - Bluestone patios
+  #           - Concrete paver patios
+  #           - Outdoor dining spaces
+  #           - Poolside patios
+  #           - Seating walls
+  #           - Landscape lighting
+  #           - Integrated drainage solutions
+  #           - Patio extensions
+  #           - Custom masonry accents
+  #       benefits:
+  #         heading: Benefits of Custom Patio Construction
+  #         items:
+  #           - Creates additional outdoor living space for relaxing and entertaining.
+  #           - Improves curb appeal and increases property value.
+  #           - Provides a durable, low-maintenance outdoor surface.
+  #           - Complements your home's existing architecture and landscaping.
+  #           - Creates comfortable gathering spaces for family and friends.
+  #           - Built to withstand Massachusetts' changing weather conditions.
+  #           - Can be seamlessly integrated with outdoor kitchens, fireplaces, and pool decks.
+  #           - Provides year-round enjoyment while extending your home's usable living space.
+  #       closing:
+  #         - >
+  #           From intimate backyard patios to expansive outdoor entertainment areas, every project is carefully designed around your property's unique layout, your lifestyle, and your long-term goals. We believe beautiful outdoor spaces should feel like a natural extension of your home rather than an afterthought.
+  #         - >
+  #           If you're considering a custom patio in Massachusetts, our experienced craftsmen will guide you through every step of the design and construction process to create a timeless outdoor space that can be enjoyed for generations.
+  #     - title: "Retaining Walls"
+  #       anchor: retaining-walls
+  #       image:
+  #         src: "/images/small/curved-wall-wellesley-mass.webp"
+  #         alt: "Custom natural stone retaining wall constructed by S. Phaneuf & Associates in Massachusetts."
+  #       paragraphs:
+  #         - >
+  #           A professionally built retaining wall does more than hold back soil.
+  #           It can transform a sloped or difficult property into beautiful and
+  #           usable outdoor living space. Retaining walls are commonly used to
+  #           create level patios, improve drainage, prevent erosion, and define
+  #           planting areas throughout residential properties in Massachusetts.
+  #         - >
+  #           At S. Phaneuf & Associates, we design and construct custom retaining
+  #           walls using natural stone and engineered wall systems that are built
+  #           to withstand New England's changing weather conditions. Every project
+  #           begins with proper excavation, grading, drainage, and base preparation
+  #           to ensure long-lasting performance and structural stability.
+  #         - >
+  #           Whether you're looking to solve a drainage problem, create additional
+  #           usable space in your backyard, or add visual interest to your
+  #           landscape, a custom retaining wall can become an attractive and
+  #           functional feature of your property. Many homeowners choose to
+  #           incorporate retaining walls into patios, walkways, outdoor kitchens,
+  #           pool decks, and complete hardscape designs.
+  #       features:
+  #         heading: "Popular Retaining Wall Options"
+  #         items:
+  #           - Natural stone retaining walls
+  #           - Engineered block retaining walls
+  #           - Decorative garden walls
+  #           - Terraced retaining walls
+  #           - Seating walls
+  #           - Raised planting beds
+  #           - Integrated drainage systems
+  #           - Landscape lighting
+  #           - Stone stairways and landings
+  #           - Patio and walkway integration
+  #       benefits:
+  #         heading: "Benefits of Custom Retaining Walls"
+  #         items:
+  #           - Creates level and usable outdoor living spaces.
+  #           - Helps control erosion and manage drainage problems.
+  #           - Improves the appearance and value of your property.
+  #           - Adds structure and definition to your landscape design.
+  #           - Provides durable, long-lasting performance.
+  #           - Creates attractive planting areas and garden spaces.
+  #           - Can be integrated with patios, walkways, and pool decks.
+  #           - Built to withstand Massachusetts' freeze-thaw weather conditions.
+  #       closing:
+  #         - >
+  #           Every retaining wall we build is carefully designed to provide both beauty and structural performance. We believe your outdoor spaces should be as functional as they are attractive.
+  #         - >
+  #           From decorative landscape walls to large structural retaining walls, our experienced craftsmen will help you design a solution that complements your home while providing lasting value for years to come.
+  #     - title: "Walkways & Garden Paths"
+  #       anchor: walkways
+  #       image:
+  #         src: "/images/small/tiled-walkway.webp"
+  #         alt: "Custom natural stone walkway and garden path constructed by S. Phaneuf & Associates in Massachusetts."
+  #       paragraphs:
+  #         - >
+  #           Custom walkways and garden paths do more than connect different areas
+  #           of your property. They improve safety, enhance curb appeal, and create
+  #           a welcoming first impression for your home. Whether leading to your
+  #           front entrance, patio, pool area, or garden, professionally designed
+  #           walkways add both beauty and functionality to your outdoor living
+  #           spaces.
+  #         - >
+  #           At S. Phaneuf & Associates, we design and construct natural stone,
+  #           bluestone, brick, and concrete paver walkways throughout Massachusetts.
+  #           Every project begins with proper excavation, grading, drainage, and
+  #           base preparation to ensure your walkway remains attractive, level, and
+  #           durable through New England's changing weather conditions.
+  #         - >
+  #           Walkways can be designed as standalone features or incorporated into
+  #           complete hardscape projects that include patios, retaining walls,
+  #           stone steps, landscape lighting, and planting areas. From elegant
+  #           front entryways to winding garden paths, we create outdoor spaces that
+  #           are both inviting and built to last.
+  #       features:
+  #         heading: "Popular Walkway & Garden Path Options"
+  #         items:
+  #           - Natural stone walkways
+  #           - Bluestone walkways
+  #           - Brick walkways
+  #           - Concrete paver walkways
+  #           - Garden paths
+  #           - Front entry walkways
+  #           - Stone landings and transitions
+  #           - Landscape lighting integration
+  #           - Custom borders and accents
+  #           - Patio and retaining wall integration
+  #       benefits:
+  #         heading: "Benefits of Custom Walkways & Garden Paths"
+  #         items:
+  #           - Improves curb appeal and creates a welcoming entrance.
+  #           - Provides safe and attractive access throughout your property.
+  #           - Adds beauty and value to your home's landscape.
+  #           - Creates seamless connections between outdoor living spaces.
+  #           - Offers durable, low-maintenance performance.
+  #           - Complements your home's architecture and surrounding landscape.
+  #           - Can be integrated with patios, retaining walls, and stone steps.
+  #           - Built to withstand Massachusetts' freeze-thaw weather conditions.
+  #       closing:
+  #         - >
+  #           Every walkway we build is thoughtfully designed to complement your
+  #           home's architecture while improving the functionality of your outdoor
+  #           spaces. Beautiful hardscapes should feel like a natural extension of
+  #           your property rather than an afterthought.
+  #         - >
+  #           From front entry walkways to custom garden paths, our experienced
+  #           craftsmen will help you create attractive and durable outdoor spaces
+  #           that can be enjoyed for many years to come. 
+  #     - title: "Outdoor Fireplaces"
+  #       anchor: outdoor-fireplaces
+  #       image:
+  #         src: "/images/small/fireplace-wellesley-mass.webp"
+  #         alt: "Custom natural stone outdoor fireplace constructed by S. Phaneuf & Associates in Massachusetts."
+  #       paragraphs:
+  #         - >
+  #           A custom outdoor fireplace creates a warm and inviting gathering space
+  #           that can be enjoyed throughout much of the year in Massachusetts.
+  #           Whether you're relaxing with family on a cool evening or entertaining
+  #           guests on your patio, an outdoor fireplace provides both beauty and
+  #           comfort while becoming a natural focal point of your outdoor living
+  #           space.
+  #         - >
+  #           At S. Phaneuf & Associates, we design and construct custom masonry
+  #           outdoor fireplaces using natural stone, brick, and premium materials
+  #           selected for their durability and timeless appearance. Every fireplace
+  #           is thoughtfully designed to complement your home's architecture while
+  #           integrating seamlessly with patios, seating areas, outdoor kitchens,
+  #           and other hardscape features.
+  #         - >
+  #           From traditional wood-burning fireplaces to modern gas-burning designs,
+  #           we build outdoor fireplaces that enhance the way you enjoy your
+  #           property. Proper site preparation, quality craftsmanship, and careful
+  #           attention to detail ensure your fireplace provides lasting beauty and
+  #           performance for many years to come.
+  #       features:
+  #         heading: "Popular Outdoor Fireplace Options"
+  #         items:
+  #           - Natural stone outdoor fireplaces
+  #           - Wood-burning fireplaces
+  #           - Gas-burning fireplaces
+  #           - Custom masonry fireplace surrounds
+  #           - Integrated seating walls
+  #           - Patio fireplace installations
+  #           - Outdoor living room designs
+  #           - Landscape lighting integration
+  #           - Outdoor kitchen and fireplace combinations
+  #           - Custom stone accents and mantels
+  #       benefits:
+  #         heading: "Benefits of Custom Outdoor Fireplaces"
+  #         items:
+  #           - Extends the use of your outdoor living space throughout the year.
+  #           - Creates a beautiful focal point for entertaining family and friends.
+  #           - Adds warmth, comfort, and ambiance to your backyard.
+  #           - Increases the beauty and value of your property.
+  #           - Complements patios, outdoor kitchens, and pool areas.
+  #           - Provides a timeless architectural feature designed to last.
+  #           - Creates inviting spaces for relaxing and gathering outdoors.
+  #           - Built using durable materials designed for Massachusetts weather conditions.
+  #       closing:
+  #         - >
+  #           Every outdoor fireplace we build is designed around the way you live
+  #           and entertain. Whether serving as the centerpiece of a custom patio or
+  #           as part of a complete outdoor living environment, our fireplaces are
+  #           constructed with lasting beauty, durability, and craftsmanship in mind.
+  #         - >
+  #           From intimate backyard gathering spaces to expansive outdoor
+  #           entertainment areas, our experienced craftsmen will help you create a
+  #           custom outdoor fireplace that can be enjoyed for generations.
+  #     - title: "Pools & Pool Decks"
+  #       anchor: pool-decks
+  #       image:
+  #         src: "/images/small/infinity-pool-gloucester-mass.webp"
+  #         alt: "Custom natural stone pool deck and outdoor living space constructed by S. Phaneuf & Associates in Massachusetts."
+  #       paragraphs:
+  #         - >
+  #           A custom pool deck transforms your backyard into a beautiful outdoor
+  #           living space designed for relaxing, entertaining, and spending time
+  #           with family and friends. Whether surrounding a newly constructed pool
+  #           or renovating an existing one, a professionally designed pool deck
+  #           creates a seamless connection between your home, landscape, and
+  #           outdoor amenities.
+  #         - >
+  #           At S. Phaneuf & Associates, we design and construct natural stone,
+  #           bluestone, and concrete paver pool decks throughout Massachusetts.
+  #           Every project is carefully planned with proper grading, drainage, and
+  #           slip-resistant materials to provide lasting beauty, safety, and
+  #           durability through New England's changing weather conditions.
+  #         - >
+  #           Many homeowners choose to incorporate their pool deck into a complete
+  #           outdoor living environment that includes patios, outdoor kitchens,
+  #           fireplaces, seating walls, landscape lighting, and custom masonry
+  #           features. Whether your vision includes a quiet retreat or an expansive
+  #           entertainment space, we create poolside hardscapes that are both
+  #           functional and timeless.
+  #       features:
+  #         heading: "Popular Pool Deck & Outdoor Living Features"
+  #         items:
+  #           - Natural stone pool decks
+  #           - Bluestone pool surrounds
+  #           - Concrete paver pool patios
+  #           - Integrated poolside patios
+  #           - Outdoor kitchens and dining areas
+  #           - Seating walls and gathering spaces
+  #           - Landscape lighting integration
+  #           - Stone walkways and entryways
+  #           - Custom drainage solutions
+  #           - Complete backyard hardscape designs
+  #       benefits:
+  #         heading: "Benefits of Custom Pool Deck Construction"
+  #         items:
+  #           - Creates a beautiful and functional outdoor living space.
+  #           - Provides safe and durable surfaces around your swimming pool.
+  #           - Improves curb appeal and increases property value.
+  #           - Offers low-maintenance materials designed for lasting performance.
+  #           - Creates comfortable spaces for relaxing and entertaining.
+  #           - Integrates seamlessly with patios, fireplaces, and outdoor kitchens.
+  #           - Built to withstand Massachusetts' freeze-thaw weather conditions.
+  #           - Enhances the overall appearance and usability of your backyard.
+  #       closing:
+  #         - >
+  #           Every pool deck we build is thoughtfully designed around the unique
+  #           characteristics of your property and the way you enjoy your outdoor
+  #           spaces. We believe exceptional craftsmanship and attention to detail
+  #           create outdoor environments that remain beautiful and functional for
+  #           many years to come.
+  #         - >
+  #           From elegant pool surrounds to complete backyard transformations, our
+  #           experienced craftsmen will help you create a custom outdoor living
+  #           space that complements your home while providing lasting value and
+  #           enjoyment for generations.
+
