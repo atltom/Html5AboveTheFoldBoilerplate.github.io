@@ -1,6 +1,6 @@
 <!--areas-served-->
 {% if areasServed %}
-<section class="py-5">
+<section class="py-5" id="{{ areasServed.heading | slugify }}">
     <h2 class="pipe">{{ areasServed.heading }}</h2>
     {% if areasServed.intro %}<p class="py-3">{{ areasServed.intro }}</p>{% endif %}
     <div class="row pt-2">

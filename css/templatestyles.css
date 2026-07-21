@@ -329,3 +329,48 @@ padding-left:25px;
 line-height:35px;
 
 }
+
+/* 
+.nav-link.dropdown.selected{
+    text-underline-offset: 0;
+    text-decoration: underline;
+    text-decoration-color: #bc5a15;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: auto;
+    text-underline-position: under;
+} */
+
+
+
+
+
+
+
+
+.toc-navigation ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.toc-navigation ul li {
+  margin-bottom: 8px;
+}
+
+.toc-navigation ul li a {
+  color: #1e396c; /* Matching your brand blue */
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.toc-navigation ul li a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* Optional styling for nested h3 elements */
+.toc-navigation ul ul {
+  padding-left: 15px;
+  margin-top: 4px;
+}

@@ -1,5 +1,5 @@
 {# <p>serviceType:{{ serviceType }}</p><br><p>benefits:{{ benefits | dump }}</p><br><p>services:{{ services | dump }}</p><br><p>service:{{ service | dump }}</p><br> #}
-{% if service.services %}<section class="services">
+{% if service.services %}<section class="services"  id="{{ service.services.heading | slugify }}">
     {% if service.services.heading %}<h2 class="pipe pt-5">{{ service.services.heading }}</h2>{% endif %}
     {% if service.services.intro %}<p class="intro-text">{{ service.services.intro }}</p>{% endif %}
     {% if service.services.items %}

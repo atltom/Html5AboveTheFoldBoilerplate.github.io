@@ -1,5 +1,5 @@
 <!--sidebar-->
-<div cccclass="contact-form mt-5 mb-1">
+<div cccclass="contact-form mt-5 mb-1" id="sidebar-contact-form">
 
     <h2>
         {{ sidebarHeading }}
@@ -30,42 +30,41 @@
 
     </form>
 
-    {% if sidebarImages and sidebarImages.length %}
 
-    <ul id="sidebar-images" class="p-0 lst-n">
 
-        {% for image in sidebarImages %}
-
-        <li>
-            <figure class="mx-0">
-
-                <img
-                    loading="lazy"
-                    src="{{ image.src }}"
-                    alt="{{ image.alt }}"
-                    width="226"
-                    height="348"
-                >
-
-                <figcaption class="p-3 bg-w border">
-
-                    <address>
-                        {{ image.location }}
-                    </address>
-
-                    {{ image.caption }}
-
-                </figcaption>
-
-            </figure>
-        </li>
-
+    {% if showToc %}
+    <nav class="table-of-contents my-4 p-3 bg-light border rounded">
+        <p class="h5 fw-bold mb-2">On This Page:</p>
+        <ul class="list-unstyled mb-0">
+        {% for item in excavation.services.items %}
+            <li class="mb-1">
+            <a href="#{{ item.title | slugify }}" class="text-decoration-none">
+                {{ item.title }}
+            </a>
+            </li>
         {% endfor %}
-
-    </ul>
-
+        <li>
+            <a href="#frequently-asked-questions" class="text-decoration-none">
+            Frequently Asked Questions
+            </a>
+        </li>
+        </ul>
+    </nav>
     {% endif %}
 
+
+    {% if sidebarImages and sidebarImages.length %}
+    <ul id="sidebar-images" class="p-0 lst-n">
+        {% for image in sidebarImages %}
+        <li>
+            <figure class="mx-0">
+                <img loading="lazy" src="{{ image.src }}" alt="{{ image.alt }}" width="226" height="348">
+                <figcaption class="p-3 bg-w border"><address>{{ image.location }}</address>{{ image.caption }}</figcaption>
+            </figure>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
 </div>
 
 

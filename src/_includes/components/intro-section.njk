@@ -1,5 +1,5 @@
 <!--intro-section-->
-<section class="intro-section">
+<section class="intro-section" id="service-{% if serviceSlug %}{{ serviceSlug }}{% endif %}-intro">
     <h2 class="pipe">{{ intro.heading }}</h2>
     {% for paragraph in intro.paragraphs %}
     <p class="py-2{% if loop.first %} pt-4{% endif %}">{{ paragraph }}</p>

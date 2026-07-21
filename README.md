@@ -77,3 +77,28 @@ estimateDescription: >
   project estimate.
 estimateButtonText: Request Your Free Estimate
 estimateButtonLink: /contact-us
+
+
+
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const pluginTOC = require("eleventy-plugin-toc");
+
+module.exports = function(eleventyConfig) {
+  
+  // 1. Configure Markdown to automatically add clean IDs to h2 and h3 tags
+  const markdownLib = markdownIt({ html: true })
+    .use(markdownItAnchor, {
+      permalink: false, // Set to true if you want visual anchor links next to headings
+      slugify: (s) => s.trim().toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')
+    });
+  eleventyConfig.setLibrary("md", markdownLib);
+
+  // 2. Add the Table of Contents filter
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2', 'h3'], // Headings you want to include in your TOC
+    wrapper: 'nav',     // Wraps the TOC in a semantic HTML5 <nav> tag
+    wrapperClass: 'toc-navigation'
+  });
+
+};

@@ -15,6 +15,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("js");
 
+    // Safe JSON stringify filter
+    eleventyConfig.addFilter("json", function(value) {
+        return JSON.stringify(value, null, 2);
+    });
+
     return {
         dir: {
             input: "src",

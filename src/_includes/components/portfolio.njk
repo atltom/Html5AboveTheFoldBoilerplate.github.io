@@ -4,7 +4,7 @@
     <h2 class="pipe pt-5">{{ portfolio.heading or "Featured Projects" }}</h2>
     {% if portfolio.intro %}<p class="lead">{{ portfolio.intro }}</p>{% endif %}
     {% for project in serviceProjects.projects %}
-    <section class="py-4">
+    <section class="py-4"  id="{{ project.title | slugify }}">
         <h3 class="pipe ms-0 py-0 mt-3">{{ project.title }}</h3>
         {% if project.location %}<address class="fw-6 c-b pt-2">{{ project.location }}</address>{% endif %}
         {% if project.summary %}<p class="pt-3">{{ project.summary }}</p>{% endif %}
@@ -21,7 +21,7 @@
     {% endfor %}
 </section>
 {% if additionalGalleryImages %}
-<section>
+<section  id="{{ additionalGalleryHeading | slugify }}" >
     <h2 class="pipe">{{ additionalGalleryHeading }}</h2>
     {% if additionalGalleryIntro %}<p class="lead">{{ additionalGalleryIntro }}</p>{% endif %}
     <div class="container px-0 py-2 gallery">

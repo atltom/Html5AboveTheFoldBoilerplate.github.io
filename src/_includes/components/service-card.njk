@@ -1,0 +1,48 @@
+<section class="service-card py-5">
+
+    <div class="row">
+
+        <div class="col-lg-4">
+
+            <img src="{{ item.image }}"
+                 alt="{{ item.alt }}"
+                 class="img-fluid">
+
+        </div>
+
+
+        <div class="col-lg-8">
+
+            <h2 class="pipe">
+                {{ item.title }}
+            </h2>
+
+
+            <p>
+                {{ item.description }}
+            </p>
+
+
+            <ul class="ps-3 li">
+
+                {% for service in item.services %}
+
+                    <li>{{ service }}</li>
+
+                {% endfor %}
+
+            </ul>
+
+
+            <a href="{{ item.link }}"
+               class="btn btn-primary">
+
+                Learn More
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>

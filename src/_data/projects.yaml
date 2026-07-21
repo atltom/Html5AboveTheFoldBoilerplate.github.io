@@ -13,7 +13,110 @@ asphalt:
       Complete parking lot renovation with new asphalt paving and striping.
 
 
+excavation:
 
+  projects:
+  - title: Main Street Green Stormwater Management Project
+    location: Concord, MA
+    summary: >
+      This extensive site work construction features a high-capacity storm drain network 
+      engineered to handle severe rain events. The installation features an advanced Cultec 
+      underground retention grid designed to filter, store, and infiltrate massive rainwater 
+      and roof runoff, providing reliable flood protection that meets strict EPA environmental standards.
+    features:
+      - Cultec Subsurface Chambers
+      - Catch Basin Construction
+      - Main Line Storm Trenching
+      - Subgrade Soil Compaction
+      - EPA Phase II Compliance Setup
+      - High-Volume Catch Recharges
+    homeownerGoals: >
+      The development planners needed an advanced, heavy-duty stormwater control system 
+      that could handle severe 100-year rain events, protect low-lying foundation walls from 
+      hydrostatic pressure, and fully satisfy rigid clean water environmental mandates.
+    whatWeBuilt: >
+      Our crew managed the complete site leveling, excavated deep underground chambers, 
+      and cleanly installed a state-of-the-art Cultec drainage array. This network traps 
+      impurities, manages heavy surge runoff, and safely diverts excessive groundwater naturally 
+      back into the local water table without causing structural erosion.
+    completedResult: >
+      The completed site infrastructure guarantees full flood protection, filters out surface 
+      impurities, and prevents basement leaks during massive downpours, offering total long-term 
+      structural stability and environmental peace of mind.
+    images:
+      - thumb: /images/small/site-work-main-st-img1-Concord-Mass.webp
+        full: /images/large/site-work-main-st-img1-Concord-Mass.webp
+        alt: sss
+        caption: sss
+      - thumb: /images/small/site-work-main-st-img2-Concord-Mass.webp
+        full: /images/large/site-work-main-st-img2-Concord-Mass.webp
+        alt: sss
+        caption: sss
+      - thumb: /images/small/site-work-main-st-img4-Concord-Mass.webp
+        full: /images/large/site-work-main-st-img4-Concord-Mass.webp
+        alt: sss
+        caption: sss
+      - thumb: /images/small/site-work-main-st-img6-Concord-Mass.webp
+        full: /images/large/site-work-main-st-img6-Concord-Mass.webp
+        alt: sss
+        caption: sss
+      - thumb: /images/small/site-work-main-st-img7-Concord-Mass.webp
+        full: /images/large/site-work-main-st-img7-Concord-Mass.webp
+        alt: sss
+        caption: sss
+      - thumb: /images/small/site-work-main-st-img8-Concord-Mass.webp
+        full: /images/large/site-work-main-st-img8-Concord-Mass.webp
+        alt: sss
+        caption: sss
+
+  - title: Plum Island Coastal Site Development
+    location: Newbury, MA
+    summary: >
+      Specialized coastal site development requiring meticulous grading, structural sand stabilization, 
+      and deep foundation preparation engineered to withstand severe ocean weather conditions and shifting beachfront soils.
+    images:
+      - thumb: /images/small/Plum-Island-Newbury-Mass.webp
+        full: /images/large/Plum-Island-Newbury-Mass.webp
+        alt: sss
+        caption: sss
+      - thumb: /images/small/Plum-Island-img2-Newbury-Mass.webp
+        full: /images/large/Plum-Island-img2-Newbury-Mass.webp
+        alt: sss
+        caption: sss
+      - thumb: /images/small/Plum-Island-img3-Newbury-Mass.webp
+        full: /images/large/Plum-Island-img3-Newbury-Mass.webp
+        alt: sss
+        caption: sss
+
+  - title: Mountain Rain Water & Hillside Grading Project
+    location: Ashburnham, MA
+    summary: >
+      A highly complex hillside grading and site work project focused on managing steep elevation changes, 
+      intercepting heavy seasonal groundwater flow, and constructing deep structural utility trenches.
+    images:
+      - thumb: /images/small/site-work-ashburnham-mass.webp 
+        full: /images/large/site-work-ashburnham-mass.webp
+        alt: Hillside slope grading and drainage ditch construction in Ashburnham, Massachusetts
+        caption: Precision slope optimization and drainage control.
+      - thumb: /images/small/site-work-img2-ashburnham-mass.webp
+        full: /images/large/site-work-img2-ashburnham-mass.webp
+        alt: sss  
+        caption: sss
+
+  - title: Main Line Sewer & Underground Utility Installation
+    location: Concord, MA
+    summary: >
+      Deep infrastructure utility excavation managing structural line runs, heavy bedding preparation, 
+      and clean tie-ins to municipal main sewer systems underneath tight residential layouts.
+    images:
+      - thumb: /images/small/sewer-install.webp
+        full: /images/large/sewer-install.webp
+        alt: Main line sewer trench excavation and utility installation in Concord, Massachusetts
+        caption: Deep utility line trenching and pipe setting.
+      - thumb: /images/small/sewer-install-img2.webp
+        full: /images/large/sewer-install-img2.webp
+        alt: Underground utility lines safely managed beside natural stone installations
+        caption: Deep conduit routing under retaining structures.
 
 
 

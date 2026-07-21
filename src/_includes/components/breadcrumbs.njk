@@ -1,0 +1,65 @@
+{% if page.url != "/" %}
+<nav aria-label="breadcrumb" class="container breadcrumb-nav">
+  <a href="/">Home</a>
+  
+  {% if parentTitle and parentUrl %}
+    <span class="breadcrumb-separator">/</span>
+    <a href="{{ parentUrl }}">{{ parentTitle }}</a>
+  {% endif %}
+
+  <span class="breadcrumb-separator">/</span>
+  <span class="breadcrumb-current">{{ serviceName or title }}</span>
+</nav>
+
+
+{% endif %}
+
+{# 
+
+<style>
+  .breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .breadcrumb-nav a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  .breadcrumb-nav a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb-separator {
+    color: #6c757d;
+  }
+  .breadcrumb-current {
+    color: #495057;
+    font-weight: 500;
+  }
+</style> #}
+
+
+
+{# {% if page.url != "/" %}
+<nav aria-label="breadcrumb" class="breadcrumb-container">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="/">Home</a>
+    </li>
+
+    <!-- Optional Parent Category (e.g., Services) -->
+    {% if parentTitle and parentUrl %}
+    <li class="breadcrumb-item">
+      <a href="{{ parentUrl }}">{{ parentTitle }}</a>
+    </li>
+    {% endif %}
+
+    <!-- Current Active Page -->
+    <li class="breadcrumb-item active" aria-current="page">
+      {{ serviceName or title }}
+    </li>
+  </ol>
+</nav>
+{% endif %} #}
