@@ -374,3 +374,10 @@ line-height:35px;
   padding-left: 15px;
   margin-top: 4px;
 }
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 8px;
+  color: #6c757d;
+}

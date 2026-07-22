@@ -1,0 +1,49 @@
+{% if page.url != '/' %}
+{% set siteUrl = "https://sphaneufassociates.com" %}
+{% set position = 1 %}
+
+{# Safely resolve the raw title variable #}
+{% set rawTitle = breadcrumbTitle or serviceName or title or "" %}
+
+{# Safely extract the first part if ' - ' exists in rawTitle #}
+{% if ' - ' in rawTitle %}
+  {% set cleanName = rawTitle.split(' - ')[0] | trim %}
+{% else %}
+  {% set cleanName = rawTitle | trim %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": "Home",
+      "item": "{{ siteUrl }}/"
+    }
+    {%- if breadcrumbs -%}
+      {%- for crumb in breadcrumbs -%}
+        {%- set position = position + 1 -%}
+        ,
+        {
+          "@type": "ListItem",
+          "position": {{ position }},
+          "name": "{{ crumb.title }}",
+          "item": "{{ siteUrl }}{{ crumb.url }}"
+        }
+      {%- endfor -%}
+    {%- endif -%}
+    {%- set position = position + 1 -%}
+    ,
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": "{{ cleanName | safe }}",
+      "item": "{{ siteUrl }}{{ page.url }}"
+    }
+  ]
+}
+</script>
+{% endif %}

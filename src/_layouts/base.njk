@@ -6,7 +6,11 @@
   {# =========================     SEO CORE     ========================= #}
   <title>{{ title }}</title>
   <meta name="description" content="{{ description  }}">
-  <link rel="canonical" href="https://sphaneufassociates.com{{ canonical }}">
+  
+  {% set rawUrl = canonical or page.url %}
+  {% set cleanUrl = rawUrl | replace('index.html', '') | replace('.html', '') | replace('//', '') %}
+  <link rel="canonical" href="https://sphaneufassociates.com{{ cleanUrl }}">
+
   {# =========================     OPEN GRAPH     ========================= #}
   <meta property="og:title" content="{{ title or 'S. Phaneuf & Associates' }}">
   <meta property="og:description" content="{{ description or 'Professional paving and site development services in Massachusetts.' }}">
@@ -19,51 +23,8 @@
   {# =========================     CSS     ========================= #}
   <link rel="stylesheet" href="/css/templatestyles.css">
   {{ head | safe }}
-  
-{#   
-  {% if schema %}<script type="application/ld+json">{{ schema | safe }}</script>{% endif %} #}
-
-
-<!-- Universal Breadcrumb Schema -->
-  {% if page.url != "/" %}
-  {% set schemaList = [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.phaneufassociates.com/"
-    }
-  ] %}
-
-  {% if parentTitle and parentUrl %}
-    {% set _ = schemaList.push({
-      "@type": "ListItem",
-      "position": 2,
-      "name": parentTitle,
-      "item": "https://www.phaneufassociates.com" ~ parentUrl
-    }) %}
-  {% endif %}
-
-  {% set _ = schemaList.push({
-    "@type": "ListItem",
-    "position": schemaList.length + 1,
-    "name": serviceName or title,
-    "item": "https://www.phaneufassociates.com" ~ page.url
-  }) %}
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": {{ schemaList | dump | safe }}
-  }
-  </script>
-  {% endif %}
-
-  <!-- Keeps support for custom front-matter schema if needed -->
-  {% if schema %}<script type="application/ld+json">{{ schema | safe }}</script>{% endif %}
-
-
+  {# ========================= BREADCRUMB LD JSON =========================  #}
+  {% include "breadcrumbs-json.njk" %}
 </head>
 <body class="{{ bodyClass }}">
   {% include "header.njk" %}

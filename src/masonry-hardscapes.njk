@@ -4,7 +4,8 @@ permalink: masonry-hardscapes.html
 
 title: "Masonry & Hardscapes in Massachusetts | Patios, Walkways & Outdoor Living"
 description: "Custom patios, walkways, retaining walls, outdoor kitchens, fireplaces, pool decks, and complete hardscape construction throughout Massachusetts."
-canonical: "/masonry-hardscapes.html"
+canonical: "/masonry-hardscapes"
+
 # ogImage:
 #    masonry-hardscapes.webp
 
@@ -25,8 +26,9 @@ serviceName: Masonry & Hardscapes
 serviceType: masonry
 serviceSlug: masonry-hardscapes
 
-parentTitle: Services
-parentUrl: /services/
+breadcrumbs:
+  - title: Services
+    url: /services/
 
 ##################################################
 # HERO
@@ -148,4 +150,45 @@ sidebarImages:
     location: Concord, MA
     caption: Complete backyard transformation.
 ---
+
+{% if page.url != '/' %}
+{% set siteUrl = "https://sphaneufassociates.com" %}
+{% set position = 1 %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": "Home",
+      "item": "{{ siteUrl }}/"
+    }
+    {%- if breadcrumbs -%}
+      {%- for crumb in breadcrumbs -%}
+        {%- set position = position + 1 -%}
+        ,
+        {
+          "@type": "ListItem",
+          "position": {{ position }},
+          "name": "{{ crumb.title }}",
+          "item": "{{ siteUrl }}{{ crumb.url }}"
+        }
+      {%- endfor -%}
+    {%- endif -%}
+    {%- set position = position + 1 -%}
+    ,
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": "{{ breadcrumbTitle or serviceName or title.split(' - ')[0] | trim }}",
+      "item": "{{ siteUrl }}{{ page.url }}"
+    }
+  ]
+}
+</script>
+{% endif %}
+
 {% include "components/service-page.njk" %}

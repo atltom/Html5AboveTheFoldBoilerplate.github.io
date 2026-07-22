@@ -1,5 +1,113 @@
 {% if page.url != "/" %}
 <nav aria-label="breadcrumb" class="container breadcrumb-nav">
+  <ol class="breadcrumb-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center;">
+    
+    <!-- Always Root Home -->
+    <li class="breadcrumb-item">
+      <a href="/">Home</a>
+    </li>
+
+    <!-- Loop through explicit parent trail if provided -->
+    {% if breadcrumbs %}
+      {% for crumb in breadcrumbs %}
+        <li class="breadcrumb-item">
+          {# <span class="breadcrumb-separator" aria-hidden="true">/</span> #}
+          <a href="{{ crumb.url }}">{{ crumb.title }}</a>
+        </li>
+      {% endfor %}
+    
+    <!-- Fallback for 2-tier service pages with parentTitle/parentUrl -->
+    {% elif parentTitle and parentUrl %}
+      <li class="breadcrumb-item">
+        {# <span class="breadcrumb-separator" aria-hidden="true">/</span> #}
+        <a href="{{ parentUrl }}">{{ parentTitle }}</a>
+      </li>
+    {% endif %}
+
+    <!-- Current Page (No link, marked active) -->
+    <li class="breadcrumb-item breadcrumb-current" aria-current="page">
+      {# <span class="breadcrumb-separator" aria-hidden="true">/</span> #}
+      <span>{{ breadcrumbTitle or serviceName or title }}</span>
+    </li>
+
+  </ol>
+</nav>
+{% endif %}
+
+
+
+
+
+
+
+{# 
+
+
+How to Configure Your Frontmatter
+A. For Top-Level Pages (e.g., /contact-us)
+No parent needed! It renders cleanly as: Home / Contact Us
+
+Markdown
+---
+layout: base.njk
+title: Contact Us
+permalink: /contact-us/
+---
+
+
+
+B. For Service Pages (e.g., /masonry-hardscapes)
+Set parentTitle and parentUrl. It renders as: Home / Services / Masonry & Hardscapes
+
+Markdown
+---
+layout: base.njk
+title: Masonry & Hardscapes
+parentTitle: Services
+parentUrl: /services/
+permalink: /masonry-hardscapes/
+---
+
+
+C. For Deep-Link / Sub-Service Pages (e.g., /masonry-hardscapes/retaining-walls)
+Pass the breadcrumbs array for multiple levels. It renders as: Home / Services / Masonry & Hardscapes / Retaining Walls
+
+Markdown
+---
+layout: base.njk
+title: Retaining Wall Construction
+permalink: /masonry-hardscapes/retaining-walls/
+breadcrumbs:
+  - title: Services
+    url: /services/
+  - title: Masonry & Hardscapes
+    url: /masonry-hardscapes/
+---
+ #}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{# 
+{% if page.url != "/" %}
+<nav aria-label="breadcrumb" class="container breadcrumb-nav">
   <a href="/">Home</a>
   
   {% if parentTitle and parentUrl %}
@@ -10,9 +118,13 @@
   <span class="breadcrumb-separator">/</span>
   <span class="breadcrumb-current">{{ serviceName or title }}</span>
 </nav>
-
-
 {% endif %}
+ #}
+
+
+
+
+
 
 {# 
 
@@ -41,8 +153,8 @@
 </style> #}
 
 
-
-{# {% if page.url != "/" %}
+{# 
+ {% if page.url != "/" %}
 <nav aria-label="breadcrumb" class="breadcrumb-container">
   <ol class="breadcrumb">
     <li class="breadcrumb-item">
@@ -62,4 +174,4 @@
     </li>
   </ol>
 </nav>
-{% endif %} #}
+{% endif %}  #}

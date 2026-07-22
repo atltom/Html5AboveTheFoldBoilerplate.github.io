@@ -2,7 +2,10 @@
 layout: base.njk
 title: Custom Hardscaping, Masonry & Excavation Services in MA
 description: S. Phaneuf & Associates provides professional masonry, hardscape design, sitework, asphalt paving, and excavation services throughout Massachusetts.
+breadcrumbTitle: "Services"
 permalink: services.html
+
+
 
 
 
@@ -54,6 +57,7 @@ servicesPage:
   
   services:
     - title: "Masonry & Hardscapes"
+      slug: masonry-hardscapes    
       image: "/images/small/masonry.webp"
       alt: >
         Custom masonry and hardscape construction throughout Massachusetts.
@@ -68,6 +72,7 @@ servicesPage:
         - Walkways & Pathways
       link: "/masonry-hardscapes.html"
     - title: "Asphalt Paving"
+      slug: asphalt-paving    
       image: "/images/asphalt-paving.webp"
       alt: >
         Asphalt paving services throughout Massachusetts.
@@ -81,6 +86,7 @@ servicesPage:
         - Sealcoating
       link: "/asphalt-paving.html"
     - title: "Excavation & Site Development"
+      slug: excavation-site-development
       image: "/images/site-development.webp"
       alt: >
         Excavation and site development services throughout Massachusetts.
@@ -94,6 +100,7 @@ servicesPage:
         - Utility Excavation
       link: "/excavation-site-development.html"
     - title: "Snow & Ice Management"
+      slug: snow-ice-management
       image: "/images/snow-removal.webp"
       alt: >
         Commercial snow and ice management services throughout Massachusetts.
@@ -107,47 +114,33 @@ servicesPage:
         - Commercial Snow Services
       link: "/snow-ice-management.html"
 ---
+{# 
 
-
-<!--service-page-->
-{# 1. Define the dynamic breadcrumb object #}
-{% set breadcrumbObject = {
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.phaneufassociates.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://www.phaneufassociates.com/services/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": serviceName or title,
-      "item": "https://www.phaneufassociates.com" ~ page.url
-    }
-  ]
-} %}
-
-{# 2. Convert that object into JSON string and assign it to the 'schema' variable #}
-{% set schema = breadcrumbObject | json %}
+  "@type": "ItemPage",
+  "@id": "https://www.phaneufassociates.com/services/#webpage",
+  "url": "https://www.phaneufassociates.com/services/",
+  "name": "Our Contracting Services | S. Phaneuf & Associates"
+}
+</script> #}
 
 
 {% set service = services[serviceType] %}
- {% include "components/breadcrumbs.njk" %}  
-<div class="container flex-container mb-5 pb-5">
+{% include "components/breadcrumbs.njk" %}  
+
+
+<div class="container flex-container mb-5 pb-5">    
    
     <article class="mt-5 content">
-        {% for item in servicesPage.services %}
+        <section id="services-overview">
+            {% for item in servicesPage.services %}
             {% include "components/service-card.njk" %}
         {% endfor %}
+           
+        </section>
+        
         {% include "components/intro-section.njk" %}
         {% if portfolio %}{% include "components/portfolio.njk" %}{% endif %}
         {% include "components/process.njk" %}     

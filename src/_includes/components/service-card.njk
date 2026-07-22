@@ -1,48 +1,65 @@
-<section class="service-card py-5">
-
+{# <section class="service-card py-5" id="services-overview">
     <div class="row">
-
         <div class="col-lg-4">
+            <img src="{{ item.image }}" alt="{{ item.alt }}" class="img-fluid">
+        </div>
+        <div class="col-lg-8">
+            <h2 class="pipe">{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+            <ul class="ps-3 li">
+                {% for service in item.services %}
+                    <li>{{ service }}</li>
+                {% endfor %}
+            </ul>
+            <a href="{{ item.link }}" class="btn btn-primary">
+                Learn More
+            </a>
+        </div>
+    </div>
+</section> #}
 
-            <img src="{{ item.image }}"
-                 alt="{{ item.alt }}"
-                 class="img-fluid">
 
+<section class="service-card py-5 border-bottom" id="{{ item.slug }}">
+    <div class="row align-items-center g-4">
+        
+        <!-- Image Column -->
+        <div class="col-lg-4">
+            <a href="{{ item.link }}">
+                <img 
+                    src="{{ item.image }}" 
+                    alt="{{ item.alt }}" 
+                    class="img-fluid rounded shadow-sm" 
+                    loading="lazy"
+                    width="400"
+                    height="300"
+                >
+            </a>
         </div>
 
-
+        <!-- Content Column -->
         <div class="col-lg-8">
-
-            <h2 class="pipe">
-                {{ item.title }}
+            <h2 class="pipe text-dark fw-bold mb-3">
+                <a href="{{ item.link }}" class="text-decoration-none text-dark">
+                    {{ item.title }}
+                </a>
             </h2>
 
+            <p class="lead-sm text-secondary">{{ item.description }}</p>
 
-            <p>
-                {{ item.description }}
-            </p>
+            <!-- Key Features / Sub-services List -->
+            {% if item.services and item.services.length %}
+                <ul class="ps-3 li mb-4">
+                    {% for service in item.services %}
+                        <li>{{ service }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
 
-
-            <ul class="ps-3 li">
-
-                {% for service in item.services %}
-
-                    <li>{{ service }}</li>
-
-                {% endfor %}
-
-            </ul>
-
-
-            <a href="{{ item.link }}"
-               class="btn btn-primary">
-
-                Learn More
-
+            <!-- Descriptive Call-to-Action Link -->
+            <a href="{{ item.link }}" class="btn btn-primary fw-semibold" style="background-color: #d85d15; border-color: #d85d15;">
+                Explore {{ item.title }} &rarr;
             </a>
-
         </div>
 
     </div>
-
 </section>
