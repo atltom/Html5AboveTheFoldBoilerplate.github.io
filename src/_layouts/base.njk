@@ -3,36 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {# =========================     SEO CORE     ========================= #}
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description  }}">
-  
-  {% set rawUrl = canonical or page.url %}
-  {% set cleanUrl = rawUrl | replace('index.html', '') | replace('.html', '') | replace('//', '') %}
-  <link rel="canonical" href="https://sphaneufassociates.com{{ cleanUrl }}">
-
-  {# =========================     OPEN GRAPH     ========================= #}
-  <meta property="og:title" content="{{ title or 'S. Phaneuf & Associates' }}">
-  <meta property="og:description" content="{{ description or 'Professional paving and site development services in Massachusetts.' }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sphaneufassociates.com{{ page.url }}">
-  <meta property="og:image" content="https://sphaneufassociates.com/images/{{ ogImage or 'S-Phaneuf-Associates.webp' }}">
-  {# =========================     FAVICONS     ========================= #}
+  <title>{{ title or site.name }}</title>
+  <meta name="description" content="{{ description or site.defaultDescription }}">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  {% set rawPath = canonical or page.url %}{% set cleanPath = rawPath | replace('index.html', '') | replace('.html', '') %}{% if cleanPath != '/' and cleanPath.endsWith('/') %}{% set cleanPath = cleanPath.slice(0, -1) %}{% endif %}{% set canonicalUrl = "https://sphaneufassociates.com" ~ cleanPath %}<link rel="canonical" href="{{ canonicalUrl }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:type" content="website"> 
+  <meta property="og:url" content="{{ canonicalUrl }}">
+  <meta property="og:image" content="{{ site.url }}/images/{{ ogImage or site.defaultOgImage }}">
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preload" href="/css/templatestyles.min.css" as="style" media="all">
+  <link rel="preload" fetchpriority="high" as="image" href="/images/S-Phaneuf-Associates.webp" type="image/webp">
+  {% if heroImageMobile %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageMobile }}" type="image/webp" media="(max-width: 1023px)">{% endif %}
+  {% if heroImageDesktop %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageDesktop }}" type="image/webp" media="(min-width: 1024px)">{% endif %}
+  <link rel="stylesheet" href="/css/templatestyles.css">
   <link rel="icon" href="/images/favicon96c.png" sizes="96x96">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-  {# =========================     CSS     ========================= #}
-  <link rel="stylesheet" href="/css/templatestyles.css">
+  <link rel="shortcut icon" type="image/png" href="/images/favicon32.png">
+  <meta name="theme-color" content="#303f5e">
+  <meta name="msapplication-TileColor" content="#303f5e">
+  <meta name="msapplication-TileImage" content="/images/apple-touch-icon.png">
+  <meta name="seobility" content="69ae98e4ec0c1d0ab86a1032c9767d87">
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script>
   {{ head | safe }}
-  {# ========================= BREADCRUMB LD JSON =========================  #}
-  {% include "breadcrumbs-json.njk" %}
+  {# 1. Organization Schema (Homepage Only) #}{% if page.url == '/' %}<script type="application/ld+json">{% include "schema/business.njk" %}</script>{% endif %}{# 2. Breadcrumbs Schema (Inner Pages Only) #}{% if page.url != '/' %}{# {% include "breadcrumbs-json.njk" %} #}<script type="application/ld+json">{% include "schema/breadcrumbs.njk" %}</script>{% endif %}{# 3. Custom Page Schema (Hook for Service pages, Contact, etc.) #}{% block schema %}{% endblock %}
 </head>
 <body class="{{ bodyClass }}">
-  {% include "header.njk" %}
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <main class="{{ mainClass }}">
-     {% if heroHeading %}
-        {% include "components/hero.njk" %}
-    {% endif %}
+  {% include "header.njk" %}
+  <main id="main-content" class="{{ mainClass }}">
+    {% if heroHeading %}{% include "components/hero.njk" %}{% endif %}
     {{ content | safe }}
   </main>
   {% include "footer.njk" %}

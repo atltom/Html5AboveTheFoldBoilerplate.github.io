@@ -1,9 +1,5 @@
-company:
-  name: S. Phaneuf & Associates
-  phone: ""
-  email: ""
-  location: Massachusetts
-
-seo:
-  defaultTitle: "S. Phaneuf & Associates"
-  defaultDescription: "Masonry, hardscaping, paving, excavation, and snow management services."
+url: "https://sphaneufassociates.com"
+name: "S. Phaneuf & Associates"
+defaultDescription: "Professional paving, asphalt, masonry, and site development services in Massachusetts."
+defaultOgImage: "S-Phaneuf-Associates.webp"
+themeColor: "#303f5e"
