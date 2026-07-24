@@ -29,44 +29,24 @@ heroCTA: Request a Free Consultation
 ##################################################
 
 intro:
-
   heading: >
     Comprehensive Construction
     Solutions Throughout Massachusetts
-
   paragraphs:
-
     - >
-      Whether you're creating a custom outdoor
-      living space, improving drainage around
-      your property, paving a driveway, or
-      preparing for winter weather, our
-      experienced team provides thoughtful
-      solutions designed for lasting performance.
-
+      Whether you're creating a custom outdoor living space, improving drainage around your property, paving a driveway, or preparing for winter weather, our experienced team provides thoughtful solutions designed for lasting performance.
     - >
-      From initial site preparation through
-      final construction, we take pride in
-      delivering quality workmanship and
-      dependable service throughout every phase
-      of your project.
-
-
-
+      From initial site preparation through final construction, we take pride in delivering quality workmanship and dependable service throughout every phase of your project.
 servicesPage:
   heading: "Construction Services Throughout Massachusetts"
   #intro: >
-  #  For more than 35 years, S. Phaneuf & Associates has provided quality construction services throughout Massachusetts. From custom outdoor living spaces and asphalt paving to excavation and snow management, we deliver thoughtful solutions designed to enhance and protect your property.
- 
-  
+  #  For more than 35 years, S. Phaneuf & Associates has provided quality construction services throughout Massachusetts. From custom outdoor living spaces and asphalt paving to excavation and snow management, we deliver thoughtful solutions designed to enhance and protect your property. 
   services:
     - title: "Masonry & Hardscapes"
       slug: masonry-hardscapes    
       image: "/images/small/masonry.webp"
-      alt: >
-        Custom masonry and hardscape construction throughout Massachusetts.
-      description: >
-        We design and construct beautiful outdoor living spaces including patios, retaining walls, walkways, fireplaces, pool decks, and complete backyard transformations.
+      alt: "Custom masonry and hardscape construction throughout Massachusetts."
+      description: "We design and construct beautiful outdoor living spaces including patios, retaining walls, walkways, fireplaces, pool decks, and complete backyard transformations."
       services:
         - Custom Patios
         - Retaining Walls
@@ -78,10 +58,8 @@ servicesPage:
     - title: "Asphalt Paving"
       slug: asphalt-paving    
       image: "/images/asphalt-paving.webp"
-      alt: >
-        Asphalt paving services throughout Massachusetts.
-      description: >
-        From residential driveways to commercial parking lots, our experienced team provides durable asphalt paving, resurfacing, and maintenance solutions.
+      alt: "Asphalt paving services throughout Massachusetts."
+      description: "From residential driveways to commercial parking lots, our experienced team provides durable asphalt paving, resurfacing, and maintenance solutions."
       services:
         - Residential Driveways
         - Commercial Parking Lots
@@ -92,10 +70,8 @@ servicesPage:
     - title: "Excavation & Site Development"
       slug: excavation-site-development
       image: "/images/site-development.webp"
-      alt: >
-        Excavation and site development services throughout Massachusetts.
-      description: >
-        We provide professional excavation, grading, drainage, and site preparation services for residential and commercial projects throughout Massachusetts.
+      alt: "Excavation and site development services throughout Massachusetts."
+      description: "We provide professional excavation, grading, drainage, and site preparation services for residential and commercial projects throughout Massachusetts."
       services:
         - Site Preparation
         - Drainage Solutions
@@ -106,10 +82,8 @@ servicesPage:
     - title: "Snow & Ice Management"
       slug: snow-ice-management
       image: "/images/snow-removal.webp"
-      alt: >
-        Commercial snow and ice management services throughout Massachusetts.
-      description: >
-        Our commercial snow and ice management services help keep properties safe and accessible throughout the winter season.
+      alt: "Commercial snow and ice management services throughout Massachusetts."
+      description: "Our commercial snow and ice management services help keep properties safe and accessible throughout the winter season."
       services:
         - Snow Removal
         - Ice Management
@@ -118,23 +92,15 @@ servicesPage:
         - Commercial Snow Services
       link: "/snow-ice-management.html"
 ---
-
-
-
 {% set service = services[serviceType] %}
 {% include "components/breadcrumbs.njk" %}  
-
-
-<div class="container flex-container mb-5 pb-5">    
-   
+<div class="container flex-container mb-5 pb-5">     
     <article class="mt-5 content">
         <section id="services-overview">
             {% for item in servicesPage.services %}
             {% include "components/service-card.njk" %}
-        {% endfor %}
-           
-        </section>
-        
+        {% endfor %}        
+        </section>       
         {% include "components/intro-section.njk" %}
         {% if portfolio %}{% include "components/portfolio.njk" %}{% endif %}
         {% include "components/process.njk" %}     
@@ -148,7 +114,3 @@ servicesPage:
 </div>
 {% include "components/final-cta.njk" %}  
 {% include "components/full-width-image.njk" %}
-
-
-
-

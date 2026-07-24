@@ -3,22 +3,13 @@
         <!-- Image Column -->
         <div class="col-lg-4">
             <a href="{{ item.link }}">
-                <img 
-                    src="{{ item.image }}" 
-                    alt="{{ item.alt }}" 
-                    class="img-fluid rounded shadow-sm" 
-                    loading="lazy"
-                    width="400"
-                    height="300"
-                >
+                <img src="{{ item.image }}" alt="{{ item.alt }}" class="img-fluid rounded shadow-sm" loading="lazy" width="400" height="300">
             </a>
         </div>
         <!-- Content Column -->
         <div class="col-lg-8">
             <h2 class="pipe text-dark fw-bold mb-3">
-                <a href="{{ item.link }}" class="text-decoration-none text-dark">
-                    {{ item.title }}
-                </a>
+                <a href="{{ item.link }}" class="text-decoration-none text-dark">{{ item.title }}</a>
             </h2>
             <p class="lead-sm text-secondary">{{ item.description }}</p>
             <!-- Key Features / Sub-services List -->
