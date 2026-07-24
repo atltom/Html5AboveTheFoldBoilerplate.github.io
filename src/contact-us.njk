@@ -1,28 +1,33 @@
 ---
 layout: base.njk
 permalink: "contact-us.html"
-section: contact
+canonical: "/contact-us"
+title: 'Contact Us - S.Phaneuf & Associates'
+description: 'Get a Free Quote! S. Phaneuf & Associates offers consultations & estimates for patios, walkways, driveways, and more in Concord & nearby areas.'
 
+# NAVIGATION
+section: contact-us
 
-heroImageClass: foundatixon
+# HERO
+heroImageMobile: "566/foundation.webp)"
+heroImageDesktop: "large/foundation.webp"
+heroImageClass: foundation
 heroHeading: "Contact Us Today. We're Here to Help You with Your Inquiries!"
 heroSubheading: "Join the growing number of smart homeowners and businesses that have experienced the value of our service"
 heroImage: foundation.webp
 heroCTA: Get Started
+
+# BREADCRUMBS 
+breadcrumbTitle: "Contact Us"
 ---
-
-{# 
-<div id="hero" class="big-image {{ heroImageClass }}">
-    <div class="overlay">
-        <h1 class="hero-h1">{{ heroHeading }}<span class="no-wrap"></span></h1>
-        <hr class="my-3 mx-1">
-        <p class="hero-p p-0 fw-7">{{ heroSubheading }}</p>
-        <div class="t-c mt-3">
-            <a class="hero-btn btn fw-6" href="/contact-us">{{heroCTA}}</a>
-        </div>
-    </div>
-</div> #}
-
-<br><br><br><br><br><br><br><br><br>
-UPDATE HERO AND ADD CONTENT
-<br><br><br><br><br><br><br><br><br>
+{% include "components/breadcrumbs.njk" %}  
+<div class="container flex-container mb-5 pb-5">    
+    <article class="mt-5 content">
+        <h2 class="pipe">UPDATE HERO AND ADD CONTENT</h2>
+        <br><br><br><br><br><br><br><br><br>
+    </article>
+    <aside class="contact-form mt-5 mb-1">
+    {% include "components/sidebar.njk" %}
+    </aside>
+</div>
+{% include "components/full-width-image.njk" %}

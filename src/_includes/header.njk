@@ -21,7 +21,7 @@
                     Services&nbsp;<span id="dropbtn-arrow"></span>
                 </a>
                 <div class="dropdown-content" id="nav-dropdown">
-                    <a href="/services" class="nav-dd-link fw-bold">Our Services</a>
+                    <a href="/services" class="nav-dd-link {% if service == 'services' %}selected{% endif %}">Our Services</a>
                     <a href="/asphalt-paving" class="nav-dd-link {% if service == 'asphalt-paving' %}selected{% endif %}">Asphalt Paving</a>
                     <a href="/masonry-hardscapes" class="nav-dd-link {% if service == 'masonry-hardscapes' %}selected{% endif %}">Masonry &amp; Hardscapes</a>
                     <a href="/excavation-site-development" class="nav-dd-link {% if service == 'excavation' %}selected{% endif %}">Excavation &amp; Site Development</a>
@@ -30,7 +30,7 @@
             <a href="/service-areas" class="nav-link {% if section == 'service-areas' %}selected{% endif %}" {% if section == 'service-areas' %}aria-current="page"{% endif %}>Service Areas</a>
             <a href="/portfolio" class="nav-link {% if section == 'portfolio' %}selected{% endif %}" {% if section == 'portfolio' %}aria-current="page"{% endif %}>Portfolio </a>
             <a href="/reviews" class="nav-link {% if section == 'reviews' %}selected{% endif %}" {% if section == 'reviews' %}aria-current="page"{% endif %}>Reviews</a>
-            <a href="/contact-us" class="nav-link {% if section == 'contact' %}selected{% endif %}" {% if section == 'contact' %}aria-current="page"{% endif %}>Contact Us</a>
+            <a href="/contact-us" class="nav-link {% if section == 'contact-us' %}selected{% endif %}" {% if section == 'contact' %}aria-current="page"{% endif %}>Contact Us</a>
             </div>
         </div>
     </nav>

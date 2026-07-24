@@ -102,3 +102,38 @@ module.exports = function(eleventyConfig) {
   });
 
 };
+
+
+
+
+
+{# 
+{--# 1. Define the dynamic breadcrumb object #--}
+{% set breadcrumbObject = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.zzzzzzzzzzzzzzzzzzzzzzzzzzzzphaneufassociates.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://www.phaneufassociates.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": serviceName or title,
+      "item": "https://www.phaneufassociates.com" ~ page.url
+    }
+  ]
+} %}
+
+{--# 2. Convert that object into JSON string and assign it to the 'schema' variable #--}
+{% set schema = breadcrumbObject | json %} #}
+

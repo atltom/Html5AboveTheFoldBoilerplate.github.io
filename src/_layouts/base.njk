@@ -28,8 +28,7 @@
   <meta name="msapplication-TileColor" content="#303f5e">
   <meta name="msapplication-TileImage" content="/images/apple-touch-icon.png">
   <meta name="seobility" content="69ae98e4ec0c1d0ab86a1032c9767d87">
-  <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script>
-  {{ head | safe }}
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script>{{ head | safe }}
   {# 1. Organization Schema (Homepage Only) #}{% if page.url == '/' %}<script type="application/ld+json">{% include "schema/business.njk" %}</script>{% endif %}{# 2. Breadcrumbs Schema (Inner Pages Only) #}{% if page.url != '/' %}{# {% include "breadcrumbs-json.njk" %} #}<script type="application/ld+json">{% include "schema/breadcrumbs.njk" %}</script>{% endif %}{# 3. Custom Page Schema (Hook for Service pages, Contact, etc.) #}{% block schema %}{% endblock %}
 </head>
 <body class="{{ bodyClass }}">

@@ -330,17 +330,6 @@ line-height:35px;
 
 }
 
-/* 
-.nav-link.dropdown.selected{
-    text-underline-offset: 0;
-    text-decoration: underline;
-    text-decoration-color: #bc5a15;
-    text-decoration-thickness: 2px;
-    text-decoration-skip-ink: auto;
-    text-underline-position: under;
-} */
-
-
 
 
 
@@ -388,45 +377,54 @@ line-height:35px;
 
 
   /* Clean Dropdown Alignment Fix */
-                .dropdown {position: relative;display: inline-block;padding: 0;}
-                .dropdown-content {display: none;position: absolute;top: 100%;left: 0;background-color: #303f5e;min-width: 260px;z-index: 100;border: 1px solid #212f4a;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);}
-                .dropdown-content.show {display: block;}
+  .dropdown {position: relative;display: inline-block;padding: 0;}
+  .dropdown-content {display: none;position: absolute;top: 100%;left: 0;background-color: #303f5e;min-width: 260px;z-index: 100;border: 1px solid #212f4a;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);}
+  .dropdown-content.show {display: block;}
 
-                /* Hover Support for Desktop (600px+) */
-                @media (min-width: 600px) {
-                    .dropdown-content {/* Resets fixed desktop positioning to stay anchored under the button */position: absolute !important;top: 100% !important;left: 0 !important;}         
-                    .dropdown:hover .dropdown-content {display: block;}
-                }
+  /* Hover Support for Desktop (600px+) */
+  @media (min-width: 600px) {
+      .dropdown-content {/* Resets fixed desktop positioning to stay anchored under the button */position: absolute !important;top: 100% !important;left: 0 !important;}         
+      .dropdown:hover .dropdown-content {display: block;}
+  }
 
-                /* Mobile Dropdown Fix */
-                @media (max-width: 599px) {
-                    .dropdown-content {position: relative;margin-left: 15px;width: calc(100% - 15px);}
-                }
+  /* Mobile Dropdown Fix */
+  @media (max-width: 599px) {
+      .dropdown-content {position: relative;margin-left: 15px;width: calc(100% - 15px);}
+  }
 
-                /* 1. Allow the dropdown to pop out past the navigation bar height */
-                .nav {overflow: visible !important;}
-                /* 2. Raise the dropdown z-index so it sits cleanly on top of hero images */
-                .dropdown-content {z-index: 9999 !important;}
-                /* 3. Remove the harsh browser focus outline if desired */
-                .dropbtn:focus,.dropdown-content:focus {outline: none !important;}
-                /* Mobile Navigation Dropdown Reset */
-                
-                @media screen and (max-width: 768px) {
-                    /* 1. Ensure dropdown items are hidden by default inside mobile menu */
-                    .dropdown-content {display: none !important;position: static !important; /* Prevents absolute positioning overlap */box-shadow: none !important;padding-left: 1rem; /* Indents sub-links so they look nested */}
-                    /* 2. Only display dropdown links when active class is toggled on mobile */
-                    .dropdown-content.show {display: block !important;}
-                }
+  /* 1. Allow the dropdown to pop out past the navigation bar height */
+  .nav {overflow: visible !important;}
+  /* 2. Raise the dropdown z-index so it sits cleanly on top of hero images */
+  .dropdown-content {z-index: 9999 !important;}
+  /* 3. Remove the harsh browser focus outline if desired */
+  .dropbtn:focus,.dropdown-content:focus {outline: none !important;}
+  /* Mobile Navigation Dropdown Reset */
+  
+  @media screen and (max-width: 768px) {
+      /* 1. Ensure dropdown items are hidden by default inside mobile menu */
+      .dropdown-content {display: none !important;position: static !important; /* Prevents absolute positioning overlap */box-shadow: none !important;padding-left: 1rem; /* Indents sub-links so they look nested */}
+      /* 2. Only display dropdown links when active class is toggled on mobile */
+      .dropdown-content.show {display: block !important;}
+  }
 
-                /* --- Mobile Navigation Overlap & Toggle Fix --- */
-                @media screen and (max-width: 599px) {
-                    /* 1. Reset hardcoded height and force nav container to fit content */
-                    .nav {height: auto !important;max-height: 60px; /* Fits only logo + hamburger bar when collapsed */overflow: hidden;transition: max-height 0.3s ease-in-out;}
-                    /* 2. Hide the link links container by default on mobile */
-                    #nav-wrap {display: none !important;flex-direction: column;padding: 15px 0 20px 0;}
-                    /* 3. When toggled open via hamburger (.navbar-change) */
-                    .nav.navbar-change {max-height: 100vh !important; /* Opens fully down page */overflow-y: auto;}
-                    .nav.navbar-change #nav-wrap {display: block !important; /* Shows links */}
-                    /* 4. Keep hero overlay sitting behind open menu */
-                    .big-image {position: relative;z-index: 1;}
-                }
+  /* --- Mobile Navigation Overlap & Toggle Fix --- */
+  @media screen and (max-width: 599px) {
+      /* 1. Reset hardcoded height and force nav container to fit content */
+      .nav {height: auto !important;max-height: 60px; /* Fits only logo + hamburger bar when collapsed */overflow: hidden;transition: max-height 0.3s ease-in-out;}
+      /* 2. Hide the link links container by default on mobile */
+      #nav-wrap {display: none !important;flex-direction: column;padding: 15px 0 20px 0;}
+      /* 3. When toggled open via hamburger (.navbar-change) */
+      .nav.navbar-change {max-height: 100vh !important; /* Opens fully down page */overflow-y: auto;}
+      .nav.navbar-change #nav-wrap {display: block !important; /* Shows links */}
+      /* 4. Keep hero overlay sitting behind open menu */
+      .big-image {position: relative;z-index: 1;}
+  }
+
+  a.nav-dd-link.selected, a.nav-dd-link.selected:hover {
+    text-underline-offset: 0;
+    text-decoration: underline;
+    text-decoration-color: #bc5a15;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: auto;
+    text-underline-position: under;
+  }

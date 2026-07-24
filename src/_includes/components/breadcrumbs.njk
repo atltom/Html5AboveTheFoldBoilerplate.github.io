@@ -1,48 +1,28 @@
 {% if page.url != "/" %}
 <nav aria-label="breadcrumb" class="container breadcrumb-nav">
   <ol class="breadcrumb-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center;">
-    
-    <!-- Always Root Home -->
-    <li class="breadcrumb-item">
+    {# <!-- Always Root Home --> #}<li class="breadcrumb-item">
       <a href="/">Home</a>
     </li>
-
-    <!-- Loop through explicit parent trail if provided -->
-    {% if breadcrumbs %}
+    {# <!-- Loop through explicit parent trail if provided --> #}{% if breadcrumbs %}
       {% for crumb in breadcrumbs %}
         <li class="breadcrumb-item">
-          {# <span class="breadcrumb-separator" aria-hidden="true">/</span> #}
           <a href="{{ crumb.url }}">{{ crumb.title }}</a>
         </li>
       {% endfor %}
-    
-    <!-- Fallback for 2-tier service pages with parentTitle/parentUrl -->
-    {% elif parentTitle and parentUrl %}
+    {# <!-- Fallback for 2-tier service pages with parentTitle/parentUrl --> #}{% elif parentTitle and parentUrl %}
       <li class="breadcrumb-item">
-        {# <span class="breadcrumb-separator" aria-hidden="true">/</span> #}
         <a href="{{ parentUrl }}">{{ parentTitle }}</a>
       </li>
     {% endif %}
-
-    <!-- Current Page (No link, marked active) -->
-    <li class="breadcrumb-item breadcrumb-current" aria-current="page">
-      {# <span class="breadcrumb-separator" aria-hidden="true">/</span> #}
+    {# <!-- Current Page (No link, marked active) --> #}<li class="breadcrumb-item breadcrumb-current" aria-current="page">
       <span>{{ breadcrumbTitle or serviceName or title }}</span>
     </li>
-
   </ol>
 </nav>
 {% endif %}
 
-
-
-
-
-
-
 {# 
-
-
 How to Configure Your Frontmatter
 A. For Top-Level Pages (e.g., /contact-us)
 No parent needed! It renders cleanly as: Home / Contact Us
@@ -53,8 +33,6 @@ layout: base.njk
 title: Contact Us
 permalink: /contact-us/
 ---
-
-
 
 B. For Service Pages (e.g., /masonry-hardscapes)
 Set parentTitle and parentUrl. It renders as: Home / Services / Masonry & Hardscapes
@@ -67,7 +45,6 @@ parentTitle: Services
 parentUrl: /services/
 permalink: /masonry-hardscapes/
 ---
-
 
 C. For Deep-Link / Sub-Service Pages (e.g., /masonry-hardscapes/retaining-walls)
 Pass the breadcrumbs array for multiple levels. It renders as: Home / Services / Masonry & Hardscapes / Retaining Walls
@@ -84,94 +61,3 @@ breadcrumbs:
     url: /masonry-hardscapes/
 ---
  #}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{# 
-{% if page.url != "/" %}
-<nav aria-label="breadcrumb" class="container breadcrumb-nav">
-  <a href="/">Home</a>
-  
-  {% if parentTitle and parentUrl %}
-    <span class="breadcrumb-separator">/</span>
-    <a href="{{ parentUrl }}">{{ parentTitle }}</a>
-  {% endif %}
-
-  <span class="breadcrumb-separator">/</span>
-  <span class="breadcrumb-current">{{ serviceName or title }}</span>
-</nav>
-{% endif %}
- #}
-
-
-
-
-
-
-{# 
-
-<style>
-  .breadcrumb-nav {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-  .breadcrumb-nav a {
-    text-decoration: none;
-    color: #0066cc;
-  }
-  .breadcrumb-nav a:hover {
-    text-decoration: underline;
-  }
-  .breadcrumb-separator {
-    color: #6c757d;
-  }
-  .breadcrumb-current {
-    color: #495057;
-    font-weight: 500;
-  }
-</style> #}
-
-
-{# 
- {% if page.url != "/" %}
-<nav aria-label="breadcrumb" class="breadcrumb-container">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="/">Home</a>
-    </li>
-
-    <!-- Optional Parent Category (e.g., Services) -->
-    {% if parentTitle and parentUrl %}
-    <li class="breadcrumb-item">
-      <a href="{{ parentUrl }}">{{ parentTitle }}</a>
-    </li>
-    {% endif %}
-
-    <!-- Current Active Page -->
-    <li class="breadcrumb-item active" aria-current="page">
-      {{ serviceName or title }}
-    </li>
-  </ol>
-</nav>
-{% endif %}  #}

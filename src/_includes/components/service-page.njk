@@ -1,41 +1,8 @@
 <!--service-page-->
-
-{# 1. Define the dynamic breadcrumb object #}
-{% set breadcrumbObject = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.phaneufassociates.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://www.phaneufassociates.com/services/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": serviceName or title,
-      "item": "https://www.phaneufassociates.com" ~ page.url
-    }
-  ]
-} %}
-
-{# 2. Convert that object into JSON string and assign it to the 'schema' variable #}
-{% set schema = breadcrumbObject | json %}
-
-
 {% set service = services[serviceType] %}
- {% include "components/breadcrumbs.njk" %}  
+{% include "components/breadcrumbs.njk" %}  
 <div class="container flex-container mb-5 pb-5">
-   
     <article class="mt-5 content">
-        
         {% include "components/intro-section.njk" %}
         {% include "components/benefits.njk" %}
         {% include "components/services.njk" %}
