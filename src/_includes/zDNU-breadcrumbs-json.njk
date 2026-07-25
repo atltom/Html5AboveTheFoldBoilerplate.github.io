@@ -1,0 +1,52 @@
+{% if page.url != '/' %}
+{% set siteUrl = "https://sphaneufassociates.com" %}
+{% set position = 1 %}
+
+{# Clean trailing slashes off page.url #}
+{% set rawUrl = page.url | replace(r/\/$/, "") %}
+{% set cleanUrl = rawUrl if rawUrl else "" %}
+
+{# Safely resolve the raw title variable #}
+{% set rawTitle = breadcrumbTitle or serviceName or title or "" %}
+{% if ' - ' in rawTitle %}
+  {% set cleanName = rawTitle.split(' - ')[0] | trim %}
+{% else %}
+  {% set cleanName = rawTitle | trim %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": "Home",
+      "item": "{{ siteUrl }}/"
+    }
+    {%- if breadcrumbs -%}
+      {%- for crumb in breadcrumbs -%}
+        {%- set position = position + 1 -%}
+        {%- set crumbUrl = crumb.url | replace(r/\/$/, "") -%}
+        ,
+        {
+          "@type": "ListItem",
+          "@position": {{ position }},
+          "name": "{{ crumb.title }}",
+          "item": "{{ siteUrl }}{{ crumbUrl }}"
+        }
+      {%- endfor -%}
+    {%- endif -%}
+    {%- set position = position + 1 -%}
+    ,
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": "{{ cleanName | safe }}",
+      "item": "{{ siteUrl }}{{ cleanUrl }}"
+    }
+  ]
+}ssssssssssssssssssssss
+</script>
+{% endif %}

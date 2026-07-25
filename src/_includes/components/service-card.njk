@@ -1,29 +1,20 @@
+<!-- {{ item.slug }} -->
 <section class="service-card py-5 border-bottom" id="{{ item.slug }}">
     <div class="row align-items-center g-4">
-        <!-- Image Column -->
         <div class="col-lg-4">
             <a href="{{ item.link }}">
                 <img src="{{ item.image }}" alt="{{ item.alt }}" class="img-fluid rounded shadow-sm" loading="lazy" width="400" height="300">
             </a>
         </div>
-        <!-- Content Column -->
         <div class="col-lg-8">
             <h2 class="pipe text-dark fw-bold mb-3">
-                <a href="{{ item.link }}" class="text-decoration-none text-dark">{{ item.title }}</a>
+                <a href="{{ item.link }}" style="text-decoration: none;">{{ item.title }}</a>
             </h2>
             <p class="lead-sm text-secondary">{{ item.description }}</p>
-            <!-- Key Features / Sub-services List -->
-            {% if item.services and item.services.length %}
-                <ul class="ps-3 li mb-4">
-                    {% for service in item.services %}
-                        <li>{{ service }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-            <!-- Descriptive Call-to-Action Link -->
-            <a href="{{ item.link }}" class="btn btn-primary fw-semibold" style="background-color: #d85d15; border-color: #d85d15;">
-                Explore {{ item.title }} &rarr;
-            </a>
+            {% if item.services and item.services.length %}<ul class="ps-3 li mb-4">
+                    {% for service in item.services %}<li>{{ service }}</li>{% endfor %}
+            </ul>{% endif %}
+            <a href="{{ item.link }}" class="btn btn-primary mt-3" style="border-color: #d85d15;">Explore {{ item.title }} &rarr;</a>
         </div>
     </div>
 </section>

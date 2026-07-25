@@ -1,27 +1,20 @@
-{% if page.url != "/" %}
-<nav aria-label="breadcrumb" class="container breadcrumb-nav">
-  <ol class="breadcrumb-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center;">
-    {# <!-- Always Root Home --> #}<li class="breadcrumb-item">
+<!-- breadcrumbs --><div class="breadcrumb-container">
+{% if page.url != "/" %}<nav aria-label="breadcrumb" class="container breadcrumb-nav">
+  <ol class=" breadcrumb-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center;">
+    <li class="breadcrumb-item">
       <a href="/">Home</a>
     </li>
-    {# <!-- Loop through explicit parent trail if provided --> #}{% if breadcrumbs %}
-      {% for crumb in breadcrumbs %}
-        <li class="breadcrumb-item">
+    {% if breadcrumbs %}{% for crumb in breadcrumbs %}<li class="breadcrumb-item">
           <a href="{{ crumb.url }}">{{ crumb.title }}</a>
-        </li>
-      {% endfor %}
-    {# <!-- Fallback for 2-tier service pages with parentTitle/parentUrl --> #}{% elif parentTitle and parentUrl %}
-      <li class="breadcrumb-item">
+        </li>{% endfor %}
+    {# <!-- Fallback for 2-tier service pages with parentTitle/parentUrl --> #}{% elif parentTitle and parentUrl %}<li class="breadcrumb-item">
         <a href="{{ parentUrl }}">{{ parentTitle }}</a>
-      </li>
-    {% endif %}
+      </li>{% endif %}
     {# <!-- Current Page (No link, marked active) --> #}<li class="breadcrumb-item breadcrumb-current" aria-current="page">
       <span>{{ breadcrumbTitle or serviceName or title }}</span>
     </li>
   </ol>
-</nav>
-{% endif %}
-
+</nav>{% endif %}</div>
 {# 
 How to Configure Your Frontmatter
 A. For Top-Level Pages (e.g., /contact-us)

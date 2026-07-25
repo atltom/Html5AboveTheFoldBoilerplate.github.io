@@ -1,0 +1,10 @@
+<!-- why choose phaneuf-->
+{% if whyChoose %}<section id="why-choose-phaneuf" class="py-5">
+    {% if whyChoose.heading %}<h2 class="pipe">{{ whyChoose.heading }}</h2>{% endif %}
+    <div class="row mt-4">
+        {% for item in whyChoose.items %}<div class="col-md-6 mb-4">
+            {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
+            {% if item.description %}<p>{{ item.description }}</p>
+        {% endif %}</div>{% endfor %}
+    </div>
+</section>{% endif %}

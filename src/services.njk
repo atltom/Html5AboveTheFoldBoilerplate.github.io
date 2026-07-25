@@ -2,7 +2,38 @@
 layout: base.njk
 title: Custom Hardscaping, Masonry & Excavation Services in MA
 description: S. Phaneuf & Associates provides professional masonry, hardscape design, sitework, asphalt paving, and excavation services throughout Massachusetts.
-
+extraSchema: |
+  {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Construction Services Offered by S. Phaneuf & Associates",
+  "itemListElement": [
+    {
+      "@type": "Service",
+      "position": 1,
+      "name": "Masonry & Hardscapes",
+      "url": "https://sphaneufassociates.com/masonry-hardscapes"
+    },
+    {
+      "@type": "Service",
+      "position": 2,
+      "name": "Asphalt Paving",
+      "url": "https://sphaneufassociates.com/asphalt-paving"
+    },
+    {
+      "@type": "Service",
+      "position": 3,
+      "name": "Excavation & Site Development",
+      "url": "https://sphaneufassociates.com/excavation-site-development"
+    },
+    {
+      "@type": "Service",
+      "position": 4,
+      "name": "Snow & Ice Management",
+      "url": "https://sphaneufassociates.com/snow-ice-management"
+    }
+  ]
+  }
 
 breadcrumbTitle: "Services"
 permalink: services.html
@@ -11,11 +42,7 @@ permalink: services.html
 section: services
 service: services
 
-
-
-##################################################
 # HERO
-##################################################
 heroImageClass: back-porch
 heroHeading: "Construction Services Designed for Massachusetts Properties"
 heroHeadingNoWrap: ""
@@ -23,11 +50,8 @@ heroSubheading: "For more than 35 years, S. Phaneuf & Associates has provided qu
 heroImage: back-porch.webp
 heroCTA: Request a Free Consultation
 
-
-##################################################
 # INTRODUCTION
-##################################################
-
+introSlug: services-intro
 intro:
   heading: >
     Comprehensive Construction
@@ -39,77 +63,70 @@ intro:
       From initial site preparation through final construction, we take pride in delivering quality workmanship and dependable service throughout every phase of your project.
 servicesPage:
   heading: "Construction Services Throughout Massachusetts"
-  #intro: >
-  #  For more than 35 years, S. Phaneuf & Associates has provided quality construction services throughout Massachusetts. From custom outdoor living spaces and asphalt paving to excavation and snow management, we deliver thoughtful solutions designed to enhance and protect your property. 
   services:
     - title: "Masonry & Hardscapes"
       slug: masonry-hardscapes    
       image: "/images/small/masonry.webp"
-      alt: "Custom masonry and hardscape construction throughout Massachusetts."
-      description: "We design and construct beautiful outdoor living spaces including patios, retaining walls, walkways, fireplaces, pool decks, and complete backyard transformations."
-      services:
-        - Custom Patios
-        - Retaining Walls
-        - Pool Decks
-        - Outdoor Fireplaces
-        - Stone Veneer
-        - Walkways & Pathways
-      link: "/masonry-hardscapes.html"
+      alt: "Custom masonry and hardscape construction by S. Phaneuf & Associates in Massachusetts"
+      description: "We design and build custom outdoor living spaces including patios,  walkways, retaining walls, fireplaces, and complete landscape  transformations throughout Massachusetts."
+      link: "/masonry-hardscapes"
     - title: "Asphalt Paving"
       slug: asphalt-paving    
       image: "/images/asphalt-paving.webp"
-      alt: "Asphalt paving services throughout Massachusetts."
-      description: "From residential driveways to commercial parking lots, our experienced team provides durable asphalt paving, resurfacing, and maintenance solutions."
-      services:
-        - Residential Driveways
-        - Commercial Parking Lots
-        - Asphalt Repairs
-        - Resurfacing
-        - Sealcoating
-      link: "/asphalt-paving.html"
+      alt: "Asphalt paving services by S. Phaneuf & Associates throughout Massachusetts"
+      description: "From residential driveways to commercial parking lots, we provide durable asphalt paving, resurfacing, repair, and maintenance solutions built to withstand Massachusetts weather."
+      link: "/asphalt-paving"
     - title: "Excavation & Site Development"
       slug: excavation-site-development
       image: "/images/site-development.webp"
-      alt: "Excavation and site development services throughout Massachusetts."
-      description: "We provide professional excavation, grading, drainage, and site preparation services for residential and commercial projects throughout Massachusetts."
-      services:
-        - Site Preparation
-        - Drainage Solutions
-        - Grading
-        - Foundations
-        - Utility Excavation
-      link: "/excavation-site-development.html"
+      alt: "Excavation and site development services by S. Phaneuf & Associates in Massachusetts"
+      description: "Professional excavation and site development services including grading, drainage solutions, and complete site preparation for residential and commercial properties."
+      link: "/excavation-site-development"
     - title: "Snow & Ice Management"
       slug: snow-ice-management
       image: "/images/snow-removal.webp"
-      alt: "Commercial snow and ice management services throughout Massachusetts."
-      description: "Our commercial snow and ice management services help keep properties safe and accessible throughout the winter season."
-      services:
-        - Snow Removal
-        - Ice Management
-        - Parking Lot Plowing
-        - Sidewalk Clearing
-        - Commercial Snow Services
-      link: "/snow-ice-management.html"
+      alt: "Commercial snow and ice management by S. Phaneuf & Associates in Massachusetts"
+      description: "Reliable commercial snow and ice management services designed to keep properties safe, accessible, and operational throughout the winter."
+      # services:
+      #  - Snow Removal      #  - Ice Management      #  - Parking Lot Plowing      #  - Sidewalk Clearing      #  - Commercial Snow Services
+      # link: "/snow-ice-management"
+
+# WHY CHOOSE US
+whyChoose:
+  heading: "Why Homeowners and Businesses Choose S. Phaneuf & Associates"
+  items:
+    - title: 35+ Years of Experience
+      description: Providing quality construction services throughout Massachusetts since 1989.
+    - title: Quality Craftsmanship
+      description: Every project is thoughtfully planned and constructed using proven techniques and durable materials.
+    - title: Dependable Service
+      description: We take pride in delivering projects on time while maintaining clear communication throughout the process.
+    - title: Free Estimates
+      description: We'll help you evaluate your project and recommend the best solution for your property and goals.
+    - title: Massachusetts Based
+      description: We proudly serve homeowners and businesses throughout Massachusetts with personalized construction solutions.
+
+# FINAL CTA
+ctaSlug: "final-cta"
+ctaHeading: "Let's Build Something That Lasts"
+ctaText: "For more than 35 years, S. Phaneuf & Associates has helped homeowners and businesses throughout Massachusetts improve their properties with quality craftsmanship and dependable service. Contact us today to discuss your project and schedule a free consultation."
+
+# SIDEBAR
+sidebarHeading: Request a Free Estimate
+sidebarParagraph: "Need help with paving, masonry, excavation, or snow management? Tell us about your residential or commercial project below, and our team will reach out to discuss your options and give you a free estimate."
 ---
-{% set service = services[serviceType] %}
 {% include "components/breadcrumbs.njk" %}  
 <div class="container flex-container mb-5 pb-5">     
     <article class="mt-5 content">
-        <section id="services-overview">
-            {% for item in servicesPage.services %}
-            {% include "components/service-card.njk" %}
-        {% endfor %}        
-        </section>       
         {% include "components/intro-section.njk" %}
-        {% if portfolio %}{% include "components/portfolio.njk" %}{% endif %}
-        {% include "components/process.njk" %}     
-        {% include "components/faq.njk" %}
+        <section id="services-overview">
+            {% for item in servicesPage.services %}{% include "components/service-card.njk" %}{% endfor %}        
+        </section>       
+        {% include "components/why-phaneuf.njk" %}
         {% include "components/areas-served.njk" %}
-        {% include "components/related-services.njk" %}
     </article>
     <aside class="contact-form mt-5 mb-1">
-    {% include "components/sidebar.njk" %}
+      {% include "components/sidebar.njk" %}
     </aside>
 </div>
 {% include "components/final-cta.njk" %}  

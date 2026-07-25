@@ -1,37 +1,22 @@
 <!--sidebar-->
 <div cccclass="contact-form mt-5 mb-1" id="sidebar-contact-form">
-
-    <h2>
-        {{ sidebarHeading }}
-    </h2>
-
-    <p class="mt-2 mb-4">
-        {{ sidebarParagraph }}
-    </p>
-
+    <h2>{{ sidebarHeading }}</h2>
+    <p class="mt-2 mb-4">{{ sidebarParagraph }}</p>
     <form id="contact-form" class="pb-3 mb-5">
-
         <div class="mb-3">
             <label for="first-last-name" class="form-label">First and Last Name</label>
             <input id="first-last-name" type="text" class="form-control" name="name" required>
         </div>
-
         <div class="mb-3">
             <label for="email-or-phone" class="form-label">Email Address or Phone #</label>
             <input id="email-or-phone" type="text" class="form-control" name="contact" required>
         </div>
-
         <div class="mb-3">
             <label for="message" class="form-label">Message</label>
             <textarea id="message" class="form-control" rows="5" name="message" required></textarea>
         </div>
-
         <button type="submit" class="btn">Submit</button>
-
     </form>
-
-
-
     {% if showToc %}
     <nav class="table-of-contents my-4 p-3 bg-light border rounded">
         <p class="h5 fw-bold mb-2">On This Page:</p>
@@ -51,8 +36,6 @@
         </ul>
     </nav>
     {% endif %}
-
-
     {% if sidebarImages and sidebarImages.length %}
     <ul id="sidebar-images" class="p-0 lst-n">
         {% for image in sidebarImages %}
@@ -66,9 +49,6 @@
     </ul>
     {% endif %}
 </div>
-
-
-
 {#
     <div class="contact-form mt-5 mb-1">
         <h2>Get Started with a Free Consultation</h2>

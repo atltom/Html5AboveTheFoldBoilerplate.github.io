@@ -1,4 +1,3 @@
-
 heading: "Serving Greater Boston & Massachusetts"
 
 intro: >
@@ -9,26 +8,37 @@ intro: >
   desirable communities.
 
 locations:
-  - Acton
-  - Arlington
-  - Bedford
-  - Belmont
-  - Bolton
-  - Carlisle
-  - Concord
-  - Dover
-  - Framingham
-  - Holliston
-  - Lexington
-  - Lincoln
-  - Littleton
-  - Natick
-  - Needham
-  - Newton
-  - Sherborn
-  - Stow
-  - Sudbury
-  - Wayland
-  - Wellesley
-  - Weston
-  - Westford
+  - name: Acton
+    url: /middlesex-county/hardscape-contractor-acton-ma
+  - name: Arlington
+  - name: Bedford
+  - name: Belmont
+  - name: Bolton
+    url: /worcester-county/hardscape-contractor-bolton-ma
+  - name: Carlisle
+    url: /middlesex-county/hardscape-contractor-carlisle-ma
+  - name: Concord
+    url: /middlesex-county/hardscape-contractor-concord-ma
+  - name: Dover
+  - name: Framingham
+  - name: Holliston
+  - name: Lexington
+    url: /middlesex-county/hardscape-contractor-lexington-ma
+  - name: Lincoln
+  - name: Littleton
+    url: /middlesex-county/hardscape-contractor-littleton-ma
+  - name: Natick
+  - name: Needham
+  - name: Newton
+  - name: Sherborn
+  - name: Stow
+    url: /middlesex-county/hardscape-contractor-stow-ma
+  - name: Sudbury
+    url: /middlesex-county/hardscape-contractor-sudbury-ma
+  - name: Wayland
+    url: /middlesex-county/hardscape-contractor-wayland-ma
+  - name: Wellesley
+  - name: Weston
+    url: /middlesex-county/hardscape-contractor-weston-ma
+  - name: Westford
+    url: /middlesex-county/hardscape-contractor-westford-ma

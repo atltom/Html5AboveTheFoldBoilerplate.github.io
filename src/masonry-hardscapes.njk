@@ -18,7 +18,7 @@ section: services
 service: masonry-hardscapes
 serviceName: Masonry & Hardscapes
 serviceType: masonry
-serviceSlug: masonry-hardscapes
+introSlug: masonry-hardscapes
 
 breadcrumbTitle: "Masonry & Hardscapes"
 breadcrumbs:
@@ -147,61 +147,4 @@ sidebarImages:
     location: Concord, MA
     caption: Complete backyard transformation.
 ---
-{# {% block schema %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Masonry and Hardscapes",
-  "provider": {
-    "@type": "HomeAndConstructionBusiness",
-    "name": "S. Phaneuf & Associates"
-  },
-  "areaServed": "Massachusetts",
-  "description": "{{ description }}"
-}
-</script>
-{% endblock %}
-
-
-{% if page.url != '/' %}
-{% set siteUrl = "https://sphaneufassociates.com" %}
-{% set position = 1 %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": {{ position }},
-      "name": "Home",
-      "item": "{{ siteUrl }}/"
-    }
-    {%- if breadcrumbs -%}
-      {%- for crumb in breadcrumbs -%}
-        {%- set position = position + 1 -%}
-        ,
-        {
-          "@type": "ListItem",
-          "position": {{ position }},
-          "name": "{{ crumb.title }}",
-          "item": "{{ siteUrl }}{{ crumb.url }}"
-        }
-      {%- endfor -%}
-    {%- endif -%}
-    {%- set position = position + 1 -%}
-    ,
-    {
-      "@type": "ListItem",
-      "position": {{ position }},
-      "name": "{{ breadcrumbTitle or serviceName or title.split(' - ')[0] | trim }}",
-      "item": "{{ siteUrl }}{{ page.url }}"
-    }
-  ]
-}
-</script>
-{% endif %} #}
-
 {% include "components/service-page.njk" %}

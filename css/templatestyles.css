@@ -123,12 +123,12 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 
 
 
-.footer{background-color:#303f5e;color:#ccc}
+.footer{background-color:#303f5e;color:#d4d4d4}
 .f1{max-width:1320px;margin:auto;}
 .fcontainer{display: inline-block;}
 .fmoto{width: 220px;}
 .fheadline {border-bottom: 2px solid #bc5a15;display:inline-block;}
-.footer-links a{color:#ccc;text-decoration:none;display:inline-block;padding:5px 0}
+.footer-links a{color:#d4d4d4;text-decoration:none;display:inline-block;padding:5px 0}
 .footer-links a:hover{text-decoration:underline; text-underline-offset: 2px;}
 .fsociallink{margin-right:10px}
 .fimg{width:inherit;display:inline-block}
@@ -276,6 +276,33 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 
 
 
+
+
+/* Responsive 1 to 3 Column Grid */
+.areas-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: 1 col on mobile */
+  gap: 0.5rem 1.5rem; /* vertical / horizontal spacing */
+}
+
+/* Tablet (2 Columns) */
+@media (min-width: 600px) {
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* PC / Desktop (3 Columns) */
+@media (min-width: 992px) {
+  .areas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+
 .services-navigation{
 
 display:flex;
@@ -365,12 +392,6 @@ line-height:35px;
 }
 
 
-.breadcrumb-item + .breadcrumb-item::before {
-  content: "/";
-  padding: 0 8px;
-  color: #6c757d;
-}
-
 
 
 
@@ -428,3 +449,77 @@ line-height:35px;
     text-decoration-skip-ink: auto;
     text-underline-position: under;
   }
+
+
+
+/* 
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 8px;
+  color: #6c757d;
+} */
+
+
+
+  /* 1. Container - A full-width bar below the hero image */
+.breadcrumb-container {
+  background-color: #f7f8f9; /* The light gray background from the image */
+  padding: 1rem 0; /* Add top and bottom spacing */
+  border-bottom: 1px solid #e1e1e1; /* Subtle divider from the main content */
+  width: 100%;
+}
+
+/* 2. List - Reset defaults and align horizontally */
+.breadcrumb-list {
+  list-style: none; /* Remove bullet points */
+  margin: 0 auto; /* Center the list on the page */
+  padding: 0 1.5rem; /* Match the padding of your main content container */
+  display: flex; /* Key: Makes items sit horizontally in a line */
+  align-items: center; /* Vertically centers the text and separators */
+  max-width: 1200px; /* Optional: Constrain the content to a maximum width */
+}
+
+/* 3. Items - Basic spacing */
+.breadcrumb-item {
+  display: flex; /* Helps align the text and separator */
+  align-items: center;
+}
+
+/* 4. Separator - The 'greater than' (>) sign */
+.breadcrumb-item:not(:first-child)::before {
+  content: ">"; /* Insert the separator */
+  display: inline-block;
+  margin: 0 0.75rem; /* Add horizontal space around the separator */
+  color: #a0aec0; /* A soft, light gray for the separator */
+  font-size: 0.9rem; /* Make it slightly smaller and lighter than the text */
+  font-weight: bold;
+}
+
+/* 5. Links - Clean and Modern Typography */
+.breadcrumb-link {
+  text-decoration: none; /* Remove underlines */
+  color: #3182ce; /* Use a prominent link color, e.g., the blue from the hero text */
+  font-family: sans-serif; /* A modern font like Arial, Helvetica, or custom */
+  font-size: 0.95rem; /* Modern breadcrumbs are often slightly smaller than main text */
+  font-weight: 500; /* Medium weight for clarity */
+  transition: color 0.2s ease; /* Smooth transition for the hover effect */
+}
+
+/* Hover effect */
+.breadcrumb-link:hover {
+  color: #1a365d; /* Darken the link on hover */
+  text-decoration: underline; /* Standard, subtle feedback */
+}
+
+/* 6. Active Item - The page the user is currently on */
+.breadcrumb-link-active {
+  color: #4a5568; /* Use a neutral gray to show it's not "active" to click */
+  font-weight: 600; /* Bold the current page for emphasis */
+  cursor: default; /* Change the cursor so it doesn't look clickable */
+}
+
+/* Prevent interaction on the current page link */
+.breadcrumb-link-active:hover {
+  color: #4a5568; /* No color change */
+  text-decoration: none; /* No underline */
+}
