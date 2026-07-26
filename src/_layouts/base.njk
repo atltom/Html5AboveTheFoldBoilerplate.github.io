@@ -17,10 +17,8 @@
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <link rel="preload" href="/css/templatestyles.min.css" as="style" media="all">
-  <link rel="preload" fetchpriority="high" as="image" href="/images/S-Phaneuf-Associates.webp" type="image/webp">
-  {% if heroImageMobile %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageMobile }}" type="image/webp" media="(max-width: 1023px)">{% endif %}
-  {% if heroImageDesktop %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageDesktop }}" type="image/webp" media="(min-width: 1024px)">{% endif %}
-  <link rel="stylesheet" href="/css/templatestyles.css">
+  <link rel="preload" fetchpriority="high" as="image" href="/images/S-Phaneuf-Associates.webp" type="image/webp">{% if heroImageMobile %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageMobile }}" type="image/webp" media="(max-width: 1023px)">{% endif %}{% if heroImageDesktop %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageDesktop }}" type="image/webp" media="(min-width: 1024px)">{% endif %}
+  <link rel="stylesheet" href="/css/templatestyles.css">{{ extraCss | safe }}
   <link rel="icon" href="/images/favicon96c.png" sizes="96x96">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="shortcut icon" type="image/png" href="/images/favicon32.png">
@@ -28,10 +26,8 @@
   <meta name="msapplication-TileColor" content="#303f5e">
   <meta name="msapplication-TileImage" content="/images/apple-touch-icon.png">
   <meta name="seobility" content="69ae98e4ec0c1d0ab86a1032c9767d87">
-  <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script>{{ head | safe }}
-  <script type="application/ld+json">{% include "schema/business.njk" %}</script>
-  {% if page.url != '/' %}<script type="application/ld+json">{% include "schema/breadcrumbs.njk" %}</script>{% endif %}
-  {% if extraSchema %}<script type="application/ld+json">{{ extraSchema | safe }}</script>{% endif %}
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script>
+  <script type="application/ld+json">{% include "schema/business.njk" %}</script>{% if page.url != '/' %}<script type="application/ld+json">{% include "schema/breadcrumbs.njk" %}</script>{% endif %}{% if extraSchema %}<script type="application/ld+json">{{ extraSchema | safe }}</script>{% endif %}
 </head>
 <body class="{{ bodyClass }}">
   <a class="skip-link" href="#main-content">Skip to content</a>
