@@ -1,0 +1,147 @@
+---
+layout: base.njk
+permalink: "reviews.html"
+canonical: "/reviews"
+
+title: 'Customer Reviews | S. Phaneuf & Associates Construction Massachusetts'
+description: Read customer reviews for S. Phaneuf & Associates. Homeowners and businesses throughout Massachusetts trust our team for masonry, hardscaping, asphalt paving, excavation, and construction services.
+
+
+# NAVIGATION
+section: reviews
+
+# HERO
+heroImageMobile: "566/site-work.webp"
+heroImageDesktop: "large/site-work.webp"
+heroImageClass: site-work
+heroHeading: "Customer Reviews for S. Phaneuf & Associates"
+heroSubheading: "Read what homeowners and businesses throughout Massachusetts have to say about their experience working with our team on masonry, hardscaping, asphalt paving, excavation, and construction projects."
+heroImage: site-work.webp
+heroCTA: Get Started
+
+# BREADCRUMBS 
+breadcrumbTitle: "Reviews"
+
+sidebarHeading: Request Your Free Consultation
+sidebarParagraph: >
+    Please fill out the form below, and a member of our team will reach out to you shortly. To help us assist you more effectively, kindly provide as much detail as possible.    
+sidebarImages:
+  - src: /images/small/circular-fire-pit-Holliston-Mass.webp
+    alt: Holliston, Massachusetts commercial asphalt project with circular layout
+    location: Holliston, MA
+    caption: Commercial project, made for entertaining.
+  - src: /images/small/raised-patio-with-fire-pit-kitchen-img3-concord-mass.webp
+    alt: Concord, Massachusetts residential site development project
+    location: Concord, MA
+    caption: Classic residential project.
+  - src: /images/small/patio-fire-pit-pool-fireplace-concord-mass.webp
+    alt: Concord, Massachusetts residential asphalt and patio installation
+    location: Concord, MA
+    caption: Residential fire pit project.
+
+
+---
+ <style>
+        blockquote{ margin: 50px auto; font-style: italic; color: #555555; padding: 1em 30px 1em 40px; border-left: 8px solid #2f3f5e; line-height: 1.6; position: relative; background: #EDEDED} blockquote::before{ font-family: Arial; content: "\201C"; color: #78C0A8; color: #2f3f5e; font-size: 4em; position: absolute; left: 10px; top: -10px} blockquote::after{ content: ''} blockquote cite{ display: block; color: #333333; font-style: normal; font-weight: bold; margin-top: 1em}
+    </style>
+
+{#  todo review submission
+
+<script>
+        var textBoxes = document.querySelectorAll('.text-box');
+        var observer = new IntersectionObserver(entries => {entries.forEach(entry => {if (entry.isIntersecting) {entry.target.classList.add('slide-up');observer.unobserve(entry.target);}});});textBoxes.forEach(textBox=>{ observer.observe(textBox);});
+        function navDropdownClick(){document.getElementById("nav-dropdown").classList.toggle("show"); }
+        window.onclick=function(e){ if (!(e.target.matches("#nav-dropdown-btn") || e.target.matches("#dropbtn-arrow"))){ var navDropdown=document.getElementById("nav-dropdown"); if (navDropdown.classList.contains("show")){ navDropdown.classList.remove("show");}}};
+        function naviconClick(navicon){ navicon.classList.toggle("change"); var nav=document.getElementById("navbar"); nav.classList.toggle("navbar-change");}
+        window.addEventListener('load', function(){ var script=document.createElement('script'); script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF"; script.async=true; document.head.appendChild(script); script.onload=function(){ window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');};});
+        //document.getElementById("accept-consent").addEventListener("click", function(){ localStorage.setItem("cookies-accepted", "true"); document.getElementById("cookie-consent-banner").style.display="none"; loadClarity();});
+        //document.getElementById("decline-consent").addEventListener("click", function(){ document.getElementById("cookie-consent-banner").style.display="none";});
+        //if (localStorage.getItem("cookies-accepted")==="true"){ document.getElementById("cookie-consent-banner").style.display="none"; loadClarity();}
+        //function loadClarity() {var clarityScript=document.createElement('script'); clarityScript.async=1; clarityScript.src="https://www.clarity.ms/tag/ntahbbb4eq"; var firstScript=document.getElementsByTagName('script')[0]; firstScript.parentNode.insertBefore(clarityScript, firstScript);}
+        document.getElementById('rev-form').onsubmit = function(e) {
+          e.preventDefault();
+          console.log('prevented default form submission');
+          const form=this; 
+          const formData=new FormData(form); 
+          const errorDiv=document.getElementById('rev-form-error');errorDiv.style.display='none'; errorDiv.textContent=''; 
+          if (formData.get("rev-city-field") !==""){form.innerHTML=`<div class="alert alert-success">Thank you!</div>`; return;}           
+          const messageText=formData.get("entry.69405291"); 
+          const tagRegex=/<[^>]*>/g;if (tagRegex.test(messageText)){ errorDiv.textContent="HTML tags and scripts are not allowed."; errorDiv.style.display='block'; return;} 
+          const urlRegex=/(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi;if (urlRegex.test(messageText)){ errorDiv.textContent="Links and URLs are not allowed."; errorDiv.style.display='block'; return;} 
+          const englishRegex=/^[ -~]*$/;if (!englishRegex.test(messageText)){ errorDiv.textContent="Please use English characters only."; errorDiv.style.display='block'; return;} 
+          const submitButton=form.querySelector('button');submitButton.disabled=true;submitButton.textContent="Sending..."; 
+          const data=new URLSearchParams(formData); 
+          fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{form.innerHTML=`<div class="alert alert-success"><strong>Success!</strong>Your message has been sent.</div>`;}).catch(error=>{ submitButton.disabled=false; submitButton.textContent="Submit"; errorDiv.textContent="Something went wrong. Please try again."; errorDiv.style.display='block';});
+        };
+        
+         document.getElementById('contact-form').onsubmit=function (e){ e.preventDefault(); const form=this; const data=new FormData(form); const inputs=form.querySelectorAll("input, textarea, select, button"); inputs.forEach(input=>input.disabled=true); fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse",{ method: "POST", mode: "no-cors", body: data}).then(()=>{ const thankYouMsg=document.createElement("div"); thankYouMsg.textContent="Form submitted. Thank you!"; thankYouMsg.style.marginTop="1em"; thankYouMsg.style.fontWeight="bold"; form.appendChild(thankYouMsg);});};
+        
+        //origianl code //window.addEventListener('load', function(){ var script=document.createElement('script'); script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF"; script.async=true; document.head.appendChild(script); script.onload=function(){ window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');};});!function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};function loadClarity(){t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}window.addEventListener?window.addEventListener("load",loadClarity):window.attachEvent?window.attachEvent("onload",loadClarity):window.onload=loadClarity}(window,document,"clarity","script","ntahbbb4eq");
+    </script> #}
+
+
+{% include "components/breadcrumbs.njk" %}  
+<div class="container flex-container mb-5 pb-5">    
+    <article class="mt-5 content" id="contact-us">
+        <div class="mt-5 content">
+                <section class="pt-3 mb-5" aria-label="Customer testimonials and company overview">
+                    <h2 class="pipe mb-3">Trust a company that strives for excellence.</h2><p>From the initial consultation to the final touches, S. Phaneuf & Associates strives to exceed our client's expectations in every way possible. While our portfolios of interior and exterior projects speak to the incredible results we achieve with each project, we understand choosing a company can be a daunting task. We encourage you to read the <strong>Customer Reviews</strong> from our previous clients throughout Massachusetts to learn more about working with our team. Their experiences with our interior design, <strong>hardscaping</strong>, and <strong>outdoor living solutions</strong> can provide valuable insight into the level of service and quality of work you can expect from our team. Explore our glowing reviews from homeowners across Massachusetts who have worked with us on everything from patios and walkways to complete backyard transformations.</p>
+                    <!-- <article class="mt-5"><h3 class="p-0 c-b">Outdoor Space Brought To Life</h3><blockquote class="mt-0">Working with S. Phaneuf & Associates was an absolute pleasure from start to finish. We had a vision for our outdoor space, and they brought it to life beyond our expectations. The custom fabricated fire pit and gas torches in Stonewall are the centerpiece of our backyard, creating a cozy and inviting atmosphere for gatherings. The granite stairs leading to our plunge pool add a touch of elegance, while the outdoor kitchen with blue stone countertops makes entertaining a breeze. We also appreciate the attention to detail shown in the separate wood-burning fire pit and the thin veneer fieldstone on our basement walls, which seamlessly blend with the overall design. Throughout the entire process, the team at S. Phaneuf & Associates demonstrated professionalism, expertise, and a commitment to delivering high-quality results. We couldn't be happier with the outcome and would highly recommend them to anyone looking to elevate their outdoor living space. <cite>Anonymous - Concord, MA</cite></blockquote></article>
+                    <article><h3 class="p-0 c-b">Attention To Detail</h3><blockquote class="mt-0">These fellows came over and regraded and asphalted our existing driveway. They also excavated and installed a second driveway for us. In addition, they repaired and stuccoed (refinished with a smooth concrete surface) our existing back stairs. All three tasks were performed with an admirable attention to detail, and for a very decent price. Beyond that, the guys working at my house were really friendly, and polite. Can I just mention, that the stucco job they did on my stairs is really pretty? Not just a job well done, but pretty. The concrete is so finely worked that it resembles fondant icing, it's THAT smooth. That's good work, right there. They do much more than what they did for me. All kinds of hardscapes and stonework. Look to their website. Would I hire them, again? You betcha! <cite>Kerri O. - Maynard, MA</cite></blockquote></article>
+                    <article><h3 class="p-0 c-b">Remarkable Installation Team</h3><blockquote class="mt-0">Our experience with the installation team was nothing short of remarkable. These professionals were like culinary wizards, transforming raw materials into a functional masterpiece. Their precision and attention to detail left us in awe. And the best part? They worked with the speed of a well-oiled machine. In no time, our dream outdoor kitchen materialized, and they left the area pristine and clean—no dust, no mess. <cite>Tom M. - Ashby, MA</cite></blockquote></article> -->
+                
+                    <article class="mt-5">
+                        <h3 class="p-0 c-b">Custom Outdoor Living Space Transformation - Concord, MA</h3>
+                        <blockquote class="mt-0">
+                          Working with S. Phaneuf & Associates was an absolute pleasure from start to finish. We had a vision for our outdoor space, and they brought it to life beyond our expectations. The custom fabricated fire pit and gas torches in Stonewall are the centerpiece of our backyard, creating a cozy and inviting atmosphere for gatherings. The granite stairs leading to our plunge pool add a touch of elegance, while the outdoor kitchen with blue stone countertops makes entertaining a breeze. We also appreciate the attention to detail shown in the separate wood-burning fire pit and the thin veneer fieldstone on our basement walls, which seamlessly blend with the overall design. This kind of detailed and thoughtful hardscaping work exceeded everything we imagined. Throughout the entire process, the team at S. Phaneuf & Associates demonstrated professionalism, expertise, and a commitment to delivering high-quality results. We couldn't be happier with the outcome and would highly recommend them to anyone looking to elevate their outdoor living space.
+                          <cite>Anonymous - Concord, MA</cite>
+                        </blockquote>
+                      </article>
+                      
+                      <article>
+                        <h3 class="p-0 c-b">Driveway Paving and Site Improvements - Maynard, MA</h3>
+                        <blockquote class="mt-0">
+                          These fellows came over and regraded and asphalted our existing driveway. They also excavated and installed a second driveway for us. In addition, they repaired and stuccoed (refinished with a smooth concrete surface) our existing back stairs. All three tasks were performed with an admirable attention to detail, and for a very decent price. Beyond that, the guys working at my house were really friendly, and polite. Can I just mention, that the stucco job they did on my stairs is really pretty? Not just a job well done, but pretty. The concrete is so finely worked that it resembles fondant icing, it's THAT smooth. That's good work, right there. They do much more than what they did for me — all kinds of hardscaping and stonework. Look to their website. Would I hire them, again? You betcha!
+                          <cite>Kerri O. - Maynard, MA</cite>
+                        </blockquote>
+                      </article>
+                      
+                      <article>
+                        <h3 class="p-0 c-b">Outdoor Kitchen Hardscape Installation - Ashby, MA</h3>
+                        <blockquote class="mt-0">
+                          Our experience with the installation team was nothing short of remarkable. These professionals were like culinary wizards, transforming raw materials into a functional masterpiece. Their precision and attention to detail left us in awe. And the best part? They worked with the speed of a well-oiled machine. In no time, our dream outdoor kitchen materialized, and they left the area pristine and clean—no dust, no mess. Their flawless execution is a testament to the expert hardscaping capabilities of S. Phaneuf & Associates.
+                          <cite>Tom M. - Ashby, MA</cite>
+                        </blockquote>
+                      </article>
+                      
+
+                
+                </section>
+                  <section class="pt-4" aria-label="Submit a review for S. Phaneuf & Associates"><h2 class="pipe mb-3">Submit Your Review</h2><p>We'd love to hear about your experience with <strong>S. Phaneuf & Associates</strong>. Please take a moment to share your thoughts by filling out the form below:</p>
+                    <form id="rev-form" class="pt-3" >
+                      <label for="rev-name" class="form-label">Your Name:</label><input type="text" id="rev-name" name="entry.631554197" class="form-control" required>
+                      <label for="rev-rating" class="form-label">Your Rating:</label>
+                      <select id="rev-rating" name="entry.993558858" class="form-control" required>
+                        <option value="" disabled selected>Please select a rating</option>
+                        <option value="5 stars">⭐⭐⭐⭐⭐</option>
+                        <option value="4 stars">⭐⭐⭐⭐</option>
+                        <option value="3 stars">⭐⭐⭐</option>
+                        <option value="2 stars">⭐⭐</option>
+                        <option value="1 star">⭐</option>
+                      </select>
+                      <label for="rev-review" class="form-label">Your Review:</label><textarea id="rev-review" name="entry.69405291" rows="5" class="form-control" required></textarea>
+                      <div aria-hidden="true" style="position: absolute; left: -5000px; top: -5000px; height: 0; overflow: hidden;"><label for="rev-city-field">City</label><input id="rev-city-field" type="text" name="city" tabindex="-1" autocomplete="off"></div>
+                      <div id="rev-form-error" style="color: #dc3545; font-weight: bold; margin-bottom: 1em; display: none;"></div>
+                      <button type="submit" class="my-3 btn">Submit Your Review</button>
+                  </form>
+                  </section>
+                  <section class="pt-5" aria-label="Expert services in masonry, hardscapes, paving, excavation, and snow removal by S. Phaneuf & Associates"><h2 class="pipe mb-3">Why Choose S. Phaneuf & Associates?</h2><p class="mb-3">We specialize in providing expert services across <a href="service-areas" class="fw-6">Massachusetts</a>. Whether you're looking for masonry, hardscapes, asphalt paving, excavation, or snow removal, our team has the experience and expertise to get the job done right.</p><ul><li><strong>Masonry & Hardscapes</strong>: Transform your property with stone walkways, patios, and outdoor living spaces.</li><li><strong>Asphalt Paving</strong>: Durable and reliable paving solutions for driveways, parking lots, and more.</li><li><strong>Excavation & Site Development</strong>: Excavation, grading, and site prep for residential and commercial properties.</li><li><strong>Snow & Ice Management</strong>: Keeping your property safe and accessible during the harsh Massachusetts winters.</li></ul></section>
+            </div>
+       
+    </article>
+
+    <aside class="contact-form mt-5 mb-1" id="sidebar-contact">
+        {% include "components/sidebar.njk" %}
+    </aside>
+</div>
+{% include "components/full-width-image.njk" %}
