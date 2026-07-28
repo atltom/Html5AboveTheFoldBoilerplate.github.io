@@ -254,7 +254,12 @@ excavation:
 # S. Phaneuf & Associates understands the importance of maintaining safe and accessible parking lots and sidewalks for your customers and employees, as well as providing prompt, reliable snowplowing services for Massachusetts residential properties. Whether you need a one-time snow removal service or a regular ongoing snow and ice management solution, we can attend to your specific needs. We carefully monitor weather conditions and provide prompt preparation and response for all Massachusetts properties.
 
 
-
+snow:
+  benefits:
+    heading: Why Invest in Snow & Ice Management?
+    intro: >
+          lorem ipsum
+    
 
 
 masonry:
