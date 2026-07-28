@@ -27,15 +27,26 @@ extraCss: |
   </style>
 extraSchema: | 
   {
-    "@context": "https://schema.org",
     "@type": "Service",
+    "mainEntityOfPage": {
+        "@type":"WebPage",
+        "@id":"https://sphaneufassociates.com/masonry-hardscapes"
+    },
     "@id": "https://sphaneufassociates.com/masonry-hardscapes#service",
     "name": "Masonry & Hardscapes",
+    "image": "https://sphaneufassociates.com/images/small/masonry.webp",
+    "serviceType": [
+      "Masonry Contractor",
+      "Hardscape Contractor",
+      "Patio Construction",
+      "Retaining Wall Construction",
+      "Outdoor Fireplace Construction",
+      "Pool Deck Construction",
+      "Stone Veneer Installation"
+    ],
     "description": "Custom masonry and hardscape construction including patios, retaining walls, walkways, fireplaces, pool decks, stone veneer, and outdoor living spaces throughout Massachusetts.",
     "provider": {
-      "@type": "HomeAndConstructionBusiness",
-      "@id": "https://sphaneufassociates.com/#business",
-      "name": "S. Phaneuf & Associates"
+      "@id": "https://sphaneufassociates.com/#organization"
     },
     "areaServed": {
       "@type": "State",

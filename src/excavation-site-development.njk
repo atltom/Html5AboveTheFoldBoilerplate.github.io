@@ -27,15 +27,25 @@ extraCss: |
   </style>
 extraSchema: | 
   {
-    "@context": "https://schema.org",
     "@type": "Service",
+    "mainEntityOfPage": {
+        "@type":"WebPage",
+        "@id":"https://sphaneufassociates.com/excavation-site-development"
+    },
     "@id": "https://sphaneufassociates.com/excavation-site-development#service",
     "name": "Excavation & Site Development",
+    "image": "https://sphaneufassociates.com/images/site-development.webp",
+    "serviceType": [
+      "Excavation Contractor",
+      "Site Development Services",
+      "Drainage Solutions",
+      "Grading Services",
+      "Foundation Excavation",
+      "Utility Excavation"
+    ],
     "description": "Professional excavation and site development services including grading, drainage solutions, site preparation, foundations, and utility excavation throughout Massachusetts.",
     "provider": {
-      "@type": "HomeAndConstructionBusiness",
-      "@id": "https://sphaneufassociates.com/#business",
-      "name": "S. Phaneuf & Associates"
+      "@id": "https://sphaneufassociates.com/#organization"
     },
     "areaServed": {
       "@type": "State",
