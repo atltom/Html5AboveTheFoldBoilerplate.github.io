@@ -27,33 +27,10 @@
   <meta name="msapplication-TileImage" content="/images/apple-touch-icon.png">
   <meta name="seobility" content="69ae98e4ec0c1d0ab86a1032c9767d87">
   <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script>
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {% include "schema/business.njk" %}
-        {% if page.url != '/' %},{% include "schema/breadcrumbs.njk" %}{% endif %}
-        {% if extraSchema %},{{ extraSchema | safe }}{% endif %}
-      ]
-    }
-  </script>
-
-{# 
-  <script type="application/ld+json">
-    {% include "schema/business.njk" %}
-  </script>
-
-  {% if page.url != '/' %}
-    <script type="application/ld+json">{% include "schema/breadcrumbs.njk" %}</script>
-  {% endif %}
-  
-  {% if extraSchema %}
-    <script type="application/ld+json">{{ extraSchema | safe }}</script>
-  {% endif %}
- #}
-
-
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [{% include "schema/business.njk" %}{% if page.url != '/' %},{% include "schema/breadcrumbs.njk" %}{% endif %}{% if extraSchema %},{{ extraSchema | safe }}{% endif %}]
+  }</script>
 </head>
 <body class="{{ bodyClass }}">
   <a class="skip-link" href="#main-content">Skip to content</a>
