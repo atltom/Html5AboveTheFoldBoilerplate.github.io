@@ -26,7 +26,7 @@
   <meta name="msapplication-TileColor" content="#303f5e">
   <meta name="msapplication-TileImage" content="/images/apple-touch-icon.png">
   <meta name="seobility" content="69ae98e4ec0c1d0ab86a1032c9767d87">
-  <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script>
+  {# <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script> #}
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [{% include "schema/business.njk" %}{% if page.url != '/' %},{% include "schema/breadcrumbs.njk" %}{% endif %}{% if extraSchema %},{{ extraSchema | safe }}{% endif %}]
@@ -71,7 +71,7 @@
       }
     });
     window.addEventListener('load', function(){ var script=document.createElement('script'); script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF"; script.async=true; document.head.appendChild(script); script.onload=function(){ window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');};});
-    document.addEventListener('DOMContentLoaded', () => {
+    {# document.addEventListener('DOMContentLoaded', () => {
         let currentIndex=0; 
         const gallery=document.getElementById('gallery'); 
         if (!gallery) return; 
@@ -87,7 +87,7 @@
         function showNextImage() {currentIndex = (currentIndex < spans.length - 1) ? currentIndex + 1 : 0;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
         function updateLightboxImage(imageSrc) {const lightbox = document.getElementById('lightbox');const img = lightbox.querySelector('img');img.src = imageSrc;const counter = lightbox.querySelector('.counter');counter.innerText = `${currentIndex + 1}/${spans.length}`;}
         function closeLightbox() {const lightbox = document.getElementById('lightbox');if (lightbox) {document.body.classList.remove('noScroll');document.body.removeChild(lightbox);}}
-    });
+    }); #}
     {{ extraJs | safe }}
 </script>   
 {# <!--<script src="/js/main.js" defer></script>--> #}
