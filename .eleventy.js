@@ -1,6 +1,7 @@
 const yaml = require("js-yaml");
 const fs = require("fs");
 const htmlmin = require("html-minifier-terser");
+const CleanCSS = require("clean-css");
 
 if (fs.existsSync("dist")) {
     fs.rmSync("dist", { recursive: true, force: true });
@@ -9,25 +10,36 @@ if (fs.existsSync("dist")) {
 module.exports = function(eleventyConfig) {
     eleventyConfig.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
 
-    eleventyConfig.addPassthroughCopy("css");
+    // Keep images and js passthrough, but NOT css
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("js");
+
+    // --- AUTOMATIC CSS MINIFICATION EXTENSION ---
+    eleventyConfig.addTemplateFormats("css");
+    eleventyConfig.addExtension("css", {
+        outputFileExtension: "css",
+        compile: async function(inputContent) {
+            return async () => {
+                return new CleanCSS({}).minify(inputContent).styles;
+            };
+        }
+    });
 
     eleventyConfig.addFilter("json", function(value) {
         return JSON.stringify(value, null, 2);
     });
 
-    // Enhanced HTML, CSS, & JSON Minifier
+    // HTML Minifier
     eleventyConfig.addTransform("htmlmin", async function(content, outputPath) {
         if (outputPath && outputPath.endsWith(".html")) {
             return await htmlmin.minify(content, {
-                useShortDoctype: false,
-                removeComments: false,
-                collapseWhitespace: false,
-                conservativeCollapse: false,                // Strips aggressive whitespace gaps false
-                minifyJS: true,                             // Minifies standard inline JS
-                minifyCSS: true,                            // Minifies inline style="" attributes
-                processScripts: ["application/ld+json"]     // Tells minifier to strip whitespace inside JSON-LD!
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true,
+                conservativeCollapse: true,
+                minifyJS: true,
+                minifyCSS: true,
+                processScripts: ["application/ld+json"]
             });
         }
         return content;
@@ -43,6 +55,108 @@ module.exports = function(eleventyConfig) {
         }
     };
 };
+
+
+// const yaml = require("js-yaml");
+// const fs = require("fs");
+// const htmlmin = require("html-minifier-terser");
+// const CleanCSS = require("clean-css");
+
+// if (fs.existsSync("dist")) {
+//     fs.rmSync("dist", { recursive: true, force: true });
+// }
+
+// module.exports = function(eleventyConfig) {
+//     eleventyConfig.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
+
+//     // Note: Passthrough copy for "css" was removed so Eleventy can process/minify CSS files.
+//     eleventyConfig.addPassthroughCopy("images");
+//     eleventyConfig.addPassthroughCopy("js");
+
+//     // CSS Minification Filter
+//     eleventyConfig.addFilter("cssmin", function(code) {
+//         return new CleanCSS({}).minify(code).styles;
+//     });
+
+//     eleventyConfig.addFilter("json", function(value) {
+//         return JSON.stringify(value, null, 2);
+//     });
+
+//     // Enhanced HTML, CSS, & JSON Minifier
+//     eleventyConfig.addTransform("htmlmin", async function(content, outputPath) {
+//         if (outputPath && outputPath.endsWith(".html")) {
+//             return await htmlmin.minify(content, {
+//                 useShortDoctype: false,
+//                 removeComments: false,
+//                 collapseWhitespace: false,
+//                 conservativeCollapse: false,        // Strips aggressive whitespace gaps false
+//                 minifyJS: true,                             // Minifies standard inline JS
+//                 minifyCSS: true,                            // Minifies inline style="" attributes
+//                 processScripts: ["application/ld+json"]     // Tells minifier to strip whitespace inside JSON-LD!
+//             });
+//         }
+//         return content;
+//     });
+
+//     return {
+//         dir: {
+//             input: "src",
+//             data: "_data",
+//             includes: "_includes",
+//             layouts: "_layouts",
+//             output: "dist"
+//         }
+//     };
+// };
+
+
+
+
+// const yaml = require("js-yaml");
+// const fs = require("fs");
+// const htmlmin = require("html-minifier-terser");
+
+// if (fs.existsSync("dist")) {
+//     fs.rmSync("dist", { recursive: true, force: true });
+// }
+
+// module.exports = function(eleventyConfig) {
+//     eleventyConfig.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
+
+//     eleventyConfig.addPassthroughCopy("css");
+//     eleventyConfig.addPassthroughCopy("images");
+//     eleventyConfig.addPassthroughCopy("js");
+
+//     eleventyConfig.addFilter("json", function(value) {
+//         return JSON.stringify(value, null, 2);
+//     });
+
+//     // Enhanced HTML, CSS, & JSON Minifier
+//     eleventyConfig.addTransform("htmlmin", async function(content, outputPath) {
+//         if (outputPath && outputPath.endsWith(".html")) {
+//             return await htmlmin.minify(content, {
+//                 useShortDoctype: false,
+//                 removeComments: false,
+//                 collapseWhitespace: false,
+//                 conservativeCollapse: false,                // Strips aggressive whitespace gaps false
+//                 minifyJS: true,                             // Minifies standard inline JS
+//                 minifyCSS: true,                            // Minifies inline style="" attributes
+//                 processScripts: ["application/ld+json"]     // Tells minifier to strip whitespace inside JSON-LD!
+//             });
+//         }
+//         return content;
+//     });
+
+//     return {
+//         dir: {
+//             input: "src",
+//             data: "_data",
+//             includes: "_includes",
+//             layouts: "_layouts",
+//             output: "dist"
+//         }
+//     };
+// };
 
 
 // const yaml = require("js-yaml");

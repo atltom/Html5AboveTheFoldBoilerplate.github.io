@@ -523,19 +523,3 @@ line-height:35px;
   color: #4a5568; /* No color change */
   text-decoration: none; /* No underline */
 }
-
-
-
-
-.full-width-banner {
-  display: block;
-  width: 100%;
-}
-
-.full-width-banner img {
-  width: 100%;
-  height: auto;
-  max-height: 450px; /* Optional: caps banner height on ultra-wide screens */
-  object-fit: cover;
-  display: block;
-}

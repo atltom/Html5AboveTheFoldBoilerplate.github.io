@@ -16,8 +16,8 @@
   <meta property="og:image" content="{{ site.url }}/images/{{ ogImage or site.defaultOgImage }}">
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-  <link rel="preload" href="/css/templatestyles.min.css" as="style" media="all">
-  <link rel="preload" fetchpriority="high" as="image" href="/images/S-Phaneuf-Associates.webp" type="image/webp">{% if heroImageMobile %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageMobile }}" type="image/webp" media="(max-width: 1023px)">{% endif %}{% if heroImageDesktop %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageDesktop }}" type="image/webp" media="(min-width: 1024px)">{% endif %}
+  <link rel="preload" href="/css/templatestyles.css" as="style" media="all">
+  <!--link rel="preload" fetchpriority="high" as="image" href="/images/S-Phaneuf-Associates.webp" type="image/webp"-->{% if heroImageMobile %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageMobile }}" type="image/webp" media="(max-width: 1023px)">{% endif %}{% if heroImageDesktop %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageDesktop }}" type="image/webp" media="(min-width: 1024px)">{% endif %}
   <link rel="stylesheet" href="/css/templatestyles.css">{{ extraCss | safe }}
   <link rel="icon" href="/images/favicon96c.png" sizes="96x96">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
