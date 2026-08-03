@@ -1,7 +1,9 @@
 <!--sidebar-->
 <div id="sidebar-contact-form">{# cccclass="contact-form mt-5 mb-1" #}
     <h2>{{ sidebarHeading }}</h2>
-    <p class="mt-2 mb-4">{{ sidebarParagraph }}</p>
+    {% for p in sidebarParagraph %}
+    <p class="mt-2 mb-4">{{ p }}</p>
+    {% endfor %}
     <form id="contact-form" class="pb-3 mb-5">
         <div class="mb-3">
             <label for="first-last-name" class="form-label">First and Last Name</label>
@@ -12,7 +14,7 @@
             <input id="email-or-phone" type="text" class="form-control" name="contact" required>
         </div>
         <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
+            <label for="message" class="form-label">Tell us about your project</label>
             <textarea id="message" class="form-control" rows="5" name="message" required></textarea>
         </div>
         <button type="submit" class="btn">Submit</button>
