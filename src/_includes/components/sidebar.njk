@@ -4,6 +4,19 @@
     {% for p in sidebarParagraph %}
     <p class="mt-2 mb-4">{{ p }}</p>
     {% endfor %}
+    {% if sidebarTrust %}
+    <div class="mb-4">
+        <p>
+        ✔ Free estimates
+        <br>
+        ✔ Serving Massachusetts since 1989
+        <br>
+        ✔ Residential & Commercial
+        <br>
+        ✔ Licensed & Insured
+        </p>
+    </div>
+    {% endif %}
     <form id="contact-form" class="pb-3 mb-5">
         <div class="mb-3">
             <label for="first-last-name" class="form-label">First and Last Name</label>
@@ -17,7 +30,7 @@
             <label for="message" class="form-label">Tell us about your project</label>
             <textarea id="message" class="form-control" rows="5" name="message" required></textarea>
         </div>
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn">Request Your Free Estimate</button>
     </form>
     {% if showToc %}
     <nav class="table-of-contents my-4 p-3 bg-light border rounded">
