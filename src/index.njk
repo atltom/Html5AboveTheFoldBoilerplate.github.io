@@ -23,6 +23,13 @@ heroCTA: Get Started
 # breadcrumbs:
 #   - title: Services
 #     url: /services
+
+sidebarHeading: Start Your Project with a Free Consultation
+sidebarParagraph: 
+    - >
+        Tell us about your project, and one of our experienced team members will contact you to discuss your goals, answer your questions, and provide a detailed estimate.     
+sidebarTrust: true
+
 ---
 <div class="container flex-container mb-5 pb-5">
     <div class="mt-5 content">
@@ -32,7 +39,10 @@ heroCTA: Get Started
         </section>
     </div>
     <!--sidebar-->
-    <div class="contact-form mt-5 mb-1">
+    <aside class="contact-form mt-5 mb-1" id="sidebar-contact">
+        {% include "components/sidebar.njk" %}
+    </aside>
+    {# <div class="contact-form mt-5 mb-1">
         <h2 class="pipe2 c-b t-c">Contact Us</h2>
         <p class="mt-2 mb-4">We'd love to help bring your outdoor vision to life! Please complete the form below, and a team member will reach out to you as soon as possible. For the best support, kindly provide as much detail as possible regarding your project. We look forward to working with you!</p>
         <form id="contact-form" class="pb-3 mb-5" >
@@ -43,7 +53,7 @@ heroCTA: Get Started
             <div id="form-error" style="color: #dc3545; font-weight: bold; margin-bottom: 1em; display: none;"></div>
             <div class="t-c"><button type="submit" class="btn">Submit</button></div>
         </form>
-    </div>
+    </div> #}
 </div>
 <div class="container mt-5">
     <section id="services" class="text-box py-4">
