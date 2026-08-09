@@ -33,11 +33,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addTransform("htmlmin", async function(content, outputPath) {
         if (outputPath && outputPath.endsWith(".html")) {
             return await htmlmin.minify(content, {
-                useShortDoctype: true,
+                useShortDoctype: false,
                 removeComments: true,
-                collapseWhitespace: true,
+                collapseWhitespace: false,
                 conservativeCollapse: true,
-                minifyJS: true,
+                minifyJS: false,
                 minifyCSS: true,
                 processScripts: ["application/ld+json"]
             });

@@ -10,33 +10,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
 h1{font-size:2rem}h2{font-size:1.75rem}h3{font-size:1.35rem}h4{font-size:1.25rem}h2,h3,h4{font-weight:600;color:#222}
 
 hr{border:1.5px solid #bc5a15;margin:5px 30px -5px 30px}
+.borderc-g{border:1px solid #e1e1e1}
 a{color:#1e396c;text-decoration:none}a:hover{text-decoration:underline; text-underline-offset: 2px;}
-button:focus{outline:none}.nav,button{outline:0}.btn{text-decoration:none;background:#bc5a15;color:#fff;display:inline-block;padding:8px 16px;border:0;cursor:pointer}
+button:focus{outline:none}.nav,button{outline:0}
+   
+.btn{text-decoration:none;background:#bc5a15;color:#fff;display:inline-block;padding:8px 16px;border:0;cursor:pointer}
 .btn:hover,.btn:active,.btn:focus{background:#e57930}.btn-outlined{background:#fff;color:green;border:3px solid green;font-weight:700}
 .btn.btn-outlined:hover,.btn.btn-outlined:active{background:#ffffff;color:#006100;border-color:#006100}
 .btn:disabled{ background-color: #ccc; color: #666; cursor: not-allowed;}
 
 #cookie-consent-banner{z-index:999;position: fixed; bottom: 0; width: 100%; background-color: #333; color: white; padding: 15px; text-align: center;}
 
-.skip-link{
-
-    position:absolute;
-    left:-9999px;
-    top:0;
-
-}
-
-
-.skip-link:focus{
-
-    left:20px;
-    top:20px;
-    padding:15px;
-    z-index:9999;
-    background:white;
-    border:1px solid #ccc;
-
-}
+.skip-link{position:absolute;left:-9999px;top:0;}
+.skip-link:focus{left:20px;top:20px;padding:15px;z-index:9999;background:white;border:1px solid #ccc;}
 
 
 #fixedbar{background:#bc5a15;color:#fff;position:fixed;top:0;width:100%;height:30px;z-index:3;font-size:13px;font-weight:700;padding:7px 0 0 30px;padding-left:3.33vw}
@@ -79,8 +65,65 @@ a.nav-link:hover,.dropbtn:hover, .dropbtn:focus,.nav-dd-link{text-decoration:und
 .big-image.home{background-image:url(../images/566/asphalt-and-masonry.webp)}
 .big-image.services{background-image:url(../images/566/stone-wall.webp)}
 
-.overlay{position:relative;left:50%;background-color:#30405fa3;color:white;width:90%;top:50%;transform:translate(-50%,calc(-50% - 30px));padding:12px;text-shadow:2px 2px 4px #000}
+.overlay{position:relative;left:50%;background-color:#30405fcc;color:white;width:90%;top:50%;transform:translate(-50%,calc(-50% - 30px));padding:12px;text-shadow:2px 2px 4px #000}
 .hero-h1{line-height:39px}
+
+/* =========================================
+   HERO TRUST STATEMENT
+   Mobile-first
+   ========================================= */
+
+.hero-trust {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hero-trust span {
+    display: block;
+}
+
+/* Hide the decorative bullet separators on mobile */
+.hero-trust span:nth-child(even) {
+    display: none;
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+    .hero-trust {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .hero-trust span {
+        display: inline;
+    }
+
+    /* Show the bullet separators on desktop */
+    .hero-trust span:nth-child(even) {
+        display: inline;
+    }
+
+}
+
 .hero-btn{padding:12px 32px;border:1px solid #ab4400;text-shadow:1px 1px 4px #5e2500}
 
 .container{padding:0 20px;width:100%;}

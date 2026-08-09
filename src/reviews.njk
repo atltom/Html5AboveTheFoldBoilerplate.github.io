@@ -9,50 +9,7 @@ extraCss: |
     <style>
         blockquote{ margin: 50px auto; font-style: italic; color: #555555; padding: 1em 30px 1em 40px; border-left: 8px solid #2f3f5e; line-height: 1.6; position: relative; background: #EDEDED} blockquote::before{ font-family: Arial; content: "\201C"; color: #78C0A8; color: #2f3f5e; font-size: 4em; position: absolute; left: 10px; top: -10px} blockquote::after{ content: ''} blockquote cite{ display: block; color: #333333; font-style: normal; font-weight: bold; margin-top: 1em}
     </style>
-extraSchema: | 
-    {
-        "@graph": [
-            {
-            "@type": "HomeAndConstructionBusiness",
-            "@id": "https://sphaneufassociates.com/#organization",
-            "name": "S. Phaneuf & Associates",
-            "url": "https://sphaneufassociates.com"
-            },
-            {
-            "@type": "Review",
-            "author": {
-                "@type": "Person",
-                "name": "Anonymous"
-            },
-            "reviewBody": "Working with S. Phaneuf & Associates was an absolute pleasure from start to finish. We had a vision for our outdoor space, and they brought it to life beyond our expectations. The custom fabricated fire pit, granite stairs, outdoor kitchen, and stone veneer work exceeded everything we imagined. Throughout the entire process, the team demonstrated professionalism, expertise, and a commitment to delivering high-quality results.",
-            "itemReviewed": {
-                "@id": "https://sphaneufassociates.com/#organization"
-            }
-            },
-            {
-            "@type": "Review",
-            "author": {
-                "@type": "Person",
-                "name": "Kerri O."
-            },
-            "reviewBody": "These fellows came over and regraded and asphalted our existing driveway. They also excavated and installed a second driveway and refinished our back stairs. All three tasks were performed with admirable attention to detail and at a very fair price. The crew was friendly, professional, and delivered exceptional workmanship.",
-            "itemReviewed": {
-                "@id": "https://sphaneufassociates.com/#organization"
-            }
-            },
-            {
-            "@type": "Review",
-            "author": {
-                "@type": "Person",
-                "name": "Tom M."
-            },
-            "reviewBody": "Our experience with the installation team was nothing short of remarkable. Their precision, attention to detail, and efficiency transformed our outdoor kitchen project into a beautiful and functional outdoor living space. They left the job site spotless and delivered outstanding results.",
-            "itemReviewed": {
-                "@id": "https://sphaneufassociates.com/#organization"
-            }
-            }
-        ]
-    }
+
 
 
 # NAVIGATION
@@ -65,15 +22,58 @@ heroImageClass: site-work
 heroHeading: "Customer Reviews for S. Phaneuf & Associates"
 heroSubheading: "Read what homeowners and businesses throughout Massachusetts have to say about their experience working with our team on masonry, hardscaping, asphalt paving, excavation, and construction projects."
 heroImage: site-work.webp
-heroCTA: Get Started
+heroCTA: Request Your Free Estimate
+heroTrust:
+  - Trusted Since 1989
+  - Residential & Commercial
+  - Free Estimates
 
 # BREADCRUMBS 
 breadcrumbTitle: "Reviews"
 
+faq:
+  heading: "Frequently Asked Questions"
+  items:
+    - question: How can I read customer reviews for S. Phaneuf & Associates?
+      answer: >
+        You can read customer reviews and testimonials from homeowners and businesses who have worked with S. Phaneuf & Associates on masonry, hardscaping, asphalt paving, excavation, site development, and other construction projects. Our reviews provide insight into the quality of our workmanship, communication, professionalism, and overall project experience.
+
+    - question: What types of projects do customers review?
+      answer: >
+        Our customer reviews cover a variety of residential and commercial projects, including custom patios, outdoor living spaces, fire pits, retaining walls, masonry and hardscaping, asphalt paving, excavation, site development, and other property improvements. The projects featured in our reviews reflect the range of construction services we provide throughout Massachusetts.
+
+    - question: Do you work with both residential and commercial customers?
+      answer: >
+        Yes. S. Phaneuf & Associates works with both residential and commercial customers throughout Massachusetts. Our experience includes residential outdoor living and masonry projects as well as commercial paving, site development, excavation, property improvements, and snow and ice management.
+
+    - question: Where are your customers located?
+      answer: >
+        Our customers are located throughout Massachusetts, including communities in Greater Boston and Central and Eastern Massachusetts. We have completed projects in communities such as Concord, Holliston, Wellesley, Weston, Acton, Bolton, Carlisle, Lexington, Littleton, Sudbury, Wayland, and Westford. Visit our <a href="/service-areas">Service Areas</a> page to learn more about the communities we serve.
+
+    - question: How can I learn more about a project mentioned in a review?
+      answer: >
+        Our portfolio includes examples of completed masonry, hardscaping, asphalt paving, excavation, and site development projects. You can explore our <a href="/portfolio">Portfolio</a> to see additional project examples, or visit the service page related to the type of project you're interested in.
+
+    - question: How can I contact S. Phaneuf & Associates about a similar project?
+      answer: >
+        If you're considering a project similar to one featured in our reviews, contact S. Phaneuf & Associates to discuss your goals and property. You can <a href="/contact-us">contact us</a> by phone, email, or through our online form to request a free consultation and estimate.
+
+##################################################
+# FINAL CTA
+##################################################
+ctaSlug: "contact-phaneuf-today"
+ctaHeading: "Ready to Discuss Your Project?"
+ctaText: "Whether you're planning a custom masonry or hardscape project, asphalt paving, excavation and site development, or another property improvement, S. Phaneuf &amp; Associates is ready to help. Tell us about your project, your goals, and where your property is located, and we'll help you determine the right approach.<p>
+        We work with homeowners, businesses, property managers, municipalities, and general contractors throughout Massachusetts. Contact our team to schedule a free consultation and receive a detailed estimate for your project.
+    </p><p class=\"hero-trust c-b\"><span>✓ Free Estimates</span><span class=\"separator\">•</span><span>✓ Serving Massachusetts Since 1989</span><span class=\"separator\">•</span><span>✓ Residential & Commercial</span><span class=\"separator\">•</span><span>✓ Licensed &amp; Insured</span></p>"
+
+
+
+
 sidebarHeading: Request Your Free Consultation
 sidebarParagraph:
   - >  
-    Please fill out the form below, and a member of our team will reach out to you shortly. To help us assist you more effectively, kindly provide as much detail as possible.    
+    Inspired by the work you've seen? Tell us about your project and we'll help you determine the best approach for your property.   
 sidebarImages:
   - src: /images/small/circular-fire-pit-Holliston-Mass.webp
     alt: Holliston, Massachusetts commercial asphalt project with circular layout
@@ -125,18 +125,45 @@ sidebarImages:
 
 {% include "components/breadcrumbs.njk" %}  
 <div class="container flex-container mb-5 pb-5">    
-    <article class="mt-5 content" id="contact-us">
+    <article class="mt-5 content" id="customer-reviews">
         
         <section class="pt-3 mb-5" aria-label="Customer testimonials and company overview">
-            <h2 class="pipe mb-3">Trust a company that strives for excellence.</h2><p>From the initial consultation to the final touches, S. Phaneuf & Associates strives to exceed our client's expectations in every way possible. While our portfolios of interior and exterior projects speak to the incredible results we achieve with each project, we understand choosing a company can be a daunting task. We encourage you to read the <strong>Customer Reviews</strong> from our previous clients throughout Massachusetts to learn more about working with our team. Their experiences with our interior design, <strong>hardscaping</strong>, and <strong>outdoor living solutions</strong> can provide valuable insight into the level of service and quality of work you can expect from our team. Explore our glowing reviews from homeowners across Massachusetts who have worked with us on everything from patios and walkways to complete backyard transformations.</p>
+            {# <h2 class="pipe mb-3">See What Our Massachusetts Customers Have to Say</h2><p>From the initial consultation to the final touches, S. Phaneuf & Associates strives to exceed our client's expectations in every way possible. While our portfolios of projects speak to the incredible results we achieve with each project, we understand choosing a company can be a daunting task. We encourage you to read the <strong>Customer Reviews</strong> from our previous clients throughout Massachusetts to learn more about working with our team. Their experiences with our design, <strong>hardscaping</strong>, and <strong>outdoor living solutions</strong> can provide valuable insight into the level of service and quality of work you can expect from our team. Explore our glowing reviews from homeowners across Massachusetts who have worked with us on everything from patios and walkways to complete backyard transformations.</p>
+             #}
+            <h2 class="pipe">See What Our Massachusetts Customers Have to Say</h2>
+
+    <p class="pt-4">
+        Choosing a contractor for your property is an important decision. Customer reviews provide valuable insight into what it's like to work with S. Phaneuf & Associates, from the initial consultation through project completion.
+    </p>
+
+    <p class="pt-4">
+        Our customer reviews highlight the qualities that matter most when planning a construction or outdoor improvement project, including <strong>communication, workmanship, professionalism, reliability, and attention to detail</strong>. They also provide examples of the residential and commercial projects we've completed throughout Massachusetts.
+    </p>        
+
+    {# <p class="pt-4">
+        Whether you're considering a custom masonry or hardscape project, asphalt paving, excavation and site development, or another construction service, these reviews can help you understand our approach and what you can expect when working with our team.
+    </p> #}
+
+    <p class="pt-4">
+        Whether you're considering a custom
+        <a href="/masonry-hardscapes">masonry or hardscape project</a>,
+        <a href="/asphalt-paving">asphalt paving</a>,
+        <a href="/excavation-site-development">excavation and site development</a>,
+        or another construction service, these reviews can help you understand our approach and what you can expect when working with our team.
+    </p>
+
+    <p class="pt-4">
+        We encourage you to read through the experiences shared by our customers and see why homeowners, businesses, property managers, and other property owners throughout Massachusetts have trusted S. Phaneuf & Associates with their projects.
+    </p>
+            
             <!-- <article class="mt-5"><h3 class="p-0 c-b">Outdoor Space Brought To Life</h3><blockquote class="mt-0">Working with S. Phaneuf & Associates was an absolute pleasure from start to finish. We had a vision for our outdoor space, and they brought it to life beyond our expectations. The custom fabricated fire pit and gas torches in Stonewall are the centerpiece of our backyard, creating a cozy and inviting atmosphere for gatherings. The granite stairs leading to our plunge pool add a touch of elegance, while the outdoor kitchen with blue stone countertops makes entertaining a breeze. We also appreciate the attention to detail shown in the separate wood-burning fire pit and the thin veneer fieldstone on our basement walls, which seamlessly blend with the overall design. Throughout the entire process, the team at S. Phaneuf & Associates demonstrated professionalism, expertise, and a commitment to delivering high-quality results. We couldn't be happier with the outcome and would highly recommend them to anyone looking to elevate their outdoor living space. <cite>Anonymous - Concord, MA</cite></blockquote></article>
-            <article><h3 class="p-0 c-b">Attention To Detail</h3><blockquote class="mt-0">These fellows came over and regraded and asphalted our existing driveway. They also excavated and installed a second driveway for us. In addition, they repaired and stuccoed (refinished with a smooth concrete surface) our existing back stairs. All three tasks were performed with an admirable attention to detail, and for a very decent price. Beyond that, the guys working at my house were really friendly, and polite. Can I just mention, that the stucco job they did on my stairs is really pretty? Not just a job well done, but pretty. The concrete is so finely worked that it resembles fondant icing, it's THAT smooth. That's good work, right there. They do much more than what they did for me. All kinds of hardscapes and stonework. Look to their website. Would I hire them, again? You betcha! <cite>Kerri O. - Maynard, MA</cite></blockquote></article>
+            <article><h3 class="p-0 c-b">Attention To Detail</h3><blockquote class="mt-0">These fellows came over and regraded and <a href="/asphalt-paving">asphalted our existing driveway</a>. They also <a href="/excavation-site-development">excavated and installed a second driveway</a> for us. In addition, they repaired and stuccoed (refinished with a smooth concrete surface) our existing back stairs. All three tasks were performed with an admirable attention to detail, and for a very decent price. Beyond that, the guys working at my house were really friendly, and polite. Can I just mention, that the stucco job they did on my stairs is really pretty? Not just a job well done, but pretty. The concrete is so finely worked that it resembles fondant icing, it's THAT smooth. That's good work, right there. They do much more than what they did for me. All kinds of hardscapes and stonework. Look to their website. Would I hire them, again? You betcha! <cite>Kerri O. - Maynard, MA</cite></blockquote></article>
             <article><h3 class="p-0 c-b">Remarkable Installation Team</h3><blockquote class="mt-0">Our experience with the installation team was nothing short of remarkable. These professionals were like culinary wizards, transforming raw materials into a functional masterpiece. Their precision and attention to detail left us in awe. And the best part? They worked with the speed of a well-oiled machine. In no time, our dream outdoor kitchen materialized, and they left the area pristine and clean—no dust, no mess. <cite>Tom M. - Ashby, MA</cite></blockquote></article> -->
         
             <article class="mt-5">
                 <h3 class="p-0 c-b">Custom Outdoor Living Space Transformation - Concord, MA</h3>
                 <blockquote class="mt-0">
-                    Working with S. Phaneuf & Associates was an absolute pleasure from start to finish. We had a vision for our outdoor space, and they brought it to life beyond our expectations. The custom fabricated fire pit and gas torches in Stonewall are the centerpiece of our backyard, creating a cozy and inviting atmosphere for gatherings. The granite stairs leading to our plunge pool add a touch of elegance, while the outdoor kitchen with blue stone countertops makes entertaining a breeze. We also appreciate the attention to detail shown in the separate wood-burning fire pit and the thin veneer fieldstone on our basement walls, which seamlessly blend with the overall design. This kind of detailed and thoughtful hardscaping work exceeded everything we imagined. Throughout the entire process, the team at S. Phaneuf & Associates demonstrated professionalism, expertise, and a commitment to delivering high-quality results. We couldn't be happier with the outcome and would highly recommend them to anyone looking to elevate their outdoor living space.
+                    Working with S. Phaneuf & Associates was an absolute pleasure from start to finish. We had a vision for our outdoor space, and they brought it to life beyond our expectations. The custom fabricated fire pit and gas torches in Stonewall are the centerpiece of our backyard, creating a cozy and inviting atmosphere for gatherings. The granite stairs leading to our plunge pool add a touch of elegance, while the outdoor kitchen with blue stone countertops makes entertaining a breeze. We also appreciate the attention to detail shown in the separate wood-burning fire pit and the thin veneer fieldstone on our basement walls, which seamlessly blend with the overall design. This kind of detailed and thoughtful <a href="/masonry-hardscapes">hardscaping work</a> exceeded everything we imagined. Throughout the entire process, the team at S. Phaneuf & Associates demonstrated professionalism, expertise, and a commitment to delivering high-quality results. We couldn't be happier with the outcome and would highly recommend them to anyone looking to elevate their outdoor living space.
                     <cite>Anonymous - Concord, MA</cite>
                 </blockquote>
             </article>
@@ -144,7 +171,7 @@ sidebarImages:
             <article>
                 <h3 class="p-0 c-b">Driveway Paving and Site Improvements - Maynard, MA</h3>
                 <blockquote class="mt-0">
-                    These fellows came over and regraded and asphalted our existing driveway. They also excavated and installed a second driveway for us. In addition, they repaired and stuccoed (refinished with a smooth concrete surface) our existing back stairs. All three tasks were performed with an admirable attention to detail, and for a very decent price. Beyond that, the guys working at my house were really friendly, and polite. Can I just mention, that the stucco job they did on my stairs is really pretty? Not just a job well done, but pretty. The concrete is so finely worked that it resembles fondant icing, it's THAT smooth. That's good work, right there. They do much more than what they did for me — all kinds of hardscaping and stonework. Look to their website. Would I hire them, again? You betcha!
+                    These fellows came over and regraded and asphalted our existing driveway. They also <a href="/excavation-site-development">excavated and installed a second driveway</a> for us. In addition, they repaired and stuccoed (refinished with a smooth concrete surface) our existing back stairs. All three tasks were performed with an admirable attention to detail, and for a very decent price. Beyond that, the guys working at my house were really friendly, and polite. Can I just mention, that the stucco job they did on my stairs is really pretty? Not just a job well done, but pretty. The concrete is so finely worked that it resembles fondant icing, it's THAT smooth. That's good work, right there. They do much more than what they did for me — all kinds of hardscaping and stonework. Look to their website. Would I hire them, again? You betcha!
                     <cite>Kerri O. - Maynard, MA</cite>
                 </blockquote>
             </article>
@@ -152,7 +179,7 @@ sidebarImages:
             <article>
                 <h3 class="p-0 c-b">Outdoor Kitchen Hardscape Installation - Ashby, MA</h3>
                 <blockquote class="mt-0">
-                    Our experience with the installation team was nothing short of remarkable. These professionals were like culinary wizards, transforming raw materials into a functional masterpiece. Their precision and attention to detail left us in awe. And the best part? They worked with the speed of a well-oiled machine. In no time, our dream outdoor kitchen materialized, and they left the area pristine and clean—no dust, no mess. Their flawless execution is a testament to the expert hardscaping capabilities of S. Phaneuf & Associates.
+                    Our experience with the installation team was nothing short of remarkable. These professionals were like culinary wizards, transforming raw materials into a functional masterpiece. Their precision and attention to detail left us in awe. And the best part? They worked with the speed of a well-oiled machine. In no time, our dream outdoor kitchen materialized, and they left the area pristine and clean—no dust, no mess. Their flawless execution is a testament to the expert <a href="/masonry-hardscapes">hardscaping</a> capabilities of S. Phaneuf & Associates.
                     <cite>Tom M. - Ashby, MA</cite>
                 </blockquote>
             </article>
@@ -176,8 +203,30 @@ sidebarImages:
             <button type="submit" class="my-3 btn">Submit Your Review</button>
         </form>
         </section>
-        <section class="pt-5" aria-label="Expert services in masonry, hardscapes, paving, excavation, and snow removal by S. Phaneuf & Associates"><h2 class="pipe mb-3">Why Choose S. Phaneuf & Associates?</h2><p class="mb-3">We specialize in providing expert services across <a href="service-areas" class="fw-6">Massachusetts</a>. Whether you're looking for masonry, hardscapes, asphalt paving, excavation, or snow removal, our team has the experience and expertise to get the job done right.</p><ul><li><strong>Masonry & Hardscapes</strong>: Transform your property with stone walkways, patios, and outdoor living spaces.</li><li><strong>Asphalt Paving</strong>: Durable and reliable paving solutions for driveways, parking lots, and more.</li><li><strong>Excavation & Site Development</strong>: Excavation, grading, and site prep for residential and commercial properties.</li><li><strong>Snow & Ice Management</strong>: Keeping your property safe and accessible during the harsh Massachusetts winters.</li></ul></section>
-            
+        <section class="pt-5" aria-label="Expert services in masonry, hardscapes, paving, excavation, and snow removal by S. Phaneuf & Associates">
+            <h2 class="pipe mb-3">Why Choose S. Phaneuf & Associates?</h2>
+            <p class="mb-3">We specialize in providing expert services throughout <a href="/service-areas" class="fw-6">Massachusetts</a>.  Whether you're looking for masonry, hardscapes, asphalt paving, excavation, or snow and ice management, our team has the experience and expertise to get the job done right.</p>
+            {# <ul><li><strong>Masonry & Hardscapes</strong>: Transform your property with stone walkways, patios, and outdoor living spaces.</li><li><strong>Asphalt Paving</strong>: Durable and reliable paving solutions for driveways, parking lots, and more.</li><li><strong>Excavation & Site Development</strong>: Excavation, grading, and site prep for residential and commercial properties.</li><li><strong>Snow & Ice Management</strong>: Keeping your property safe and accessible during the harsh Massachusetts winters.</li></ul> #}
+            <ul>
+                <li>
+                    <a href="/masonry-hardscapes" class="fw-6">Masonry & Hardscapes</a>:
+                    Transform your property with stone walkways, patios, and outdoor living spaces.
+                </li>
+                <li>
+                    <a href="/asphalt-paving" class="fw-6">Asphalt Paving</a>:
+                    Durable and reliable paving solutions for driveways, parking lots, and more.
+                </li>
+                <li>
+                    <a href="/excavation-site-development" class="fw-6">Excavation & Site Development</a>:
+                    Excavation, grading, and site preparation for residential and commercial properties.
+                </li>
+                <li>
+                    <a href="/snow-ice-management" class="fw-6">Snow & Ice Management</a>:
+                    Keeping commercial properties safe and accessible during Massachusetts winters.
+                </li>
+            </ul>
+        </section>
+        {% include "components/faqs.njk" %}  
        
     </article>
 
@@ -185,4 +234,5 @@ sidebarImages:
         {% include "components/sidebar.njk" %}
     </aside>
 </div>
+{% include "components/final-cta.njk" %}  
 {% include "components/full-width-image.njk" %}
