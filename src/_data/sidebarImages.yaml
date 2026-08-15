@@ -1,0 +1,27 @@
+default:
+  - src: /images/small/circular-fire-pit-Holliston-Mass.webp
+    alt: Holliston, Massachusetts commercial patio at Twisted Carrot featuring light gray pavers, fieldstone retaining walls, and a circular stone fire pit.
+    location: Holliston, MA
+    caption: Commercial outdoor patio installed at Twisted Carrot in Holliston, Massachusetts featuring light gray pavers, natural fieldstone retaining walls, and a central stone fire pit.
+
+  - src: /images/small/raised-patio-with-fire-pit-kitchen-img3-concord-mass.webp
+    alt: Concord, Massachusetts residential bluestone patio featuring a built-in stone grill island and circular fieldstone fire pit.
+    location: Concord, MA
+    caption: Custom bluestone patio in Concord, Massachusetts featuring a built-in outdoor kitchen with integrated LED lighting and a matching circular stone fire pit.
+
+  - src: /images/small/patio-fire-pit-pool-fireplace-concord-mass.webp
+    alt: Concord, Massachusetts bluestone patio featuring a sleek rectangular stone fire pit, fieldstone retaining walls, and stone seating.
+    location: Concord, MA
+    caption: Modern bluestone patio installation in Concord, Massachusetts featuring a custom rectangular fire pit, natural fieldstone retaining walls, and integrated stone seating.
+
+# portfolio:
+#   - src: "/images/small/raised-patio-with-fire-pit-kitchen-img3-concord-mass.webp"
+#     alt: "Concord residential project"
+#     location: "Concord, MA"
+#     caption: "Custom stone fire pit in Concord."
+    
+# contact-us:
+#   - src: /images/small/circular-fire-pit-Holliston-Mass.webp
+#     alt: Holliston, Massachusetts commercial patio featuring a circular stone fire pit, light gray rectangular pavers, and a low natural stone retaining wall under a sunny blue sky.
+#     location: Holliston, MA
+#     caption: Commercial outdoor gathering space featuring custom stonework and a circular fire pit in Holliston, Massachusetts.

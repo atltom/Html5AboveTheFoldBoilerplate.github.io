@@ -62,21 +62,6 @@ sidebarParagraph:
     Have questions or need assistance with your project? Fill out the form below, and we'll be in touch soon to provide you with the information and support you need.      
 sidebarTrust: true
 
-sidebarImages:
-  - src: /images/small/circular-fire-pit-Holliston-Mass.webp
-    alt: Holliston, Massachusetts commercial asphalt project with circular layout
-    location: Holliston, MA
-    caption: Commercial project, made for entertaining.
-  - src: /images/small/raised-patio-with-fire-pit-kitchen-img3-concord-mass.webp
-    alt: Concord, Massachusetts residential site development project
-    location: Concord, MA
-    caption: Classic residential project.
-  - src: /images/small/patio-fire-pit-pool-fireplace-concord-mass.webp
-    alt: Concord, Massachusetts residential asphalt and patio installation
-    location: Concord, MA
-    caption: Residential fire pit project.
-
-
 
 faq:
     - question: Can multiple services be combined into one project?
@@ -217,7 +202,7 @@ ctaText: "Whether you're planning a custom patio, outdoor living space, asphalt 
       <!-- Featured Construction Projects -->
       <section id="featured-construction-pics" class="py-5">
           <h2 class="pipe">Featured Construction Projects in Massachusetts</h2>
-          <p class="pt-3">Our portfolio represents the range of residential and commercial construction projects completed by S. Phaneuf & Associates throughout Massachusetts. Every project has different requirements, from working with existing grades and drainage to selecting materials that complement the property and designing spaces around how they will be used.</p>
+          <p class="pt-3">Our work represents the range of residential and commercial construction projects completed by S. Phaneuf & Associates throughout Massachusetts. Every project has different requirements, from working with existing grades and drainage to selecting materials that complement the property and designing spaces around how they will be used.</p>
           <p class="pt-3">Our experience includes custom masonry and hardscaping, outdoor living spaces, asphalt paving, excavation, site development, and other property improvements. Projects may include sloped backyards requiring retaining walls and careful grading, pool areas requiring new walkways and drainage, or commercial properties requiring paving, excavation, drainage improvements, and ongoing snow management.</p>
           <p class="pt-3">We look at the entire property rather than treating each feature as a separate job. We consider how the finished project will function, how people will move through the space, how water will drain, and how the materials will perform over time.</p>
           <p class="pt-3">Whether you're planning a custom patio, outdoor kitchen, retaining wall, pool deck, asphalt driveway, excavation project, or commercial site improvement, we can help you develop a practical construction solution that fits your property and goals.</p>
@@ -300,7 +285,7 @@ ctaText: "Whether you're planning a custom patio, outdoor living space, asphalt 
       <!-- featured hardscape videos -->
       <section id="featured-hardscape-videos" class="py-5">
         <h2 class="pipe">See Our Work in Action</h2>
-        <p class="pt-3">See S. Phaneuf & Associates in action through videos shared on our Facebook page. These videos provide a closer look at our construction process, craftsmanship, and completed outdoor living projects throughout Massachusetts.</p>
+        <p class="pt-3">See examples of S. Phaneuf & Associates' work through videos shared on our Facebook page. These videos provide a closer look at our construction process, craftsmanship, and completed outdoor living projects throughout Massachusetts.</p>
         <p class="pt-3">Follow us on Facebook to see more project videos, construction updates, and examples of our work.</p>
         <div class="video-grid">
 
@@ -359,7 +344,7 @@ ctaText: "Whether you're planning a custom patio, outdoor living space, asphalt 
             <figure>
               <iframe loading="lazy" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1190177413194796%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
               <figcaption>
-                  ??????, Massachusetts —  Subdivision paving project.
+                  Lancaster, Massachusetts —  Paving roadways, parking areas, berms, sidewalks and driveways for new residential subdivision development.
               </figcaption>
             </figure>
 
@@ -476,9 +461,15 @@ ctaText: "Whether you're planning a custom patio, outdoor living space, asphalt 
     </article>
 
 
-    <aside class="contact-form mt-5 mb-1" id="sidebar-contact">
+    {# <aside class="contact-form mt-5 mb-1" id="sidebar-contact">
         {% include "components/sidebar.njk" %}
-    </aside>
+    </aside> #}
+
+   <aside class="contact-form mt-5 mb-1" id="sidebar-contact">
+  {% set sidebarKey = "portfolio" %}
+  {% include "components/sidebar.njk" %}
+</aside>
+
 
 
 </div>

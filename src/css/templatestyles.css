@@ -598,3 +598,15 @@ line-height:35px;
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+.location-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1e293b;
+  background-color: #e2e8f0;
+  border-radius: 9999px;      /* Full pill radius */
+  padding: 0.2rem 0.65rem;
+  margin-bottom: 0.5rem;
+}
