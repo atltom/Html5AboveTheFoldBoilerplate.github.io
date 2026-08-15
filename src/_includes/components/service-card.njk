@@ -7,9 +7,7 @@
             </a>
         </div>
         <div class="col-lg-8">
-            <h2 class="pipe text-dark fw-bold mb-3">
-                <a href="{{ item.link }}" style="text-decoration: none;">{{ item.title }}</a>
-            </h2>
+            <h2 class="pipe text-dark fw-bold mb-3"><a href="{{ item.link }}" style="text-decoration: none;">{{ item.title }}</a></h2>
             <p class="lead-sm text-secondary">{{ item.description }}</p>
             {% if item.services and item.services.length %}<ul class="ps-3 li mb-4">
                     {% for service in item.services %}<li>{{ service }}</li>{% endfor %}
