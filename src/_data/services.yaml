@@ -1,45 +1,429 @@
 asphalt:
   benefits:
-    heading: "Why Choose Our Asphalt Services"
-
+    heading: "1y-Why Choose Professional Asphalt Paving?"
+    intro: >
+      A properly constructed asphalt surface does more than improve the appearance of your property. Professional site preparation, quality materials, proper drainage, and skilled installation create pavement that can withstand Massachusetts weather, vehicle traffic, and everyday use while providing long-term value for residential and commercial properties.
     items:
-      - title: Expert Installation
-        description: Our team ensures a smooth and durable asphalt surface.
+      - title: "Durable & Long Lasting"
+        description: >
+          Properly installed asphalt provides a strong, resilient surface designed to withstand vehicle traffic, changing weather conditions, and everyday use on driveways, parking lots, and private roads.
 
-      - title: Long-Lasting Results
-        description: We use high-quality materials for a surface that stands the test of time.
+      - title: "Cost-Effective"
+        description: >
+          Asphalt provides excellent long-term value compared with many other paving options. Proper installation and regular maintenance can help extend the useful life of your pavement and reduce costly repairs.
 
-      - title: Cost-Effective Solutions
-        description: Our services provide excellent value for your investment.
+      - title: "Smooth & Comfortable"
+        description: >
+          A professionally paved asphalt surface provides a smooth, comfortable driving and parking surface while improving the overall appearance and accessibility of your property.
 
-      - title: Professional Maintenance
-        description: We offer maintenance services to keep your asphalt in top condition.
+      - title: "Efficient Installation"
+        description: >
+          Asphalt paving can often be completed efficiently, minimizing disruption to homeowners, businesses, customers, and employees while allowing the finished surface to return to service relatively quickly.
+
+      - title: "Recyclable Material"
+        description: >
+          Asphalt is highly recyclable, and reclaimed asphalt pavement can be incorporated into new asphalt mixes, helping reduce the demand for new raw materials.
+
   services:
-    heading: "Why Choose Our Asphalt Services"
-
+    heading: "2y-Our Asphalt Paving Services"
+    intro: >
+      We provide asphalt paving, repair, resurfacing, and maintenance services for residential and commercial properties throughout Massachusetts.
     items:
-      - title: Expert Installation
-        description: Our team ensures a smooth and durable asphalt surface.
+      - title: "New Asphalt Paving"
+        anchor: new-asphalt-paving
+        image:
+          src: "/images/small/asphalt-driveway.webp"
+          alt: "New asphalt driveway installed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            A successful asphalt paving project starts with proper preparation
+            beneath the pavement. At S. Phaneuf & Associates, we evaluate existing
+            site conditions and prepare the subgrade, drainage, and base before
+            installing the asphalt surface. Proper preparation helps create a
+            stable foundation that can withstand vehicle traffic and Massachusetts
+            freeze-thaw conditions.
+          - >
+            We install asphalt for residential driveways, commercial parking lots,
+            private roads, and other paved surfaces. Our experienced crews use
+            proven installation methods and quality materials to create smooth,
+            durable pavement designed for long-term performance.
+          - >
+            Whether you are replacing an aging driveway or developing pavement as
+            part of a larger construction project, we can coordinate the paving
+            work with excavation, grading, drainage, and other site development
+            requirements.
 
-      - title: Long-Lasting Results
-        description: We use high-quality materials for a surface that stands the test of time.
+        features:
+          heading: "Popular New Asphalt Paving Projects"
+          items:
+            - Residential driveways
+            - Commercial parking lots
+            - Private roads
+            - Residential parking areas
+            - New pavement installations
+            - Asphalt replacement
+            - Site development paving
+            - Asphalt berms
+            - Drainage improvements
+            - Pavement connected to new construction
 
-      - title: Cost-Effective Solutions
-        description: Our services provide excellent value for your investment.
+        benefits:
+          heading: "Benefits of New Asphalt Paving"
+          items:
+            - Creates a smooth and durable driving surface.
+            - Improves the appearance and curb appeal of your property.
+            - Provides reliable performance under everyday vehicle traffic.
+            - Can be designed for residential or commercial applications.
+            - Works well with properly designed drainage and grading systems.
+            - Provides long-term value when properly installed and maintained.
+            - Can be coordinated with excavation and site development work.
+            - Designed to withstand Massachusetts weather conditions.
 
-      - title: Professional Maintenance
-        description: We offer maintenance services to keep your asphalt in top condition.
+        closing:
+          - >
+            Every paving project is different. Soil conditions, drainage, grading,
+            traffic levels, and the intended use of the pavement all affect how a
+            project should be prepared and constructed.
+          - >
+            Our team will evaluate your property and recommend an asphalt paving
+            solution based on your project requirements, site conditions, and
+            long-term goals.
 
-# Asphalt Paving for Driveways, Parking Lots, and More in Massachusetts
-# Quality Asphalt Solutions for Your Driveway and Parking Needs
-# S. Phaneuf & Associates is one of the premier asphalt paving contractors for Massachusetts properties, handling all asphalt paving needs for driveways, parking lots, asphalt berms, repairs, drainage, catch basins, and more. We are committed to providing high-quality work and customer satisfaction. Customer satisfaction doesn’t stop with the job specifications. We are dedicated to excellent service with a people-friendly approach, making your experience with us for your paving needs a pleasant one. Whether your paving needs are for your residential or commercial property, S. Phaneuf & Associates has the experience, equipment, and skilled crews to complete your work on time, within budget, and with the quality results you expect. Visit our asphalt paving project photo page to see examples of our work on Massachusetts properties and see the quality we deliver.
-# Driveways
-# Parking Lots
-# Asphalt Berm
-# Repairs & Maintenance
-# Drainage
-# Catch Basins
-# and more
+      - title: "Asphalt Driveways"
+        anchor: driveways
+        image:
+          src: "/images/small/asphalt-driveway.webp"
+          alt: "Residential asphalt driveway constructed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            A professionally installed asphalt driveway provides a clean,
+            attractive entrance to your property while offering a durable surface
+            for everyday vehicle use. Asphalt is a practical choice for homeowners
+            looking for a smooth, low-maintenance driveway that complements their
+            home and landscape.
+          - >
+            We prepare each driveway carefully, including excavation, grading,
+            drainage, and base preparation when required by site conditions. Proper
+            preparation is critical to reducing settlement, cracking, and other
+            pavement problems over time.
+          - >
+            From straightforward residential driveways to larger driveway and
+            parking-area projects, we build asphalt surfaces around the layout,
+            drainage requirements, and intended use of your property.
+
+        features:
+          heading: "Popular Asphalt Driveway Options"
+          items:
+            - New asphalt driveways
+            - Driveway replacements
+            - Extended driveway areas
+            - Additional parking pads
+            - Private residential roads
+            - Asphalt berms
+            - Drainage improvements
+            - Driveway grading
+            - Driveway resurfacing
+            - Driveway repairs
+
+        benefits:
+          heading: "Benefits of an Asphalt Driveway"
+          items:
+            - Provides a smooth surface for everyday vehicle use.
+            - Enhances the appearance of your home's entrance.
+            - Offers durable performance with proper installation.
+            - Requires relatively little routine maintenance.
+            - Can accommodate additional parking areas.
+            - Works well with properly planned drainage.
+            - Provides excellent value for residential properties.
+            - Can be repaired or resurfaced as the pavement ages.
+
+        closing:
+          - >
+            A long-lasting driveway depends on more than the asphalt placed on the
+            surface. Proper excavation, base preparation, grading, and drainage
+            all play an important role in pavement performance.
+          - >
+            We can help evaluate your existing driveway or plan a new asphalt
+            driveway that fits your property and how you use it.
+
+      - title: "Commercial Parking Lots"
+        anchor: parking-lots
+        image:
+          src: "/images/small/asphalt-parking-lot.webp"
+          alt: "Commercial asphalt parking lot installed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            Commercial parking lots must withstand regular vehicle traffic while
+            remaining safe, accessible, and presentable for customers, employees,
+            tenants, and visitors. We provide asphalt paving solutions designed
+            around the property's layout, traffic requirements, drainage, and
+            long-term use.
+          - >
+            Our commercial paving work can include site preparation, grading,
+            drainage improvements, asphalt installation, parking areas, and related
+            pavement work. Proper planning helps create a parking surface that
+            performs reliably while supporting efficient use of the property.
+          - >
+            We also understand that commercial paving projects need to minimize
+            disruption. Our team works with property owners and businesses to
+            coordinate construction and help maintain access whenever practical.
+
+        features:
+          heading: "Commercial Asphalt Paving Services"
+          items:
+            - Commercial parking lots
+            - Private commercial roads
+            - Parking area expansions
+            - New asphalt installation
+            - Asphalt replacement
+            - Parking lot repairs
+            - Milling and resurfacing
+            - Drainage and catch basins
+            - Asphalt berms
+            - Parking lot striping coordination
+
+        benefits:
+          heading: "Benefits of Professional Parking Lot Paving"
+          items:
+            - Creates a durable surface for regular vehicle traffic.
+            - Improves the appearance of commercial properties.
+            - Provides smoother access for customers and employees.
+            - Supports organized parking and traffic flow.
+            - Helps address grading and drainage requirements.
+            - Provides long-term value for commercial properties.
+            - Can be maintained through repairs and resurfacing.
+            - Helps keep the property accessible and operational.
+
+        closing:
+          - >
+            From smaller commercial parking areas to larger private developments,
+            we approach each project based on its specific traffic, drainage,
+            grading, and site requirements.
+          - >
+            Our team can evaluate your existing parking area or help plan new
+            pavement as part of a larger commercial site development project.
+
+      - title: "Asphalt Repair & Maintenance"
+        anchor: asphalt-repair-maintenance
+        image:
+          src: "/images/small/asphalt-repair.webp"
+          alt: "Asphalt pavement repair completed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            Existing asphalt does not necessarily need to be completely replaced
+            when localized pavement problems develop. Depending on the condition
+            of the surface and the underlying base, targeted repairs and ongoing
+            maintenance may help extend the useful life of your pavement.
+          - >
+            We provide asphalt repair and maintenance solutions including pavement
+            repairs, patching, crack-related repairs, and other corrective work.
+            The appropriate solution depends on the cause, extent, and location
+            of the pavement damage.
+          - >
+            Addressing pavement problems before they become more extensive can
+            help property owners avoid unnecessary deterioration and preserve the
+            appearance and usability of their asphalt surfaces.
+
+        features:
+          heading: "Asphalt Repair & Maintenance Services"
+          items:
+            - Asphalt patching
+            - Pavement repairs
+            - Crack repair
+            - Damaged asphalt replacement
+            - Parking lot maintenance
+            - Driveway maintenance
+            - Drainage-related pavement repairs
+            - Asphalt surface evaluation
+            - Maintenance recommendations
+            - Resurfacing evaluation
+
+        benefits:
+          heading: "Benefits of Asphalt Maintenance"
+          items:
+            - Helps prevent minor pavement problems from becoming more extensive.
+            - Extends the useful life of existing asphalt.
+            - Improves pavement appearance and usability.
+            - Helps maintain safe and accessible paved areas.
+            - Can reduce the need for premature full replacement.
+            - Protects your investment in existing pavement.
+            - Addresses pavement problems before they worsen.
+            - Helps maintain residential and commercial properties.
+
+        closing:
+          - >
+            The right repair depends on what is happening beneath and within the
+            pavement. We evaluate the condition of the asphalt and surrounding
+            site before recommending the appropriate approach.
+          - >
+            If your driveway, parking lot, or private road is showing signs of
+            deterioration, we can help determine whether repair, resurfacing, or
+            replacement makes the most sense.
+
+      - title: "Asphalt Milling & Resurfacing"
+        anchor: milling-resurfacing
+        image:
+          src: "/images/small/asphalt-milling.webp"
+          alt: "Asphalt milling and resurfacing work by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            When an existing asphalt surface has deteriorated but the underlying
+            pavement structure remains suitable, milling and resurfacing can
+            provide an alternative to complete pavement replacement.
+          - >
+            Asphalt milling removes the existing surface layer to prepare the
+            pavement for a new asphalt overlay. This process can improve the
+            appearance and ride quality of an existing paved area while addressing
+            surface deterioration.
+          - >
+            Whether milling and resurfacing is appropriate depends on the condition
+            of the existing pavement, drainage, base, and surrounding site. We
+            evaluate these factors before recommending the most suitable solution.
+
+        features:
+          heading: "Milling & Resurfacing Applications"
+          items:
+            - Parking lot resurfacing
+            - Driveway resurfacing
+            - Private road resurfacing
+            - Asphalt surface rehabilitation
+            - Removal of deteriorated surface asphalt
+            - New asphalt overlays
+            - Commercial pavement improvements
+            - Residential pavement improvements
+            - Pavement appearance improvements
+            - Surface restoration
+
+        benefits:
+          heading: "Benefits of Asphalt Resurfacing"
+          items:
+            - Renews the appearance of aging pavement.
+            - Provides a smoother driving surface.
+            - Can extend the useful life of suitable existing pavement.
+            - May cost less than complete pavement reconstruction.
+            - Addresses surface-level deterioration.
+            - Improves the overall appearance of parking areas and driveways.
+            - Can reduce disruption compared with full reconstruction.
+            - Provides an efficient way to restore suitable existing pavement.
+
+        closing:
+          - >
+            Milling and resurfacing is not appropriate for every pavement problem.
+            Significant base failure, drainage problems, or structural deterioration
+            may require more extensive reconstruction.
+          - >
+            We evaluate the existing pavement and site conditions before
+            recommending whether resurfacing or another paving solution is the
+            right approach.
+
+      - title: "Parking Lot Striping & Signage"
+        anchor: parking-lot-striping
+        image:
+          src: "/images/small/parking-lot-striping.webp"
+          alt: "Commercial parking lot striping and pavement markings in Massachusetts."
+        paragraphs:
+          - >
+            Clear pavement markings help organize traffic, define parking spaces, and improve the usability of commercial parking areas. Professional striping can also help businesses present a clean, organized appearance to customers, employees, and visitors.
+          - >
+            Parking lot markings can include designated parking spaces, directional arrows, accessible parking areas, loading areas, and other pavement markings appropriate for the property.
+          - >
+            Striping and signage can be incorporated into new paving projects or coordinated with parking lot improvements and resurfacing work.
+
+        features:
+          heading: "Parking Lot Marking Options"
+          items:
+            - Parking space striping
+            - Directional arrows
+            - Accessible parking markings
+            - Loading zone markings
+            - Traffic flow markings
+            - Fire lane markings
+            - Curb markings
+            - Pavement symbols
+            - Parking lot layouts
+            - Commercial pavement markings
+
+        benefits:
+          heading: "Benefits of Professional Parking Lot Markings"
+          items:
+            - Makes parking areas easier to navigate.
+            - Creates a more organized appearance.
+            - Helps define parking and traffic areas.
+            - Improves the usability of commercial properties.
+            - Helps communicate traffic flow throughout the property.
+            - Can be refreshed as pavement markings wear.
+            - Works with new paving and resurfacing projects.
+            - Helps businesses maintain an orderly parking environment.
+
+        closing:
+          - >
+            Parking lot markings should work with the property's overall layout, traffic patterns, and intended use. We can help coordinate pavement improvements with the markings needed for the finished parking area.
+          - >
+            For commercial paving projects, striping and related pavement markings can be planned as part of the overall project.
+
+  process:
+    heading: "3y-Our Asphalt Paving Process"
+    intro: >
+      A durable asphalt surface begins with proper planning and preparation. Our paving process focuses on evaluating site conditions, preparing a stable foundation, managing drainage, and installing quality asphalt so the finished pavement performs reliably for years.
+    steps:
+      - title: "Consultation & Site Evaluation"
+        description: >
+          We discuss your paving goals, evaluate the existing property and pavement conditions, and identify site factors such as traffic, grading, drainage, and access requirements.
+      - title: "Site Preparation"
+        description: >
+          Proper excavation, grading, subgrade preparation, and drainage work establish the foundation required for durable asphalt pavement.
+      - title: "Base Preparation"
+        description: >
+          We prepare and compact the appropriate aggregate base to provide a stable foundation capable of supporting the intended vehicle traffic and pavement use.
+      - title: "Asphalt Installation"
+        description: >
+          Our experienced crews install and compact the asphalt using proven paving techniques to create a smooth, durable finished surface.
+      - title: "Finishing & Cleanup"
+        description: >
+          We complete edges, transitions, drainage details, cleanup, and other finishing work to ensure the completed pavement integrates properly with the surrounding property.
+      - title: "Final Review"
+        description: >
+          Before completing the project, we review the finished work and make sure the pavement and surrounding site meet the project requirements.
+
+  faq:
+    heading: "4y-Frequently Asked Questions"
+    items:
+      - question: "What asphalt paving services do you provide?"
+        answer: >
+          We provide new asphalt paving, residential driveway paving, commercial parking lot paving, asphalt repair and maintenance, milling and resurfacing, and related pavement improvements throughout Massachusetts.
+      - question: "Do you pave residential driveways?"
+        answer: >
+          Yes. We install and replace asphalt driveways for residential properties, including driveway areas that require grading, drainage improvements, additional parking, or related site preparation.
+      - question: "Do you pave commercial parking lots?"
+        answer: >
+          Yes. We provide asphalt paving and related site work for commercial parking areas and private commercial roads throughout Massachusetts.
+      - question: "How long does an asphalt driveway last?"
+        answer: >
+          The useful life of asphalt depends on installation quality, drainage, traffic, soil conditions, weather, and maintenance. Proper site preparation and ongoing maintenance can significantly improve long-term pavement performance.
+      - question: "Should I repair or replace my asphalt?"
+        answer: >
+          It depends on the extent and cause of the pavement damage. Localized problems may be repairable, while widespread deterioration, structural failure, or drainage problems may require resurfacing or replacement. We can evaluate the existing pavement and recommend the appropriate solution.
+      - question: "What is asphalt milling and resurfacing?"
+        answer: >
+          Milling removes a portion of the existing asphalt surface before a new asphalt layer is installed. It can be an effective way to restore suitable existing pavement without completely reconstructing the pavement system.
+      - question: "Does asphalt require maintenance?"
+        answer: >
+          Regular inspection and timely maintenance can help extend the useful life of asphalt pavement. The appropriate maintenance depends on the pavement's age, condition, traffic, drainage, and exposure to weather.
+      - question: "Can you address drainage problems during paving?"
+        answer: >
+          Yes. Drainage and grading are important parts of many paving projects. Depending on the property, improvements may include grading adjustments, drainage work, catch basins, or related site development.
+      - question: "How long does asphalt paving take?"
+        answer: >
+          Project duration depends on the size and complexity of the paving work, site preparation requirements, weather, access, and other site conditions. We can provide a project schedule after evaluating your property and project requirements.
+      - question: "Do you provide asphalt paving for private roads?"
+        answer: >
+          Yes. We install asphalt pavement for private roads and access areas, including projects that require excavation, grading, drainage, and other site preparation.
+      - question: "Do you serve both residential and commercial properties?"
+        answer: >
+          Yes. We provide asphalt paving and related services for residential homeowners, commercial properties, businesses, and other Massachusetts properties.
+      - question: "How much does asphalt paving cost in Massachusetts?"
+        answer: >
+          Asphalt paving costs vary depending on the size of the project, existing site conditions, excavation and base requirements, drainage, pavement thickness, access, and other project factors. We provide estimates based on the specific conditions and requirements of your property.
 
 excavation:
   services:
@@ -197,70 +581,11 @@ excavation:
         answer: >
           Absolutely. We regularly fix muddy lawns and wet basements by re-grading slopes, installing foundation curtain drains, and building custom catch basins to guide rainwater away from your home.
 
-
-# excavation:
-#   benefits:
-#     heading: "Why Choose Our Excavation Services"
-#     items:
-#       - title: Comprehensive Site Development
-#         description: We handle all aspects of excavation, grading, and site preparation.
-
-#       - title: Licensed and Insured
-#         description: Our team is fully licensed and insured for your peace of mind.
-
-#       - title: Safety First
-#         description: We prioritize the safety of our workers and the environment.
-
-#       - title: Timely Project Completion
-#         description: We are committed to completing projects on time and within budget.
-#   services:
-#     heading: "Our Excavation & Site Development Services"
-#     items:
-#       - title: Excavation & Grading
-#         description: We provide precise excavation and grading services for residential, commercial, and industrial properties.
-
-#       - title: Foundations
-#         description: Our team prepares solid foundations for new construction projects.
-
-#       - title: Underground Utilities
-#         description: We install and repair underground utilities with expertise.
-
-#       - title: Septic Systems
-#         description: We design and install septic systems that meet local regulations.
-
-#       - title: New Water Services
-#         description: Our team handles the installation of new water services for properties.
-
-#       - title: Repairs
-#         description: We offer repair services for existing excavation and grading work.
-
-# Excavation, Site Development & Grading Services for Massachusetts Properties
-# Comprehensive Excavation Services for Your Property Development
-# S. Phaneuf & Associates is a full-service excavation contractor, specializing in residential, commercial, and industrial site development for properties across Massachusetts. Our solid reputation was built on hard work, years of outstanding customer service, and on-time project delivery. Beyond digging up matter buried in the ground and leveling off the construction site, grading, and excavating, we also secure the necessary licenses and permits to perform the work while ensuring the safety of workers and the environment. Explore our excavation and site development project photo page to see our successful projects and understand the quality of our services for Massachusetts properties.
-# Excavation & Grading
-# Site Work
-# Foundations
-# Underground Utilities
-# Septic Systems
-# New Water Services
-# Repairs
-# and more
-
-
-
-
-# Reliable Snow & Ice Management for Massachusetts Residential and Commercial Properties
-# Dependable Snow Removal and Ice Management for Safety
-# S. Phaneuf & Associates understands the importance of maintaining safe and accessible parking lots and sidewalks for your customers and employees, as well as providing prompt, reliable snowplowing services for Massachusetts residential properties. Whether you need a one-time snow removal service or a regular ongoing snow and ice management solution, we can attend to your specific needs. We carefully monitor weather conditions and provide prompt preparation and response for all Massachusetts properties.
-
-
 snow:
   benefits:
     heading: Why Invest in Snow & Ice Management?
     intro: >
-          lorem ipsum
-    
-
+          lorem ipsum   
 
 masonry:
   benefits:
@@ -754,286 +1079,126 @@ masonry:
       - question: How long does construction take?
         answer: >
           Construction time depends on the size and complexity of the project. Smaller patios may take only a few days, while complete outdoor living spaces with retaining walls, kitchens, lighting, and multiple hardscape features can take several weeks. Before work begins, we'll provide a project schedule so you know what to expect.
-# oldservices:
-  #   heading: "Our Masonry & Hardscape Services"
-  #   intro: >
-  #     We design and construct beautiful outdoor living
-  #     spaces throughout Massachusetts.
-  #   items:
-  #     - title: Patio Construction
-  #       anchor: patios
-  #       image:
-  #         src: /images/small/pool-and-spa-wellesley-mass.webp
-  #         alt: Custom natural stone pool patio and spa constructed by S. Phaneuf & Associates in Wellesley, Massachusetts.
-  #       paragraphs:
-  #         - >
-  #           A professionally designed patio creates the foundation for an outdoor living space that can be enjoyed throughout every season in Massachusetts. Whether you're looking to create a quiet backyard retreat, an outdoor dining area, or an expansive entertainment space for family and friends, a custom patio provides beauty, comfort, and lasting value.  At S. Phaneuf & Associates, we design and build natural stone, bluestone, and concrete paver patios that are thoughtfully planned around the way you live and use your property.
-  #         - >
-  #           Every patio we build begins with proper site preparation. We carefully evaluate grading, drainage, and existing landscape conditions before excavation begins. A properly constructed base is one of the most important parts of a long-lasting patio, especially in New England where freeze-thaw cycles can cause poorly installed hardscapes to shift or settle over time. By combining quality materials with proven construction techniques, we create patios that are built to remain both beautiful and durable for decades.
-  #         - >
-  #           Custom patios can be designed as standalone features or incorporated into complete outdoor living environments that include retaining walls, outdoor kitchens, fire pits, fireplaces, pool decks, landscape lighting, seating walls, and stone walkways. Whether you're renovating an existing backyard or starting with a blank canvas, we'll help you design an outdoor space that complements your home while providing years of enjoyment and increasing the overall value of your property.
-  #       features:
-  #         heading: Popular Patio Features
-  #         items:
-  #           - Natural stone patios
-  #           - Bluestone patios
-  #           - Concrete paver patios
-  #           - Outdoor dining spaces
-  #           - Poolside patios
-  #           - Seating walls
-  #           - Landscape lighting
-  #           - Integrated drainage solutions
-  #           - Patio extensions
-  #           - Custom masonry accents
-  #       benefits:
-  #         heading: Benefits of Custom Patio Construction
-  #         items:
-  #           - Creates additional outdoor living space for relaxing and entertaining.
-  #           - Improves curb appeal and increases property value.
-  #           - Provides a durable, low-maintenance outdoor surface.
-  #           - Complements your home's existing architecture and landscaping.
-  #           - Creates comfortable gathering spaces for family and friends.
-  #           - Built to withstand Massachusetts' changing weather conditions.
-  #           - Can be seamlessly integrated with outdoor kitchens, fireplaces, and pool decks.
-  #           - Provides year-round enjoyment while extending your home's usable living space.
-  #       closing:
-  #         - >
-  #           From intimate backyard patios to expansive outdoor entertainment areas, every project is carefully designed around your property's unique layout, your lifestyle, and your long-term goals. We believe beautiful outdoor spaces should feel like a natural extension of your home rather than an afterthought.
-  #         - >
-  #           If you're considering a custom patio in Massachusetts, our experienced craftsmen will guide you through every step of the design and construction process to create a timeless outdoor space that can be enjoyed for generations.
-  #     - title: "Retaining Walls"
-  #       anchor: retaining-walls
-  #       image:
-  #         src: "/images/small/curved-wall-wellesley-mass.webp"
-  #         alt: "Custom natural stone retaining wall constructed by S. Phaneuf & Associates in Massachusetts."
-  #       paragraphs:
-  #         - >
-  #           A professionally built retaining wall does more than hold back soil.
-  #           It can transform a sloped or difficult property into beautiful and
-  #           usable outdoor living space. Retaining walls are commonly used to
-  #           create level patios, improve drainage, prevent erosion, and define
-  #           planting areas throughout residential properties in Massachusetts.
-  #         - >
-  #           At S. Phaneuf & Associates, we design and construct custom retaining
-  #           walls using natural stone and engineered wall systems that are built
-  #           to withstand New England's changing weather conditions. Every project
-  #           begins with proper excavation, grading, drainage, and base preparation
-  #           to ensure long-lasting performance and structural stability.
-  #         - >
-  #           Whether you're looking to solve a drainage problem, create additional
-  #           usable space in your backyard, or add visual interest to your
-  #           landscape, a custom retaining wall can become an attractive and
-  #           functional feature of your property. Many homeowners choose to
-  #           incorporate retaining walls into patios, walkways, outdoor kitchens,
-  #           pool decks, and complete hardscape designs.
-  #       features:
-  #         heading: "Popular Retaining Wall Options"
-  #         items:
-  #           - Natural stone retaining walls
-  #           - Engineered block retaining walls
-  #           - Decorative garden walls
-  #           - Terraced retaining walls
-  #           - Seating walls
-  #           - Raised planting beds
-  #           - Integrated drainage systems
-  #           - Landscape lighting
-  #           - Stone stairways and landings
-  #           - Patio and walkway integration
-  #       benefits:
-  #         heading: "Benefits of Custom Retaining Walls"
-  #         items:
-  #           - Creates level and usable outdoor living spaces.
-  #           - Helps control erosion and manage drainage problems.
-  #           - Improves the appearance and value of your property.
-  #           - Adds structure and definition to your landscape design.
-  #           - Provides durable, long-lasting performance.
-  #           - Creates attractive planting areas and garden spaces.
-  #           - Can be integrated with patios, walkways, and pool decks.
-  #           - Built to withstand Massachusetts' freeze-thaw weather conditions.
-  #       closing:
-  #         - >
-  #           Every retaining wall we build is carefully designed to provide both beauty and structural performance. We believe your outdoor spaces should be as functional as they are attractive.
-  #         - >
-  #           From decorative landscape walls to large structural retaining walls, our experienced craftsmen will help you design a solution that complements your home while providing lasting value for years to come.
-  #     - title: "Walkways & Garden Paths"
-  #       anchor: walkways
-  #       image:
-  #         src: "/images/small/tiled-walkway.webp"
-  #         alt: "Custom natural stone walkway and garden path constructed by S. Phaneuf & Associates in Massachusetts."
-  #       paragraphs:
-  #         - >
-  #           Custom walkways and garden paths do more than connect different areas
-  #           of your property. They improve safety, enhance curb appeal, and create
-  #           a welcoming first impression for your home. Whether leading to your
-  #           front entrance, patio, pool area, or garden, professionally designed
-  #           walkways add both beauty and functionality to your outdoor living
-  #           spaces.
-  #         - >
-  #           At S. Phaneuf & Associates, we design and construct natural stone,
-  #           bluestone, brick, and concrete paver walkways throughout Massachusetts.
-  #           Every project begins with proper excavation, grading, drainage, and
-  #           base preparation to ensure your walkway remains attractive, level, and
-  #           durable through New England's changing weather conditions.
-  #         - >
-  #           Walkways can be designed as standalone features or incorporated into
-  #           complete hardscape projects that include patios, retaining walls,
-  #           stone steps, landscape lighting, and planting areas. From elegant
-  #           front entryways to winding garden paths, we create outdoor spaces that
-  #           are both inviting and built to last.
-  #       features:
-  #         heading: "Popular Walkway & Garden Path Options"
-  #         items:
-  #           - Natural stone walkways
-  #           - Bluestone walkways
-  #           - Brick walkways
-  #           - Concrete paver walkways
-  #           - Garden paths
-  #           - Front entry walkways
-  #           - Stone landings and transitions
-  #           - Landscape lighting integration
-  #           - Custom borders and accents
-  #           - Patio and retaining wall integration
-  #       benefits:
-  #         heading: "Benefits of Custom Walkways & Garden Paths"
-  #         items:
-  #           - Improves curb appeal and creates a welcoming entrance.
-  #           - Provides safe and attractive access throughout your property.
-  #           - Adds beauty and value to your home's landscape.
-  #           - Creates seamless connections between outdoor living spaces.
-  #           - Offers durable, low-maintenance performance.
-  #           - Complements your home's architecture and surrounding landscape.
-  #           - Can be integrated with patios, retaining walls, and stone steps.
-  #           - Built to withstand Massachusetts' freeze-thaw weather conditions.
-  #       closing:
-  #         - >
-  #           Every walkway we build is thoughtfully designed to complement your
-  #           home's architecture while improving the functionality of your outdoor
-  #           spaces. Beautiful hardscapes should feel like a natural extension of
-  #           your property rather than an afterthought.
-  #         - >
-  #           From front entry walkways to custom garden paths, our experienced
-  #           craftsmen will help you create attractive and durable outdoor spaces
-  #           that can be enjoyed for many years to come. 
-  #     - title: "Outdoor Fireplaces"
-  #       anchor: outdoor-fireplaces
-  #       image:
-  #         src: "/images/small/fireplace-wellesley-mass.webp"
-  #         alt: "Custom natural stone outdoor fireplace constructed by S. Phaneuf & Associates in Massachusetts."
-  #       paragraphs:
-  #         - >
-  #           A custom outdoor fireplace creates a warm and inviting gathering space
-  #           that can be enjoyed throughout much of the year in Massachusetts.
-  #           Whether you're relaxing with family on a cool evening or entertaining
-  #           guests on your patio, an outdoor fireplace provides both beauty and
-  #           comfort while becoming a natural focal point of your outdoor living
-  #           space.
-  #         - >
-  #           At S. Phaneuf & Associates, we design and construct custom masonry
-  #           outdoor fireplaces using natural stone, brick, and premium materials
-  #           selected for their durability and timeless appearance. Every fireplace
-  #           is thoughtfully designed to complement your home's architecture while
-  #           integrating seamlessly with patios, seating areas, outdoor kitchens,
-  #           and other hardscape features.
-  #         - >
-  #           From traditional wood-burning fireplaces to modern gas-burning designs,
-  #           we build outdoor fireplaces that enhance the way you enjoy your
-  #           property. Proper site preparation, quality craftsmanship, and careful
-  #           attention to detail ensure your fireplace provides lasting beauty and
-  #           performance for many years to come.
-  #       features:
-  #         heading: "Popular Outdoor Fireplace Options"
-  #         items:
-  #           - Natural stone outdoor fireplaces
-  #           - Wood-burning fireplaces
-  #           - Gas-burning fireplaces
-  #           - Custom masonry fireplace surrounds
-  #           - Integrated seating walls
-  #           - Patio fireplace installations
-  #           - Outdoor living room designs
-  #           - Landscape lighting integration
-  #           - Outdoor kitchen and fireplace combinations
-  #           - Custom stone accents and mantels
-  #       benefits:
-  #         heading: "Benefits of Custom Outdoor Fireplaces"
-  #         items:
-  #           - Extends the use of your outdoor living space throughout the year.
-  #           - Creates a beautiful focal point for entertaining family and friends.
-  #           - Adds warmth, comfort, and ambiance to your backyard.
-  #           - Increases the beauty and value of your property.
-  #           - Complements patios, outdoor kitchens, and pool areas.
-  #           - Provides a timeless architectural feature designed to last.
-  #           - Creates inviting spaces for relaxing and gathering outdoors.
-  #           - Built using durable materials designed for Massachusetts weather conditions.
-  #       closing:
-  #         - >
-  #           Every outdoor fireplace we build is designed around the way you live
-  #           and entertain. Whether serving as the centerpiece of a custom patio or
-  #           as part of a complete outdoor living environment, our fireplaces are
-  #           constructed with lasting beauty, durability, and craftsmanship in mind.
-  #         - >
-  #           From intimate backyard gathering spaces to expansive outdoor
-  #           entertainment areas, our experienced craftsmen will help you create a
-  #           custom outdoor fireplace that can be enjoyed for generations.
-  #     - title: "Pools & Pool Decks"
-  #       anchor: pool-decks
-  #       image:
-  #         src: "/images/small/infinity-pool-gloucester-mass.webp"
-  #         alt: "Custom natural stone pool deck and outdoor living space constructed by S. Phaneuf & Associates in Massachusetts."
-  #       paragraphs:
-  #         - >
-  #           A custom pool deck transforms your backyard into a beautiful outdoor
-  #           living space designed for relaxing, entertaining, and spending time
-  #           with family and friends. Whether surrounding a newly constructed pool
-  #           or renovating an existing one, a professionally designed pool deck
-  #           creates a seamless connection between your home, landscape, and
-  #           outdoor amenities.
-  #         - >
-  #           At S. Phaneuf & Associates, we design and construct natural stone,
-  #           bluestone, and concrete paver pool decks throughout Massachusetts.
-  #           Every project is carefully planned with proper grading, drainage, and
-  #           slip-resistant materials to provide lasting beauty, safety, and
-  #           durability through New England's changing weather conditions.
-  #         - >
-  #           Many homeowners choose to incorporate their pool deck into a complete
-  #           outdoor living environment that includes patios, outdoor kitchens,
-  #           fireplaces, seating walls, landscape lighting, and custom masonry
-  #           features. Whether your vision includes a quiet retreat or an expansive
-  #           entertainment space, we create poolside hardscapes that are both
-  #           functional and timeless.
-  #       features:
-  #         heading: "Popular Pool Deck & Outdoor Living Features"
-  #         items:
-  #           - Natural stone pool decks
-  #           - Bluestone pool surrounds
-  #           - Concrete paver pool patios
-  #           - Integrated poolside patios
-  #           - Outdoor kitchens and dining areas
-  #           - Seating walls and gathering spaces
-  #           - Landscape lighting integration
-  #           - Stone walkways and entryways
-  #           - Custom drainage solutions
-  #           - Complete backyard hardscape designs
-  #       benefits:
-  #         heading: "Benefits of Custom Pool Deck Construction"
-  #         items:
-  #           - Creates a beautiful and functional outdoor living space.
-  #           - Provides safe and durable surfaces around your swimming pool.
-  #           - Improves curb appeal and increases property value.
-  #           - Offers low-maintenance materials designed for lasting performance.
-  #           - Creates comfortable spaces for relaxing and entertaining.
-  #           - Integrates seamlessly with patios, fireplaces, and outdoor kitchens.
-  #           - Built to withstand Massachusetts' freeze-thaw weather conditions.
-  #           - Enhances the overall appearance and usability of your backyard.
-  #       closing:
-  #         - >
-  #           Every pool deck we build is thoughtfully designed around the unique
-  #           characteristics of your property and the way you enjoy your outdoor
-  #           spaces. We believe exceptional craftsmanship and attention to detail
-  #           create outdoor environments that remain beautiful and functional for
-  #           many years to come.
-  #         - >
-  #           From elegant pool surrounds to complete backyard transformations, our
-  #           experienced craftsmen will help you create a custom outdoor living
-  #           space that complements your home while providing lasting value and
-  #           enjoyment for generations.
 
+
+
+# asphalt:
+#   benefits:
+#     heading: "Why Choose Our Asphalt Services"
+
+#     items:
+#       - title: Expert Installation
+#         description: Our team ensures a smooth and durable asphalt surface.
+
+#       - title: Long-Lasting Results
+#         description: We use high-quality materials for a surface that stands the test of time.
+
+#       - title: Cost-Effective Solutions
+#         description: Our services provide excellent value for your investment.
+
+#       - title: Professional Maintenance
+#         description: We offer maintenance services to keep your asphalt in top condition.
+#   services:
+#     heading: "Our Masonry & Hardscape Services"
+#     intro: >
+#       We design and build beautiful outdoor living spaces for homes throughout Massachusetts.
+#     items:
+#       - title: Patio Construction
+#         anchor: patios
+#         image:
+#           src: /images/small/pool-and-spa-wellesley-mass.webp
+#           alt: Custom natural stone pool patio and spa constructed by S. Phaneuf & Associates in Wellesley, Massachusetts.
+#         paragraphs:
+#           - >
+#             A great patio is the foundation of a backyard you can enjoy all year long in Massachusetts. Whether you want a quiet place to relax, an outdoor dining area, or a big space to host family and friends, a custom patio adds beauty and value to your home. At S. Phaneuf & Associates, we design and build natural stone, bluestone, and paver patios that fit your lifestyle and property perfectly.
+#           - >
+#             Every patio we build starts with the right groundwork. We carefully check the slopes, soil layout, and drainage before any digging begins. Having a deep, solid base is the most important part of building a long-lasting patio, especially with New England's harsh freeze-thaw winter cycles. By combining great materials with smart construction steps, we make patios that stay level and beautiful for decades.
+#           - >
+#             Your new patio can stand alone or connect with other outdoor projects like retaining walls, outdoor kitchens, fire pits, and pool decks. Whether you are fixing up an old backyard or starting fresh, we will help you design a space that looks great with your home, gives you a beautiful place to hang out, and boosts your property value.
+        
+  # services:
+  #   heading: "Why Choose Our Asphalt Services"
+
+  #   items:
+  #     - title: Expert Installation
+  #       description: Our team ensures a smooth and durable asphalt surface.
+
+  #     - title: Long-Lasting Results
+  #       description: We use high-quality materials for a surface that stands the test of time.
+
+  #     - title: Cost-Effective Solutions
+  #       description: Our services provide excellent value for your investment.
+
+  #     - title: Professional Maintenance
+  #       description: We offer maintenance services to keep your asphalt in top condition.
+
+# Asphalt Paving for Driveways, Parking Lots, and More in Massachusetts
+# Quality Asphalt Solutions for Your Driveway and Parking Needs
+# S. Phaneuf & Associates is one of the premier asphalt paving contractors for Massachusetts properties, handling all asphalt paving needs for driveways, parking lots, asphalt berms, repairs, drainage, catch basins, and more. We are committed to providing high-quality work and customer satisfaction. Customer satisfaction doesn’t stop with the job specifications. We are dedicated to excellent service with a people-friendly approach, making your experience with us for your paving needs a pleasant one. Whether your paving needs are for your residential or commercial property, S. Phaneuf & Associates has the experience, equipment, and skilled crews to complete your work on time, within budget, and with the quality results you expect. Visit our asphalt paving project photo page to see examples of our work on Massachusetts properties and see the quality we deliver.
+# Driveways
+# Parking Lots
+# Asphalt Berm
+# Repairs & Maintenance
+# Drainage
+# Catch Basins
+# and more
+
+
+
+
+
+
+# excavation:
+#   benefits:
+#     heading: "Why Choose Our Excavation Services"
+#     items:
+#       - title: Comprehensive Site Development
+#         description: We handle all aspects of excavation, grading, and site preparation.
+
+#       - title: Licensed and Insured
+#         description: Our team is fully licensed and insured for your peace of mind.
+
+#       - title: Safety First
+#         description: We prioritize the safety of our workers and the environment.
+
+#       - title: Timely Project Completion
+#         description: We are committed to completing projects on time and within budget.
+#   services:
+#     heading: "Our Excavation & Site Development Services"
+#     items:
+#       - title: Excavation & Grading
+#         description: We provide precise excavation and grading services for residential, commercial, and industrial properties.
+
+#       - title: Foundations
+#         description: Our team prepares solid foundations for new construction projects.
+
+#       - title: Underground Utilities
+#         description: We install and repair underground utilities with expertise.
+
+#       - title: Septic Systems
+#         description: We design and install septic systems that meet local regulations.
+
+#       - title: New Water Services
+#         description: Our team handles the installation of new water services for properties.
+
+#       - title: Repairs
+#         description: We offer repair services for existing excavation and grading work.
+
+# Excavation, Site Development & Grading Services for Massachusetts Properties
+# Comprehensive Excavation Services for Your Property Development
+# S. Phaneuf & Associates is a full-service excavation contractor, specializing in residential, commercial, and industrial site development for properties across Massachusetts. Our solid reputation was built on hard work, years of outstanding customer service, and on-time project delivery. Beyond digging up matter buried in the ground and leveling off the construction site, grading, and excavating, we also secure the necessary licenses and permits to perform the work while ensuring the safety of workers and the environment. Explore our excavation and site development project photo page to see our successful projects and understand the quality of our services for Massachusetts properties.
+# Excavation & Grading
+# Site Work
+# Foundations
+# Underground Utilities
+# Septic Systems
+# New Water Services
+# Repairs
+# and more
+
+
+
+
+# Reliable Snow & Ice Management for Massachusetts Residential and Commercial Properties
+# Dependable Snow Removal and Ice Management for Safety
+# S. Phaneuf & Associates understands the importance of maintaining safe and accessible parking lots and sidewalks for your customers and employees, as well as providing prompt, reliable snowplowing services for Massachusetts residential properties. Whether you need a one-time snow removal service or a regular ongoing snow and ice management solution, we can attend to your specific needs. We carefully monitor weather conditions and provide prompt preparation and response for all Massachusetts properties.

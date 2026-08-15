@@ -2,8 +2,13 @@
 layout: base.njk
 permalink: "asphalt-paving.html"
 canonical: "/asphalt-paving"
+
+changefreq: monthly
+priority: 0.9
+
 title: "Asphalt Paving Services in Massachusetts | S. Phaneuf & Associates"
 description: "Driveway, parking lot, resurfacing and asphalt paving services throughout Massachusetts."
+
 extraCss: |
   <style>
     figure{box-shadow: 4px 4px 7px #c7c7c7;border: 1px solid #9e9e9e} 
@@ -56,6 +61,8 @@ extraSchema: |
     "url": "https://sphaneufassociates.com/asphalt-paving"
   }
 
+
+
 # NAVIGATION
 section: services
 service: asphalt-paving
@@ -80,12 +87,40 @@ breadcrumbs:
     url: /services
 
 
+##################################################
+# INTRO
+##################################################
+intro:
+  heading: "1n-Professional Asphalt Paving Throughout Massachusetts"
+  paragraphs:
+    - >
+      For more than 35 years, S. Phaneuf & Associates ....
+    - >
+      Every project begins with thoughtful planning, proper site preparation,
+    - >
+      what you do and who you serve. residential commercial driveways parking lots private roads paving resurfacing repairs maintenance site preparation Massachusetts
+ 
+
+
+##################################################
+# PORTFOLIO
+##################################################
 portfolio:
   enabled: true
-  type: asphalt
+  type: masonry
+  heading: 2n-Featured Asphalt Projects
+  intro: >
+    Every project is designed around ................
+  closing: >
+    Every asphalt project is .................
 
 
-benefitsHeading: Why Choose Asphalt for Your Driveway, Parking Lot, or Road?
+
+
+
+
+
+benefitsHeading: 3n-Why Choose Asphalt for Your Driveway, Parking Lot, or Road?
 benefitsIntro: >
   Whether you're installing a new driveway, replacing a worn parking lot,
   or resurfacing existing pavement, professional asphalt paving provides a
@@ -126,7 +161,7 @@ benefits:
       asphalt mixes, helping conserve natural resources while reducing waste.
 
 
-servicesHeading: Our Asphalt Paving Services
+servicesHeading: 4n-Our Asphalt Paving Services
 servicesIntro: >
   Whether you're building a new driveway, resurfacing an aging parking lot,
   or repairing damaged pavement, S. Phaneuf & Associates provides complete
@@ -161,7 +196,7 @@ services:
       construction, we build attractive asphalt driveways designed
       for years of dependable performance.
 
-processHeading: Our Asphalt Paving Process
+processHeading: 5n-Our Asphalt Paving Process
 processIntro: >
   A long-lasting asphalt surface starts long before the first layer of asphalt
   is installed. Our process focuses on proper preparation, quality materials,
@@ -197,7 +232,7 @@ processSteps:
       curing and future maintenance.
 
 
-whyChooseHeading: Why Choose S. Phaneuf & Associates?
+whyChooseHeading: 6n-Why Choose S. Phaneuf & Associates?
 whyChooseIntro: >
   For more than 35 years, S. Phaneuf & Associates has helped homeowners,
   businesses, property managers, and municipalities throughout
@@ -228,7 +263,7 @@ whyChooseItems:
       and recommend the best solution for your project and budget.
 
 
-estimateHeading: Request a Free Asphalt Paving Estimate
+estimateHeading: 7n-Request a Free Asphalt Paving Estimate
 estimateIntro: >
   Whether you're planning a new driveway, resurfacing an existing
   parking lot, or repairing damaged pavement, our experienced team
@@ -241,7 +276,7 @@ estimateButtonText: Request Your Free Estimate
 estimateButtonLink: /contact-us
 
 
-faqHeading: Frequently Asked Questions
+faqHeading: 8n-Frequently Asked Questions
 faq:
   - question: How long does an asphalt driveway last?
     answer: >
@@ -271,7 +306,7 @@ faq:
       throughout Massachusetts.
 
 
-areasHeading: Areas We Serve
+areasHeading: 9n-Areas We Serve
 areasIntro: >
   S. Phaneuf & Associates proudly provides residential and commercial
   asphalt paving throughout Greater Boston and many surrounding
@@ -282,7 +317,7 @@ areasButtonText: View All Service Areas
 areasButtonLink: /service-areas
 
 
-relatedHeading: Related Asphalt & Site Development Services
+relatedHeading: 10n-Related Asphalt & Site Development Services
 relatedIntro: >
   Many asphalt paving projects are part of larger site development or
   hardscape work. Explore related services we offer throughout Massachusetts.
@@ -297,44 +332,19 @@ relatedServices:
     slug: services
 
 
-sidebarHeading: Get Started with a Free Consultation
+sidebarHeading: 11n-Get Started with a Free Consultation
 sidebarTrust: true
 sidebarParagraph: 
   - >  
     "Have questions or need assistance with your project? Fill out the form below, and we'll be in touch soon to provide you with the information and support you need."
 
-ctaHeading: Ready to Start Your Asphalt Paving Project?
+ctaHeading: 12n-Ready to Start Your Asphalt Paving Project?
 ctaText: Call today to schedule your free estimate.
 
 
 ---
-<H2>-----------------------FIX to work with the NEW service-page --------------------------</H2>
 {% include "components/service-page.njk" %}
-
 {# 
-
 are these represented????????????????????
-# services:
-      #  - Residential Driveways
-      #  - Commercial Parking Lots
-      #  - Asphalt Repairs
-      #  - Resurfacing
-      #  - Sealcoating
-
-
-<div class="container flex-container mb-5 pb-5">
-    <div class="mt-5 content">
-        
-        {% include "components/benefits.njk" %}
-        {% include "components/services.njk" %}
-        {% include "components/process.njk" %}
-        {--# {% include "components/why-choose-DNU.njk" %} #--}
-        {% include "components/estimate-cta.njk" %}
-        {% include "components/service-faqs.njk" %}
-        {% include "components/areas-served.njk" %}
-        {% include "components/related-services.njk" %}
-    </div>
-    {% include "components/sidebar.njk" %}
-</div>
-{--# % include "components/cta-callout.njk" % #--}
-{% include "components/full-width-image.njk" %} #}
+# services:      #  - Residential Driveways      #  - Commercial Parking Lots      #  - Asphalt Repairs      #  - Resurfacing      #  - Sealcoating
+ #}

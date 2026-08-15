@@ -1,10 +1,14 @@
 ---
 layout: base.njk
-bodyClass: "contact-page"
 permalink: "service-areas.html"
 canonical: "/service-areas"
+
+changefreq: monthly
+priority: 0.7
+
 title: Service Areas | Masonry, Paving & Excavation Services Massachusetts
 description: S. Phaneuf & Associates provides masonry, hardscaping, asphalt paving, excavation, site development, and snow management services throughout Massachusetts.
+
 extraCss: |
     <style>
         .map-responsive {
@@ -22,11 +26,11 @@ extraCss: |
             height: 100%;
         }
     </style>
-
-#NAV
+#extraSchema: |
+# NAVIGATION
 section: service-areas
 
-#HERO
+# HERO
 heroImageMobile: "566/asphalt-paving.webp"
 heroImageDesktop: "large/asphalt-paving.webp"
 heroImageClass: asphalt-paving
@@ -44,6 +48,9 @@ heroTrust:
 
 # BREADCRUMBS 
 breadcrumbTitle: "Service Areas"
+
+
+bodyClass: "contact-page"
 
 ############################################################
 
