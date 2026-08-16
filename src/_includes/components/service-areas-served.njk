@@ -1,0 +1,10 @@
+<!--areas-served-->
+{% if service.areasServed %}<section class="py-5" id="{{ service.areasServed.heading | slugify }}">
+  <h2 class="pipe">{{ service.areasServed.heading }}</h2>
+  {% if service.areasServed.intro %}<p class="py-3">{{ service.areasServed.intro }}</p>{% endif %}
+  <div class="areas-grid pt-2">
+    {% for location in service.areasServed.locations %}<div class="area-item">
+        <p class="mb-1">{% if location.url %}<a href="{{ location.url }}">{{ location.name }}</a>{% else %}{{ location.name }}{% endif %}</p>
+    </div>{% endfor %}
+  </div>
+</section>{% endif %}

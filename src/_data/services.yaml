@@ -425,6 +425,36 @@ asphalt:
         answer: >
           Asphalt paving costs vary depending on the size of the project, existing site conditions, excavation and base requirements, drainage, pavement thickness, access, and other project factors. We provide estimates based on the specific conditions and requirements of your property.
 
+  areasServed:
+    heading: "5y-Areas We Serve"
+    intro: >
+      S. Phaneuf & Associates proudly provides asphalt paving services throughout Massachusetts. We regularly work with homeowners and businesses throughout Greater Boston and surrounding communities.
+    locations:
+    - name: Acton
+    #  url: /middlesex-county/hardscape-contractor-acton-ma
+    - name: Arlington
+    - name: Bedford
+    - name: Belmont
+    - name: Bolton
+    - name: Carlisle
+    - name: Concord
+    - name: Dover
+    - name: Framingham
+    - name: Holliston
+    - name: Lexington
+    - name: Lincoln
+    - name: Littleton
+    - name: Natick
+    - name: Needham
+    - name: Newton
+    - name: Sherborn
+    - name: Stow
+    - name: Sudbury
+    - name: Wayland
+    - name: Wellesley
+    - name: Weston
+    - name: Westford
+
 excavation:
   services:
     heading: "Our Excavation & Site Development Services"
@@ -1079,7 +1109,45 @@ masonry:
       - question: How long does construction take?
         answer: >
           Construction time depends on the size and complexity of the project. Smaller patios may take only a few days, while complete outdoor living spaces with retaining walls, kitchens, lighting, and multiple hardscape features can take several weeks. Before work begins, we'll provide a project schedule so you know what to expect.
-
+  areasServed:
+      heading: "Areas We Serve"
+      intro: >
+        S. Phaneuf & Associates proudly provides asphalt paving services throughout Massachusetts. We regularly work with homeowners and businesses throughout Greater Boston and surrounding communities.
+      locations:
+        - name: Acton
+          url: /middlesex-county/hardscape-contractor-acton-ma
+        - name: Arlington
+        - name: Bedford
+        - name: Belmont
+        - name: Bolton
+          url: /worcester-county/hardscape-contractor-bolton-ma
+        - name: Carlisle
+          url: /middlesex-county/hardscape-contractor-carlisle-ma
+        - name: Concord
+          url: /middlesex-county/hardscape-contractor-concord-ma
+        - name: Dover
+        - name: Framingham
+        - name: Holliston
+        - name: Lexington
+          url: /middlesex-county/hardscape-contractor-lexington-ma
+        - name: Lincoln
+        - name: Littleton
+          url: /middlesex-county/hardscape-contractor-littleton-ma
+        - name: Natick
+        - name: Needham
+        - name: Newton
+        - name: Sherborn
+        - name: Stow
+          url: /middlesex-county/hardscape-contractor-stow-ma
+        - name: Sudbury
+          url: /middlesex-county/hardscape-contractor-sudbury-ma
+        - name: Wayland
+          url: /middlesex-county/hardscape-contractor-wayland-ma
+        - name: Wellesley
+        - name: Weston
+          url: /middlesex-county/hardscape-contractor-weston-ma
+        - name: Westford
+          url: /middlesex-county/hardscape-contractor-westford-ma
 
 
 # asphalt:

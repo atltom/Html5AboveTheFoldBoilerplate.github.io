@@ -48,3 +48,74 @@ eleventyExcludeFromCollections: true
 
     </article>
 </div>
+
+
+
+<div class="container my-5 py-4">
+    <article class="mt-5">
+
+        <!-- Title & Metadata Section -->
+        <section class="pb-3 mb-4 border-bottom">
+            <h1 class="mb-1">Sitemap for S. Phaneuf & Associates Website</h1>
+            <p class="text-muted small mb-0">Last Updated: October 30, 2025</p>
+        </section>
+
+        <!-- Intro Copy -->
+        <section class="mb-5">
+            <p>Welcome to the official sitemap for S. Phaneuf & Associates. This page is designed to help you quickly locate all sections of our website. From asphalt paving to masonry, hardscaping, excavation, and localized service areas, explore our services across Massachusetts and Southern New Hampshire.</p>
+        </section>
+
+        <!-- Main Pages Section -->
+        <section class="mb-5">
+            <h2 class="fs-lg mb-3">Website Pages</h2>
+            <ul>
+                {# Fallback for Home if index.njk doesn't have a sitemapCategory #}
+                <li><a href="/">Home</a></li>
+                {%- for item in collections.all | sort(attribute="data.order") %}
+                    {%- if item.data.sitemapCategory == "main" and not item.data.eleventyExcludeFromCollections %}
+                        <li>
+                            <a href="{{ item.url }}">
+                                {{- item.data.sitemapTitle or item.data.title or item.url -}}
+                            </a>
+                        </li>
+                    {%- endif %}
+                {%- endfor %}
+            </ul>
+        </section>
+
+        <!-- Services Section -->
+        <section class="mb-5">
+            <h2 class="fs-lg mb-3">Our Services</h2>
+            <p>Direct access to our primary outdoor construction and design service categories:</p>
+            <ul>
+                {%- for item in collections.all | sort(attribute="data.order") %}
+                    {%- if item.data.sitemapCategory == "services" and not item.data.eleventyExcludeFromCollections %}
+                        <li>
+                            <a href="{{ item.url }}">
+                                {{- item.data.sitemapTitle or item.data.title or item.url -}}
+                            </a>
+                        </li>
+                    {%- endif %}
+                {%- endfor %}
+            </ul>
+        </section>
+
+        <!-- Localized Service Areas Section -->
+        <section class="mb-5">
+            <h2 class="fs-lg mb-3">Service Area Pages</h2>
+            <p>Tailored hardscaping, paving, and excavation service pages for communities across Middlesex and Worcester Counties:</p>
+            <ul>
+                {%- for item in collections.all | sort(attribute="data.sitemapTitle") %}
+                    {%- if item.data.sitemapCategory == "local" and not item.data.eleventyExcludeFromCollections %}
+                        <li>
+                            <a href="{{ item.url }}">
+                                {{- item.data.sitemapTitle or item.data.title or item.url -}}
+                            </a>
+                        </li>
+                    {%- endif %}
+                {%- endfor %}
+            </ul>
+        </section>
+
+    </article>
+</div>

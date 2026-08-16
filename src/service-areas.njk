@@ -4,6 +4,7 @@ permalink: "service-areas.html"
 canonical: "/service-areas"
 
 sitemapTitle: "Service Areas"
+sitemapCategory: "main"
 order: 50
 changefreq: monthly
 priority: 0.7
@@ -84,41 +85,35 @@ counties:
       S. Phaneuf & Associates serves Worcester County communities including Bolton, Worcester, Leominster, Fitchburg, Shrewsbury, and surrounding areas. Our team provides asphalt paving, excavation, site development, masonry, and hardscape construction. We help homeowners and businesses create durable driveways, functional outdoor living areas, patios, fire pits, retaining walls, and other property improvements.
 
 
-communities:
-  - name: Acton
-    link: /middlesex-county/hardscape-contractor-acton-ma
-#  - name: Arlington
-#  - name: Bedford
-#  - name: Belmont
-  - name: Bolton
-    link: /worcester-county/hardscape-contractor-bolton-ma
-  - name: Carlisle
-    link: /middlesex-county/hardscape-contractor-carlisle-ma
-  - name: Concord
-    link: /middlesex-county/hardscape-contractor-concord-ma
-#  - name: Dover
-#  - name: Framingham
-#  - name: Holliston
-  - name: Lexington
-    link: /middlesex-county/hardscape-contractor-lexington-ma
-#  - name: Lincoln
-  - name: Littleton
-    link: /middlesex-county/hardscape-contractor-littleton-ma
-#  - name: Natick
-#  - name: Needham
-#  - name: Newton
-#  - name: Sherborn
-  - name: Stow
-    link: /middlesex-county/hardscape-contractor-stow-ma
-  - name: Sudbury
-    link: /middlesex-county/hardscape-contractor-sudbury-ma
-  - name: Wayland
-    link: /middlesex-county/hardscape-contractor-wayland-ma
-#  - name: Wellesley
-  - name: Weston
-    link: /middlesex-county/hardscape-contractor-weston-ma
-  - name: Westford
-    link: /middlesex-county/hardscape-contractor-westford-ma
+areasServed:
+  heading: "Communities We Serve Throughout Massachusetts"
+  intro: >
+       S. Phaneuf & Associates proudly provides masonry, hardscape construction, asphalt paving, excavation, site development, and snow management services to homeowners and businesses throughout Greater Boston and surrounding Massachusetts communities. We regularly complete projects in the towns listed below, providing dependable construction solutions designed for residential and commercial properties. <br><br>Some of the communities we regularly serve include:
+  locations:
+      - name: Acton
+        url: /middlesex-county/hardscape-contractor-acton-ma
+      - name: Bolton
+        url: /worcester-county/hardscape-contractor-bolton-ma
+      - name: Carlisle
+        url: /middlesex-county/hardscape-contractor-carlisle-ma
+      - name: Concord
+        url: /middlesex-county/hardscape-contractor-concord-ma
+      - name: Lexington
+        url: /middlesex-county/hardscape-contractor-lexington-ma
+      - name: Littleton
+        url: /middlesex-county/hardscape-contractor-littleton-ma
+      - name: Stow
+        url: /middlesex-county/hardscape-contractor-stow-ma
+      - name: Sudbury
+        url: /middlesex-county/hardscape-contractor-sudbury-ma
+      - name: Wayland
+        url: /middlesex-county/hardscape-contractor-wayland-ma
+      - name: Weston
+        url: /middlesex-county/hardscape-contractor-weston-ma
+      - name: Westford
+        url: /middlesex-county/hardscape-contractor-westford-ma
+
+
 
 
 servicess:
@@ -207,6 +202,8 @@ sidebarParagraph:
             {% endfor %}
         </section>
         <section class="py-5" id="communities-served">
+            {#             
+            <br><br><hr>existing<br><br> 
             <h2 class="pipe">Communities We Serve Throughout Massachusetts</h2>
             <p>S. Phaneuf & Associates proudly provides masonry, hardscape construction, asphalt paving, excavation, site development, and snow management services to homeowners and businesses throughout Greater Boston and surrounding Massachusetts communities. We regularly complete projects in the towns listed below, providing dependable construction solutions designed for residential and commercial properties.</p>
             <p class="pt-2 pb-3">Some of the communities we regularly serve include:</p>
@@ -221,6 +218,9 @@ sidebarParagraph:
                     </div>
                 {% endfor %}
             </div>
+            <br><br><hr>new<br><br> 
+            #}
+            {% include "components/areas-served.njk" %}
         </section>
         <section class="py-5" id="massachusetts-service-area-map">
             <h2 class="pipe">Our Massachusetts Service Area</h2>

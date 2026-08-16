@@ -1,3 +1,26 @@
+asphalt-paving:
+  - src: "/images/small/asphalt-circle-lexington-mass.webp"
+    alt: "Asphalt rollers compacting a newly paved residential cul-de-sac with paver aprons in Lexington, MA"
+    location: "Lexington, MA"
+    caption: "Full asphalt roadway and cul-de-sac paving with integrated paver apron borders."
+
+  - src: "/images/small/asphalt-street-devens-mass.webp"
+    alt: "Heavy Ingersoll Rand double-drum roller compacting fresh asphalt on a residential street in Devens, MA"
+    location: "Devens, MA"
+    caption: "Heavy-duty asphalt compaction and roadway paving for a new residential development."
+
+  - src: "/images/small/asphalt-driveway-chestnut-hill-mass.webp"
+    alt: "Paving crew using a track asphalt paver machine to install a large residential driveway in Chestnut Hill, MA"
+    location: "Chestnut Hill, MA"
+    caption: "Custom residential asphalt driveway paving and hand-finishing for a luxury estate."
+
+  - src: "/images/small/asphalt-patch-ayer-mass.webp"
+    alt: "Paving crew using an infrared asphalt heater for seamless pavement repair on a street in Ayer, MA"
+    location: "Ayer, MA"
+    caption: "Infrared asphalt heating and thermal patching for seamless road repairs."
+
+
+
 default:
   - src: /images/small/circular-fire-pit-Holliston-Mass.webp
     alt: Holliston, Massachusetts commercial patio at Twisted Carrot featuring light gray pavers, fieldstone retaining walls, and a circular stone fire pit.
@@ -13,6 +36,7 @@ default:
     alt: Concord, Massachusetts bluestone patio featuring a sleek rectangular stone fire pit, fieldstone retaining walls, and stone seating.
     location: Concord, MA
     caption: Modern bluestone patio installation in Concord, Massachusetts featuring a custom rectangular fire pit, natural fieldstone retaining walls, and integrated stone seating.
+
 
 # portfolio:
 #   - src: "/images/small/raised-patio-with-fire-pit-kitchen-img3-concord-mass.webp"

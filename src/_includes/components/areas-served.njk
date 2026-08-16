@@ -1,10 +1,23 @@
 <!--areas-served-->
 {% if areasServed %}<section class="py-5" id="{{ areasServed.heading | slugify }}">
   <h2 class="pipe">{{ areasServed.heading }}</h2>
-  {% if areasServed.intro %}<p class="py-3">{{ areasServed.intro }}</p>{% endif %}
+  {% if areasServed.intro %}<p class="py-3">{{ areasServed.intro | safe }}</p>{% endif %}
   <div class="areas-grid pt-2">
     {% for location in areasServed.locations %}<div class="area-item">
         <p class="mb-1">{% if location.url %}<a href="{{ location.url }}">{{ location.name }}</a>{% else %}{{ location.name }}{% endif %}</p>
     </div>{% endfor %}
   </div>
+</section>{% endif %} 
+
+
+{# ssss
+{% if areasServed.areasServed %}<section class="py-5" id="{{ areasServed.areasServed.heading | slugify }}">
+  <h2 class="pipe">{{ areasServed.areasServed.heading }}</h2>
+  {% if areasServed.areasServed.intro %}<p class="py-3">{{ areasServed.areasServed.intro }}</p>{% endif %}
+  <div class="areas-grid pt-2">
+    {% for location in areasServed.areasServed.locations %}<div class="area-item">
+        <p class="mb-1">{% if location.url %}<a href="{{ location.url }}">{{ location.name }}</a>{% else %}{{ location.name }}{% endif %}</p>
+    </div>{% endfor %}
+  </div>
 </section>{% endif %}
+eeee #}

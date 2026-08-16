@@ -1,5 +1,5 @@
 <!--sidebar-->
-<div id="sidebar-contact-form">{# cccclass="contact-form mt-5 mb-1" #}
+<div id="sidebar-contact-form">
     <h2>{{ sidebarHeading }}</h2>
     {% for p in sidebarParagraph %}
     <p class="mt-2 mb-4">{{ p }}</p>
@@ -68,7 +68,16 @@
     </ul>
     {% endif %} #}
 
-    {% set imgData = sidebarImages.sidebarImages if sidebarImages.sidebarImages else sidebarImages %}    {% set activeKey = sidebarKey or page.fileSlug %}    {% if imgData and imgData[activeKey] and (imgData[activeKey] | length > 0) %}    {% set activeImages = imgData[activeKey] %}    {% elif imgData and imgData.default and (imgData.default | length > 0) %}    {% set activeImages = imgData.default %}    {% else %}    {% set activeImages = [] %}    {% endif %}
+    {% set imgData = sidebarImages.sidebarImages if sidebarImages.sidebarImages else sidebarImages %}    
+    {% set activeKey = sidebarKey or page.fileSlug %}    
+    {% if imgData and imgData[activeKey] and (imgData[activeKey] | length > 0) %}    
+        {% set activeImages = imgData[activeKey] %}    
+    {% elif imgData and imgData.default and (imgData.default | length > 0) %}    
+        {% set activeImages = imgData.default %}   
+    {% else %}    
+        {% set activeImages = [] %}   
+    {% endif %}
+    
     {% if activeImages and (activeImages | length > 0) %}
         <ul id="sidebar-images" class="p-0 lst-n">
             {% for img in activeImages %}
@@ -85,7 +94,9 @@
             </li>
             {% endfor %}
         </ul>
-    {% else %}<!-- Debug: Could not resolve array for activeKey: "{{ activeKey }}" -->{% endif %}
+    {% else %}
+        <!-- Debug: Could not resolve array for activeKey: "{{ activeKey }}" -->
+    {% endif %}
 
 
 </div>
