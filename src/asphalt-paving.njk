@@ -70,7 +70,7 @@ section: services
 service: asphalt-paving
 serviceName: Asphalt Paving
 serviceType: asphalt
-#introSlug: masonry-hardscapes
+
 
 # HERO
 heroImageMobile: "566/asphalt-paving.webp"
@@ -88,10 +88,8 @@ breadcrumbs:
   - title: Services
     url: /services
 
-
-##################################################
 # INTRO
-##################################################
+introSlug: asphalt-paving
 intro:
   heading: "Professional Asphalt Paving Throughout Massachusetts"
   paragraphs:
@@ -103,12 +101,8 @@ intro:
       Our asphalt paving services include new driveway and parking lot installation, private road paving, asphalt repairs, resurfacing, milling, maintenance, and related site preparation. We work with homeowners, businesses, property owners, and other customers throughout Massachusetts, and can coordinate paving with excavation, grading, drainage, and broader site development projects when needed.
     - >
       Whether you are replacing an aging residential driveway, constructing a new commercial parking lot, improving a private road, or addressing deteriorating pavement, S. Phaneuf & Associates can evaluate your property and help determine the right approach for a durable, functional asphalt surface.
- 
 
-
-##################################################
 # PORTFOLIO
-##################################################
 #portfolio:
 #  enabled: true
 #  type: masonry
@@ -118,13 +112,44 @@ intro:
 #  closing: >
 #    Every asphalt project is .................
 
+# ADDITIONAL GALLERY
+#additionalGalleryHeading: Additional Asphalt Projects
+#additionalGalleryIntro: >
+#  Browse additional examples of stone veneer, entryways, walkways, patios, porches, and masonry details completed throughout Massachusetts and New England.
+#additionalGalleryImages:
+#  - thumb: /images/small/garage-doors.webp
+#    full: /images/large/garage-doors.webp
+#    alt: Natural stone veneer surrounding garage doors on a home in Groton, Massachusetts
 
+# RELATED SERVICES
+relatedHeading: Related Asphalt & Site Development Services
+relatedIntro: >
+  Many asphalt paving projects are part of larger site development or
+  hardscape work. Explore related services we offer throughout Massachusetts.
+relatedServices:
+  - name: Masonry & Hardscapes
+    slug: masonry-hardscapes
+  - name: Excavation & Site Development
+    slug: excavation-site-development
+  - name: View All Services
+    slug: services
 
+# CTA
+ctaHeading: Ready to Discuss Your Asphalt Paving Project?
+ctaText: "<p>Whether you need a new driveway, commercial parking lot, private road, asphalt repair, or resurfacing, S. Phaneuf & Associates can evaluate your property and help determine the right paving solution for your needs.</p>
+          <p class=\"pt-2\">Tell us about your project, your property, and what you're looking to accomplish. We'll discuss the site conditions, paving requirements, and next steps for your project.</p> 
+          <p class=\"hero-trust c-b\"><span>✓ Free consultations</span><span class=\"separator\">•</span><span>✓ Serving Massachusetts Since 1989</span><span class=\"separator\">•</span><span>✓ Residential & Commercial</span><span class=\"separator\">•</span><span>✓ Licensed &amp; Insured</span></p>"
 
-
-
-
-benefitsHeading: Why Choose Asphalt for Your Driveway, Parking Lot, or Road?
+# SIDEBAR
+sidebarHeading: Get Started with a Free Consultation
+sidebarTrust: true
+sidebarParagraph: 
+  - >  
+    "Have questions or need assistance with your project? Fill out the form below, and we'll be in touch soon to provide you with the information and support you need."
+---
+{% include "components/service-page.njk" %}{# 
+# BENEFITS ??????????????????????
+benefitsHeading: ???? Why Choose Asphalt for Your Driveway, Parking Lot, or Road?
 benefitsIntro: >
   Whether you're installing a new driveway, replacing a worn parking lot, or resurfacing existing pavement, professional asphalt paving provides a durable, cost-effective solution for residential and commercial properties throughout Massachusetts. Built to withstand heavy traffic and New England weather, asphalt delivers long-lasting performance with proper installation and maintenance.
 benefits:
@@ -155,8 +180,8 @@ benefits:
       States. Reclaimed asphalt pavement is commonly incorporated into new
       asphalt mixes, helping conserve natural resources while reducing waste.
 
-
-servicesHeading: Our Asphalt Paving Services
+# SERVICES ????
+servicesHeading: ???? Our Asphalt Paving Services
 servicesIntro: >
   Whether you're building a new driveway, resurfacing an aging parking lot,
   or repairing damaged pavement, S. Phaneuf & Associates provides complete
@@ -191,7 +216,8 @@ services:
       construction, we build attractive asphalt driveways designed
       for years of dependable performance.
 
-processHeading: Our Asphalt Paving Process
+# PROCESS  ??????
+processHeading: ???? Our Asphalt Paving Process
 processIntro: >
   A long-lasting asphalt surface starts long before the first layer of asphalt
   is installed. Our process focuses on proper preparation, quality materials,
@@ -217,8 +243,8 @@ processSteps:
     description: >
       Before completing the project, we inspect the finished pavement to ensure it meets our quality standards and provide recommendations for curing and future maintenance.
 
-
-whyChooseHeading: Why Choose S. Phaneuf & Associates?
+# WHY  ????
+whyChooseHeading: ???? Why Choose S. Phaneuf & Associates?
 whyChooseIntro: >
   For more than 35 years, S. Phaneuf & Associates has helped homeowners, businesses, property managers, and municipalities throughout Massachusetts complete asphalt paving projects with confidence. We take pride in delivering dependable service, quality workmanship, and pavement built to last.
 whyChooseItems:
@@ -239,8 +265,8 @@ whyChooseItems:
     description: >
       We'll evaluate your property, discuss your goals, and recommend the best solution for your project and budget.
 
-
-estimateHeading: Request a Free Asphalt Paving Estimate
+# ESTIMATE  ????
+estimateHeading: ??? Request a Free Asphalt Paving Estimate
 estimateIntro: >
   Whether you're planning a new driveway, resurfacing an existing parking lot, or repairing damaged pavement, our experienced team is ready to help.
 estimateDescription: >
@@ -248,8 +274,8 @@ estimateDescription: >
 estimateButtonText: Request Your Free Estimate
 estimateButtonLink: /contact-us
 
-
-faqHeading: Frequently Asked Questions
+# FAQ ????
+faqHeading: ???? Frequently Asked Questions
 faq:
   - question: How long does an asphalt driveway last?
     answer: >
@@ -267,45 +293,10 @@ faq:
     answer: >
       Absolutely. We complete projects for homeowners, businesses, property managers, HOAs, and municipalities throughout Massachusetts.
 
-
-areasHeading: Areas We Serve
+# AREAS ?????
+areasHeading: ???? Areas We Serve
 areasIntro: >
   S. Phaneuf & Associates proudly provides residential and commercial asphalt paving throughout Greater Boston and many surrounding Massachusetts communities. Explore some of our service areas below, or visit our Service Areas page to see our complete coverage area.
 areasLinkSuffix: Asphalt Paving
 areasButtonText: View All Service Areas
-areasButtonLink: /service-areas
-
-
-relatedHeading: Related Asphalt & Site Development Services
-relatedIntro: >
-  Many asphalt paving projects are part of larger site development or
-  hardscape work. Explore related services we offer throughout Massachusetts.
-relatedServices:
-  - name: Masonry & Hardscapes
-    slug: masonry-hardscapes
-  - name: Excavation & Site Development
-    slug: excavation-site-development
-  # - name: Drainage Solutions
-  #   slug: drainage-solutions
-  - name: View All Services
-    slug: services
-
-
-sidebarHeading: Get Started with a Free Consultation
-sidebarTrust: true
-sidebarParagraph: 
-  - >  
-    "Have questions or need assistance with your project? Fill out the form below, and we'll be in touch soon to provide you with the information and support you need."
-
-ctaHeading: 12n-Ready to Discuss Your Asphalt Paving Project?
-ctaText: "<p>Whether you need a new driveway, commercial parking lot, private road, asphalt repair, or resurfacing, S. Phaneuf & Associates can evaluate your property and help determine the right paving solution for your needs.</p>
-          <p class=\"pt-2\">Tell us about your project, your property, and what you're looking to accomplish. We'll discuss the site conditions, paving requirements, and next steps for your project.</p> 
-          <p class=\"hero-trust c-b\"><span>✓ Free consultations</span><span class=\"separator\">•</span><span>✓ Serving Massachusetts Since 1989</span><span class=\"separator\">•</span><span>✓ Residential & Commercial</span><span class=\"separator\">•</span><span>✓ Licensed &amp; Insured</span></p>"
-
-
----
-{% include "components/service-page.njk" %}
-{# 
-are these represented????????????????????
-# services:      #  - Residential Driveways      #  - Commercial Parking Lots      #  - Asphalt Repairs      #  - Resurfacing      #  - Sealcoating
- #}
+areasButtonLink: /service-areas #}

@@ -1,6 +1,6 @@
 asphalt:
   benefits:
-    heading: "1y-Why Choose Professional Asphalt Paving?"
+    heading: "Why Choose Professional Asphalt Paving?"
     intro: >
       A properly constructed asphalt surface does more than improve the appearance of your property. Professional site preparation, quality materials, proper drainage, and skilled installation create pavement that can withstand Massachusetts weather, vehicle traffic, and everyday use while providing long-term value for residential and commercial properties.
     items:
@@ -23,9 +23,8 @@ asphalt:
       - title: "Recyclable Material"
         description: >
           Asphalt is highly recyclable, and reclaimed asphalt pavement can be incorporated into new asphalt mixes, helping reduce the demand for new raw materials.
-
   services:
-    heading: "2y-Our Asphalt Paving Services"
+    heading: "Our Asphalt Paving Services"
     intro: >
       We provide asphalt paving, repair, resurfacing, and maintenance services for residential and commercial properties throughout Massachusetts.
     items:
@@ -360,9 +359,8 @@ asphalt:
             Parking lot markings should work with the property's overall layout, traffic patterns, and intended use. We can help coordinate pavement improvements with the markings needed for the finished parking area.
           - >
             For commercial paving projects, striping and related pavement markings can be planned as part of the overall project.
-
   process:
-    heading: "3y-Our Asphalt Paving Process"
+    heading: "Our Asphalt Paving Process"
     intro: >
       A durable asphalt surface begins with proper planning and preparation. Our paving process focuses on evaluating site conditions, preparing a stable foundation, managing drainage, and installing quality asphalt so the finished pavement performs reliably for years.
     steps:
@@ -384,9 +382,8 @@ asphalt:
       - title: "Final Review"
         description: >
           Before completing the project, we review the finished work and make sure the pavement and surrounding site meet the project requirements.
-
   faq:
-    heading: "4y-Frequently Asked Questions"
+    heading: "Frequently Asked Questions"
     items:
       - question: "What asphalt paving services do you provide?"
         answer: >
@@ -424,9 +421,8 @@ asphalt:
       - question: "How much does asphalt paving cost in Massachusetts?"
         answer: >
           Asphalt paving costs vary depending on the size of the project, existing site conditions, excavation and base requirements, drainage, pavement thickness, access, and other project factors. We provide estimates based on the specific conditions and requirements of your property.
-
   areasServed:
-    heading: "5y-Areas We Serve"
+    heading: "Areas We Serve"
     intro: >
       S. Phaneuf & Associates proudly provides asphalt paving services throughout Massachusetts. We regularly work with homeowners and businesses throughout Greater Boston and surrounding communities.
     locations:
@@ -454,168 +450,6 @@ asphalt:
     - name: Wellesley
     - name: Weston
     - name: Westford
-
-excavation:
-  services:
-    heading: "Our Excavation & Site Development Services"
-    intro: >
-      We provide professional digging, land clearing, and site preparation services for properties across Massachusetts.
-    items:
-      - title: "Site Clearing & Demolition"
-        anchor: site-clearing
-        paragraphs:
-          - >
-            Every great building project starts with a completely clean slate. We quickly clear raw land by removing unwanted trees, thick brush, hidden boulders, and old structures so your property is immediately ready for development.
-        features:
-          heading: "Popular Land Clearing Features"
-          items:
-            - Tree and stump removal
-            - Heavy brush mowing and clearing
-            - Old building and structure demolition
-            - Rock and ledge management
-            - Clean debris hauling and disposal
-        benefits:
-          heading: "Benefits of Professional Land Clearing"
-          items:
-            - Gets rid of hidden hazards before building begins.
-            - Creates clean, clear borders for accurate construction layouts.
-            - Stops buried wood from rotting under your future buildings.
-
-      - title: "Grading & Foundation Excavation"
-        anchor: grading-foundations
-        paragraphs:
-          - >
-            Precise grading fixes the slope of your land so rainwater drains away safely. We dig perfect foundation holes for new basements, layout deep structural trenches, and test the soil to make sure the ground can easily support the weight of your new building.
-        features:
-          heading: "Popular Grading & Foundation Options"
-          items:
-            - Cellar hole digging for homes
-            - Commercial building foundation cuts
-            - Laser-guided precision dirt leveling
-            - Backfilling and heavy dirt packing
-            - Subgrade prep for driveways and slabs
-        benefits:
-          heading: "Benefits of Structural Grading"
-          items:
-            - Keeps your new basement dry and safe from rainwater leaks.
-            - Creates a perfectly flat, uniform base for concrete work.
-            - Prevents foundations from shifting, cracking, or settling.
-
-      - title: "Underground Utilities & Septic Systems"
-        anchor: underground-utilities
-        paragraphs:
-          - >
-            We dig deep, accurate utility trenches to install or repair vital underground lines. From brand-new septic systems and town sewer tie-ins to clean water lines, gas connections, and electrical lines, we handle all the heavy digging needed to hook up your site.
-        features:
-          heading: "Popular Utility Options"
-          items:
-            - Main town water hookups
-            - Sewer line extensions and connections
-            - Complete septic system installations
-            - Deep utility pipe trenching
-            - Emergency line leak repairs
-        benefits:
-          heading: "Benefits of Professional Utility Digging"
-          items:
-            - Follows all local Massachusetts plumbing and building codes.
-            - Pipes are buried deep below the frost line to prevent freezing.
-            - Uses clean bedding sand to protect pipes from underground rocks.
-
-      - title: "Stormwater Management & Recharging"
-        anchor: stormwater-management
-        paragraphs:
-          - >
-            Don't let heavy New England rainstorms flood your construction plans. We install high-tech Cultec underground chambers and heavy-duty storm drains that collect massive rainwater runoff from roofs and driveways, keeping your yard perfectly dry.
-        features:
-          heading: "Popular Stormwater Solutions"
-          items:
-            - Cultec underground chamber arrays
-            - Catch basin and backyard drain building
-            - Foundation curtain drain systems
-            - Swale and culvert drainage grading
-            - Retaining wall pipe installations
-        benefits:
-          heading: "Benefits of Modern Stormwater Control"
-          items:
-            - Protects low-lying homes during extreme 100-year rain storms.
-            - Stops muddy surface water from eroding your beautiful landscaping.
-            - Meets all EPA Phase II Clean Water Act safety rules.
-
-  benefits:
-    heading: "Why Choose Our Excavation Services"
-    intro: >
-      We specialize in providing the precise groundwork, heavy lifting, and land preparation needed to set your construction project up for long-term success.
-    items:
-      - title: "Experienced Heavy Operators"
-        description: "Our skilled team has decades of hands-on experience managing site work projects of all shapes and sizes."
-      - title: "Advanced Equipment Fleet"
-        description: "We use a line of modern, top-tier machinery to ensure every dig is completed safely, cleanly, and quickly."
-      - title: "Strict Safety Protocols"
-        description: "Safety is our absolute priority. We protect our hard-working crew, your property, and the local environment on every single job."
-      - title: "On Time & On Budget"
-        description: "We know your construction timeline matters. We work hard to finish your site preparation exactly when we promise."
-
-  process:
-    heading: "Our Excavation & Site Development Process"
-    intro: >
-      Every successful building project begins with rock-solid groundwork and precise planning. Our proven site development process allows us to prepare raw land safely while ensuring every foundation cut, utility trench, and storm drain network performs perfectly. Throughout the digging process, we keep Massachusetts property owners completely informed so there are no surprises from the first scoop of dirt to the final grade.
-    steps:
-      - title: "Consultation & Plan Review"
-        description: >
-          We meet with you right on your property to review your engineering blueprints, check the land layout, and discuss your construction goals. We evaluate the soil, look at the slopes, and map out an efficient excavation plan that fits your project timeline and budget perfectly.
-      - title: "Permits & Site Layout"
-        description: >
-          Before any heavy machinery arrives, our team secures all necessary town digging licenses and environmental permits. We carefully stake out the exact construction lines and mark underground utility paths to guarantee that all clearing and digging operations are completed safely and legally.
-      - title: "Clearing & Heavy Excavation"
-        description: >
-          Our experienced operators bring in top-tier excavators and bulldozers to clear away trees, boulders, and old structures. Next, we execute deep structural cuts for home basements, commercial foundation slabs, septic systems, or deep underground utility lines exactly to your blueprint specs.
-      - title: "Drainage & Subgrade Compaction"
-        description: >
-          We install robust stormwater solutions like underground Cultec chambers and catch basins to manage heavy rainwater. We then use heavy-duty compactors to tightly pack the subgrade dirt layers, creating a rock-solid, uniform base that prevents future buildings, driveways, or roads from shifting.
-      - title: "Final Laser Grading & Cleanup"
-        description: >
-          We use precision laser grading to smooth out the topsoil, establishing the perfect final slopes so water naturally drains completely away from your new structures. We haul away remaining debris, clean the job site thoroughly, and leave a pristine, ready-to-build canvas for your construction crew.
-      - title: "Final Project Walkthrough"
-        description: >
-          Before we pack up our heavy equipment, we walk the entire site with you to inspect every elevation, utility hookup, and drainage path. We make sure the ground prep meets our high standards and fully satisfies your expectations for a strong foundation.
-
-  # process:
-  #   heading: "Our Site Development Process"
-  #   items:
-  #     - title: "Site Consultation"
-  #       description: "We walk your Massachusetts property with you, review your engineering blueprints, and map out your project goals."
-  #     - title: "Permits & Layout Design"
-  #       description: "Our team secures all the necessary town licenses and environmental permits while mapping out precise layout lines."
-  #     - title: "Excavation & Installation"
-  #       description: "We bring in our heavy machinery to clear the land, dig foundations, lay utility lines, and complete the final grade."
-
-  faq:
-    heading: "Frequently Asked Questions"
-    items:
-      - question: "What types of excavation services do you handle?"
-        answer: >
-          We handle complete residential and commercial site work. This includes clearing raw land, structural demolition, digging foundation holes, precision laser grading, utility trenching, septic system installations, and advanced storm drain building.
-      - question: "Why is soil testing important before digging a foundation?"
-        answer: >
-          Testing the soil tells us how tightly the dirt is packed and where the underground water table sits. Knowing this helps us plan the perfect foundation cut and ensures your new building will never shift or crack over time.
-      - question: "How do underground Cultec chambers protect my yard?"
-        answer: >
-          Cultec chambers act as an invisible, underground storage tank for rainwater. During a heavy downpour, water from your roof and driveway is guided into these buried chambers, filtering out dirt and slowly releasing the water safely back into the ground without flooding your lawn.
-      - question: "Do you secure all the necessary town digging permits?"
-        answer: >
-          Yes. S. Phaneuf & Associates manages the entire permitting process. We secure all municipal licenses and ensure your site work completely follows the EPA's Phase II Clean Water Act regulations.
-      - question: "How long does a typical site clearing and grading project take?"
-        answer: >
-          A simple house lot can often be cleared and graded in just a few days. Larger commercial developments or properties requiring deep utility connections can take a few weeks. We will give you a clear, written schedule before any heavy machinery arrives.
-      - question: "Can you fix existing drainage and pooling water issues?"
-        answer: >
-          Absolutely. We regularly fix muddy lawns and wet basements by re-grading slopes, installing foundation curtain drains, and building custom catch basins to guide rainwater away from your home.
-
-snow:
-  benefits:
-    heading: Why Invest in Snow & Ice Management?
-    intro: >
-          lorem ipsum   
 
 masonry:
   benefits:
@@ -1149,70 +983,167 @@ masonry:
         - name: Westford
           url: /middlesex-county/hardscape-contractor-westford-ma
 
+excavation:
+  services:
+    heading: "Our Excavation & Site Development Services"
+    intro: >
+      We provide professional digging, land clearing, and site preparation services for properties across Massachusetts.
+    items:
+      - title: "Site Clearing & Demolition"
+        anchor: site-clearing
+        paragraphs:
+          - >
+            Every great building project starts with a completely clean slate. We quickly clear raw land by removing unwanted trees, thick brush, hidden boulders, and old structures so your property is immediately ready for development.
+        features:
+          heading: "Popular Land Clearing Features"
+          items:
+            - Tree and stump removal
+            - Heavy brush mowing and clearing
+            - Old building and structure demolition
+            - Rock and ledge management
+            - Clean debris hauling and disposal
+        benefits:
+          heading: "Benefits of Professional Land Clearing"
+          items:
+            - Gets rid of hidden hazards before building begins.
+            - Creates clean, clear borders for accurate construction layouts.
+            - Stops buried wood from rotting under your future buildings.
 
-# asphalt:
-#   benefits:
-#     heading: "Why Choose Our Asphalt Services"
+      - title: "Grading & Foundation Excavation"
+        anchor: grading-foundations
+        paragraphs:
+          - >
+            Precise grading fixes the slope of your land so rainwater drains away safely. We dig perfect foundation holes for new basements, layout deep structural trenches, and test the soil to make sure the ground can easily support the weight of your new building.
+        features:
+          heading: "Popular Grading & Foundation Options"
+          items:
+            - Cellar hole digging for homes
+            - Commercial building foundation cuts
+            - Laser-guided precision dirt leveling
+            - Backfilling and heavy dirt packing
+            - Subgrade prep for driveways and slabs
+        benefits:
+          heading: "Benefits of Structural Grading"
+          items:
+            - Keeps your new basement dry and safe from rainwater leaks.
+            - Creates a perfectly flat, uniform base for concrete work.
+            - Prevents foundations from shifting, cracking, or settling.
 
-#     items:
-#       - title: Expert Installation
-#         description: Our team ensures a smooth and durable asphalt surface.
+      - title: "Underground Utilities & Septic Systems"
+        anchor: underground-utilities
+        paragraphs:
+          - >
+            We dig deep, accurate utility trenches to install or repair vital underground lines. From brand-new septic systems and town sewer tie-ins to clean water lines, gas connections, and electrical lines, we handle all the heavy digging needed to hook up your site.
+        features:
+          heading: "Popular Utility Options"
+          items:
+            - Main town water hookups
+            - Sewer line extensions and connections
+            - Complete septic system installations
+            - Deep utility pipe trenching
+            - Emergency line leak repairs
+        benefits:
+          heading: "Benefits of Professional Utility Digging"
+          items:
+            - Follows all local Massachusetts plumbing and building codes.
+            - Pipes are buried deep below the frost line to prevent freezing.
+            - Uses clean bedding sand to protect pipes from underground rocks.
 
-#       - title: Long-Lasting Results
-#         description: We use high-quality materials for a surface that stands the test of time.
+      - title: "Stormwater Management & Recharging"
+        anchor: stormwater-management
+        paragraphs:
+          - >
+            Don't let heavy New England rainstorms flood your construction plans. We install high-tech Cultec underground chambers and heavy-duty storm drains that collect massive rainwater runoff from roofs and driveways, keeping your yard perfectly dry.
+        features:
+          heading: "Popular Stormwater Solutions"
+          items:
+            - Cultec underground chamber arrays
+            - Catch basin and backyard drain building
+            - Foundation curtain drain systems
+            - Swale and culvert drainage grading
+            - Retaining wall pipe installations
+        benefits:
+          heading: "Benefits of Modern Stormwater Control"
+          items:
+            - Protects low-lying homes during extreme 100-year rain storms.
+            - Stops muddy surface water from eroding your beautiful landscaping.
+            - Meets all EPA Phase II Clean Water Act safety rules.
 
-#       - title: Cost-Effective Solutions
-#         description: Our services provide excellent value for your investment.
+  benefits:
+    heading: "Why Choose Our Excavation Services"
+    intro: >
+      We specialize in providing the precise groundwork, heavy lifting, and land preparation needed to set your construction project up for long-term success.
+    items:
+      - title: "Experienced Heavy Operators"
+        description: "Our skilled team has decades of hands-on experience managing site work projects of all shapes and sizes."
+      - title: "Advanced Equipment Fleet"
+        description: "We use a line of modern, top-tier machinery to ensure every dig is completed safely, cleanly, and quickly."
+      - title: "Strict Safety Protocols"
+        description: "Safety is our absolute priority. We protect our hard-working crew, your property, and the local environment on every single job."
+      - title: "On Time & On Budget"
+        description: "We know your construction timeline matters. We work hard to finish your site preparation exactly when we promise."
 
-#       - title: Professional Maintenance
-#         description: We offer maintenance services to keep your asphalt in top condition.
-#   services:
-#     heading: "Our Masonry & Hardscape Services"
-#     intro: >
-#       We design and build beautiful outdoor living spaces for homes throughout Massachusetts.
-#     items:
-#       - title: Patio Construction
-#         anchor: patios
-#         image:
-#           src: /images/small/pool-and-spa-wellesley-mass.webp
-#           alt: Custom natural stone pool patio and spa constructed by S. Phaneuf & Associates in Wellesley, Massachusetts.
-#         paragraphs:
-#           - >
-#             A great patio is the foundation of a backyard you can enjoy all year long in Massachusetts. Whether you want a quiet place to relax, an outdoor dining area, or a big space to host family and friends, a custom patio adds beauty and value to your home. At S. Phaneuf & Associates, we design and build natural stone, bluestone, and paver patios that fit your lifestyle and property perfectly.
-#           - >
-#             Every patio we build starts with the right groundwork. We carefully check the slopes, soil layout, and drainage before any digging begins. Having a deep, solid base is the most important part of building a long-lasting patio, especially with New England's harsh freeze-thaw winter cycles. By combining great materials with smart construction steps, we make patios that stay level and beautiful for decades.
-#           - >
-#             Your new patio can stand alone or connect with other outdoor projects like retaining walls, outdoor kitchens, fire pits, and pool decks. Whether you are fixing up an old backyard or starting fresh, we will help you design a space that looks great with your home, gives you a beautiful place to hang out, and boosts your property value.
-        
-  # services:
-  #   heading: "Why Choose Our Asphalt Services"
+  process:
+    heading: "Our Excavation & Site Development Process"
+    intro: >
+      Every successful building project begins with rock-solid groundwork and precise planning. Our proven site development process allows us to prepare raw land safely while ensuring every foundation cut, utility trench, and storm drain network performs perfectly. Throughout the digging process, we keep Massachusetts property owners completely informed so there are no surprises from the first scoop of dirt to the final grade.
+    steps:
+      - title: "Consultation & Plan Review"
+        description: >
+          We meet with you right on your property to review your engineering blueprints, check the land layout, and discuss your construction goals. We evaluate the soil, look at the slopes, and map out an efficient excavation plan that fits your project timeline and budget perfectly.
+      - title: "Permits & Site Layout"
+        description: >
+          Before any heavy machinery arrives, our team secures all necessary town digging licenses and environmental permits. We carefully stake out the exact construction lines and mark underground utility paths to guarantee that all clearing and digging operations are completed safely and legally.
+      - title: "Clearing & Heavy Excavation"
+        description: >
+          Our experienced operators bring in top-tier excavators and bulldozers to clear away trees, boulders, and old structures. Next, we execute deep structural cuts for home basements, commercial foundation slabs, septic systems, or deep underground utility lines exactly to your blueprint specs.
+      - title: "Drainage & Subgrade Compaction"
+        description: >
+          We install robust stormwater solutions like underground Cultec chambers and catch basins to manage heavy rainwater. We then use heavy-duty compactors to tightly pack the subgrade dirt layers, creating a rock-solid, uniform base that prevents future buildings, driveways, or roads from shifting.
+      - title: "Final Laser Grading & Cleanup"
+        description: >
+          We use precision laser grading to smooth out the topsoil, establishing the perfect final slopes so water naturally drains completely away from your new structures. We haul away remaining debris, clean the job site thoroughly, and leave a pristine, ready-to-build canvas for your construction crew.
+      - title: "Final Project Walkthrough"
+        description: >
+          Before we pack up our heavy equipment, we walk the entire site with you to inspect every elevation, utility hookup, and drainage path. We make sure the ground prep meets our high standards and fully satisfies your expectations for a strong foundation.
 
+  # process:
+  #   heading: "Our Site Development Process"
   #   items:
-  #     - title: Expert Installation
-  #       description: Our team ensures a smooth and durable asphalt surface.
+  #     - title: "Site Consultation"
+  #       description: "We walk your Massachusetts property with you, review your engineering blueprints, and map out your project goals."
+  #     - title: "Permits & Layout Design"
+  #       description: "Our team secures all the necessary town licenses and environmental permits while mapping out precise layout lines."
+  #     - title: "Excavation & Installation"
+  #       description: "We bring in our heavy machinery to clear the land, dig foundations, lay utility lines, and complete the final grade."
 
-  #     - title: Long-Lasting Results
-  #       description: We use high-quality materials for a surface that stands the test of time.
+  faq:
+    heading: "Frequently Asked Questions"
+    items:
+      - question: "What types of excavation services do you handle?"
+        answer: >
+          We handle complete residential and commercial site work. This includes clearing raw land, structural demolition, digging foundation holes, precision laser grading, utility trenching, septic system installations, and advanced storm drain building.
+      - question: "Why is soil testing important before digging a foundation?"
+        answer: >
+          Testing the soil tells us how tightly the dirt is packed and where the underground water table sits. Knowing this helps us plan the perfect foundation cut and ensures your new building will never shift or crack over time.
+      - question: "How do underground Cultec chambers protect my yard?"
+        answer: >
+          Cultec chambers act as an invisible, underground storage tank for rainwater. During a heavy downpour, water from your roof and driveway is guided into these buried chambers, filtering out dirt and slowly releasing the water safely back into the ground without flooding your lawn.
+      - question: "Do you secure all the necessary town digging permits?"
+        answer: >
+          Yes. S. Phaneuf & Associates manages the entire permitting process. We secure all municipal licenses and ensure your site work completely follows the EPA's Phase II Clean Water Act regulations.
+      - question: "How long does a typical site clearing and grading project take?"
+        answer: >
+          A simple house lot can often be cleared and graded in just a few days. Larger commercial developments or properties requiring deep utility connections can take a few weeks. We will give you a clear, written schedule before any heavy machinery arrives.
+      - question: "Can you fix existing drainage and pooling water issues?"
+        answer: >
+          Absolutely. We regularly fix muddy lawns and wet basements by re-grading slopes, installing foundation curtain drains, and building custom catch basins to guide rainwater away from your home.
 
-  #     - title: Cost-Effective Solutions
-  #       description: Our services provide excellent value for your investment.
-
-  #     - title: Professional Maintenance
-  #       description: We offer maintenance services to keep your asphalt in top condition.
-
-# Asphalt Paving for Driveways, Parking Lots, and More in Massachusetts
-# Quality Asphalt Solutions for Your Driveway and Parking Needs
-# S. Phaneuf & Associates is one of the premier asphalt paving contractors for Massachusetts properties, handling all asphalt paving needs for driveways, parking lots, asphalt berms, repairs, drainage, catch basins, and more. We are committed to providing high-quality work and customer satisfaction. Customer satisfaction doesn’t stop with the job specifications. We are dedicated to excellent service with a people-friendly approach, making your experience with us for your paving needs a pleasant one. Whether your paving needs are for your residential or commercial property, S. Phaneuf & Associates has the experience, equipment, and skilled crews to complete your work on time, within budget, and with the quality results you expect. Visit our asphalt paving project photo page to see examples of our work on Massachusetts properties and see the quality we deliver.
-# Driveways
-# Parking Lots
-# Asphalt Berm
-# Repairs & Maintenance
-# Drainage
-# Catch Basins
-# and more
-
-
-
+snow:
+  benefits:
+    heading: Why Invest in Snow & Ice Management?
+    intro: >
+          lorem ipsum   
 
 
 
