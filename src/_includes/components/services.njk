@@ -11,7 +11,7 @@
             {% if item.image %}<div class="service-image my-3"><img src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy" class="img-fluid"></div>{% endif %}
             {% if item.features %}<div class="service-features mt-4"><h4>{{ item.features.heading }}</h4><ul class="ps-3 li">{% for feature in item.features.items %}<li>{{ feature }}</li>{% endfor %}</ul></div>{% endif %}
             {% if item.benefits %}<div class="service-benefits mt-4"><h4>{{ item.benefits.heading }}</h4><ul class="ps-3 li">{% for benefit in item.benefits.items %}<li>{{ benefit }}</li>{% endfor %}</ul></div>{% endif %}
-            {% if item.closing %}{% for closingParagraph in item.closing %}<p class="py-2 fst-italic">{{ closingParagraph }}</p>{% endfor %}{% endif %}
+            {% if item.closing %}{% for closingParagraph in item.closing %}<p class="py-2 fst-italic">{{ closingParagraph | safe}}</p>{% endfor %}{% endif %}
         </div>
         {% endfor %}
     </div>

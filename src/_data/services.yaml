@@ -49,7 +49,7 @@ asphalt:
           - >
             Whether you are replacing an aging driveway or developing pavement as
             part of a larger construction project, we can coordinate the paving
-            work with excavation, grading, drainage, and other site development
+            work with <a href="/services/excavation-site-development">excavation, grading, drainage, and other site development</a>
             requirements.
 
         features:
@@ -138,12 +138,9 @@ asphalt:
 
         closing:
           - >
-            A long-lasting driveway depends on more than the asphalt placed on the
-            surface. Proper excavation, base preparation, grading, and drainage
-            all play an important role in pavement performance.
+            A long-lasting driveway depends on more than the asphalt placed on the surface. Proper <a href="/services/excavation-site-development">excavation, base preparation, grading, and drainage</a> all play an important role in pavement performance.
           - >
-            We can help evaluate your existing driveway or plan a new asphalt
-            driveway that fits your property and how you use it.
+            We can help evaluate your existing driveway or plan a new asphalt driveway that fits your property and how you use it.
 
       - title: "Commercial Parking Lots"
         anchor: parking-lots
@@ -195,7 +192,7 @@ asphalt:
 
         closing:
           - >
-            From smaller commercial parking areas to larger private developments,
+            From smaller commercial parking areas to <a href="/services/site-development">larger private developments</a>,
             we approach each project based on its specific traffic, drainage,
             grading, and site requirements.
           - >
@@ -315,7 +312,7 @@ asphalt:
             recommending whether resurfacing or another paving solution is the
             right approach.
 
-      - title: "Parking Lot Striping & Signage"
+      - title: "Parking Lot Striping & Pavement Markings"
         anchor: parking-lot-striping
         image:
           src: "/images/small/parking-lot-striping.webp"
