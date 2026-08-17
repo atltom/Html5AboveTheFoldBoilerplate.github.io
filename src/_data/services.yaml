@@ -981,6 +981,1139 @@ masonry:
           url: /middlesex-county/hardscape-contractor-westford-ma
 
 excavation:
+  benefits:
+    heading: "Why Invest in Professional Excavation & Site Development?"
+    intro: >
+      Successful construction begins with properly prepared land. Professional
+      excavation and site development establish the grades, drainage, access,
+      utility connections, and stable foundation conditions required for a
+      successful project. S. Phaneuf & Associates combines experienced operators,
+      quality equipment, and proven site-work practices to prepare residential,
+      commercial, and development properties throughout Massachusetts.
+    items:
+      - title: "Build on a Proper Foundation"
+        description: >
+          Proper excavation, grading, soil preparation, and compaction create
+          the stable site conditions needed for foundations, driveways, parking
+          areas, patios, utilities, and other construction projects.
+
+      - title: "Improve Drainage & Control Water"
+        description: >
+          Careful grading and professionally designed drainage systems direct
+          stormwater away from buildings, paved surfaces, and low areas while
+          helping reduce erosion, standing water, and potential property damage.
+
+      - title: "Prepare Sites for Construction"
+        description: >
+          From clearing and demolition through excavation, grading, utility
+          trenching, and final site preparation, we handle the groundwork
+          required to move your residential or commercial construction project
+          forward.
+
+      - title: "Experienced Equipment & Operators"
+        description: >
+          Our experienced operators use properly maintained excavation equipment
+          to complete earthwork efficiently and accurately while minimizing
+          unnecessary disturbance to the surrounding property.
+
+      - title: "Coordinate the Entire Site"
+        description: >
+          Excavation often connects directly with drainage, utilities, paving,
+          masonry, and other construction work. Our site-development experience
+          allows us to coordinate these elements so the finished property works
+          as a complete system.
+
+  services:
+    heading: "Our Excavation & Site Development Services"
+    intro: >
+      We provide comprehensive excavation and site development services for
+      residential properties, commercial projects, new construction, renovations,
+      infrastructure improvements, and property development throughout
+      Massachusetts.
+    items:
+
+      - title: "Site Clearing & Demolition"
+        anchor: site-clearing-demolition
+        image:
+          src: "/images/small/site-clearing.webp"
+          alt: "Professional site clearing and excavation work by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            Before construction can begin, the property must be cleared and
+            prepared for the work ahead. S. Phaneuf & Associates provides site
+            clearing and selective demolition services to remove unwanted
+            vegetation, debris, old structures, pavement, and other obstacles
+            that interfere with construction or site improvements.
+          - >
+            Our team carefully evaluates the property before beginning work so
+            that clearing can be coordinated with existing structures, utilities,
+            drainage systems, mature landscaping, and neighboring properties.
+            Proper preparation helps create a clean and accessible work area
+            while reducing complications later in the project.
+          - >
+            Whether you are preparing a residential lot for a new home, clearing
+            an existing property for redevelopment, or removing old site
+            features before a renovation, we can coordinate the excavation and
+            site preparation required to move your project forward.
+
+        features:
+          heading: "Popular Site Clearing & Demolition Services"
+          items:
+            - Residential lot clearing
+            - Commercial site clearing
+            - Selective demolition
+            - Removal of old pavement
+            - Removal of concrete structures
+            - Brush and vegetation removal
+            - Construction debris removal
+            - Existing site feature removal
+            - Preparation for new construction
+            - Final site cleanup
+
+        benefits:
+          heading: "Benefits of Professional Site Clearing"
+          items:
+            - Creates a clean and organized construction site.
+            - Removes obstacles before excavation and construction begin.
+            - Improves equipment access throughout the property.
+            - Helps identify existing site conditions early.
+            - Reduces delays caused by unexpected site obstacles.
+            - Allows grading and drainage work to begin efficiently.
+            - Prepares properties for residential or commercial development.
+            - Provides a coordinated transition into the next phase of construction.
+
+        closing:
+          - >
+            Proper site preparation sets the stage for everything that follows.
+            Our experienced team approaches clearing and demolition carefully so
+            the property is ready for excavation, grading, utilities, drainage,
+            and construction.
+          - >
+            If your Massachusetts property needs to be cleared or prepared for
+            a new construction or improvement project, we can help develop a
+            practical plan for the entire site-development process.
+
+      - title: "Excavation & Grading"
+        anchor: excavation-grading
+        image:
+          src: "/images/small/excavation-grading.webp"
+          alt: "Excavation and grading work performed by S. Phaneuf & Associates for a Massachusetts construction project."
+        paragraphs:
+          - >
+            Excavation and grading establish the elevations and contours that
+            determine how a property will function. From preparing building
+            foundations to shaping yards, driveways, parking areas, and drainage
+            systems, accurate earthwork is one of the most important parts of
+            successful site development.
+          - >
+            Our team evaluates existing elevations, soil conditions, drainage
+            patterns, and the proposed use of the property before moving earth.
+            We carefully excavate and grade the site to establish the elevations
+            required for construction while directing water toward appropriate
+            drainage areas.
+          - >
+            Proper grading is especially important in Massachusetts, where
+            heavy rainfall, snow, frost, and freeze-thaw cycles can create
+            significant drainage and soil challenges. Careful site preparation
+            helps protect buildings, pavement, landscaping, and other finished
+            improvements for years to come.
+
+        features:
+          heading: "Excavation & Grading Services"
+          items:
+            - Building site excavation
+            - Residential excavation
+            - Commercial excavation
+            - Lot grading
+            - Rough grading
+            - Fine grading
+            - Cut and fill work
+            - Driveway excavation
+            - Parking area preparation
+            - Site elevation adjustments
+
+        benefits:
+          heading: "Benefits of Professional Excavation & Grading"
+          items:
+            - Establishes accurate elevations for construction.
+            - Creates stable conditions for foundations and pavement.
+            - Directs water away from buildings and structures.
+            - Reduces standing water and drainage problems.
+            - Helps prevent erosion caused by uncontrolled runoff.
+            - Creates properly shaped areas for landscaping and hardscapes.
+            - Improves site access and construction efficiency.
+            - Provides a strong foundation for future improvements.
+
+        closing:
+          - >
+            Good grading is about much more than moving dirt. It requires an
+            understanding of elevations, drainage, soil conditions, structures,
+            utilities, and the finished use of the property.
+          - >
+            Whether you are preparing a single residential lot or developing a
+            larger commercial property, our excavation team can establish the
+            grades and site conditions your project requires.
+
+      - title: "Foundation & Building Excavation"
+        anchor: foundation-excavation
+        image:
+          src: "/images/small/foundation-excavation.webp"
+          alt: "Foundation excavation and site preparation for new construction in Massachusetts by S. Phaneuf & Associates."
+        paragraphs:
+          - >
+            A building is only as reliable as the ground supporting it. Foundation
+            excavation requires accurate measurements, proper depths, stable
+            excavation walls, and careful coordination with the building plans.
+            Our excavation team prepares building sites for foundations,
+            additions, garages, and other structures.
+          - >
+            We excavate to the required elevations while accounting for existing
+            grades, soil conditions, drainage, access, and the surrounding
+            property. Proper preparation helps provide the conditions needed for
+            foundation contractors to begin their work efficiently.
+          - >
+            Foundation excavation can also involve removal of unsuitable soil,
+            preparation of subgrades, installation of drainage systems, and
+            coordination with utilities and other site improvements. We approach
+            the excavation as part of the complete site rather than as an isolated
+            digging operation.
+
+        features:
+          heading: "Foundation Excavation Services"
+          items:
+            - New home foundation excavation
+            - Commercial foundation excavation
+            - Addition excavation
+            - Garage excavation
+            - Basement excavation
+            - Footing excavation
+            - Foundation drainage preparation
+            - Unsuitable soil removal
+            - Subgrade preparation
+            - Construction site access preparation
+
+        benefits:
+          heading: "Benefits of Professional Foundation Excavation"
+          items:
+            - Establishes the correct foundation elevation.
+            - Creates a properly prepared subgrade.
+            - Helps identify unsuitable soil conditions early.
+            - Coordinates excavation with drainage requirements.
+            - Provides efficient access for foundation construction.
+            - Reduces unnecessary rework and construction delays.
+            - Integrates foundation work with the overall site plan.
+            - Creates better conditions for long-term building performance.
+
+        closing:
+          - >
+            Foundation excavation requires precision because even small elevation
+            or drainage problems can create complications during later stages of
+            construction. Our experienced operators work carefully from the
+            project plans and existing site conditions.
+          - >
+            If you are planning a new home, addition, commercial building, or
+            other structure in Massachusetts, we can help prepare the property
+            for the foundation and the construction that follows.
+
+      - title: "Utility Trenching & Installation"
+        anchor: utility-trenching
+        image:
+          src: "/images/small/utility-trenching.webp"
+          alt: "Utility trench excavation for site development in Massachusetts by S. Phaneuf & Associates."
+        paragraphs:
+          - >
+            New construction and property improvements often require underground
+            utilities for water, sewer, drainage, electrical, gas, and other
+            services. Proper trench excavation provides the space and grades
+            needed for these systems while coordinating their installation with
+            the rest of the property.
+          - >
+            Our excavation team can prepare utility trenches and coordinate the
+            necessary site work around existing structures, driveways, landscape
+            areas, and other improvements. Careful excavation helps reduce
+            conflicts between underground systems and creates a more organized
+            site for construction.
+          - >
+            Utility work is frequently part of a larger site-development project.
+            By coordinating trenching with grading, drainage, foundation
+            excavation, and final site preparation, we help keep the overall
+            project moving efficiently.
+
+        features:
+          heading: "Utility Trenching Services"
+          items:
+            - Water line trenches
+            - Sewer line trenches
+            - Drainage pipe trenches
+            - Electrical conduit trenches
+            - Utility service trenches
+            - Underground piping excavation
+            - Utility connection preparation
+            - Existing utility coordination
+            - Trench backfilling
+            - Utility site restoration
+
+        benefits:
+          heading: "Benefits of Professional Utility Trenching"
+          items:
+            - Creates properly sized trenches for underground utilities.
+            - Coordinates utility work with the overall site plan.
+            - Helps reduce conflicts between underground systems.
+            - Provides appropriate grades for drainage and piping.
+            - Improves construction efficiency.
+            - Helps protect existing property during excavation.
+            - Allows utilities to be integrated with new development.
+            - Provides coordinated backfilling and site restoration.
+
+        closing:
+          - >
+            Underground utilities are an essential part of many construction
+            projects, and their location and elevation need to be considered
+            early in the site-development process.
+          - >
+            We can coordinate utility trenching with the surrounding excavation,
+            grading, drainage, and construction work to help create a more
+            efficient and organized building site.
+
+      - title: "Drainage & Stormwater Management"
+        anchor: drainage-stormwater
+        image:
+          src: "/images/small/stormwater-drainage.webp"
+          alt: "Stormwater drainage and site development work completed by S. Phaneuf & Associates in Massachusetts."
+        paragraphs:
+          - >
+            Managing water is one of the most important parts of site development
+            in Massachusetts. Heavy rain and seasonal storms can overwhelm poorly
+            graded properties, creating standing water, erosion, flooded areas,
+            and drainage problems around buildings and paved surfaces.
+          - >
+            S. Phaneuf & Associates provides excavation and site-development
+            solutions designed to move, collect, and manage stormwater. Depending
+            on the property, solutions may include grading improvements, drainage
+            piping, catch basins, storm drains, infiltration systems, and other
+            site-specific measures.
+          - >
+            Our experience includes complex stormwater management projects such
+            as the Main Street Green project in Concord, where site work included
+            storm drainage and a Cultec stormwater management system designed to
+            collect and manage runoff. We consider both existing drainage patterns
+            and the finished property when developing site solutions.
+
+        features:
+          heading: "Stormwater & Drainage Solutions"
+          items:
+            - Storm drainage systems
+            - Catch basins
+            - Drainage piping
+            - Site grading for drainage
+            - Stormwater infiltration systems
+            - Cultec systems
+            - Runoff management
+            - Foundation drainage
+            - Erosion control
+            - Drainage improvements
+
+        benefits:
+          heading: "Benefits of Professional Stormwater Management"
+          items:
+            - Helps direct water away from buildings.
+            - Reduces standing water and saturated areas.
+            - Helps control erosion and soil loss.
+            - Protects driveways, parking areas, and hardscapes.
+            - Improves the performance of drainage systems.
+            - Helps manage runoff during heavy rainfall.
+            - Integrates drainage into the overall site design.
+            - Provides long-term protection for developed properties.
+
+        closing:
+          - >
+            Effective stormwater management begins with understanding how water
+            moves across the property. Grading, drainage structures, underground
+            piping, and infiltration systems can all play a role depending on
+            the site's conditions and requirements.
+          - >
+            If your property experiences standing water, erosion, drainage
+            problems, or significant stormwater runoff, our site-development
+            team can evaluate the conditions and recommend an appropriate
+            solution.
+
+      - title: "Soil Stabilization, Compaction & Base Preparation"
+        anchor: soil-compaction
+        image:
+          src: "/images/small/site-preparation.webp"
+          alt: "Soil compaction and base preparation during Massachusetts site development by S. Phaneuf & Associates."
+        paragraphs:
+          - >
+            Proper soil preparation is critical to the long-term performance of
+            foundations, driveways, parking lots, patios, retaining walls, and
+            other improvements. Simply placing new material over unstable soil
+            can lead to settlement, cracking, drainage problems, and premature
+            failure.
+          - >
+            We prepare subgrades by removing unsuitable material when necessary,
+            placing appropriate fill, and compacting the soil and aggregate base
+            to create stable conditions for the next stage of construction.
+            Proper compaction helps reduce settlement and provides a dependable
+            base for finished improvements.
+          - >
+            Soil and base preparation are particularly important for Massachusetts
+            projects because seasonal moisture changes and freeze-thaw cycles can
+            affect poorly prepared ground. Our approach considers the intended
+            use of the property and the materials that will ultimately be
+            installed above the prepared base.
+
+        features:
+          heading: "Soil & Base Preparation Services"
+          items:
+            - Soil excavation
+            - Unsuitable soil removal
+            - Fill placement
+            - Soil compaction
+            - Aggregate base installation
+            - Subgrade preparation
+            - Driveway base preparation
+            - Parking lot base preparation
+            - Patio and hardscape preparation
+            - Foundation subgrade preparation
+
+        benefits:
+          heading: "Benefits of Proper Soil & Base Preparation"
+          items:
+            - Creates a more stable construction surface.
+            - Reduces settlement and uneven surfaces.
+            - Provides stronger support for finished improvements.
+            - Helps reduce cracking and premature pavement failure.
+            - Improves drainage beneath paved and hardscape areas.
+            - Creates better conditions for foundations and structures.
+            - Helps finished surfaces withstand seasonal ground movement.
+            - Extends the useful life of the completed project.
+
+        closing:
+          - >
+            The work beneath the finished surface is often what determines how
+            well a project performs over time. Proper excavation, material
+            selection, moisture management, and compaction provide the foundation
+            for durable construction.
+          - >
+            From residential driveways and patios to commercial parking areas and
+            building sites, we prepare the underlying soil and base to support
+            the finished project.
+
+  process:
+    heading: "Our Excavation & Site Development Process"
+    intro: >
+      Every successful site-development project begins with careful planning.
+      Our process considers the property's existing conditions, proposed
+      improvements, drainage, access, utilities, and finished elevations so the
+      necessary earthwork can be completed efficiently and correctly.
+    steps:
+      - title: "Consultation & Site Evaluation"
+        description: >
+          We discuss your project goals, evaluate the property, review existing
+          conditions, and identify the excavation, grading, drainage, utility,
+          and site-preparation requirements.
+
+      - title: "Project Planning & Layout"
+        description: >
+          We establish the required grades, excavation limits, access points,
+          drainage requirements, and sequence of work so the site can be prepared
+          efficiently and safely.
+
+      - title: "Site Clearing & Preparation"
+        description: >
+          Existing vegetation, debris, pavement, structures, or other obstacles
+          are removed as necessary to create a safe and accessible construction
+          area.
+
+      - title: "Excavation, Grading & Drainage"
+        description: >
+          We perform the required excavation and earthwork while establishing
+          the elevations, slopes, drainage patterns, and site conditions required
+          for the proposed construction.
+
+      - title: "Utilities, Compaction & Base Preparation"
+        description: >
+          Utility trenches, drainage systems, fill materials, aggregate bases,
+          and compacted subgrades are installed or prepared according to the
+          requirements of the project.
+
+      - title: "Final Grading & Site Completion"
+        description: >
+          We complete final grading, cleanup, site access, and preparation for
+          the next phase of construction, whether that involves a foundation,
+          driveway, parking lot, landscape, or other finished improvement.
+
+  faq:
+    heading: "Frequently Asked Questions"
+    items:
+      - question: "What excavation services do you provide?"
+        answer: >
+          We provide site clearing, demolition, excavation, grading, foundation
+          excavation, utility trenching, drainage and stormwater management,
+          soil removal, compaction, base preparation, and other site-development
+          services throughout Massachusetts.
+
+      - question: "Do you provide excavation for new home construction?"
+        answer: >
+          Yes. We prepare residential building sites for new construction,
+          including site clearing, foundation excavation, grading, drainage,
+          utility trenching, and related site preparation.
+
+      - question: "Can you prepare a site for a commercial building?"
+        answer: >
+          Yes. Our excavation and site-development services can be used for
+          commercial construction, property improvements, parking areas,
+          drainage systems, utilities, and other commercial site work.
+
+      - question: "Do you provide grading and drainage work?"
+        answer: >
+          Yes. Grading and drainage are important parts of many excavation
+          projects. We establish appropriate elevations and can install or
+          prepare drainage systems designed to manage water across the property.
+
+      - question: "Can you install drainage systems and catch basins?"
+        answer: >
+          Yes. Depending on the project, drainage work may include catch basins,
+          storm drainage piping, grading improvements, infiltration systems, and
+          other stormwater-management components.
+
+      - question: "What is involved in preparing a site for construction?"
+        answer: >
+          Site preparation may include clearing, demolition, excavation, grading,
+          soil removal, fill placement, compaction, drainage, utility trenching,
+          access preparation, and final grading. The exact scope depends on the
+          property's existing conditions and the proposed construction.
+
+      - question: "Do you remove unsuitable soil?"
+        answer: >
+          Yes. When site conditions require it, unsuitable soil or other
+          materials can be excavated and removed before appropriate fill or base
+          materials are placed and compacted.
+
+      - question: "Why is soil compaction important?"
+        answer: >
+          Proper compaction helps create stable support beneath foundations,
+          pavement, patios, and other improvements. Without adequate preparation,
+          unstable soil can settle and contribute to cracking, uneven surfaces,
+          drainage problems, and premature failure.
+
+      - question: "Can excavation improve drainage problems?"
+        answer: >
+          In many cases, yes. Excavation and grading can change drainage patterns
+          and create the elevations needed for water to move away from buildings
+          and other vulnerable areas. Drainage piping, catch basins, and
+          infiltration systems may also be incorporated when appropriate.
+
+      - question: "Do you work with existing utilities?"
+        answer: >
+          Yes. Existing utilities and structures are important considerations
+          during excavation. We coordinate site work carefully around known
+          utilities and incorporate utility requirements into the overall
+          excavation and site-development plan.
+
+      - question: "How long does excavation take?"
+        answer: >
+          Project duration depends on the size and complexity of the site,
+          existing soil and drainage conditions, the amount of material being
+          moved, weather, access, and the scope of the improvements. We establish
+          the expected sequence and schedule as part of project planning.
+
+      - question: "Do you provide residential and commercial excavation?"
+        answer: >
+          Yes. We provide excavation and site-development services for homeowners,
+          builders, commercial property owners, developments, and other projects
+          throughout Massachusetts.
+
+  areasServed:
+    heading: "Excavation & Site Development Throughout Massachusetts"
+    intro: >
+      S. Phaneuf & Associates provides excavation, grading, drainage, utility
+      trenching, site preparation, and related site-development services
+      throughout Massachusetts. We regularly work with homeowners, builders,
+      businesses, and property owners throughout Greater Boston and surrounding
+      communities.
+    locations:
+      - name: Acton
+      - name: Arlington
+      - name: Bedford
+      - name: Belmont
+      - name: Bolton
+      - name: Carlisle
+      - name: Concord
+      - name: Dover
+      - name: Framingham
+      - name: Holliston
+      - name: Lexington
+      - name: Lincoln
+      - name: Littleton
+      - name: Natick
+      - name: Needham
+      - name: Newton
+      - name: Sherborn
+      - name: Stow
+      - name: Sudbury
+      - name: Wayland
+      - name: Wellesley
+      - name: Weston
+      - name: Westford
+
+snow-ice:
+  benefits:
+    heading: "Why Choose Professional Snow & Ice Management?"
+    intro: >
+      Reliable winter property maintenance is essential for keeping parking
+      lots, driveways, sidewalks, entrances, and access roads safe and
+      accessible throughout Massachusetts winters. S. Phaneuf & Associates
+      provides dependable snow and ice management focused primarily on
+      commercial properties, with responsive service based on storm conditions,
+      property needs, and seasonal requirements.
+    items:
+      - title: "Reliable Storm Response"
+        description: >
+          We monitor weather conditions and storm timing so crews can be
+          deployed when your property needs service. Prompt snow and ice
+          management helps reduce disruption and keeps important areas
+          accessible during winter weather.
+
+      - title: "Safer Parking Lots & Walkways"
+        description: >
+          Snow and ice can create serious hazards for pedestrians and vehicles.
+          Professional plowing, snow removal, sanding, salting, and de-icing
+          help maintain safer parking areas, sidewalks, entrances, and access
+          roads.
+
+      - title: "Commercial Property Expertise"
+        description: >
+          Our primary focus is commercial snow and ice management. We work with
+          property owners and managers who need dependable winter service for
+          offices, retail locations, business facilities, parking lots, and
+          other commercial properties.
+
+      - title: "Proactive Ice Control"
+        description: >
+          Effective winter maintenance is about more than removing snow after
+          a storm. Pre-treatment and strategic de-icing help reduce ice
+          buildup and prevent snow and ice from bonding to paved surfaces.
+
+      - title: "Seasonal Service Plans"
+        description: >
+          Structured winter service plans provide commercial properties with
+          clear expectations and dependable response throughout the season.
+          Service can be tailored to the property's size, layout, and winter
+          maintenance requirements.
+  services:
+    heading: "Our Snow & Ice Management Services"
+    intro: >
+      We provide comprehensive snow and ice management services designed to
+      keep commercial properties, parking lots, driveways, sidewalks, and
+      access roads safe, accessible, and functional throughout the winter.
+    items:
+
+      - title: "Snow Plowing"
+        anchor: snow-plowing
+        image:
+          src: "/images/small/snow-plowing.webp"
+          alt: "Commercial snow plowing services for Massachusetts parking lots and access roads."
+        paragraphs:
+          - >
+            Professional snow plowing is essential for keeping parking lots,
+            drive lanes, driveways, and access roads open during Massachusetts
+            winter storms. S. Phaneuf & Associates provides dependable snow
+            plowing services designed to clear accumulated snow efficiently
+            while maintaining access to your property.
+          - >
+            We monitor weather conditions and storm timing to coordinate our
+            response based on property requirements. Timely plowing helps
+            reduce snow accumulation, minimize business disruption, and keep
+            important vehicle and pedestrian areas accessible.
+          - >
+            Our snow plowing services can be incorporated into a broader
+            seasonal snow and ice management plan that includes pre-treatment,
+            sanding, salting, de-icing, snow removal, and snow relocation.
+
+        features:
+          heading: "Snow Plowing Services"
+          items:
+            - Commercial parking lot plowing
+            - Driveway snow plowing
+            - Private road plowing
+            - Drive lane clearing
+            - Access road snow removal
+            - Commercial property snow management
+            - Storm response services
+            - Seasonal snow plowing plans
+            - Snow clearing around entrances
+            - Coordinated winter property maintenance
+
+        benefits:
+          heading: "Benefits of Professional Snow Plowing"
+          items:
+            - Keeps parking lots and access roads open during winter storms.
+            - Helps reduce disruption to customers, employees, and visitors.
+            - Provides faster and more efficient snow clearing.
+            - Reduces dangerous snow accumulation on paved surfaces.
+            - Helps maintain access to commercial properties.
+            - Can be coordinated with ice control and de-icing services.
+            - Provides dependable response throughout the winter season.
+            - Helps commercial properties remain functional during storms.
+
+        closing:
+          - >
+            Effective snow plowing begins with understanding the property's
+            layout, traffic patterns, parking areas, access points, and winter
+            maintenance requirements. Our team plans service around the needs
+            of each property.
+          - >
+            Whether you need storm-by-storm service or a seasonal commercial
+            snow management plan, S. Phaneuf & Associates can help keep your
+            property accessible throughout the Massachusetts winter.
+
+      - title: "Snow Removal & Relocation"
+        anchor: snow-removal
+        image:
+          src: "/images/small/snow-removal.webp"
+          alt: "Snow removal and relocation services for commercial properties in Massachusetts."
+        paragraphs:
+          - >
+            Heavy snow accumulation can quickly reduce available parking,
+            block entrances, narrow drive lanes, and create storage problems
+            throughout a commercial property. When there is not enough room to
+            safely store plowed snow, removal or relocation may be necessary.
+          - >
+            S. Phaneuf & Associates provides snow removal and snow relocation
+            services for properties where accumulated snow needs to be moved
+            away from active parking areas, entrances, sidewalks, and other
+            high-use spaces.
+          - >
+            Effective snow relocation helps preserve functional space
+            throughout the winter while reducing visibility problems and
+            keeping accumulated snow from becoming a continuing obstacle on
+            the property.
+
+        features:
+          heading: "Snow Removal & Relocation Services"
+          items:
+            - Commercial snow removal
+            - Snow relocation
+            - Parking lot snow removal
+            - Snow pile management
+            - Entrance clearing
+            - Drive lane snow removal
+            - Parking capacity management
+            - High-accumulation snow response
+            - Seasonal snow management
+            - Commercial property snow hauling
+
+        benefits:
+          heading: "Benefits of Snow Removal & Relocation"
+          items:
+            - Restores parking capacity after major snow events.
+            - Keeps entrances and access areas clear.
+            - Reduces large snow piles throughout the property.
+            - Improves visibility around parking areas and drive lanes.
+            - Helps maintain usable commercial property space.
+            - Reduces obstacles created by repeated plowing.
+            - Provides a solution when on-site snow storage is limited.
+            - Helps properties remain functional throughout the winter.
+
+        closing:
+          - >
+            Repeated winter storms can quickly fill available snow storage
+            areas. Our snow removal and relocation services help commercial
+            properties manage accumulated snow before it becomes a larger
+            operational or safety concern.
+          - >
+            We can coordinate snow removal and relocation with your broader
+            winter maintenance plan to help maintain safe and usable property
+            throughout the season.
+
+      - title: "Sanding & Salting"
+        anchor: sanding-salting
+        image:
+          src: "/images/small/sanding-salting.webp"
+          alt: "Commercial sanding and salting services for Massachusetts properties."
+        paragraphs:
+          - >
+            Snow removal alone does not eliminate the risk of slippery winter
+            surfaces. S. Phaneuf & Associates provides sanding and salting
+            services to improve traction and help manage ice on parking lots,
+            driveways, sidewalks, entrances, and other high-traffic areas.
+          - >
+            De-icing materials are applied strategically based on property
+            conditions and winter weather. Proper ice control helps reduce slip
+            hazards for pedestrians while improving vehicle access throughout
+            the property.
+          - >
+            Sanding and salting can be incorporated into a seasonal snow and
+            ice management plan so winter maintenance continues before, during,
+            and after significant weather events.
+
+        features:
+          heading: "Sanding & Salting Services"
+          items:
+            - Parking lot sanding
+            - Commercial salting
+            - Sidewalk ice control
+            - Driveway treatment
+            - Entrance treatment
+            - Traction improvement
+            - Post-storm ice control
+            - Strategic de-icing applications
+            - Commercial winter maintenance
+            - Seasonal ice management
+
+        benefits:
+          heading: "Benefits of Sanding & Salting"
+          items:
+            - Improves traction on slippery winter surfaces.
+            - Helps reduce pedestrian slip hazards.
+            - Supports safer vehicle movement through parking areas.
+            - Helps control ice after snow removal.
+            - Provides treatment for high-traffic areas.
+            - Can be coordinated with snow plowing services.
+            - Helps maintain safer entrances and sidewalks.
+            - Provides ongoing winter surface management.
+
+        closing:
+          - >
+            Ice can develop quickly after snow has been removed, particularly
+            when temperatures fluctuate. Strategic sanding and salting provide
+            an important additional layer of winter property management.
+          - >
+            Our team can incorporate traction and ice-control treatments into
+            a comprehensive commercial snow and ice management program.
+
+      - title: "Snow Blowing & Shoveling"
+        anchor: snow-blowing-shoveling
+        image:
+          src: "/images/small/snow-blowing.webp"
+          alt: "Snow blowing and shoveling services for commercial sidewalks and walkways in Massachusetts."
+        paragraphs:
+          - >
+            Not every area of a property can be efficiently cleared with a
+            plow. Sidewalks, walkways, entrances, stairs, and other confined
+            spaces often require detailed snow blowing and shoveling to keep
+            pedestrian routes accessible.
+          - >
+            S. Phaneuf & Associates provides snow blowing and shoveling for
+            smaller and high-traffic areas where careful snow clearing is
+            required. These services complement larger-scale parking lot and
+            driveway plowing.
+          - >
+            Keeping pedestrian areas clear is an important part of a complete
+            commercial winter maintenance plan. Snow removal can be coordinated
+            with sanding, salting, pre-treatment, and de-icing to help maintain
+            safer walkways and entrances.
+
+        features:
+          heading: "Snow Blowing & Shoveling Services"
+          items:
+            - Commercial sidewalk clearing
+            - Walkway snow removal
+            - Entrance clearing
+            - Stairway snow removal
+            - Snow blowing
+            - Hand shoveling
+            - Pedestrian route clearing
+            - High-traffic area service
+            - Detailed snow clearing
+            - Complementary ice control
+
+        benefits:
+          heading: "Benefits of Snow Blowing & Shoveling"
+          items:
+            - Keeps sidewalks and pedestrian routes accessible.
+            - Clears areas that are difficult to reach with larger equipment.
+            - Helps maintain safer commercial entrances.
+            - Provides detailed snow clearing around buildings.
+            - Reduces snow accumulation in high-traffic areas.
+            - Complements parking lot and driveway plowing.
+            - Supports a complete winter property maintenance plan.
+            - Helps improve accessibility after winter storms.
+
+        closing:
+          - >
+            Sidewalks and entrances are often among the first areas customers
+            and employees encounter when arriving at a property. Keeping these
+            areas clear is an important part of maintaining a safe and
+            accessible commercial property.
+          - >
+            Our snow blowing and shoveling services provide the detailed
+            clearing necessary to complement larger-scale snow removal
+            operations.
+
+      - title: "Pre-Treating"
+        anchor: pre-treating
+        image:
+          src: "/images/small/snow-pre-treatment.webp"
+          alt: "Pre-treatment services for snow and ice management on Massachusetts commercial properties."
+        paragraphs:
+          - >
+            Effective winter management can begin before snow and ice reach the
+            ground. Pre-treatment services help prevent snow and ice from
+            bonding tightly to paved surfaces, making subsequent removal more
+            effective.
+          - >
+            S. Phaneuf & Associates applies winter treatment solutions before
+            qualifying snow and ice events to help reduce accumulation and
+            improve the efficiency of subsequent snow removal operations.
+          - >
+            Pre-treatment is particularly useful as part of a proactive
+            commercial snow management plan. When combined with timely plowing,
+            snow removal, and post-storm de-icing, it helps provide a more
+            comprehensive approach to winter property maintenance.
+
+        features:
+          heading: "Pre-Treatment Services"
+          items:
+            - Pre-storm surface treatment
+            - Snow and ice bonding prevention
+            - Commercial property pre-treatment
+            - Parking lot treatment
+            - Driveway treatment
+            - Walkway treatment
+            - Entrance treatment
+            - Proactive ice control
+            - Storm preparation
+            - Seasonal winter management
+
+        benefits:
+          heading: "Benefits of Pre-Treating"
+          items:
+            - Helps prevent snow and ice from bonding to paved surfaces.
+            - Makes subsequent snow removal more efficient.
+            - Provides proactive winter surface management.
+            - Helps reduce stubborn ice accumulation.
+            - Supports faster post-storm cleanup.
+            - Can improve the effectiveness of plowing operations.
+            - Helps prepare properties before winter weather arrives.
+            - Complements broader commercial snow management plans.
+
+        closing:
+          - >
+            Preparing a property before a storm can make a significant
+            difference in how easily snow and ice can be managed afterward.
+            Pre-treatment gives commercial properties a proactive approach to
+            winter weather.
+          - >
+            Our team can coordinate pre-treatment with storm monitoring and
+            scheduled snow and ice services based on the property's specific
+            needs.
+
+      - title: "De-Icing — Bulk & Liquid Salt"
+        anchor: de-icing
+        image:
+          src: "/images/small/de-icing.webp"
+          alt: "Bulk and liquid salt de-icing services for commercial properties in Massachusetts."
+        paragraphs:
+          - >
+            Ice presents serious safety risks for pedestrians and vehicles,
+            particularly around parking lots, sidewalks, entrances, and other
+            high-traffic areas. S. Phaneuf & Associates provides de-icing
+            services using bulk and liquid salt applications to help manage
+            dangerous ice buildup.
+          - >
+            De-icing treatments help break down existing ice and reduce the
+            potential for additional freezing on treated surfaces. Applications
+            are planned around weather conditions and property requirements.
+          - >
+            De-icing can be provided as part of a complete snow and ice
+            management program that includes pre-treatment, snow plowing,
+            snow removal, sanding, salting, and post-storm response.
+
+        features:
+          heading: "De-Icing Services"
+          items:
+            - Bulk salt application
+            - Liquid salt application
+            - Commercial ice control
+            - Parking lot de-icing
+            - Sidewalk de-icing
+            - Entrance de-icing
+            - Drive lane treatment
+            - Post-storm ice treatment
+            - Proactive ice management
+            - Seasonal de-icing programs
+
+        benefits:
+          heading: "Benefits of Professional De-Icing"
+          items:
+            - Helps reduce dangerous ice buildup.
+            - Improves traction on treated surfaces.
+            - Helps reduce pedestrian slip hazards.
+            - Supports safer vehicle access.
+            - Treats high-traffic areas after winter storms.
+            - Can be coordinated with snow removal.
+            - Provides both bulk and liquid treatment options.
+            - Supports ongoing commercial winter safety.
+
+        closing:
+          - >
+            Ice control is an important component of responsible winter
+            property management. Strategic de-icing helps address conditions
+            that remain after snow has been removed and can reduce the risk
+            associated with slippery surfaces.
+          - >
+            We provide bulk and liquid salt de-icing as part of comprehensive
+            snow and ice management programs tailored to commercial property
+            requirements.
+  process:
+    heading: "Our Snow & Ice Management Process"
+    intro: >
+      Effective winter property maintenance requires preparation, monitoring,
+      timely response, and coordinated snow and ice control. Our process is
+      designed around storm conditions and the specific requirements of each
+      commercial property.
+    steps:
+      - title: "Property Assessment & Planning"
+        description: >
+          We evaluate the property's parking areas, drive lanes, sidewalks,
+          entrances, access roads, snow storage areas, and other important
+          service locations to develop an appropriate winter maintenance plan.
+
+      - title: "Weather & Storm Monitoring"
+        description: >
+          We monitor winter weather conditions and storm timing so our crews
+          can prepare and respond based on the expected conditions and the
+          property's service requirements.
+
+      - title: "Pre-Treatment"
+        description: >
+          When appropriate, we apply pre-treatment to help prevent snow and ice
+          from bonding to paved surfaces and improve the efficiency of
+          subsequent snow removal.
+
+      - title: "Snow Plowing & Clearing"
+        description: >
+          During and after snow events, we clear parking lots, drive lanes,
+          access roads, sidewalks, entrances, and other designated areas using
+          the appropriate snow removal methods.
+
+      - title: "Ice Control & De-Icing"
+        description: >
+          We apply sanding, salting, bulk salt, or liquid salt treatments as
+          needed to improve traction and help manage ice on high-traffic
+          surfaces.
+
+      - title: "Snow Relocation & Follow-Up"
+        description: >
+          When accumulation reduces available space, we relocate or remove
+          snow as needed and address remaining problem areas to help keep the
+          property functional throughout the winter.
+  faq:
+    heading: "Frequently Asked Questions"
+    items:
+      - question: "What type of snow and ice management do you provide?"
+        answer: >
+          We provide commercial snow and ice management services including
+          snow plowing, snow removal, snow relocation, sanding and salting,
+          snow blowing and shoveling, pre-treatment, and bulk and liquid salt
+          de-icing.
+
+      - question: "Do you primarily provide commercial snow management?"
+        answer: >
+          Yes. Our primary focus is commercial snow and ice management and
+          property contracts. We work with commercial properties that require
+          dependable winter service throughout the season.
+
+      - question: "How do you respond to winter storms?"
+        answer: >
+          We monitor weather events and storm timing and deploy crews based on
+          the expected conditions and the specific needs of each property.
+
+      - question: "Do you offer seasonal snow and ice management plans?"
+        answer: >
+          Yes. We provide seasonal service plans tailored to commercial
+          properties and their individual winter maintenance requirements.
+
+      - question: "What types of commercial properties do you service?"
+        answer: >
+          We service commercial properties including offices, retail
+          locations, business facilities, parking areas, access roads, and
+          other properties requiring dependable winter maintenance.
+
+      - question: "Do you provide de-icing services?"
+        answer: >
+          Yes. We provide de-icing services using bulk and liquid salt
+          applications to help reduce ice buildup, improve traction, and
+          maintain safer parking areas, walkways, entrances, and other
+          high-traffic surfaces.
+
+      - question: "Do you provide snow removal in addition to snow plowing?"
+        answer: >
+          Yes. Snow plowing clears accumulated snow from designated areas,
+          while snow removal and relocation are used when snow needs to be
+          moved away from active parking areas, entrances, or other parts of
+          the property.
+
+      - question: "What is pre-treating?"
+        answer: >
+          Pre-treatment involves applying a winter treatment before a snow or
+          ice event to help prevent snow and ice from bonding tightly to
+          paved surfaces. This can make subsequent snow removal more
+          efficient.
+
+      - question: "Do you clear sidewalks and walkways?"
+        answer: >
+          Yes. Snow blowing and shoveling services are available for sidewalks,
+          walkways, entrances, stairs, and other areas requiring detailed snow
+          clearing.
+
+      - question: "Why is ice management important after snow is removed?"
+        answer: >
+          Snow removal does not necessarily eliminate slippery conditions.
+          Melting and refreezing can create ice on parking lots, sidewalks,
+          entrances, and drive lanes. Sanding, salting, and de-icing help
+          address these conditions and improve traction.
+
+      - question: "Can snow relocation help maintain parking capacity?"
+        answer: >
+          Yes. Heavy snow accumulation can reduce available parking space.
+          Snow relocation and removal help move accumulated snow away from
+          active areas so more of the property remains functional.
+
+      - question: "Can snow and ice services be combined into one plan?"
+        answer: >
+          Yes. Snow plowing, snow removal, pre-treatment, sanding, salting,
+          snow blowing, shoveling, and de-icing can be coordinated as part of
+          a comprehensive seasonal snow and ice management plan.
+  areasServed:
+    heading: "Snow & Ice Management Throughout Massachusetts"
+    intro: >
+      S. Phaneuf & Associates provides dependable snow and ice management for
+      commercial properties throughout Massachusetts. Our winter services
+      help businesses maintain accessible parking lots, driveways, sidewalks,
+      entrances, and access roads during snow and ice events.
+    locations:
+      - name: Acton
+      - name: Arlington
+      - name: Bedford
+      - name: Belmont
+      - name: Bolton
+      - name: Carlisle
+      - name: Concord
+      - name: Dover
+      - name: Framingham
+      - name: Holliston
+      - name: Lexington
+      - name: Lincoln
+      - name: Littleton
+      - name: Natick
+      - name: Needham
+      - name: Newton
+      - name: Sherborn
+      - name: Stow
+      - name: Sudbury
+      - name: Wayland
+      - name: Wellesley
+      - name: Weston
+      - name: Westford
+
+
+
+
+
+excavationold:
   services:
     heading: "Our Excavation & Site Development Services"
     intro: >
@@ -1135,6 +2268,7 @@ excavation:
       - question: "Can you fix existing drainage and pooling water issues?"
         answer: >
           Absolutely. We regularly fix muddy lawns and wet basements by re-grading slopes, installing foundation curtain drains, and building custom catch basins to guide rainwater away from your home.
+
 
 snow:
   benefits:
