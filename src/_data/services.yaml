@@ -1612,7 +1612,7 @@ snow-ice:
       - title: "Snow Plowing"
         anchor: snow-plowing
         image:
-          src: "/images/small/snow-plowing.webp"
+          src: "/images/snow-removal.webp"
           alt: "Commercial snow plowing services for Massachusetts parking lots and access roads."
         paragraphs:
           - >
@@ -1671,7 +1671,7 @@ snow-ice:
       - title: "Snow Removal & Relocation"
         anchor: snow-removal
         image:
-          src: "/images/small/snow-removal.webp"
+          src: "/images/snow-removal.webp"
           alt: "Snow removal and relocation services for commercial properties in Massachusetts."
         paragraphs:
           - >
@@ -1730,7 +1730,7 @@ snow-ice:
       - title: "Sanding & Salting"
         anchor: sanding-salting
         image:
-          src: "/images/small/sanding-salting.webp"
+          src: "/images/snow-removal.webp"
           alt: "Commercial sanding and salting services for Massachusetts properties."
         paragraphs:
           - >
@@ -1786,7 +1786,7 @@ snow-ice:
       - title: "Snow Blowing & Shoveling"
         anchor: snow-blowing-shoveling
         image:
-          src: "/images/small/snow-blowing.webp"
+          src: "/images/snow-removal.webp"
           alt: "Snow blowing and shoveling services for commercial sidewalks and walkways in Massachusetts."
         paragraphs:
           - >
@@ -1845,7 +1845,7 @@ snow-ice:
       - title: "Pre-Treating"
         anchor: pre-treating
         image:
-          src: "/images/small/snow-pre-treatment.webp"
+          src: "/images/snow-removal.webp"
           alt: "Pre-treatment services for snow and ice management on Massachusetts commercial properties."
         paragraphs:
           - >
@@ -1903,7 +1903,7 @@ snow-ice:
       - title: "De-Icing — Bulk & Liquid Salt"
         anchor: de-icing
         image:
-          src: "/images/small/de-icing.webp"
+          src: "/images/snow-removal.webp"
           alt: "Bulk and liquid salt de-icing services for commercial properties in Massachusetts."
         paragraphs:
           - >

@@ -19,6 +19,11 @@ asphalt-paving:
     location: "Ayer, MA"
     caption: "Infrared asphalt heating and thermal patching for seamless road repairs."
 
+snow-ice-management:
+  - src: "/images/snow-removal.webp"
+    alt: "Asphalt rollers compacting a newly paved residential cul-de-sac with paver aprons in Lexington, MA"
+    location: "Lexington, MA"
+    caption: "Full asphalt roadway and cul-de-sac paving with integrated paver apron borders."
 
 
 default:
