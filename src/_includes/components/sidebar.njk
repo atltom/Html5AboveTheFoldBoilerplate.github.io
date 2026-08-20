@@ -67,7 +67,9 @@
         {% endfor %}
     </ul>
     {% endif %} #}
-
+ {% if sidebarShowImages == "false" %}
+    
+  {% else %}
     {% set imgData = sidebarImages.sidebarImages if sidebarImages.sidebarImages else sidebarImages %}    
     {% set activeKey = sidebarKey or page.fileSlug %}    
     {% if imgData and imgData[activeKey] and (imgData[activeKey] | length > 0) %}    
@@ -97,6 +99,7 @@
     {% else %}
         <!-- Debug: Could not resolve array for activeKey: "{{ activeKey }}" -->
     {% endif %}
+ {% endif %}
 
 
 </div>

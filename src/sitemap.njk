@@ -6,7 +6,7 @@ canonical: "/sitemap"
 changefreq: yearly
 priority: 0.2
 
-title: "Sitemap - S.Phaneuf & Associates"
+title: "Site Map | S.Phaneuf & Associates"
 description: "Explore our website's structure and find all the pages you're looking for."
 
 # Use ONLY when hiding a page from the sitemap or collections
@@ -27,9 +27,9 @@ eleventyExcludeFromCollections: true
                         and not item.url.endsWith('.css') 
                         and not item.url.endsWith('.js') %}
                         <li>
-                            <a href="{{ item.url }}">
-                                {{ item.data.sitemapTitle or item.data.navTitle or item.data.title or item.url }}
-                            </a>
+                            {% set rawUrl = item.url | replace(".html", "") %}
+                            {% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %} 
+                            <a href="{{ cleanUrl }}">{{ item.data.sitemapTitle or item.data.navTitle or item.data.title or item.url }}</a>
                         </li>
                     {%- endif %}
                 {%- endfor %}
