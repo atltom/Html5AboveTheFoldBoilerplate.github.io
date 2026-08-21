@@ -14,24 +14,65 @@ eleventyExcludeFromCollections: true
 ---
 <div class="container my-5 py-4">
     <article class="mt-5">
-        <section class="pb-2 mb-2" style="border-bottom: 1px solid #ccc;">
-            <h1>Sitemap for S. Phaneuf Associates Website</h1>
-            {# <p class="fs-xs">Last Updated: October 30, 2025</p> #}
+        <section class="pb-3 mb-4 border-bottom"  style="border-bottom: 1px solid #ccc;">
+            <h1 class="mb-1">Sitemap for S. Phaneuf & Associates Website</h1>
         </section>
-        <section>
-            <h2 class="fs-lg">Website Structure</h2>
+        <section class="mb-2">
+            <p>Explore S. Phaneuf & Associates services, service areas, and company information. Find detailed information about our asphalt paving, masonry and hardscape construction, excavation and site development, and snow and ice management services. Browse our service area pages to learn more about the work we provide in communities throughout Middlesex and Worcester Counties.</p>
+        </section>
+        <section class="mb-3">
+            <h2 class="pipe fs-lg mb-3">Website Pages</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                {%- for item in collections.all | sort(attribute="data.order") %}
+                    {%- if item.data.sitemapCategory == "main" and not item.data.eleventyExcludeFromCollections %}
+                        <li><a href="{{ item.url }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
+                    {%- endif %}
+                {%- endfor %}
+            </ul>
+        </section>
+        <section class="mb-3">
+            <h2 class="pipe fs-lg mb-3">Our Services</h2>
+            {# <p>At S. Phaneuf & Associates, we take pride in offering a full range of outdoor construction and design services. Our sitemap provides direct links to each service category so you can learn more about what we do:</p> #}
             <ul>
                 {%- for item in collections.all | sort(attribute="data.order") %}
-                    {%- if item.url 
-                        and not item.data.eleventyExcludeFromCollections 
-                        and not item.url.endsWith('.css') 
-                        and not item.url.endsWith('.js') %}
+                    {%- if item.data.sitemapCategory == "services" and not item.data.eleventyExcludeFromCollections %}
+                        <li><a href="{{ item.url }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
+                    {%- endif %}
+                {%- endfor %}
+            </ul>
+            {# <p>These pages describe our complete process, from initial consultation and design planning to final installation and cleanup. We use only top-quality materials and proven techniques to ensure every project stands the test of time. Whether you’re interested in a new patio, driveway, retaining wall, or foundation work, you’ll find all relevant details through the sitemap links above.</p> #}
+        </section>
+        
+        <section class="mb-3">
+            <h2 class="pipe fs-lg mb-3">Service Area Pages</h2>
+            <ul>
+                {# 1. Loop over the main County Hub pages (e.g., Middlesex County, Worcester County) #}
+                {%- for county in collections.all | sort(attribute="data.order") %}
+                    {%- if county.data.sitemapCategory == "county" and not county.data.eleventyExcludeFromCollections %}
                         <li>
-                            {% set rawUrl = item.url | replace(".html", "") %}
-                            {% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %} 
-                            {# {{item.data.order}} #}
-                            <a href="{{ cleanUrl }}">{{ item.data.sitemapTitle or item.data.navTitle or item.data.title or item.url }}</a>
+                            {# County Parent Link #}
+                            <a href="{{ county.url }}" class="fw-bold">{{- county.data.sitemapTitle or county.data.title or county.url -}}</a>
+                            
+                            {# 2. Nest the Towns matching this specific county key #}
+                            <ul>
+                                {%- for town in collections.all | sort(attribute="data.sitemapTitle") %}
+                                    {%- if town.data.sitemapCategory == "town" and town.data.county == county.data.countyKey and not town.data.eleventyExcludeFromCollections %}
+                                        <li><a href="{{ town.url }}">{{- town.data.sitemapTitle or town.data.title or town.url -}}</a></li>
+                                    {%- endif %}
+                                {%- endfor %}
+                            </ul>
                         </li>
+                    {%- endif %}
+                {%- endfor %}
+            </ul>
+        </section>
+        <section class="mb-3">
+            <h2 class="pipe fs-lg mb-3">Company & Legal</h2>
+            <ul>
+                {%- for item in collections.all | sort(attribute="data.order") %}
+                    {%- if item.data.sitemapCategory == "legal" and not item.data.eleventyExcludeFromCollections %}
+                        <li><a href="{{ item.url }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
                     {%- endif %}
                 {%- endfor %}
             </ul>
@@ -39,81 +80,3 @@ eleventyExcludeFromCollections: true
     </article>
 </div> 
 
-
-
-{# 
-<div class="container my-5 py-4">
-    <article class="mt-5">
-        <section class="pb-3 mb-4 border-bottom"  style="border-bottom: 1px solid #ccc;">
-            <h1 class="mb-1">Sitemap for S. Phaneuf & Associates Website</h1>
-        </section>
-        <section class="mb-5">
-            <p>The <strong>S. Phaneuf & Associates sitemap</strong> serves as a complete navigation guide for homeowners, property managers, and business owners looking for reliable outdoor construction services. Each link below connects to a dedicated page that highlights our expertise, showcases recent projects, and outlines the quality standards that define our work. Whether you need <a href="/asphalt-paving" class="fw-6">asphalt paving</a> for driveways, <a href="/masonry-hardscapes" class="fw-6">hardscape installation</a> for patios or retaining walls, or <a href="/excavation-site-development" class="fw-6">site development</a> for new construction, you'll find direct access to every service we provide.</p>
-            <p>Our sitemap also includes links to detailed <a href="/service-areas" class="fw-6">service area pages</a> such as <a href="/middlesex-county/hardscape-contractor-concord-ma" class="fw-6">Hardscape Contractor in Concord, MA</a> and other Massachusetts towns. This helps customers in Concord, Weston, Sudbury, and neighboring communities easily find information about our <strong>hardscaping</strong>, <strong>paving</strong>, and <strong>excavation</strong> work in their area.</p>
-        </section>
-        <section class="mb-5">
-            <h2 class="pipe fs-lg mb-3">Website Pages</h2>
-            <ul>
-                <li><a href="/">Home</a></li>
-                {%- for item in collections.all | sort(attribute="data.order") %}
-                    {%- if item.data.sitemapCategory == "main" and not item.data.eleventyExcludeFromCollections %}
-                        <li>
-                            <a href="{{ item.url }}">
-                                {{- item.data.sitemapTitle or item.data.title or item.url -}}
-                            </a>
-                        </li>
-                    {%- endif %}
-                {%- endfor %}
-            </ul>
-        </section>
-        <section class="mb-5">
-            <h2 class="pipe fs-lg mb-3">Our Services</h2>
-            <p>At S. Phaneuf & Associates, we take pride in offering a full range of outdoor construction and design services. Our sitemap provides direct links to each service category so you can learn more about what we do:</p>
-            <ul>
-                {%- for item in collections.all | sort(attribute="data.order") %}
-                    {%- if item.data.sitemapCategory == "services" and not item.data.eleventyExcludeFromCollections %}
-                        <li>
-                            <a href="{{ item.url }}">
-                                {{- item.data.sitemapTitle or item.data.title or item.url -}}
-                            </a>
-                        </li>
-                    {%- endif %}
-                {%- endfor %}
-            </ul>
-             <p>These pages describe our complete process, from initial consultation and design planning to final installation and cleanup. We use only top-quality materials and proven techniques to ensure every project stands the test of time. Whether you’re interested in a new patio, driveway, retaining wall, or foundation work, you’ll find all relevant details through the sitemap links above.</p>
-        </section>
-        <section class="mb-5">
-            <h2 class="pipe fs-lg mb-3">Service Area Pages</h2>
-            <p>We proudly serve homeowners and businesses across Middlesex and Worcester Counties. Each of our localized pages is tailored to highlight the unique needs and styles of Massachusetts towns we serve. Browse the links below to find your area and discover our professional <strong>hardscaping</strong>, <strong>asphalt paving</strong>, and <strong>excavation</strong> services near you.</p>
-            <ul>
-                {%- for item in collections.all | sort(attribute="data.sitemapTitle") %}
-                    {%- if item.data.sitemapCategory == "local" and not item.data.eleventyExcludeFromCollections %}
-                        <li>
-                            <a href="{{ item.url }}">
-                                {{- item.data.sitemapTitle or item.data.title or item.url -}}
-                            </a>
-                        </li>
-                    {%- endif %}
-                {%- endfor %}
-            </ul>
-             <ul>
-                  <li><a href="/middlesex-county/hardscape-contractor-acton-ma">Hardscape Contractor in Acton, MA</a></li>
-                  <li><a href="/worcester-county/hardscape-contractor-bolton-ma">Hardscape Contractor in Bolton, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-carlisle-ma">Hardscape Contractor in Carlisle, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-concord-ma">Hardscape Contractor in Concord, MA</a></li>
-                  <li><a href="/middlesex-county/patio-contractor-concord-ma">Patio Contractor in Concord, MA</a></li>
-                  <li><a href="/middlesex-county/outdoor-fire-pits-concord-ma">Outdoor Fire Pits in Concord, MA</a></li>
-                  <li><a href="/middlesex-county/paver-walkways-concord-ma">Paver Walkways in Concord, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-lexington-ma">Hardscape Contractor in Lexington, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-littleton-ma">Hardscape Contractor in Littleton, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-stow-ma">Hardscape Contractor in Stow, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-sudbury-ma">Hardscape Contractor in Sudbury, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-wayland-ma">Hardscape Contractor in Wayland, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-westford-ma">Hardscape Contractor in Westford, MA</a></li>
-                  <li><a href="/middlesex-county/hardscape-contractor-weston-ma">Hardscape Contractor in Weston, MA</a></li>
-                </ul>
-            <p>Each service area page outlines the specific <a href="/masonry-hardscapes" class="fw-6">masonry and hardscape services</a> we offer locally. You can also explore completed projects and testimonials from nearby clients to see why <strong>S. Phaneuf & Associates</strong> remains a trusted name in outdoor construction throughout Massachusetts.</p>
-        </section>
-
-    </article>
-</div> #}
