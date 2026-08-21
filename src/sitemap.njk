@@ -29,6 +29,7 @@ eleventyExcludeFromCollections: true
                         <li>
                             {% set rawUrl = item.url | replace(".html", "") %}
                             {% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %} 
+                            {# {{item.data.order}} #}
                             <a href="{{ cleanUrl }}">{{ item.data.sitemapTitle or item.data.navTitle or item.data.title or item.url }}</a>
                         </li>
                     {%- endif %}
