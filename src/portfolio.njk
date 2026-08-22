@@ -9,41 +9,31 @@ order: 994
 changefreq: monthly
 priority: 0.7
 
-title: 'Paving, Masonry & Hardscape Gallery | S.Phaneuf & Associates'
+title: 'Paving, Masonry & Hardscape Gallery | S. Phaneuf & Associates'
 description: 'Explore completed masonry, hardscaping, asphalt paving, excavation, and snow management projects by S. Phaneuf & Associates. Serving homeowners and businesses throughout Massachusetts since 1989.'
 
 #extraCss
 extraSchema: |
   {
     "@type": "CollectionPage",
-    "@id": "https://sphaneufassociates.com/portfolio#webpage",
+    "@id": "https://sphaneufassociates.com/portfolio#collection",
     "url": "https://sphaneufassociates.com/portfolio",
     "name": "Construction Projects Portfolio | S. Phaneuf & Associates",
-    "description": "View completed construction projects throughout Massachusetts including custom patios, retaining walls, asphalt paving, excavation, site development, and commercial snow management services.",
-    "image": "https://sphaneufassociates.com/images/small/our-services.webp",
+    "description": "View completed construction projects throughout Massachusetts...",
+    "mainEntityOfPage": {
+      "@id": "https://sphaneufassociates.com/portfolio#webpage"
+    },
     "isPartOf": {
-      "@id": "https://sphaneufassociates.com/#organization"
+      "@id": "https://sphaneufassociates.com/#website"
     },
     "about": [
-      {
-        "@type": "Service",
-        "name": "Masonry & Hardscapes"
-      },
-      {
-        "@type": "Service",
-        "name": "Asphalt Paving"
-      },
-      {
-        "@type": "Service",
-        "name": "Excavation & Site Development"
-      },
-      {
-        "@type": "Service",
-        "name": "Snow & Ice Management"
-      }
+      { "@type": "Service", "name": "Masonry & Hardscapes" },
+      { "@type": "Service", "name": "Asphalt Paving" },
+      { "@type": "Service", "name": "Excavation & Site Development" },
+      { "@type": "Service", "name": "Snow & Ice Management" }
     ]
   }
-
+  
 # NAVIGATION
 section: portfolio
 

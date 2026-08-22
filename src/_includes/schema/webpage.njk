@@ -1,0 +1,60 @@
+{
+  "@type": "{{ schemaType | default('WebPage') }}",
+  "@id": "{{ site.url }}{{ canonical | default(page.url) }}#webpage",
+  "url": "{{ site.url }}{{ canonical | default(page.url) }}",
+  "name": "{{ title | safe }}",
+  "description": "{{ description | safe }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ site.url }}/#website",
+    "name": "S. Phaneuf & Associates",
+    "url": "{{ site.url }}/"
+  },
+  "publisher": {
+    "@id": "{{ site.url }}/#organization"
+  },
+  "mainEntity": {
+    "@id": "{{ site.url }}/#organization"
+  }
+}
+
+
+{# 
+
+{
+  "@type": "{{ schemaType or 'WebPage' }}",
+  "@id": "{{ canonicalUrl }}#webpage",
+  "url": "{{ canonicalUrl }}",
+  "name": "{{ pageTitle or title | replace(' | S. Phaneuf & Associates', '') | replace(' | S. Phaneuf', '') | safe }}",
+  "description": "{{ description | safe or site.defaultDescription | safe }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://sphaneufassociates.com/#website",
+    "name": "S. Phaneuf & Associates",
+    "url": "https://sphaneufassociates.com/"
+  },
+  "publisher": {
+    "@id": "https://sphaneufassociates.com/#organization"
+  }
+} #}
+
+{# 
+
+{
+  "@type": "WebPage",
+  "@id": "{{ canonicalUrl }}#webpage",
+  "url": "{{ canonicalUrl }}",
+  "name": "{{ pageTitle or title | replace(' | S. Phaneuf & Associates', '') | safe }}",
+  "description": "{{ description | safe or site.defaultDescription | safe }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://sphaneufassociates.com/#website",
+    "name": "S. Phaneuf & Associates",
+    "url": "https://sphaneufassociates.com/"
+  },
+  "publisher": {
+    "@id": "https://sphaneufassociates.com/#organization"
+  }
+}
+
+ #}

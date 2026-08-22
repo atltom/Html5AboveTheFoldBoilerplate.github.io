@@ -19,15 +19,18 @@
   <meta property="og:site_name" content="S. Phaneuf & Associates">
   <meta property="og:title" content="{{ title | safe or site.name | safe}}">
   <meta property="og:description" content="{{ description | safe or site.defaultDescription | safe }}">
-  {# <meta property="og:description" content="Ready to start your residential or commercial project? Reach out to S. Phaneuf & Associates for fast estimates across Massachusetts & Southern NH."> #}
+  {# <meta property="og:description" content="Ready to start your residential or commercial project? Reach out to S. Phaneuf & Associates for fast estimates across Massachusetts."> #}
   <meta property="og:type" content="website"> 
   <meta property="og:url" content="{{ canonicalUrl }}">
   <meta property="og:image" content="{{ site.url }}/images/{{ ogImage or site.defaultOgImage }}">
   
-  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="">
+  {# <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin=""> #}
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-  <link rel="preload" href="/css/templatestyles.css" as="style" media="all">
-  <!--link rel="preload" fetchpriority="high" as="image" href="/images/S-Phaneuf-Associates.webp" type="image/webp"-->{% if heroImageMobile %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageMobile }}" type="image/webp" media="(max-width: 1023px)">{% endif %}{% if heroImageDesktop %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageDesktop }}" type="image/webp" media="(min-width: 1024px)">{% endif %}
+  {# <link rel="preload" href="/css/templatestyles.css" as="style" media="all"> #}
+  <!--link rel="preload" fetchpriority="high" as="image" href="/images/S-Phaneuf-Associates.webp" type="image/webp"-->
+  
+  {% if heroImageMobile %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageMobile }}" type="image/webp" media="(max-width: 1023px)">{% endif %}
+  {% if heroImageDesktop %}<link rel="preload" fetchpriority="high" as="image" href="/images/{{ heroImageDesktop }}" type="image/webp" media="(min-width: 1024px)">{% endif %}
   
   <link rel="stylesheet" href="/css/templatestyles.css">{{ extraCss | safe }}
   
@@ -39,10 +42,24 @@
   <meta name="msapplication-TileImage" content="/images/apple-touch-icon.png">
   <meta name="seobility" content="69ae98e4ec0c1d0ab86a1032c9767d87">
   {# <script src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF" async=""></script> #}
+
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% include "schema/webpage.njk" %},
+    {% include "schema/business.njk" %}
+    {%- if page.url != '/' %},{% include "schema/breadcrumbs.njk" %}{% endif %}
+    {%- if extraSchema %},{{ extraSchema | safe }}{% endif %}
+  ]
+  }</script>
+
+{#   
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [{% include "schema/business.njk" %}{% if page.url != '/' %},{% include "schema/breadcrumbs.njk" %}{% endif %}{% if extraSchema %},{{ extraSchema | safe }}{% endif %}]
   }</script>
+ #}
+
 </head>
 <body class="{{ bodyClass }}">
   <a class="skip-link" href="#main-content">Skip to content</a>

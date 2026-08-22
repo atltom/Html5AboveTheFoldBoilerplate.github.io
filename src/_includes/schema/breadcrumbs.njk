@@ -1,4 +1,53 @@
- {% set baseURL = "https://sphaneufassociates.com" %}{% set currentPath = canonical or page.url %}{# Strip .html extension and/or trailing slashes #}{% set cleanPath = currentPath | replace(r/(\.html|\/)$/, "") %}{
+{
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sphaneufassociates.com/"
+    }{% if breadcrumbs %}{% for crumb in breadcrumbs %},
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index + 1 }},
+      "name": "{{ crumb.title | safe }}",
+      "item": "{% if crumb.url.startsWith('http') %}{{ crumb.url }}{% else %}https://sphaneufassociates.com{{ crumb.url }}{% endif %}"
+    }{% endfor %}{% endif %},
+    {
+      "@type": "ListItem",
+      "position": {% if breadcrumbs %}{{ breadcrumbs.length + 2 }}{% else %}2{% endif %},
+      "name": "{{ (breadcrumbTitle or pageTitle or title) | safe | replace(' | S. Phaneuf & Associates', '') | replace(' | S. Phaneuf', '') }}",
+      "item": "{{ canonicalUrl }}"
+    }
+  ]
+}
+
+
+
+{# {
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sphaneufassociates.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ (breadcrumbTitle or pageTitle or title) | safe | replace(' | S. Phaneuf & Associates', '') | replace(' | S. Phaneuf', '') }}",
+      "item": "{{ canonicalUrl }}"
+    }
+  ]
+} 
+ 
+  #}
+{#  
+ {% set baseURL = "https://sphaneufassociates.com" %}
+ {% set currentPath = canonical or page.url %}
+ {% set cleanPath = currentPath | replace(r/(\.html|\/)$/, "") %}
+ {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {
@@ -18,4 +67,4 @@
       "item": "{{ baseURL }}{{ cleanPath }}"
     }
   ]
-}
+} #}

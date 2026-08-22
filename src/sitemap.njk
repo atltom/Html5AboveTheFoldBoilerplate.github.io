@@ -6,7 +6,7 @@ canonical: "/sitemap"
 changefreq: yearly
 priority: 0.2
 
-title: "Site Map | S.Phaneuf & Associates"
+title: "Site Map | S. Phaneuf & Associates"
 description: "Explore our website's structure and find all the pages you're looking for."
 
 # Use ONLY when hiding a page from the sitemap or collections
@@ -25,8 +25,8 @@ eleventyExcludeFromCollections: true
             <ul>
                 <li><a href="/">Home</a></li>
                 {%- for item in collections.all | sort(attribute="data.order") %}
-                    {%- if item.data.sitemapCategory == "main" and not item.data.eleventyExcludeFromCollections %}
-                        <li><a href="{{ item.url }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
+                    {%- if item.data.sitemapCategory == "main" and not item.data.eleventyExcludeFromCollections %}{% set rawUrl = item.url | replace(".html", "") %}{% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %}
+                        <li><a href="{{ cleanUrl }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
                     {%- endif %}
                 {%- endfor %}
             </ul>
@@ -36,8 +36,8 @@ eleventyExcludeFromCollections: true
             {# <p>At S. Phaneuf & Associates, we take pride in offering a full range of outdoor construction and design services. Our sitemap provides direct links to each service category so you can learn more about what we do:</p> #}
             <ul>
                 {%- for item in collections.all | sort(attribute="data.order") %}
-                    {%- if item.data.sitemapCategory == "services" and not item.data.eleventyExcludeFromCollections %}
-                        <li><a href="{{ item.url }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
+                    {%- if item.data.sitemapCategory == "services" and not item.data.eleventyExcludeFromCollections %}{% set rawUrl = item.url | replace(".html", "") %}{% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %}
+                        <li><a href="{{ cleanUrl }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
                     {%- endif %}
                 {%- endfor %}
             </ul>
@@ -52,13 +52,15 @@ eleventyExcludeFromCollections: true
                     {%- if county.data.sitemapCategory == "county" and not county.data.eleventyExcludeFromCollections %}
                         <li>
                             {# County Parent Link #}
-                            <a href="{{ county.url }}" class="fw-bold">{{- county.data.sitemapTitle or county.data.title or county.url -}}</a>
+                            {% set rawUrl = county.url | replace(".html", "") %}{% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %}
+                            <a href="{{ cleanUrl }}" class="fw-bold">{{- county.data.sitemapTitle or county.data.title or county.url -}}</a>
                             
                             {# 2. Nest the Towns matching this specific county key #}
                             <ul>
                                 {%- for town in collections.all | sort(attribute="data.sitemapTitle") %}
                                     {%- if town.data.sitemapCategory == "town" and town.data.county == county.data.countyKey and not town.data.eleventyExcludeFromCollections %}
-                                        <li><a href="{{ town.url }}">{{- town.data.sitemapTitle or town.data.title or town.url -}}</a></li>
+                                        {% set rawUrl = town.url | replace(".html", "") %}{% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %}  
+                                        <li><a href="{{ cleanUrl }}">{{- town.data.sitemapTitle or town.data.title or town.url -}}</a></li>
                                     {%- endif %}
                                 {%- endfor %}
                             </ul>
@@ -71,8 +73,8 @@ eleventyExcludeFromCollections: true
             <h2 class="pipe fs-lg mb-3">Company & Legal</h2>
             <ul>
                 {%- for item in collections.all | sort(attribute="data.order") %}
-                    {%- if item.data.sitemapCategory == "legal" and not item.data.eleventyExcludeFromCollections %}
-                        <li><a href="{{ item.url }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
+                    {%- if item.data.sitemapCategory == "legal" and not item.data.eleventyExcludeFromCollections %}{% set rawUrl = item.url | replace(".html", "") %}{% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %}
+                        <li><a href="{{ cleanUrl }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
                     {%- endif %}
                 {%- endfor %}
             </ul>
