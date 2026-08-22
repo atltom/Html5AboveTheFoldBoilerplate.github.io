@@ -1,12 +1,12 @@
 ---
 layout: base.njk
-permalink: "/middlesex-county/hardscape-contractor-sudbury-ma.html"
-canonical: "/middlesex-county/hardscape-contractor-sudbury-ma"
+permalink: "/worcester-county/hardscape-contractor-southborough-ma.html"
+canonical: "/worcester-county/hardscape-contractor-southborough-ma"
 
 # SITEMAP
-sitemapTitle: "Hardscape Contractor Sudbury, MA"
+sitemapTitle: "Hardscape Contractor Southborough, MA"
 sitemapCategory: "town"
-county: "middlesex"
+county: "worcester"
 
 # SITEMAP XML
 order: 71
@@ -14,44 +14,44 @@ changefreq: monthly
 priority: 0.7
 
 # META
-title: "Hardscape Contractor in Sudbury, MA | S. Phaneuf & Associates"
-description: "S. Phaneuf & Associates provides hardscape construction, asphalt paving, excavation, site development, and snow & ice management services in Sudbury, Massachusetts."
+title: "Hardscape Contractor in Southborough, MA | S. Phaneuf & Associates"
+description: "S. Phaneuf & Associates provides hardscape construction, asphalt paving, excavation, site development, and snow & ice management services in Southborough, Massachusetts."
 
 # DYNAMIC MAIN ENTITY OVERRIDE
-mainEntityId: "/middlesex-county/hardscape-contractor-sudbury-ma#service"
+mainEntityId: "/worcester-county/hardscape-contractor-southborough-ma#service"
 #extraSchema: |
 
 # NAV
 section: service-areas
 
 # CONTENT
-locLongName: "Sudbury, Massachusetts"
-locShortName: "Sudbury, MA"
-locCity: "Sudbury"
+locLongName: "Southborough, Massachusetts"
+locShortName: "Southborough, MA"
+locCity: "Southborough"
 locType: "City"
-locCounty: "Middlesex"
+locCounty: "Worcester"
 
 # HERO
 heroImageClass: "foundation"
-heroHeading: "Hardscape Contractor in Sudbury, Massachusetts"
+heroHeading: "Hardscape Contractor in Southborough, Massachusetts"
 heroSubheading: "Custom patios, walkways, retaining walls, fire features, and other outdoor improvements backed by experienced local craftsmanship."
 heroImage: "images/large/foundation.webp"
 heroCTA: "Get Started"
 
 # SIDEBAR
 sidebarShowImages: "false"
-sidebarLocation: "Sudbury, MA"
+sidebarLocation: "Southborough, MA"
 
 # BREADCRUMBS
-breadcrumbTitle: "Hardscape Contractor in Sudbury, MA"
+breadcrumbTitle: "Hardscape Contractor in Southborough, MA"
 breadcrumbs:
-  - title: "Middlesex County"
-    url: "/middlesex-county"
+  - title: "Worcester County"
+    url: "/worcester-county"
 
 # FINAL CTA
 ctaSlug: "contact-phaneuf-today"
-ctaHeading: "Ready to Discuss Your Sudbury Project?"
-ctaText: "Contact S. Phaneuf & Associates to discuss your hardscape, paving, excavation, site development, or snow and ice management needs in Sudbury, Massachusetts."
+ctaHeading: "Ready to Discuss Your Southborough Project?"
+ctaText: "Contact S. Phaneuf & Associates to discuss your hardscape, paving, excavation, site development, or snow and ice management needs in Southborough, Massachusetts."
 
 ---
 
@@ -83,27 +83,13 @@ ctaText: "Contact S. Phaneuf & Associates to discuss your hardscape, paving, exc
             <p class="pt-3">{{locCity}} is located in {{locCounty}} County, and our service area extends throughout surrounding communities in the region. If your property is located nearby and you are unsure whether we service your area, contact us to discuss your project.</p>
             <h3 class="pt-4 c-g fs-1">Other {{locCounty}} County Communities We Serve</h3>
             <ul class="pb-3" style="margin-left: -20px;">
-                {% set countyTowns = collections['middlesex-county'] or [] %}
+                {% set countyTowns = collections['worcester-county'] or [] %}
                 {% for town in countyTowns %}
                     {% if town.url != page.url %}
                         <li><a href="{{ town.url | replace(".html", "") }}">{{ (town.data.sitemapTitle or town.data.title) | replace("Hardscape Contractor", "") | replace("hardscape Contractor", "") | trim }}</a></li>
                     {% endif %}
                 {% else %}
-                    <li>
-                        <a href="/middlesex-county/hardscape-contractor-acton-ma">Acton, MA</a>
-                    </li>
-                    <li>
-                        <a href="/middlesex-county/hardscape-contractor-concord-ma">Concord, MA</a>
-                    </li>
-                    <li>
-                        <a href="/middlesex-county/hardscape-contractor-lexington-ma">Lexington, MA</a>
-                    </li>
-                    <li>
-                        <a href="/middlesex-county/hardscape-contractor-littleton-ma">Littleton, MA</a>
-                    </li>
-                    <li>
-                        <a href="/middlesex-county/hardscape-contractor-stow-ma">Stow, MA</a>
-                    </li>
+                    <li><a>Coming Soon</a></li>
                 {% endfor %}
             </ul>
             <p>Explore our <a href="/{{locCounty| slugify}}-county">{{locCounty}} County service area</a> to learn more about all the communities we serve.</p>
