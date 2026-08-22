@@ -14,7 +14,7 @@
     "@id": "{{ site.url }}/#organization"
   },
   "mainEntity": {
-    "@id": "{{ site.url }}/#organization"
+    "@id": "{{ site.url }}{{ mainEntityId | default('/#organization') }}"
   }
 }
 

@@ -4,88 +4,33 @@ permalink: "/middlesex-county.html"
 canonical: "/middlesex-county"
 
 sitemapTitle: "Middlesex County"
-#sitemapCategory: "middlesex"
 sitemapCategory: "county"
 countyKey: "middlesex"
 order: 1
 changefreq: monthly
 priority: 0.8
 
-
-
 title: "Middlesex County MA Contractor | S. Phaneuf & Associates"
 description: "S. Phaneuf & Associates provides asphalt paving, masonry and hardscape construction, excavation, site development, and snow and ice management throughout Middlesex County, Massachusetts."
 
 #extraCss:
-#extraSchema:
-extraSchema: |
-  {
-    "@type": "Service",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://sphaneufassociates.com/middlesex-county"
-    },
-    "@id": "https://sphaneufassociates.com/middlesex-county#service",
-    "name": "Contracting Services in Middlesex County, MA",
-    "image": "https://sphaneufassociates.com/images/large/foundation.webp",
-    "serviceType": [
-      "Asphalt Paving & Driveways",
-      "Masonry & Hardscape Construction",
-      "Excavation & Site Development",
-      "Commercial Snow & Ice Management"
-    ],
-    "description": "Professional paving, hardscaping, excavation, site development, and snow management services throughout Middlesex County, MA.",
-    "provider": {
-      "@id": "https://sphaneufassociates.com/#organization"
-    },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Middlesex County, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Acton, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Carlisle, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Concord, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Lexington, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Littleton, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Stow, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Sudbury, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Wayland, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Westford, MA"
-      },
-      {
-        "@type": "City",
-        "name": "Weston, MA"
-      }
-    ],
-    "url": "https://sphaneufassociates.com/middlesex-county"
-  }
+# DYNAMIC MAIN ENTITY OVERRIDE
+mainEntityId: "/middlesex-county#service"
+# MULTI-CITY LIST FOR COUNTY PAGES
+areaServedList:
+  - { type: "AdministrativeArea", name: "Middlesex County, MA" }
+  - { type: "City", name: "Acton, MA" }
+  - { type: "City", name: "Carlisle, MA" }
+  - { type: "City", name: "Concord, MA" }
+  - { type: "City", name: "Lexington, MA" }
+  - { type: "City", name: "Littleton, MA" }
+  - { type: "City", name: "Stow, MA" }
+  - { type: "City", name: "Sudbury, MA" }
+  - { type: "City", name: "Wayland, MA" }
+  - { type: "City", name: "Westford, MA" }
+  - { type: "City", name: "Weston, MA" }
+#extraSchema: |
+ 
 
 # NAV
 section: service-areas
@@ -113,165 +58,154 @@ ctaText: "Contact S. Phaneuf & Associates to discuss your property improvement, 
 
 sidebarLocation: "Middlesex County"
 
-##locationName: "Middlesex County"
-##locationType: "County"
+
 ---
 {% include "components/breadcrumbs.njk" %}
 <div class="container flex-container mb-5 pb-5">
     <article class="mt-5 content">
-        <section>
-            <h2 class="pipe mb-3 fs-2xl">
-                Professional Contracting Services Throughout Middlesex County
-            </h2>
-            <p>
-                S. Phaneuf & Associates provides professional construction and property improvement services throughout Middlesex
-                County, Massachusetts. With decades of experience and a commitment to quality workmanship, we help residential and
-                commercial property owners complete projects ranging from outdoor improvements and paving to excavation, site
-                development, and winter property management.
-            </p>
-            <p>
-                Our team works throughout Middlesex County and understands the local conditions, terrain, weather, and property
-                requirements that can affect construction and site work in the region. Whether you are planning a new driveway, a custom
-                hardscape project, site development, or ongoing snow and ice management, we provide dependable service from planning
-                through completion.
-            </p>
-        </section>
-        <section class="mt-5">
-            <h2 class="pipe">
-                Our Services in Middlesex County
-            </h2>
-            <p class="pt-3">
-                We offer a range of services designed to improve, develop, and maintain residential and commercial properties throughout
-                Middlesex County.
-            </p>
-            <h3 class="pt-4 c-g fs-1">
-                <a href="/asphalt-paving">
-                    Asphalt Paving
+    <section>
+        <h2 class="pipe mb-3 fs-2xl">
+            Professional Contracting Services Throughout Middlesex County
+        </h2>
+        <p>
+            S. Phaneuf & Associates provides professional construction and property improvement services throughout Middlesex
+            County, Massachusetts. With decades of experience and a commitment to quality workmanship, we help residential and
+            commercial property owners complete projects ranging from outdoor improvements and <a href="/asphalt-paving">asphalt paving</a> to hardscapes, <a href="/excavation-site-development">excavation and site development</a>, and winter property management.
+        </p>
+        <p>
+            Our team works throughout Middlesex County and understands the local conditions, terrain, weather, and property
+            requirements that can affect construction and site work in the region. Whether you are planning a new driveway, a custom
+            <a href="/masonry-hardscapes">masonry hardscape project</a>, site development, or ongoing commercial <a href="/snow-ice-management">snow and ice management</a>, we provide dependable service from planning through completion.
+        </p>
+    </section>
+    <section class="mt-5">
+        <h2 class="pipe">
+            Our Services in Middlesex County
+        </h2>
+        <p class="pt-3">
+            We offer a range of services designed to improve, develop, and maintain residential and commercial properties throughout
+            Middlesex County.
+        </p>
+        <h3 class="pt-4 c-g fs-1">
+            <a href="/asphalt-paving">
+                Asphalt Paving
+            </a>
+        </h3>
+        <p>
+            We provide comprehensive <a href="/asphalt-paving">asphalt paving services</a> for residential driveways, commercial parking areas, private roads, and paved surfaces. Proper sub-base preparation, drainage, precise grading, and quality asphalt materials are essential to creating a durable pavement surface that withstands New England freeze-thaw cycles.
+        </p>
+        <h3 class="pt-4 c-g fs-1">
+            <a href="/masonry-hardscapes">
+                Masonry & Hardscapes
+            </a>
+        </h3>
+        <p>
+            Create a more functional and inviting outdoor space with custom patios, walkways, retaining walls, stone steps, fire features, outdoor kitchens, and structural <a href="/masonry-hardscapes">masonry and hardscape improvements</a> built to last.
+        </p>
+        <h3 class="pt-4 c-g fs-1">
+            <a href="/excavation-site-development">
+                Excavation & Site Development
+            </a>
+        </h3>
+        <p>
+            From initial site clearing and foundation digging through finish grading, stormwater drainage installation, utility trenching, and general site preparation, our <a href="/excavation-site-development">excavation and site development</a> services provide the groundwork necessary for successful residential and commercial construction projects.
+        </p>
+        <h3 class="pt-4 c-g fs-1">
+            <a href="/snow-ice-management">
+                Snow & Ice Management
+            </a>
+        </h3>
+        <p>
+            We provide dependable snow plowing, snow removal, de-icing, sanding, salting, and seasonal winter property management through our dedicated <a href="/snow-ice-management">snow and ice management</a> programs to help keep commercial properties safe and accessible during Massachusetts winter weather.
+        </p>
+    </section>
+    <section class="mt-5">
+        <h2 class="pipe">
+            Communities We Serve in Middlesex County
+        </h2>
+        <p class="pt-3">
+            S. Phaneuf & Associates serves homeowners, businesses, and property owners throughout Middlesex County. Explore our
+            individual community pages to learn more about the services available in your area.
+        </p>
+        <ul class="pb-3" style="margin-left: -20px;">
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-acton-ma">
+                    Hardscape Contractor in Acton, MA
                 </a>
-            </h3>
-            <p>
-                We provide <a href="/asphalt-paving">asphalt paving services</a> for driveways, parking areas, private roads, and other paved surfaces.
-                Proper preparation, drainage, grading, and quality materials are essential to creating a durable pavement surface.
-            </p>
-            <h3 class="pt-4 c-g fs-1">
-                <a href="/masonry-hardscapes">
-                    Masonry & Hardscapes
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-carlisle-ma">
+                    Hardscape Contractor in Carlisle, MA
                 </a>
-            </h3>
-            <p>
-                Create a more functional and inviting outdoor space with custom patios, walkways, retaining walls, steps, fire features,
-                outdoor kitchens, and other masonry and hardscape improvements.
-            </p>
-            <h3 class="pt-4 c-g fs-1">
-                <a href="/excavation-site-development">
-                    Excavation & Site Development
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-concord-ma">
+                    Hardscape Contractor in Concord, MA
                 </a>
-            </h3>
-            <p>
-                From initial site clearing and excavation through grading, drainage, utility installation, and site preparation, our
-                excavation and site development services provide the groundwork necessary for successful residential and commercial
-                construction projects.
-            </p>
-            <h3 class="pt-4 c-g fs-1">
-                <a href="/snow-ice-management">
-                    Snow & Ice Management
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-lexington-ma">
+                    Hardscape Contractor in Lexington, MA
                 </a>
-            </h3>
-            <p>
-                We provide dependable snow plowing, snow removal, de-icing, sanding, salting, and other winter property management
-                services to help keep commercial properties safe and accessible during Massachusetts winter weather.
-            </p>
-        </section>
-        <section class="mt-5">
-            <h2 class="pipe">
-                Communities We Serve in Middlesex County
-            </h2>
-            <p class="pt-3">
-                S. Phaneuf & Associates serves homeowners, businesses, and property owners throughout Middlesex County. Explore our
-                individual community pages to learn more about the services available in your area.
-            </p>
-            <ul class="pb-3" style="margin-left: -20px;">
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-acton-ma">
-                        Hardscape Contractor in Acton, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-carlisle-ma">
-                        Hardscape Contractor in Carlisle, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-concord-ma">
-                        Hardscape Contractor in Concord, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-lexington-ma">
-                        Hardscape Contractor in Lexington, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-littleton-ma">
-                        Hardscape Contractor in Littleton, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-stow-ma">
-                        Hardscape Contractor in Stow, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-sudbury-ma">
-                        Hardscape Contractor in Sudbury, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-wayland-ma">
-                        Hardscape Contractor in Wayland, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-westford-ma">
-                        Hardscape Contractor in Westford, MA
-                    </a>
-                </li>
-                <li>
-                    <a href="/middlesex-county/hardscape-contractor-weston-ma">
-                        Hardscape Contractor in Weston, MA
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="mt-5">
-            <h2 class="pipe">
-                Local Experience for Middlesex County Properties
-            </h2>
-            <p class="pt-3">
-                Every property has different requirements. Site conditions, drainage, elevation, existing structures, access, materials,
-                and intended use all play a role in determining the right approach to a project.
-            </p>
-            <p>
-                Our experience across Massachusetts allows us to evaluate these factors and develop practical solutions for residential
-                and commercial properties. We focus on careful preparation, quality materials, experienced workmanship, and dependable
-                project management.
-            </p>
-            <p>
-                Whether you are improving an existing property or preparing land for new construction, our team can help determine the
-                appropriate services for your project.
-            </p>
-        </section>
-        <section class="mt-5">
-            <h2 class="pipe">
-                Serving Communities Throughout Middlesex County
-            </h2>
-            <p class="pt-3">
-                Our service area includes communities throughout Middlesex County, including Acton, Carlisle, Concord, Lexington,
-                Littleton, Stow, Sudbury, Wayland, Westford, Weston, and surrounding areas.
-            </p>
-            <p>
-                If you are located in Middlesex County and are unsure which service is right for your property, contact us to discuss
-                your project.
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-littleton-ma">
+                    Hardscape Contractor in Littleton, MA
+                </a>
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-stow-ma">
+                    Hardscape Contractor in Stow, MA
+                </a>
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-sudbury-ma">
+                    Hardscape Contractor in Sudbury, MA
+                </a>
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-wayland-ma">
+                    Hardscape Contractor in Wayland, MA
+                </a>
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-westford-ma">
+                    Hardscape Contractor in Westford, MA
+                </a>
+            </li>
+            <li>
+                <a href="/middlesex-county/hardscape-contractor-weston-ma">
+                    Hardscape Contractor in Weston, MA
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="mt-5">
+        <h2 class="pipe">
+            Local Experience for Middlesex County Properties
+        </h2>
+        <p class="pt-3">
+            Every property has different requirements. Site conditions, drainage, elevation, existing structures, access, materials,
+            and intended use all play a role in determining the right approach to a project.
+        </p>
+        <p>
+            Our experience across Massachusetts allows us to evaluate these factors and develop practical solutions for residential
+            and commercial properties. Whether you need heavy earthmoving during <a href="/excavation-site-development">site excavation</a> or custom stone craftsmanship for your home, we focus on careful preparation, quality materials, experienced workmanship, and dependable project management.
+        </p>
+        <p>
+            Whether you are improving an existing property with new <a href="/asphalt-paving">paving</a> or preparing raw land for new construction, our team can help determine the appropriate services for your project.
+        </p>
+    </section>
+    <section class="mt-5">
+        <h2 class="pipe">
+            Serving Communities Throughout Middlesex County
+        </h2>
+        <p class="pt-3">
+            Our service area includes communities throughout Middlesex County, including Acton, Carlisle, Concord, Lexington,
+            Littleton, Stow, Sudbury, Wayland, Westford, Weston, and surrounding areas.
+        </p>
+        <p>
+            If you are located in Middlesex County and are unsure which service is right for your property, from custom <a href="/masonry-hardscapes">masonry hardscapes</a> to zero-tolerance winter maintenance, contact us today to discuss your project.
             </p>
         </section>
     </article>

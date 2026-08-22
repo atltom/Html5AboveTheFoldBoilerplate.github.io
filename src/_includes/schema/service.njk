@@ -1,0 +1,82 @@
+{% if isServicePage or section == "service-areas" %}
+,{
+  "@type": "Service",
+  "@id": "https://sphaneufassociates.com{{ canonical or page.url }}#service",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sphaneufassociates.com{{ canonical or page.url }}#webpage"
+  },
+  "name": "{{ serviceName or title | replace(' | S. Phaneuf & Associates', '') }}",
+  "image": "https://sphaneufassociates.com/{{ heroImage or 'images/large/foundation.webp' }}",
+  "serviceType": [
+    "Asphalt Paving & Driveways",
+    "Masonry & Hardscape Construction",
+    "Excavation & Site Development",
+    "Commercial Snow & Ice Management"
+  ],
+  "description": "{{ description | safe }}",
+  "provider": {
+    "@id": "https://sphaneufassociates.com/#organization"
+  },
+  "areaServed": {% if areaServedList %}[
+    {% for area in areaServedList %}
+    {
+      "@type": "{{ area.type or 'City' }}",
+      "name": "{{ area.name | replace(', MA', '') }}",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Massachusetts"
+      }{% if area.sameAs %},
+      "sameAs": "{{ area.sameAs }}"
+      {% endif %}
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]{% else %}{
+    "@type": "{% if countyKey %}AdministrativeArea{% else %}City{% endif %}",
+    "name": "{{ (townName or sidebarLocation or 'Massachusetts') | replace(', MA', '') }}",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Massachusetts"
+    }{% if wikipediaUrl or sameAs %},
+    "sameAs": "{{ wikipediaUrl or sameAs }}"
+    {% endif %}
+  }{% endif %},
+  "url": "https://sphaneufassociates.com{{ canonical or page.url }}"
+}
+{% endif %}
+
+{# 
+{% if isServicePage or section == "service-areas" %}
+,{
+  "@type": "Service",
+  "@id": "https://sphaneufassociates.com{{ canonical or page.url }}#service",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sphaneufassociates.com{{ canonical or page.url }}#webpage"
+  },
+  "name": "{{ serviceName or title | replace(' | S. Phaneuf & Associates', '') }}",
+  "image": "https://sphaneufassociates.com/{{ heroImage or 'images/large/foundation.webp' }}",
+  "serviceType": [
+    "Asphalt Paving & Driveways",
+    "Masonry & Hardscape Construction",
+    "Excavation & Site Development",
+    "Commercial Snow & Ice Management"
+  ],
+  "description": "{{ description | safe }}",
+  "provider": {
+    "@id": "https://sphaneufassociates.com/#organization"
+  },
+  "areaServed": {% if areaServedList %}[
+    {% for area in areaServedList %}
+    {
+      "@type": "{{ area.type or 'City' }}",
+      "name": "{{ area.name }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]{% else %}{
+    "@type": "{% if countyKey %}AdministrativeArea{% else %}City{% endif %}",
+    "name": "{{ sidebarLocation or townName or 'Massachusetts' }}"
+  }{% endif %},
+  "url": "https://sphaneufassociates.com{{ canonical or page.url }}"
+}
+{% endif %} #}

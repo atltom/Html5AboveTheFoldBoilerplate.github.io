@@ -49,6 +49,7 @@
     {% include "schema/webpage.njk" %},
     {% include "schema/business.njk" %}
     {%- if page.url != '/' %},{% include "schema/breadcrumbs.njk" %}{% endif %}
+    {% include "schema/service.njk" %}
     {%- if extraSchema %},{{ extraSchema | safe }}{% endif %}
   ]
   }</script>

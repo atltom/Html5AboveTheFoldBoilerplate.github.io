@@ -7,6 +7,7 @@ if (fs.existsSync("dist")) {
     fs.rmSync("dist", { recursive: true, force: true });
 }
 
+
 module.exports = function(eleventyConfig) {
     eleventyConfig.addDataExtension("yaml, yml", (contents) => yaml.load(contents));
 
