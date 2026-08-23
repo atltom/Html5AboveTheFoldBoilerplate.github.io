@@ -120,7 +120,6 @@ sidebarLocation: "Worcester County"
         </p>
     </section>
     <section class="mt-5">
-
         <h2 class="pipe">
             Communities We Serve in Worcester County
         </h2>
@@ -129,55 +128,14 @@ sidebarLocation: "Worcester County"
             Explore our individual community pages to learn more about the services available in your area.
         </p>
         <ul class="pb-3" style="margin-left: -20px;">
-            <li>
-                <a href="/worcester-county/hardscape-contractor-bolton-ma">
-                    Hardscape Contractor in Bolton, MA
-                </a>
-            </li>
-            {# Add additional Worcester County communities here as their pages are created. #}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            {% set countyTowns = collections['worcester-county'] or [] %}
+            {% for town in countyTowns %}
+                {% if town.url != page.url %}
+                    <li><a href="{{ town.url | replace(".html", "") }}">{{ (town.data.sitemapTitle or town.data.title) }}</a></li>
+                {% endif %}
+            {% else %}
+                <li><a>Coming Soon</a></li>
+            {% endfor %}
         </ul>
     </section>
     <section class="mt-5">

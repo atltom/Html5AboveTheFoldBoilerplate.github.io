@@ -947,34 +947,36 @@ masonry:
       locations:
         - name: Acton
           url: /middlesex-county/hardscape-contractor-acton-ma
-        - name: Arlington
-        - name: Bedford
-        - name: Belmont
         - name: Bolton
           url: /worcester-county/hardscape-contractor-bolton-ma
         - name: Carlisle
           url: /middlesex-county/hardscape-contractor-carlisle-ma
         - name: Concord
           url: /middlesex-county/hardscape-contractor-concord-ma
-        - name: Dover
-        - name: Framingham
-        - name: Holliston
+        - name: Harvard
+          url: /worcester-county/hardscape-contractor-harvard-ma
         - name: Lexington
           url: /middlesex-county/hardscape-contractor-lexington-ma
-        - name: Lincoln
         - name: Littleton
           url: /middlesex-county/hardscape-contractor-littleton-ma
-        - name: Natick
-        - name: Needham
-        - name: Newton
-        - name: Sherborn
+        - name: Mendon
+          url: /worcester-county/hardscape-contractor-mendon-ma
+        - name: Northborough
+          url: /worcester-county/hardscape-contractor-northborough-ma
+        - name: Shrewsbury
+          url: /worcester-county/hardscape-contractor-shrewsbury-ma
+        - name: Southborough
+          url: /worcester-county/hardscape-contractor-southborough-ma
         - name: Stow
           url: /middlesex-county/hardscape-contractor-stow-ma
         - name: Sudbury
           url: /middlesex-county/hardscape-contractor-sudbury-ma
+        - name: Upton
+          url: /middlesex-county/hardscape-contractor-upton-ma
         - name: Wayland
           url: /middlesex-county/hardscape-contractor-wayland-ma
-        - name: Wellesley
+        - name: Westborough
+          url: /middlesex-county/hardscape-contractor-westborough-ma
         - name: Weston
           url: /middlesex-county/hardscape-contractor-weston-ma
         - name: Westford
@@ -2113,7 +2115,7 @@ snow-ice:
 
 
 
-excavationold:
+excavation--old:
   services:
     heading: "Our Excavation & Site Development Services"
     intro: >
@@ -2270,7 +2272,7 @@ excavationold:
           Absolutely. We regularly fix muddy lawns and wet basements by re-grading slopes, installing foundation curtain drains, and building custom catch basins to guide rainwater away from your home.
 
 
-snow:
+snow--old:
   benefits:
     heading: Why Invest in Snow & Ice Management?
     intro: >
