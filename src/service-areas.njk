@@ -188,12 +188,12 @@ sidebarParagraph:
 {% include "components/breadcrumbs.njk" %}
 <div class="container flex-container mb-5 pb-5">
     <article class="mt-5 content" id="service-areas">
-        <section class="intro-section" id="massachusetts-construction-services">
+        <section id="massachusetts-construction-services">
             <h2 class="pipe">Construction Services Throughout Massachusetts</h2>
             <p>S. Phaneuf & Associates provides professional masonry, hardscape construction, asphalt paving, excavation, site development, and snow management services throughout Massachusetts.</p>
             <p>We proudly serve homeowners and businesses throughout Greater Boston and surrounding communities with dependable workmanship and quality construction solutions.</p>
         </section>
-        <section class="py-5" id="massachusetts-counties-served">
+        <section id="massachusetts-counties-served">
             <h2 class="pipe">Massachusetts Counties We Serve</h2>
             <p>S. Phaneuf & Associates proudly provides masonry, hardscape construction, asphalt paving, excavation, site development, and snow management services throughout Massachusetts. We work with homeowners, businesses, and commercial property owners across multiple counties throughout Central and Eastern Massachusetts.</p>
             {% for county in counties %}
@@ -201,28 +201,10 @@ sidebarParagraph:
                 <p>{{ county.description }}</p>
             {% endfor %}
         </section>
-        <section class="py-5" id="communities-served">
-            {#             
-            <br><br><hr>existing<br><br> 
-            <h2 class="pipe">Communities We Serve Throughout Massachusetts</h2>
-            <p>S. Phaneuf & Associates proudly provides masonry, hardscape construction, asphalt paving, excavation, site development, and snow management services to homeowners and businesses throughout Greater Boston and surrounding Massachusetts communities. We regularly complete projects in the towns listed below, providing dependable construction solutions designed for residential and commercial properties.</p>
-            <p class="pt-2 pb-3">Some of the communities we regularly serve include:</p>
-            <div class="areas-grid">
-                {% for area in communities %}
-                    <div class="area-item">
-                        {% if area.link %}
-                            <a href="{{ area.link }}">{{ area.name }}</a>
-                        {% else %}
-                            {{ area.name }}
-                        {% endif %}
-                    </div>
-                {% endfor %}
-            </div>
-            <br><br><hr>new<br><br> 
-            #}
+        <section id="communities-served">
             {% include "components/areas-served.njk" %}
         </section>
-        <section class="py-5" id="massachusetts-service-area-map">
+        <section id="massachusetts-service-area-map">
             <h2 class="pipe">Our Massachusetts Service Area</h2>
             <p>S. Phaneuf & Associates serves homeowners and businesses throughout Central and Eastern Massachusetts, including communities across Middlesex, Worcester, Norfolk, Essex, Suffolk, Plymouth, and Bristol Counties.</p>
             <div class="map-responsive">
@@ -236,7 +218,7 @@ sidebarParagraph:
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section class="py-5" id="construction-services-massachusetts">
+        <section id="construction-services-massachusetts">
             <h2 class="pipe">Construction Services Available Throughout Massachusetts</h2>
             {% for service in servicess %}
                 <h3>
@@ -250,7 +232,7 @@ sidebarParagraph:
             {% endfor %}
         </section>
         {% include "components/why-phaneuf.njk" %}
-        <section class="py-5" id="service-area-faq">
+        <section id="service-area-faq">
             <h2 class="pipe">
                 Frequently Asked Questions About Our Service Areas
             </h2>

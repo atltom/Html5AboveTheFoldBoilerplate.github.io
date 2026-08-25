@@ -65,7 +65,7 @@
 <body class="{{ page.fileSlug }}">
   <a class="skip-link" href="#main-content">Skip to content</a>
   {% include "header.njk" %}
-  <main id="main-content" class="{{ mainClass }}">
+  <main id="main-content">
     {% if heroHeading %}{% include "components/hero.njk" %}{% endif %}
     {{ content | safe }}
   </main>
@@ -100,7 +100,9 @@
         }
       }
     });
-    window.addEventListener('load', function(){ var script=document.createElement('script'); script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF"; script.async=true; document.head.appendChild(script); script.onload=function(){ window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-FXE2B9T9WF');};});
+    function loadGTM(){if(window.gtmLoaded)return;window.gtmLoaded=!0;var script=document.createElement('script');script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF";script.async=!0;document.head.appendChild(script);script.onload=function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FXE2B9T9WF');};}
+    ['pointerdown','keydown','touchstart','scroll'].forEach(function(e){window.addEventListener(e,loadGTM,{once:!0,passive:!0});});
+    if('requestIdleCallback' in window){requestIdleCallback(function(){setTimeout(loadGTM,3500);});}else{setTimeout(loadGTM,4000);}
     {# document.addEventListener('DOMContentLoaded', () => {
         let currentIndex=0; 
         const gallery=document.getElementById('gallery'); 
