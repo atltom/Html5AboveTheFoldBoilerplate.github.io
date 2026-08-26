@@ -1,49 +1,9 @@
-{# <!--hero-->
-<div id="hero" class="hero big-image {{ heroImageClass }}">
-    <div class="hero-overlay">
-        
-        <h1>{{ heroHeading | safe }}{% if heroHeadingNoWrap %}<span class="no-wrap">{{ heroHeadingNoWrap }}</span>{% endif %}</h1>
-        <hr>
-        
-        <p>{{ heroSubheading |safe }}</p>
-        
-        {% if heroTrust %}
-        <p class="hero-trust">
-            {% for item in heroTrust %}{% if not loop.first %}<span class="separator">•</span>{% endif %}<span>✓ {{ item }}</span>{% endfor %}
-        </p>
-        {% endif %}
-        
-        {% if heroCTA %}
-        <div>
-            <a class="btn" href="{{ heroCTALink | default('/contact-us#contact-form') }}">{{ heroCTA }}</a>
-        </div>
-        {% endif %}
-    </div>
-</div> #}
-<section id="hero" class="hero {{ heroImageClass }}">
+<!-- hero -->
+<section class="hero {{ heroImageClass }}" id="hero">
   <div class="hero-overlay">
-    
-    <h1>
-      {{ heroHeading | default('Expert Asphalt Paving & Masonry Contractors Serving MA & Southern NH') | safe }}
-      {% if heroHeadingNoWrap %}<span class="no-wrap">{{ heroHeadingNoWrap }}</span>{% endif %}
-    </h1>
-    
+    <h1>{{ heroHeading | default('Expert Asphalt Paving & Masonry Contractors Serving MA & Southern NH') | safe }}{% if heroHeadingNoWrap %}<span class="no-wrap">{{ heroHeadingNoWrap }}</span>{% endif %}</h1>
     <hr>
-    
-    <p>{{ heroSubheading | default('Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial & Residential') | safe }}</p>
-    
-    {% if heroTrust %}
-      <p class="hero-trust">
-        {% for item in heroTrust %}
-          {% if not loop.first %}<span>•</span>{% endif %}
-          <span>✓ {{ item }}</span>
-        {% endfor %}
-      </p>
-    {% endif %}
-
-    <a class="btn" href="{{ heroCTALink | default('tel:+19786694919') }}">
-      {{ heroCTA | default('Get Started') }}
-    </a>
-
+    <p>{{ heroSubheading | default('Asphalt Paving, Excavation, Masonry, and Hardscape Solutions for Commercial & Residential') | safe }}</p>{% if heroTrust %}<p class="hero-trust">{% for item in heroTrust %}{% if not loop.first %}<span>•</span>{% endif %}<span>✓ {{ item }}</span>{% endfor %}</p>{% endif %}
+    <a class="btn" href="{{ heroCTALink | default('tel:+19786694919') }}">{{ heroCTA | default('Get Started') }}</a>
   </div>
 </section>

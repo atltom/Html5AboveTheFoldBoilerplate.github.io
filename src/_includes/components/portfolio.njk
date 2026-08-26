@@ -14,7 +14,7 @@
         {% if project.completedResult %}<p class="h5 mt-4"><strong>Completed Result</strong></p><p>{{ project.completedResult }}</p>{% endif %}
         <div class="container px-0 py-2 gallery">
             <ul class="image-gallery">
-                {% for image in project.images %}<li><figure><p class="lb" data-src="{{ image.full }}"><img decoding="async" src="{{ image.thumb }}" width="226" height="348" alt="{{ image.alt }}" loading="lazy"></p>{% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}</figure></li>{% endfor %}
+                {% for image in project.images %}<li><figure><p class="lb" data-src="{{ image.full }}"><img src="{{ image.thumb }}" alt="{{ image.alt }}" width="226" height="348" loading="lazy" decoding="async" ></p>{% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}</figure></li>{% endfor %}
             </ul>
         </div>
     </section>
@@ -26,7 +26,7 @@
     {% if additionalGalleryIntro %}<p class="lead">{{ additionalGalleryIntro }}</p>{% endif %}
     <div class="container px-0 py-2 gallery">
         <ul class="image-gallery">
-            {% for image in additionalGalleryImages %}<li><figure><a href="{{ image.full }}" class="lb"><img decoding="async" src="{{ image.thumb }}" alt="{{ image.alt }}" loading="lazy"></a>{% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}</figure></li>{% endfor %}
+            {% for image in additionalGalleryImages %}<li><figure><a href="{{ image.full }}" class="lb"><img src="{{ image.thumb }}" alt="{{ image.alt }}" loading="lazy" decoding="async"></a>{% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}</figure></li>{% endfor %}
         </ul>
     </div>
 </section>

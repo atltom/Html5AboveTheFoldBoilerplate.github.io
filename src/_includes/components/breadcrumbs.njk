@@ -1,17 +1,10 @@
-<!-- breadcrumbs --><div class="breadcrumb-container">
-{% if page.url != "/" %}<nav aria-label="breadcrumb" class="container breadcrumb-nav">
-  <ol class=" breadcrumb-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center;">
-    <li class="breadcrumb-item">
-      <a href="/">Home</a>
-    </li>
-    {% if breadcrumbs %}{% for crumb in breadcrumbs %}<li class="breadcrumb-item">
-          <a href="{{ crumb.url }}">{{ crumb.title }}</a>
-        </li>{% endfor %}
-    {# <!-- Fallback for 2-tier service pages with parentTitle/parentUrl --> #}{% elif parentTitle and parentUrl %}<li class="breadcrumb-item">
-        <a href="{{ parentUrl }}">{{ parentTitle }}</a>
-      </li>{% endif %}
-    {# <!-- Current Page (No link, marked active) --> #}<li class="breadcrumb-item breadcrumb-current" aria-current="page">
-      <span>{{ breadcrumbTitle or serviceName or title }}</span>
-    </li>
+<!-- breadcrumbs -->
+<div class="breadcrumb-container">
+{% if page.url != "/" %}<nav  class="container breadcrumb-nav" aria-label="breadcrumb">
+  <ol class=" breadcrumb-list">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    {% if breadcrumbs %}{% for crumb in breadcrumbs %}<li class="breadcrumb-item"><a href="{{ crumb.url }}">{{ crumb.title }}</a></li>{% endfor %}{% elif parentTitle and parentUrl %}<li class="breadcrumb-item"><a href="{{ parentUrl }}">{{ parentTitle }}</a></li>{% endif %}
+    <li class="breadcrumb-item breadcrumb-current" aria-current="page"><span>{{ breadcrumbTitle or serviceName or title }}</span></li>
   </ol>
-</nav>{% endif %}</div>
+</nav>{% endif %}
+</div>

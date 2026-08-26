@@ -1,117 +1,53 @@
-<!--sidebar-->
+<!-- form  -->
 <div id="sidebar-contact-form">
     {% if sidebarLocation %}
         <h2>Get Your Free {{ sidebarLocation }} Project Estimate</h2>
         <p class="mt-2 mb-4">Planning a paving, site development, or excavation project in {{sidebarLocation}}? Fill out the quick form below, and our local team will reach out promptly to discuss your project requirements and schedule a site evaluation.</p>
-        <div class="mb-4">
-            <p>
-                ✔ Free Local Estimates & Site Evaluations<br>
-                ✔ Serving {{sidebarLocation}} & Surrounding Communities<br>
-                ✔ Residential & Commercial Solutions<br>
-                ✔ Fully Licensed & Insured Contractor
-            </p>
-        </div>
+        <div class="mb-4"><p>✔ Free Local Estimates & Site Evaluations<br>✔ Serving {{sidebarLocation}} & Surrounding Communities<br>✔ Residential & Commercial Solutions<br>✔ Fully Licensed & Insured Contractor</p></div>
     {% else %}
         <h2>{{ sidebarHeading }}</h2>
-        {% for p in sidebarParagraph %}
-            <p class="mt-2 mb-4">{{ p }}</p>
-        {% endfor %}
-        {% if sidebarTrust %}
-        <div class="mb-4">
-            <p>
-                ✔ Free estimates<br>
-                ✔ Serving Massachusetts since 1989<br>
-                ✔ Residential & Commercial<br>
-                ✔ Licensed & Insured
-            </p>
+        {% for p in sidebarParagraph %}<p class="mt-2 mb-4">{{ p }}</p>{% endfor %}
+        {% if sidebarTrust %}<div class="mb-4"><p>✔ Free estimates<br>✔ Serving Massachusetts since 1989<br>✔ Residential & Commercial<br>✔ Licensed & Insured</p></div>{% endif %}
+    {% endif %}
+    <form class="pb-3" id="contact-form" >
+        <div class="mb-3">
+            <label class="form-label" for="first-last-name">First and Last Name</label>
+            <input class="form-control" id="first-last-name" name="name" type="text" required>
         </div>
+        <div class="mb-3">
+            <label class="form-label" for="email-or-phone">Email Address or Phone #</label>
+            <input class="form-control" id="email-or-phone" name="contact" type="text" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="message">Tell us about your project</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button class="btn" type="submit">Request Your Free Estimate</button>
+    </form>
+    {% if sidebarShowImages == "false" %}
+        <!-- no images -->
+    {% else %}
+        <!-- images -->
+        {% set imgData = sidbarImages.sidebarImages if sidebarImages.sidebarImages else sidebarImages %}{% set activeKey = sidebarKey or page.fileSlug %}{% if imgData and imgData[activeKey] and (imgData[activeKey] | length > 0) %}{% set activeImages = imgData[activeKey] %}{% elif imgData and imgData.default and (imgData.default | length > 0) %}{% set activeImages = imgData.default %}{% else %}{% set activeImages = [] %}{% endif %}
+        {% if activeImages and (activeImages | length > 0) %}
+            <ul class="p-0 lst-n" id="sidebar-images">
+                {% for img in activeImages %}
+                <li>
+                    <figure class="mx-0">
+                        <img src="{{ img.src }}" alt="{{ img.alt }}" width="226" height="348" loading="lazy" decoding="async">
+                        {% if img.location or img.caption %}
+                            <figcaption class="p-3 bg-w border">
+                                {% if img.location %}<span class="location-badge">{{ img.location }}</span>{% endif %}
+                                {% if img.caption %}<p>{{ img.caption }}</p>{% endif %}
+                            </figcaption>
+                        {% endif %}
+                    </figure>
+                </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <!-- Debug: Could not resolve array for activeKey: "{{ activeKey }}" -->
         {% endif %}
     {% endif %}
-    
-    
-    <form id="contact-form" class="pb-3">
-        <div class="mb-3">
-            <label for="first-last-name" class="form-label">First and Last Name</label>
-            <input id="first-last-name" type="text" class="form-control" name="name" required>
-        </div>
-        <div class="mb-3">
-            <label for="email-or-phone" class="form-label">Email Address or Phone #</label>
-            <input id="email-or-phone" type="text" class="form-control" name="contact" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Tell us about your project</label>
-            <textarea id="message" class="form-control" rows="5" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Request Your Free Estimate</button>
-    </form>
-
-
-
-    {% if showToc %}
-    <nav class="table-of-contents my-4 p-3 bg-light border rounded">
-        <p class="h5 fw-bold mb-2">On This Page:</p>
-        <ul class="list-unstyled mb-0">
-        {% for item in excavation.services.items %}
-            <li class="mb-1">
-            <a href="#{{ item.title | slugify }}" class="text-decoration-none">
-                {{ item.title }}
-            </a>
-            </li>
-        {% endfor %}
-        <li>
-            <a href="#frequently-asked-questions" class="text-decoration-none">
-            Frequently Asked Questions
-            </a>
-        </li>
-        </ul>
-    </nav>
-    {% endif %}
-
-    {# {% if sidebarImages and sidebarImages.length %}
-    <ul id="sidebar-images" class="p-0 lst-n">
-        {% for image in sidebarImages %}
-        <li>
-            <figure class="mx-0">
-                <img loading="lazy" src="{{ image.src }}" alt="{{ image.alt }}" width="226" height="348">
-                <figcaption class="p-3 bg-w border"><address>{{ image.location }}</address>{{ image.caption }}</figcaption>
-            </figure>
-        </li>
-        {% endfor %}
-    </ul>
-    {% endif %} #}
- {% if sidebarShowImages == "false" %}
-    
-  {% else %}
-    {% set imgData = sidebarImages.sidebarImages if sidebarImages.sidebarImages else sidebarImages %}    
-    {% set activeKey = sidebarKey or page.fileSlug %}    
-    {% if imgData and imgData[activeKey] and (imgData[activeKey] | length > 0) %}    
-        {% set activeImages = imgData[activeKey] %}    
-    {% elif imgData and imgData.default and (imgData.default | length > 0) %}    
-        {% set activeImages = imgData.default %}   
-    {% else %}    
-        {% set activeImages = [] %}   
-    {% endif %}
-    
-    {% if activeImages and (activeImages | length > 0) %}
-        <ul id="sidebar-images" class="p-0 lst-n">
-            {% for img in activeImages %}
-            <li>
-                <figure class="mx-0">
-                    <img loading="lazy" src="{{ img.src }}" alt="{{ img.alt }}" decoding="async" width="226" height="348">
-                    {% if img.location or img.caption %}
-                        <figcaption class="p-3 bg-w border">
-                            {% if img.location %}<span class="location-badge">{{ img.location }}</span>{% endif %}
-                            {% if img.caption %}<p>{{ img.caption }}</p>{% endif %}
-                        </figcaption>
-                    {% endif %}
-                </figure>
-            </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <!-- Debug: Could not resolve array for activeKey: "{{ activeKey }}" -->
-    {% endif %}
- {% endif %}
-
-
+    {% if showToc %}<!-- table-or-contents--><nav class="table-of-contents my-4 p-3 bg-light border rounded"><p class="h5 fw-bold mb-2">On This Page:</p><ul class="list-unstyled mb-0">{% for item in excavation.services.items %}<li class="mb-1"><a class="text-decoration-none" href="#{{ item.title | slugify }}" >{{ item.title }}</a></li>{% endfor %}<li><a class="text-decoration-none" href="#frequently-asked-questions">Frequently Asked Questions</a></li></ul></nav>{% endif %}
 </div>

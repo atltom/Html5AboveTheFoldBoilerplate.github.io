@@ -206,7 +206,7 @@ a.nav-dd-link.selected, a.nav-dd-link.selected:hover {
 /* Fluid Heading Scaling */
 .hero-overlay h1{font-size:clamp(1.75rem,4.5vw,3rem);line-height:1.2;font-weight:800;margin:0 0 1rem 0}
 
-.hero-overlay hr{border:0;border-top:2px solid #bc5a15;width:80px;margin:0 auto 1rem auto}
+.hero-overlay hr{border:0;border-top:2px solid #bc5a15;width:95%;margin:0 auto 1rem auto}
 
 .hero-overlay p{font-size:clamp(.95rem,2vw,1.2rem);font-weight:600;line-height:1.4;margin:0 0 1.25rem 0;overflow-wrap:break-word}
 .hero-trust{font-size:.9rem;margin-bottom:1.5rem;display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem}
@@ -223,7 +223,11 @@ a.nav-dd-link.selected, a.nav-dd-link.selected:hover {
    ========================================================================== */
 
 .breadcrumb-container { background-color: var(--color-bg-subtle); padding: 1rem 0; border-bottom: 1px solid var(--border-light); width: 100%; }
-.breadcrumb-list { list-style: none; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; max-width: 1200px; }
+.breadcrumb-list { 
+  /* list-style: none; padding: 0 1.5rem; margin: 0 auto; display: flex;                  align-items: center; max-width: 1200px;  */
+  list-style: none; padding: 0;        margin: 0;      display: flex; flex-wrap: wrap; align-items: center;
+
+}
 .breadcrumb-item { display: flex; align-items: center; }
 .breadcrumb-item:not(:first-child)::before { content: ">"; display: inline-block; margin: 0 0.75rem; color: #a0aec0; font-size: 0.9rem; font-weight: bold; }
 .breadcrumb-link { text-decoration: none; color: var(--color-link-blue); font-family: sans-serif; font-size: 0.95rem; font-weight: 500; transition: color 0.2s ease; }
@@ -427,17 +431,10 @@ a.nav-dd-link.selected, a.nav-dd-link.selected:hover {
 
 /* --- DESKTOP ENHANCEMENTS (min-width: 1024px) --- */
 @media (min-width: 1024px) {
- 
-}
 
-
-@media (min-width: 1024px) {
-
-
-:root {
+  :root {
     --header-height: 113px; /* Adjust if header height grows on desktop */
   }
-
 
 
   body { font-size: 17px; color: var(--color-text-desktop); }
@@ -445,10 +442,6 @@ a.nav-dd-link.selected, a.nav-dd-link.selected:hover {
   h2 { font-size: 1.95rem; font-weight: 500; }
   h3 { font-size: 1.45rem; font-weight: 500; }
   h4 { font-size: 1.35rem; }
-
-  
-
-
 
 
   .flex-container { width: 100%; display: flex; justify-content: space-between; margin: auto; padding: 0 20px; flex-direction: inherit; align-items: normal; }
@@ -462,7 +455,8 @@ a.nav-dd-link.selected, a.nav-dd-link.selected:hover {
   #nav-brand { width: 420px; }
 
 
-  /* .hero-h1 { font-size: 3.25rem; font-weight: 800; line-height: 60px !important; letter-spacing: 1.2px; }
+  /* 
+  .hero-h1 { font-size: 3.25rem; font-weight: 800; line-height: 60px !important; letter-spacing: 1.2px; }
   .hero-p { letter-spacing: .7px; } */
 
   /*.big-image { margin-top: 113px; }
@@ -477,55 +471,18 @@ a.nav-dd-link.selected, a.nav-dd-link.selected:hover {
 */
 
   .hero.foundation { background-image: url(../images/large/foundation.webp); }
-  
-  .hero.home {
-    background-image: url('https://sphaneufassociates.com/images/large/asphalt-and-masonry.webp');
-  }
+  .hero.home{background-image:url('https://sphaneufassociates.com/images/large/asphalt-and-masonry.webp')}
 
-  .hero-overlay {
-    padding: 2.5rem;
-    width: 60%;
-  }
+  .hero-overlay{padding:2.5rem;width:100%}
+  .hero-overlay h1{letter-spacing:1.2px;line-height:1.25}
+  .hero-overlay p{letter-spacing:.7px;line-height:1.5}
 
-  .hero-overlay h1 {
-    letter-spacing: 1.2px;
-    line-height: 1.25;
-  }
-
-  .hero-overlay p {
-    letter-spacing: 0.7px;
-    line-height: 1.5;
-  }
-
-/*new*/
-
- .hero {
-    min-height: calc(100vh - 160px);
-    min-height: calc(100dvh - 160px);
-  }
-
-  .hero.asphalt-paving {
-    background-image: url('/images/large/asphalt-and-masonry.webp');
-  }
-
-  .hero-overlay {
-    padding: 2.5rem;
-  }
-
-  .hero-overlay h1 {
-    letter-spacing: 0.8px;
-  }
-
-  .hero-overlay p {
-    letter-spacing: 0.5px;
-  }
-
-
-
-
-
-
-
+  /*new*/
+  .hero{min-height:calc(100vh - 160px);min-height:calc(100dvh - 160px)}
+  .hero.asphalt-paving{background-image:url('/images/large/asphalt-and-masonry.webp')}
+  .hero-overlay{padding:2.5rem}
+  .hero-overlay h1{letter-spacing:.8px;text-align: left;}
+  .hero-overlay p{letter-spacing:.5px}
 
   .dropdown-content { width: 250px; }
 
