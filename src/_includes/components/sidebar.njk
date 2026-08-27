@@ -30,13 +30,13 @@
         <!-- images -->
         {% set imgData = sidbarImages.sidebarImages if sidebarImages.sidebarImages else sidebarImages %}{% set activeKey = sidebarKey or page.fileSlug %}{% if imgData and imgData[activeKey] and (imgData[activeKey] | length > 0) %}{% set activeImages = imgData[activeKey] %}{% elif imgData and imgData.default and (imgData.default | length > 0) %}{% set activeImages = imgData.default %}{% else %}{% set activeImages = [] %}{% endif %}
         {% if activeImages and (activeImages | length > 0) %}
-            <ul class="p-0 lst-n" id="sidebar-images">
+            <ul class="sidebar-images" id="sidebar-images">
                 {% for img in activeImages %}
                 <li>
-                    <figure class="mx-0">
+                    <figure>
                         <img src="{{ img.src }}" alt="{{ img.alt }}" width="226" height="348" loading="lazy" decoding="async">
                         {% if img.location or img.caption %}
-                            <figcaption class="p-3 bg-w border">
+                            <figcaption class="sp-3 sbg-w sborder">
                                 {% if img.location %}<span class="location-badge">{{ img.location }}</span>{% endif %}
                                 {% if img.caption %}<p>{{ img.caption }}</p>{% endif %}
                             </figcaption>
