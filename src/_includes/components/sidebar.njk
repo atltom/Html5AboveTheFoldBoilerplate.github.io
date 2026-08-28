@@ -2,23 +2,23 @@
 <div id="sidebar-contact-form">
     {% if sidebarLocation %}
         <h2>Get Your Free {{ sidebarLocation }} Project Estimate</h2>
-        <p class="mt-2 mb-4">Planning a paving, site development, or excavation project in {{sidebarLocation}}? Fill out the quick form below, and our local team will reach out promptly to discuss your project requirements and schedule a site evaluation.</p>
-        <div class="mb-4"><p>✔ Free Local Estimates & Site Evaluations<br>✔ Serving {{sidebarLocation}} & Surrounding Communities<br>✔ Residential & Commercial Solutions<br>✔ Fully Licensed & Insured Contractor</p></div>
+        <p class=" ">Planning a paving, site development, or excavation project in {{sidebarLocation}}? Fill out the quick form below, and our local team will reach out promptly to discuss your project requirements and schedule a site evaluation.</p>
+        <div ><p>✔ Free Local Estimates & Site Evaluations<br>✔ Serving {{sidebarLocation}} & Surrounding Communities<br>✔ Residential & Commercial Solutions<br>✔ Fully Licensed & Insured Contractor</p></div>
     {% else %}
         <h2>{{ sidebarHeading }}</h2>
-        {% for p in sidebarParagraph %}<p class="mt-2 mb-4">{{ p }}</p>{% endfor %}
-        {% if sidebarTrust %}<div class="mb-4"><p>✔ Free estimates<br>✔ Serving Massachusetts since 1989<br>✔ Residential & Commercial<br>✔ Licensed & Insured</p></div>{% endif %}
+        {% for p in sidebarParagraph %}<p class=" ">{{ p }}</p>{% endfor %}
+        {% if sidebarTrust %}<div ><p>✔ Free estimates<br>✔ Serving Massachusetts since 1989<br>✔ Residential & Commercial<br>✔ Licensed & Insured</p></div>{% endif %}
     {% endif %}
-    <form class="pb-3" id="contact-form" >
-        <div class="mb-3">
+    <form  id="contact-form" >
+        <div >
             <label class="form-label" for="first-last-name">First and Last Name</label>
             <input class="form-control" id="first-last-name" name="name" type="text" required>
         </div>
-        <div class="mb-3">
+        <div >
             <label class="form-label" for="email-or-phone">Email Address or Phone #</label>
             <input class="form-control" id="email-or-phone" name="contact" type="text" required>
         </div>
-        <div class="mb-3">
+        <div >
             <label class="form-label" for="message">Tell us about your project</label>
             <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
         </div>
@@ -36,7 +36,7 @@
                     <figure>
                         <img src="{{ img.src }}" alt="{{ img.alt }}" width="226" height="348" loading="lazy" decoding="async">
                         {% if img.location or img.caption %}
-                            <figcaption class="sp-3 sbg-w sborder">
+                            <figcaption class="s sbg-w sborder">
                                 {% if img.location %}<span class="location-badge">{{ img.location }}</span>{% endif %}
                                 {% if img.caption %}<p>{{ img.caption }}</p>{% endif %}
                             </figcaption>
@@ -49,5 +49,5 @@
             <!-- Debug: Could not resolve array for activeKey: "{{ activeKey }}" -->
         {% endif %}
     {% endif %}
-    {% if showToc %}<!-- table-or-contents--><nav class="table-of-contents my-4 p-3 bg-light border rounded"><p class="h5 fw-bold mb-2">On This Page:</p><ul class="list-unstyled mb-0">{% for item in excavation.services.items %}<li class="mb-1"><a class="text-decoration-none" href="#{{ item.title | slugify }}" >{{ item.title }}</a></li>{% endfor %}<li><a class="text-decoration-none" href="#frequently-asked-questions">Frequently Asked Questions</a></li></ul></nav>{% endif %}
+    {% if showToc %}<!-- table-or-contents--><nav class="table-of-contents   bg-light border rounded"><p class="h5 fw-bold ">On This Page:</p><ul class="list-unstyled ">{% for item in excavation.services.items %}<li ><a class="text-decoration-none" href="#{{ item.title | slugify }}" >{{ item.title }}</a></li>{% endfor %}<li><a class="text-decoration-none" href="#frequently-asked-questions">Frequently Asked Questions</a></li></ul></nav>{% endif %}
 </div>

@@ -12,16 +12,16 @@ description: "Explore our website's structure and find all the pages you're look
 # Use ONLY when hiding a page from the sitemap or collections
 eleventyExcludeFromCollections: true
 ---
-<div class="container my-5 py-4">
-    <article class="mt-5">
-        <section class="pb-3 mb-4 border-bottom"  style="border-bottom: 1px solid #ccc;">
-            <h1 class="mb-1">Sitemap for S. Phaneuf & Associates Website</h1>
+<div class="container  ">
+    <article >
+        <section class="  border-bottom"  style="border-bottom: 1px solid #ccc;">
+            <h1 >Sitemap for S. Phaneuf & Associates Website</h1>
         </section>
-        <section class="mb-2">
+        <section >
             <p>Explore S. Phaneuf & Associates services, service areas, and company information. Find detailed information about our asphalt paving, masonry and hardscape construction, excavation and site development, and snow and ice management services. Browse our service area pages to learn more about the work we provide in communities throughout Middlesex and Worcester Counties.</p>
         </section>
-        <section class="mb-3">
-            <h2 class="pipe fs-lg mb-3">Website Pages</h2>
+        <section >
+            <h2 class="pipe fs-lg ">Website Pages</h2>
             <ul>
                 <li><a href="/">Home</a></li>
                 {%- for item in collections.all | sort(attribute="data.order") %}
@@ -31,8 +31,8 @@ eleventyExcludeFromCollections: true
                 {%- endfor %}
             </ul>
         </section>
-        <section class="mb-3">
-            <h2 class="pipe fs-lg mb-3">Our Services</h2>
+        <section >
+            <h2 class="pipe fs-lg ">Our Services</h2>
             {# <p>At S. Phaneuf & Associates, we take pride in offering a full range of outdoor construction and design services. Our sitemap provides direct links to each service category so you can learn more about what we do:</p> #}
             <ul>
                 {%- for item in collections.all | sort(attribute="data.order") %}
@@ -44,8 +44,8 @@ eleventyExcludeFromCollections: true
             {# <p>These pages describe our complete process, from initial consultation and design planning to final installation and cleanup. We use only top-quality materials and proven techniques to ensure every project stands the test of time. Whether you’re interested in a new patio, driveway, retaining wall, or foundation work, you’ll find all relevant details through the sitemap links above.</p> #}
         </section>
         
-        <section class="mb-3">
-            <h2 class="pipe fs-lg mb-3">Service Area Pages</h2>
+        <section >
+            <h2 class="pipe fs-lg ">Service Area Pages</h2>
             <ul>
                 {# 1. Loop over the main County Hub pages (e.g., Middlesex County, Worcester County) #}
                 {%- for county in collections.all | sort(attribute="data.order") %}
@@ -69,8 +69,8 @@ eleventyExcludeFromCollections: true
                 {%- endfor %}
             </ul>
         </section>
-        <section class="mb-3">
-            <h2 class="pipe fs-lg mb-3">Company & Legal</h2>
+        <section >
+            <h2 class="pipe fs-lg ">Company & Legal</h2>
             <ul>
                 {%- for item in collections.all | sort(attribute="data.order") %}
                     {%- if item.data.sitemapCategory == "legal" and not item.data.eleventyExcludeFromCollections %}{% set rawUrl = item.url | replace(".html", "") %}{% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %}

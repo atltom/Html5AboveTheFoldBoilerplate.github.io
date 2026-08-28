@@ -1,8 +1,8 @@
 <!--faq-->
 <section class="faq"  id="{{ faq.heading | slugify }}">
-<h2 class="pipe pt-5 mb-2">{{faq.heading }}</h2>
+<h2>{{faq.heading }}</h2>
 {% for item in faq.items %}
-    <h3 class="mt-3">{{ item.question }}</h3>
+    <h3>{{ item.question }}</h3>
     <p>{{ item.answer | safe }}</p>
 {% endfor %}
 </section>

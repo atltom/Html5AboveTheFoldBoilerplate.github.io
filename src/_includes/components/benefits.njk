@@ -1,10 +1,10 @@
 <!--benefits-->
 <section id="{{ service.benefits.heading | slugify }}">
-    <h2  class="pipe pt-4">{{ service.benefits.heading }}</h2>
-    <p class="py-3">{{ service.benefits.intro }}</p>
-    <div class="row">
+    <h2>{{ service.benefits.heading }}</h2>
+    <p >{{ service.benefits.intro }}</p>
+    <div>
         {% for item in service.benefits.items %}
-            <div class="col-md-6 mb-4">
+            <div>
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
             </div>

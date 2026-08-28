@@ -1,12 +1,12 @@
 <!--intro-section-->
 <section id="{% if introSlug %}{{ introSlug }}{% endif %}">
-    <h2 class="pipe">{{ intro.heading }}</h2>
-    {% for paragraph in intro.paragraphs %}<p class="py-2{% if loop.first %} pt-4{% endif %}">{{ paragraph }}</p>{% endfor %}
-    {% if intro.callout %}<div class="my-3">
+    <h2>{{ intro.heading }}</h2>
+    {% for paragraph in intro.paragraphs %}<p class="{% if loop.first %} {% endif %}">{{ paragraph }}</p>{% endfor %}
+    {% if intro.callout %}<div >
         {% if intro.callout.title %}
-        <h3 class="mb-1">{{ intro.callout.title }}</h3>
+        <h3>{{ intro.callout.title }}</h3>
         {% endif %}
-        <p class="mb-0">{{ intro.callout.text }}</p>
+        <p >{{ intro.callout.text }}</p>
     </div>{% endif %}
-    {% if intro.closing %}<p class="py-2">{{ intro.closing }}</p>{% endif %}
+    {% if intro.closing %}<p >{{ intro.closing }}</p>{% endif %}
 </section>
