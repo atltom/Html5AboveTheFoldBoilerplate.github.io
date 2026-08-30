@@ -77,27 +77,22 @@
     <nav class="q-nav-drawer" id="main-nav">
       <ul class="q-nav-list">
         <li class="q-nav-item"><a class="q-nav-link {% if section == 'home' %}q-active{% endif %}" href="/">Home</a></li>
-
-
         <li class="q-nav-item q-has-dropdown {% if section == 'services' %}selected q-active{% endif %}"">
-          <div class="q-dropdown-trigger-wrapper"><a href="/services" class="q-nav-link">Services</a><button class="q-dropdown-toggle" type="button" aria-label="Toggle Services Submenu" aria-expanded="false"><span class="q-dropdown-arrow"></span></button></div>
+          <div class="q-dropdown-trigger-wrapper">
+            <a href="/services" class="q-nav-link {% if section == 'services' %}q-active{% endif %}">Services <span id="dropbtn-arrow"></span></a><!-- mobile arrow only--><button class="q-dropdown-toggle" type="button" aria-label="Toggle Services Submenu" aria-expanded="false"><span class="q-dropdown-arrow"></span></button> 
+          </div>
           <ul class="q-submenu">
-            <li class="q-submenu-item"><a href="/services" class="q-submenu-link">Our Services</a></li>
-
-            <li class="q-submenu-item">
-                {# <a href="/asphalt-paving" class="q-submenu-link">Asphalt Paving</a> #}
-                <a class="q-submenu-link nav-dd-link {% if service == 'asphalt-paving' %}q-active{% endif %}" href="/asphalt-paving">Asphalt Paving</a>
-            </li>
-
-            <li class="q-submenu-item"><a href="/masonry-hardscapes" class="q-submenu-link">Masonry &amp; Hardscapes</a></li>
-            <li class="q-submenu-item"><a href="/excavation-site-development" class="q-submenu-link">Excavation &amp; Site Development</a></li>
-            <li class="q-submenu-item"><a href="/snow-ice-management" class="q-submenu-link">Snow &amp; Ice Management</a></li>
+            <li class="q-submenu-item"><a class="q-submenu-link q-nav-link {% if service == 'services' %}q-active{% endif %}" href="/services">Our Services</a></li>
+            <li class="q-submenu-item"><a class="q-submenu-link {% if service == 'asphalt-paving' %}q-nav-link q-active{% endif %}" href="/asphalt-paving">Asphalt Paving</a></li>
+            <li class="q-submenu-item"><a class="q-submenu-link {% if service == 'masonry-hardscapes' %}q-nav-link q-active{% endif %}" href="/masonry-hardscapes">Masonry &amp; Hardscapes</a></li>
+            <li class="q-submenu-item"><a class="q-submenu-link {% if service == 'excavation' %}q-nav-link q-active{% endif %}" href="/excavation-site-development">Excavation &amp; Site Development</a></li>
+            <li class="q-submenu-item"><a class="q-submenu-link {% if service == 'snow-ice-management' %}q-nav-link q-active{% endif %}" href="/snow-ice-management">Snow &amp; Ice Management</a></li>
           </ul>
         </li>
         <li class="q-nav-item"><a class="q-nav-link {% if section == 'service-areas' %}q-active{% endif %}" {% if section == 'service-areas' %}aria-current="page"{% endif %} href="/service-areas">Service Areas</a></li>
         <li class="q-nav-item"><a class="q-nav-link {% if section == 'portfolio' %}q-active{% endif %}" {% if section == 'portfolio' %}aria-current="page"{% endif %} href="/portfolio" >Portfolio</a></li>
         <li class="q-nav-item"><a class="q-nav-link {% if section == 'reviews' %}q-active{% endif %}" {% if section == 'reviews' %}aria-current="page"{% endif %} href="/reviews">Reviews</a></li>
-        <li class="q-nav-item"><a class="q-nav-link {% if section == 'contact' %}q-active{% endif %}" {% if section == 'contact' %}aria-current="page"{% endif %} href="/contact-us" >Contact Us</a></li>
+        <li class="q-nav-item"><a class="q-nav-link {% if section == 'contact-us' %}q-active{% endif %}" {% if section == 'contact' %}aria-current="page"{% endif %} href="/contact-us" >Contact Us</a></li>
       </ul>
     </nav>
     <!-- Backdrop Overlay -->

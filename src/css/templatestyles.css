@@ -176,6 +176,7 @@
     text-decoration-skip-ink: auto;
     text-underline-position: under;  }
 
+
   /* .q-btn-primary {display: inline-block;padding: 0.5rem 1.25rem;border-radius: 4px;text-decoration: none;font-weight: 600;transition: background-color 0.2s ease;    background-color: #0056b3;     color: #ffffff;   }
   .q-btn-primary:hover {    background-color: #004085;  } */
 
@@ -430,7 +431,8 @@
     :root { --header-height: 113px;   }
 
     body { font-size: 17px; color: var(--color-text-desktop); }
-.q-brand-logo{padding-left: 0;}
+
+    .q-brand-logo{padding-left: 0;}
     .q-logo-img{height: 80px;;}
     /* 1. FORCE HIDE ALL MOBILE CONTROLS ON DESKTOP */
     .q-nav-toggle, .q-dropdown-toggle, .q-nav-backdrop{display:none!important}
@@ -438,9 +440,35 @@
     .q-nav-drawer{position:static;transform:none!important;box-shadow:none;padding:0;height:auto;width:auto;background:transparent;overflow:visible}
     .q-nav-list{flex-direction:row;align-items:center;gap:1.75rem}
     /* 3. DESKTOP DROPDOWN CARD (Hidden by default, visible on hover only) */
-    .q-submenu{display:block;position:absolute;top:100%;left:0;width:250px;background-color:#ffffff;box-shadow:0 4px 15px rgba(0,0,0,.15);border-radius:4px;padding:.5rem 0;margin:0;list-style:none;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s ease,transform .2s ease,visibility .2s ease;z-index:1000}
+    .q-submenu{display:block;position:absolute;top:110%;left:0;width:260px;
+      background-color:var(--color-primary-navy);
+      
+      box-shadow:0 4px 15px rgba(0,0,0,.15);border: 1px solid #25304b;
+      padding:.5rem 0;margin:0;list-style:none;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s ease,transform .2s ease,visibility .2s ease;z-index:1000}
     /* Reveal card ONLY when hovering over the parent 'Services' item */
     .q-has-dropdown:hover .q-submenu{opacity:1;visibility:visible;transform:translateY(0)}
+
+
+#dropbtn-arrow {
+    border: solid #ffffff;
+    box-shadow: #000 1px 1px 1px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    font-size: 10px;
+}
+
+li.q-submenu-item {
+    padding: 5px 0px 5px 13px;
+}
+  a.q-submenu-link {
+    color: white;
+}
+
+
+
 
 
     h1 { font-size: 2.65rem; }  h2 { font-size: 1.95rem; font-weight: 500; }  h3 { font-size: 1.45rem; font-weight: 500; }  h4 { font-size: 1.35rem; }
