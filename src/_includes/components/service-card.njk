@@ -1,5 +1,5 @@
 <!-- {{ item.slug }} -->
-<section class="service-card border-bottom" id="{{ item.slug }}">
+<section class="service-card" id="{{ item.slug }}">
     <div class="align-items-center g-4">
         <div>
             <a href="{{ item.link }}">
@@ -7,12 +7,12 @@
             </a>
         </div>
         <div>
-            <h2 class="text-dark fw-bold "><a href="{{ item.link }}" style="text-decoration: none;">{{ item.title }}</a></h2>
+            <h2 class="text-dark fw-bold "><a href="{{ item.link }}">{{ item.title }}</a></h2>
             <p class="lead-sm text-secondary">{{ item.description }}</p>
             {% if item.services and item.services.length %}<ul class=" li ">
                     {% for service in item.services %}<li>{{ service }}</li>{% endfor %}
             </ul>{% endif %}
-            <a href="{{ item.link }}" class="btn btn-primary " style="border-color: #d85d15;">Explore {{ item.title }} &rarr;</a>
+            <a class="btn btn-primary" href="{{ item.link }}">Explore {{ item.title }} &rarr;</a>
         </div>
     </div>
 </section>

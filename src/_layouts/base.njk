@@ -72,6 +72,73 @@
   {% include "footer.njk" %}
   
 <script>
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('menu-toggle');
+  const drawer = document.getElementById('main-nav');
+  const backdrop = document.getElementById('nav-backdrop');
+  const dropdownToggle = document.querySelector('.q-dropdown-toggle');
+  const dropdownParent = document.querySelector('.q-has-dropdown');
+
+  // Open/Close Mobile Drawer
+  function openMenu() {
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    drawer.classList.add('q-is-open');
+    backdrop.classList.add('q-is-active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    drawer.classList.remove('q-is-open');
+    backdrop.classList.remove('q-is-active');
+    document.body.style.overflow = '';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
+    isOpen ? closeMenu() : openMenu();
+  });
+
+  backdrop.addEventListener('click', closeMenu);
+
+  // Mobile Accordion Toggle for Services Submenu
+  if (dropdownToggle) {
+    dropdownToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
+      dropdownToggle.setAttribute('aria-expanded', !isExpanded);
+      dropdownParent.classList.toggle('q-dropdown-open');
+    });
+  }
+
+  // Keyboard Navigation (Escape key)
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('q-is-open')) {
+      closeMenu();
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
     var textBoxes = document.querySelectorAll('.text-box');
     var observer = new IntersectionObserver(entries => {entries.forEach(entry => {if (entry.isIntersecting) {entry.target.classList.add('slide-up');observer.unobserve(entry.target);}});});textBoxes.forEach(textBox=>{ observer.observe(textBox);});
     function naviconClick(navicon) {

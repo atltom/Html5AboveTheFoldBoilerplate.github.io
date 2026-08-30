@@ -1,5 +1,5 @@
 <!--header-->
-<header class="site-header">
+{# <header class="site-header">
     <!-- top contact bar -->
     <div class="fixedbar">
         <svg class="phone-icon" fill="#fff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
@@ -12,10 +12,12 @@
         <div class="navbar-toggler" onclick="naviconClick(this)"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div>
         <div class="nav-bg">
             <!-- logo -->
-            <a class="nav-link" id="nav-brand" href="/" ><img alt="S. Phaneuf & Associates" height="126" id="logo" src="/images/S-Phaneuf-Associates.webp" width="594" fetchpriority="high"></a>
+            <a class="nav-link nav-brand" id="zzzzz nav-brand" href="/" ><img alt="S. Phaneuf & Associates" height="126" id="logo" src="/images/S-Phaneuf-Associates.webp" width="594" fetchpriority="high"></a>
             <!-- navigation -->
             <div class="nav-wrap">
             <a class="nav-link {% if section == 'home' %}selected{% endif %}" href="/"  {% if section == 'home' %}aria-current="page"{% endif %}>Home</a>
+
+
             <div class="dropdown {% if section == 'services' %}selected{% endif %}">
                 <a class="nav-link dropbtn" id="nav-dropdown-btn" href="/services" onclick="navDropdownClick(event)">Services &nbsp<span id="dropbtn-arrow"></span></a>
                 <div class="dropdown-content" id="nav-dropdown">
@@ -26,6 +28,8 @@
                     <a class="nav-dd-link {% if service == 'snow-ice-management' %}selected{% endif %}" href="/snow-ice-management">Snow & Ice Management</a>
                 </div>
             </div>
+            
+            
             <a class="nav-link {% if section == 'service-areas' %}selected{% endif %}" {% if section == 'service-areas' %}aria-current="page"{% endif %} href="/service-areas">Service Areas</a>
             <a class="nav-link {% if section == 'portfolio' %}selected{% endif %}" {% if section == 'portfolio' %}aria-current="page"{% endif %} href="/portfolio">Portfolio </a>
             <a class="nav-link {% if section == 'reviews' %}selected{% endif %}" {% if section == 'reviews' %}aria-current="page"{% endif %} href="/reviews">Reviews</a>
@@ -33,4 +37,70 @@
             </div>
         </div>
     </nav>
+</header> #}
+
+
+<!-- Site Header -->
+<header class="q-site-header">
+  <div class="fixedbar"><svg class="phone-icon" fill="#fff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg><a class="phone-link" href="tel:+19786694919">978-669-4919</a>&nbsp;&nbsp;&nbsp;<svg class="email-icon" fill="#fff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>info@phaneufassociates.com</div>
+  <div class="q-header-container">
+    
+    {# <a href="/" class="q-brand-logo">S. Phaneuf &amp; Assoc.</a> #}
+
+    <!-- Image Brand Logo -->
+    {# <a href="/" class="q-brand-logo" id="nav-brand">
+      <img 
+        src="/images/S-Phaneuf-Associates.webp" 
+        alt="S. Phaneuf &amp; Associates" 
+        width="594" 
+        height="126" 
+        fetchpriority="high"
+        class="q-logo-img"
+      />
+    </a> #}
+
+
+<a href="/" class="q-brand-logo" id="nav-brand">
+  <picture>
+    <!-- Desktop: Full detailed logo -->
+    <source media="(min-width: 1024px)" srcset="/images/S-Phaneuf-Associates.webp" >
+    <!-- Mobile: Compact/Simplified logo without tiny subtext -->
+    {# <img class="q-logo-img" src="/images/S-Phaneuf-Associates-mobile.png" alt="S. Phaneuf &amp; Associates" width="300" height="80" fetchpriority="high"  > #}
+    <img class="q-logo-img" src="/images/S-Phaneuf-Associates.webp" alt="S. Phaneuf & Associates" width="300" height="80" fetchpriority="high"  >
+  </picture>
+</a>
+
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="q-nav-toggle" id="menu-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="main-nav"><span class="q-hamburger-bar"></span><span class="q-hamburger-bar"></span><span class="q-hamburger-bar"></span></button>
+    <!-- Navigation Drawer -->
+    <nav class="q-nav-drawer" id="main-nav">
+      <ul class="q-nav-list">
+        <li class="q-nav-item"><a class="q-nav-link {% if section == 'home' %}q-active{% endif %}" href="/">Home</a></li>
+
+
+        <li class="q-nav-item q-has-dropdown {% if section == 'services' %}selected q-active{% endif %}"">
+          <div class="q-dropdown-trigger-wrapper"><a href="/services" class="q-nav-link">Services</a><button class="q-dropdown-toggle" type="button" aria-label="Toggle Services Submenu" aria-expanded="false"><span class="q-dropdown-arrow"></span></button></div>
+          <ul class="q-submenu">
+            <li class="q-submenu-item"><a href="/services" class="q-submenu-link">Our Services</a></li>
+
+            <li class="q-submenu-item">
+                {# <a href="/asphalt-paving" class="q-submenu-link">Asphalt Paving</a> #}
+                <a class="q-submenu-link nav-dd-link {% if service == 'asphalt-paving' %}q-active{% endif %}" href="/asphalt-paving">Asphalt Paving</a>
+            </li>
+
+            <li class="q-submenu-item"><a href="/masonry-hardscapes" class="q-submenu-link">Masonry &amp; Hardscapes</a></li>
+            <li class="q-submenu-item"><a href="/excavation-site-development" class="q-submenu-link">Excavation &amp; Site Development</a></li>
+            <li class="q-submenu-item"><a href="/snow-ice-management" class="q-submenu-link">Snow &amp; Ice Management</a></li>
+          </ul>
+        </li>
+        <li class="q-nav-item"><a class="q-nav-link {% if section == 'service-areas' %}q-active{% endif %}" {% if section == 'service-areas' %}aria-current="page"{% endif %} href="/service-areas">Service Areas</a></li>
+        <li class="q-nav-item"><a class="q-nav-link {% if section == 'portfolio' %}q-active{% endif %}" {% if section == 'portfolio' %}aria-current="page"{% endif %} href="/portfolio" >Portfolio</a></li>
+        <li class="q-nav-item"><a class="q-nav-link {% if section == 'reviews' %}q-active{% endif %}" {% if section == 'reviews' %}aria-current="page"{% endif %} href="/reviews">Reviews</a></li>
+        <li class="q-nav-item"><a class="q-nav-link {% if section == 'contact' %}q-active{% endif %}" {% if section == 'contact' %}aria-current="page"{% endif %} href="/contact-us" >Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- Backdrop Overlay -->
+    <div class="q-nav-backdrop" id="nav-backdrop"></div>
+  </div>
 </header>
