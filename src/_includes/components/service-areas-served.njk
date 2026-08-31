@@ -2,7 +2,7 @@
 {% if service.areasServed %}<section id="{{ service.areasServed.heading | slugify }}">
   <h2>{{ service.areasServed.heading }}</h2>
   {% if service.areasServed.intro %}<p >{{ service.areasServed.intro }}</p>{% endif %}
-  <div class="areas-grid ">
+  <div class="areas-grid">
     {% for location in service.areasServed.locations %}<div class="area-item">
         <p >{% if location.url %}<a href="{{ location.url }}">{{ location.name }}</a>{% else %}{{ location.name }}{% endif %}</p>
     </div>{% endfor %}
