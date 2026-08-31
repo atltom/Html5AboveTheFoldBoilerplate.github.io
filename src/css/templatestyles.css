@@ -202,17 +202,7 @@
 
 
   /* UI COMPONENTS & CARDS */
-
-.greater-than {
-    border: solid #fff;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 3px;
-    margin-right: 9px;
-    margin-bottom: 1px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
+    .greater-than{border:solid #fff;border-width:0 1px 1px 0;display:inline-block;padding:3px;margin-right:9px;margin-bottom:1px;transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}
 
     /*maybe this should be called section-content and used in more places */
     .service-card{ margin-bottom: 4rem;}
@@ -288,7 +278,7 @@
     .fw-2 { font-weight: 200; } .fw-3 { font-weight: 300; } .fw-4 { font-weight: 400; } .fw-5 { font-weight: 500; } .fw-6 { font-weight: 600; } .fw-7 { font-weight: 700; }
     .t-c { text-align: center; } .t-l { text-align: left; }
     .td-n { text-decoration: none !important; }
-    .lst-n { list-style-type: none; }
+    .lst-n { list-style-type: none; padding-left: 0; }
     .no-wrap { white-space: nowrap; }
     .fst-i { font-style: italic; }
 
