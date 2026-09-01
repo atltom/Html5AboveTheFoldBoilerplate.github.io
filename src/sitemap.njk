@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
 ---
 <div class="container  ">
     <article >
-        <section class="  border-bottom"  style="border-bottom: 1px solid #ccc;">
+        <section style="border-bottom: 1px solid #ccc;">
             <h1 >Sitemap for S. Phaneuf & Associates Website</h1>
         </section>
         <section >
@@ -53,7 +53,7 @@ eleventyExcludeFromCollections: true
                         <li>
                             {# County Parent Link #}
                             {% set rawUrl = county.url | replace(".html", "") %}{% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %}
-                            <a href="{{ cleanUrl }}" class="fw-bold">{{- county.data.sitemapTitle or county.data.title or county.url -}}</a>
+                            <a href="{{ cleanUrl }}">{{- county.data.sitemapTitle or county.data.title or county.url -}}</a>
                             
                             {# 2. Nest the Towns matching this specific county key #}
                             <ul>

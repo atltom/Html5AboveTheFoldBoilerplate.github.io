@@ -1,16 +1,16 @@
 {# <p>serviceType:{{ serviceType }}</p><br><p>benefits:{{ benefits | dump }}</p><br><p>services:{{ services | dump }}</p><br><p>service:{{ service | dump }}</p><br> #}
 {% if service.services %}<section class="services"  id="{{ service.services.heading | slugify }}">
     {% if service.services.heading %}<h2 class="pipe ">{{ service.services.heading }}</h2>{% endif %}
-    {% if service.services.intro %}<p class="intro-text">{{ service.services.intro }}</p>{% endif %}
+    {% if service.services.intro %}<p>{{ service.services.intro }}</p>{% endif %}
     {% if service.services.items %}
-    <div class="services-list">
+    <div>
         {% for item in service.services.items %}
         <div class="service-item" id="{{ item.anchor }}">
             {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
             {% if item.paragraphs %}{% for paragraph in item.paragraphs %}<p >{{ paragraph }}</p>{% endfor %}{% endif %}
-            {% if item.image %}<div class="service-image "><img class="img-fluid" src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy"></div>{% endif %}
-            {% if item.features %}<div class="service-features "><h4>{{ item.features.heading }}</h4><ul class=" li">{% for feature in item.features.items %}<li>{{ feature }}</li>{% endfor %}</ul></div>{% endif %}
-            {% if item.benefits %}<div class="service-benefits "><h4>{{ item.benefits.heading }}</h4><ul class=" li">{% for benefit in item.benefits.items %}<li>{{ benefit }}</li>{% endfor %}</ul></div>{% endif %}
+            {% if item.image %}<div><img src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy"></div>{% endif %}
+            {% if item.features %}<div><h4>{{ item.features.heading }}</h4><ul class=" li">{% for feature in item.features.items %}<li>{{ feature }}</li>{% endfor %}</ul></div>{% endif %}
+            {% if item.benefits %}<div><h4>{{ item.benefits.heading }}</h4><ul class=" li">{% for benefit in item.benefits.items %}<li>{{ benefit }}</li>{% endfor %}</ul></div>{% endif %}
             {% if item.closing %}{% for closingParagraph in item.closing %}<p class=" fst-italic">{{ closingParagraph | safe}}</p>{% endfor %}{% endif %}
         </div>
         {% endfor %}

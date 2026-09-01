@@ -1,18 +1,18 @@
 <!-- {{ item.slug }} -->
 <section class="service-card" id="{{ item.slug }}">
-    <div class="align-items-center g-4">
+    <div>
         <div>
             <a href="{{ item.link }}">
-                <img class="img-fluid rounded shadow-sm" src="{{ item.image }}" alt="{{ item.alt }}" width="400" height="300" loading="lazy" decoding="async" >
+                <img src="{{ item.image }}" alt="{{ item.alt }}" width="400" height="300" loading="lazy" decoding="async" >
             </a>
         </div>
         <div>
-            <h2 class="text-dark fw-bold "><a href="{{ item.link }}">{{ item.title }}</a></h2>
-            <p class="lead-sm text-secondary">{{ item.description }}</p>
+            <h2><a href="{{ item.link }}">{{ item.title }}</a></h2>
+            <p>{{ item.description }}</p>
             {% if item.services and item.services.length %}<ul class=" li ">
                     {% for service in item.services %}<li>{{ service }}</li>{% endfor %}
             </ul>{% endif %}
-            <a class="btn btn-primary" href="{{ item.link }}">Explore {{ item.title }} &rarr;</a>
+            <a class="btn" href="{{ item.link }}">Explore {{ item.title }} &rarr;</a>
         </div>
     </div>
 </section>

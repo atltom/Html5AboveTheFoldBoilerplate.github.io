@@ -49,5 +49,5 @@
             <!-- Debug: Could not resolve array for activeKey: "{{ activeKey }}" -->
         {% endif %}
     {% endif %}
-    {% if showToc %}<!-- table-or-contents--><nav class="table-of-contents   bg-light border rounded"><p class="h5 fw-bold ">On This Page:</p><ul class="list-unstyled ">{% for item in excavation.services.items %}<li ><a class="text-decoration-none" href="#{{ item.title | slugify }}" >{{ item.title }}</a></li>{% endfor %}<li><a class="text-decoration-none" href="#frequently-asked-questions">Frequently Asked Questions</a></li></ul></nav>{% endif %}
+    {% if showToc %}<!-- table-or-contents--><nav class="table-of-contents bg-light border"><p>On This Page:</p><ul class="list-unstyled ">{% for item in excavation.services.items %}<li ><a class="text-decoration-none" href="#{{ item.title | slugify }}" >{{ item.title }}</a></li>{% endfor %}<li><a class="text-decoration-none" href="#frequently-asked-questions">Frequently Asked Questions</a></li></ul></nav>{% endif %}
 </div>

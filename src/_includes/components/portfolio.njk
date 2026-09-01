@@ -2,17 +2,17 @@
 {% set serviceProjects = projects[serviceType] %}
 <section id="gallery">
     <h2>{{ portfolio.heading or "Featured Projects" }}</h2>
-    {% if portfolio.intro %}<p class="lead">{{ portfolio.intro }}</p>{% endif %}
+    {% if portfolio.intro %}<p>{{ portfolio.intro }}</p>{% endif %}
     {% for project in serviceProjects.projects %}
     <section id="{{ project.title | slugify }}">
         <h3>{{ project.title }}</h3>
         {% if project.location %}<address class="fw-6 c-b ">{{ project.location }}</address>{% endif %}
         {% if project.summary %}<p >{{ project.summary }}</p>{% endif %}
-        {% if project.features %}<p class="small text-muted "><strong>Hardscape Features:</strong>{% for feature in project.features %}{{ feature }}{% if not loop.last %} • {% endif %}{% endfor %}</p>{% endif %}
-        {% if project.homeownerGoals %}<p class="h5 "><strong>Homeowner Goals</strong></p><p>{{ project.homeownerGoals }}</p>{% endif %}
-        {% if project.whatWeBuilt %}<p class="h5 "><strong>What We Built</strong></p><p>{{ project.whatWeBuilt }}</p>{% endif %}
-        {% if project.completedResult %}<p class="h5 "><strong>Completed Result</strong></p><p>{{ project.completedResult }}</p>{% endif %}
-        <div class="container   gallery">
+        {% if project.features %}<p><strong>Hardscape Features:</strong>{% for feature in project.features %}{{ feature }}{% if not loop.last %} • {% endif %}{% endfor %}</p>{% endif %}
+        {% if project.homeownerGoals %}<p><strong>Homeowner Goals</strong></p><p>{{ project.homeownerGoals }}</p>{% endif %}
+        {% if project.whatWeBuilt %}<p><strong>What We Built</strong></p><p>{{ project.whatWeBuilt }}</p>{% endif %}
+        {% if project.completedResult %}<p><strong>Completed Result</strong></p><p>{{ project.completedResult }}</p>{% endif %}
+        <div class="container">
             <ul class="image-gallery">
                 {% for image in project.images %}<li><figure><p class="lb" data-src="{{ image.full }}"><img src="{{ image.thumb }}" alt="{{ image.alt }}" width="226" height="348" loading="lazy" decoding="async" ></p>{% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}</figure></li>{% endfor %}
             </ul>
@@ -23,8 +23,8 @@
 {% if additionalGalleryImages %}
 <section  id="{{ additionalGalleryHeading | slugify }}" >
     <h2>{{ additionalGalleryHeading }}</h2>
-    {% if additionalGalleryIntro %}<p class="lead">{{ additionalGalleryIntro }}</p>{% endif %}
-    <div class="container gallery">
+    {% if additionalGalleryIntro %}<p>{{ additionalGalleryIntro }}</p>{% endif %}
+    <div class="container">
         <ul class="image-gallery">
             {% for image in additionalGalleryImages %}<li><figure><a href="{{ image.full }}" class="lb"><img src="{{ image.thumb }}" alt="{{ image.alt }}" loading="lazy" decoding="async"></a>{% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}</figure></li>{% endfor %}
         </ul>
