@@ -1,17 +1,16 @@
-<!--related-services-->
-<section class="related-services"  id="{{ relatedHeading | slugify }}">
-<h2>{{ relatedHeading }}</h2>
-<p >{{ relatedIntro }}</p>
-<ul class="lst-n">
+<!-- related-services -->
+<section class="related-services" id="{{ relatedHeading | slugify }}">
+  <h2>{{ relatedHeading }}</h2>
+  <p>{{ relatedIntro }}</p>
+  <ul class="lst-n">
     {% for service in relatedServices %}
-    {# <li {% if not loop.last %} {% endif %}> #}
-    <li }>
+      <li>
         {% if service.slug %}
-            <a href="/{{ service.slug }}">{{ service.name }}</a>
+          <a href="/{{ service.slug }}">{{ service.name }}</a>
         {% else %}
-            <span>{{ service.name }}</span>
+          <span class="related-text">{{ service.name }}</span>
         {% endif %}
-    </li>
+      </li>
     {% endfor %}
-</ul>
+  </ul>
 </section>

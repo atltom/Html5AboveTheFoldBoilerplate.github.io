@@ -45,40 +45,6 @@ extraSchema: |
       }
     ]
   }
-extraSchemaffff: |
-  {
-    "@type": "ItemList",
-    "name": "Construction Services Offered by S. Phaneuf & Associates",
-    "itemListElement": [
-      {
-        "@type": "Service",
-        "position": 1,
-        "name": "Masonry & Hardscapes",
-        "url": "https://sphaneufassociates.com/masonry-hardscapes"
-      },
-      {
-        "@type": "Service",
-        "position": 2,
-        "name": "Asphalt Paving",
-        "url": "https://sphaneufassociates.com/asphalt-paving"
-      },
-      {
-        "@type": "Service",
-        "position": 3,
-        "name": "Excavation & Site Development",
-        "url": "https://sphaneufassociates.com/excavation-site-development"
-      },
-      {
-        "@type": "Service",
-        "position": 4,
-        "name": "Snow & Ice Management",
-        "url": "https://sphaneufassociates.com/snow-ice-management"
-      }
-    ]
-  }
-
-
-
 # NAVIGATION
 section: services
 service: services
@@ -206,12 +172,12 @@ sidebarParagraph:
 {% include "components/breadcrumbs.njk" %}  
 <div class="container flex-container">     
     <article class="content">
-        {% include "components/intro-section.njk" %}
+        {% include "components/service-detail/service-detail-intro.njk" %}
         <section id="services-overview">
-            {% for item in servicesPage.services %}{% include "components/service-card.njk" %}{% endfor %}        
+            {% for item in servicesPage.services %}{% include "components/hub-page/hub-service-card.njk" %}{% endfor %}        
         </section>       
-        {% include "components/why-phaneuf.njk" %}
-        {% include "components/areas-served.njk" %}
+        {% include "components/hub-page/page-why-phaneuf.njk" %}
+        {% include "components/areas-grid.njk" %}
     </article>
     <aside class="contact-form  ">
       {% include "components/sidebar.njk" %}
@@ -219,3 +185,39 @@ sidebarParagraph:
 </div>
 {% include "components/final-cta.njk" %}  
 {% include "components/full-width-image.njk" %}
+
+{# 
+extraSchemaffff: |
+  {
+    "@type": "ItemList",
+    "name": "Construction Services Offered by S. Phaneuf & Associates",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "position": 1,
+        "name": "Masonry & Hardscapes",
+        "url": "https://sphaneufassociates.com/masonry-hardscapes"
+      },
+      {
+        "@type": "Service",
+        "position": 2,
+        "name": "Asphalt Paving",
+        "url": "https://sphaneufassociates.com/asphalt-paving"
+      },
+      {
+        "@type": "Service",
+        "position": 3,
+        "name": "Excavation & Site Development",
+        "url": "https://sphaneufassociates.com/excavation-site-development"
+      },
+      {
+        "@type": "Service",
+        "position": 4,
+        "name": "Snow & Ice Management",
+        "url": "https://sphaneufassociates.com/snow-ice-management"
+      }
+    ]
+  }
+
+
+ #}

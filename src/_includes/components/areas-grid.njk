@@ -1,0 +1,29 @@
+<!-- areas-served -->
+{% if areasServed %}
+<section id="{{ areasServed.heading | slugify }}">
+  <h2>{{ areasServed.heading }}</h2>
+  {% if areasServed.intro %}<p>{{ areasServed.intro | safe }}</p>{% endif %}
+  <div class="areas-grid">
+    {% for location in areasServed.locations %}
+      <div class="area-item">
+        {% if location.url %}
+          <a href="{{ location.url }}" class="area-link">{{ location.name }}</a>
+        {% else %}
+          <span class="area-text">{{ location.name }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{# <!--areas-served-->
+
+{% if areasServed %}<section id="{{ areasServed.heading | slugify }}">
+  <h2>{{ areasServed.heading }}</h2>
+  {% if areasServed.intro %}<p >{{ areasServed.intro | safe }}</p>{% endif %}
+  <div class="areas-grid ">
+    {% for location in areasServed.locations %}<div class="area-item">
+        <p >{% if location.url %}<a href="{{ location.url }}">{{ location.name }}</a>{% else %}{{ location.name }}{% endif %}</p>
+    </div>{% endfor %}
+  </div>
+</section>{% endif %}  #}

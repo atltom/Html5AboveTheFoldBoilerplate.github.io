@@ -3,13 +3,13 @@
 <div class="container flex-container">
     <!--article-->
     <article class="content">
-        {% include "components/intro-section.njk" %}
-        {% include "components/benefits.njk" %}
-        {% include "components/services.njk" %}
+        {% include "components/service-detail/service-detail-intro.njk" %}
+        {% include "components/service-detail/service-detail-benefits.njk" %}
+        {% include "components/service-detail/service-detail-items.njk" %}
         {% if portfolio %}{% include "components/portfolio.njk" %}{% endif %}
-        {% include "components/process.njk" %}     
-        {% include "components/service-faqs.njk" %}
-        {% include "components/service-areas-served.njk" %}
+        {% include "components/service-detail/service-detail-process.njk" %}     
+        {% include "components/service-detail/service-detail-faqs.njk" %}
+        {% include "components/service-detail/service-detail-areas.njk" %}
         {% include "components/related-services.njk" %}
     </article>
     <!--sidebar-->
