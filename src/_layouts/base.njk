@@ -64,12 +64,12 @@
 </head>
 <body class="{{ page.fileSlug }}">
   <a class="skip-link" href="#main-content">Skip to content</a>
-  {% include "header.njk" %}
+  {% include "components/global/global-header.njk" %}
   <main id="main-content">
-    {% if heroHeading %}{% include "components/hero.njk" %}{% endif %}
+    {% if heroHeading %}{% include "components/global/global-hero.njk" %}{% endif %}
     {{ content | safe }}
   </main>
-  {% include "footer.njk" %}
+  {% include "components/global/global-footer.njk" %}
   
 <script>
 

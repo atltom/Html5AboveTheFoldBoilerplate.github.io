@@ -78,7 +78,7 @@ sidebarParagraph:
     Inspired by the work you've seen? Tell us about your project and we'll help you determine the best approach for your property.   
 
 ---
-{% include "components/breadcrumbs.njk" %}
+{% include "components/global/global-breadcrumbs.njk" %}
 <!-- flex-container -->  
 <div class="container flex-container">
     <!-- article -->    
@@ -156,11 +156,11 @@ sidebarParagraph:
     </article>
     <!-- aside -->
     <aside class="contact-form" id="sidebar-contact">
-        {% include "components/sidebar.njk" %}
+        {% include "components/global/global-sidebar.njk" %}
     </aside>
 </div>
-{% include "components/final-cta.njk" %}  
-{% include "components/full-width-image.njk" %}
+{% include "components/global/global-final-cta.njk" %}  
+{% include "components/global/global-full-width-image.njk" %}
 {#  todo review submission
 <script>
         var textBoxes = document.querySelectorAll('.text-box');

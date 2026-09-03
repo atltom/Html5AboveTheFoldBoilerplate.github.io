@@ -3,11 +3,11 @@
     {% if sidebarLocation %}
         <h2>Get Your Free {{ sidebarLocation }} Project Estimate</h2>
         <p class=" ">Planning a paving, site development, or excavation project in {{sidebarLocation}}? Fill out the quick form below, and our local team will reach out promptly to discuss your project requirements and schedule a site evaluation.</p>
-        <div ><p>✔ Free Local Estimates & Site Evaluations<br>✔ Serving {{sidebarLocation}} & Surrounding Communities<br>✔ Residential & Commercial Solutions<br>✔ Fully Licensed & Insured Contractor</p></div>
+        <div ><p>- Free Local Estimates & Site Evaluations<br>- Serving {{sidebarLocation}} & Surrounding Communities<br>- Residential & Commercial Solutions<br>- Fully Licensed & Insured Contractor</p></div>
     {% else %}
         <h2>{{ sidebarHeading }}</h2>
         {% for p in sidebarParagraph %}<p class=" ">{{ p }}</p>{% endfor %}
-        {% if sidebarTrust %}<div ><p>✔ Free estimates<br>✔ Serving Massachusetts since 1989<br>✔ Residential & Commercial<br>✔ Licensed & Insured</p></div>{% endif %}
+        {% if sidebarTrust %}<div ><p>- Free estimates<br>- Serving Massachusetts since 1989<br>- Residential & Commercial<br>- Licensed & Insured</p></div>{% endif %}
     {% endif %}
     <form  id="contact-form" >
         <div >
