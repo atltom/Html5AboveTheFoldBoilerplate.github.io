@@ -31,7 +31,7 @@ asphalt:
       - title: "New Asphalt Paving"
         anchor: new-asphalt-paving
         image:
-          src: "/images/small/asphalt-driveway.webp"
+          src: "/images/566/asphalt-paving.webp"
           alt: "New asphalt driveway installed by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
@@ -49,7 +49,7 @@ asphalt:
           - >
             Whether you are replacing an aging driveway or developing pavement as
             part of a larger construction project, we can coordinate the paving
-            work with <a href="/services/excavation-site-development">excavation, grading, drainage, and other site development</a>
+            work with <a href="/excavation-site-development">excavation, grading, drainage, and other site development</a>
             requirements.
 
         features:
@@ -91,7 +91,7 @@ asphalt:
       - title: "Asphalt Driveways"
         anchor: driveways
         image:
-          src: "/images/small/asphalt-driveway.webp"
+          src: "/images/566/asphalt-paving.webp"
           alt: "Residential asphalt driveway constructed by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
@@ -145,7 +145,8 @@ asphalt:
       - title: "Commercial Parking Lots"
         anchor: parking-lots
         image:
-          src: "/images/small/asphalt-parking-lot.webp"
+          #src: "/images/small/asphalt-parking-lot.webp"
+          src: "/images/566/asphalt-paving.webp"
           alt: "Commercial asphalt parking lot installed by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
@@ -192,7 +193,7 @@ asphalt:
 
         closing:
           - >
-            From smaller commercial parking areas to <a href="/services/site-development">larger private developments</a>,
+            From smaller commercial parking areas to <a href="/excavation-site-development">larger private developments</a>,
             we approach each project based on its specific traffic, drainage,
             grading, and site requirements.
           - >
@@ -202,7 +203,8 @@ asphalt:
       - title: "Asphalt Repair & Maintenance"
         anchor: asphalt-repair-maintenance
         image:
-          src: "/images/small/asphalt-repair.webp"
+          #src: "/images/small/asphalt-repair.webp"
+          src: "/images/566/asphalt-paving.webp"
           alt: "Asphalt pavement repair completed by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
@@ -259,7 +261,8 @@ asphalt:
       - title: "Asphalt Milling & Resurfacing"
         anchor: milling-resurfacing
         image:
-          src: "/images/small/asphalt-milling.webp"
+          #src: "/images/small/asphalt-milling.webp"
+          src: "/images/566/asphalt-paving.webp"
           alt: "Asphalt milling and resurfacing work by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
@@ -315,7 +318,8 @@ asphalt:
       - title: "Parking Lot Striping & Pavement Markings"
         anchor: parking-lot-striping
         image:
-          src: "/images/small/parking-lot-striping.webp"
+          #src: "/images/small/parking-lot-striping.webp"
+          src: "/images/566/asphalt-paving.webp"
           alt: "Commercial parking lot striping and pavement markings in Massachusetts."
         paragraphs:
           - >
@@ -1037,7 +1041,8 @@ excavation:
       - title: "Site Clearing & Demolition"
         anchor: site-clearing-demolition
         image:
-          src: "/images/small/site-clearing.webp"
+          #src: "/images/small/site-clearing.webp"
+          src: "/images/566/site-work.webp"
           alt: "Professional site clearing and excavation work by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
@@ -1098,7 +1103,8 @@ excavation:
       - title: "Excavation & Grading"
         anchor: excavation-grading
         image:
-          src: "/images/small/excavation-grading.webp"
+          #src: "/images/small/excavation-grading.webp"
+          src: "/images/566/site-work.webp"
           alt: "Excavation and grading work performed by S. Phaneuf & Associates for a Massachusetts construction project."
         paragraphs:
           - >
@@ -1159,7 +1165,8 @@ excavation:
       - title: "Foundation & Building Excavation"
         anchor: foundation-excavation
         image:
-          src: "/images/small/foundation-excavation.webp"
+          #src: "/images/small/foundation-excavation.webp"
+          src: "/images/566/site-work.webp"
           alt: "Foundation excavation and site preparation for new construction in Massachusetts by S. Phaneuf & Associates."
         paragraphs:
           - >
@@ -1220,7 +1227,8 @@ excavation:
       - title: "Utility Trenching & Installation"
         anchor: utility-trenching
         image:
-          src: "/images/small/utility-trenching.webp"
+          #src: "/images/small/utility-trenching.webp"
+          src: "/images/566/site-work.webp"
           alt: "Utility trench excavation for site development in Massachusetts by S. Phaneuf & Associates."
         paragraphs:
           - >
@@ -1280,7 +1288,8 @@ excavation:
       - title: "Drainage & Stormwater Management"
         anchor: drainage-stormwater
         image:
-          src: "/images/small/stormwater-drainage.webp"
+          #src: "/images/small/stormwater-drainage.webp"
+          src: "/images/566/site-work.webp"
           alt: "Stormwater drainage and site development work completed by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
@@ -1342,7 +1351,8 @@ excavation:
       - title: "Soil Stabilization, Compaction & Base Preparation"
         anchor: soil-compaction
         image:
-          src: "/images/small/site-preparation.webp"
+          #src: "/images/small/site-preparation.webp"
+          src: "/images/566/site-work.webp"
           alt: "Soil compaction and base preparation during Massachusetts site development by S. Phaneuf & Associates."
         paragraphs:
           - >

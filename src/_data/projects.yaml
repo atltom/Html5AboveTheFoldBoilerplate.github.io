@@ -46,28 +46,33 @@ excavation:
     images:
       - thumb: /images/small/site-work-main-st-img1-Concord-Mass.webp
         full: /images/large/site-work-main-st-img1-Concord-Mass.webp
-        alt: sss
-        caption: sss
+        alt: Freshly paved asphalt alley with a storm drain grate and sealed surface lines.
+        caption: A newly paved asphalt driveway flanked by commercial buildings, featuring a central metal storm drain grate.
+
       - thumb: /images/small/site-work-main-st-img2-Concord-Mass.webp
         full: /images/large/site-work-main-st-img2-Concord-Mass.webp
-        alt: sss
-        caption: sss
+        alt: Workers operating in a paved court area framed by brick buildings.
+        caption: An open paved court between brick structures where one worker kneels in the foreground near a bucket and another worker pushes a wheelbarrow near the far end of the alleyway.
+      
       - thumb: /images/small/site-work-main-st-img4-Concord-Mass.webp
         full: /images/large/site-work-main-st-img4-Concord-Mass.webp
-        alt: sss
-        caption: sss
+        alt: Workers installing blue plastic stormwater drainage chambers in an excavated trench.
+        caption: Construction workers installing ribbed blue plastic drainage chambers and white PVC piping within a large dirt trench adjacent to a multi-story brick building.
+      
       - thumb: /images/small/site-work-main-st-img6-Concord-Mass.webp
         full: /images/large/site-work-main-st-img6-Concord-Mass.webp
-        alt: sss
-        caption: sss
+        alt: A yellow excavator parked along an excavated trench in an alleyway.
+        caption: A long trench dug between buildings with a yellow excavator stationed in the alley, showing exposed dirt, concrete structures, and workers near the trench walls.
+      
       - thumb: /images/small/site-work-main-st-img7-Concord-Mass.webp
         full: /images/large/site-work-main-st-img7-Concord-Mass.webp
-        alt: sss
-        caption: sss
+        alt: High-angle view of a worker fitting white plastic pipes into a concrete catch basin.
+        caption: A close-up top-down view showing a worker in a plaid shirt attaching white PVC pipe fittings and elbows to a concrete square catch basin structure underground.
+      
       - thumb: /images/small/site-work-main-st-img8-Concord-Mass.webp
         full: /images/large/site-work-main-st-img8-Concord-Mass.webp
-        alt: sss
-        caption: sss
+        alt: Workers and an excavator positioning a large slotted concrete tank in an excavation pit.
+        caption: An excavator bucket hovers above a large, precast concrete cylindrical tank with slotted side walls inside a dirt excavation pit while workers guide the assembly near exposed piping.
 
   - title: Plum Island Coastal Site Development
     location: Newbury, MA
@@ -77,16 +82,18 @@ excavation:
     images:
       - thumb: /images/small/Plum-Island-Newbury-Mass.webp
         full: /images/large/Plum-Island-Newbury-Mass.webp
-        alt: sss
-        caption: sss
+        alt: Excavators operating on a sandy beach shoreline next to the ocean.
+        caption: A wide shot of multiple yellow and black tracked excavators conducting earthmoving work along a sandy beach next to open water.
+
       - thumb: /images/small/Plum-Island-img2-Newbury-Mass.webp
         full: /images/large/Plum-Island-img2-Newbury-Mass.webp
-        alt: sss
-        caption: sss
+        alt: A yellow excavator loading sand into a white Terex dump truck on a beach.
+        caption: A yellow excavator raises its bucket to load earth into the open bed of a white Terex dump truck positioned on a sandy shoreline near the ocean.
+
       - thumb: /images/small/Plum-Island-img3-Newbury-Mass.webp
         full: /images/large/Plum-Island-img3-Newbury-Mass.webp
-        alt: sss
-        caption: sss
+        alt: View from behind a Deere excavator looking out over a beach construction site.
+        caption: A perspective from the cab area of a dark Deere excavator looking across the shoreline, where another yellow excavator operates on the sand in the distance.
 
   - title: Mountain Rain Water & Hillside Grading Project
     location: Ashburnham, MA
@@ -96,12 +103,13 @@ excavation:
     images:
       - thumb: /images/small/site-work-ashburnham-mass.webp 
         full: /images/large/site-work-ashburnham-mass.webp
-        alt: Hillside slope grading and drainage ditch construction in Ashburnham, Massachusetts
-        caption: Precision slope optimization and drainage control.
+        alt: Two excavators positioned around workers installing a cylindrical concrete drainage well.
+        caption: Two yellow excavators sit on dirt embankments above an excavation site where workers maneuver around a precast concrete drainage structure resting in crushed gravel.
+
       - thumb: /images/small/site-work-img2-ashburnham-mass.webp
         full: /images/large/site-work-img2-ashburnham-mass.webp
-        alt: sss  
-        caption: sss
+        alt: A worker inspecting a round concrete drainage riser set in crushed stone.  
+        caption: High-angle view of a worker leaning over a circular precast concrete manhole surrounded by crushed stone, with a yellow excavator parked on higher ground behind a rock retaining wall.
 
   - title: Main Line Sewer & Underground Utility Installation
     location: Concord, MA
@@ -113,6 +121,7 @@ excavation:
         full: /images/large/sewer-install.webp
         alt: Main line sewer trench excavation and utility installation in Concord, Massachusetts
         caption: Deep utility line trenching and pipe setting.
+
       - thumb: /images/small/sewer-install-img2.webp
         full: /images/large/sewer-install-img2.webp
         alt: Underground utility lines safely managed beside natural stone installations
