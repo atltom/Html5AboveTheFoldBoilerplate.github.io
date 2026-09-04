@@ -10,7 +10,7 @@
   "name": "{{ serviceName or title | replace(' | S. Phaneuf & Associates', '') }}",
   "image": "https://sphaneufassociates.com/{{ heroImage or 'images/large/foundation.webp' }}",
   {%- if schemaServiceType -%}
-  "serviceType": "{{ schemaServiceType }}",
+  "serviceType": "{{ schemaServiceType | safe }}",
   {%- else -%}
   "serviceType": [
     "Asphalt Paving & Driveways",
