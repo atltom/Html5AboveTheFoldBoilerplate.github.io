@@ -53,14 +53,6 @@
     {%- if extraSchema -%},{{- extraSchema | safe -}}{%- endif -%}
     ]
   }</script>
-
-{#   
-  <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@graph": [{% include "schema/business.njk" %}{% if page.url != '/' %},{% include "schema/breadcrumbs.njk" %}{% endif %}{% if extraSchema %},{{ extraSchema | safe }}{% endif %}]
-  }</script>
- #}
-
 </head>
 <body class="{{ page.fileSlug }}">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -72,122 +64,49 @@
   {% include "components/global/global-footer.njk" %}
   
 <script>
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.getElementById('menu-toggle');
-  const drawer = document.getElementById('main-nav');
-  const backdrop = document.getElementById('nav-backdrop');
-  const dropdownToggle = document.querySelector('.q-dropdown-toggle');
-  const dropdownParent = document.querySelector('.q-has-dropdown');
-
-  // Open/Close Mobile Drawer
-  function openMenu() {
-    toggleBtn.setAttribute('aria-expanded', 'true');
-    drawer.classList.add('q-is-open');
-    backdrop.classList.add('q-is-active');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeMenu() {
-    toggleBtn.setAttribute('aria-expanded', 'false');
-    drawer.classList.remove('q-is-open');
-    backdrop.classList.remove('q-is-active');
-    document.body.style.overflow = '';
-  }
-
-  toggleBtn.addEventListener('click', () => {
-    const isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
-    isOpen ? closeMenu() : openMenu();
+  // Mobile Navigation
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('menu-toggle');const drawer = document.getElementById('main-nav');const backdrop = document.getElementById('nav-backdrop');const dropdownToggle = document.querySelector('.q-dropdown-toggle');const dropdownParent = document.querySelector('.q-has-dropdown');
+    // Open/Close Mobile Drawer
+    function openMenu() {toggleBtn.setAttribute('aria-expanded', 'true');drawer.classList.add('q-is-open');backdrop.classList.add('q-is-active');document.body.style.overflow = 'hidden';}
+    function closeMenu() {toggleBtn.setAttribute('aria-expanded', 'false');drawer.classList.remove('q-is-open');backdrop.classList.remove('q-is-active');document.body.style.overflow = '';}
+    toggleBtn.addEventListener('click', () => {const isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';isOpen ? closeMenu() : openMenu();});
+    backdrop.addEventListener('click', closeMenu);
+    // Mobile Accordion Toggle for Services Submenu
+    if (dropdownToggle) {dropdownToggle.addEventListener('click', (e) => {e.preventDefault();const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';dropdownToggle.setAttribute('aria-expanded', !isExpanded);dropdownParent.classList.toggle('q-dropdown-open');});}
+    // Keyboard Navigation (Escape key)
+    document.addEventListener('keydown', (e) => {if (e.key === 'Escape' && drawer.classList.contains('q-is-open')) {closeMenu();}  });
   });
-
-  backdrop.addEventListener('click', closeMenu);
-
-  // Mobile Accordion Toggle for Services Submenu
-  if (dropdownToggle) {
-    dropdownToggle.addEventListener('click', (e) => {
-      e.preventDefault();
-      const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
-      dropdownToggle.setAttribute('aria-expanded', !isExpanded);
-      dropdownParent.classList.toggle('q-dropdown-open');
-    });
-  }
-
-  // Keyboard Navigation (Escape key)
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && drawer.classList.contains('q-is-open')) {
-      closeMenu();
-    }
-  });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-    var textBoxes = document.querySelectorAll('.text-box');
-    var observer = new IntersectionObserver(entries => {entries.forEach(entry => {if (entry.isIntersecting) {entry.target.classList.add('slide-up');observer.unobserve(entry.target);}});});textBoxes.forEach(textBox=>{ observer.observe(textBox);});
-    function naviconClick(navicon) {
-        navicon.classList.toggle("change");
-        var nav = document.getElementById("navbar");
-        if (nav) nav.classList.toggle("navbar-change");
-    }
-    function navDropdownClick(e) {
-      // Only intercept click on touch devices / mobile screens (< 600px)
-      if (window.innerWidth < 600) {
-        var navDropdown = document.getElementById("nav-dropdown");
-        // If the dropdown isn't open yet on mobile, open it first
-        if (navDropdown && !navDropdown.classList.contains("show")) {
-          e.preventDefault(); 
-          navDropdown.classList.add("show");
-        }
-        // If it IS already open on mobile, tapping it again will naturally follow the link to /services/
-      }
-    }
-    // Close dropdown when clicking outside
-    window.addEventListener('click', function(e) {
-      if (!e.target.closest('.dropdown')) {
-        var navDropdown = document.getElementById("nav-dropdown");
-        if (navDropdown && navDropdown.classList.contains("show")) {
-          navDropdown.classList.remove("show");
-        }
-      }
-    });
-    function loadGTM(){if(window.gtmLoaded)return;window.gtmLoaded=!0;var script=document.createElement('script');script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF";script.async=!0;document.head.appendChild(script);script.onload=function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FXE2B9T9WF');};}
-    ['pointerdown','keydown','touchstart','scroll'].forEach(function(e){window.addEventListener(e,loadGTM,{once:!0,passive:!0});});
-    if('requestIdleCallback' in window){requestIdleCallback(function(){setTimeout(loadGTM,3500);});}else{setTimeout(loadGTM,4000);}
-    {# document.addEventListener('DOMContentLoaded', () => {
-        let currentIndex=0; 
-        const gallery=document.getElementById('gallery'); 
-        if (!gallery) return; 
-        const spans=gallery.querySelectorAll('p.lb');
-        for (let i = 0; i < spans.length; i++) {
-          spans[i].addEventListener('click', () => {
-            currentIndex = i;
-            openLightbox(spans[currentIndex].getAttribute('data-src'));
-          });
-        }
-        function openLightbox(imageSrc) {document.body.classList.add('noScroll'); const lightbox=document.createElement('div'); lightbox.id='lightbox'; const img=document.createElement('img'); img.src=imageSrc;img.id='lb-img';img.style.position="absolute";const prevButton = document.createElement('button');prevButton.className = 'nav-button prev';prevButton.innerHTML = '❮';prevButton.addEventListener('click', (event) => {event.stopPropagation();showPrevImage();});const nextButton = document.createElement('button');nextButton.className = 'nav-button next';nextButton.innerHTML = '❯';nextButton.addEventListener('click', (event) => {event.stopPropagation();showNextImage();});const closeButton = document.createElement('button');closeButton.className = 'nav-button close';closeButton.innerHTML = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff' style='height: 17px;'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>`;closeButton.addEventListener('click', (event) => {event.stopPropagation();closeLightbox();});const counter = document.createElement('div');counter.className = 'counter';counter.innerText = `${currentIndex + 1}/${spans.length}`;lightbox.appendChild(img);lightbox.appendChild(prevButton);lightbox.appendChild(nextButton);lightbox.appendChild(closeButton);lightbox.appendChild(counter);document.body.appendChild(lightbox);const initialLeft = window.innerWidth / 2 - img.offsetWidth / 2;img.style.left = initialLeft + 'px';}
-        function showPrevImage() {currentIndex = (currentIndex > 0) ? currentIndex - 1 : spans.length - 1;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
-        function showNextImage() {currentIndex = (currentIndex < spans.length - 1) ? currentIndex + 1 : 0;updateLightboxImage(spans[currentIndex].getAttribute('data-src'));}
-        function updateLightboxImage(imageSrc) {const lightbox = document.getElementById('lightbox');const img = lightbox.querySelector('img');img.src = imageSrc;const counter = lightbox.querySelector('.counter');counter.innerText = `${currentIndex + 1}/${spans.length}`;}
-        function closeLightbox() {const lightbox = document.getElementById('lightbox');if (lightbox) {document.body.classList.remove('noScroll');document.body.removeChild(lightbox);}}
-    }); #}
-    {{ extraJs | safe }}
+  // Contact Form Submission to Google Forms
+  document.getElementById('contact-form').onsubmit = function (e) {
+    e.preventDefault();
+    const form = this;
+    const formData = new FormData(form);
+    const errorDiv = document.getElementById('form-error');
+    // Helper function to safely display error messages
+    const showError = (msg) => { if (errorDiv) { errorDiv.textContent = msg; errorDiv.style.display = 'block'; } else { console.error("Error container #form-error missing:", msg); } };
+    // Clear previous errors safely
+    if (errorDiv) { errorDiv.style.display = 'none'; errorDiv.textContent = ''; }
+    // Honeypot check (bot prevention)
+    if (formData.get("city") !== "") { form.innerHTML = `<div class="alert alert-success">Thank you!</div>`; return; }
+    const messageText = formData.get("entry.69405291") || "";
+    // Validation checks
+    const tagRegex = /<[^>]*>/g;
+    if (tagRegex.test(messageText)) { showError("HTML tags and scripts are not allowed."); return; }
+    const urlRegex = /(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi;
+    if (urlRegex.test(messageText)) { showError("Links and URLs are not allowed."); return; }
+    const englishRegex = /^[ -~]*$/;
+    if (!englishRegex.test(messageText)) { showError("Please use English characters only."); return; }
+    const submitButton = form.querySelector('button');
+    if (submitButton) { submitButton.disabled = true; submitButton.textContent = "Sending...";  }
+    const data = new URLSearchParams(formData);
+    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse", { method: "POST", mode: "no-cors", body: data }).then(() => { form.innerHTML = `<div class="alert alert-success"><strong>Success!</strong> Your message has been sent.</div>`; }).catch(error => { if (submitButton) { submitButton.disabled = false; submitButton.textContent = "Submit"; } showError("Something went wrong. Please try again."); }); 
+  };
+  // Google Tag Manager (GTM) Lazy Load
+  function loadGTM(){if(window.gtmLoaded)return;window.gtmLoaded=!0;var script=document.createElement('script');script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF";script.async=!0;document.head.appendChild(script);script.onload=function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FXE2B9T9WF');};}
+  ['pointerdown','keydown','touchstart','scroll'].forEach(function(e){window.addEventListener(e,loadGTM,{once:!0,passive:!0});});
+  if('requestIdleCallback' in window){requestIdleCallback(function(){setTimeout(loadGTM,3500);});}else{setTimeout(loadGTM,4000);}
+  {{ extraJs | safe }}
 </script>   
 {# <!--<script src="/js/main.js" defer></script>--> #}
 </body>

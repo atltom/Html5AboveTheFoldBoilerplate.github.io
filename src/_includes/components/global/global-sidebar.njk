@@ -10,17 +10,22 @@
         {% if sidebarTrust %}<div ><p>- Free estimates<br>- Serving Massachusetts since 1989<br>- Residential & Commercial<br>- Licensed & Insured</p></div>{% endif %}
     {% endif %}
     <form  id="contact-form" >
+        <div id="form-error" class="alert alert-danger" style="display: none;"></div>
         <div >
             <label class="form-label" for="first-last-name">First and Last Name</label>
-            <input class="form-control" id="first-last-name" name="name" type="text" required>
+            <input class="form-control" id="first-last-name" name="entry.631554197" type="text" required>
         </div>
         <div >
             <label class="form-label" for="email-or-phone">Email Address or Phone #</label>
-            <input class="form-control" id="email-or-phone" name="contact" type="text" required>
+            <input class="form-control" id="email-or-phone" name="entry.993558858" type="text" required>
         </div>
         <div >
             <label class="form-label" for="message">Tell us about your project</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            <textarea class="form-control" id="message" name="entry.69405291" rows="5" required></textarea>
+        </div>
+        <div aria-hidden="true" style="position: absolute; left: -5000px; top: -5000px; height: 0; overflow: hidden;">
+            <label for="city-field">City</label>
+            <input id="city-field" type="text" name="city" tabindex="-1" autocomplete="off">
         </div>
         <button class="btn" type="submit">Request Your Free Estimate</button>
     </form>

@@ -59,7 +59,7 @@
     .phone-link { color: #fff; text-decoration: none !important; }
 
     /* Offsets all anchor link target jumps across your site */
-    [id] {  scroll-margin-top: 100px;}
+    [id] {  scroll-margin-top: 120px;}
 
 
   /* Base Header & Container */
