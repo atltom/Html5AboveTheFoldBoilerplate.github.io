@@ -78,20 +78,11 @@ sidebarParagraph:
     Inspired by the work you've seen? Tell us about your project and we'll help you determine the best approach for your property.   
 
 extraJs: |
-  document.getElementById('rev-form').onsubmit = function(e) {
-    e.preventDefault();
-    console.log('prevented default form submission'); const form = this; const formData = new FormData(form);  const errorDiv = document.getElementById('rev-form-error');
-    const showError = (msg) => { if (errorDiv) { errorDiv.textContent = msg; errorDiv.style.display = 'block'; } };
-    if (errorDiv) {   errorDiv.style.display = 'none';  errorDiv.textContent = ''; }
-    if (formData.get("rev-city-field") !== "") { form.innerHTML = `<div class="alert alert-success">Thank you!</div>`; return; }          
-    const messageText = formData.get("entry.69405291") || ""; 
-    const tagRegex = /<[^>]*>/g; if (tagRegex.test(messageText)) { showError("HTML tags and scripts are not allowed.");  return; } 
-    const urlRegex = /(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi; if (urlRegex.test(messageText)) { showError("Links and URLs are not allowed."); return;} 
-    const englishRegex = /^[ -~]*$/; if (!englishRegex.test(messageText)) {showError("Please use English characters only.");  return; } 
-    const submitButton = form.querySelector('button'); if (submitButton) {submitButton.disabled = true;submitButton.textContent = "Sending...";   }
-    const data = new URLSearchParams(); for (const [key, value] of formData.entries()) { if (key.startsWith('entry.')) { data.append(key, value); }}
-    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse", { method: "POST",mode: "no-cors", body: data }).then(() => {form.innerHTML = `<div class="alert alert-success"><strong>Success!</strong> Your message has been sent.</div>`;}).catch(error => {if (submitButton) {submitButton.disabled = false;submitButton.textContent = "Submit";}showError("Something went wrong. Please try again.");  });
-  };
+    /* Review Form Handler */
+    document.getElementById('rev-form').onsubmit = function(e) {
+        e.preventDefault(); const form = this; const formData = new FormData(form); const errorDiv = document.getElementById('rev-form-error'); const showError = (msg) => { if (errorDiv) { errorDiv.textContent = msg; errorDiv.style.display = 'block'; } }; if (errorDiv) { errorDiv.style.display = 'none'; errorDiv.textContent = ''; } const honeypotVal = formData.get("city"); if (honeypotVal !== "" && honeypotVal !== null) { form.innerHTML = `<div class="alert alert-success">Thank you!</div>`; return; }  const messageText = formData.get("entry.69405291") || ""; if (/<[^>]*>/g.test(messageText)) { showError("HTML tags and scripts are not allowed."); return; } if (/(https?:\/\/[^\s]+)|(www\.[^\s]+)/gi.test(messageText)) { showError("Links and URLs are not allowed."); return; } if (!/^[ -~\r\n\t]*$/.test(messageText)) { showError("Please use English characters only."); return; } const submitButton = form.querySelector('button'); if (submitButton) { submitButton.disabled = true; submitButton.textContent = "Sending..."; } const data = new URLSearchParams(); for (const [key, value] of formData.entries()) { if (key.startsWith('entry.')) { data.append(key, value); } } 
+        fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScfe0h_8GEsZ8iyZ4WhzKtB-0_sPUPLZ9Q1nfxv6LSl3nFZhw/formResponse", { method: "POST", mode: "no-cors", body: data }).then(() => { form.innerHTML = `<div style="padding: 15px;border: 1px solid green; margin: 15px 0;"><strong>Success!</strong> Your review has been submitted.</div>`; }).catch(error => { if (submitButton) { submitButton.disabled = false; submitButton.textContent = "Submit Your Review"; } showError("Something went wrong. Please try again."); });
+    };
 ---
 {% include "components/global/global-breadcrumbs.njk" %}
 <!-- flex-container -->  
@@ -134,17 +125,17 @@ extraJs: |
         <section aria-label="Submit a review for S. Phaneuf & Associates">
             <h2>Submit Your Review</h2>
             <p>We'd love to hear about your experience with <strong>S. Phaneuf & Associates</strong>. Please take a moment to share your thoughts by filling out the form below:</p>
-            <form id="rev-form" >
+            <form id="rev-form">
                 <label class="form-label" for="rev-name">Your Name:</label>
                 <input class="form-control" id="rev-name" name="entry.631554197" type="text" required>
                 <label class="form-label" for="rev-rating">Your Rating:</label>
                 <select class="form-control" id="rev-rating" name="entry.993558858" required>
-                <option value="" disabled selected>Please select a rating</option>
-                <option value="5 stars">⭐⭐⭐⭐⭐</option>
-                <option value="4 stars">⭐⭐⭐⭐</option>
-                <option value="3 stars">⭐⭐⭐</option>
-                <option value="2 stars">⭐⭐</option>
-                <option value="1 star">⭐</option>
+                    <option value="" disabled selected>Please select a rating</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
                 </select>
                 <label class="form-label" for="rev-review">Your Review:</label>
                 <textarea class="form-control" id="rev-review" name="entry.69405291" rows="5" required></textarea>
