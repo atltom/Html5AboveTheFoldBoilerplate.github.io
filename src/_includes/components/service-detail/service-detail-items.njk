@@ -7,8 +7,17 @@
         {% for item in service.services.items %}
         <div class="service-item" id="{{ item.anchor }}">
             {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
-            {% if item.paragraphs %}{% for paragraph in item.paragraphs %}<p >{{ paragraph }}</p>{% endfor %}{% endif %}
-            {% if item.image %}<div><img src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy"></div>{% endif %}
+            {% if item.paragraphs %}{% for paragraph in item.paragraphs %}<p >{{ paragraph | safe }}</p>{% endfor %}{% endif %}
+            {% if item.image %}
+            
+            {# <div class="service-image"><img src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy"></div> #}
+            
+                <figure class="service-image">
+                    <img  src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy" decoding="async">
+                    <figcaption  class="service-figcaption">{{ item.image.caption | default(item.image.alt) }}</figcaption> {# <figcaption class="service-figcaption"> <span class="location-badge">Concord, MA</span></figcaption> #}
+                </figure>
+
+            {% endif %}
             {% if item.features %}<div><h4>{{ item.features.heading }}</h4><ul class=" li">{% for feature in item.features.items %}<li>{{ feature }}</li>{% endfor %}</ul></div>{% endif %}
             {% if item.benefits %}<div><h4>{{ item.benefits.heading }}</h4><ul class=" li">{% for benefit in item.benefits.items %}<li>{{ benefit }}</li>{% endfor %}</ul></div>{% endif %}
             {% if item.closing %}{% for closingParagraph in item.closing %}<p class=" fst-italic">{{ closingParagraph | safe}}</p>{% endfor %}{% endif %}

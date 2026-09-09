@@ -7,7 +7,6 @@ The company serves residential and commercial properties and provides constructi
 ## Main Pages
 
 - [Home](https://sphaneufassociates.com/)
-- [About S. Phaneuf & Associates](https://sphaneufassociates.com/about)
 - [Services](https://sphaneufassociates.com/services)
 - [Service Areas](https://sphaneufassociates.com/service-areas)
 - [Portfolio](https://sphaneufassociates.com/portfolio)
@@ -71,6 +70,7 @@ The site includes dedicated service-area pages for communities including:
 - [Harvard, MA](https://sphaneufassociates.com/worcester-county/hardscape-contractor-harvard-ma)
 - [Mendon, MA](https://sphaneufassociates.com/worcester-county/hardscape-contractor-mendon-ma)
 - [Northborough, MA](https://sphaneufassociates.com/worcester-county/hardscape-contractor-northborough-ma)
+- [Shrewsbury, MA](https://sphaneufassociates.com/worcester-county/hardscape-contractor-shrewsbury-ma)
 - [Southborough, MA](https://sphaneufassociates.com/worcester-county/hardscape-contractor-southborough-ma)
 - [Upton, MA](https://sphaneufassociates.com/worcester-county/hardscape-contractor-upton-ma)
 - [Westborough, MA](https://sphaneufassociates.com/worcester-county/hardscape-contractor-westborough-ma)

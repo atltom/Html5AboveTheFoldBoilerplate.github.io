@@ -31,8 +31,10 @@ asphalt:
       - title: "New Asphalt Paving"
         anchor: new-asphalt-paving
         image:
-          src: "/images/566/asphalt-paving.webp"
+          #src: "/images/566/asphalt-paving.webp"
+          src: images/small/asphalt-circle-lexington-mass.webp
           alt: "New asphalt driveway installed by S. Phaneuf & Associates in Massachusetts."
+          caption: "New asphalt driveway"
         paragraphs:
           - >
             A successful asphalt paving project starts with proper preparation
@@ -91,8 +93,10 @@ asphalt:
       - title: "Asphalt Driveways"
         anchor: driveways
         image:
-          src: "/images/566/asphalt-paving.webp"
+          #src: "/images/566/asphalt-paving.webp"
+          src: images/small/asphalt-circle-lexington-mass.webp
           alt: "Residential asphalt driveway constructed by S. Phaneuf & Associates in Massachusetts."
+          caption: "Residential asphalt driveway"
         paragraphs:
           - >
             A professionally installed asphalt driveway provides a clean,
@@ -146,8 +150,10 @@ asphalt:
         anchor: parking-lots
         image:
           #src: "/images/small/asphalt-parking-lot.webp"
-          src: "/images/566/asphalt-paving.webp"
+          #src: "/images/566/asphalt-paving.webp"
+          src: images/small/asphalt-circle-lexington-mass.webp
           alt: "Commercial asphalt parking lot installed by S. Phaneuf & Associates in Massachusetts."
+          caption: "Commercial asphalt parking lot"
         paragraphs:
           - >
             Commercial parking lots must withstand regular vehicle traffic while
@@ -204,8 +210,10 @@ asphalt:
         anchor: asphalt-repair-maintenance
         image:
           #src: "/images/small/asphalt-repair.webp"
-          src: "/images/566/asphalt-paving.webp"
+          #src: "/images/566/asphalt-paving.webp"
+          src: images/small/asphalt-circle-lexington-mass.webp
           alt: "Asphalt pavement repair completed by S. Phaneuf & Associates in Massachusetts."
+          caption: "Asphalt pavement repair"
         paragraphs:
           - >
             Existing asphalt does not necessarily need to be completely replaced
@@ -262,8 +270,10 @@ asphalt:
         anchor: milling-resurfacing
         image:
           #src: "/images/small/asphalt-milling.webp"
-          src: "/images/566/asphalt-paving.webp"
+          #src: "/images/566/asphalt-paving.webp"
+          src: images/small/asphalt-circle-lexington-mass.webp
           alt: "Asphalt milling and resurfacing work by S. Phaneuf & Associates in Massachusetts."
+          caption: "Asphalt milling and resurfacing"
         paragraphs:
           - >
             When an existing asphalt surface has deteriorated but the underlying
@@ -319,8 +329,10 @@ asphalt:
         anchor: parking-lot-striping
         image:
           #src: "/images/small/parking-lot-striping.webp"
-          src: "/images/566/asphalt-paving.webp"
+          #src: "/images/566/asphalt-paving.webp"
+          src: images/small/asphalt-circle-lexington-mass.webp
           alt: "Commercial parking lot striping and pavement markings in Massachusetts."
+          caption: "Commercial parking lot striping"
         paragraphs:
           - >
             Clear pavement markings help organize traffic, define parking spaces, and improve the usability of commercial parking areas. Professional striping can also help businesses present a clean, organized appearance to customers, employees, and visitors.

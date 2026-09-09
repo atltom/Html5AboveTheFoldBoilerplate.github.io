@@ -67,6 +67,7 @@ counties:
     description: >
       We serve homeowners and businesses throughout Essex County, including Salem, Lynn, Lawrence, Haverhill, and surrounding Massachusetts communities. S. Phaneuf & Associates provides asphalt paving, masonry, hardscaping, excavation, and site development solutions designed for long-lasting performance. Our team creates functional outdoor spaces including patios, walkways, stone features, retaining walls, and other custom improvements.
   - name: Middlesex County Construction Services
+    url: /middlesex-county
     description: >
       We proudly serve Middlesex County communities including Acton, Carlisle, Concord, Lexington, Littleton, Stow, Sudbury, Wayland, Westford, Weston, Wellesley, Newton, Groton, and surrounding areas. We provide complete construction services including custom hardscapes, masonry features, asphalt paving, excavation, drainage solutions, and site preparation. Our team specializes in creating outdoor living spaces with patios, walkways, retaining walls, fireplaces, fire pits, and other custom landscape improvements.
   - name: Norfolk County Construction Services
@@ -81,6 +82,7 @@ counties:
     description: >
       We provide professional construction services throughout Suffolk County, including Boston, Chelsea, Revere, Winthrop, and surrounding communities. S. Phaneuf & Associates delivers asphalt paving, masonry, hardscape, excavation, and property improvement solutions designed for residential and commercial properties throughout the region.
   - name: Worcester County Construction Services
+    url: /worcester-county
     description: >
       S. Phaneuf & Associates serves Worcester County communities including Bolton, Worcester, Leominster, Fitchburg, Shrewsbury, and surrounding areas. Our team provides asphalt paving, excavation, site development, masonry, and hardscape construction. We help homeowners and businesses create durable driveways, functional outdoor living areas, patios, fire pits, retaining walls, and other property improvements.
 
@@ -98,22 +100,34 @@ areasServed:
         url: /middlesex-county/hardscape-contractor-carlisle-ma
       - name: Concord
         url: /middlesex-county/hardscape-contractor-concord-ma
+      - name: Harvard
+        url: /worcester-county/hardscape-contractor-harvard-ma
       - name: Lexington
         url: /middlesex-county/hardscape-contractor-lexington-ma
       - name: Littleton
         url: /middlesex-county/hardscape-contractor-littleton-ma
+      - name: Mendon
+        url: /worcester-county/hardscape-contractor-mendon-ma
+      - name: Northborough
+        url: /worcester-county/hardscape-contractor-northborough-ma
+      - name: Shrewsbury
+        url: /worcester-county/hardscape-contractor-shrewsbury-ma
+      - name: Southborough
+        url: /worcester-county/hardscape-contractor-southborough-ma
       - name: Stow
         url: /middlesex-county/hardscape-contractor-stow-ma
       - name: Sudbury
         url: /middlesex-county/hardscape-contractor-sudbury-ma
+      - name: Upton
+        url: /worcester-county/hardscape-contractor-upton-ma
       - name: Wayland
         url: /middlesex-county/hardscape-contractor-wayland-ma
-      - name: Weston
-        url: /middlesex-county/hardscape-contractor-weston-ma
+      - name: Westborough
+        url: /worcester-county/hardscape-contractor-westborough-ma
       - name: Westford
         url: /middlesex-county/hardscape-contractor-westford-ma
-
-
+      - name: Weston
+        url: /middlesex-county/hardscape-contractor-weston-ma
 
 
 servicess:
@@ -197,7 +211,7 @@ sidebarParagraph:
             <h2 class="pipe">Massachusetts Counties We Serve</h2>
             <p>S. Phaneuf & Associates proudly provides masonry, hardscape construction, asphalt paving, excavation, site development, and snow management services throughout Massachusetts. We work with homeowners, businesses, and commercial property owners across multiple counties throughout Central and Eastern Massachusetts.</p>
             {% for county in counties %}
-                <h3>{{ county.name }}</h3>
+                <h3>{% if county.url %}<a href="{{ county.url }}">{{ county.name }}</a>{% else %}{{ county.name }}{% endif %}</h3>
                 <p>{{ county.description }}</p>
             {% endfor %}
         </section>
