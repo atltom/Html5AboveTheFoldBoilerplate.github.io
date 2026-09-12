@@ -1,7 +1,7 @@
 <!-- areas-served -->
 {% if areasServed %}
 <section id="{{ areasServed.heading | slugify }}">
-  <h2>{{ areasServed.heading }}</h2>
+  <h2 class="pipe">{{ areasServed.heading }}</h2>
   {% if areasServed.intro %}<p>{{ areasServed.intro | safe }}</p>{% endif %}
   <div class="areas-grid">
     {% for location in areasServed.locations %}

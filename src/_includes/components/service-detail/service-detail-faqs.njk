@@ -1,6 +1,6 @@
 <!--faq-->
 <section class="faq"  id="{{ service.faq.heading | slugify }}">
-<h2>{{service.faq.heading }}</h2>
+<h2 class="pipe">{{service.faq.heading }}</h2>
 {% for item in service.faq.items %}
     <h3 >{{ item.question }}</h3>
     <p>{{ item.answer }}</p>

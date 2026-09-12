@@ -1,6 +1,6 @@
 <!--intro-section-->
 <section id="{% if introSlug %}{{ introSlug }}{% endif %}">
-    <h2>{{ intro.heading }}</h2>
+    <h2 class="pipe">{{ intro.heading }}</h2>
     {% for paragraph in intro.paragraphs %}<p class="{% if loop.first %} {% endif %}">{{ paragraph }}</p>{% endfor %}
     {% if intro.callout %}<div >
         {% if intro.callout.title %}

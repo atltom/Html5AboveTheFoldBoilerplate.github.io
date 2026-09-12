@@ -1,6 +1,6 @@
 <!-- why choose phaneuf-->
 {% if whyChoose %}<section id="why-choose-phaneuf" >
-    {% if whyChoose.heading %}<h2>{{ whyChoose.heading }}</h2>{% endif %}
+    {% if whyChoose.heading %}<h2 class="pipe">{{ whyChoose.heading }}</h2>{% endif %}
     <div>
         {% for item in whyChoose.items %}<div>
             {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}

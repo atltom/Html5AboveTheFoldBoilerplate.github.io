@@ -1,7 +1,7 @@
 <!--portfolio-->
 {% set serviceProjects = projects[serviceType] %}
 <section id="gallery">
-    <h2>{{ portfolio.heading or "Featured Projects" }}</h2>
+    <h2 class="pipe">{{ portfolio.heading or "Featured Projects" }}</h2>
     {% if portfolio.intro %}<p>{{ portfolio.intro }}</p>{% endif %}
     {% for project in serviceProjects.projects %}
     <section id="{{ project.title | slugify }}">

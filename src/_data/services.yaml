@@ -32,9 +32,9 @@ asphalt:
         anchor: new-asphalt-paving
         image:
           #src: "/images/566/asphalt-paving.webp"
-          src: images/small/asphalt-circle-lexington-mass.webp
-          alt: "New asphalt driveway installed by S. Phaneuf & Associates in Massachusetts."
-          caption: "New asphalt driveway"
+          #src: images/small/asphalt-circle-lexington-mass.webp
+          #alt: "New asphalt driveway installed by S. Phaneuf & Associates in Massachusetts."
+          #caption: "New asphalt driveway"
         paragraphs:
           - >
             A successful asphalt paving project starts with proper preparation
@@ -94,9 +94,9 @@ asphalt:
         anchor: driveways
         image:
           #src: "/images/566/asphalt-paving.webp"
-          src: images/small/asphalt-circle-lexington-mass.webp
-          alt: "Residential asphalt driveway constructed by S. Phaneuf & Associates in Massachusetts."
-          caption: "Residential asphalt driveway"
+          #src: images/small/asphalt-circle-lexington-mass.webp
+          #alt: "Residential asphalt driveway constructed by S. Phaneuf & Associates in Massachusetts."
+          #caption: "Residential asphalt driveway"
         paragraphs:
           - >
             A professionally installed asphalt driveway provides a clean,
@@ -151,9 +151,9 @@ asphalt:
         image:
           #src: "/images/small/asphalt-parking-lot.webp"
           #src: "/images/566/asphalt-paving.webp"
-          src: images/small/asphalt-circle-lexington-mass.webp
-          alt: "Commercial asphalt parking lot installed by S. Phaneuf & Associates in Massachusetts."
-          caption: "Commercial asphalt parking lot"
+          #src: images/small/asphalt-circle-lexington-mass.webp
+          #alt: "Commercial asphalt parking lot installed by S. Phaneuf & Associates in Massachusetts."
+          #caption: "Commercial asphalt parking lot"
         paragraphs:
           - >
             Commercial parking lots must withstand regular vehicle traffic while
@@ -211,9 +211,9 @@ asphalt:
         image:
           #src: "/images/small/asphalt-repair.webp"
           #src: "/images/566/asphalt-paving.webp"
-          src: images/small/asphalt-circle-lexington-mass.webp
-          alt: "Asphalt pavement repair completed by S. Phaneuf & Associates in Massachusetts."
-          caption: "Asphalt pavement repair"
+          #src: images/small/asphalt-circle-lexington-mass.webp
+          #alt: "Asphalt pavement repair completed by S. Phaneuf & Associates in Massachusetts."
+          #caption: "Asphalt pavement repair"
         paragraphs:
           - >
             Existing asphalt does not necessarily need to be completely replaced
@@ -271,9 +271,9 @@ asphalt:
         image:
           #src: "/images/small/asphalt-milling.webp"
           #src: "/images/566/asphalt-paving.webp"
-          src: images/small/asphalt-circle-lexington-mass.webp
-          alt: "Asphalt milling and resurfacing work by S. Phaneuf & Associates in Massachusetts."
-          caption: "Asphalt milling and resurfacing"
+          #src: images/small/asphalt-circle-lexington-mass.webp
+          #alt: "Asphalt milling and resurfacing work by S. Phaneuf & Associates in Massachusetts."
+          #caption: "Asphalt milling and resurfacing"
         paragraphs:
           - >
             When an existing asphalt surface has deteriorated but the underlying
@@ -330,9 +330,9 @@ asphalt:
         image:
           #src: "/images/small/parking-lot-striping.webp"
           #src: "/images/566/asphalt-paving.webp"
-          src: images/small/asphalt-circle-lexington-mass.webp
-          alt: "Commercial parking lot striping and pavement markings in Massachusetts."
-          caption: "Commercial parking lot striping"
+          #src: images/small/asphalt-circle-lexington-mass.webp
+          #alt: "Commercial parking lot striping and pavement markings in Massachusetts."
+          #caption: "Commercial parking lot striping"
         paragraphs:
           - >
             Clear pavement markings help organize traffic, define parking spaces, and improve the usability of commercial parking areas. Professional striping can also help businesses present a clean, organized appearance to customers, employees, and visitors.
@@ -1054,8 +1054,8 @@ excavation:
         anchor: site-clearing-demolition
         image:
           #src: "/images/small/site-clearing.webp"
-          src: "/images/566/site-work.webp"
-          alt: "Professional site clearing and excavation work by S. Phaneuf & Associates in Massachusetts."
+          #src: "/images/small/sewer-install-img2.webp"
+          #alt: "Professional site clearing and excavation work by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
             Before construction can begin, the property must be cleared and
@@ -1116,8 +1116,8 @@ excavation:
         anchor: excavation-grading
         image:
           #src: "/images/small/excavation-grading.webp"
-          src: "/images/566/site-work.webp"
-          alt: "Excavation and grading work performed by S. Phaneuf & Associates for a Massachusetts construction project."
+          #src: "/images/566/site-work.webp"
+          #alt: "Excavation and grading work performed by S. Phaneuf & Associates for a Massachusetts construction project."
         paragraphs:
           - >
             Excavation and grading establish the elevations and contours that
@@ -1178,8 +1178,8 @@ excavation:
         anchor: foundation-excavation
         image:
           #src: "/images/small/foundation-excavation.webp"
-          src: "/images/566/site-work.webp"
-          alt: "Foundation excavation and site preparation for new construction in Massachusetts by S. Phaneuf & Associates."
+          #src: "/images/566/site-work.webp"
+          #alt: "Foundation excavation and site preparation for new construction in Massachusetts by S. Phaneuf & Associates."
         paragraphs:
           - >
             A building is only as reliable as the ground supporting it. Foundation
@@ -1240,8 +1240,8 @@ excavation:
         anchor: utility-trenching
         image:
           #src: "/images/small/utility-trenching.webp"
-          src: "/images/566/site-work.webp"
-          alt: "Utility trench excavation for site development in Massachusetts by S. Phaneuf & Associates."
+          #src: "/images/566/site-work.webp"
+          #alt: "Utility trench excavation for site development in Massachusetts by S. Phaneuf & Associates."
         paragraphs:
           - >
             New construction and property improvements often require underground
@@ -1301,8 +1301,8 @@ excavation:
         anchor: drainage-stormwater
         image:
           #src: "/images/small/stormwater-drainage.webp"
-          src: "/images/566/site-work.webp"
-          alt: "Stormwater drainage and site development work completed by S. Phaneuf & Associates in Massachusetts."
+          #src: "/images/566/site-work.webp"
+          #alt: "Stormwater drainage and site development work completed by S. Phaneuf & Associates in Massachusetts."
         paragraphs:
           - >
             Managing water is one of the most important parts of site development
@@ -1364,8 +1364,8 @@ excavation:
         anchor: soil-compaction
         image:
           #src: "/images/small/site-preparation.webp"
-          src: "/images/566/site-work.webp"
-          alt: "Soil compaction and base preparation during Massachusetts site development by S. Phaneuf & Associates."
+          #src: "/images/566/site-work.webp"
+          #alt: "Soil compaction and base preparation during Massachusetts site development by S. Phaneuf & Associates."
         paragraphs:
           - >
             Proper soil preparation is critical to the long-term performance of
@@ -1636,8 +1636,8 @@ snow-ice:
       - title: "Snow Plowing"
         anchor: snow-plowing
         image:
-          src: "/images/snow-removal.webp"
-          alt: "Commercial snow plowing services for Massachusetts parking lots and access roads."
+          #src: "/images/snow-removal.webp"
+          #alt: "Commercial snow plowing services for Massachusetts parking lots and access roads."
         paragraphs:
           - >
             Professional snow plowing is essential for keeping parking lots,
@@ -1695,8 +1695,8 @@ snow-ice:
       - title: "Snow Removal & Relocation"
         anchor: snow-removal
         image:
-          src: "/images/snow-removal.webp"
-          alt: "Snow removal and relocation services for commercial properties in Massachusetts."
+          #src: "/images/snow-removal.webp"
+          #alt: "Snow removal and relocation services for commercial properties in Massachusetts."
         paragraphs:
           - >
             Heavy snow accumulation can quickly reduce available parking,
@@ -1754,8 +1754,8 @@ snow-ice:
       - title: "Sanding & Salting"
         anchor: sanding-salting
         image:
-          src: "/images/snow-removal.webp"
-          alt: "Commercial sanding and salting services for Massachusetts properties."
+          #src: "/images/snow-removal.webp"
+          #alt: "Commercial sanding and salting services for Massachusetts properties."
         paragraphs:
           - >
             Snow removal alone does not eliminate the risk of slippery winter
@@ -1810,8 +1810,8 @@ snow-ice:
       - title: "Snow Blowing & Shoveling"
         anchor: snow-blowing-shoveling
         image:
-          src: "/images/snow-removal.webp"
-          alt: "Snow blowing and shoveling services for commercial sidewalks and walkways in Massachusetts."
+          #src: "/images/snow-removal.webp"
+          #alt: "Snow blowing and shoveling services for commercial sidewalks and walkways in Massachusetts."
         paragraphs:
           - >
             Not every area of a property can be efficiently cleared with a
@@ -1869,8 +1869,8 @@ snow-ice:
       - title: "Pre-Treating"
         anchor: pre-treating
         image:
-          src: "/images/snow-removal.webp"
-          alt: "Pre-treatment services for snow and ice management on Massachusetts commercial properties."
+          #src: "/images/snow-removal.webp"
+          #alt: "Pre-treatment services for snow and ice management on Massachusetts commercial properties."
         paragraphs:
           - >
             Effective winter management can begin before snow and ice reach the
@@ -1924,11 +1924,11 @@ snow-ice:
             scheduled snow and ice services based on the property's specific
             needs.
 
-      - title: "De-Icing — Bulk & Liquid Salt"
+      - title: "De-Icing: Bulk & Liquid Salt"
         anchor: de-icing
         image:
-          src: "/images/snow-removal.webp"
-          alt: "Bulk and liquid salt de-icing services for commercial properties in Massachusetts."
+          #src: "/images/snow-removal.webp"
+          #alt: "Bulk and liquid salt de-icing services for commercial properties in Massachusetts."
         paragraphs:
           - >
             Ice presents serious safety risks for pedestrians and vehicles,

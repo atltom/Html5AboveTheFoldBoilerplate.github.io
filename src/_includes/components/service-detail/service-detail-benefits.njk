@@ -1,6 +1,6 @@
 <!--benefits-->
 <section id="{{ service.benefits.heading | slugify }}">
-    <h2>{{ service.benefits.heading }}</h2>
+    <h2 class="pipe">{{ service.benefits.heading }}</h2>
     <p >{{ service.benefits.intro }}</p>
     <div>
         {% for item in service.benefits.items %}
