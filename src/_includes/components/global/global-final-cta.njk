@@ -1,8 +1,8 @@
 <!-- final-cta -->
-<hr style="margin:0;">
+{# <hr style="margin:0;"> #}
 <section class="final-cta" id="{{ ctaSlug | slugify or 'final-cta' }}" aria-labelledby="cta-heading">
   <div class="container">
-    <h2 id="final-cta-heading">{{ ctaHeading }}</h2>
+    <h2 id="final-cta-heading">{{ ctaHeading | safe}}</h2>
     <p>{{ ctaText | safe }}</p>
     
     {% if ctaTrust %}

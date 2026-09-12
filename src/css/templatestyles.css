@@ -327,8 +327,10 @@
       .card-s { width: 41.66666667%; height: 100%; }
       .card-e { width: 58.33333333%; padding: 0 15px; }
 
-      .final-cta{text-align:center;padding:2rem 0}
-      .final-cta-trust { grid-template-columns: repeat(4, 1fr); }
+      .final-cta{text-align:center;padding:2rem;max-width: 1080px;margin: auto;box-shadow: 0 2px 10px rgba(0, 0, 0, .1);margin-block-end: 4rem;}
+      .final-cta h2 {padding-block-end: .5rem;}
+      .final-cta-trust {grid-template-columns: repeat(4, 1fr); }
+      .final-cta a.btn {margin-block-start: 15px;}
     }
 
 
