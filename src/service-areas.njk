@@ -67,9 +67,9 @@ counties:
     description: >
       We serve homeowners and businesses throughout Essex County, including Salem, Lynn, Lawrence, Haverhill, and surrounding Massachusetts communities. S. Phaneuf & Associates provides asphalt paving, masonry, hardscaping, excavation, and site development solutions designed for long-lasting performance. Our team creates functional outdoor spaces including patios, walkways, stone features, retaining walls, and other custom improvements.
   - name: Middlesex County Construction Services
-    url: /middlesex-county
+    #url: /middlesex-county
     description: >
-      We proudly serve Middlesex County communities including Acton, Carlisle, Concord, Lexington, Littleton, Stow, Sudbury, Wayland, Westford, Weston, Wellesley, Newton, Groton, and surrounding areas. We provide complete construction services including custom hardscapes, masonry features, asphalt paving, excavation, drainage solutions, and site preparation. Our team specializes in creating outdoor living spaces with patios, walkways, retaining walls, fireplaces, fire pits, and other custom landscape improvements.
+      We proudly serve <a href="/middlesex-county">Middlesex County</a> communities including <a href="/middlesex-county/acton-ma">Acton</a>, <a href="/middlesex-county/carlisle-ma">Carlisle</a>, <a href="/middlesex-county/concord-ma">Concord</a>, <a href="/middlesex-county/lexington-ma">Lexington</a>, <a href="/middlesex-county/littleton-ma">Littleton</a>, <a href="/middlesex-county/stow-ma">Stow</a>, <a href="/middlesex-county/sudbury-ma">Sudbury</a>, <a href="/middlesex-county/wayland-ma">Wayland</a>, <a href="/middlesex-county/westford-ma">Westford</a>, <a href="/middlesex-county/weston-ma">Weston</a>, Wellesley, Newton, Groton, and surrounding areas. We provide complete construction services including custom hardscapes, masonry features, asphalt paving, excavation, drainage solutions, and site preparation. Our team specializes in creating outdoor living spaces with patios, walkways, retaining walls, fireplaces, fire pits, and other custom landscape improvements.
   - name: Norfolk County Construction Services
     description: >
       We provide construction services throughout Norfolk County including Dover, Wellesley, Weymouth, Braintree, and nearby communities. Our team helps residential and commercial property owners with asphalt paving, masonry and hardscape construction, excavation, drainage improvements, and site development. From new driveways and paved surfaces to custom outdoor living spaces, we deliver solutions built for Massachusetts properties.
@@ -82,9 +82,9 @@ counties:
     description: >
       We provide professional construction services throughout Suffolk County, including Boston, Chelsea, Revere, Winthrop, and surrounding communities. S. Phaneuf & Associates delivers asphalt paving, masonry, hardscape, excavation, and property improvement solutions designed for residential and commercial properties throughout the region.
   - name: Worcester County Construction Services
-    url: /worcester-county
+    #url: /worcester-county
     description: >
-      S. Phaneuf & Associates serves Worcester County communities including Bolton, Worcester, Leominster, Fitchburg, Shrewsbury, and surrounding areas. Our team provides asphalt paving, excavation, site development, masonry, and hardscape construction. We help homeowners and businesses create durable driveways, functional outdoor living areas, patios, fire pits, retaining walls, and other property improvements.
+      S. Phaneuf & Associates serves <a href="/worcester-county">Worcester County</a> communities including <a href="/worcester-county/bolton-ma">Bolton</a>, Worcester, Leominster, Fitchburg, <a href="/worcester-county/shrewsbury-ma">Shrewsbury</a>, and surrounding areas. Our team provides asphalt paving, excavation, site development, masonry, and hardscape construction. We help homeowners and businesses create durable driveways, functional outdoor living areas, patios, fire pits, retaining walls, and other property improvements.
 
 
 areasServed:
@@ -134,19 +134,19 @@ servicess:
   - name: Masonry & Hardscapes
     link: /masonry-hardscapes
     description: >
-      Our masonry and hardscape services enhance outdoor spaces throughout Massachusetts with custom patios, walkways, retaining walls, outdoor fireplaces, stone features, and complete outdoor living areas. We combine quality materials with skilled craftsmanship to create durable and attractive landscapes designed for long-term enjoyment.
+      Our <a href="/masonry-hardscapes">masonry and hardscape services</a> enhance outdoor spaces throughout Massachusetts with custom patios, walkways, retaining walls, outdoor fireplaces, stone features, and complete outdoor living areas. We combine quality materials with skilled craftsmanship to create durable and attractive landscapes designed for long-term enjoyment.
   - name: Asphalt Paving
     link: /asphalt-paving
     description: >
-      We provide residential and commercial asphalt paving services throughout Massachusetts including new driveways, parking lots, resurfacing, repairs, sealcoating, crack filling, and pavement maintenance. Our team uses proven techniques and quality materials to create durable surfaces built to withstand New England weather.
+      We provide residential and commercial <a href="/asphalt-paving">asphalt paving services</a> throughout Massachusetts including new driveways, parking lots, resurfacing, repairs, sealcoating, crack filling, and pavement maintenance. Our team uses proven techniques and quality materials to create durable surfaces built to withstand New England weather.
   - name: Excavation & Site Development
     link: /excavation-site-development
     description: >
-      Our excavation and site development services prepare properties for construction through grading, drainage solutions, land clearing, foundation excavation, utility work, and site preparation. We help residential and commercial projects establish a strong foundation from the beginning.
+      Our <a href="/excavation-site-development">excavation and site development services</a> prepare properties for construction through grading, drainage solutions, land clearing, foundation excavation, utility work, and site preparation. We help residential and commercial projects establish a strong foundation from the beginning.
   - name: Snow & Ice Management
     link: /snow-ice-management
     description: >
-      Our commercial snow and ice management services help Massachusetts properties remain safe and accessible during winter weather. Services include snow removal, parking lot plowing, sidewalk clearing, ice management, snow hauling, and post-storm cleanup.
+      Our <a href="/snow-ice-management">commercial snow and ice management services</a> help Massachusetts properties remain safe and accessible during winter weather. Services include snow removal, parking lot plowing, sidewalk clearing, ice management, snow hauling, and post-storm cleanup.
 
 whyChoose:
   heading: "Why Massachusetts Homeowners and Businesses Choose S. Phaneuf & Associates"
@@ -212,7 +212,7 @@ sidebarParagraph:
             <p>S. Phaneuf & Associates proudly provides masonry, hardscape construction, asphalt paving, excavation, site development, and snow management services throughout Massachusetts. We work with homeowners, businesses, and commercial property owners across multiple counties throughout Central and Eastern Massachusetts.</p>
             {% for county in counties %}
                 <h3>{% if county.url %}<a href="{{ county.url }}">{{ county.name }}</a>{% else %}{{ county.name }}{% endif %}</h3>
-                <p>{{ county.description }}</p>
+                <p>{{ county.description |safe }}</p>
             {% endfor %}
         </section>
         <section id="communities-served">
@@ -242,7 +242,7 @@ sidebarParagraph:
                     </a>
                 </h3>
                 <p>
-                    {{ service.description }}
+                    {{ service.description |safe }}
                 </p>
             {% endfor %}
         </section>
