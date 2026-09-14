@@ -440,25 +440,36 @@ asphalt:
       S. Phaneuf & Associates proudly provides asphalt paving services throughout Massachusetts. We regularly work with homeowners and businesses throughout Greater Boston and surrounding communities.
     locations:
     - name: Acton
-    #  url: /middlesex-county/hardscape-contractor-acton-ma
+      url: /middlesex-county/acton-ma
     - name: Arlington
     - name: Bedford
     - name: Belmont
     - name: Bolton
+      url: /worcester-county/bolton-ma
     - name: Carlisle
+      url: /middlesex-county/carlisle-ma
     - name: Concord
+      url: /middlesex-county/concord-ma
     - name: Dover
     - name: Framingham
-    - name: Holliston
+    - name: Harvard
+      url: /worcester-county/harvard-ma
     - name: Lexington
+      url: /middlesex-county/lexington-ma
     - name: Lincoln
     - name: Littleton
-    - name: Natick
+      url: /middlesex-county/littleton-ma
+    - name: Mendon
+      url: /worcester-county/mendon-ma
     - name: Needham
-    - name: Newton
-    - name: Sherborn
-    - name: Stow
-    - name: Sudbury
+    - name: Northborough
+      url: /worcester-county/northborough-ma
+    - name: Shrewsbury
+      url: /worcester-county/shrewsbury-ma
+    - name: Southborough
+      url: /worcester-county/southborough-ma  
+    - name: Upton
+      url: /worcester-county/upton-ma
     - name: Wayland
     - name: Wellesley
     - name: Weston

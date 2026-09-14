@@ -26,6 +26,8 @@ module.exports = function(eleventyConfig) {
         }
     });
 
+    eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
+
     eleventyConfig.addFilter("json", function(value) {
         return JSON.stringify(value, null, 2);
     });

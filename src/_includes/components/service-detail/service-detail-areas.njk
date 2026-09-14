@@ -1,10 +1,20 @@
-<!--areas-served-->
-{% if service.areasServed %}<section id="{{ service.areasServed.heading | slugify }}">
+<!--areas-served -->
+{# pages - Asphalt, Masonry, Excavation, Snow Removal #}
+{% if service.areasServed %}
+<section id="{{ service.areasServed.heading | slugify }}">
   <h2 class="pipe">{{ service.areasServed.heading }}</h2>
-  {% if service.areasServed.intro %}<p >{{ service.areasServed.intro }}</p>{% endif %}
+  {% if service.areasServed.intro %}
+    <p>{{ service.areasServed.intro }}</p>
+  {% endif %}
   <div class="areas-grid">
-    {% for location in service.areasServed.locations %}<div class="area-item">
-        {% if location.url %}<a href="{{ location.url }}">{{ location.name }}</a>{% else %}{{ location.name }}{% endif %}
+    {% for location in service.areasServed.locations %}
+    <div class="area-item">
+        {% if location.url %}
+          <a class="area-link" href="{{ location.url }}">{{ location.name }}</a>
+        {% else %}
+          <span class="area-text">{{ location.name }}</span>
+        {% endif %}
     </div>{% endfor %}
   </div>
-</section>{% endif %}
+</section>
+{% endif %}
