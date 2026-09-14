@@ -1,0 +1,10 @@
+<ul>
+    {% set countyTowns = collections[collectionKey] or [] %}
+    {% for town in countyTowns %}
+        {% if town.url != page.url and ('/hardscape' in town.url or town.url.startsWith('/hardscape')) %}
+            <li>
+                <a href="{{ town.url | replace(".html", "") }}">{{ (town.data.sitemapTitle or town.data.title) | replace("Hardscape Contractor", "") | replace("hardscape Contractor", "") | trim }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

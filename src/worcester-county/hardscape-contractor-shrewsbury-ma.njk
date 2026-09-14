@@ -85,16 +85,8 @@ ctaText: "Contact S. Phaneuf & Associates to discuss your hardscape, paving, exc
             <h2 class="pipe">Serving {{locCity}} and Surrounding Communities</h2>
             <p >{{locCity}} is located in {{locCounty}} County, and our service area extends throughout surrounding communities in the region. If your property is located nearby and you are unsure whether we service your area, contact us to discuss your project.</p>
             <h3 >Other {{locCounty}} County Communities We Serve</h3>
-            <ul  style="margin-left: -20px;">
-                {% set countyTowns = collections['worcester-county'] or [] %}
-                {% for town in countyTowns %}
-                    {% if town.url != page.url %}
-                        <li><a href="{{ town.url | replace(".html", "") }}">{{ (town.data.sitemapTitle or town.data.title) | replace("Hardscape Contractor", "") | replace("hardscape Contractor", "") | trim }}</a></li>
-                    {% endif %}
-                {% else %}
-                    <li><a>Coming Soon</a></li>
-                {% endfor %}
-            </ul>
+            {% set collectionKey = "worcester-county" %}
+            {% include "components/global/global-hardscape-areas.njk" %}
             <p>Explore our <a href="/{{locCounty| slugify}}-county">{{locCounty}} County service area</a> to learn more about all the communities we serve.</p>
         </section>
 
@@ -233,7 +225,7 @@ ctaText: "Contact S. Phaneuf & Associates to discuss your hardscape, paving, exc
                 Why Choose S. Phaneuf & Associates in {{locCity}}?
             </h2>
 
-            <ul  style="margin-left: -20px;">
+            <ul>
 
                 <li>
                     <strong>Experienced Professionals:</strong>
@@ -280,7 +272,7 @@ ctaText: "Contact S. Phaneuf & Associates to discuss your hardscape, paving, exc
                 Depending on the application, our hardscape projects may incorporate materials such as:
             </p>
 
-            <ul  style="margin-left: -20px;">
+            <ul>
 
                 <li>
                     <strong>Natural Stone</strong> for patios, walls, walkways, and landscape features.
