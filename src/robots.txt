@@ -1,9 +1,14 @@
 User-agent: *
 Disallow: /tmp/
+Disallow: /?s=
+Disallow: /search/
+Disallow: /*?*gclid=
+Disallow: /*?*utm_*=
+Allow: /css/
+Allow: /js/
+Allow: /images/
 
 User-agent: SiteAuditBot
 Allow: /
-Disallow: /tmp/
 
 Sitemap: https://sphaneufassociates.com/sitemap.xml
-# Sitemap: https://sphaneufassociates.com/image-sitemap.xml
