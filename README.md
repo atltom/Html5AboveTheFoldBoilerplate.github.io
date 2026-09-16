@@ -1,6 +1,6 @@
-# Html5AboveTheFoldBoilerplate
-html5, mobile first, css above the fold, light weight boilerplate
-
+# Do not work on master
+Use:	develop for website development.
+Use:	master only for the finished production website.
 
 
 # (Bash)
@@ -10,186 +10,207 @@ npm install
 # (Bash)
 npx @11ty/eleventy --serve
 
--- deployment: delete dist folder or run the following
-# (PowerShell)
-Remove-Item -Recurse -Force dist
-
 then
 # (Bash)
 npx @11ty/eleventy
- 
 
-or now 
+or  
 
-then
 # (Bash)
 npm run dev
  # http://localhost:8080
+
 or 
+
 npx run build 
- and then  npx serve dist 
+  
+npx serve dist 
  # http://localhost:3000
 
 
-.skip-link{position:absolute;left:-9999px;top:0;}
-.skip-link:focus{left:20px;top:20px;padding:15px;z-index:9999;background:white;border:1px solid #ccc;}
+## ---------------------------------------------------------
 
+# Eleventy Deployment Workflow
+This document records the complete process for deploying the Eleventy-generated website from the `develop` branch to the existing `master` branch used by GitHub Pages.
+This is the deployment procedure to use after making and testing changes to the Eleventy website.
+
+## ---------------------------------------------------------
+
+# 1. Repository Structure
+The repository uses two branches for two different purposes.
+
+## `develop` — Development / Source
+
+The `develop` branch contains the Eleventy source project.
+
+It includes:
+
+- `src/`
+- Nunjucks templates
+- YAML data
+- Components
+- Layouts
+- `.eleventy.js`
+- `package.json`
+- `package-lock.json`
+- JavaScript source
+- CSS source
+- Other development files
+
+Eleventy builds the finished website into:
+dist/
+
+
+The `master` branch contains the site content that GitHub uses to host the static page
+HTML
+css/
+images/
+js/
+CNAME
+.nojekyll
+robots.txt
+sitemap.xml
+other production files
+
+## ---------------------------------------------------------
+
+
+# 2. Overall Deployment Process
+
+develop
+   │
+   │ Make website changes
+   │
+   ▼
+Build with Eleventy
+   │
+   ▼
+dist/
+   │
+   │ Test generated website
+   │
+   ▼
+Switch to existing local master
+   │
+   ▼
+Copy contents of dist/
+   │
+   ▼
+master repository root
+   │
+   ▼
+git add .
+   │
+   ▼
+Review staged files
+   │
+   ▼
+git commit
+   │
+   ▼
+git push origin master
+   │
+   ▼
+GitHub Pages
+   │
+   ▼
+Switch back to develop
+
+## ---------------------------------------------------------
+
+# 3. Deployment Checklist
+
+Use this checklist before and after each deployment.
+
+Before Deployment
+ On develop
+ git status is clean
+ Eleventy build succeeds
+ dist/ is generated
+ Generated site tested locally
+ Pages checked
+ Images checked
+ CSS checked
+ Links checked
+ Metadata checked
+Deploy
+ Switch to existing master
+ Answer n to OneDrive deletion prompts if they occur
+ Copy dist/. into root
+ Remove dist
+ Verify dist is gone
+ git add .
+ Review git diff --cached --name-status
+ Confirm no src/, .eleventy.js, package.json, or dist/
+ Commit
+ Run git status
+ Push origin master
+After Deployment
+ Switch back to develop
+ Answer n to OneDrive deletion prompts if they occur
+ Run git status
+ Confirm:
+nothing to commit, working tree clean
+
+## ---------------------------------------------------------
+
+# 4. Complete Deployment Command Sequence
+
+For future deployments, the basic command sequence is:
+
+Start on develop
+$git status
+
+Build and test the Eleventy site.
+$npm run dev
+commit & push any changes
+
+Then:
+$git switch master
+If Git asks about directory deletion:
+n
+
+Then:
+$git status
+
+Copy the generated site:
+$cp -r dist/. .
+
+Remove the temporary build directory:
+$rm -rf dist
+
+Check:
+$git status
+
+Stage:
+$git add .
+
+Review:
+$git diff --cached --name-status
+If [END] appears:
+q
+
+Commit:
+$git commit -m "Deploy updated Eleventy site"
+
+Verify:
+$git status
+
+Push:
+$git push origin master
+
+Return to development:
+$git switch develop
+If Git asks about directory deletion:
+n
+
+Final check:
+$git status
+Expected:
+nothing to commit, working tree clean
+
+## ---------------------------------------------------------
+
+command to convert jpg to webp
 
 C:\Users\____________\Downloads\libwebp-1.3.2-windows-x64\libwebp-1.3.2-windows-x64\bin>cwebp ..\..\..\asphalt-and-masonry.jpg -q 80 -o ..\..\..\566\asphalt-and-masonry.webp
-
-
-# ============ why choose us ???? ===========
-whyChooseHeading: Why Choose S. Phaneuf & Associates?
-whyChooseIntro: >
-  For more than 35 years, homeowners throughout Massachusetts have trusted
-  S. Phaneuf & Associates to create exceptional outdoor living spaces with
-  craftsmanship, attention to detail, and dependable service.
-whyChooseItems:
-  - title: "35+ Years of Experience:"
-    description: >
-      Extensive experience designing and constructing custom hardscapes
-      throughout Massachusetts.
-  - title: "Complete Outdoor Solutions:"
-    description: >
-      We combine excavation, drainage, masonry, landscaping, and site
-      development into one seamless project.
-  - title: "Quality Craftsmanship:"
-    description: >
-      Every project is built using proven installation methods and premium
-      materials.
-  - title: "Custom Designs:"
-    description: >
-      No two projects are alike. Every outdoor space is tailored to your
-      property and lifestyle.
-  - title: "Free Estimates:"
-    description: >
-      We'll evaluate your property and recommend the best solution for your
-      outdoor living goals.
-
-
-# ============ estimate cta ===========
-estimateHeading: Request Your Free Hardscape Consultation
-estimateIntro: >
-  Whether you're planning a new patio, outdoor kitchen, retaining wall,
-  fireplace, or complete backyard transformation, we're ready to help.
-estimateDescription: >
-  Contact our team today to schedule your free consultation and personalized
-  project estimate.
-estimateButtonText: Request Your Free Estimate
-estimateButtonLink: /contact-us
-
-
-
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const pluginTOC = require("eleventy-plugin-toc");
-
-module.exports = function(eleventyConfig) {
-  
-  // 1. Configure Markdown to automatically add clean IDs to h2 and h3 tags
-  const markdownLib = markdownIt({ html: true })
-    .use(markdownItAnchor, {
-      permalink: false, // Set to true if you want visual anchor links next to headings
-      slugify: (s) => s.trim().toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')
-    });
-  eleventyConfig.setLibrary("md", markdownLib);
-
-  // 2. Add the Table of Contents filter
-  eleventyConfig.addPlugin(pluginTOC, {
-    tags: ['h2', 'h3'], // Headings you want to include in your TOC
-    wrapper: 'nav',     // Wraps the TOC in a semantic HTML5 <nav> tag
-    wrapperClass: 'toc-navigation'
-  });
-
-};
-
-
-
-
-
-{# 
-{--# 1. Define the dynamic breadcrumb object #--}
-{% set breadcrumbObject = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.zzzzzzzzzzzzzzzzzzzzzzzzzzzzphaneufassociates.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://www.phaneufassociates.com/services/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": serviceName or title,
-      "item": "https://www.phaneufassociates.com" ~ page.url
-    }
-  ]
-} %}
-
-{--# 2. Convert that object into JSON string and assign it to the 'schema' variable #--}
-{% set schema = breadcrumbObject | json %} #}
-
-{# {% block schema %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Masonry and Hardscapes",
-  "provider": {
-    "@type": "HomeAndConstructionBusiness",
-    "name": "S. Phaneuf & Associates"
-  },
-  "areaServed": "Massachusetts",
-  "description": "{{ description }}"
-}
-</script>
-{% endblock %}
-
-
-{% if page.url != '/' %}
-{% set siteUrl = "https://sphaneufassociates.com" %}
-{% set position = 1 %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": {{ position }},
-      "name": "Home",
-      "item": "{{ siteUrl }}/"
-    }
-    {%- if breadcrumbs -%}
-      {%- for crumb in breadcrumbs -%}
-        {%- set position = position + 1 -%}
-        ,
-        {
-          "@type": "ListItem",
-          "position": {{ position }},
-          "name": "{{ crumb.title }}",
-          "item": "{{ siteUrl }}{{ crumb.url }}"
-        }
-      {%- endfor -%}
-    {%- endif -%}
-    {%- set position = position + 1 -%}
-    ,
-    {
-      "@type": "ListItem",
-      "position": {{ position }},
-      "name": "{{ breadcrumbTitle or serviceName or title.split(' - ')[0] | trim }}",
-      "item": "{{ siteUrl }}{{ page.url }}"
-    }
-  ]
-}
-</script>
-{% endif %} #}
