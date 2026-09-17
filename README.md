@@ -214,3 +214,34 @@ nothing to commit, working tree clean
 command to convert jpg to webp
 
 C:\Users\____________\Downloads\libwebp-1.3.2-windows-x64\libwebp-1.3.2-windows-x64\bin>cwebp ..\..\..\asphalt-and-masonry.jpg -q 80 -o ..\..\..\566\asphalt-and-masonry.webp
+
+
+## ---------------------------------------------------------
+
+## Deploy a Single File from `develop` to `master`
+
+Use this when you only need to deploy one generated file from `dist/` to the root of `master`.
+
+# (Bash)
+# 1. Make sure you are on develop and build the site
+git switch develop
+npm run build
+
+# 2. Switch to master
+git switch master
+
+# 3. Copy the single file from dist to the master root
+cp dist/path/to/file.html path/to/file.html
+
+# Example: .............   cp dist/masonry-hardscapes.html masonry-hardscapes.html
+
+# 4. Commit and push
+git add path/to/file.html
+git commit -m "Deploy updated [filename]"
+git push origin master
+
+# 5. Return to develop
+git switch develop
+
+
+**Important:** If OneDrive asks whether to delete files when switching branches, click **Keep [number] items**.
