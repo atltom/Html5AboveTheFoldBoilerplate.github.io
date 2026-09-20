@@ -1,4 +1,4 @@
----
+﻿---
 layout: base.njk
 permalink: services.html
 canonical: "/services"
@@ -189,14 +189,14 @@ sidebarParagraph:
 ---
 {% include "components/global/global-breadcrumbs.njk" %}  
 <div class="container flex-container">     
-    <article class="content">
+    <div class="article content">
         {% include "components/service-detail/service-detail-intro.njk" %}
         <section id="services-overview">
             {% for item in servicesPage.services %}{% include "components/hub-page/hub-service-card.njk" %}{% endfor %}        
         </section>       
         {% include "components/hub-page/page-why-phaneuf.njk" %}
         {% include "components/areas-grid.njk" %}
-    </article>
+    </div>
     <aside class="contact-form  ">
       {% include "components/global/global-sidebar.njk" %}
     </aside>

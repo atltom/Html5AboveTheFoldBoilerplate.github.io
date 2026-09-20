@@ -1,8 +1,8 @@
-<!--service-page-->
+﻿<!--service-page-->
 {% set service = services[serviceType] %}{% include "components/global/global-breadcrumbs.njk" %}  
 <div class="container flex-container">
     <!--article-->
-    <article class="content">
+    <div class="article content">
         {% include "components/service-detail/service-detail-intro.njk" %}
         {% include "components/service-detail/service-detail-benefits.njk" %}
         {% include "components/service-detail/service-detail-items.njk" %}
@@ -11,7 +11,7 @@
         {% include "components/service-detail/service-detail-faqs.njk" %}
         {% include "components/service-detail/service-detail-areas.njk" %}
         {% include "components/related-services.njk" %}
-    </article>
+    </div>
     <!--sidebar-->
     <aside class="contact-form">
     {% include "components/global/global-sidebar.njk" %}
