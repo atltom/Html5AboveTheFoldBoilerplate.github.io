@@ -1,0 +1,110 @@
+<!-- sub-service-page -->
+{% set service = services[serviceType] %}
+{% include "components/global/global-breadcrumbs.njk" %}  
+<div class="container flex-container">
+    <!--article-->
+    <div class="article content">
+        <!-- 1. Intro Section -->
+        {% include "components/service-detail/service-detail-intro.njk" %}
+
+        <!-- 2. Specialized Materials & Design Options (Specific to this Service) -->
+        {% if pageOptions %}
+        <section class="services" id="{{ pageOptions.heading | slugify }}">
+            <h2 class="pipe">{{ pageOptions.heading }}</h2>
+            {% if pageOptions.intro %}<p>{{ pageOptions.intro }}</p>{% endif %}
+            <div>
+                {% for item in pageOptions.items %}
+                <div class="service-item" id="{{ item.title | slugify }}">
+                    <h3>{{ item.title }}</h3>
+                    {% if item.description %}<p>{{ item.description | safe }}</p>{% endif %}
+                    {% if item.image %}
+                    <figure class="service-image">
+                        <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" width="400" height="267" loading="lazy" decoding="async">
+                        {% if item.image.caption %}<figcaption class="service-figcaption">{{ item.image.caption }}</figcaption>{% endif %}
+                    </figure>
+                    {% endif %}
+                    {% if item.features %}
+                    <div>
+                        <h4>{{ item.features.heading }}</h4>
+                        <ul class="li">
+                            {% for feature in item.features.items %}<li>{{ feature }}</li>{% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- 3. Technical Engineering & Construction Specifications -->
+        {% if technicalSpecs %}
+        <section class="technical-specs" id="{{ technicalSpecs.heading | slugify }}">
+            <h2 class="pipe">{{ technicalSpecs.heading }}</h2>
+            {% if technicalSpecs.intro %}<p>{{ technicalSpecs.intro }}</p>{% endif %}
+            <div>
+                {% for spec in technicalSpecs.items %}
+                <div class="service-item">
+                    <h3>{{ spec.title }}</h3>
+                    <p>{{ spec.description | safe }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- 4. Service-Specific Benefits -->
+        {% if pageBenefits %}
+        <section class="benefits" id="{{ pageBenefits.heading | slugify }}">
+            <h2 class="pipe">{{ pageBenefits.heading }}</h2>
+            {% if pageBenefits.intro %}<p>{{ pageBenefits.intro }}</p>{% endif %}
+            <div>
+                {% for item in pageBenefits.items %}
+                <div>
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- 5. Step-by-Step Installation Process -->
+        {% if pageProcess %}
+        <section class="process" id="{{ pageProcess.heading | slugify }}">
+            <h2 class="pipe">{{ pageProcess.heading }}</h2>
+            {% if pageProcess.intro %}<p>{{ pageProcess.intro }}</p>{% endif %}
+            {% for step in pageProcess.steps %}
+            <div class="process-step">
+                <h3>{{ step.title }}</h3>
+                <p>{{ step.description }}</p>
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        <!-- 6. Service-Specific FAQs -->
+        {% if pageFaqs %}
+        <section class="faq" id="{{ pageFaqs.heading | slugify }}">
+            <h2 class="pipe">{{ pageFaqs.heading }}</h2>
+            {% for item in pageFaqs.items %}
+            <h3>{{ item.question }}</h3>
+            <p>{{ item.answer }}</p>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        <!-- 7. Areas We Serve -->
+        {% include "components/service-detail/service-detail-areas.njk" %}
+
+        <!-- 8. Related Services -->
+        {% include "components/related-services.njk" %}
+    </div>
+
+    <!--sidebar-->
+    <aside class="contact-form">
+        {% include "components/global/global-sidebar.njk" %}
+    </aside>
+</div>
+{% include "components/global/global-final-cta.njk" %}  
+{% include "components/global/global-full-width-image.njk" %}

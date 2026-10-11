@@ -1,0 +1,48 @@
+<!-- service-hub-page -->
+{% set service = services[serviceType] %}
+{% include "components/global/global-breadcrumbs.njk" %}  
+<div class="container flex-container">
+    <!--article-->
+    <div class="article content">
+        <!-- 1. Intro Section -->
+        {% include "components/service-detail/service-detail-intro.njk" %}
+
+        <!-- 2. Hub Services Overview (Direct Cards & Links to Sub-Service Pages) -->
+        {% if hubServices %}
+        <section class="services-hub-overview" id="specialized-services">
+            <h2 class="pipe">{{ hubHeading | default("Our Specialized Masonry & Hardscape Services") }}</h2>
+            <p>{{ hubIntro | default("Explore our dedicated masonry and hardscape construction divisions below for in-depth material options, engineering specifications, and custom design galleries.") }}</p>
+            <div>
+                {% for item in hubServices %}
+                    {% include "components/hub-page/hub-service-card.njk" %}
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- 3. Featured Portfolio Gallery -->
+        {% if portfolio %}{% include "components/portfolio.njk" %}{% endif %}
+
+        <!-- 4. Quality Craftsmanship Benefits -->
+        {% include "components/service-detail/service-detail-benefits.njk" %}
+
+        <!-- 5. Construction Process -->
+        {% include "components/service-detail/service-detail-process.njk" %}     
+
+        <!-- 6. FAQs -->
+        {% include "components/service-detail/service-detail-faqs.njk" %}
+
+        <!-- 7. Areas We Serve -->
+        {% include "components/service-detail/service-detail-areas.njk" %}
+
+        <!-- 8. Related Civil Services -->
+        {% include "components/related-services.njk" %}
+    </div>
+
+    <!--sidebar-->
+    <aside class="contact-form">
+        {% include "components/global/global-sidebar.njk" %}
+    </aside>
+</div>
+{% include "components/global/global-final-cta.njk" %}  
+{% include "components/global/global-full-width-image.njk" %}

@@ -78,7 +78,9 @@
     document.addEventListener('keydown', (e) => {if (e.key === 'Escape' && drawer.classList.contains('q-is-open')) {closeMenu();}  });
   });
   // Contact Form Submission to Google Forms
-  document.getElementById('contact-form').onsubmit = function (e) {
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.onsubmit = function (e) {
     e.preventDefault();
     const form = this;
     const formData = new FormData(form);
@@ -102,6 +104,7 @@
     const data = new URLSearchParams(formData);
     fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScWBdxmWBtQ3kd-p9eZjKsJla-A0Py6BAFPqPTjhCsaNyO4Uw/formResponse", { method: "POST", mode: "no-cors", body: data }).then(() => { form.innerHTML = `<div class="alert alert-success"><strong>Success!</strong> Your message has been sent.</div>`; }).catch(error => { if (submitButton) { submitButton.disabled = false; submitButton.textContent = "Submit"; } showError("Something went wrong. Please try again."); }); 
   };
+  }
   // Google Tag Manager (GTM) Lazy Load
   function loadGTM(){if(window.gtmLoaded)return;window.gtmLoaded=!0;var script=document.createElement('script');script.src="https://www.googletagmanager.com/gtag/js?id=G-FXE2B9T9WF";script.async=!0;document.head.appendChild(script);script.onload=function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FXE2B9T9WF');};}
   ['pointerdown','keydown','touchstart','scroll'].forEach(function(e){window.addEventListener(e,loadGTM,{once:!0,passive:!0});});
