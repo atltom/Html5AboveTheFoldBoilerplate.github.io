@@ -70,6 +70,13 @@
     .hero.services { background-image: url(/images/566/stone-wall.webp); }
     .hero.site-work { background-image: url(/images/566/site-work.webp); }
     .hero.snow-ice { background-image: url(/images/snow-removal.webp); }
+    .hero.pool{background-image: url(/images/large/infinity-pool-gloucester-mass.webp);}
+
+    .hero.commercial{background-image: url(/images/large/asphalt-circle-lexington-mass.webp);}
+    .hero.driveway{background-image: url(/images/large/driveway-entrance-concord-mass.webp);}
+    .hero.parkinglots{background-image: url(/images/large/parkinglots.webp);}
+    .hero.asphalt-repairs {background-image: url(/images/large/asphalt-patch-ayer-mass.webp);}
+
     .hero{position:relative;width:100%;min-height:calc(88vh - (96px));min-height:calc(88dvh - (96px));display:grid;place-content:center;background-color:#2f3f5e;background-position:50% 75%;background-size:cover;contain:layout paint}
     .hero-overlay{text-align:center;background-color:rgb(38 52 80 / 75%);color:#fff;width:91%;max-width:950px;margin:0 auto;padding:1rem;text-shadow:2px 2px 4px #000}
     .hero-overlay h1{text-align: left; font-size:clamp(1.95rem,4.5vw,3rem);line-height:1.2;font-weight:400;margin:0 0 1rem 0}

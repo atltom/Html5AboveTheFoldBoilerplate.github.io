@@ -36,9 +36,13 @@ eleventyExcludeFromCollections: true
             {# <p>At S. Phaneuf & Associates, we take pride in offering a full range of outdoor construction and design services. Our sitemap provides direct links to each service category so you can learn more about what we do:</p> #}
             <ul>
                 {%- for item in collections.all | sort(attribute="data.order") %}
+                    {% if item.data.order in [210, 220, 230] %}
+                        <br>
+                    {% endif %}
                     {%- if item.data.sitemapCategory == "services" and not item.data.eleventyExcludeFromCollections %}{% set rawUrl = item.url | replace(".html", "") %}{% set cleanUrl = rawUrl if rawUrl == "/" else (rawUrl | replace(r/\/$/, "")) %}
-                        <li><a href="{{ cleanUrl }}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
+                        <li><a href="{{ cleanUrl }}" data-order="{{item.data.order}}">{{- item.data.sitemapTitle or item.data.title or item.url -}}</a></li>
                     {%- endif %}
+                   
                 {%- endfor %}
             </ul>
             {# <p>These pages describe our complete process, from initial consultation and design planning to final installation and cleanup. We use only top-quality materials and proven techniques to ensure every project stands the test of time. Whether you’re interested in a new patio, driveway, retaining wall, or foundation work, you’ll find all relevant details through the sitemap links above.</p> #}
